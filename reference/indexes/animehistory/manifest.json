@@ -1,0 +1,1146 @@
+{
+  "source_id": "EXT-001",
+  "source": "https://animehistory.org/anime/outlaw-star/",
+  "generated_utc": "2026-10-07T01:50:48.243120+00:00",
+  "cache_policy": "Reuse verified cache; remove/refresh only by explicit choice",
+  "image_downloads": 0,
+  "total_records": 9204,
+  "episodes": [
+    {
+      "episode_id": "EP-01",
+      "title": "Outlaw World",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:22:03",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-02",
+      "title": "World of Desires",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:01",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-03",
+      "title": "Into Burning Space",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:07",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-04",
+      "title": "When the Hot Ice Melts",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:14",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-05",
+      "title": "The Beast Girl, Ready to Pounce!",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:22:58",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-06",
+      "title": "The Beautiful Assassin",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:07",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-07",
+      "title": "Creeping Evil",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:29",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-08",
+      "title": "Forced Departure",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:04",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-09",
+      "title": "A Journey of Adventure! Huh?",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:07",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-10",
+      "title": "Gathering for the Space Race",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:13",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-11",
+      "title": "Adrift in Subspace",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:22:53",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-12",
+      "title": "Mortal Combat with the El Dorado",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:09",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-13",
+      "title": "Advance Guard from Another World",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:11",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-14",
+      "title": "Final Countdown",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:01",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-15",
+      "title": "The Seven Emerge",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:15",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-16",
+      "title": "Demon of the Water Planet",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:14",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-17",
+      "title": "Between Life and Machine",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:28",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-18",
+      "title": "The Strongest Woman in the Universe",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:01",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-19",
+      "title": "Law and Lawlessness",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:06",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-20",
+      "title": "Cats and Girls and Spaceships",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:07",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-21",
+      "title": "Grave of the Dragon",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:05",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-22",
+      "title": "Gravity Jailbreak",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:22:56",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-23",
+      "title": "Hot Springs Planet Tenrei",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:32",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-24",
+      "title": "Cutting the Galactic Leyline",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:09",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-25",
+      "title": "Maze of Despair",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:35",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/",
+      "alignment_status": "UNVERIFIED"
+    },
+    {
+      "episode_id": "EP-26",
+      "title": "Return to Space",
+      "pages": 4,
+      "expected_count": 354,
+      "actual_count": 354,
+      "first_timestamp": "00:01:43",
+      "last_timestamp": "00:23:46",
+      "gallery_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/",
+      "alignment_status": "UNVERIFIED"
+    }
+  ],
+  "pages": [
+    {
+      "requested_url": "https://animehistory.org/robots.txt",
+      "final_url": "https://animehistory.org/robots.txt",
+      "retrieved_utc": "2026-10-07T01:48:30.288402+00:00",
+      "sha256": "d9e180db46f307b8dd3874e68cbcd3666bb0c874776f4aabf4020c8b6b0d2fef",
+      "bytes": 430,
+      "cache_path": "reference/cache/animehistory/robots.txt"
+    },
+    {
+      "requested_url": "https://animehistory.org/anime/outlaw-star/",
+      "final_url": "https://animehistory.org/anime/outlaw-star/",
+      "retrieved_utc": "2026-10-07T01:48:31.392765+00:00",
+      "sha256": "c023d180de5796b680aa245155ecbf4ae09181f2d4937085a5256cb94be23922",
+      "bytes": 403778,
+      "cache_path": "reference/cache/animehistory/series.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/",
+      "retrieved_utc": "2026-10-07T01:48:32.604907+00:00",
+      "sha256": "56b412e7a3c0fb93251b1e57e4485f341a885ae57316fc0c17d6895211b9ab94",
+      "bytes": 106889,
+      "cache_path": "reference/cache/animehistory/episode-01-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/?page=2",
+      "retrieved_utc": "2026-10-07T01:48:33.689921+00:00",
+      "sha256": "752fcf4f866d02a6a2122fdaeae7274e429450d8adff8b1a7a72101942e9f03b",
+      "bytes": 107255,
+      "cache_path": "reference/cache/animehistory/episode-01-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/?page=3",
+      "retrieved_utc": "2026-10-07T01:48:34.774422+00:00",
+      "sha256": "34300013865ddbdb5d835f569b03388e6df1d5619d41409ba1e04986c7d38629",
+      "bytes": 107262,
+      "cache_path": "reference/cache/animehistory/episode-01-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-1/?page=4",
+      "retrieved_utc": "2026-10-07T01:48:35.799743+00:00",
+      "sha256": "01cb1a11e982ba82ad07741f82363a6d30e82142cd6431847addc1237777dd7b",
+      "bytes": 74071,
+      "cache_path": "reference/cache/animehistory/episode-01-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/",
+      "retrieved_utc": "2026-10-07T01:48:36.900451+00:00",
+      "sha256": "5f4b6e7992a02d8759b9640cfcfb9a3eea08b96d5eb5fc3ce7ade4725cb0501c",
+      "bytes": 108929,
+      "cache_path": "reference/cache/animehistory/episode-02-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/?page=2",
+      "retrieved_utc": "2026-10-07T01:48:38.008601+00:00",
+      "sha256": "9b2462023ba6fc174873da2a8168fcde00ad440aa0637a19a6b69173d110381a",
+      "bytes": 109295,
+      "cache_path": "reference/cache/animehistory/episode-02-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/?page=3",
+      "retrieved_utc": "2026-10-07T01:48:39.239909+00:00",
+      "sha256": "286e5f8264d0cad59e5eb4194ca25394d37eee7e2b63d7c2483f5c18480e9695",
+      "bytes": 109302,
+      "cache_path": "reference/cache/animehistory/episode-02-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-2/?page=4",
+      "retrieved_utc": "2026-10-07T01:48:40.273098+00:00",
+      "sha256": "b8c0fdd272097331f5a0e49d29c93f4ece9c8a92f3aa522cd865ab1118667a1d",
+      "bytes": 75191,
+      "cache_path": "reference/cache/animehistory/episode-02-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/",
+      "retrieved_utc": "2026-10-07T01:48:41.373292+00:00",
+      "sha256": "172bbc45dfc3be4c6029b7198fd92ee64a06b321bfd10316f73efb8ce70bc3cc",
+      "bytes": 109949,
+      "cache_path": "reference/cache/animehistory/episode-03-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/?page=2",
+      "retrieved_utc": "2026-10-07T01:48:42.473210+00:00",
+      "sha256": "c8b2b03f6577c302119f24378b921ba02e8c6cc78d297b0a3f0df44bca022954",
+      "bytes": 110315,
+      "cache_path": "reference/cache/animehistory/episode-03-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/?page=3",
+      "retrieved_utc": "2026-10-07T01:48:43.706627+00:00",
+      "sha256": "38aa1c61c1e0f9372bf04b2c0121d8daf162690dab5d9c7283fe87b4d900ffcc",
+      "bytes": 110322,
+      "cache_path": "reference/cache/animehistory/episode-03-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-3/?page=4",
+      "retrieved_utc": "2026-10-07T01:48:44.729748+00:00",
+      "sha256": "1ae79f36b97c17774c60833cd5337f4cde161d5213a3cdf9cea75776ea51b3ec",
+      "bytes": 75751,
+      "cache_path": "reference/cache/animehistory/episode-03-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/",
+      "retrieved_utc": "2026-10-07T01:48:46.106631+00:00",
+      "sha256": "4cf03836f416699f08e7277074d22140641d841f69bb3f89c2985f370c7135c6",
+      "bytes": 111989,
+      "cache_path": "reference/cache/animehistory/episode-04-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/?page=2",
+      "retrieved_utc": "2026-10-07T01:48:47.538202+00:00",
+      "sha256": "1749b8cb84d25c99c44649ce2dc403dbd1a0da2073391f3965cd52d36641e0f3",
+      "bytes": 112355,
+      "cache_path": "reference/cache/animehistory/episode-04-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/?page=3",
+      "retrieved_utc": "2026-10-07T01:48:49.020707+00:00",
+      "sha256": "5667fbadd02d027c8b751b96eca3f5d5c13638705ec57c65462cb33e97dc26e2",
+      "bytes": 112362,
+      "cache_path": "reference/cache/animehistory/episode-04-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-4/?page=4",
+      "retrieved_utc": "2026-10-07T01:48:50.298545+00:00",
+      "sha256": "3383928192969baeae6c300dde335202369ad0118bbaf34f1f36fecbca820f8d",
+      "bytes": 76871,
+      "cache_path": "reference/cache/animehistory/episode-04-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/",
+      "retrieved_utc": "2026-10-07T01:48:51.665260+00:00",
+      "sha256": "b4270bb3a316eab872e69dbdf40f273e31f89b436b87c51353ddbe4e4cc3bd17",
+      "bytes": 116707,
+      "cache_path": "reference/cache/animehistory/episode-05-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/?page=2",
+      "retrieved_utc": "2026-10-07T01:48:52.988727+00:00",
+      "sha256": "baaf82c75a7a02732b9ea0f570e5707ebd3ae0d4708e832a392f43249a7ec63e",
+      "bytes": 117073,
+      "cache_path": "reference/cache/animehistory/episode-05-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/?page=3",
+      "retrieved_utc": "2026-10-07T01:48:54.477151+00:00",
+      "sha256": "f48d681c07719583e6edf6669c11391cbf563f5545dfd3be20a7fecfc3cf2b6d",
+      "bytes": 117080,
+      "cache_path": "reference/cache/animehistory/episode-05-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-5/?page=4",
+      "retrieved_utc": "2026-10-07T01:48:55.639989+00:00",
+      "sha256": "549e1277f98952ea9038fc41f932e55c06155342ef7c8355f8fbec72330382b2",
+      "bytes": 79473,
+      "cache_path": "reference/cache/animehistory/episode-05-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/",
+      "retrieved_utc": "2026-10-07T01:48:56.975924+00:00",
+      "sha256": "7559bf55a87273a0a745f036ee610fde2c500a9b70286c9aadeb44a69a6cd7f2",
+      "bytes": 112007,
+      "cache_path": "reference/cache/animehistory/episode-06-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/?page=2",
+      "retrieved_utc": "2026-10-07T01:48:58.440462+00:00",
+      "sha256": "aad182657782b6ea14fdacd0030699e6be807d63e2881e134b495f48893679d0",
+      "bytes": 112373,
+      "cache_path": "reference/cache/animehistory/episode-06-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/?page=3",
+      "retrieved_utc": "2026-10-07T01:48:59.859401+00:00",
+      "sha256": "f3f284f0b866dc3f8001395b3849ee47c4546b0bbbb16d9bf9bf4b574dba32e9",
+      "bytes": 112380,
+      "cache_path": "reference/cache/animehistory/episode-06-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-6/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:01.109250+00:00",
+      "sha256": "d2df6a04c5a18d1868a409d768174aa9ec8679412d43c000c0f488b803167609",
+      "bytes": 76889,
+      "cache_path": "reference/cache/animehistory/episode-06-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/",
+      "retrieved_utc": "2026-10-07T01:49:02.548336+00:00",
+      "sha256": "350454f8c56c96fc608c3d3fc66b546ea0ed1cd59d53bc7787417368f2e4b2e0",
+      "bytes": 107417,
+      "cache_path": "reference/cache/animehistory/episode-07-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:03.873148+00:00",
+      "sha256": "888f991c5895566861fc753d10fd8f41e84ef5ae31666988e9b401813e3dd0e6",
+      "bytes": 107783,
+      "cache_path": "reference/cache/animehistory/episode-07-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:05.306650+00:00",
+      "sha256": "060fed0df683625ef58b54d169a72be94d5cc950c2fd7288fa8f9aba2e136240",
+      "bytes": 107790,
+      "cache_path": "reference/cache/animehistory/episode-07-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-7/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:06.511223+00:00",
+      "sha256": "dc94ad311f976488053d954a887bb46c62d2354d826e5a55057c3b7e6b24fcc5",
+      "bytes": 74369,
+      "cache_path": "reference/cache/animehistory/episode-07-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/",
+      "retrieved_utc": "2026-10-07T01:49:07.806646+00:00",
+      "sha256": "74ae0cbc8534276b00b295c43593df78744833e87b437cf4d0dbef00d35aa3f0",
+      "bytes": 108947,
+      "cache_path": "reference/cache/animehistory/episode-08-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:09.212960+00:00",
+      "sha256": "2a5050e82bde33ad4eb7159e7b9a12814e3ee9168263c9933f7fdc0a6a7f16d6",
+      "bytes": 109313,
+      "cache_path": "reference/cache/animehistory/episode-08-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:10.621857+00:00",
+      "sha256": "d91efe89f38903d5f39c0c821e5fb3636e7177618bed3c2eb2f86b8253a5e296",
+      "bytes": 109320,
+      "cache_path": "reference/cache/animehistory/episode-08-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-8/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:11.822299+00:00",
+      "sha256": "795374cb9d23ab15bb8ac49e22e2fc84bec907089425bcdd7feb265594c376fc",
+      "bytes": 75209,
+      "cache_path": "reference/cache/animehistory/episode-08-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/",
+      "retrieved_utc": "2026-10-07T01:49:13.221816+00:00",
+      "sha256": "c2b77ee80bec5dc416b2d31205fbb220d87f7d6232d9ab404556bba0f31c4dc1",
+      "bytes": 114666,
+      "cache_path": "reference/cache/animehistory/episode-09-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:14.537708+00:00",
+      "sha256": "6e925ed36e28f1a6ba8582a70e39e4c22f5ad7a55a926b1a092a98cf31049d72",
+      "bytes": 115032,
+      "cache_path": "reference/cache/animehistory/episode-09-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:15.939999+00:00",
+      "sha256": "59c0f3716b0b2efe64396989b9657137b91de7b8f53082a6391c2f6f66e3e852",
+      "bytes": 115039,
+      "cache_path": "reference/cache/animehistory/episode-09-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-9/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:17.185172+00:00",
+      "sha256": "0d9f1ab2a4d9593e93e20db4df9c1bb05913dcb4db3f79592da924a1c583723c",
+      "bytes": 78352,
+      "cache_path": "reference/cache/animehistory/episode-09-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/",
+      "retrieved_utc": "2026-10-07T01:49:18.577094+00:00",
+      "sha256": "1b6036fab285e1ce48bea177fea2380788fa6f24a777f87460f0d51056dc79b4",
+      "bytes": 115492,
+      "cache_path": "reference/cache/animehistory/episode-10-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:20.105828+00:00",
+      "sha256": "74a4ddf713a8bea7c4cd37fa93cc2bedc8bddb42b6bc47d24ac5eec0d81b02ef",
+      "bytes": 115861,
+      "cache_path": "reference/cache/animehistory/episode-10-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:21.506691+00:00",
+      "sha256": "07343495015f2f2c2a6c04b3e5260799687d7516653da65b4c5e9d2002bd5f44",
+      "bytes": 115868,
+      "cache_path": "reference/cache/animehistory/episode-10-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-10/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:22.686168+00:00",
+      "sha256": "bed3b909db1280e9526f1f111cb2804df08462bce951c8953e10b96c05b31cf8",
+      "bytes": 78810,
+      "cache_path": "reference/cache/animehistory/episode-10-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/",
+      "retrieved_utc": "2026-10-07T01:49:24.006669+00:00",
+      "sha256": "5f6d4abad800d4b716a61ea3ae0c141434349997246abf0b467bc7e387569d07",
+      "bytes": 110392,
+      "cache_path": "reference/cache/animehistory/episode-11-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:25.373461+00:00",
+      "sha256": "fcbf935cef0eb144d9a23e5edf42035b905ce02fcadb3a4a29d0eca7d1444ca0",
+      "bytes": 110761,
+      "cache_path": "reference/cache/animehistory/episode-11-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:26.698429+00:00",
+      "sha256": "d3c1d422c605f110e9247c3edc02f66853436c4115812050c9895e2ee0f66b74",
+      "bytes": 110768,
+      "cache_path": "reference/cache/animehistory/episode-11-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-11/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:27.887753+00:00",
+      "sha256": "634783e5b1e1af7809775207743aa38823ab845d905ccb6c9ffc0dbfe402fc54",
+      "bytes": 76010,
+      "cache_path": "reference/cache/animehistory/episode-11-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/",
+      "retrieved_utc": "2026-10-07T01:49:29.288286+00:00",
+      "sha256": "4d3f43d10b3cc75742d574d1388039f2af6e1d88e974fa4e660dcfb83d354080",
+      "bytes": 117532,
+      "cache_path": "reference/cache/animehistory/episode-12-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:30.673375+00:00",
+      "sha256": "982c0ceb7e8fff840e9a92b457052377cc9935ecf6a16a69ecc3123f132d77c3",
+      "bytes": 117901,
+      "cache_path": "reference/cache/animehistory/episode-12-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:31.991071+00:00",
+      "sha256": "a5812b6ad845b6497087dde5a161444abb1e50e2c715f40ef6efd77cb22145d1",
+      "bytes": 117908,
+      "cache_path": "reference/cache/animehistory/episode-12-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-12/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:33.284953+00:00",
+      "sha256": "c9a5b0a35b30fa550af810a12f8e5edfde7af2a62603cb78f1c795b2b2132aaa",
+      "bytes": 79930,
+      "cache_path": "reference/cache/animehistory/episode-12-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/",
+      "retrieved_utc": "2026-10-07T01:49:34.606694+00:00",
+      "sha256": "8eb7d90d14487556fa57d07f4f432bbf1b8824fd6519fe38342e31ae27023cf3",
+      "bytes": 117513,
+      "cache_path": "reference/cache/animehistory/episode-13-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:36.003772+00:00",
+      "sha256": "c32bce889c186613fa8a976b1e404060ebd9dbf751d4175542924b1ff8909ff8",
+      "bytes": 117882,
+      "cache_path": "reference/cache/animehistory/episode-13-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:37.336742+00:00",
+      "sha256": "37b154de9a4926605c422bce3caa25533b2198ea89c5e5468571afe12f01c611",
+      "bytes": 117889,
+      "cache_path": "reference/cache/animehistory/episode-13-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-13/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:38.606646+00:00",
+      "sha256": "431f8b8ce9cbecdc424a1b629a8757a3f4c609af406d16e0d99eca60008191f0",
+      "bytes": 79911,
+      "cache_path": "reference/cache/animehistory/episode-13-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/",
+      "retrieved_utc": "2026-10-07T01:49:39.940247+00:00",
+      "sha256": "47374e94153799523187ec349b5773bbecd374ed9ef2b956f2ec5e0249fa3fa6",
+      "bytes": 108843,
+      "cache_path": "reference/cache/animehistory/episode-14-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:41.385773+00:00",
+      "sha256": "e751a2a0b461bd9fdf6e422c1a4db7920763bc16b2f62cc2bfa932d376167a77",
+      "bytes": 109212,
+      "cache_path": "reference/cache/animehistory/episode-14-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:42.696636+00:00",
+      "sha256": "f2e49a3acdb6a3cda84dccb9c48e673f0882fe18ceb760dc86706825f6cbab58",
+      "bytes": 109219,
+      "cache_path": "reference/cache/animehistory/episode-14-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-14/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:43.869155+00:00",
+      "sha256": "729b67c2844fbb7a5423de7e5fa82ab282ea0ce2bf88716797de3e75e1dcd746",
+      "bytes": 75151,
+      "cache_path": "reference/cache/animehistory/episode-14-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/",
+      "retrieved_utc": "2026-10-07T01:49:45.354861+00:00",
+      "sha256": "c028c5f6f1fde8ce29565f21fe1825433f23e4156f3636c68235605316bf6355",
+      "bytes": 109375,
+      "cache_path": "reference/cache/animehistory/episode-15-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:46.718196+00:00",
+      "sha256": "9a4fe3f5806c5d2824eab7ef6d8813b09e02fa637a66faa6e66a9c9c8b3d2e80",
+      "bytes": 109744,
+      "cache_path": "reference/cache/animehistory/episode-15-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:48.040209+00:00",
+      "sha256": "cff70384eb11efe3151eebee561187cfbb968f6c0b0ae2ae210891f9da9c08b1",
+      "bytes": 109751,
+      "cache_path": "reference/cache/animehistory/episode-15-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-15/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:49.254758+00:00",
+      "sha256": "0a81e6183baf9ab19aa1f4e54b4d865869a7b6ac2afd9672338f9aadca6907f5",
+      "bytes": 75453,
+      "cache_path": "reference/cache/animehistory/episode-15-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/",
+      "retrieved_utc": "2026-10-07T01:49:50.581751+00:00",
+      "sha256": "5a97f95ab275d5ef82184b827edddd7a23209922cfda8bef9ae18876f0e08de8",
+      "bytes": 113965,
+      "cache_path": "reference/cache/animehistory/episode-16-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:51.888383+00:00",
+      "sha256": "8800de2985b6b702162a5e013c6c0c7878254694debf220397c27834386afde2",
+      "bytes": 114334,
+      "cache_path": "reference/cache/animehistory/episode-16-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:53.239257+00:00",
+      "sha256": "5dda24ea8fa6fe3b736552d3407398b8abac0c0d4fad63dbfbb9ef7a4d061ec8",
+      "bytes": 114341,
+      "cache_path": "reference/cache/animehistory/episode-16-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-16/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:54.436608+00:00",
+      "sha256": "d3c187f5011b9d0584b2dc25339a29dc0fef526e526439dda9e0ba0b3054941f",
+      "bytes": 77973,
+      "cache_path": "reference/cache/animehistory/episode-16-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/",
+      "retrieved_utc": "2026-10-07T01:49:55.740070+00:00",
+      "sha256": "6421bb07ab4f8dbed28868b80d7c94430220e4536fb451b0f29f1a6d555e2662",
+      "bytes": 113455,
+      "cache_path": "reference/cache/animehistory/episode-17-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/?page=2",
+      "retrieved_utc": "2026-10-07T01:49:57.027629+00:00",
+      "sha256": "fa59f945ae6c51ac781c07167331de41c6bb682771fa3b1942e9d9fda91bf44d",
+      "bytes": 113824,
+      "cache_path": "reference/cache/animehistory/episode-17-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/?page=3",
+      "retrieved_utc": "2026-10-07T01:49:58.380346+00:00",
+      "sha256": "c400ac34e196562ca43ee936b294ebe20ee57ab4c8c95018d88f74ffb80e85b3",
+      "bytes": 113831,
+      "cache_path": "reference/cache/animehistory/episode-17-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-17/?page=4",
+      "retrieved_utc": "2026-10-07T01:49:59.573266+00:00",
+      "sha256": "952cd1f00618d8b9d9563fc6573dedfba4e84439c3623f3f2979aa107d5eb77e",
+      "bytes": 77693,
+      "cache_path": "reference/cache/animehistory/episode-17-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/",
+      "retrieved_utc": "2026-10-07T01:50:00.910933+00:00",
+      "sha256": "ac57f92926ca9277a1346994a377536625fd80b5f75ca5280b1118f79eeb7ad0",
+      "bytes": 119065,
+      "cache_path": "reference/cache/animehistory/episode-18-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:02.377337+00:00",
+      "sha256": "850329d31de2b9ef60d901445ac267306bcb2488e0f1b9ec7a024d98ad0a5af5",
+      "bytes": 119434,
+      "cache_path": "reference/cache/animehistory/episode-18-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:03.718507+00:00",
+      "sha256": "3208e0c31dd865b2880b366a796a9cccba7c3f7b4704695dd14f7ec1e18510db",
+      "bytes": 119441,
+      "cache_path": "reference/cache/animehistory/episode-18-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-18/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:05.106767+00:00",
+      "sha256": "6d8590e46c2b41d2278d37df53c6ec2e6a8bb21f6ead5421e15520c318860e5c",
+      "bytes": 80773,
+      "cache_path": "reference/cache/animehistory/episode-18-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/",
+      "retrieved_utc": "2026-10-07T01:50:06.468351+00:00",
+      "sha256": "12ab5016dde0391dbea51dddb488f4928d42789e33016630f19564593b05d6d2",
+      "bytes": 110888,
+      "cache_path": "reference/cache/animehistory/episode-19-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:07.834974+00:00",
+      "sha256": "70e5f08c6358f4dc36bb6db0de1741c734a8c8b8e40893ad1544fd2e3208c4a0",
+      "bytes": 111257,
+      "cache_path": "reference/cache/animehistory/episode-19-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:09.160075+00:00",
+      "sha256": "6af105486ea5b31012b8205b865e2312e2d665d3eb424fc76b24f3d9ab2f0fe9",
+      "bytes": 111264,
+      "cache_path": "reference/cache/animehistory/episode-19-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-19/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:10.356908+00:00",
+      "sha256": "1329ac422d28f084ca500c3019a41ea435f9b3abe722b676c579bf5e0595fb7c",
+      "bytes": 76276,
+      "cache_path": "reference/cache/animehistory/episode-19-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/",
+      "retrieved_utc": "2026-10-07T01:50:11.753793+00:00",
+      "sha256": "9b4cdb6bcce2c0c8d2a864a3be718aa651ec66f2bb44c09bd6a6fa2c7d8e76a0",
+      "bytes": 116005,
+      "cache_path": "reference/cache/animehistory/episode-20-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:13.352787+00:00",
+      "sha256": "f2aecdda93f4ec202e38a2852a69f25c8fb38d9e2acf1be756bfd01e809f62f2",
+      "bytes": 116374,
+      "cache_path": "reference/cache/animehistory/episode-20-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:14.744962+00:00",
+      "sha256": "135d3eeb9c4f93276329b3cc44b3c07c5d889decee2d7c52f10471ff864ce11a",
+      "bytes": 116381,
+      "cache_path": "reference/cache/animehistory/episode-20-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-20/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:16.001770+00:00",
+      "sha256": "ad6e390dda5b4af835e17dccf23decaa015433ab3855e3315c3d706bec405a54",
+      "bytes": 79093,
+      "cache_path": "reference/cache/animehistory/episode-20-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/",
+      "retrieved_utc": "2026-10-07T01:50:17.359478+00:00",
+      "sha256": "08cf1b07f2be70ec0341724533b6c523a2c2040f73551ffde090023124770404",
+      "bytes": 110905,
+      "cache_path": "reference/cache/animehistory/episode-21-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:18.670539+00:00",
+      "sha256": "933c87638a167243707b9b740a6f2333568cb75ffb1cea6f4ded065a6da97b81",
+      "bytes": 111274,
+      "cache_path": "reference/cache/animehistory/episode-21-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:19.955728+00:00",
+      "sha256": "dcd55348a8b9eebd965d6c5a2bb06daedec029dbfc7f93153d908d459e9808c3",
+      "bytes": 111281,
+      "cache_path": "reference/cache/animehistory/episode-21-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-21/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:21.240141+00:00",
+      "sha256": "de96c294aee01339bcea39adb13cd05c7865e749eb6e2ba33df918de5eba3f06",
+      "bytes": 76293,
+      "cache_path": "reference/cache/animehistory/episode-21-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/",
+      "retrieved_utc": "2026-10-07T01:50:22.673443+00:00",
+      "sha256": "676f3cfabbb57602123c689e487be1880079bcaae093a3e233cd93d6297a5cc5",
+      "bytes": 109874,
+      "cache_path": "reference/cache/animehistory/episode-22-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:24.002890+00:00",
+      "sha256": "17784ce547298567b4893768dcaf685177af1a7956e8d3cac523c6bac292a8b2",
+      "bytes": 110243,
+      "cache_path": "reference/cache/animehistory/episode-22-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:25.426011+00:00",
+      "sha256": "4f02916d14dd2da79326c1f2cc2844bb035d6194d1a9df89c30ffe8c8cd88959",
+      "bytes": 110250,
+      "cache_path": "reference/cache/animehistory/episode-22-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-22/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:26.579742+00:00",
+      "sha256": "3d2f5d5f5e526e93c8aa2e8e1d391b7679b09bbad8292614abb4f3be8ff275d8",
+      "bytes": 75722,
+      "cache_path": "reference/cache/animehistory/episode-22-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/",
+      "retrieved_utc": "2026-10-07T01:50:27.888319+00:00",
+      "sha256": "bdd6269356e330f8a182f195f8c50c0b00a19b50f6e7b0273903ebdcd5e78283",
+      "bytes": 113954,
+      "cache_path": "reference/cache/animehistory/episode-23-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:29.377423+00:00",
+      "sha256": "ea223a724f6ff7c09c7ccd73a6f094f9da4f27d0e4b666a307d0af6be8016655",
+      "bytes": 114323,
+      "cache_path": "reference/cache/animehistory/episode-23-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:30.837699+00:00",
+      "sha256": "12d1cf1b13fba666fd9ed210bfdae02e1335e94a23a1346d49bc0b6b6ad5c59f",
+      "bytes": 114330,
+      "cache_path": "reference/cache/animehistory/episode-23-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-23/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:32.106784+00:00",
+      "sha256": "6c1a268277947e0dc6dfb7777cd9612e04fc7d65e8da6a7d4fa4f82868326dc3",
+      "bytes": 77962,
+      "cache_path": "reference/cache/animehistory/episode-23-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/",
+      "retrieved_utc": "2026-10-07T01:50:33.573492+00:00",
+      "sha256": "5494cb5d4e1b9e2114d17ebb0556977852fd984cd676cc029bd139d60c50ff46",
+      "bytes": 115479,
+      "cache_path": "reference/cache/animehistory/episode-24-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:35.042139+00:00",
+      "sha256": "60e90715bdc07973b0fe1dda776234fe52b80284f5afba32159ebb1f13b097ce",
+      "bytes": 115848,
+      "cache_path": "reference/cache/animehistory/episode-24-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:36.462526+00:00",
+      "sha256": "38017b978c609282474b308adf6416c85d9dc84d478565fe4deb52c07686bd10",
+      "bytes": 115855,
+      "cache_path": "reference/cache/animehistory/episode-24-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-24/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:37.619351+00:00",
+      "sha256": "0f6922e0673be92c53b21b62a32fb2ea74967ab6f662668ea7356fd3e8f7031e",
+      "bytes": 78797,
+      "cache_path": "reference/cache/animehistory/episode-24-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/",
+      "retrieved_utc": "2026-10-07T01:50:38.900046+00:00",
+      "sha256": "eea3141ada87930bc8457e365df372896faebd40bebd0ada0f9aba3b0e1d4243",
+      "bytes": 108849,
+      "cache_path": "reference/cache/animehistory/episode-25-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:40.302231+00:00",
+      "sha256": "2382075229e2c6b1f5fa8b5e2904f3129c143f24fb38fd5983c7555c69b3b687",
+      "bytes": 109218,
+      "cache_path": "reference/cache/animehistory/episode-25-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:41.633013+00:00",
+      "sha256": "cee9cd37c863c91e7e86c1a925757e1bc65460207e9f104bcc1da3cea94c0999",
+      "bytes": 109225,
+      "cache_path": "reference/cache/animehistory/episode-25-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-25/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:42.840090+00:00",
+      "sha256": "ab85ab37e7735de8245574861055ccc3f5e5af30998c260b318464da10554ac0",
+      "bytes": 75157,
+      "cache_path": "reference/cache/animehistory/episode-25-page-04.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/",
+      "retrieved_utc": "2026-10-07T01:50:44.275700+00:00",
+      "sha256": "445217f2adc9cc3fa84573bcb7a9b5385f4190660f0fb80e14685e93ede89e10",
+      "bytes": 108849,
+      "cache_path": "reference/cache/animehistory/episode-26-page-01.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/?page=2",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/?page=2",
+      "retrieved_utc": "2026-10-07T01:50:45.650071+00:00",
+      "sha256": "1dc480381f4474075d3a1b73842f8b07320277f67dd2c4610387dbb0609f3f5b",
+      "bytes": 109218,
+      "cache_path": "reference/cache/animehistory/episode-26-page-02.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/?page=3",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/?page=3",
+      "retrieved_utc": "2026-10-07T01:50:46.994429+00:00",
+      "sha256": "19112d0534a8e9802039066129ac448807896e1efdb9e191a7f991c8b2015ea0",
+      "bytes": 109225,
+      "cache_path": "reference/cache/animehistory/episode-26-page-03.html"
+    },
+    {
+      "requested_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/?page=4",
+      "final_url": "https://animehistory.org/gallery/screencaps/outlaw-star/episode-26/?page=4",
+      "retrieved_utc": "2026-10-07T01:50:48.189366+00:00",
+      "sha256": "9d527c6fbf419006d2c6a25389305aa299a54b6e25d294d697ddaf20ea60ca5f",
+      "bytes": 75157,
+      "cache_path": "reference/cache/animehistory/episode-26-page-04.html"
+    }
+  ]
+}

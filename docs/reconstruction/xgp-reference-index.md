@@ -1,8 +1,10 @@
 # Initial XGP reference index
 
-All 221 scans were screened using eight labeled contact sheets. 57 scans were marked XGP-relevant, with additional contextual/uncertain records in [the complete screening CSV](../../reference/indexes/settei-screening.csv). This is initial screening, not exhaustive annotation or proof that every small detail was identified.
+All 221 scans were screened using eight labeled contact sheets. The initial 57 XGP candidates have expanded to 66 XGP/support records after [image map reconciliation](../../reference/indexes/image-map-reconciliation.md), including preliminary and contextual equipment. [The complete screening CSV](../../reference/indexes/settei-screening.csv) records the distinctions. Screening is not exhaustive annotation or proof that every small detail was identified.
 
 The [source manifest](../../reference/indexes/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.
+
+Detailed review has begun: [interior/startup batch](../../reference/indexes/settei-interior-review.md) documents 16 representative sheets with Japanese callouts, working translations, printed/inset numbers, stamp dates, and open constraints. Reconciliation adds selected identity checks for 11 further XGP/support records; 39 have neither individual pass documented. Full comparison/transcription remains incomplete. None of all 221 scans has a byte-identical SHA-256 match in the manifest.
 
 ## Subject groups
 
@@ -14,7 +16,7 @@ The [source manifest](../../reference/indexes/source-manifest.json) records scan
 | 025, 037, 083, 101, 108 | Exterior lower views and deployed arm | Underside and arm deployment |
 | 026, 040, 080, 087, 128 | Cockpit controls and seats | Control layouts and station geometry |
 | 030, 046, 091, 097, 195, 196 | Engineering room configurations | Four circular units in 2x2 arrangement; service platform; exposed controls |
-| 032, 098 | Rear mechanical assembly details | Mechanical callouts require detailed translation |
+| 032, 098 | Landing mechanism and related rear detail | SET-032 title resolved; compare SET-098 and remaining motion callouts |
 | 033, 113, 114 | Maintenance robot variants | Manipulator and body states |
 | 039, 090 | Gilliam display animation | Face/display animation guidance |
 | 043 | Rest room preliminary drawing | First draft; tables stools cabinetry and hatch |
@@ -27,6 +29,13 @@ The [source manifest](../../reference/indexes/source-manifest.json) records scan
 | 115, 194 | D.S.C. cylindrical equipment | Purpose unresolved pending callout review |
 | 125, 192 | Assault Shooter | Telescoping passage; capsule and hatch; deployment |
 | 126 | Airlock interior | Paired hatches; pressure display sequence; sliding direction |
+| 038, 081 | Arm-mounted torch gun | Guide rails, folding grips; repeated drawing candidates |
+| 099 | Grappler-combat command device | Character-worn eyepiece/control reference; anime sequence pending |
+| 102, 103 | Sub-ether warp effects | Transition animation guidance; timings unverified |
+| 175 | Damaged arm/cutter first draft | Preliminary damage/tool concept; excluded from final-design evidence |
+| 176 | Manipulator, magnetic anchor, laser cutter | Repair/attachment equipment; operating behavior pending |
+| 177 | Jim's personal computer | Crew equipment context; ship placement unresolved |
+| 218 | Launch platform, episodes 6–8 | Exterior dock interface context; not Episode 4 hangar proof |
 
 ## Selected individual observations
 
@@ -41,6 +50,6 @@ The [source manifest](../../reference/indexes/source-manifest.json) records scan
 
 ## Exclusions and cautions
 
-img209 is labeled as an Eldorado cargo hold; img217 is a Starwind & Hawking business entrance door. Neither is XGP interior evidence despite similar panel/door language. img208 is a spaceport dock context drawing, not proof of the asteroid discovery hangar. Context candidates include collection contents/scale charts and dock sketches; see CSV.
+img129 is an Eldorado/Shangri-La interior concept; img130–133 are explicitly Eldorado passages/cabins. img209 is labeled as an Eldorado cargo hold; img217 is a Starwind & Hawking business entrance door. These are not XGP interior evidence. img208 is a spaceport dock context drawing, not proof of the asteroid discovery hangar. Context candidates include collection contents/scale charts and dock sketches; see CSV.
 
 Classification: final-looking relevant sheets are PRODUCTION_CANON candidates pending collection provenance/version review. Direct anime confirmation is still pending. Fine Japanese translation, measurements, and room placements remain next-phase work. No metric dimensions were derived from perspective drawings.

@@ -1,0 +1,393 @@
+{
+  "review_date": "2026-10-06",
+  "scope": "16 representative interior/startup sheets; selected callouts only",
+  "records": [
+    {
+      "n": 6,
+      "num": "⑥",
+      "title": "コクピット (1)",
+      "en": "Cockpit (1)",
+      "inset": "コックピット ①",
+      "stamp": "1997-05-19",
+      "obs": "Bridge cutaway with seat/console cluster, rear doorway, monitor surface, overhead Gilliam indicator, circular floor emergency hatch.",
+      "calls": [
+        [
+          "エマージェンシー・ハッチ",
+          "Emergency hatch",
+          "high"
+        ],
+        [
+          "アウトロースター号内の各セクションの床から天井までの高さは２メートル位です。",
+          "Floor-to-ceiling height in each section inside the Outlaw Star is approximately 2 metres.",
+          "high"
+        ]
+      ],
+      "questions": "Does the ~2 m convention apply to every depicted section/step level? Check animation and reconcile machinery/platform clearance before treating it as a uniform deck height."
+    },
+    {
+      "n": 22,
+      "num": "⑧",
+      "title": "コクピット (3) フィジカル ナビゲーション システム 作動時",
+      "en": "Cockpit (3): physical navigation system in operation",
+      "inset": "コックピット ②",
+      "stamp": "1997-05-19",
+      "obs": "Navigation control cylinder raised behind seat cluster; view pairs with closed-state bridge drawing.",
+      "calls": [
+        [
+          "メルフィナのコントロール・シリンダー 作動時",
+          "Melfina's control cylinder, in operation",
+          "high"
+        ]
+      ],
+      "questions": "Top view number (3) versus inset (2) differs. Preserve both; raised-state motion clearance remains unmeasured."
+    },
+    {
+      "n": 27,
+      "num": "⑨",
+      "title": "コクピット (4) フィジカル ナビゲーション システム 解説",
+      "en": "Cockpit (4): physical navigation system explanation",
+      "inset": "コックピット ④",
+      "stamp": "1997-05-20",
+      "obs": "Numbered diagrams show hatch opening, occupant platform descent, hatch closure, cylinder rise, and lateral shields opening. Character used for scale.",
+      "calls": [
+        [
+          "メルフィナが乗ると下がりはじめます。（エレベーターみたいなもの）",
+          "When Melfina gets on, it starts descending (like an elevator).",
+          "high"
+        ],
+        [
+          "シリンダー スライドUPする。",
+          "Cylinder slides up.",
+          "high"
+        ],
+        [
+          "シールドが左右にスライドして完了。",
+          "Shields slide left/right to complete the sequence.",
+          "high"
+        ],
+        [
+          "ガラスです",
+          "It is glass.",
+          "high"
+        ]
+      ],
+      "questions": "Fluid appearance, sealing interlocks, stroke, and timing require anime comparison. The sheet doesn't assign a reactor/power dependency."
+    },
+    {
+      "n": 28,
+      "num": "⑦",
+      "title": "コクピット (2)",
+      "en": "Cockpit (2)",
+      "inset": "コックピット ③",
+      "stamp": "1997-05-19",
+      "obs": "Reverse bridge view with cylinder closed/stowed at floor; maintenance robot rail and Gilliam indicator labeled.",
+      "calls": [
+        [
+          "メンテナンス・ロボのガイド・レール",
+          "Maintenance robot guide rail",
+          "high"
+        ],
+        [
+          "メルフィナのコントロール・シリンダー クローズ時",
+          "Melfina's control cylinder, closed state",
+          "high"
+        ]
+      ],
+      "questions": "Top (2) versus inset (3) mismatch. Rail route past doorway is not fully drawn."
+    },
+    {
+      "n": 26,
+      "num": "⑪",
+      "title": "コクピット (6) グラップラー・アーム・コントローラー",
+      "en": "Cockpit (6): grappler-arm controller",
+      "inset": "コックピット ⑥",
+      "stamp": "1997-05-31",
+      "obs": "Seat-side control sections articulate/open to expose machinery and control grips; animation notes permit motion to follow character action.",
+      "calls": [
+        [
+          "スリットは８本になります。",
+          "There are eight slots.",
+          "high"
+        ],
+        [
+          "グラップラー・アームのコントロール・グリップ",
+          "Grappler-arm control grip",
+          "high"
+        ],
+        [
+          "バスの自動ドア開閉システムと同じものです。",
+          "Same as a bus automatic-door opening/closing system.",
+          "high"
+        ]
+      ],
+      "questions": "Analogy describes linkage presentation, not a complete actuator specification. Don't impose a precise rigid-body mechanism without testing geometry."
+    },
+    {
+      "n": 40,
+      "num": "⑩",
+      "title": "コクピット (5) コンソール",
+      "en": "Cockpit (5): console",
+      "inset": "コックピット ⑤",
+      "stamp": "1997-05-27",
+      "obs": "Gene's station includes wheel-like controls, grips, analog-style gauges, switches and a separate system activation key drawing.",
+      "calls": [
+        [
+          "ジーンのブースです。",
+          "This is Gene's booth/station.",
+          "high"
+        ],
+        [
+          "システム起動キー",
+          "System activation key",
+          "high"
+        ],
+        [
+          "対比用のタバコ（約８.５cm）",
+          "Cigarette for scale comparison (approximately 8.5 cm).",
+          "high"
+        ]
+      ],
+      "questions": "8.5 cm applies to the comparison prop, not console dimensions. Station roles and key prerequisites require episode evidence."
+    },
+    {
+      "n": 30,
+      "num": "⑯",
+      "title": "機関室 (2) 作動時",
+      "en": "Engine room (2), in operation",
+      "inset": "機関室 ②",
+      "stamp": "1997-05-19",
+      "obs": "Four circular assemblies in 2x2 bank; lower-left control cylinder extends into service space with gauges/buttons. Central paired circular access/control features and piping visible.",
+      "calls": [
+        [
+          "機関コントロール・シリンダー",
+          "Engine control cylinder",
+          "high"
+        ]
+      ],
+      "questions": "This drawing names a control cylinder; it does not prove the whole exterior engine moves. Confirm actual moving parts in Episode 4."
+    },
+    {
+      "n": 46,
+      "num": "⑮",
+      "title": "機関室 (1)",
+      "en": "Engine room (1)",
+      "inset": "機関室 ①",
+      "stamp": "1997-05-19",
+      "obs": "Same bank with four circular faces retracted/closed, service platform, Gilliam indicator and overhead robot rail.",
+      "calls": [
+        [
+          "食堂へ",
+          "To dining room",
+          "high"
+        ],
+        [
+          "メンテナンス・ロボのガイド・レールあり。",
+          "Maintenance robot guide rail present.",
+          "high"
+        ]
+      ],
+      "questions": "Direction label gives a connection toward dining room, not corridor length or aft coordinates."
+    },
+    {
+      "n": 44,
+      "num": "⑫",
+      "title": "内部通路 (1) 食堂側から見た図",
+      "en": "Interior passage (1), viewed from dining-room side",
+      "inset": "メイン通路 ①",
+      "stamp": "1997-05-19",
+      "obs": "View toward cockpit doorway; round exterior-access floor hatch, wall service hatch/control box, overhead rail and air conditioner.",
+      "calls": [
+        [
+          "コックピットです。",
+          "This is the cockpit.",
+          "high"
+        ],
+        [
+          "食堂へ",
+          "To dining room",
+          "high"
+        ],
+        [
+          "外部へのアクセス・ハッチ",
+          "Access hatch to outside",
+          "high"
+        ],
+        [
+          "このラインが通路の中央になります。",
+          "This line is the centre of the passage.",
+          "high"
+        ]
+      ],
+      "questions": "Do not equate round exterior-access hatch with rectangular airlock without evidence. Wall service hatch destination remains unknown."
+    },
+    {
+      "n": 45,
+      "num": "⑬",
+      "title": "内部通路 (2) コクピット側から見た図",
+      "en": "Interior passage (2), viewed from cockpit side",
+      "inset": "メイン通路 ②",
+      "stamp": "1997-05-19",
+      "obs": "Complementary view toward dining; overhead access ladder to Assault Tube and same exterior floor-access hatch are labeled.",
+      "calls": [
+        [
+          "アサルト・チューブへのアクセス・ラダー",
+          "Access ladder to Assault Tube",
+          "high"
+        ],
+        [
+          "食堂です。",
+          "This is the dining room.",
+          "high"
+        ],
+        [
+          "コックピットへ",
+          "To cockpit",
+          "high"
+        ]
+      ],
+      "questions": "Assault Tube versus Assault Shooter terminology needs cross-reference. Complementary drawings are not sufficient for full port/starboard handedness."
+    },
+    {
+      "n": 47,
+      "num": "⑰",
+      "title": "エアロック",
+      "en": "Airlock",
+      "inset": "エア・ロックのハッチ",
+      "stamp": "1997-05-27",
+      "obs": "External hatch framing with character scale reference, position marker and recessed control panel/light; lower annotation marks hull-bottom line.",
+      "calls": [
+        [
+          "カバーは下へスライド",
+          "Cover slides downward",
+          "high"
+        ],
+        [
+          "エア・ロックのハッチは一度奥までこめてからスライド",
+          "Airlock hatch first moves inward, then slides.",
+          "medium"
+        ],
+        [
+          "船底のライン",
+          "Hull-bottom line",
+          "high"
+        ]
+      ],
+      "questions": "Handwritten hatch-motion wording is a provisional reading. Drawing has episode/cut references (#4 C-35 / C-165); these are production cuts, not playback timestamps."
+    },
+    {
+      "n": 88,
+      "num": "① (room variant)",
+      "title": "レストルーム ①",
+      "en": "Rest room/lounge (1)",
+      "inset": "レスト・ルーム ①",
+      "stamp": "1997-07-30",
+      "obs": "Cabinet/bench wall, monitor, Gilliam indicator, four floor panels and rectangular door; cockpit direction arrow.",
+      "calls": [
+        [
+          "床面の４枚のパネルを上下させて、机やベッドにします。",
+          "Raise/lower the four floor panels to make a desk/table or bed.",
+          "high"
+        ],
+        [
+          "コックピットへ",
+          "To cockpit",
+          "high"
+        ]
+      ],
+      "questions": "This is lounge/rest-space evidence, not proof of a toilet. Is it also the dining room? Needs episode matching."
+    },
+    {
+      "n": 89,
+      "num": "② (room variant)",
+      "title": "レストルーム ②",
+      "en": "Rest room/lounge (2)",
+      "inset": "レスト・ルーム ②",
+      "stamp": "1997-07-30",
+      "obs": "Companion view with four-panel furniture raised and cockpit direction marker.",
+      "calls": [
+        [
+          "この面は実際には見えません。",
+          "This face is not actually visible.",
+          "high"
+        ]
+      ],
+      "questions": "Visible cutaway face is explanatory artwork, not an exposed cabinet/wall to model literally. Full motion and furniture height unmeasured."
+    },
+    {
+      "n": 125,
+      "num": "No overall sequence number visible",
+      "title": "アサルト・シューター",
+      "en": "Assault Shooter",
+      "inset": "アサルト・シューター; handwritten alternate label unresolved",
+      "stamp": "1997-09-15",
+      "obs": "Telescoping dorsal tube and capsule/occupant silhouette; hatch opens and seat turns downward; drill-like nose and exhaust drawn.",
+      "calls": [
+        [
+          "ハッチひらく。",
+          "Hatch opens.",
+          "high"
+        ],
+        [
+          "シートが下に向く。",
+          "Seat faces/turns downward.",
+          "high"
+        ],
+        [
+          "クラッシュ・ブレードは三層構造です。（中央にカメラあります。）",
+          "Crash blade has a three-layer structure (camera in the centre).",
+          "high"
+        ]
+      ],
+      "questions": "Capsule pressure-related adjective and inset alternate wording need closer transcription. No fixed deployed length supplied; do not turn this into an ordinary corridor automatically."
+    },
+    {
+      "n": 126,
+      "num": "② (inset airlock variant)",
+      "title": "エアロック 内部",
+      "en": "Airlock interior",
+      "inset": "エア・ロック ②",
+      "stamp": "1997-11-17",
+      "obs": "Opposing hatch views, labelled space/bow directions, pressure-display animation stages, hatch slide arrow and grappler relationship note.",
+      "calls": [
+        [
+          "与圧ゲージ",
+          "Pressurization gauge",
+          "high"
+        ],
+        [
+          "与圧開始",
+          "Pressurization begins",
+          "high"
+        ],
+        [
+          "与圧完了。",
+          "Pressurization complete.",
+          "high"
+        ],
+        [
+          "エア・ロックのハッチの両わきには、グラップラー・アームがあります。",
+          "Grappler arms are on both sides of the airlock hatch.",
+          "high"
+        ]
+      ],
+      "questions": "Initial display shorthand and compositing guidance are not expanded. Hatch view has a slide arrow; final mechanical trajectory needs comparison to SET-047."
+    },
+    {
+      "n": 43,
+      "num": "No overall sequence number visible",
+      "title": "レスト・ルーム（大ラフ）",
+      "en": "Rest room (rough sketch)",
+      "inset": "No separate inset",
+      "stamp": "1997-04-22; 第一稿",
+      "obs": "Preliminary galley-like room with stools/table, cabinets and monitors. Different from final July lounge pair.",
+      "calls": [
+        [
+          "第一稿",
+          "First draft",
+          "high"
+        ]
+      ],
+      "questions": "Do not combine preliminary stool/table geometry with approved-looking July floor-panel mechanism. Remaining rough handwritten labels not transcribed."
+    }
+  ]
+}

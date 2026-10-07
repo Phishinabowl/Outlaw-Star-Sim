@@ -2,6 +2,10 @@
 
 inventory.py requires Python 3 and Pillow. It only reads source media; outputs are fixed under reference/. Run from any directory. No installation or episode decoding is performed.
 
+inspect_episode.py requires Python 3 and FFprobe on PATH. Run python tools/reference-extraction/inspect_episode.py 4 from the repository root to inspect Episode 4. It selects exactly one matching numbered source, reads container/stream/chapter metadata, and writes reference/indexes/episode-04-metadata.json. No media is decoded/extracted or modified. Metadata output for that episode is replaced when rerun; no episode content hash is computed.
+
+cache_timestamp_index.py uses Python's standard library to cache public AnimeHistory HTML under ignored reference/cache/animehistory/ and generate timestamp/caption/image-link CSVs under reference/indexes/animehistory/. It downloads no images. It validates cached hashes, pagination, IDs and declared counts; reruns reuse cached pages and replace the generated index. See reference/indexes/animehistory/README.md for alignment limits and usage.
+
 Planned video tools: FFprobe for JSON container/stream/duration metadata; FFmpeg for selected timestamped frames; Pillow for contact sheets; CSV/JSON for scene/evidence records. ImageMagick is optional, not required. Manual visual review precedes transcription/translation; no blind OCR.
 
 Future extractor requirements: reject destinations inside either source folder, refuse overwrites by default, use literal paths/argument arrays, document seek accuracy and actual timestamps, and extract only approved intervals. Broad episode extraction is not approved.

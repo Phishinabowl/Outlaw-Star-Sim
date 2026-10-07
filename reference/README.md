@@ -7,3 +7,7 @@ Run tools/reference-extraction/inventory.py using Python with Pillow. It invento
 Index fields: source ID, filename, visible sheet number, Japanese title, English translation, subject, category, verification status, reconstruction relevance, region/system, measurements/callouts, questions. Unknown fields remain blank; unreviewed is explicit.
 
 Episode extraction is deferred. Future frame records must identify the exact source filename, requested time, actual decoded presentation timestamp, stream, extraction command/version, and observation. Do not infer timestamps from another release.
+
+The user's [image map](image-map.md) is preserved as original review notes. [Image map reconciliation](indexes/image-map-reconciliation.md) records resolved sheet identities, corrections, and episode-verification leads; use the screening CSV for collection-wide status.
+
+[Local AnimeHistory timestamp indexes](indexes/animehistory/README.md) cover all 26 episodes. HTML and timestamp metadata are cached; screencap images remain online, and gallery times still need alignment to local media.

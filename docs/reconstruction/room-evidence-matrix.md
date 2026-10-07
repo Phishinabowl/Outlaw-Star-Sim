@@ -18,3 +18,19 @@ Scan references are collection IDs, not canonical room numbers. B candidate = PR
 | Asteroid discovery hangar/dock | BRIEF EP-04 | Dormant-start location supplied by brief; no matching scan conclusively identified | Unverified brief claim | Episode review; don't substitute generic dock SET-208 |
 
 No independent washroom/toilet, dedicated reactor room, or complete deck count has been established. Do not borrow Eldorado cabin/cargo sheets (e.g. SET-132/133/209) for XGP canon.
+
+## Detailed interior batch constraints
+
+See [the 16-sheet transcription/review](../../reference/indexes/settei-interior-review.md) for exact labels and uncertainty. These are B candidates with visible final-design markings, except the explicitly preliminary SET-043.
+
+| Relationship/constraint | Source | What is supported | What remains unresolved |
+|---|---|---|---|
+| Ship-section height convention | SET-006 | Approximately 2 m floor-to-ceiling stated in a note | Unusual machinery bays, platform levels, animation consistency, deck count |
+| Cockpit ↔ main passage ↔ dining directions | SET-044/045 | Complementary views label both destinations | Length, bends, handedness, exact room boundaries |
+| Engineering toward dining | SET-046 | Direction arrow labeled 食堂へ | Whether directly adjacent or through unseen connection |
+| Main passage → Assault Tube access | SET-045 | Access ladder explicitly labeled | Link to SET-125 Assault Shooter, vertical extent and stowage |
+| Navigation apparatus needs below-floor space | SET-027 | Occupant platform descends before cylinder rises | Stroke, cavity depth, hull fit and access |
+| Lounge → cockpit direction | SET-088/089 | Direction arrow; convertible floor furniture | Whether lounge and dining are the same space; corridor arrangement |
+| Airlock relative to grapplers | SET-126 | Arms on both sides of airlock hatch per note | Exact exterior opening and relation to passage floor hatch |
+
+Do not turn these directional labels into a measured full-ship layout. Keep the round passage exterior-access hatch, bridge emergency hatch, and airlock as distinct evidence records until correspondence is established.
