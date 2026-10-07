@@ -36,3 +36,5 @@ Subsequent direct HTML caching succeeded: [local Episode 4 CSV](animehistory/epi
 3. Bridge activation and Melfina apparatus: occupant descent, hatch/cylinder/shield stages, seating arrangement and indicator/rail position. Compare SET-006/022/027/028/040.
 
 Select specific verified times/short intervals for approval. Extraction must target ignored reference/extracted-frames/episode04/, preserve source dimensions, use no subtitle burn-in for geometry evidence, and record requested time plus actual decoded PTS. PNG can preserve decoded pixels but cannot undo the source's lossy H.264 compression. Video origin from a particular Blu-ray release remains unverified.
+
+The subsequent authorized [startup-scene review](episode-04-startup-review.md) records focused local frames and subtitle-supported leads. It establishes useful local PTS for apparatus deployment, engineering manipulation, key engagement and power graphics; web-gallery alignment remains unverified. The initial metadata-only inspection above remains a historical record of that earlier pass.

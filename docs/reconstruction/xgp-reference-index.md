@@ -4,7 +4,7 @@ All 221 scans were screened using eight labeled contact sheets. The initial 57 X
 
 The [source manifest](../../reference/indexes/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.
 
-Detailed review has begun: [interior/startup batch](../../reference/indexes/settei-interior-review.md) documents 16 representative sheets with Japanese callouts, working translations, printed/inset numbers, stamp dates, and open constraints. Reconciliation adds selected identity checks for 11 further XGP/support records; 39 have neither individual pass documented. Full comparison/transcription remains incomplete. None of all 221 scans has a byte-identical SHA-256 match in the manifest.
+Detailed review has begun: [interior/startup batch](../../reference/indexes/settei-interior-review.md) documents 16 representative sheets with Japanese callouts, working translations, printed/inset numbers, stamp dates, and open constraints. Reconciliation adds selected identity checks for 11 further XGP/support records, followed by eight variant comparisons; 31 have none of these focused passes documented. Full comparison/transcription remains incomplete. None of all 221 scans has a byte-identical SHA-256 match in the manifest.
 
 ## Subject groups
 
@@ -52,4 +52,6 @@ Detailed review has begun: [interior/startup batch](../../reference/indexes/sett
 
 img129 is an Eldorado/Shangri-La interior concept; img130–133 are explicitly Eldorado passages/cabins. img209 is labeled as an Eldorado cargo hold; img217 is a Starwind & Hawking business entrance door. These are not XGP interior evidence. img208 is a spaceport dock context drawing, not proof of the asteroid discovery hangar. Context candidates include collection contents/scale charts and dock sketches; see CSV.
 
-Classification: final-looking relevant sheets are PRODUCTION_CANON candidates pending collection provenance/version review. Direct anime confirmation is still pending. Fine Japanese translation, measurements, and room placements remain next-phase work. No metric dimensions were derived from perspective drawings.
+Classification: final-looking relevant sheets are PRODUCTION_CANON candidates pending collection provenance/version review. Selected anime corroboration is now documented below; collection-wide authentication remains open. Fine Japanese translation, measurements, and room placements remain ongoing work. No metric dimensions were derived from perspective drawings.
+
+Subsequent [variant comparison](../../reference/indexes/settei-variant-review.md) covers SET-082,085,086,087,091,097,195,196 against their representatives, without finding a substantive design revision. [Episode 4 local startup observations](../../reference/indexes/episode-04-startup-review.md) corroborate selected apparatus, engineering and key details. Current focused-pass counts are also recorded in the progress report.

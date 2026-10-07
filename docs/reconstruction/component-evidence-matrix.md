@@ -44,3 +44,9 @@ No source-backed engineering numbers have been invented. Every later D/E/F recor
 - SET-125 labels a three-layer crash blade with a central camera and illustrates capsule/seat/hatch operation; no deployed length or simulation behavior is chosen.
 
 Reactor terminology is still unresolved. These selected sheets do not settle the Newton/Münchhausen naming conflict.
+
+## Episode 4 corroboration
+
+[Local startup evidence](../../reference/indexes/episode-04-startup-review.md) adds A observations for navigation-cylinder rise (09:37–09:42 local), manual engineering front-cylinder extension (12:04–12:07), key engagement (13:53–13:54), and generator/main-sub power graphics (13:58–14:02). These ranges group discrete reviewed frames; exact shot boundaries and full trajectories remain open. Jim is the character associated with the engineering work; Gene engages the cockpit key. The visible engineering extension does not establish exterior-engine movement.
+
+Early bridge activation precedes the later main-engine ignition. The English subtitle track describes preparations, an engine seal/lockout and transfer to mains; those wording-dependent claims await audio verification. The startup display's MAIN/SUB branches do not establish battery count, capacity, physical circuit topology or a complete power state machine. Reactor names remain unresolved.

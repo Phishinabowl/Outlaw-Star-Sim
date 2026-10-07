@@ -25,3 +25,5 @@ Detailed interior review adds these concrete checks:
 - Are the July rest-room/lounge configurations SET-088/089 the same space as the dining room? Keep the April preliminary SET-043 geometry separate.
 - Do the bridge emergency hatch, passage exterior-access floor hatch, and airlock connect or represent separate openings?
 - What web-to-local timestamp offset applies to the Episode 4 gallery? Metadata has no chapters; defaults select English audio and signs/songs subtitles, so full-dialogue review must choose tracks explicitly.
+
+The [focused Episode 4 startup review](../../reference/indexes/episode-04-startup-review.md) now establishes local PTS for cylinder rise, manual engineering extension, key engagement and generator/main-sub power graphics. Complete trajectories, precise cut boundaries and original-language wording remain open. Determine the exact engine seal-release procedure and whether all four units receive the same treatment. Keep Jim's visibly shown engineering work distinct from Gene's cockpit-key operation, and distinguish other-ship dialogue in intercut scenes.

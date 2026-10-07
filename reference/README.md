@@ -11,3 +11,5 @@ Episode extraction is deferred. Future frame records must identify the exact sou
 The user's [image map](image-map.md) is preserved as original review notes. [Image map reconciliation](indexes/image-map-reconciliation.md) records resolved sheet identities, corrections, and episode-verification leads; use the screening CSV for collection-wide status.
 
 [Local AnimeHistory timestamp indexes](indexes/animehistory/README.md) cover all 26 episodes. HTML and timestamp metadata are cached; screencap images remain online, and gallery times still need alignment to local media.
+
+[Repeated-sheet comparison](indexes/settei-variant-review.md) covers the first eight bridge/engineering variants. [Episode 4 startup evidence](indexes/episode-04-startup-review.md) records focused local frame PTS and observations separately from English-subtitle leads. Frame PNGs/logs and the working subtitle copy remain ignored; textual manifests are trackable.
