@@ -16,6 +16,26 @@ UE family and Windows IDE/compiler direction are recorded in [Unreal strategy](.
 
 ## Existing findings and unresolved details
 
+### Passage floor hatch / storage recollection — pending, 2026-10-07
+
+The user recalls Jim or Melfina below a round passage floor hatch among food/gear, with a Gilliam
+robot assisting handling. Episode, timestamp and hatch identity are unknown. This is an unverified
+user lead; it does not replace SET-044/045's reviewed exterior-access label for H03 or prove that
+the recollected space is reached through H03 rather than another opening. An exterior-access route
+could involve an intermediate space; its complete topology remains unresolved.
+
+A focused keyword search of the already cached 26 English ASS tracks found a useful separate lead:
+EP-09 11:00.03–11:07.13 mentions a cargo hold and Jim occupying it. Adjacent 11:07.30–11:12.47
+mentions quarters and a maintenance rail. These are translated dialogue references, not visual proof
+of the floor hatch, room placement or robot-assisted handling. EP-06 15:27.67–15:30.73 mentions
+ship supplies, but the surrounding dialogue is outside-storage story context and supplies no hatch
+correspondence. Source/track provenance remains in [subtitle coverage](../../reference/indexes/performance-subtitle-coverage.json).
+
+Next targeted check: locate the recalled storage/handling scene and compare opening shape, ladder,
+wall/rail features and local route with H03 and other hatch records. Retain below-floor access volume
+as unresolved before fixing passage geometry. Storage gameplay or another playable room is not added
+to the slice by this lead; any proposed reserved destination remains explicit E until verified.
+
 [Baseline v1](baseline-v1/spatial-constraint-map.md) converts evidence into constraints for the [first slice](baseline-v1/vertical-slice-1.md). VS-D01–07 identify focused decisions before graybox/implementation approval: entry correspondence/route, room connections, motion fit, initial service power, occupant/all-four preparation adaptations, readiness behavior and tool/asset policy. Unresolved full-ship questions below do not automatically expand the slice.
 
 The [all-26-episode subtitle audit](../../reference/indexes/performance-subtitle-audit.md) now collects performance leads. Priority checks: EP-10's literal 1000-hour ETA versus subsequent race progress; EP-20's 150% grappler-response/one-minute mode; EP-11's 108% output and sensor-error/range measures; EP-24's acceleration-versus-output wording. Original Japanese, absolute power/thrust/mass, normal sensor ranges and full drive topology remain unresolved. EP-16's translated narration calls dragonite an ether-energy catalyst; do not adopt a burned-fuel consumption model from the supplied screenshot alone.

@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 |
-| Status | Planning baseline accepted; Phase 1.1 inventory/decisions complete; later execution not authorized |
+| Status | Phase 1.1 complete; Phase 1.2 discussion authorized/in progress; later execution not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Next checkpoint | Phase 1.2 decision packet; not started or authorized |
+| Current checkpoint | Phase 1.2 spatial/motion decision packet; discussion in progress |
 
 ## Purpose And Placement
 
@@ -34,7 +34,9 @@ The user has now requested this expanded formal planning document, superseding t
 The user confirmed this plan and its MCP additions for publication on 2026-10-07.
 The user separately authorized Phase 1.1 only; its read-only inventory and host/target decisions are
 complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Later checkboxes remain
-open. Stop here until Phase 1.2 is explicitly scoped; Phase 1's exit review still precedes project creation.
+open. The user subsequently authorized Phase 1.2 discussion, beginning with the opening experience
+and additional targeted references. Its [decision packet](phase-1-2-spatial-motion-decision-packet.md)
+is in progress; no later subphase starts automatically. Phase 1's exit review still precedes project creation.
 
 Do not begin Unreal initialization, modeling, installations or implementation because this file exists
 or because its documentation commit is confirmed. Once a concrete subphase is authorized, complete
@@ -229,6 +231,11 @@ MSVC 14.50 is installed; remaining vendor-guidance setup gaps are proposed chang
 
 **Prerequisite:** 1.1 scope/host inventory. **Deliverable:** VS-D01–03 E decision packet, not modeled geometry.
 
+**Working packet:** [spatial/motion decisions](phase-1-2-spatial-motion-decision-packet.md).
+Opening/case discussion is in progress; no layout, dimensions or scope amendment is accepted yet.
+The packet consolidates facility lighting, case/computer carrying, revival/skip, bootstrap and guided
+preparation direction. Those discussions do not close VS-D01–03 or prove machinery fit.
+
 - [ ] Propose selected entrance and entry→bridge→engineering route with S/H IDs and unresolved correspondence explicit.
 - [ ] Propose hull-relative room/cavity placement, occupant scale, extension sweeps and operator paths for M01–M09; record provisional dimensions/margins without claiming measured canon.
 - [ ] Reserve M10–M13 where affected by hull/route/support placement; identify remaining source checks that could invalidate the slice.
@@ -240,6 +247,10 @@ MSVC 14.50 is installed; remaining vendor-guidance setup gaps are proposed chang
 ### Phase 1.3: Player Actions, Mechanism Stages And Readiness Contract
 
 **Prerequisite:** 1.2 spatial proposal. **Deliverable:** VS-D04–06 decisions and a normal-path action/result table.
+
+Carry forward the [opening discussion's dependency/interaction questions](phase-1-2-spatial-motion-decision-packet.md):
+case activation/skip, computer boot and registration, initial service availability, preparation overlap
+and occupant transfer. This pointer preserves inputs without starting Phase 1.3 or changing its scope gate.
 
 - [ ] Specify initial available services and player initialization, preserving early bridge access before main ignition.
 - [ ] Decide placeholder occupant deployment, cap closure/interlocks across cuts, seat lift coordination and all-four cylinder preparation behavior as F where unshown.

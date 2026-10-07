@@ -46,7 +46,7 @@ The user subsequently requested the [expanded Vertical Slice 1 implementation pl
 7. Cockpit ignition, derived SHIP READY and repeatable fresh runs.
 8. Complete acceptance, measured budgets, standalone package and maintainer handoff.
 
-The user confirmed the plan and MCP additions for publication on 2026-10-07, then authorized Phase 1.1 only. Its read-only inventory and host/target decisions are complete: laptop, Win64, keyboard/mouse, no required desktop validation initially, and 1440p/120 FPS pending measurement. Phase 1.2 and later work remain unstarted and require their own scope. Project creation and installations/modeling retain their authorization boundaries; inventory or documentation approval is not build approval.
+The user confirmed the plan and MCP additions for publication on 2026-10-07, then authorized Phase 1.1. Its read-only inventory and host/target decisions are complete: laptop, Win64, keyboard/mouse, no required desktop validation initially, and 1440p/120 FPS pending measurement. The user subsequently authorized [Phase 1.2 discussion](implementation/phase-1-2-spatial-motion-decision-packet.md), starting with the opening and Melfina-case references. Spatial decisions remain open; later subphases remain unstarted and require their own scope. Project creation and installations/modeling retain their authorization boundaries; inventory or documentation approval is not build approval.
 
 [Blender/Unreal MCP evaluation](architecture/editor-automation.md) is now included in Phase 1.4
 tool/asset decisions, an optional Unreal pilot after 2.3 ordinary build/editor proof, and an optional

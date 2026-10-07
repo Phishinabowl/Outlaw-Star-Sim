@@ -57,6 +57,10 @@ Do not attribute the 09:58.81–10:02.41 translated ether-drive-active line to X
 
 ## Result and remaining checks
 
+[Opening/bootstrap extension](episode-04-opening-bootstrap-review.md), 2026-10-07, adds the user's
+03:40-onward reveal/boarding and portable-computer sequence, Gilliam's introduction and registration.
+It supplies early-stage references without changing the later observations or claiming audio verification.
+
 Local startup evidence now supports separate early activation, navigation-apparatus preparation, manual engineering intervention, key engagement, generator startup and main/sub power presentation. This is an observed scene order plus translated dialogue leads, not an implemented simulation state machine.
 
 Still open: complete occupant descent; fine hatch/shield trajectories; exact manual seal-release mechanism; wide engineering view with exposed control panel; whether/when all four cylinders are treated; Japanese/dub terminology; exact cut boundaries; web/local image alignment. Full-source frame sampling and a complete episode transcript are outside this increment.
