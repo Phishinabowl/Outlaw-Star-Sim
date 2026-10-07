@@ -1,5 +1,7 @@
 # Local reference workflow
 
+[All-episode subtitle performance audit](indexes/performance-subtitle-audit.md) searches the full English dialogue tracks of all 26 numbered episodes. The [metric CSV](indexes/performance-metrics.csv) contains curated context-reviewed leads, and [coverage JSON](indexes/performance-subtitle-coverage.json) records sources/stream selection/hashes. Full subtitle/candidate text remains local-only under ignored working storage.
+
 Original source folders are read-only and ignored. Generated frames, contact sheets, caches, and working images are ignored. Authored indexes and textual evidence are trackable.
 
 Run tools/reference-extraction/inventory.py using Python with Pillow. It inventories both source folders, hashes scans, records image dimensions, writes reference/indexes/source-manifest.json, and generates labeled settei contact sheets under reference/contact-sheets/. Episode videos are listed but not decoded or hashed by default.

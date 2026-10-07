@@ -1,5 +1,15 @@
 # Reference phase — first review increment
 
+Latest publication approval: the user confirmed the all-episode performance audit and Episode 11 numerical follow-up on 2026-10-07. This supersedes their review-time uncommitted status below. Full subtitle copies, candidate context and media remain local-only.
+
+## All-episode subtitle performance audit — 2026-10-07
+
+The user's request authorized full-dialogue text screening of all 26 numbered episodes. [Audit](../../reference/indexes/performance-subtitle-audit.md), [coverage/provenance](../../reference/indexes/performance-subtitle-coverage.json) and [47-record register](../../reference/indexes/performance-metrics.csv) record 9,343 ASS entries and 1,060 broad keyword/number leads, with useful passages reviewed in context. A deterministic helper copies subtitle packets only; full text/candidate context stay ignored. No audio/video decoding, new frames, source changes or model implementation occurred. Corrected the earlier EP-11 contact-sheet count from 18 to 17 against its seven frame batches. This increment and the earlier numerical follow-up remain uncommitted.
+
+## Episode 11 numerical follow-up — 2026-10-07
+
+[Performance records](../../reference/indexes/episode-11-subether-review.md#numerical-travel-performance-follow-up--2026-10-07) capture five timestamped English-subtitle observations and a separately classified D calculation: 600 million km in about 96 hours implies an approximately 1,736 km/s trip average under the reported damaged conditions. The 12 km/s navigation report and reactor-versus-propulsion percentages remain distinct. No new extraction, original-audio verification, simulation model or geometry change occurred. This addition follows the previously confirmed reference increment and is not covered by that publication confirmation.
+
 Publication status: the user confirmed the accumulated follow-up work on 2026-10-07. This authorizes publication of the authored records, indexes and episode-time notes; the earlier uncommitted-status statements below describe their review-time state. Source media, extracted derivatives and the supplied reactor/drive image remain local-only.
 
 ## Episode 11 sub-ether transition and recovery — 2026-10-07

@@ -1,5 +1,7 @@
 # Initial XGP reference index
 
+[Performance subtitle audit](../../reference/indexes/performance-subtitle-audit.md) covers all 26 numbered episodes, with a [curated metric CSV](../../reference/indexes/performance-metrics.csv) and per-episode source/stream/hash provenance. Use it for later propulsion, sensor and grappler model discussion; translated statements, derived calculations and unresolved attribution remain separate.
+
 All 221 scans were screened using eight labeled contact sheets. The initial 57 XGP candidates have expanded to 66 XGP/support records after [image map reconciliation](../../reference/indexes/image-map-reconciliation.md), including preliminary and contextual equipment. [The complete screening CSV](../../reference/indexes/settei-screening.csv) records the distinctions. Screening is not exhaustive annotation or proof that every small detail was identified.
 
 The [source manifest](../../reference/indexes/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.

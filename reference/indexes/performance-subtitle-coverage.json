@@ -1,0 +1,760 @@
+{
+  "tool_version": "ffmpeg version 9.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "search_pattern": "\\d|\\b(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|million|billion|half|quarter|double|twice|degrees?|tons?|tonnes?|parsecs?|mass|g|inertia\\w*|speed|velocity|accelerat\\w*|decelerat\\w*|kilomet\\w*|km|meters?|miles?|light.?years?|light.?speed|distance|range|seconds?|minutes?|hours?|days?|weeks?|months?|years?|percent|output|propulsion|thrust|reactors?|ether|fuel|energy|power|gravity|gravitational|orbit\\w*|trajectory|coordinates|capacity|temperature|pressure|oxygen|life support|stress|overload|critical|threshold|overheat\\w*|engines?|verniers?|standby|stand.by|cool\\w*|stabiliz\\w*|landing|launch|countdown|hyperspace)\\b",
+  "episodes": [
+    {
+      "episode_id": "EP-01",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+      "source_bytes": 862521026,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-01.ass",
+      "subtitle_sha256": "edbb42674cf707b51122ddd54b132d16ffde7fe981b54f24170c155810d0b0f3",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-01.ass"
+      ],
+      "dialogue_records": 293,
+      "keyword_candidates": 30,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-02",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+      "source_bytes": 862661051,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-02.ass",
+      "subtitle_sha256": "681eb5c7927e7c90c0fef83c699872f3a66db8afae55eef735a697909404f8bd",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-02.ass"
+      ],
+      "dialogue_records": 387,
+      "keyword_candidates": 50,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-03",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_03_-_Into_Burning_Space_[720p]_[3FF6E5E5].mkv",
+      "source_bytes": 916088236,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-03.ass",
+      "subtitle_sha256": "c0eb3460f3f9e8350831043d87406f12e9f5e14efec7b472d6e29a1a1cf50ea2",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_03_-_Into_Burning_Space_[720p]_[3FF6E5E5].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-03.ass"
+      ],
+      "dialogue_records": 372,
+      "keyword_candidates": 31,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-04",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_04_-_When_the_Hot_Ice_Melts_[720p]_[000FA756].mkv",
+      "source_bytes": 815458262,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-04.ass",
+      "subtitle_sha256": "560974c33b10f385fd8c30d006959a7e33f741e6fa8ab7237b4c24bb8b294d0b",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_04_-_When_the_Hot_Ice_Melts_[720p]_[000FA756].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-04.ass"
+      ],
+      "dialogue_records": 355,
+      "keyword_candidates": 60,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-05",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_05_-_The_Beast_Girl,_Ready_to_Pounce_[720p]_[CA71B58C].mkv",
+      "source_bytes": 778944264,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-05.ass",
+      "subtitle_sha256": "82155c3163a03b4cd70f788c00fc2eddcfad9404aff1126672f7415176659fb2",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_05_-_The_Beast_Girl,_Ready_to_Pounce_[720p]_[CA71B58C].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-05.ass"
+      ],
+      "dialogue_records": 379,
+      "keyword_candidates": 26,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-06",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_06_-_The_Beautiful_Assassin_[720p]_[D0273AD5].mkv",
+      "source_bytes": 800435942,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-06.ass",
+      "subtitle_sha256": "da2adc86d205e7c1b8d8693690a2378dadedf71bf5526bbb4d6ff5382ee0f641",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_06_-_The_Beautiful_Assassin_[720p]_[D0273AD5].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-06.ass"
+      ],
+      "dialogue_records": 365,
+      "keyword_candidates": 31,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-07",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_07_-_Creeping_Evil_[720p]_[DD00A8D8].mkv",
+      "source_bytes": 807002816,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-07.ass",
+      "subtitle_sha256": "bbabde4d258cc36ee543b0342df5a8cf43de143bfd51fe83a749dba475b3a931",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_07_-_Creeping_Evil_[720p]_[DD00A8D8].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-07.ass"
+      ],
+      "dialogue_records": 330,
+      "keyword_candidates": 66,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-08",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_08_-_Forced_Departure_[720p]_[88527637].mkv",
+      "source_bytes": 922739633,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-08.ass",
+      "subtitle_sha256": "f4213b818358da51c8a5e4d8cb261e5e657f347f5741fbb6d4db1bfb2fa32c6c",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_08_-_Forced_Departure_[720p]_[88527637].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-08.ass"
+      ],
+      "dialogue_records": 313,
+      "keyword_candidates": 41,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-09",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_09_-_A_Journey_of_Adventure...Huh_[720p]_[F55F0A01].mkv",
+      "source_bytes": 729021093,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-09.ass",
+      "subtitle_sha256": "b122cea04e3d4a651f093ad65c61c7c709c3167d8e38c56bc5d72b67bfdf35ee",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_09_-_A_Journey_of_Adventure...Huh_[720p]_[F55F0A01].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-09.ass"
+      ],
+      "dialogue_records": 355,
+      "keyword_candidates": 31,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-10",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_10_-_Gathering_for_the_Space_Race_[720p]_[65457277].mkv",
+      "source_bytes": 772799669,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-10.ass",
+      "subtitle_sha256": "44d035d07a00b64729ba0ef11d6a59bd28130dd829ffb167031236fb7fd72bb5",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_10_-_Gathering_for_the_Space_Race_[720p]_[65457277].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-10.ass"
+      ],
+      "dialogue_records": 397,
+      "keyword_candidates": 66,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-11",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_11_-_Adrift_in_Subspace_[720p]_[4F32AB6A].mkv",
+      "source_bytes": 941602861,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-11.ass",
+      "subtitle_sha256": "05fc795b10a9eba4c3508114f98c2fe15f4f74fb0c417d39fb811efb6bd2bdd1",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_11_-_Adrift_in_Subspace_[720p]_[4F32AB6A].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-11.ass"
+      ],
+      "dialogue_records": 390,
+      "keyword_candidates": 112,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-12",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_12_-_Mortal_Combat_with_the_El_Dorado_[720p]_[724C7252].mkv",
+      "source_bytes": 838322448,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-12.ass",
+      "subtitle_sha256": "02ca3f750d4a1f6b5d3ac820beeb98e9e0a0966088ab9c8ee26205889eda7f3c",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_12_-_Mortal_Combat_with_the_El_Dorado_[720p]_[724C7252].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-12.ass"
+      ],
+      "dialogue_records": 358,
+      "keyword_candidates": 29,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-13",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_13_-_Advance_Guard_from_Another_World_[720p]_[2B386CB6].mkv",
+      "source_bytes": 850089106,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-13.ass",
+      "subtitle_sha256": "85c64cd00367ebd8179dbab0d9bdba2f1c95d65403704d2506703d972f462716",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_13_-_Advance_Guard_from_Another_World_[720p]_[2B386CB6].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-13.ass"
+      ],
+      "dialogue_records": 419,
+      "keyword_candidates": 33,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-14",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_14_-_Final_Countdown_[720p]_[D088AC17].mkv",
+      "source_bytes": 743963707,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-14.ass",
+      "subtitle_sha256": "552b3e9f77ad518cd0e244365d0f018c32dcdea20b770c42afdb9760d89fbe03",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_14_-_Final_Countdown_[720p]_[D088AC17].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-14.ass"
+      ],
+      "dialogue_records": 373,
+      "keyword_candidates": 46,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-15",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_15_-_The_Seven_Emerge_[720p]_[22CD0C16].mkv",
+      "source_bytes": 700381558,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-15.ass",
+      "subtitle_sha256": "e7c93a3a3befb9ae480ca998844631f0504315e3d8eafa7795e8a80370e34ed8",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_15_-_The_Seven_Emerge_[720p]_[22CD0C16].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-15.ass"
+      ],
+      "dialogue_records": 331,
+      "keyword_candidates": 26,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-16",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_16_-_Demon_of_the_Water_Planet_[720p]_[0CD3E740].mkv",
+      "source_bytes": 726980999,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-16.ass",
+      "subtitle_sha256": "6414a2081ae154fd69c7efdf9f0ce3b07ad50e5433bf822caa4b764b76ccf79a",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_16_-_Demon_of_the_Water_Planet_[720p]_[0CD3E740].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-16.ass"
+      ],
+      "dialogue_records": 347,
+      "keyword_candidates": 48,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-17",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_17_-_Between_Life_and_Machine_[720p]_[6354BD73].mkv",
+      "source_bytes": 780176588,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-17.ass",
+      "subtitle_sha256": "2feda4e42d0fa763e037e698c3730317a1cd41bf473e9b4c3a4554fd82cb95b4",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_17_-_Between_Life_and_Machine_[720p]_[6354BD73].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-17.ass"
+      ],
+      "dialogue_records": 365,
+      "keyword_candidates": 28,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-18",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_18_-_The_Strongest_Woman_in_the_Universe_[720p]_[79BA1595].mkv",
+      "source_bytes": 742166335,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-18.ass",
+      "subtitle_sha256": "264a4b70182c1c8650a346a97745ab1e8b8091343fc8a66c0b3f64fa009f158f",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_18_-_The_Strongest_Woman_in_the_Universe_[720p]_[79BA1595].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-18.ass"
+      ],
+      "dialogue_records": 373,
+      "keyword_candidates": 32,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-19",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_19_-_Law_and_Lawlessness_[720p]_[9F55FBCC].mkv",
+      "source_bytes": 770537214,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-19.ass",
+      "subtitle_sha256": "124bb0678a5a73d7824950b614d879081e90d7e7fa239f2cc446c82f6ca41a41",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_19_-_Law_and_Lawlessness_[720p]_[9F55FBCC].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-19.ass"
+      ],
+      "dialogue_records": 421,
+      "keyword_candidates": 45,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-20",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_20_-_Cats_and_Girls_and_Space_Ships_[720p]_[FBB318F9].mkv",
+      "source_bytes": 790265029,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-20.ass",
+      "subtitle_sha256": "c93e07ba912f07ddda3939a1ce59066b2c3f18a1170149cea0881185314aede1",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_20_-_Cats_and_Girls_and_Space_Ships_[720p]_[FBB318F9].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-20.ass"
+      ],
+      "dialogue_records": 382,
+      "keyword_candidates": 31,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-21",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_21_-_Grave_of_the_Dragon_[720p]_[185F5519].mkv",
+      "source_bytes": 710397052,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-21.ass",
+      "subtitle_sha256": "17e254c183d7f7bbbda155ad68d80376858bce1f9932a7532c3d2a5ba7c0cf64",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_21_-_Grave_of_the_Dragon_[720p]_[185F5519].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-21.ass"
+      ],
+      "dialogue_records": 347,
+      "keyword_candidates": 27,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-22",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_22_-_Gravity_Jailbreak_[720p]_[7472FBF1].mkv",
+      "source_bytes": 795737391,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-22.ass",
+      "subtitle_sha256": "a859dc6df42cea05ca50bbd11e246d645b7630c5e860155fb819625c95629165",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_22_-_Gravity_Jailbreak_[720p]_[7472FBF1].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-22.ass"
+      ],
+      "dialogue_records": 353,
+      "keyword_candidates": 57,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-23",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_23_-_Hot_Springs_Planet_Tenrei_[720p]_[A4F9FFD9].mkv",
+      "source_bytes": 874333439,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-23.ass",
+      "subtitle_sha256": "9f2a530ca0747b04496fcd04daaa4b06f3f6e572d57769d7db7338ff3a31d7b4",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_23_-_Hot_Springs_Planet_Tenrei_[720p]_[A4F9FFD9].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-23.ass"
+      ],
+      "dialogue_records": 352,
+      "keyword_candidates": 47,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-24",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_24_-_Cutting_the_Galactic_Leyline_[720p]_[86A755BF].mkv",
+      "source_bytes": 910991047,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-24.ass",
+      "subtitle_sha256": "3e115cc64cbb2850f435f85ba9e6157b348dbd819bd1ff88cdcef17bccf0096c",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_24_-_Cutting_the_Galactic_Leyline_[720p]_[86A755BF].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-24.ass"
+      ],
+      "dialogue_records": 364,
+      "keyword_candidates": 21,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-25",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_25_-_Maze_of_Despair_[720p]_[DF173865].mkv",
+      "source_bytes": 743921879,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-25.ass",
+      "subtitle_sha256": "d49dae46f49017602235e0022bda8cd8ad700facae74279db90db351420d97d0",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_25_-_Maze_of_Despair_[720p]_[DF173865].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-25.ass"
+      ],
+      "dialogue_records": 323,
+      "keyword_candidates": 20,
+      "review_status": "SEARCH_LEADS_ONLY"
+    },
+    {
+      "episode_id": "EP-26",
+      "source": "_source_episodes/[CBM]_Outlaw_Star_-_26_-_Return_to_Space_[720p]_[65C92E17].mkv",
+      "source_bytes": 918701459,
+      "subtitle_stream": 4,
+      "subtitle_codec": "ass",
+      "subtitle_tags": {
+        "language": "eng",
+        "title": "English Subtitles"
+      },
+      "local_subtitle": "reference/working/performance-subtitles/episode-26.ass",
+      "subtitle_sha256": "955b42519a91f493b72d96f9a852526c0bd605797f6f487b30ef31c4f97b54c3",
+      "command": [
+        "ffmpeg.EXE",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_26_-_Return_to_Space_[720p]_[65C92E17].mkv",
+        "-map",
+        "0:4",
+        "-c:s",
+        "copy",
+        "reference/working/performance-subtitles/episode-26.ass"
+      ],
+      "dialogue_records": 299,
+      "keyword_candidates": 26,
+      "review_status": "SEARCH_LEADS_ONLY"
+    }
+  ]
+}

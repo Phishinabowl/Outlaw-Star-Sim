@@ -1,5 +1,7 @@
 # Reference tools
 
+scan_performance_subtitles.py implements the user's approved all-26-episode subtitle-text screening. Run `python tools/reference-extraction/scan_performance_subtitles.py` from the repository root with FFmpeg/FFprobe on PATH. It selects the unique English ASS track excluding signs/songs by title, copies subtitle packets without decoding audio/video, and writes full subtitle/candidate context under ignored reference/working/performance-subtitles/. A trackable coverage JSON records filenames, source sizes, track tags, copied-text hashes, commands/version and scan counts. Existing outputs cause a refusal rather than overwrite. The broad keyword/number pattern produces leads only; manually authored review/CSV supplies subject attribution, interpretation and limits. It does not authorize frames, original-language transcription or a simulation model.
+
 inventory.py requires Python 3 and Pillow. It only reads source media; outputs are fixed under reference/. Run from any directory. No installation or episode decoding is performed.
 
 inspect_episode.py requires Python 3 and FFprobe on PATH. Run python tools/reference-extraction/inspect_episode.py 4 from the repository root to inspect Episode 4. It selects exactly one matching numbered source, reads container/stream/chapter metadata, and writes reference/indexes/episode-04-metadata.json. No media is decoded/extracted or modified. Metadata output for that episode is replaced when rerun; no episode content hash is computed.

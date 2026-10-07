@@ -2,12 +2,15 @@
 
 B candidate means presumed production evidence pending provenance/version review. BRIEF claims remain unverified; proposed simulation requirements have no canon status until separately evidenced.
 
+The [all-episode subtitle performance audit](../../reference/indexes/performance-subtitle-audit.md) and [curated metric register](../../reference/indexes/performance-metrics.csv) supply 47 timestamped translated records, separating XGP operating points, environments, race routes, training and other ships. They add 108% short-event output, adverse-condition sensor figures and a 150% arm-response/one-minute mode limit without selecting a simulation model. Original-language/visual verification and percentage baselines remain open.
+
 | System/assembly | Sources | Initial evidence or requirement | Status/questions |
 |---|---|---|---|
 | Hull and overall envelope | SET-005,023,025,037,078,083,084,101,108; EXT-004 | Multiple exterior views; official dimensions 72×21×16 m | B candidates for shape; OFFICIAL_SUPPLEMENTAL dimensions verified at [Sunrise World](https://www.sunrise-world.net/titles/pickup_094.php) |
 | Four main engine/service assemblies | SET-030,046,091,097,195,196; EP-04/08 local review | 2×2 layout; all four banded/closed initially and later extended; visible local controls | A corroboration plus B candidates; individual manual operation of all four and exterior mapping remain open |
 | Landing/rear mechanical assembly | SET-032,098 | SET-032 identifies landing mechanism; rear tip/support motion drawings | B candidate; compare SET-098 and remaining callouts; propulsion relationship unresolved |
 | Sub-ether drive | SET-048,094,102,103; local EP-11 | Aft screw/rings/field during transition; disrupted entry after impact; translated activation/abort | A visuals and translated evidence; undamaged complete jump, fin mechanism and numerical model unresolved |
+| Ether-drive travel performance | EP-11 English ASS; [numerical follow-up](../../reference/indexes/episode-11-subether-review.md#numerical-travel-performance-follow-up--2026-10-07) | 600 million km, about 96 h at stated 50% propulsion; separate 12 km/s local-navigation report | Translated figures checked; derived ~1,736 km/s trip average is D, not a speed cap; watts, acceleration and power curve unknown |
 | Reactor/main power source | EP-07 primary display; English ASS EP-07/08/11; EXT-007/008 | Newton display; four indexed Newton units in translated damage report; Münchhausen output rise/runaway during sub-ether | Naming/function distinction strengthened; original speech, count/location and complete topology unresolved |
 | Emergency/battery/auxiliary power | Local EP-11; BRIEF storage concept | Translated auxiliary state after engine cutoff; responsive apparatus, key restart and lighting/view recovery | Visual recovery and translated auxiliary state supported; battery hardware/capacity and storage progression unresolved |
 | Cooling | BRIEF design requirement | Interconnected simulation requirement | No hardware layout or numerical model established |
