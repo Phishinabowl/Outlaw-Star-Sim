@@ -2,6 +2,8 @@
 
 Planning baseline prepared 2026-10-07 after the user approved this documentation increment, and confirmed for publication with the README/roadmap/tooling updates on the same date. This document is the entry point for four linked deliverables: this map, [motion/clearance envelopes](motion-clearance-envelopes.md), [operational states](operational-state-baseline.md) and [Vertical Slice 1](vertical-slice-1.md). It authorizes no grayboxing, Unreal initialization, modeling or gameplay implementation. The formal implementation-planning gate remains deferred.
 
+Planning continuation: the user subsequently requested the [expanded implementation-plan draft](../../implementation/vertical-slice-1-implementation-plan.md). That supersedes the publication-time planning-gate deferral above; these four baseline documents remain the authoritative constraints/scope, unchanged by the draft's execution scheduling. No implementation approval follows.
+
 ## Evidence and status vocabulary
 
 Apply the [canon policy](../../canon-policy.md). **Confirmed** means the specific observation/label was verified in the cited material; a confirmed design label is still **B candidate** until collection provenance is authenticated. **Strongly inferred** is D, never canon. **Unknown** is unresolved and cannot supply a fixed placement. Any connecting geometry adopted for a future blockout is E; interaction adaptations are F. Status applies to each relationship, not automatically to an entire room or system.

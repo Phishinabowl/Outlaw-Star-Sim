@@ -12,7 +12,7 @@ The reference foundation is substantially complete for initial-slice implementat
 | Terminology/topology | Original Japanese, Newton/Münchhausen assignments, actual initial-service source, circuits | Before making naming/power dependencies authoritative; no invented topology as canon. |
 | Performance | Disputed ETA, percentage meanings, special modes, normal undamaged transition | Before numerical flight/power/combat models; not a prerequisite for Slice 1's non-flight endpoint. |
 
-UE family and Windows IDE/compiler direction are now recorded in [Unreal strategy](../architecture/unreal-strategy.md). Target MSVC 14.50 installation and project build validation remain future tooling work. The formal implementation-planning gate is deferred; this research track does not introduce one.
+UE family and Windows IDE/compiler direction are recorded in [Unreal strategy](../architecture/unreal-strategy.md). Target MSVC 14.50 installation and build validation remain future work. The newly requested [implementation-plan draft](../implementation/vertical-slice-1-implementation-plan.md) maps slice-critical unknowns to Phase 1 decisions and later fit/runtime checks; this research track does not itself authorize executing those phases.
 
 ## Existing findings and unresolved details
 

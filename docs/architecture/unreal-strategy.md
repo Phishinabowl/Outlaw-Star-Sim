@@ -30,8 +30,13 @@ The immediate installation discussion is the side-by-side preferred compiler and
 
 ## Implementation direction
 
+[Editor automation](editor-automation.md) records optional Blender/Unreal MCP evaluation, requirements
+and fallbacks. Epic's experimental server/tool-provider descriptors are present in installed UE 5.8.3;
+none has been enabled or tested. Evaluate after ordinary project proof, keeping packaged slice execution
+independent of MCP. Blender server selection and local compatibility remain open.
+
 C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git is established, and a policy for later project-owned binary assets/Git LFS still needs discussion.
 
 [Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. Project/module layout, serialization, networking, renderer choices and integrations are undecided. Reference-derived percentages do not select physics constants.
 
-No Unreal project is created. The formal implementation-planning gate is deferred at the user's request; toolchain documentation does not authorize project creation, compilation, modeling or gameplay work. A later approved implementation increment will establish the actual build/editor validation and may justify revisiting this baseline.
+No Unreal project is created. The user has now requested the [phased slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md); Phase 1 proposes concrete planning decisions and Phase 2 owns later tool/project proof. This supersedes the earlier planning-gate deferral, not the implementation/installation approval boundary. Later authorized build/editor validation may justify revisiting this toolchain baseline.

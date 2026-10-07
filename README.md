@@ -4,7 +4,7 @@ An evidence-driven reconstruction of the XGP-15AII and a planned interactive shi
 
 **The reference/research foundation is substantially complete for implementation purposes within the first slice.** This means enough evidence exists to define a constrained initial build; it does not mean every room, mechanism, translation or performance figure is settled. Unresolved research continues as an [ongoing parallel track](docs/reconstruction/open-questions.md).
 
-Current status: **Baseline v1 documentation / pre-implementation**. No Unreal project, modeled ship or playable build exists yet. The formal implementation-planning gate is **deferred at the user's request**. Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
+Current status: **Baseline v1 and phased implementation plan accepted; execution not started**. No Unreal project, modeled ship or playable build exists yet. The user confirmed the [expanded slice implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) and MCP planning additions for publication on 2026-10-07. This supersedes the earlier planning-gate deferral and approves documentation only. Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
 
 ## First experience — Awakening the Outlaw Star
 
@@ -61,13 +61,14 @@ The [canon policy](docs/canon-policy.md) separates anime observations (A), authe
 
 Keep hatch/room correspondence, apparatus clearances, remaining mechanical families, Japanese wording, power topology and performance interpretation in [open questions](docs/reconstruction/open-questions.md). Research should be targeted when it could invalidate a chosen slice connection, motion or interaction; broader full-ship archaeology need not hold the entire project indefinitely. Any provisional solution remains explicitly E/F and reviewable.
 
-The formal planning gate and detailed implementation plan are deferred. The existing [slice decisions](docs/reconstruction/baseline-v1/vertical-slice-1.md#decisions-before-the-next-phase) remain recorded for later discussion; this status update does not resolve them or authorize building.
+The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns the proposed execution sequence, prerequisites, validation, recovery and exit reviews. Phase 1 is the formal decision/planning gate; it resolves the existing [slice decisions](docs/reconstruction/baseline-v1/vertical-slice-1.md#decisions-before-the-next-phase) before project creation. No new execution checkpoint is complete or authorized by drafting the plan.
 
 ## Start here
 
 - [Vision](docs/vision.md) and [design pillars](docs/design-pillars.md)
 - [Canon policy](docs/canon-policy.md)
 - [Roadmap](docs/roadmap.md)
+- [Vertical Slice 1 implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md)
 - [External control and automation requirements](docs/architecture/external-control-automation.md)
 - [Reference index](docs/reconstruction/xgp-reference-index.md)
 - [Reconstruction / Implementation Baseline v1](docs/reconstruction/baseline-v1/spatial-constraint-map.md) and [Awakening the Outlaw Star slice](docs/reconstruction/baseline-v1/vertical-slice-1.md)

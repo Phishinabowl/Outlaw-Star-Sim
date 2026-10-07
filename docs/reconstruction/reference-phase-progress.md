@@ -1,5 +1,24 @@
 # Reference phase — first review increment
 
+Latest publication approval: the user confirmed the expanded implementation plan, navigation updates
+and editor-automation requirements on 2026-10-07. The two uncommitted-status entries immediately below
+describe their review-time state. This accepts the planning baseline for publication; future execution
+checkboxes remain open, with no installation, project creation, modeling or gameplay approval implied.
+
+## Editor automation planning addition — 2026-10-07, uncommitted
+
+The user's supplied Blender/Unreal MCP discussion is captured in [editor automation](../architecture/editor-automation.md)
+and the draft slice plan. Primary-source checks identify Epic's experimental server, Blender Lab's
+version/setup and code-execution warning, and two community candidates with unproven local compatibility.
+Read-only engine inspection found Epic plugin descriptors; no enablement/connection proof is claimed.
+Phase 1.4 proposes adoption contracts; existing 2.3/3.1 subphases now contain optional bounded pilots,
+with package/handoff checks and fallbacks. No installation, server connection, editor launch, modeling,
+gameplay implementation or source extraction occurred. Existing baseline constraints and slice scope hold.
+
+## Expanded slice implementation plan — 2026-10-07, uncommitted
+
+The user requested a documentation-only phased plan using approved Baseline v1 and supplied project-plan format references. [Draft](../implementation/vertical-slice-1-implementation-plan.md) defines eight delivery phases, decimal review units, dependencies, decision timing, validation traceability, recovery and deferred work. README/roadmap/tooling navigation now reflect the new request, superseding the prior formal-gate deferral without granting execution approval. No installation, project initialization, model, code, runtime test or source extraction occurred. Only existing accepted foundations are checked; future execution/gates remain open.
+
 Latest publication approval: the user confirmed Baseline v1 and the research-closeout, README, roadmap and tooling updates on 2026-10-07. The following uncommitted-status notes describe their review-time state. The formal planning gate remains deferred; publication does not authorize installations, project creation or implementation.
 
 ## Research closeout for Slice 1 and tooling direction — 2026-10-07, uncommitted

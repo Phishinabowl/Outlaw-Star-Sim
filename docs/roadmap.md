@@ -33,11 +33,26 @@ Baseline v1 consolidates the accepted direction into a reviewable planning contr
 
 UE **5.8** is intended unless later testing supplies a reason to revisit it; **5.8.3** is installed. The user selected **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. Only MSVC 14.51 was found in the inspected VS instance; additional installation remains deferred for discussion. [Unreal strategy](architecture/unreal-strategy.md) records versions, local evidence and compatibility limits as the authoritative tooling decision.
 
-## Formal implementation-planning gate — deferred
+## Phased implementation plan — accepted planning baseline
 
-The user explicitly asked to hold off on introducing the formal planning gate. No new gate artifact, detailed implementation plan, milestone checklist or build approval is created by this update. Existing VS-D01–07 in the [slice contract](reconstruction/baseline-v1/vertical-slice-1.md) remain unresolved decisions for later discussion, not completed prerequisites.
+The user subsequently requested the [expanded Vertical Slice 1 implementation plan](implementation/vertical-slice-1-implementation-plan.md), superseding the prior hold on introducing the planning gate. Baseline v1 remains authoritative. The plan owns decimal subphases, dependencies, validation/evidence, recovery and acceptance checkpoints:
 
-Implementation/modeling/project creation still need a separately approved scope. Source media/derivatives and future owned binary assets retain their existing publication boundaries; confirming these documentation updates does not authorize building or installation.
+1. Formal planning gate and concrete VS-D01–07 decisions.
+2. Approved toolchain preparation and minimal C++ project/build/package proof.
+3. Spatial/player graybox and motion reservations.
+4. Authoritative state, commands and lifecycle, independently reviewable after Phase 2.
+5. Physical interaction, entry and initial services.
+6. Placeholder-occupied apparatus, seating and four engineering-cylinder endpoints.
+7. Cockpit ignition, derived SHIP READY and repeatable fresh runs.
+8. Complete acceptance, measured budgets, standalone package and maintainer handoff.
+
+The user confirmed the plan and MCP additions for publication on 2026-10-07; no new phase has executed. Authorize the first bounded decision increment before proceeding. Project creation and installations/modeling retain their scoped authorization boundaries; confirming plan documentation is not build approval.
+
+[Blender/Unreal MCP evaluation](architecture/editor-automation.md) is now included in Phase 1.4
+tool/asset decisions, an optional Unreal pilot after 2.3 ordinary build/editor proof, and an optional
+Blender pilot after 3.1 before repeated geometry production. Both have explicit validation/recovery and
+fallbacks; neither is required by the playable slice. No connector installation or activation is authorized
+by this documentation addition.
 
 ## Later directions — not yet authorized
 
