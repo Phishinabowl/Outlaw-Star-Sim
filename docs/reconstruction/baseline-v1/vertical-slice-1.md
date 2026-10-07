@@ -4,6 +4,11 @@ The user approved defining this slice within Baseline v1 on 2026-10-07. This is 
 
 ## Experience and endpoint
 
+The [Phase 1.2 closeout proposal](../../implementation/phase-1-2-closeout-proposal.md#bounded-opening-scope-amendment--proposed-contract-supplement)
+records the bounded opening supplement accepted by the user on 2026-10-07, consolidating the
+case/computer, reveal, boots, HUD and dining-shell directions. Read it alongside the historical
+contract below; its eight readiness conditions remain intact. Source observations are unchanged.
+
 One physical player approaches the dormant XGP inside a minimal asteroid hangar, finds and operates an exterior entry, explores the bridge and required passage route, brings limited ship services online, deploys the navigation apparatus with a placeholder occupant, performs engineering preparation, returns to the bridge and completes ignition. End at **SHIP READY**, still supported inside the hangar; no departure.
 
 The path is a gameplay adaptation of EP-04's ensemble commissioning scene. The player can perform activities seen across Gene/Jim rather than requiring crew AI. A placeholder occupant/script supplies Melfina's apparatus sequence; it does not grant the player magical direct control over the ship's canonical bio-navigation. This role consolidation is F, not an anime retelling with exact actions/characters.

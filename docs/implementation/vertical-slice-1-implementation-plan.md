@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 |
-| Status | Phase 1.1 complete; Phase 1.2 discussion authorized/in progress; later execution not authorized |
+| Status | Phases 1.1 and 1.2 planning complete; later execution not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 1.2 spatial/motion decision packet; discussion in progress |
+| Current checkpoint | Phase 1.2 accepted planning closeout; Phase 1.3 unstarted |
 
 ## Purpose And Placement
 
@@ -36,7 +36,12 @@ The user separately authorized Phase 1.1 only; its read-only inventory and host/
 complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Later checkboxes remain
 open. The user subsequently authorized Phase 1.2 discussion, beginning with the opening experience
 and additional targeted references. Its [decision packet](phase-1-2-spatial-motion-decision-packet.md)
-is in progress; no later subphase starts automatically. Phase 1's exit review still precedes project creation.
+and [closeout package](phase-1-2-closeout-proposal.md) are now accepted for planning. No later
+subphase starts automatically. Phase 1's exit review still precedes project creation.
+
+The [Phase 1.2 reservation audit](phase-1-2-reservation-audit.md) records remaining mechanism/access
+constraints against the accepted general layout. It is planning evidence, not a modeled fit pass or
+subphase completion; use its ledger for later MC validation and bounded layout iteration.
 
 Do not begin Unreal initialization, modeling, installations or implementation because this file exists
 or because its documentation commit is confirmed. Once a concrete subphase is authorized, complete
@@ -232,18 +237,25 @@ MSVC 14.50 is installed; remaining vendor-guidance setup gaps are proposed chang
 **Prerequisite:** 1.1 scope/host inventory. **Deliverable:** VS-D01–03 E decision packet, not modeled geometry.
 
 **Working packet:** [spatial/motion decisions](phase-1-2-spatial-motion-decision-packet.md).
+**Review package:** [Phase 1.2 closeout proposal](phase-1-2-closeout-proposal.md), including the
+remaining local profiles/storage, concrete route, MC demonstration plan and accepted opening
+contract supplement. The user accepted planning coverage on 2026-10-07; actual fit remains pending.
 Layout A's general arrangement and the general engineering service-route arrangement are accepted
 in principle. Dimensions, ceiling/bay heights, exact connections and fit remain provisional;
-the packet's agreed opening additions still require baseline scope reconciliation at closeout.
+the opening additions are reconciled by the accepted bounded contract supplement.
 The packet consolidates facility lighting, case/computer carrying, revival/skip, bootstrap and guided
 preparation direction. The user also approved a minimal walk-through dining/common-area shell in
 the route; its dimensions/connections and lounge identity remain unresolved. These discussions do
-not close VS-D01–03 or prove machinery fit; baseline scope reconciliation remains at closeout.
+not prove machinery fit. VS-D01–03 now have accepted provisional E planning choices with named
+later fit checks; source correspondence and final geometry remain explicitly unresolved.
 
-- [ ] Propose selected entrance and entry→bridge→engineering route with S/H IDs and unresolved correspondence explicit.
-- [ ] Propose hull-relative room/cavity placement, occupant scale, extension sweeps and operator paths for M01–M09; record provisional dimensions/margins without claiming measured canon.
-- [ ] Reserve M10–M13 where affected by hull/route/support placement; identify remaining source checks that could invalidate the slice.
-- [ ] Define how MC-01–MC-08 will be demonstrated and which future reservations remain unverified rather than fitted.
+- [x] Propose selected entrance and entry→bridge→engineering route with S/H IDs and unresolved correspondence explicit.
+- [x] Propose hull-relative room/cavity placement, occupant scale, extension sweeps and operator paths for M01–M09; record provisional dimensions/margins without claiming measured canon.
+- [x] Reserve M10–M13 where affected by hull/route/support placement; identify remaining source checks that could invalidate the slice.
+- [x] Define how MC-01–MC-08 will be demonstrated and which future reservations remain unverified rather than fitted.
+
+**Completion record:** user accepted the closeout package and bounded opening supplement on
+2026-10-07. Planning only; no modeled fit or MC pass claimed. Phase 1.3 remains unstarted.
 
 **Validation:** each geometric choice cites its constraint and E rationale; no unknown connection silently becomes confirmed.
 **Recovery / deferral:** revise the text/diagram proposal before blockout; request targeted evidence if a central fit cannot be responsibly proposed. Full deck/room layout stays deferred.

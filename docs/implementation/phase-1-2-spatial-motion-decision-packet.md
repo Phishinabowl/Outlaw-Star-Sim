@@ -1,12 +1,23 @@
 # Phase 1.2 — Spatial And Motion Decision Packet
 
-Status: discussion in progress, 2026-10-07. The user authorized Phase 1.2; no later subphase,
+Status: Phase 1.2 planning accepted and complete, 2026-10-07. No later subphase,
 modeling, Unreal initialization or gameplay implementation is authorized. No decisions in this
 packet are accepted solely by being written here.
 
 Authority: [Baseline v1](../reconstruction/baseline-v1/spatial-constraint-map.md), its motion/slice
 contracts and [implementation Phase 1.2](vertical-slice-1-implementation-plan.md#phase-12-spatial-and-motion-decision-packet).
-Phase 1.1 is complete. Phase 1.2 remains open; VS-D01–03 are not resolved.
+Phases 1.1 and 1.2 planning are complete. VS-D01–03 have accepted provisional E choices;
+source correspondence and actual fit remain unresolved where recorded.
+
+The [closeout proposal](phase-1-2-closeout-proposal.md) supplies the remaining local canopy,
+engineering platform and worn-computer storage proposals, a concrete route consolidation,
+MC-01–MC-08 demonstration plan and accepted bounded opening contract supplement. The user
+accepted this package on 2026-10-07; dimensions remain trial inputs and no fit is proven.
+
+The discussion sections below preserve the sequence of prior proposals and their then-open
+questions. Where they describe scope reconciliation or local profiles/storage as unfinished,
+the accepted closeout supplies the current planning decision. Source uncertainties and fit
+limitations remain in force; later action/input questions stay with Phase 1.3.
 
 ## First Discussion — Arrival And Melfina's Case
 
@@ -580,5 +591,12 @@ The local canopy/perimeter profile remains to be proposed; no numeric ceiling es
 - Affected M10–M13 reservations and targeted source checks that could invalidate the proposal.
 - MC-01–MC-08 demonstration plan, distinguishing actual slice fit from future reservation-only checks.
 
-No spatial checkbox or fit test is complete. Opening discussion may inform later Phase 1.3 actions,
+The [reservation audit](phase-1-2-reservation-audit.md) now supplies targeted sheet observations
+and RA-01–RA-10 planning constraints for controls, rail/robot, distinct hatches, grappler roots,
+Shooter, supports, furniture and equipment. Inventory coverage is recorded; metric envelopes,
+profile reconciliation and actual interference checks remain pending. Future reservations do not
+add operating mechanisms to the slice. Use the ledger when completing the MC demonstration plan.
+
+The accepted closeout package completes the listed planning deliverables and spatial checklist.
+No fit test is complete. Opening discussion informs later Phase 1.3 actions,
 but does not start that subphase or select implementation details prematurely.
