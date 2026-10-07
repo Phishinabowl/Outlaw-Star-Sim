@@ -1,5 +1,23 @@
 # Open questions
 
+## Ongoing parallel research track
+
+The reference foundation is substantially complete for initial-slice implementation purposes, as requested on 2026-10-07. This backlog remains active alongside future project work. It does not require completing every translation, room or performance calculation before a bounded slice can be planned. If a question would invalidate an adopted entry route, machinery clearance or physical interaction, investigate it before that concrete choice is built or record an explicit E/F assumption for agreement.
+
+| Research thread | Current unresolved work | When it matters |
+|---|---|---|
+| Entry and circulation | Hatch correspondence, unshown boarding/engineering connections, dining/lounge identity | Before fixing affected slice geometry; broader cabins/cargo layout can continue later. |
+| Motion and fit | Apparatus closure/cavity dimensions, seat/cylinder sweeps, per-unit manual treatment | Before affected mechanism/access implementation; preserve the [baseline reservations](baseline-v1/motion-clearance-envelopes.md). |
+| Mechanical families/provenance | 22 scope records without focused passes, remaining annotations/variants, collection authentication | Prioritize sheets that constrain a chosen asset; full archaeology stays ongoing. |
+| Terminology/topology | Original Japanese, Newton/Münchhausen assignments, actual initial-service source, circuits | Before making naming/power dependencies authoritative; no invented topology as canon. |
+| Performance | Disputed ETA, percentage meanings, special modes, normal undamaged transition | Before numerical flight/power/combat models; not a prerequisite for Slice 1's non-flight endpoint. |
+
+UE family and Windows IDE/compiler direction are now recorded in [Unreal strategy](../architecture/unreal-strategy.md). Target MSVC 14.50 installation and project build validation remain future tooling work. The formal implementation-planning gate is deferred; this research track does not introduce one.
+
+## Existing findings and unresolved details
+
+[Baseline v1](baseline-v1/spatial-constraint-map.md) converts evidence into constraints for the [first slice](baseline-v1/vertical-slice-1.md). VS-D01–07 identify focused decisions before graybox/implementation approval: entry correspondence/route, room connections, motion fit, initial service power, occupant/all-four preparation adaptations, readiness behavior and tool/asset policy. Unresolved full-ship questions below do not automatically expand the slice.
+
 The [all-26-episode subtitle audit](../../reference/indexes/performance-subtitle-audit.md) now collects performance leads. Priority checks: EP-10's literal 1000-hour ETA versus subsequent race progress; EP-20's 150% grappler-response/one-minute mode; EP-11's 108% output and sensor-error/range measures; EP-24's acceleration-versus-output wording. Original Japanese, absolute power/thrust/mass, normal sensor ranges and full drive topology remain unresolved. EP-16's translated narration calls dragonite an ether-energy catalyst; do not adopt a burned-fuel consumption model from the supplied screenshot alone.
 
 Performance follow-up: [Episode 11 numerical evidence](../../reference/indexes/episode-11-subether-review.md#numerical-travel-performance-follow-up--2026-10-07) records the 600-million-km / approximately 96-hour ether-only forecast at stated 50% propulsion, plus a separate 12 km/s navigation report. The derived approximately 1,736 km/s trip average is non-canon D evidence. Verify original-language numbers, percentage basis and any route/acceleration assumptions before choosing a power/speed model; absolute reactor output remains unknown.

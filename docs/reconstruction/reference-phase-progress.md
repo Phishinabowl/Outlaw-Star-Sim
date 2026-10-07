@@ -1,5 +1,15 @@
 # Reference phase — first review increment
 
+Latest publication approval: the user confirmed Baseline v1 and the research-closeout, README, roadmap and tooling updates on 2026-10-07. The following uncommitted-status notes describe their review-time state. The formal planning gate remains deferred; publication does not authorize installations, project creation or implementation.
+
+## Research closeout for Slice 1 and tooling direction — 2026-10-07, uncommitted
+
+At the user's request, the reference foundation is now substantially complete for initial-slice implementation purposes, with [unresolved research](open-questions.md) retained as an ongoing parallel track. README and roadmap reflect the evidence inventory, baseline documents, slice endpoint and current pre-implementation status. [Unreal strategy](../architecture/unreal-strategy.md) records intended UE 5.8, installed 5.8.3, Visual Studio Community 2026, user-selected MSVC 14.50 and observed SDK/.NET/workloads. Installed compiler 14.51 is not the preferred target or a build-validated result. No installs, editor launch, project creation, compile, source extraction or implementation occurred. The user explicitly deferred the formal planning gate, so none was introduced. This increment and Baseline v1 remain uncommitted.
+
+## Reconstruction / Implementation Baseline v1 — 2026-10-07, uncommitted
+
+The user approved four planning documents: [spatial constraints](baseline-v1/spatial-constraint-map.md), [motion/clearance reservations](baseline-v1/motion-clearance-envelopes.md), [operational vocabulary](baseline-v1/operational-state-baseline.md) and [Awakening the Outlaw Star scope/acceptance contract](baseline-v1/vertical-slice-1.md). They consolidate existing evidence without new extraction or numerical/geometry implementation. The roadmap distinguishes completed reference approvals from this planning increment and the still-unapproved graybox/Unreal/implementation phase. This increment remains uncommitted; prior publication confirmations do not apply to these new changes.
+
 Latest publication approval: the user confirmed the all-episode performance audit and Episode 11 numerical follow-up on 2026-10-07. This supersedes their review-time uncommitted status below. Full subtitle copies, candidate context and media remain local-only.
 
 ## All-episode subtitle performance audit — 2026-10-07

@@ -1,8 +1,67 @@
 # Outlaw Star XGP Simulator
 
-An evidence-driven reconstruction of the XGP-15AII and, eventually, an interactive ship simulation in Unreal Engine 5.
+An evidence-driven reconstruction of the XGP-15AII and a planned interactive ship simulation in Unreal Engine 5. The ship is the main experience: enter it, explore physically located equipment, prepare its systems and eventually operate it through consistent shared state.
 
-Current phase: Phase 0 — documentation, reference screening, reconstruction planning, and tooling. Unreal creation, gameplay implementation, and modeling require a later approved phase.
+**The reference/research foundation is substantially complete for implementation purposes within the first slice.** This means enough evidence exists to define a constrained initial build; it does not mean every room, mechanism, translation or performance figure is settled. Unresolved research continues as an [ongoing parallel track](docs/reconstruction/open-questions.md).
+
+Current status: **Baseline v1 documentation / pre-implementation**. No Unreal project, modeled ship or playable build exists yet. The formal implementation-planning gate is **deferred at the user's request**. Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
+
+## First experience — Awakening the Outlaw Star
+
+The [Vertical Slice 1 contract](docs/reconstruction/baseline-v1/vertical-slice-1.md) defines a supported ship inside an asteroid hangar:
+
+`Approach → exterior entry → bridge/passages → initial services → navigation apparatus → engineering preparation → cockpit ignition → SHIP READY`
+
+The endpoint remains inside the hangar. Scope includes the required traversal route, physical controls, a placeholder occupant for Melfina's apparatus, four prepared engineering-cylinder endpoints, moving bridge seating and consistent readiness feedback. It excludes free flight, sub-ether travel, combat, damage simulation, full crew AI, Gilliam LLM, every interior room and detailed art.
+
+Baseline v1 preserves evidence and assumptions separately:
+
+| Document | Purpose |
+|---|---|
+| [Spatial constraint map](docs/reconstruction/baseline-v1/spatial-constraint-map.md) | Hull constraints, local room relationships, hatch identities and unknown connections; not a final deck plan. |
+| [Motion/clearance envelopes](docs/reconstruction/baseline-v1/motion-clearance-envelopes.md) | Reserve space for machinery motion, operators and future assemblies before placing walls. |
+| [Operational states](docs/reconstruction/baseline-v1/operational-state-baseline.md) | Separate commissioning, standby departure, sub-ether and emergency-recovery vocabulary. |
+| [Slice scope and acceptance](docs/reconstruction/baseline-v1/vertical-slice-1.md) | Concrete endpoint, exclusions, observable completion criteria and unresolved decisions. |
+
+## What the repository contains
+
+- All **221 settei scans screened**, with **66 XGP/support records** identified. Focused interior, identity, variant and propulsion-label passes cover 44 of those records; 22 remain without a focused individual pass. Production provenance and fine annotations remain open.
+- Timestamp metadata cached for **all 26 episodes**, with **9,204 gallery locators**. Web-to-local alignment is still unverified.
+- Focused local frame/metadata evidence for Episodes **4, 7, 8, 11 and 26**, covering commissioning, standby launch, reactor terminology, sub-ether disruption/recovery and Melfina's descent.
+- An [all-episode subtitle audit](reference/indexes/performance-subtitle-audit.md) and [47-record performance register](reference/indexes/performance-metrics.csv), with source/track/hash provenance. English translations, inferred calculations, other ships and special operating conditions are distinguished.
+- Future architecture requirements for physical interaction, one physical player with separate camera/control modes, authoritative ship state and reusable commands for consoles, Gilliam and later external clients.
+
+The accepted overall exterior envelope is **72 × 21 × 16 m**, supported by the official profile recorded in the [reference index](docs/reconstruction/xgp-reference-index.md). It does not define usable interior volume, deck count or deployed appendage limits.
+
+## Technology direction and current tooling
+
+The intended engine baseline is **UE 5.8**, revisable only when later testing gives a concrete reason. The locally installed candidate is **UE 5.8.3**. Intended Windows C++ tooling is **Visual Studio Community 2026 + MSVC 14.50 + Windows SDK 10.0.26100.0**. MSVC 14.50 is the user's selected target; only 14.51 was found installed, so any additional installation remains deferred for discussion.
+
+[Unreal strategy and toolchain record](docs/architecture/unreal-strategy.md) is authoritative for the choice, installation observations and compatibility limits. Installed tools are not yet a project build validation. Core simulation/gameplay foundations are planned in C++, with Blueprints for editor configuration and content/presentation; Blender is the reconstruction direction, not a newly verified installation in this pass.
+
+Python/Pillow, FFmpeg/FFprobe and optional ImageMagick have supported the reference workflow. [Tool documentation](tools/reference-extraction/README.md) explains reproducible inventories, metadata checks, targeted frame extraction and subtitle screening. No renderer, project template, external transport or broad gameplay framework has been selected by this update.
+
+## Evidence and source handling
+
+The [canon policy](docs/canon-policy.md) separates anime observations (A), authenticated production evidence (B), official supplements (C), strong inference (D), reconstruction extrapolation (E) and gameplay adaptation (F). Our scanned production collection remains B candidate pending provenance. **D/E/F are never canon.** Original Japanese, translation confidence and contradictions stay explicit.
+
+`_source_settei/` and `_source_episodes/` are immutable local references. Generated frames, contact sheets, cached HTML and full subtitle copies remain ignored/local-only. Authored Markdown, CSV, JSON provenance and helper scripts are trackable. Individual supplied images may be published when explicitly authorized; that does not authorize source-media publication. Git LFS for future project-owned binary assets remains undecided.
+
+## Repository guide
+
+| Location | Contents |
+|---|---|
+| `docs/` | Vision, policy, roadmap, architecture requirements and reconstruction baseline. |
+| `reference/indexes/` | Authored evidence reviews, source/episode manifests, screening data, timestamp indexes and performance records. |
+| `tools/reference-extraction/` | Small deterministic reference helpers; no game implementation. |
+| `reference/working/`, `reference/extracted-frames/`, `reference/cache/`, `reference/contact-sheets/` | Ignored generated media and working data. |
+| `.local/` | Ignored machine-specific notes; not shared project requirements. |
+
+## Research alongside future implementation
+
+Keep hatch/room correspondence, apparatus clearances, remaining mechanical families, Japanese wording, power topology and performance interpretation in [open questions](docs/reconstruction/open-questions.md). Research should be targeted when it could invalidate a chosen slice connection, motion or interaction; broader full-ship archaeology need not hold the entire project indefinitely. Any provisional solution remains explicitly E/F and reviewable.
+
+The formal planning gate and detailed implementation plan are deferred. The existing [slice decisions](docs/reconstruction/baseline-v1/vertical-slice-1.md#decisions-before-the-next-phase) remain recorded for later discussion; this status update does not resolve them or authorize building.
 
 ## Start here
 
@@ -11,7 +70,8 @@ Current phase: Phase 0 — documentation, reference screening, reconstruction pl
 - [Roadmap](docs/roadmap.md)
 - [External control and automation requirements](docs/architecture/external-control-automation.md)
 - [Reference index](docs/reconstruction/xgp-reference-index.md)
+- [Reconstruction / Implementation Baseline v1](docs/reconstruction/baseline-v1/spatial-constraint-map.md) and [Awakening the Outlaw Star slice](docs/reconstruction/baseline-v1/vertical-slice-1.md)
 - [Open questions](docs/reconstruction/open-questions.md)
 - [Reference workflow](reference/README.md)
 
-_source_settei/ and _source_episodes/ are immutable local references. Never edit, move, rename, delete, or commit their contents. Derivatives belong under reference/ in ignored folders. No source media or generated frames are authorized for versioning. Git LFS is deferred until project-owned binary assets exist.
+See [reference progress](docs/reconstruction/reference-phase-progress.md) for historical increments and the [roadmap](docs/roadmap.md) for current approval boundaries.

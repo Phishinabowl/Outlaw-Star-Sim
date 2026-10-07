@@ -6,6 +6,8 @@ Commands must be independent of UI and reusable by future external controls/auto
 
 Conceptual progression: SEALED/STORAGE → BATTERY/EMERGENCY → AUXILIARY POWER → MAIN POWER → FULL OPERATIONAL. This is a gameplay planning concept, not a verified canonical state machine.
 
+Use [Baseline v1 operational vocabulary](../reconstruction/baseline-v1/operational-state-baseline.md) for commissioning, standby departure, sub-ether and emergency context. The single ladder above must not replace those separate sequences or imply a known power topology. The [Slice 1 contract](../reconstruction/baseline-v1/vertical-slice-1.md) defines the first implementation destination after a separately approved phase gate.
+
 Failure escalation requirements:
 
 | Level | Recovery |

@@ -1,5 +1,7 @@
 # Initial XGP reference index
 
+[Baseline v1](baseline-v1/spatial-constraint-map.md) consolidates spatial relationships, motion reservations, operational vocabulary and the first slice contract for later implementation planning. Provisional geometry/state choices remain separate from source evidence; it is not implementation authorization.
+
 [Performance subtitle audit](../../reference/indexes/performance-subtitle-audit.md) covers all 26 numbered episodes, with a [curated metric CSV](../../reference/indexes/performance-metrics.csv) and per-episode source/stream/hash provenance. Use it for later propulsion, sensor and grappler model discussion; translated statements, derived calculations and unresolved attribution remain separate.
 
 All 221 scans were screened using eight labeled contact sheets. The initial 57 XGP candidates have expanded to 66 XGP/support records after [image map reconciliation](../../reference/indexes/image-map-reconciliation.md), including preliminary and contextual equipment. [The complete screening CSV](../../reference/indexes/settei-screening.csv) records the distinctions. Screening is not exhaustive annotation or proof that every small detail was identified.
