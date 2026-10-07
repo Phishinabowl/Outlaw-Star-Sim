@@ -6,13 +6,24 @@
 
 The chosen Windows toolchain is **Visual Studio Community 2026, MSVC 14.50, Windows SDK 10.0.26100.0**. The user explicitly selected the preferred 14.50 compiler target instead of treating the installed 14.51 as validated. Any missing component installation is deferred for discussion; no installer or settings change was run.
 
-## Local read-only observations
+## Current Phase 1.1 inventory
+
+The [dated readiness record](../implementation/phase-1-1-host-tooling-readiness.md) owns the latest
+observed host/tool inventory and limitations. MSVC 14.50 is now installed alongside 14.51; actual
+compiler product version 14.50.35739 clears the engine's banned range. The corrected Unreal Test Adapter
+query confirms it is installed. Remaining .NET workloads/matching ATL are proposed setup additions;
+no install or build was performed. This supersedes the earlier absence observations below.
+
+The user selected the inspected laptop, Win64 and keyboard/mouse, with no initial desktop validation
+requirement and a 1440p/120 FPS target pending measured proof. Detailed budgets belong to Phase 1.4.
+
+## Earlier read-only observations — before Phase 1.1
 
 | Component | Observed on 2026-10-07 | Baseline / validation status |
 |---|---|---|
 | UE | 5.8.3, launcher binary distribution | Intended engine family 5.8; no editor launch or project compilation in this pass. |
 | Visual Studio | Community 2026, product version 18.10.3, installation version 18.10.12224.181 | Chosen IDE family; installer reports complete/launchable. |
-| MSVC | Default file and installed tool directory report 14.51.36231; x64 compiler/linker executables present | Not UE's preferred family; not claimed unsupported or validated. Target 14.50 is not installed in the inspected VS instance. |
+| MSVC | Earlier default file and tool directory reported 14.51.36231; x64 compiler/linker executables present | At that inspection, target 14.50 was absent; superseded by the Phase 1.1 inventory above. |
 | Windows SDK | 10.0.26100.0 includes present; Windows header and x64 kernel32 library present | Intended SDK candidate; no complete link/package test yet. |
 | .NET | System SDK 10.0.204; engine bundled `DotNet\10.0` directory present | Installation observations, not a separate project framework-version decision. |
 | Workloads | Game development with C++ and Desktop development with C++ positively matched by `vswhere` | Core C++ workload presence verified; complete optional-component audit not claimed. |
@@ -24,9 +35,9 @@ Checks used launcher JSON, build/config files, `vswhere`, directory inventory an
 
 [Epic's UE 5.8 Visual Studio setup guide](https://dev.epicgames.com/documentation/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine) lists VS 2026 18.0+ for general development, recommends MSVC 14.50 and Windows SDK 10.0.26100 or newer. [Microsoft's UE integration guide](https://learn.microsoft.com/en-us/visualstudio/gamedev/unreal/get-started/vs-tools-unreal-install) describes the C++ gaming workload and optional IDE/debugging/test integrations. Read 2026-10-07; later engine-specific guidance can change.
 
-The installed UE 5.8.3 file `Engine\Config\Windows\Windows_SDK.json` prefers MSVC families 14.50.35717–14.50.99999 and 14.44.35207–14.44.99999, but bans 14.50 builds through 14.50.35722. Therefore the intended **14.50 candidate must be at least 14.50.35723 within that preferred family**. Installed 14.51 is outside those preferred ranges; absence from the banned ranges is not a successful build test. Let the engine's build tools and actual build results establish the later effective selection rather than silently accepting the IDE's default compiler.
+The installed UE 5.8.3 file `Engine\Config\Windows\Windows_SDK.json` prefers MSVC families 14.50.35717–14.50.99999 and 14.44.35207–14.44.99999, but bans actual 14.50 compiler versions through 14.50.35722. UBT distinguishes directory family from executable product version: the current folder 14.50.35717 contains compiler product version **14.50.35739**, above the ban. Installed 14.51 is outside the preferred families; absence from the banned ranges is not a successful build test. Let the engine's build tools and actual build results establish the later effective selection rather than silently accepting the IDE's default compiler.
 
-The immediate installation discussion is the side-by-side preferred compiler and any genuinely required missing components. No downgrade, VS reinstall, plugin installation or global compiler configuration is selected by this document. Installed, preferred and build-validated remain separate statuses.
+The preferred compiler is now available side by side. The remaining installation discussion concerns the setup gaps in the dated readiness record. No downgrade, VS reinstall, plugin installation or global compiler configuration is selected by this document. Installed, preferred and build-validated remain separate statuses.
 
 ## Implementation direction
 

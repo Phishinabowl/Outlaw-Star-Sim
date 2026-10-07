@@ -31,7 +31,7 @@ Baseline v1 consolidates the accepted direction into a reviewable planning contr
 
 ## Engine/toolchain direction — recorded, not build-validated
 
-UE **5.8** is intended unless later testing supplies a reason to revisit it; **5.8.3** is installed. The user selected **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. Only MSVC 14.51 was found in the inspected VS instance; additional installation remains deferred for discussion. [Unreal strategy](architecture/unreal-strategy.md) records versions, local evidence and compatibility limits as the authoritative tooling decision.
+UE **5.8** is intended unless later testing supplies a reason to revisit it; **5.8.3** is installed. The user selected **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. Phase 1.1 confirms patched MSVC 14.50 is installed alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) owns tooling direction; the [dated readiness record](implementation/phase-1-1-host-tooling-readiness.md) owns current inventory and remaining proposed setup gaps.
 
 ## Phased implementation plan — accepted planning baseline
 
@@ -46,7 +46,7 @@ The user subsequently requested the [expanded Vertical Slice 1 implementation pl
 7. Cockpit ignition, derived SHIP READY and repeatable fresh runs.
 8. Complete acceptance, measured budgets, standalone package and maintainer handoff.
 
-The user confirmed the plan and MCP additions for publication on 2026-10-07; no new phase has executed. Authorize the first bounded decision increment before proceeding. Project creation and installations/modeling retain their scoped authorization boundaries; confirming plan documentation is not build approval.
+The user confirmed the plan and MCP additions for publication on 2026-10-07, then authorized Phase 1.1 only. Its read-only inventory and host/target decisions are complete: laptop, Win64, keyboard/mouse, no required desktop validation initially, and 1440p/120 FPS pending measurement. Phase 1.2 and later work remain unstarted and require their own scope. Project creation and installations/modeling retain their authorization boundaries; inventory or documentation approval is not build approval.
 
 [Blender/Unreal MCP evaluation](architecture/editor-automation.md) is now included in Phase 1.4
 tool/asset decisions, an optional Unreal pilot after 2.3 ordinary build/editor proof, and an optional

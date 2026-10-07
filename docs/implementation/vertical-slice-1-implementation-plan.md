@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 |
-| Status | Confirmed for publication 2026-10-07; planning baseline accepted; execution not started or authorized |
+| Status | Planning baseline accepted; Phase 1.1 inventory/decisions complete; later execution not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| First implementation checkpoint | Phase 1 decisions and exit review; not started |
+| Next checkpoint | Phase 1.2 decision packet; not started or authorized |
 
 ## Purpose And Placement
 
@@ -32,8 +32,9 @@ No planned runtime tests have run. Installation observations are not compilation
 The user has now requested this expanded formal planning document, superseding the earlier hold on
 **introducing the planning gate**. That authorizes this document and navigation/status updates only.
 The user confirmed this plan and its MCP additions for publication on 2026-10-07.
-Every new execution checkbox remains open. Next, authorize a specific Phase 1
-scope. Phase 1 produces concrete design decisions; its exit review precedes project creation.
+The user separately authorized Phase 1.1 only; its read-only inventory and host/target decisions are
+complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Later checkboxes remain
+open. Stop here until Phase 1.2 is explicitly scoped; Phase 1's exit review still precedes project creation.
 
 Do not begin Unreal initialization, modeling, installations or implementation because this file exists
 or because its documentation commit is confirmed. Once a concrete subphase is authorized, complete
@@ -91,10 +92,10 @@ pauses for every file or test. Publication still follows the user's explicit con
 - [x] Preserve Baseline v1 as the reconstruction/slice authority, with readiness inside the hangar.
 - [x] Use UE 5.8 as intended baseline; current installed candidate is 5.8.3, not yet build-validated.
 - [x] Target Visual Studio Community 2026, MSVC 14.50 and Windows SDK 10.0.26100.0; follow the
-  compiler-family constraints in Unreal strategy. Last inspection found only MSVC 14.51 installed.
+  compiler-family constraints in Unreal strategy. Phase 1.1 confirms patched 14.50 alongside 14.51.
 - [x] Keep unresolved archaeology in a parallel track and preserve original-language uncertainty.
 - [x] Preserve shared command/state requirements without implementing a transport or external client.
-- [ ] Accept this draft's phase boundaries and specific initial execution scope.
+- [x] Accept the plan's phase boundaries and the initial Phase 1.1-only inventory scope; later subphases are not authorized.
 - [ ] Decide concrete VS-D01–07 choices and validation budgets in Phase 1; no new architecture is
   accepted merely because its checklist is present.
 
@@ -212,10 +213,14 @@ test was completed by that publication. The next unchecked checkpoint belongs to
 
 **Prerequisite:** authorized Phase 1 decision scope; Phase 0. **Deliverable:** dated host/tooling/target record.
 
-- [ ] Recheck repository state and current UE/VS/compiler/SDK inventory; treat the earlier inspection as dated evidence.
-- [ ] Agree primary proof host, intended Win64 build/input scope and what any second host is expected to prove.
-- [ ] Identify actual missing components, including preferred MSVC 14.50 if still absent; propose only needed installation changes.
-- [ ] Record that existing tool installs do not establish build compatibility; select measured responsiveness/performance criteria to propose in 1.4.
+- [x] Recheck repository state and current UE/VS/compiler/SDK inventory; treat the earlier inspection as dated evidence.
+- [x] Agree primary proof host, intended Win64 build/input scope and what any second host is expected to prove.
+- [x] Identify actual missing components, including preferred MSVC 14.50 if still absent; propose only needed installation changes.
+- [x] Record that existing tool installs do not establish build compatibility; select measured responsiveness/performance criteria to propose in 1.4.
+
+**Completion record:** [Phase 1.1 inventory and decisions](phase-1-1-host-tooling-readiness.md), 2026-10-07.
+Laptop / Win64 / keyboard-mouse; no required initial desktop validation; 1440p/120 FPS measurement target.
+MSVC 14.50 is installed; remaining vendor-guidance setup gaps are proposed changes, not performed installs.
 
 **Validation:** observed versus reported facts distinguished; no install or project creation during inventory.
 **Recovery / deferral:** resolve access gaps with files/logs or user evidence; keep unverified hosts/components unknown, not failed or supported.
