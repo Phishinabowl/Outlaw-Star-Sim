@@ -28,8 +28,21 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Personal notes and temporary tooling artifacts
+*.local.md
+*.scratch.ps1
+*.debug.ps1
+.tmp/
 
 # Editor and OS caches
+*.code-workspace
 .vs/
 Thumbs.db
 .DS_Store

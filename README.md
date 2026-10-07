@@ -67,6 +67,7 @@ The [phased implementation plan](docs/implementation/vertical-slice-1-implementa
 
 - [Vision](docs/vision.md) and [design pillars](docs/design-pillars.md)
 - [Canon policy](docs/canon-policy.md)
+- [Todo Tree and working annotation standards](docs/development/work-annotation-standards.md)
 - [Roadmap](docs/roadmap.md)
 - [Vertical Slice 1 implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md)
 - [External control and automation requirements](docs/architecture/external-control-automation.md)

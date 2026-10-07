@@ -1,0 +1,37 @@
+{
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "QUESTION",
+        "ASSUMPTION",
+        "HACK",
+        "REVIEW",
+        "VERIFY"
+    ],
+    "todo-tree.regex.subTagRegex": "^(?=\\s*\\(([^)]+)\\))",
+    "todo-tree.tree.groupedBySubTag": true,
+    "todo-tree.tree.scanMode": "workspace",
+    "todo-tree.filtering.passGlobsToRipgrep": true,
+    "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/.git/**",
+        "**/.local/**",
+        "**/.tmp/**",
+        "**/.vscode/**",
+        "**/reference/**",
+        "**/docs/development/work-annotation-standards.md"
+    ],
+    "mermaidChart.aiSkills.enabled": false,
+    "search.exclude": {
+        "**/_source_settei/**": true,
+        "**/_source_episodes/**": true,
+        "**/reference/extracted-frames/**": true,
+        "**/reference/contact-sheets/**": true,
+        "**/reference/cache/**": true,
+        "**/reference/working/**": true,
+        "**/Unreal/**/Binaries/**": true,
+        "**/Unreal/**/DerivedDataCache/**": true,
+        "**/Unreal/**/Intermediate/**": true,
+        "**/Unreal/**/Saved/**": true
+    }
+}
