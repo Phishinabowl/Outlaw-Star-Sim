@@ -24,7 +24,7 @@ Full character art, crew AI, general inventory and dialogue production do not fo
 
 | Item | User direction / proposal | Status and limit |
 | --- | --- | --- |
-| Case placement | Designated visually indicated floor position near the navigation apparatus; open/revive there to limit occupant travel | User-proposed direction; exact placement and open/exit clearance unselected |
+| Case placement | Use Melfina's standing area in EP-04 05:49 as the rear-side staging anchor; lid opens toward side wall, occupant presented toward center/player | User agreed demo player-blocking exception and staging/orientation direction; exact footprint/offset and visible motion clearance pending |
 | Resuscitation | Preserve 600-second default; a second interaction skips the remainder to completion/activation | User agreed the clearly labeled demo shortcut; F, not a canon fast-resuscitation feature |
 | Occupant transfer | Minimal scripted movement/text to get into apparatus; presentation format later | Direction for discussion; no full crew AI or finished character/dialogue production |
 | Preparation overlap | Start useful cockpit/Gilliam and local engineering preparation during the timer | User agreed direction; detailed dependencies later in 1.3, final readiness still requires completed navigation setup |
@@ -190,6 +190,160 @@ This gives the next dimensional proposal three separate volumes to test: apparat
 H03 ascent/landing with carried trunk, and lower entry/access with grappler-root clearance. Their margins
 and hull fit must be explicit before selecting a ladder/ramp/steps or final deck arrangement.
 
+### Loaded Boarding And H03 Ascent — Proposal For Discussion
+
+Proposed 2026-10-07 after the user authorized tackling the lower-entry ascent. This is an E/F
+candidate, not an accepted connector, a measured source dimension or a completed VS-D01/03 fit.
+Re-inspected immutable SET-044/045/047/126, EP-01 case frames 02/08 and EP-04 hatch-location
+frame 06 (04:33.023). Existing authored reviews/manifests own provenance; no new media was extracted.
+
+SET-047 and the episode frame show rung/handhold-like entrance fittings. SET-044/045 retain the
+round H03 floor opening near the cockpit doorway, but do not show its lower ladder, shaft or
+landing. SET-045's explicitly labeled Assault Tube ladder is a separate upper access, not evidence
+for a ladder beneath H03. Hilda carries the smaller computer in one hand while boarding; this
+does not demonstrate ascent with the substantially larger occupied Melfina trunk.
+
+**Recommended candidate:** carry the closed trunk upright on the back, temporarily stow the
+computer for loaded boarding/ascent, traverse the lower access route, then climb a fixed ladder
+through H03 to a clear landing on the passage side of the cockpit boundary. Keep the apparatus
+cavity separate. Exact lower-route length, rise, rung layout and hatch motion remain unresolved.
+
+| Candidate | Reason to consider | Main cost / unresolved fit |
+| --- | --- | --- |
+| Back-mounted trunk plus ladder through H03 — recommended first test | Retains the circular access and entrance handhold vocabulary; avoids introducing another moving assembly | Needs loaded opening clearance, back/hand space, upper emergence and a way to stow the computer; ladder beneath H03 is E |
+| Steps or steep stair approaching H03 | May make controlled movement with the trunk easier | Requires run and a credible transition through the round opening; may enlarge/change the recognizable access area |
+| Separate trunk lift or hoist | Lets a person use a smaller opening without the trunk on their back | Adds machinery, staging, power/dependency and interaction scope; no source support reviewed, so defer unless simpler candidates fail |
+
+Computer stowage is a proposed contextual equipment behavior, not a general inventory system.
+Its physical location must be reserved: a side/front attachment can be tested, but must not obstruct
+hands, the trunk harness or the opening. Whether stow/restore is automatic on climb or explicit is
+a player-experience question; exact action/interruption rules belong to 1.3. Freeing both hands is
+our loaded-climb proposal, not a canonical requirement proved by Hilda's smaller-device boarding.
+
+#### Gravity Presentation — New Lead, Unresolved
+
+The user recalls grounded walking in the asteroid, apparent prolonged airborne hatch operation,
+and casual walking inside the unstarted ship. Treat this as an apparent presentation discrepancy
+to reconcile, not a measured gravity change or a demonstrated physics contradiction.
+
+Re-inspected EP-04 opening A06/A10 (04:08.039/04:26.016) and hatch-location 03/05
+(04:28.018/04:31.021): floor-associated crew poses contrast with an airborne boarding pose and
+the elevated hatch-operation composition. Sparse stills do not establish jump duration, hovering,
+contact forces or acceleration. A focused English ASS keyword search found no explanation of local
+hangar/interior gravity; later gravity-well/catapult dialogue concerns external orbital operations.
+This is not an original-language/audio verification or proof no explanation exists elsewhere.
+
+Normal-looking walking alone does not establish Earthlike gravity. Possible explanations include
+reduced gravity with stylized walking/boarding, distinct facility/ship gravity conditions, or animation
+staging; none is selected as canon. No magnetic boots, gravity generator, powered handhold or
+gravity activation tied to the lighting/computer is established by these references.
+
+**Earlier assistant alternative, not selected:** reduced-gravity jumping in the facility/hangar, readable
+grounded locomotion, and stable walking conditions inside the ship from first entry. If a stronger
+interior gravity field is chosen to explain the contrast, label it E/F and account for its availability
+before computer bootstrap/main ignition; do not silently add a new gravity-startup task. Numeric
+gravity, transition boundary/blend and movement rules remain deferred to the action/control contract.
+
+The loaded boarding candidate must still provide a deliberate handhold/attachment at the hatch
+for operating controls. Reduced gravity alone does not promise a stationary midair interaction.
+Computer stowage and upright trunk transport remain proposals; the user's agreement with the
+overall route did not choose automatic versus manual stow/climb controls. Case bulk remains a
+clearance constraint under either gravity interpretation.
+
+**User-agreed direction — switchable magnetic boots, E/F:** use personal boot adhesion for
+controlled grounded walking in the asteroid facility and ship before ship gravity is available.
+Disengage for the low-gravity boarding jump; retain a handhold at the entrance for steady panel
+operation. Once proposed ship artificial gravity is online, boots need no longer provide normal
+walking support. This gives the pre-startup movement a coherent equipment explanation without
+requiring an already active interior gravity field. It is a proposal, not verified anime equipment
+or a source-established gravity-generator system/startup stage.
+
+For spatial planning, identify suitable contact surfaces along the opening route; magnetic adhesion
+cannot be assumed on every visible material. Include boot/sole allowance in the player envelope.
+Boot power must be available independently of the unstarted ship under this proposal; supply,
+strength and any battery mechanics remain unselected. Adhesion supplies foot contact/traction,
+not Earthlike gravity acting on the body, trunk or loose objects. Familiar walking would still be F
+movement tuning. With adhesion off, low gravity permits a jump/drift, not indefinite stationary
+hovering; a handhold or another explicitly selected mechanism must stabilize hatch interaction.
+
+Carry this proposal into 1.3 for boot toggle/feedback, grounded/airborne behavior and safe handoff
+to ship gravity. The gravity-online milestone and its relationship to bootstrap, engineering and
+ignition remain decisions; do not silently add a mandatory generator-startup action or complete
+gravity simulation. The user endorsed the manual-toggle/clear-status direction and a Gilliam
+notification when ship gravity becomes available; exact binding, feedback and transition rules remain open.
+No new implementation phase, machinery model or accepted baseline scope amendment follows.
+
+#### Reusable Equipment And Character Status HUD — Agreed Direction
+
+The user wants magnetic boots to remain useful as the game expands to space stations and planets
+with different gravity conditions. Treat them as equipment of the same physical player, rather than
+an opening-only scripted effect. Preserve a future relationship between local gravity, contact-surface
+suitability and equipment capability; planet/station exploration and generalized gravity traversal
+are future use cases, not additional first-slice locations or a request to implement them now.
+
+The user clarified that the required character condition (including health) and equipment status
+display is an in-game HUD. A separate inventory/status menu is not selected by this requirement.
+The exact appearance is undecided. Recommended first-slice presentation for discussion:
+
+- A compact persistent equipment indicator showing boot mode and whether adhesion actually has
+  contact; an enabled switch must not imply attachment while airborne or on an unsuitable surface.
+- HUD status for health/condition and the known trunk/computer carry state.
+  Health can report the supported initial condition while damage mechanics remain deferred;
+  do not invent numerical health, drain, injury or survival behavior just to populate the display.
+- Readable feedback when ship gravity becomes available, coordinated with the proposed Gilliam
+  notification. Boots remain equipment after that milestone; no automatic removal is implied.
+
+Separate player condition, equipment mode/contact and environmental gravity from ship readiness.
+The HUD reads the corresponding authoritative state and does not independently declare a successful
+toggle, attachment or gravity transition. Keep presentation consistent across first/third-person
+views of the same physical player. Battery/oxygen/stamina meters, inventory grids, damage rules
+and a full equipment framework remain decisions, not implied requirements of a status display.
+
+Phase 1.3 should bound the displayed fields and their actual state owners, action/results, initial
+condition and reset behavior. Phase 1.4 may select presentation technology/style after that contract.
+Reconcile these additions with the slice scope and later work owners before implementation; this
+records user intent without starting later subphases or silently amending Baseline v1.
+
+#### Trial Dimensions — E Inputs Only
+
+These values are deliberately adjustable starting inputs for a later fit proposal. Neither case nor
+player size was measured from the perspective frames; the occupied case proportions must still be
+checked visually before selection. They are not permission to model or proof the hull accommodates them.
+
+| Input | First trial | What it tests |
+| --- | --- | --- |
+| Player height | 1.80 m | Standing/headroom and eventual camera relation; player identity/height unselected |
+| Closed case, long axis upright | 1.20 m long × 0.80 m wide × 0.50 m thick | Occupied trunk plausibility, mounting height and boarding turns; revise rather than compress the occupant to force fit |
+| Loaded transverse envelope at opening | 1.00 m wide × 0.90 m deep | Conservative rectangle including body, trunk offset and provisional hand/stow space; swept pose may exceed it |
+| H03 clear opening | Approximately 1.50 m diameter to test | A centered 1.00 × 0.90 m rectangle has a 1.345 m diagonal; 1.50 m leaves about 0.077 m radial clearance at the corners before pose/obstacle changes |
+
+The rectangle/diagonal check is only a static cross-section sanity check. It does not validate the
+climb, trunk top/bottom swing, ladder intrusion, rim thickness, hatch leaf, harness or landing.
+The approximate 2 m section-height convention from SET-006 is a constraint to reconcile, not a
+reason to enlarge every room. Keep the mounted case below the proposed standing head envelope
+where possible and test emerging/turning without hitting the ceiling, wall pipe or maintenance rail.
+The exterior rectangular opening must independently pass the loaded swept envelope; passing H03
+would not validate the first boarding jump or entrance pull-in.
+
+#### Validation And Iteration Before Selection
+
+1. Check the trial trunk against the occupied case reference and a placeholder occupant; adjust
+   dimensions/mounting before changing source-recognizable hatch proportions.
+2. Trace approach, exterior entry, lower-route turns, ladder approach, full ascent and step-off using
+   the body/trunk/computer/hand envelope. Define the actual rise from the hull-relative proposal.
+3. Reserve the open H03 leaf/mechanism and upper standing/turn space, keeping wall hardware,
+   robot rail, cockpit doorway and M02/M03 cavity clear. Hatch trajectory remains a separate unknown.
+4. Check the lower route and ascent against hull structure, grappler roots and future reservations;
+   no numeric hatch selection stands without that placement check.
+5. If faithful H03 proportions cannot accommodate the occupied trunk, explicitly compare a modest
+   E dimensional adjustment, a changed carry pose, or separate trunk handling. Do not silently shrink
+   the case, hide overlap, teleport it through the deck or add a lift to the slice.
+
+For the demo, a brief guided climb retaining the player's viewpoint is a presentation candidate,
+with the trunk visibly/logically remaining attached. This does not choose movement code, animation
+technology, camera lock or cancel behavior. User discussion is still needed on that feel and computer
+stowage before treating this candidate as the chosen route. No modeling or fit test was performed.
+
 ## Agreed Hangar Composition And Reveal Direction
 
 The user wants a composition broadly informed by Episode 4, with creative staging that makes the
@@ -225,6 +379,86 @@ The facility entry airlock and ship exterior hatch are different locations. Keep
 light stages and evidence identities separate. The computer is not assumed to provide ship power
 merely because it is connected, and the case's energy source has not been established.
 
+## Cockpit Staging — Demo Case Exception Proposed
+
+The user proposes allowing the placed transport trunk to occupy some player walking space without
+blocking the player, rather than changing the ship to accommodate this demo-specific revival.
+Their expected later direction is an already-awake Melfina companion boarding with the player;
+that expectation does not start companion AI or require a permanent cockpit trunk location.
+The user agreed this bounded F player-blocking exception, then supplied an episode staging anchor.
+It is not an implemented collision setting or canon claim.
+
+Re-inspected SET-022/028: apparatus at the rear of the seat cluster, its floor cap, rear doorway
+context and the crowded cockpit circulation remain the staging constraints. No measured free
+footprint or exact left/right staging position is established by these perspective views.
+
+**User-selected staging direction:** use the standing area occupied by Melfina in EP-04 05:49,
+near the rear side-wall/doorway region behind the seats, as the case placement anchor. Open the lid
+toward that side wall, presenting Melfina toward the ship center and player. Keep the case controls
+accessible from the player's approach and her scripted transfer short.
+[Focused shot review](../../reference/indexes/episode-04-cockpit-case-staging-review.md) records
+05:49.015/05:50.016 and the source limits. Define the side through the shot landmark rather than
+camera-right as a permanent ship-side designation. Exact case footprint, hinge geometry and offset
+from the apparatus cap still need comparison against cap/shield/seat sweeps and doorway visibility;
+a person standing there does not prove an occupied open case fits there.
+Allow the player to pass through the placed case where necessary; do not widen the cockpit,
+relocate source machinery or claim a new permanent storage bay to accommodate it.
+
+Distinguish player obstruction from visual/mechanical occupancy:
+
+- Proposed exception: the placed case, including open-lid/corner-device presentation, does not
+  block player movement. Retain a selectable interaction target for code, revival status and skip;
+  disabling player blocking need not disable interaction detection.
+- Still check visible case/body/lid placement against walls, seats, floor cap, cylinder and shield
+  travel. Walking through the demo prop is permitted by the proposal; major visible machinery
+  intersection would still obscure the sequence the user wants to see. Adjust demo placement or
+  later presentation timing before altering ship geometry.
+- Keep computer/ignition access, apparatus observation and short occupant transfer readable.
+  Passing through the case must not become the only way to see or select its own controls.
+- The exception does not waive physical cockpit/player clearance, machinery motion or boarding
+  envelope checks. Carried-trunk collision behavior remains a separate unselected choice.
+
+Later validation should explicitly report traversal with a nonblocking demo prop, not certify a
+physically unobstructed furnished cockpit. Evaluate the base ship route/machinery independently
+and identify the case exception in the demo acceptance record. The revival prop should remain
+separable from permanent cockpit layout and reusable equipment/companion direction.
+
+Keep the case's post-transfer disposition open: retaining, closing or removing it is a presentation
+decision, not a new mandatory player cleanup task. Exact collision/query configuration, transfer
+timing and interaction lifecycle belong to 1.3 after this staging direction is agreed. No fit is
+claimed, no model/gameplay is changed and Baseline v1 is not silently amended.
+
+## Portable Computer Workspace And Stowage — Agreed Direction
+
+The user agreed to use the computer temporarily at the captain's station, then disconnect and
+stow it once Gilliam is online and registration finishes. It remains reusable player equipment;
+do not add a permanent laptop shelf or leave a cable crossing the seat-lift path for the demo.
+
+Re-inspected existing EP-04 detail 04/05 (05:03.011/05:16.024) and port-458 frame 03
+(04:59.007). The side view shows the open computer resting atop the instrument/gauge housing,
+with Hilda reaching its keyboard from beside the station. The overhead view locates it on that
+raised console surface within the seat/control assembly, rather than demonstrating placement on
+the seat cushion. This refines OPEN-07 in the [opening review](../../reference/indexes/episode-04-opening-bootstrap-review.md).
+No new frames/audio were extracted and no exact support-surface measurements are established.
+
+Use that upper instrument-console surface as the temporary placement anchor, with readable screen
+and accessible keyboard from the standing approach. Retain the agreed provisional connection
+region under the seated pilot's right-hand panel; the sampled reaching action is visible but the
+connector and precise cable route remain unverified. The demo's cable/port arrangement is E/F.
+
+For the spatial proposal, check the open screen/keyboard envelope, standing reach, under-panel
+plug access and cable clearance from controls and floor access. Once registration finishes,
+disconnect, close and stow the computer before the later seated/seat-lift ignition sequence.
+Computer and cable must both be clear of the workspace/motion path; do not treat the case's
+player-blocking exception as a waiver for computer placement or cable intersection.
+
+Exact stow attachment/storage position, interaction granularity and any seat-motion prerequisite
+belong to 1.3. The agreed demo intent is that Gilliam remains online after disconnection, without
+the portable computer acting as a required persistent power source. This is an F behavior contract
+to reconcile, not a verified statement of the anime computer's electrical function. Keep equipment
+HUD status consistent with its actual carried/placed/connected/stowed state. No implementation or
+completed fit check follows from the agreement.
+
 ## Resuscitation And Demo Shortcut — Agreed Direction
 
 - Keep the reference's 600-second default, with progress/status available while the player prepares
@@ -238,8 +472,8 @@ merely because it is connected, and the case's energy source has not been establ
   case staging area; exact carry/placement restrictions and interruption rules remain for 1.3.
 - Use minimal occupant movement and text for this demo. Speech bubble versus popup/display text,
   dialogue wording, input acknowledgement and any optional voice production are undecided.
-- Disconnecting/stowing the computer before seating/lift was an assistant recommendation, not yet a
-  user decision. Regardless of that choice, the computer/cable must have a reviewed safe placement.
+- The user agreed to disconnect and stow the computer after Gilliam bootstrap/registration, clearing
+  it and its cable before seating/lift; workspace and storage clearance still need review.
 
 ## Bounded Scope Changes And Later Contract Work
 

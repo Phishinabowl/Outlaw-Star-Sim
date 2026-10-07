@@ -250,7 +250,12 @@ preparation direction. Those discussions do not close VS-D01–03 or prove machi
 
 Carry forward the [opening discussion's dependency/interaction questions](phase-1-2-spatial-motion-decision-packet.md):
 case activation/skip, computer boot and registration, initial service availability, preparation overlap
-and occupant transfer. This pointer preserves inputs without starting Phase 1.3 or changing its scope gate.
+and occupant transfer. Include the agreed reusable magnetic boots, manual toggle/status direction,
+gravity-available notification and in-game character/equipment HUD; distinguish supported initial health display
+from deferred health/damage mechanics. Bound their state ownership, feedback and reset contract
+before assigning implementation work. Also reconcile the proposed placed-case player-blocking
+exception with interaction detection, occupant transfer and the demo's explicit clearance limits;
+it does not waive base ship/machinery fit. This pointer preserves inputs without starting Phase 1.3 or changing its scope gate.
 
 - [ ] Specify initial available services and player initialization, preserving early bridge access before main ignition.
 - [ ] Decide placeholder occupant deployment, cap closure/interlocks across cuts, seat lift coordination and all-four cylinder preparation behavior as F where unshown.

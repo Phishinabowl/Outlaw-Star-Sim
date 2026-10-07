@@ -56,6 +56,13 @@ owned by [startup comparison](startup-sequence-comparison.md) and the original f
 
 ## English Track Statements And Sign Captions — Qualified A
 
+Workspace refinement, 2026-10-07: re-inspection of OPEN-07 for the user's staging request shows
+the opened computer supported on top of the instrument/gauge housing in the side view, with the
+overhead shot placing that raised console surface relative to the seats. This is a temporary support
+location observation, not a seat-cushion placement, measured footprint or cable-path verification.
+The user agreed to use that workspace, then disconnect/stow after bootstrap and registration;
+that demo lifecycle is recorded in the [Phase 1.2 packet](../../docs/implementation/phase-1-2-spatial-motion-decision-packet.md#portable-computer-workspace-and-stowage--agreed-direction).
+
 | Interval | Paraphrased content | Interpretation limit |
 | --- | --- | --- |
 | 04:50.70–04:53.77 | Device is questioned and described as an alarm clock. | An in-story description, not a specification of the actual hardware. |
