@@ -10,6 +10,8 @@ Filename title: When the Hot Ice Melts. Filename resolution marker: 720p; actual
 
 The highest-priority review is the discovery/activation/startup sequence supplied by the brief. No timestamps are invented and no frames have been extracted.
 
+External scene-locator links and their verification limits are recorded in [external-sources.md](external-sources.md). Item 12 of the supplied earlier research passage identifies the all-episode timestamp source as AnimeHistory's screencap galleries. Source identification is resolved; web timestamps still require alignment with the local files.
+
 ## Proposed scene record schema
 
 scene_id, episode_id, source_filename, start_timestamp, end_timestamp, time_basis, stream_id, observation, evidence_classification, verification_status, frame_paths, related_scan_ids, open_questions.

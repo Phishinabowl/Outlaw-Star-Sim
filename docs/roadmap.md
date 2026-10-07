@@ -14,3 +14,5 @@ Bootstrap repository and documentation; protect media; inventory sources; screen
 6. Propose envelope/deck constraints with D/E/F geometry explicitly labeled.
 
 Later approved phases: Blender reconstruction/blockout, UE5 C++ foundations, dormant-entry/startup vertical slice, exploration and piloting, then expanded maintenance/flight/grapplers. These are directions, not implementation commitments.
+
+Before implementing simulation/control foundations, review [external control and automation compatibility](architecture/external-control-automation.md). Preserve a shared command/state interface from the start. VoiceAttack integration, transport selection, peripherals, crew-assistant roles, and natural-language orchestration remain separately approved future work; they do not expand the reference phase.

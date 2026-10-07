@@ -8,4 +8,4 @@ Gilliam will operate the same authoritative command/state interface as physical 
 
 Initial experience: dark asteroid storage hangar; sealed, mostly powered-down ship; limited emergency power; physical entry; staged startup; engine unsealing; bridge activation; eventual departure. Sub-ether travel will use a game-appropriate transition, not literal relativistic simulation.
 
-Accepted planning envelope: 72 m long × 21 m wide × 16 m high. These dimensions are supplied by the handover brief; primary/official provenance remains to be located.
+Accepted exterior envelope: 72 m long × 21 m wide × 16 m high, verified against [Sunrise World's official ship profile](https://www.sunrise-world.net/titles/pickup_094.php) (OFFICIAL_SUPPLEMENTAL, EXT-004). This constrains later reconstruction; it does not establish usable interior volume or a deck plan.

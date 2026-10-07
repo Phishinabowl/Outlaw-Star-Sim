@@ -9,6 +9,7 @@ Current phase: Phase 0 — documentation, reference screening, reconstruction pl
 - [Vision](docs/vision.md) and [design pillars](docs/design-pillars.md)
 - [Canon policy](docs/canon-policy.md)
 - [Roadmap](docs/roadmap.md)
+- [External control and automation requirements](docs/architecture/external-control-automation.md)
 - [Reference index](docs/reconstruction/xgp-reference-index.md)
 - [Open questions](docs/reconstruction/open-questions.md)
 - [Reference workflow](reference/README.md)

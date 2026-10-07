@@ -2,6 +2,8 @@
 
 One authoritative ship state supports physical consoles, local controls, player commands, and Gilliam. Proposed areas: power, cooling, propulsion, navigation, sensors, communications, life support, grapplers, sub-ether drive, maintenance, and damage. Exact dependencies and numerical models are deferred.
 
+Commands must be independent of UI and reusable by future external controls/automation. [External control and automation compatibility](external-control-automation.md) is the authoritative requirement for VoiceAttack, peripheral adapters, telemetry, structured command results, and optional language interpretation. All callers use the same validation and state; local intervention requirements remain enforceable.
+
 Conceptual progression: SEALED/STORAGE → BATTERY/EMERGENCY → AUXILIARY POWER → MAIN POWER → FULL OPERATIONAL. This is a gameplay planning concept, not a verified canonical state machine.
 
 Failure escalation requirements:

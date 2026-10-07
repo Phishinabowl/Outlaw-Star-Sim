@@ -4,7 +4,7 @@ B candidate means presumed production evidence pending provenance/version review
 
 | System/assembly | Sources | Initial evidence or requirement | Status/questions |
 |---|---|---|---|
-| Hull and overall envelope | SET-005,023,025,037,078,083,084,101,108; BRIEF | Multiple exterior views; accepted planning dimensions 72×21×16 m | B candidates for shape; dimensions require official source |
+| Hull and overall envelope | SET-005,023,025,037,078,083,084,101,108; EXT-004 | Multiple exterior views; official dimensions 72×21×16 m | B candidates for shape; OFFICIAL_SUPPLEMENTAL dimensions verified at [Sunrise World](https://www.sunrise-world.net/titles/pickup_094.php) |
 | Four main engine/service assemblies | SET-030,046,091,097,195,196; BRIEF EP-04 | 2×2 layout and exposed local controls | B candidate; engine extension/startup scene pending |
 | Rear propulsion/mechanical assembly | SET-032,098 | Detail drawings | B candidate; Japanese terms and relationship to engines unresolved |
 | Sub-ether drive | SET-048,094; BRIEF | Activation-pattern drawings | B candidate; hardware location and naming unresolved |

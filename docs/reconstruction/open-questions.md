@@ -1,6 +1,6 @@
 # Open questions
 
-- Where is primary/official support for the 72 × 21 × 16 m dimensions?
+- Resolved: [Sunrise World's official profile](https://www.sunrise-world.net/titles/pickup_094.php) supports the 72 × 21 × 16 m exterior envelope (EXT-004). Usable internal dimensions remain open.
 - What is the collection's provenance, and which sheets are final/approved versus preliminary?
 - Which printed sheet numbers and Japanese titles are legible at full resolution?
 - Does any source settle Newton versus Münchhausen reactor terminology? Keep unresolved.
