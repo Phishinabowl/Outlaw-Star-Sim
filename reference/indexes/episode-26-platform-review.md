@@ -20,6 +20,14 @@ The [locator manifest](episode-26-platform-locator-frames.json) records 17 expli
 
 The descent now directly corroborates the occupant-lowering stage in SET-027/086. Combined with Episode 4, animated observations support hatch opening, occupant descent, cylinder rise and lateral front-shield withdrawal **across different scenes**. Hatch closure, a continuous complete sequence, exact travel, timing/interlocks and below-floor hull fit remain unresolved. These shots do not establish a measured cavity depth.
 
+## Spatial Placement Caution — Subsequent User Review
+
+During Phase 1.2 cockpit planning, the user noted that the EP-26 overhead entry shot makes the
+apparatus appear unusually far aft/close to the doorway compared with its usual depiction. Record
+this as a possible scene-staging inconsistency; framing/perspective and metric relocation remain
+unresolved. Use this review to support descent motion, not to relocate the apparatus from the
+SET-022/028 and EP-04 layout anchors. This does not invalidate the observed occupant descent.
+
 ## Supplied reactor/drive explanation
 
 Subsequent evidence: [Episode 11](episode-11-subether-review.md) explicitly names Münchhausen output rise/runaway during sub-ether operation in the English translation and separately names four Newton units in the damage report. This corroborates part of the supplied explanation at the translated-dialogue level; fuel claims and complete topology remain unverified.

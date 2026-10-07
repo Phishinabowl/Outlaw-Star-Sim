@@ -34,7 +34,7 @@ Full character art, crew AI, general inventory and dialogue production do not fo
 | Held tool / boot | Carry the closed portable computer in one hand; use it at a cockpit station to activate Gilliam, followed by registration/status interaction | User agreed carrying direction; EP-04 device appearance/use supported; exact plug/port and demo interaction granularity unresolved |
 | Trunk transport | Melfina's trunk secured on the player's back while the computer is carried in hand | User agreed transport direction; E/F mounting/load/collision choices remain unselected; low-gravity premise not a measured value |
 | Computer connection region | Under the seated pilot's right-hand captain-chair/control panel, near the ignition-key region | EP-04 04:59–05:00 directly confirms reaching below/beside the panel; precise right-side/key-area placement remains the user's lead/provisional E choice, with connector and electrical relationship unverified |
-| Interior route | Rectangular ship entry leads into hallway space; central passage connects forward cockpit and aft engineering, with closed future branches | User selected demo topology; entry corridor context A, local settei directions B candidate; exact hull coordinates/connections E and unresolved |
+| Interior route | Rectangular ship entry leads into hallway space; central passage connects forward cockpit through a minimal dining/common-area shell toward aft engineering, with closed future branches | User selected demo topology and minimal dining-shell inclusion; entry corridor context A, local settei directions B candidate; exact hull coordinates/connections E and unresolved |
 
 [Episode 4 opening/bootstrap review](../../reference/indexes/episode-04-opening-bootstrap-review.md)
 connects reveal/boarding/computer operation to Gilliam's introduction and registration, then links the
@@ -85,6 +85,8 @@ The user explicitly ruled out direct cockpit boarding and selected these demo sp
 - Rectangular boarding hatch and its entry hallway/approach section.
 - Main passage running centrally through the ship.
 - Cockpit at the forward end and engineering/service room toward the aft end.
+- Minimal dining/common-area shell on the main route between passage and engineering, added by
+  explicit user agreement; its complete interior and gameplay are not required.
 - Closed doors/hatches indicating/reserving future branches, with placement informed by references.
 
 The entry section might be part of the main passage or connect through a short branch; distinct
@@ -97,7 +99,8 @@ flowchart LR
   H[Rectangular ship hatch] --> E[Entry hallway section]
   E --> P[Central main passage]
   P --> B[Forward cockpit]
-  P --> G[Aft engineering / four cylinders]
+  P --> D[Minimal dining / common-area shell]
+  D --> G[Aft engineering / four cylinders]
   P -.-> F[Closed future doors / hatch reservations]
 ```
 
@@ -108,10 +111,10 @@ S10 rail relationship, S12 necessary traversal and S13 incomplete boarding corre
 the Gene/Gilliam corridor scene and the relevant settei comparison.
 
 Preserve recognizable passage features and the round floor access hatch H03 separately from the
-rectangular entry records H04/H05. No dining or lounge interior is currently required by this demo
-direction; respect their named source directions through the chosen route/reservation proposal.
-If reconciling that route requires a room segment or other expansion, surface it rather than adding it
-silently. Cabins/cargo/utility remain unresolved: a closed door is not evidence of a specific room.
+rectangular entry records H04/H05. The user subsequently approved a minimal dining/common-area
+shell for traversal; a complete dining interior or separate lounge remains unselected. Preserve the
+named source directions through the chosen route proposal without asserting measured adjacency.
+Cabins/cargo/utility remain unresolved: a closed door is not evidence of a specific room.
 
 The user's [floor-hatch storage recollection](../reconstruction/open-questions.md#passage-floor-hatch--storage-recollection--pending-2026-10-07)
 is an active reference lead. Do not finalize H03's unseen destination or use its below-floor volume
@@ -143,6 +146,35 @@ Any candidate must leave room for grappler roots, case-carrying movement, H03 fl
 apparatus cavity below the cockpit. Preserve the agreed near-forward hangar reveal separately from
 boarding destination: the facility entry need not face or sit immediately beneath the ship's boarding hatch.
 
+### Dining/Common-Area Connector — User-Approved Inclusion, Fit Pending
+
+The user agreed to include a minimal walk-through dining/common-area shell in the demo rather
+than keep dining closed and invent a bypass. The working E sequence is cockpit → main passage →
+dining shell → engineering approach → engineering, with possible bulkheads, bends or intermediate
+connection lengths still unresolved. This preserves one continuous circulation route without claiming
+one straight corridor or a source-established door directly connecting dining and engineering.
+
+Evidence anchors are S02 (SET-044/045 passage toward dining) and S03 (SET-046 engineering toward
+dining). These are reviewed B-candidate destination relationships, not a complete plan. Re-inspected
+SET-088/089 and their existing authored review: they show a lounge/rest room, cockpit direction,
+wall storage/monitor and four convertible floor panels. Their identity as the dining destination
+remains unverified; do not silently merge rooms or import their furniture as confirmed dining geometry.
+
+For the first slice, include only the shell, usable connecting openings and necessary route lighting;
+any additional recognizable fixture proxies require a supported identity or an explicit E proposal.
+No dining interactions, cooking, food inventory or furniture motion is added by this agreement.
+Room length/width, doorway positions and engineering approach remain for the dimensional packet.
+
+Fit validation must keep the player route and potential maintenance-robot rail connection usable.
+If the chosen common-area reconstruction uses the convertible lounge design provisionally, explicitly
+label that E identity choice and protect M13's future furniture volume; a clear floor in the demo does
+not prove traversal remains possible with furniture raised. Full lounge/dining correspondence may
+continue as parallel research unless it would invalidate this slice route.
+
+This is an accepted bounded inclusion in the working packet. Reconcile it with Baseline v1 at
+Phase 1.2 closeout and carry it into Phase 3.2's dining-proxy owner. No shell has been modeled and
+no source measurement, hull placement or completed fit check is claimed.
+
 ### Working Level Hypothesis — Central Route And Lower Entry
 
 The user proposes a continuous cockpit-to-engineering main route, with bulkheads where needed;
@@ -161,7 +193,7 @@ to reconcile, not three newly verified source connections.
 
 ```mermaid
 flowchart LR
-  B[Forward cockpit] --- P[Continuous main-route candidate] --- G[Aft engineering]
+  B[Forward cockpit] --- P[Main passage] --- D[Minimal dining shell] --- G[Aft engineering]
   P -.->|Proposed H03 access / level change| E[Lower entry area]
   E --- H[Rectangular exterior hatch]
   P -.->|Unverified separate hatch| C[Possible lower cargo reservation]
@@ -401,6 +433,9 @@ accessible from the player's approach and her scripted transfer short.
 camera-right as a permanent ship-side designation. Exact case footprint, hinge geometry and offset
 from the apparatus cap still need comparison against cap/shield/seat sweeps and doorway visibility;
 a person standing there does not prove an occupied open case fits there.
+The user clarified the demo staging corner as the player's right when entering from the hallway
+and facing the nose. Use that explicit orientation in the corrected top view; source handedness
+remains distinct from this selected placement. Preserve circulation around the pod and seats.
 Allow the player to pass through the placed case where necessary; do not widen the cockpit,
 relocate source machinery or claim a new permanent storage bay to accommodate it.
 
@@ -480,6 +515,7 @@ completed fit check follows from the agreement.
 | Change from Baseline v1 | Direction to capture | Still needed before implementation |
 | --- | --- | --- |
 | Opening facility access | Proposed two-door entry airlock and nearby hangar-light interaction | VS-D01 spatial connection and explicit bounded scope amendment; no exterior exploration/pressure simulation assumed |
+| Main-route dining connector | User-approved minimal walk-through dining/common-area shell | Dimensions/doorway/engineering approach, provisional lounge-identity handling and baseline reconciliation; no dining gameplay |
 | Carried equipment | One specific back-mounted trunk and one handled portable computer | Carry/stow/reach envelopes; minimal equipment state later; full inventory UI/storage system remains unselected |
 | Melfina introduction | Case placement, lock, revival, timer shortcut and short transfer | Case envelope, code delivery, dependency/interaction rules and baseline acceptance update |
 | Gilliam bootstrap | Computer operation, basic registration/status and existing deterministic guidance | Connection/access geometry now; crew/player identity and action/result rules later in 1.3 |
@@ -499,15 +535,43 @@ Remaining opening decisions, to address incrementally:
 - Computer placement/connection access and cable/storage clearance as the seating lifts; use the seated pilot's right side as the proposed orientation, not camera-right.
 - Scope of registration and bootstrap interaction, text/guidance presentation and timing in Phase 1.3.
 
-Priority for the next spatial discussion: select the facility-to-ship approach and ship entrance, then
-locate the case staging area and computer work area against the apparatus/seat sweeps. That makes
-the opening intent concrete before choosing numerical dimensions or detailed input behavior.
+Current spatial follow-up: complete hatch/rail/future-mechanism reservations, canopy/platform and
+equipment-stow proposals where required, and the MC demonstration plan. Case/workspace staging
+and general Layout A/engineering arrangements are agreed; exact dimensions and swept clearances
+remain trials. Keep the case and ship navigation cylinder separate; no docking connection is
+established by the evidence. Detailed action/control behavior stays with Phase 1.3.
 
-Case dimensions/carry envelope and open/activation clearances will be proposed after this intent
-is clear, then tested against H entry identities, S connections and M/MC reservations. Keep the
-case and ship navigation cylinder separate; no docking connection is established by the evidence.
+## First Dimensional Proposal — General Arrangement Accepted, Fit Pending
 
-## Remaining Packet Work — Not Yet Proposed
+[Layout Proposal A](phase-1-2-layout-proposal-a.md) supplies initial E station bands, room boxes,
+lower-access/cavity separation and iteration priorities in response to the user's request for positions
+and dimensions. It uses a continuous main-floor hypothesis, the approved minimal dining shell and
+local lower access. The user explicitly accepted the general arrangement after reviewing an
+interactive planning diagram. Every numeric value remains a trial input; no hull cross-section,
+machinery fit or final geometry is validated or accepted. This agreement does not close VS-D01–03
+or authorize grayboxing/modeling; refine the allocation when actual fit testing is approved.
+
+## Remaining Packet Work — Fit And Decisions Pending
+
+[Engineering clearance proposal](phase-1-2-engineering-clearance-proposal.md) supplies a first
+all-four M07 extension/central-route/forward-operator-space trial. Its upper-row reach, fixed central
+equipment, platform, rail and local-height conflict remain explicit. The 3 m machinery-height example
+is an E test consequence, not a verified room height or accepted change to Layout A.
+The user accepted the general engineering arrangement and endorsed extra local height as a direction
+to test. SET-025/108's fuller aft central body is qualitative context for that choice, distinct from
+the surrounding propulsion pods. Numeric height, exact placement, upper-control reach and fit stay open.
+
+[Cockpit motion proposal](phase-1-2-cockpit-motion-proposal.md) adds the first M01–M06 numerical
+reservations, source-qualified stage demonstration and overhead/route conflicts for discussion.
+Its 2.30 m illustrative local canopy test refines Layout A's initial 2 m headroom trial around moving
+equipment; neither is a measured or accepted final ceiling. Fit checks remain pending.
+User review corrected the cap to open toward the rear of the seat assembly, the case to the
+entering-right corner and the diagram to show rear approach plus circulation around both sides.
+The user also flagged EP-26's near-doorway tube framing; that shot supplies descent evidence rather
+than the placement anchor. Exact angles, offsets, margins and scene correspondence remain open.
+The [EP-04 headroom review](../../reference/indexes/episode-04-cockpit-headroom-review.md) adds
+the user's 07:15 canopy/crew shot, relative character sheets and separately qualified height leads.
+The local canopy/perimeter profile remains to be proposed; no numeric ceiling estimate was verified.
 
 - Finalized exterior-entry identity/coordinates and entry-hall junction proposal (VS-D01), retaining H04/H05 uncertainty; hallway entry is the agreed direction.
 - Hull-relative bridge/passage/engineering placement and supported named directions (VS-D02).

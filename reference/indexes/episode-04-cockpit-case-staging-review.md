@@ -28,3 +28,8 @@ PNGs/logs remain ignored/local-only. This is sparse still review, with no new su
 
 The [Phase 1.2 packet](../../docs/implementation/phase-1-2-spatial-motion-decision-packet.md#cockpit-staging--demo-case-exception-proposed)
 owns the agreed demo adaptation and pending clearance proposal. No modeled fit is claimed.
+
+Subsequent user clarification: select the rear corner on the player's right when entering from the
+hallway and facing the nose. This resolves the demo's side convention; it does not independently
+authenticate source handedness from the camera view. Correct the planning diagram to that entering
+orientation and retain the wallward lid direction.

@@ -232,9 +232,13 @@ MSVC 14.50 is installed; remaining vendor-guidance setup gaps are proposed chang
 **Prerequisite:** 1.1 scope/host inventory. **Deliverable:** VS-D01–03 E decision packet, not modeled geometry.
 
 **Working packet:** [spatial/motion decisions](phase-1-2-spatial-motion-decision-packet.md).
-Opening/case discussion is in progress; no layout, dimensions or scope amendment is accepted yet.
+Layout A's general arrangement and the general engineering service-route arrangement are accepted
+in principle. Dimensions, ceiling/bay heights, exact connections and fit remain provisional;
+the packet's agreed opening additions still require baseline scope reconciliation at closeout.
 The packet consolidates facility lighting, case/computer carrying, revival/skip, bootstrap and guided
-preparation direction. Those discussions do not close VS-D01–03 or prove machinery fit.
+preparation direction. The user also approved a minimal walk-through dining/common-area shell in
+the route; its dimensions/connections and lounge identity remain unresolved. These discussions do
+not close VS-D01–03 or prove machinery fit; baseline scope reconciliation remains at closeout.
 
 - [ ] Propose selected entrance and entry→bridge→engineering route with S/H IDs and unresolved correspondence explicit.
 - [ ] Propose hull-relative room/cavity placement, occupant scale, extension sweeps and operator paths for M01–M09; record provisional dimensions/margins without claiming measured canon.
@@ -386,7 +390,7 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 **Prerequisite:** 3.1 and VS-D01/02 accepted. **Deliverable:** minimum supported hull/context and connected walkable route.
 
 - [ ] Place hull envelope/supports, chosen entrance, bridge, passage and engineering proxies at the agreed E layout.
-- [ ] Include dining proxy only where the chosen route requires it; preserve separate hatch records and future spatial reservations.
+- [ ] Include the user-approved minimal dining/common-area shell in the chosen route, once the Phase 1.2 connection/dimension proposal is accepted; preserve unresolved lounge identity, separate hatch records and future spatial reservations.
 - [ ] Traverse outside→bridge→engineering→bridge with the same player; annotate every invented connection.
 
 **Validation:** VS1-G02 route/scale proof; baseline S/H references and VS-01/02 traced, without claiming final entry mechanism.
