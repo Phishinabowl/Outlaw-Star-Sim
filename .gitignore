@@ -1,0 +1,35 @@
+# Immutable, local-only source references
+/_source_settei/
+/_source_episodes/
+
+# Generated reference media and local working data
+/reference/extracted-frames/
+/reference/contact-sheets/
+/reference/cache/
+/reference/working/
+
+# Unreal generated files; authored source and content remain trackable
+/Unreal/**/Binaries/
+/Unreal/**/DerivedDataCache/
+/Unreal/**/Intermediate/
+/Unreal/**/Saved/
+/Unreal/**/.vs/
+/Unreal/**/*.sln
+/Unreal/**/*.VC.db
+/Unreal/**/*.VC.opendb
+
+# Blender backups
+*.blend1
+*.blend2
+*.blend@
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and OS caches
+.vs/
+Thumbs.db
+.DS_Store
