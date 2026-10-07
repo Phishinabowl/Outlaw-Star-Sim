@@ -4,7 +4,7 @@ All 221 scans were screened using eight labeled contact sheets. The initial 57 X
 
 The [source manifest](../../reference/indexes/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.
 
-Detailed review has begun: [interior/startup batch](../../reference/indexes/settei-interior-review.md) documents 16 representative sheets with Japanese callouts, working translations, printed/inset numbers, stamp dates, and open constraints. Reconciliation adds selected identity checks for 11 further XGP/support records, followed by eight variant comparisons; 31 have none of these focused passes documented. Full comparison/transcription remains incomplete. None of all 221 scans has a byte-identical SHA-256 match in the manifest.
+Detailed review has begun: [interior/startup batch](../../reference/indexes/settei-interior-review.md) documents 16 representative sheets with Japanese callouts, working translations, printed/inset numbers, stamp dates, and open constraints. Reconciliation adds selected identity checks for 11 further XGP/support records, followed by 14 variant comparisons and three selected propulsion-label checks; 22 have none of these focused passes documented. Full comparison/transcription remains incomplete. None of all 221 scans has a byte-identical SHA-256 match in the manifest.
 
 ## Subject groups
 
@@ -55,3 +55,5 @@ img129 is an Eldorado/Shangri-La interior concept; img130–133 are explicitly E
 Classification: final-looking relevant sheets are PRODUCTION_CANON candidates pending collection provenance/version review. Selected anime corroboration is now documented below; collection-wide authentication remains open. Fine Japanese translation, measurements, and room placements remain ongoing work. No metric dimensions were derived from perspective drawings.
 
 Subsequent [variant comparison](../../reference/indexes/settei-variant-review.md) covers SET-082,085,086,087,091,097,195,196 against their representatives, without finding a substantive design revision. [Episode 4 local startup observations](../../reference/indexes/episode-04-startup-review.md) corroborate selected apparatus, engineering and key details. Current focused-pass counts are also recorded in the progress report.
+
+[Six-item follow-up](../../reference/indexes/startup-open-items-followup.md) adds active-bridge, passage, landing and exterior-airlock comparisons (SET-092,093,095,096,098,197), plus selected propulsion labels on SET-023,025,108. Remaining geometry-critical families are listed there for episode-guided review.

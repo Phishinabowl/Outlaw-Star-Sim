@@ -5,11 +5,11 @@ Scan references are collection IDs, not canonical room numbers. B candidate = PR
 | Space | Sources | Observation/status | Category | Open constraint |
 |---|---|---|---|---|
 | Bridge/cockpit | SET-006,022,027,028,082,085,086,095 | Seat group, apparatus, canopy, hatch; SET-022 individually reviewed | B candidate | Tank states, dimensions, station roles, entry clearance |
-| Navigation apparatus space | SET-022,027,028,085,086; BRIEF | In/associated with cockpit; operating cylinder behind seats | B candidate; brief anime claim pending | Motion and access around Melfina |
+| Navigation apparatus space | SET-022,027,028,085,086; local EP-04/26 | Operating cylinder behind seats; occupant descends through circular floor opening in EP-26 | A corroboration and B candidates | Support hardware, cavity depth, complete motion and access clearance |
 | Main passage | SET-044,045,092,093 | SET-044 points toward cockpit and dining room; floor exterior-access hatch and robot rail | B candidate | Exact lengths, other branches, hatch destination |
 | Dining area | SET-044; BRIEF | Direction label establishes named destination; detailed room geometry not confirmed | B candidate for label only | Is lounge related/adjacent? Do not equate automatically |
 | Rest room/lounge | SET-043,088,089 | Convertible table/bed configurations, cabinets, monitor, cockpit arrow | B candidate for 088/089; 043 preliminary | Relationship to dining, sleeping arrangements, configuration clearance |
-| Engineering/service room | SET-030,046,091,097,195,196; BRIEF EP-04 | 2×2 circular assemblies and service platform; one extended unit in SET-030 | B candidate; anime pending | Four-engine behavior, safe access and exterior alignment |
+| Engineering/service room | SET-030,046,091,097,195,196; local EP-04/08 | 2×2 bank; one extended unit in representative settei, all four extended in anime | A corroboration and B candidates | Service clearance for all four extended cylinders, safe access and exterior alignment |
 | Airlock | SET-047,096,126,197 | Exterior detail and internal hatches/pressure display | B candidate | Location, adjoining spaces, pressure sequence |
 | Assault Shooter assembly/passage | SET-125,192; BRIEF | Telescoping tube/capsule/hatch shown | B candidate | Boarder access route, stowed length, user traversal semantics |
 | Crew cabins | BRIEF | Claimed midship spaces; no definitive XGP cabin sheet identified in screening | Unverified brief claim | Room count, arrangement and dimensions |
@@ -34,3 +34,5 @@ See [the 16-sheet transcription/review](../../reference/indexes/settei-interior-
 | Airlock relative to grapplers | SET-126 | Arms on both sides of airlock hatch per note | Exact exterior opening and relation to passage floor hatch |
 
 Do not turn these directional labels into a measured full-ship layout. Keep the round passage exterior-access hatch, bridge emergency hatch, and airlock as distinct evidence records until correspondence is established.
+
+The [Episodes 4/7/8 startup comparison](../../reference/indexes/startup-sequence-comparison.md) adds moving seating/control-cluster evidence in the bridge and an all-four-extended engineering view. Model planning must reserve motion/service space, but travel distances, hull fit, full apparatus cavity and unseen connections remain unmeasured. Episode 4 rectangular access-hatch views are recorded separately from the round passage/bridge openings.

@@ -60,3 +60,5 @@ Do not attribute the 09:58.81–10:02.41 translated ether-drive-active line to X
 Local startup evidence now supports separate early activation, navigation-apparatus preparation, manual engineering intervention, key engagement, generator startup and main/sub power presentation. This is an observed scene order plus translated dialogue leads, not an implemented simulation state machine.
 
 Still open: complete occupant descent; fine hatch/shield trajectories; exact manual seal-release mechanism; wide engineering view with exposed control panel; whether/when all four cylinders are treated; Japanese/dub terminology; exact cut boundaries; web/local image alignment. Full-source frame sampling and a complete episode transcript are outside this increment.
+
+[Follow-up dated 2026-10-07](startup-open-items-followup.md) adds closer handle/front-plate rotation and hatch-opening observations, while retaining the four-unit, full-platform/shield and spoken-terminology questions. It distinguishes a rear cylinder view from a front shield-state observation.
