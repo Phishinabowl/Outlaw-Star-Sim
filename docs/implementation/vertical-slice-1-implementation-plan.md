@@ -3,18 +3,19 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 |
-| Status | Phases 1.1 and 1.2 planning complete; later execution not authorized |
+| Status | Phases 1.1 and 1.2 planning complete; Phase 1.3 discussion/preparation authorized; implementation not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 1.2 accepted planning closeout; Phase 1.3 unstarted |
+| Current checkpoint | Phase 1.3 action/readiness draft; user discussion pending |
 
 ## Purpose And Placement
 
 Deliver the first playable **Awakening the Outlaw Star** slice: approach the supported dormant ship,
 enter it, traverse the required interior, initialize services, deploy the navigation apparatus,
-prepare engineering, return to the bridge and complete ignition to **SHIP READY**. Remain inside
-the hangar; do not launch.
+prepare engineering, return to the bridge and complete ignition to **SHIP READY**. Keep the ship
+supported in the hangar; do not launch. Startup success does not end play: allow seat exit, continued
+exploration and hatch exit/re-entry across the active-ship/low-gravity-hangar boundary.
 
 This is the execution checklist and phase-status owner. Baseline v1 owns spatial/motion constraints,
 operational vocabulary and slice scope/acceptance. Architecture documents own shared-state and
@@ -263,6 +264,12 @@ later fit checks; source correspondence and final geometry remain explicitly unr
 ### Phase 1.3: Player Actions, Mechanism Stages And Readiness Contract
 
 **Prerequisite:** 1.2 spatial proposal. **Deliverable:** VS-D04–06 decisions and a normal-path action/result table.
+
+The user authorized Phase 1.3 preparation on 2026-10-07, asking for independent draft work and
+a discussion queue for their return. The [action/readiness draft](phase-1-3-action-readiness-draft.md)
+records established constraints, recommended service/state/action rules, eight readiness mappings
+and D13-01–09 choices. User-selected directions are marked in the draft; remaining recommendations
+are unaccepted and all Phase 1.3 completion checklist items below stay open.
 
 Carry forward the [opening discussion's dependency/interaction questions](phase-1-2-spatial-motion-decision-packet.md):
 case activation/skip, computer boot and registration, initial service availability, preparation overlap
@@ -612,7 +619,8 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 
 - [ ] Derive ready/incomplete/in-progress from all eight baseline conditions; display/status queries agree on the same result.
 - [ ] Add only guidance needed for physical progression and understandable unmet prerequisites.
-- [ ] Keep the ship supported and stop at SHIP READY; no launch command, movement, cockpit-flight controls or placeholder combat becomes a dependency.
+- [ ] Keep the ship supported; SHIP READY is a startup milestone, not a demo ending. Allow seat exit, continued traversal and hatch exit/re-entry with local gravity transitions. No launch command, ship movement, cockpit-flight controls or placeholder combat becomes a dependency.
+- [ ] Distinguish startup completion from represented departure readiness: an open hatch/outstanding seal-pressure check reports a warning without blocking ignition or shutting down engines/gravity in the breathable hangar.
 
 **Validation:** VS1-R02 eight-condition aggregate and guidance/query consistency; confirm VS-06/09 without fixture bypass.
 **Recovery / deferral:** simplify presentation while preserving required state feedback; no crew dialogue generation, LLM or future mode controls.

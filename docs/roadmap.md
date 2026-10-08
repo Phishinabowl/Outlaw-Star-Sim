@@ -56,10 +56,18 @@ by this documentation addition.
 
 ## Later directions — not yet authorized
 
+The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
+[action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,
+player, mechanism and readiness recommendations plus a discussion queue. User-selected directions
+now include manual hand-item draw/stow and restoration, independent hatch operation, breathable
+hangar, gravity after ignition and continued exploration after startup success. Seal/pressure status
+affects represented departure readiness rather than ignition. Remaining recommendations are open;
+Phase 1.4 and implementation remain unstarted.
+
 The [Phase 1.2 closeout package](implementation/phase-1-2-closeout-proposal.md) was accepted by
 the user on 2026-10-07, including local canopy/platform/computer storage, planned MC demonstrations
-and the bounded opening contract supplement. Phase 1.2 planning is complete; no later subphase
-or actual geometry test has been performed.
+and the bounded opening contract supplement. Phase 1.2 planning is complete; its actual geometry
+tests remain unexecuted. Phase 1.3 has since started as preparation/discussion only.
 
 Graybox/Blender reconstruction and UE5 foundations can support the slice under a separately approved implementation scope. Exploration beyond required rooms, actual flight, sub-ether, expanded maintenance, faults/repairs, grapplers, detailed art and crew assistants remain later directions.
 

@@ -4,7 +4,7 @@ An evidence-driven reconstruction of the XGP-15AII and a planned interactive shi
 
 **The reference/research foundation is substantially complete for implementation purposes within the first slice.** This means enough evidence exists to define a constrained initial build; it does not mean every room, mechanism, translation or performance figure is settled. Unresolved research continues as an [ongoing parallel track](docs/reconstruction/open-questions.md).
 
-Current status: **Phases 1.1 and 1.2 planning complete; Phase 1.3 unstarted; implementation not started**. No Unreal project, modeled ship or playable build exists yet. The accepted [implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) links the [Phase 1.1 readiness record](docs/implementation/phase-1-1-host-tooling-readiness.md) and [accepted Phase 1.2 packet](docs/implementation/phase-1-2-spatial-motion-decision-packet.md), which distinguishes opening agreements, episode evidence and provisional geometry. Later subphases, Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
+Current status: **Phases 1.1 and 1.2 planning complete; Phase 1.3 action/readiness discussion in progress; implementation not started**. No Unreal project, modeled ship or playable build exists yet. The accepted [implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) links the [Phase 1.1 readiness record](docs/implementation/phase-1-1-host-tooling-readiness.md), [accepted Phase 1.2 packet](docs/implementation/phase-1-2-spatial-motion-decision-packet.md) and [Phase 1.3 draft/discussion queue](docs/implementation/phase-1-3-action-readiness-draft.md). Later subphases, Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
 
 ## First experience — Awakening the Outlaw Star
 
@@ -16,7 +16,7 @@ The [Vertical Slice 1 contract](docs/reconstruction/baseline-v1/vertical-slice-1
 
 `Approach → exterior entry → bridge/passages → initial services → navigation apparatus → engineering preparation → cockpit ignition → SHIP READY`
 
-The endpoint remains inside the hangar. Scope includes the required traversal route, physical controls, a placeholder occupant for Melfina's apparatus, four prepared engineering-cylinder endpoints, moving bridge seating and consistent readiness feedback. It excludes free flight, sub-ether travel, combat, damage simulation, full crew AI, Gilliam LLM, every interior room and detailed art.
+The ship remains supported inside the hangar. SHIP READY is a startup milestone, not the end of play: leave the seat and continue exploring, including hatch exit/re-entry between active ship gravity and hangar low gravity. Hatch seal/pressure checks affect the represented departure status rather than blocking ignition. Scope includes the required traversal route, physical controls, a placeholder occupant for Melfina's apparatus, four prepared engineering-cylinder endpoints, moving bridge seating and consistent readiness feedback. It excludes free flight, sub-ether travel, combat, damage simulation, full crew AI, Gilliam LLM, every interior room and detailed art.
 
 Baseline v1 preserves evidence and assumptions separately:
 
@@ -65,7 +65,7 @@ The [canon policy](docs/canon-policy.md) separates anime observations (A), authe
 
 Keep hatch/room correspondence, apparatus clearances, remaining mechanical families, Japanese wording, power topology and performance interpretation in [open questions](docs/reconstruction/open-questions.md). Research should be targeted when it could invalidate a chosen slice connection, motion or interaction; broader full-ship archaeology need not hold the entire project indefinitely. Any provisional solution remains explicitly E/F and reviewable.
 
-The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns execution sequence, prerequisites, validation, recovery and exit reviews. Phase 1 is the formal decision/planning gate; it resolves the existing [slice decisions](docs/reconstruction/baseline-v1/vertical-slice-1.md#decisions-before-the-next-phase) before project creation. Phases 1.1 and 1.2 planning are complete. The accepted spatial choices remain provisional pending fit proof; later subphases are not authorized.
+The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns execution sequence, prerequisites, validation, recovery and exit reviews. Phase 1 is the formal decision/planning gate; it resolves the existing [slice decisions](docs/reconstruction/baseline-v1/vertical-slice-1.md#decisions-before-the-next-phase) before project creation. Phases 1.1 and 1.2 planning are complete; Phase 1.3 preparation/discussion is authorized. The accepted spatial choices remain provisional pending fit proof; Phase 1.4 onward is not authorized.
 
 ## Start here
 

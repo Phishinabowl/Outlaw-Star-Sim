@@ -9,7 +9,7 @@ records the bounded opening supplement accepted by the user on 2026-10-07, conso
 case/computer, reveal, boots, HUD and dining-shell directions. Read it alongside the historical
 contract below; its eight readiness conditions remain intact. Source observations are unchanged.
 
-One physical player approaches the dormant XGP inside a minimal asteroid hangar, finds and operates an exterior entry, explores the bridge and required passage route, brings limited ship services online, deploys the navigation apparatus with a placeholder occupant, performs engineering preparation, returns to the bridge and completes ignition. End at **SHIP READY**, still supported inside the hangar; no departure.
+One physical player approaches the dormant XGP inside a minimal asteroid hangar, finds and operates an exterior entry, explores the bridge and required passage route, brings limited ship services online, deploys the navigation apparatus with a placeholder occupant, performs engineering preparation, returns to the bridge and completes ignition. Reach **SHIP READY**, still supported inside the hangar; no departure. The user clarified in Phase 1.3 that this is a startup milestone, not the end of play: leave the seat and continue exploring, including hatch exit/re-entry between active ship gravity and hangar low gravity.
 
 The path is a gameplay adaptation of EP-04's ensemble commissioning scene. The player can perform activities seen across Gene/Jim rather than requiring crew AI. A placeholder occupant/script supplies Melfina's apparatus sequence; it does not grant the player magical direct control over the ship's canonical bio-navigation. This role consolidation is F, not an anime retelling with exact actions/characters.
 
@@ -58,11 +58,18 @@ The endpoint is an F aggregate of the following declared conditions, supported b
 3. Navigation apparatus has reached its declared deployed/available state with placeholder occupant; supported visible stages are represented.
 4. All four engineering control cylinders are in their prepared endpoints.
 5. Bridge seat/control cluster has reached the declared operating position.
-6. Cockpit ignition has completed; main-service/engine-operation presentation is available.
+6. Cockpit ignition has completed; main-service/engine-operation presentation and selected ship gravity are available.
 7. Displays/status queries consistently report readiness from the same authoritative state.
-8. Ship remains supported in the hangar; the slice ends without initiating departure.
+8. Ship remains supported in the hangar; startup success does not end the demo, and continued exploration/exit/re-entry remains available without departure.
 
 These are completion criteria, not a new canonical claim that each condition is a universal launch interlock. Exact hatch closure, pressure checks, power thresholds and station-local permissions are recorded as decisions before implementation. No unfinished feature should be required to obtain this endpoint.
+
+User-selected Phase 1.3 clarification: hatch closure/seal/pressure readiness affects the represented
+departure status, not ignition or startup completion. Engines and ship gravity can run with the
+hatch open in the breathable hangar. Reopening updates the departure warning without switching
+off those services. Leaving the captain's seat after success does not revoke the completed seat
+transition. The [Phase 1.3 record](../../implementation/phase-1-3-action-readiness-draft.md)
+owns these E/F rules and remaining check/gravity-boundary details; no full flight or pressure model is added.
 
 ## Acceptance review for the later implementation
 
@@ -76,7 +83,7 @@ These are completion criteria, not a new canonical claim that each condition is 
 | VS-06 | Key engagement and final status reflect actual completed initialization; all four cylinder endpoints and navigation state agree with the readiness result. |
 | VS-07 | Changing camera perspective changes neither ship state nor action permissions; the same physical player remains the operator. |
 | VS-08 | A fresh run/reset can repeat the complete sequence without stale readiness or mechanism state. No save/load feature is required by this criterion. |
-| VS-09 | Completion stops at SHIP READY without needing flight, weapons, faults, external clients or crew AI. |
+| VS-09 | SHIP READY records startup success without ending play; the player can leave the seat and explore/exit/re-enter, without flight, weapons, faults, external clients or crew AI. |
 | VS-10 | All implemented invented connections, dimensions, timelines and actor substitutions have explicit E/F records; source-derived appearance is traceable to evidence. |
 
 These are planned acceptance criteria, not tests already run. No code or modeled artifact exists for this slice yet.

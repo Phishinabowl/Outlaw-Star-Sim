@@ -4,6 +4,11 @@ Status: accepted for planning by the user, 2026-10-07. Phase 1.2 is complete as 
 physical fit tests remain unexecuted. Phase 1.3 and implementation remain unstarted.
 No new source observation, installation, model or gameplay work was performed by this closeout.
 
+Subsequent user-selected [Phase 1.3 clarifications](phase-1-3-action-readiness-draft.md) distinguish
+startup success from departure readiness and require continued exploration after success, with
+ship/hangar gravity transitions. Bounded hatch seal/pressure status is now discussed there; the
+earlier no-pressure-work scope below remains historical, not a ban on that explicitly authorized update.
+
 The [decision packet](phase-1-2-spatial-motion-decision-packet.md) owns discussion agreements.
 This closeout consolidates those with [Layout A](phase-1-2-layout-proposal-a.md), the
 [cockpit](phase-1-2-cockpit-motion-proposal.md), [engineering](phase-1-2-engineering-clearance-proposal.md)
