@@ -1,9 +1,13 @@
 # Reference phase — first review increment
 
-Latest publication approval: the user confirmed the expanded implementation plan, navigation updates
-and editor-automation requirements on 2026-10-07. The two uncommitted-status entries immediately below
-describe their review-time state. This accepts the planning baseline for publication; future execution
-checkboxes remain open, with no installation, project creation, modeling or gameplay approval implied.
+Current publication checkpoint: Phases 1.1–1.3 planning are accepted, with final Phase 1.3 closeout
+published in `209b87d` on 2026-10-08. The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md)
+owns current phase status and the [behavior closeout](../implementation/phase-1-3-closeout-audit.md)
+owns selected E/F contracts. Phase 1.4 and implementation remain unstarted.
+
+Entries below preserve dated reference increments. Their “uncommitted”, extraction/tool absence
+and open-behavior language describes that checkpoint, not current repository state. Later targeted
+EP-01/02/04/11 and machinery/headroom reviews do not retroactively authenticate the scan collection.
 
 ## Editor automation planning addition — 2026-10-07, uncommitted
 

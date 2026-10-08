@@ -2,6 +2,10 @@
 
 Companion to the [spatial map](spatial-constraint-map.md), [motion envelopes](motion-clearance-envelopes.md) and [Vertical Slice 1](vertical-slice-1.md). These are provisional state labels for future code discussion, not an implemented state machine, a verified Japanese control lexicon or an approved command registry.
 
+Current gameplay decisions are in the [accepted Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md).
+The scene sequences below retain source/inference boundaries; they do not override chosen E/F
+registration, preparation, reversible key/engineering, pause or milestone/departure behavior.
+
 ## Meaning of support labels
 
 - **Canon-supported:** specific anime observation A, translated statement with original wording unverified, or selected B-candidate design stage. State names are our English vocabulary, not automatically on-screen labels.
@@ -91,4 +95,8 @@ A future request must return actual in-progress/completed/rejected state through
 
 ## Architecture decisions required before implementation
 
-Choose a minimal service-power assumption, apparatus completion/interlocks across cuts, entry access behavior and how all four engineering endpoint states are reached. Assign E/F IDs and rationale. Decide which actions are local, station-based, scripted or automatic; neither VoiceAttack nor future Gilliam may bypass required local intervention. Use the [slice acceptance contract](vertical-slice-1.md) to define readiness; retain the training simulation as training evidence, not operational explosion thresholds.
+Phase 1.3 selected qualitative initial supplies, apparatus coordination, local all-four adaptation,
+result/interruption rules and reversible operation. Exact APIs/ownership and measurement/asset
+contracts remain Phase 1.4 and later validation work. Neither Gilliam nor future adapters may bypass
+local requirements. Source scene order and emergency key removal remain distinct from the demo's
+no-emergency-cutoff contract; training evidence is not an operational explosion threshold.

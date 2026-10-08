@@ -1,5 +1,9 @@
 # Initial XGP reference index
 
+Current planning: [Phase 1.2 spatial choices](../implementation/phase-1-2-closeout-proposal.md)
+and [Phase 1.3 behavior contract](../implementation/phase-1-3-closeout-audit.md) are accepted;
+actual model/fit/runtime validation remains pending. This index owns source coverage, not game rules.
+
 [Baseline v1](baseline-v1/spatial-constraint-map.md) consolidates spatial relationships, motion reservations, operational vocabulary and the first slice contract for later implementation planning. Provisional geometry/state choices remain separate from source evidence; it is not implementation authorization.
 
 [Performance subtitle audit](../../reference/indexes/performance-subtitle-audit.md) covers all 26 numbered episodes, with a [curated metric CSV](../../reference/indexes/performance-metrics.csv) and per-episode source/stream/hash provenance. Use it for later propulsion, sensor and grappler model discussion; translated statements, derived calculations and unresolved attribution remain separate.
@@ -8,7 +12,18 @@ All 221 scans were screened using eight labeled contact sheets. The initial 57 X
 
 The [source manifest](../../reference/indexes/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.
 
-Detailed review has begun: [interior/startup batch](../../reference/indexes/settei-interior-review.md) documents 16 representative sheets with Japanese callouts, working translations, printed/inset numbers, stamp dates, and open constraints. Reconciliation adds selected identity checks for 11 further XGP/support records, followed by 14 variant comparisons and three selected propulsion-label checks; 22 have none of these focused passes documented. Full comparison/transcription remains incomplete. None of all 221 scans has a byte-identical SHA-256 match in the manifest.
+The original structured-pass checkpoint comprises 16 interior/startup, 11 identity, 14 variant and
+three propulsion-label records, leaving 22 without those pass types. Later targeted
+[reservation checks](../implementation/phase-1-2-reservation-audit.md) and
+[headroom comparison](../../reference/indexes/episode-04-cockpit-headroom-review.md) are supplemental
+inspections, not a new complete annotation tally. Full comparison/transcription remains incomplete.
+None of all 221 scans has a byte-identical SHA-256 match in the manifest.
+
+Additional focused episode sources: [case revival](../../reference/indexes/episode-01-02-melfina-case-review.md),
+[boarding/laptop/registration](../../reference/indexes/episode-04-opening-bootstrap-review.md),
+[laptop screen sequence](../../reference/indexes/episode-04-hilda-laptop-screen-review.md) and
+[Melfina power-state comparison](../../reference/indexes/episode-11-subether-review.md).
+User-verified English dub observations remain track-qualified; fan images stay non-canonical/local-only.
 
 ## Subject groups
 

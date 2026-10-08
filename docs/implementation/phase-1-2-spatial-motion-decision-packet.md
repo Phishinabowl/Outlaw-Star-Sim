@@ -1,5 +1,9 @@
 # Phase 1.2 — Spatial And Motion Decision Packet
 
+Current behavior companion: [accepted Phase 1.3 closeout](phase-1-3-closeout-audit.md).
+The discussion below is historical where it leaves behavior for Phase 1.3: those decisions are
+now selected, while metric layout, source correspondence and actual fit remain pending.
+
 Status: Phase 1.2 planning accepted and complete, 2026-10-07. No later subphase,
 modeling, Unreal initialization or gameplay implementation is authorized. No decisions in this
 packet are accepted solely by being written here.

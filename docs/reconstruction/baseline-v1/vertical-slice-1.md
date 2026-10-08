@@ -32,13 +32,13 @@ Ordering is the slice's F experience sequence, informed by the commissioning evi
 | Hangar / hull context | Minimal supported ship reveal and reachable boarding approach at the accepted overall hull scale | Provisional E hangar/support geometry; no detailed asteroid facility or launch opening animation. Use grey commissioning appearance as reference, not a finalized art pass. |
 | Entry | One selected exterior hatch with approach, interaction, movement and traversable interior connection | Entry identity/route is unresolved evidence; select an E/F solution explicitly before blockout. Keep other hatch records distinct. |
 | Player / camera | One physical avatar can traverse required spaces and operate local controls; first/third-person views preserve the same body/state | No full character art, crew AI or separate authority per camera. Camera mode and control mode remain distinct. |
-| Interior route | Bridge, necessary passage and engineering/service room connected for play | Dining may be a route segment/proxy if the chosen connection requires it. Other rooms may be indicated/reserved; full layout is excluded. |
-| Limited services | Enough initial illumination/display/interaction to stage startup, distinct from later main ignition | Battery/source topology and service availability are E/F planning decisions; no numerical power simulation. |
-| Navigation apparatus | Placeholder-occupied descent, cap/stowed/rise/cover states with readable completion and reserved cavity | Combine A stages with B-candidate explanation; closure/timing/interlocks remain provisional. No advanced fluid simulation or full Melfina AI. |
+| Interior route | Lower entry/ladder, forward cockpit, main passage, minimal dining shell and engineering connected for play | Layout A is accepted provisional E geometry, not proved hull fit. Future branches reserved; full deck plan excluded. |
+| Limited services | Guide lighting on entry; laptop bootstrap enables Gilliam/limited services before main ignition | Qualitative supplies accepted E/F; actual canonical topology/numerical power remain unknown. |
+| Navigation apparatus | Awake occupant waits for local acknowledgement; cap opens, entry/descent, cap closure, rise/cover stages reach actual link/available state | Joined choreography/closure bridge accepted E/F. Exact metric motion/rig fit later; no fluid simulation/full AI. |
 | Bridge seating | Raised/low control-cluster states and required lift motion, coordinated with access/apparatus reservations | No measured stroke or detailed actuator rig implied. |
-| Engineering | Four internal control cylinders reach their prepared/extended endpoints; local physical work is represented | One manual procedure shown, four endpoints known. How the other three are prepared is an explicit unresolved F decision, not canon. No exterior-engine retraction assumption. |
-| Ignition / feedback | Cockpit key action, startup progression and consistent service/readiness feedback | Main/sub presentation follows evidence without inventing a complete circuit topology. Physical action and completion must agree. |
-| Guidance | Minimal deterministic text/display instructions and status sufficient to finish the sequence | Guidance may use Gilliam presentation; no LLM, dialogue-generation, character voice or crew orchestration requirement. |
+| Engineering | Four distinct local click-seal/grip-turn/directional-pull units; early preparation allowed after registration; OFF permits push-in/relock/redeploy | Repeating one shown procedure on all four and reverse operation are F. No new ribbons; every restart validates current prepared endpoints. No exterior-pod movement assumed. |
+| Ignition / feedback | Separate key presence/OFF/ON, ignition-triggered occupied lift, graceful OFF/lowering and consistent current versus milestone status | Removal only after completed OFF; no mid-transition reversal/emergency cutoff. Source-derived presentation does not establish full wiring. |
+| Guidance | Animated ceiling-mounted Gilliam pod, deterministic text/choices, resumable registration/recovery branch and state-aware reports | No LLM, generated dialogue, required voice or mobile robot escort/AI. Exact source expression fidelity remains later reference/art work. |
 
 ## Explicit exclusions
 
@@ -75,7 +75,7 @@ The user also selected reversible key operation and occupied seat lowering on OF
 per-run completed-startup milestone after the successful sequence, independently of the current
 running/ready result when later switched OFF. Raise/lower motion temporarily locks seat exit;
 physical key insertion/removal and OFF/ON switching are distinct actions. Exact shutdown service
-consequences remain in the Phase 1.3 discussion; this does not add full storage reversal or saved achievements.
+timings/visual tuning remain later work under the accepted closeout; this does not add full storage reversal or saved achievements.
 
 ## Acceptance review for the later implementation
 
@@ -104,6 +104,12 @@ These are planned acceptance criteria, not tests already run. No code or modeled
 Preserve one authoritative state and a reusable command/query boundary per [external-control compatibility](../../architecture/external-control-automation.md). In-world controls and future adapters must share validation/results. Keep equipment identities, spatial locality, camera/control context and guidance separate. Do not select an external protocol, full component framework or numerical physics model merely to reserve extensibility.
 
 ## Decisions before the next phase
+
+Current status: VS-D01–03 have accepted provisional spatial choices (actual fit pending), and
+VS-D04–06 have accepted E/F behavior contracts in the Phase 1.3 closeout. Their source uncertainties
+remain explicit. VS-D07 tool/asset/implementation authorization and concrete Phase 1.4/1.5 contracts
+are still pending. The register below retains its original decision IDs; it is not a list of six
+behavior choices still awaiting initial agreement.
 
 | ID | Decision / required review | Evidence or assumption boundary |
 |---|---|---|

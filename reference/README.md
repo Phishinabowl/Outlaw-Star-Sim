@@ -8,7 +8,7 @@ Run tools/reference-extraction/inventory.py using Python with Pillow. It invento
 
 Index fields: source ID, filename, visible sheet number, Japanese title, English translation, subject, category, verification status, reconstruction relevance, region/system, measurements/callouts, questions. Unknown fields remain blank; unreviewed is explicit.
 
-Episode extraction is deferred. Future frame records must identify the exact source filename, requested time, actual decoded presentation timestamp, stream, extraction command/version, and observation. Do not infer timestamps from another release.
+Targeted episode extraction has been performed for approved intervals; broad extraction remains unapproved. Frame records identify exact source filename, requested time, decoded PTS, stream, command/version and observations. User-supplied screenshots carry separate capture-provenance limits; do not assign them inferred exact timestamps from another release.
 
 The user's [image map](image-map.md) is preserved as original review notes. [Image map reconciliation](indexes/image-map-reconciliation.md) records resolved sheet identities, corrections, and episode-verification leads; use the screening CSV for collection-wide status.
 
@@ -21,3 +21,11 @@ The user's [image map](image-map.md) is preserved as original review notes. [Ima
 The user's [episode-time notes](episode-times.md) are retained unchanged; the corrected Episode 7 endpoint and verified scene findings are in [the Episodes 4/7/8 startup comparison](indexes/startup-sequence-comparison.md). This separates commissioning, simulated fault practice and actual standby-to-launch operation.
 
 [Episode 26 entry evidence](indexes/episode-26-platform-review.md) verifies occupant descent. [Episode 11 sub-ether/recovery evidence](indexes/episode-11-subether-review.md) records transition effects, disrupted entry, auxiliary operation and physical key shutdown/restart, with English subtitle findings separated from visuals.
+
+[Episodes 1/2 case review](indexes/episode-01-02-melfina-case-review.md),
+[Episode 4 opening/registration review](indexes/episode-04-opening-bootstrap-review.md) and
+[laptop screen review](indexes/episode-04-hilda-laptop-screen-review.md) support the accepted opening.
+User-verified English audio additions are distinct from cached subtitles/Japanese verification.
+[Fan pod reference](indexes/fan-melfina-pod-reference.md) is third-party inspiration, not canon or
+permission to reuse/publish assets. Current E/F behavior is owned by the
+[Phase 1.3 closeout](../docs/implementation/phase-1-3-closeout-audit.md), not these source reviews.

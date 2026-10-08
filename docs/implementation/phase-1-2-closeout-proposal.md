@@ -1,7 +1,9 @@
 # Phase 1.2 — Closeout Proposal
 
 Status: accepted for planning by the user, 2026-10-07. Phase 1.2 is complete as a planning package;
-physical fit tests remain unexecuted. Phase 1.3 and implementation remain unstarted.
+physical fit tests remain unexecuted. At this dated closeout, Phase 1.3 was unstarted; it is now
+complete for planning in the [accepted behavior contract](phase-1-3-closeout-audit.md).
+Phase 1.4 and implementation remain unstarted.
 No new source observation, installation, model or gameplay work was performed by this closeout.
 
 Subsequent user-selected [Phase 1.3 clarifications](phase-1-3-action-readiness-draft.md) distinguish

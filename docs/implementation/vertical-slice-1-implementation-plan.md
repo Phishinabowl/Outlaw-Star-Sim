@@ -33,9 +33,9 @@ No planned runtime tests have run. Installation observations are not compilation
 The user has now requested this expanded formal planning document, superseding the earlier hold on
 **introducing the planning gate**. That authorizes this document and navigation/status updates only.
 The user confirmed this plan and its MCP additions for publication on 2026-10-07.
-The user separately authorized Phase 1.1 only; its read-only inventory and host/target decisions are
-complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Later checkboxes remain
-open. The user subsequently authorized Phase 1.2 discussion, beginning with the opening experience
+The user initially authorized Phase 1.1 only; its read-only inventory and host/target decisions are
+complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Subsequent Phase 1.2/1.3
+planning is also complete, with Phase 1.4 onward still unchecked. Phase 1.2 began with the opening experience
 and additional targeted references. Its [decision packet](phase-1-2-spatial-motion-decision-packet.md)
 and [closeout package](phase-1-2-closeout-proposal.md) are now accepted for planning. No later
 subphase starts automatically. Phase 1's exit review still precedes project creation.
@@ -256,7 +256,8 @@ later fit checks; source correspondence and final geometry remain explicitly unr
 - [x] Define how MC-01–MC-08 will be demonstrated and which future reservations remain unverified rather than fitted.
 
 **Completion record:** user accepted the closeout package and bounded opening supplement on
-2026-10-07. Planning only; no modeled fit or MC pass claimed. Phase 1.3 remains unstarted.
+2026-10-07. Planning only; no modeled fit or MC pass claimed. Phase 1.3 was unstarted then and
+has since completed its own planning closeout below.
 
 **Validation:** each geometric choice cites its constraint and E rationale; no unknown connection silently becomes confirmed.
 **Recovery / deferral:** revise the text/diagram proposal before blockout; request targeted evidence if a central fit cannot be responsibly proposed. Full deck/room layout stays deferred.

@@ -596,7 +596,7 @@ implementation ownership and presentation technology belong to Phase 1.4.
 | Player context | Physical location, exploration/climb/station/seated context; assigned hand item, drawn/stowed status and temporary hands-required restriction | Exploration; trunk back-carried, computer assigned and drawn. Initial boot mode ON selected; contact requires suitable surface. |
 | Player condition | Supported initial healthy condition | No damage, numerical health, oxygen, stamina or equipment battery drain introduced. |
 | Environment | Facility lighting sequence, local gravity availability, suitable contact surfaces, bounded atmosphere status | Facility lights off; pressurized/breathable hangar selected; low-gravity premise. Stable walk is F boot-assisted tuning, not boots generating gravity. |
-| Access | Each chosen door/hatch state and traversability; selected hatch closure and prospective seal-check result kept separate | Facility doors closed; selected ship entry closed. Independent opening/boarding/interior closure agreed; startup pressure contract pending. Keep unrelated hatch identities distinct. |
+| Access | Distinct hatch motion/traversability and seal-check state | Doors/hatch initially closed; actual exterior closure plus limited services starts the bounded check. Departure-only result; no ignition gate. Keep hatch identities distinct. |
 | Trunk/occupant | Carried/placed, locked/open, revival not started/running/complete, occupant transfer/apparatus location | Locked, inactive occupant. These states do not equal navigation availability. |
 | Computer/Gilliam | Held/stowed/workspace, cable connected, bootstrap progress, Gilliam available, registration progress | No live ship session. Computer's independent operating supply is qualitative E; no capacity model. |
 | Ship services | Guide lighting, limited bridge services, machinery-service availability, gravity availability, main-service startup/available | Main services unavailable. Initial guide-light and pre-main machinery source are proposed below, not verified wiring. |
@@ -661,7 +661,7 @@ endpoint, not merely an accepted request. Order permits the stated parallel prep
 | A13-16 Occupant transfer | Revival/registration complete; Gene locally acknowledges Melfina; required services and opening/approach clear | Gilliam opens cap before Melfina's short low-gravity entry; she waits by case beforehand | Waiting pose/dialogue and obstruction handling remain open |
 | A13-17 Apparatus deployment | Coordinated local start; cap opened, occupant enters; clear stages/services | Descend clear, cap closes, cylinder rises/covers move automatically to actual available endpoint; blocked stage waits/resumes; camera retained | Joined choreography F; exact timing/fit later |
 | A13-18 Take station | Low captain's seat accessible; computer/cable clear for ignition/lift | Gene seated in low position; sitting does not raise assembly | Seat entry/exit presentation remains to refine |
-| A13-19 Ignition | Gene occupies low-seat pilot key; registration/navigation/all-four/services prepared; occupied lift fit valid; hatch check does not gate ignition | Key starts ignition/lift; seat exit temporarily locked during motion and restored at endpoint; actual completion required for startup milestone | Internal timing/recovery remain to refine; no circular raised-seat prerequisite |
+| A13-19 Ignition | Gene seated at key; registration/navigation preparation-link/all-four/limited services complete; occupied lift fit valid; hatch check does not gate ignition | Key starts ignition/lift and actual main-service/gravity completion; temporary seat-exit lock; every restart revalidates current preparation | No circular raised-seat or already-full-power navigation prerequisite; timing/fit later |
 | A13-20 Ready report | Derived query after actual ignition completion and all eight conditions | SHIP READY startup milestone; keep playing, leave seat and explore/exit/re-enter; separate departure warning if hatch open/check outstanding | Actual startup and departure results remain distinct; no launch action required |
 
 Normal guidance waits for Melfina's deployed/link check to reveal engineering intervention;
@@ -689,9 +689,9 @@ flowchart TD
   I --> J[Ignition includes seat lift; actual completion and readiness query]
 ```
 
-Diagram shows recommended dependencies for discussion, not accepted interlocks. Starting revival
-before bootstrap is supported by the proposed independent case supply, not a discovered canonical
-power circuit. Whether engineering extension specifically needs initial services is still a choice.
+Diagram summarizes accepted guidance and optional ordering, not a universal canonical state machine.
+Independent case supply is selected E/F continuity; registered limited-service context permits local
+engineering before Melfina's report. Actual power topology and metric reach/sweeps remain unverified.
 
 ## Request, Progress And Recovery Rules — Draft Defaults
 
@@ -702,9 +702,9 @@ power circuit. Whether engineering extension specifically needs initial services
   progress rather than starting another operation. Exact result/API names remain for 1.4.
 - Serialize conflicting actions on the same mechanism. Parallel independent revival and preparation
   is allowed; key ignition cannot race missing preparation into a ready result.
-- Recommend single-press initiation for most controls, with progress until a real endpoint.
+- Ordinary panels use selected contextual clicks, with progress until a real endpoint.
   Walking away closes optional UI but does not automatically reverse a started mechanism or pause
-  revival. Hold-to-work and deliberate mechanical gestures remain D13-02/06 discussion choices.
+  revival. Selected ladder/handle/grip/directional actions retain their specific contracts.
 - Before motion, block a start if the relevant sweep is occupied. During motion, recommend a
   non-damaging pause with “clear the mechanism” feedback, preserving intermediate state and
   resuming only when clear. No crushing, health damage, repair or arbitrary teleportation. Exact
@@ -731,12 +731,12 @@ power circuit. Whether engineering extension specifically needs initial services
   clear that manual pause. Setting persistence remains a later configuration choice.
   No offline progress while the app is closed
   or saved-state persistence is selected.
-- Menu input owns keyboard/mouse regardless of simulation pause policy. Recommend releasing
+- Menu input owns keyboard/mouse regardless of simulation pause policy. Release
   gameplay hold/grip input on menu entry rather than latching engine-pull/movement commands;
   returning requires fresh input. This input-release rule is accepted in the closeout. Automatic operations may finish and leave results/notifications
   pending while simulation continues. Validate with seat locks, low-gravity movement and apparatus
-  obstruction; no secret world freeze just because the menu is open or false completion. Exact player
-  motion/menu treatment remains to refine.
+  obstruction; no secret world freeze just because the menu is open or false completion. Player
+  physics continues when the sim runs; attached ladder/seat context remains. Metrics/UX require later tests.
 - On a fresh run/reset, restore doors, lights, equipment, case lock/timer/occupant, computer session,
   services/gravity, four units, apparatus, seats, ignition and ready result. Prior callbacks cannot
   complete new operations. Save/load, checkpoints and universal shutdown remain deferred.
@@ -762,24 +762,24 @@ constraints; do not invent a runtime “geometry passed” switch to replace act
 
 ## Discussion Queue For The User's Return
 
-Discuss these in experience order; recommendations are starting points, not choices already made.
-Exact key bindings, art style, timings and metric locomotion can follow the behavioral decisions.
+Historical discussion index, updated by the accepted closeout. Behavioral decisions are selected;
+exact bindings/art/timings and metric fit remain later work. Any stale gap description below is
+superseded by its C13 rule/supporting default, not a reopened planning gate.
 
-| ID / topic | Recommendation to discuss | Material alternative / effect |
+| ID / topic | Selected behavior | Later tuning / evidence |
 | --- | --- | --- |
-| D13-01 Initial services and gravity | User selected low gravity throughout preparation, ship gravity available after completed main ignition and Gilliam notification; boots stay manually toggled. Laptop bootstrap supplies limited services without gravity. | Qualitative supply assumptions, exact gravity blend/tuning and low-gravity occupant-transfer staging remain to resolve. EP-04 motion leads are recorded, not yet visually verified. |
+| D13-01 Initial services and gravity | Low gravity during preparation; boot switch initially ON/contact-dependent, manual toggle retained. Qualitative independent supplies/limited bootstrap selected; main ignition enables ship gravity, OFF withdraws it after lowering. | Gravity metrics/blend/occupant animation and source-lead verification remain later evidence/tuning. |
 | D13-02 Boarding and everyday actions | Manual hand-item draw/stow, temporary auto-stow/restoration and laptop handling selected. Internal ladder: interact to grab, forward/backward climbs, release stops, assisted endpoint step-off, no midway jump-off. | Binding/speed/animation, loaded fit and protected-action recovery remain to tune/test; laptop-specific choices in D13-04. |
-| D13-03 Gilliam registration | Gene fixed identity; scene-faithful text/choices, animated pod/photo beats and Melfina recognition. Exact proceed line; optional failed recovery branch. Walk-away/hold-off resumes at saved pod step with bootstrap lighting active. Before completion, exploration/laptop/case/hatches allowed; guided ship preparation gated. | Remaining script/pacing, Melfina visibility fallback, mid-line presentation and pod reference/clearance remain open. Future identity/full crew deferred. |
-| D13-04 Case and code | Laptop/code/connection and separate revival rules selected. Menu leaves sim running; shared manual Pause/Resume Sim button/hotkey. Focus-loss auto-pause defaults ON; return resumes only focus-caused pause, never manual pause. | Note/layout/timing, post-disconnect screen/draw state and settings persistence remain open. |
-| D13-05 Melfina and apparatus | Notification, waiting by case and local acknowledgement after registration selected. Gilliam opens cap, Melfina enters, automatic descent/rise/cover sequence follows with camera control retained; no separate player start control. | Waiting pose/dialogue, cap closure bridge, stage timing and obstruction/interruption handling remain open. |
+| D13-03 Gilliam registration | Gene fixed identity, animated pod/photos, exact proceed line/recovery branch and resumable step/unfinished line. If case closed, Gene registration completes and Melfina's beat defers until visible; transfer waits for her beat. Preparation gated on Gene registration. | Script polish, pacing/animation and pod fit later; future identity/full crew deferred. |
+| D13-04 Case and code | Laptop/code/revival and pause rules selected. Disconnect keeps focused Notes view; walk-away closes view/keeps drawn; stow holsters. Menu leaves sim running; manual button/hotkey, focus-loss pause ON by default with cause-aware resume. | Note/art/timing and settings persistence later; no inventory system or offline progress. |
+| D13-05 Melfina and apparatus | Notify/wait, local acknowledgement after registration, cap opening/entry/descent; close cap once clear, then automatic cylinder rise/covers. Blocked stages wait/resume; player camera retained. | Joined closure choreography F; pose/dialogue, motion/timing and fit later. |
 | D13-06 All-four engineering workflow | Click seals; grip/turn then backward pull. Partial turn/travel retained. After completed OFF, grip/forward pushes and inserted handle relocks; no new ribbons. Every startup checks all-four current prepared endpoints; failed restart reports missing work. Other three repeated procedures F. | Collision/tuning, rotation reconciliation and occupied/upper-row/reverse reach fit remain open. Free-form dragging deferred. |
 | D13-07 Seat and ignition | Insert/remove hotkey; click OFF/ON; occupied lift/lowering lock. Remove only after completed OFF; no mid-transition reversal. Lower seat with gravity/services retained, then withdraw gravity and settle to limited lighting/Gilliam. Preparation/registration/milestone persist; Melfina remains deployed with reduced-power presentation. | Detailed service reports, pose/brightness and durations remain open; source timing review pending. Emergency cutoff deferred. |
 | D13-08 Interruptions and presentation | User selected temporary seat-exit lock during occupied lift, restored afterward; Gene can block apparatus opening/sweep, with pointed Gilliam feedback and pause until clear. No damage/teleport; preserve motion stage. | Exact lines, blocked/resume presentation, unexpected interruption/reset behavior and fit remain to verify; no damage system introduced. |
-| D13-09 Hatch sealing and pressurization | Independent opening/entry/interior closure and seal/pressure results agreed. Hangar breathable. Hatch/check results gate represented departure readiness, not ignition; reopening updates that warning without shutting down engines/gravity. Startup success allows continued exploration and ship/hangar gravity transitions. | Decide check execution/services, represented boundaries and status wording. No whole-ship pressure network, launch system or exact gravity-field shape selected. |
+| D13-09 Hatch sealing and pressurization | Independent open/board/close; breathable hangar. Limited services plus actual exterior closure runs bounded seal/pressure check; other out-of-slice exterior openings static/assumed closed. Reopen invalidates departure result, never cuts engines/gravity. | Check display/duration and gravity-boundary fit later; no pressure network or launch certification. |
 
-First discussion recommendation: boarding/control feel and gravity, then case/registration/Melfina,
-then engineering and final station/key. The dependent rows remain drafts until those choices are made.
-Resolve D13-09 with initial-service dependencies before freezing the ignition/readiness contract.
+The closeout resolves behavior in this index, including C13-05's automatic bounded departure-only
+seal check. Source uncertainty, script polish, metrics and actual evidence of fit remain separate.
 
 ## Validation To Specify After Discussion
 

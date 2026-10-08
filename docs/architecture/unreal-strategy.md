@@ -50,4 +50,8 @@ C++ foundations own inspectable, testable, diffable simulation/gameplay state. B
 
 [Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. Project/module layout, serialization, networking, renderer choices and integrations are undecided. Reference-derived percentages do not select physics constants.
 
-No Unreal project is created. The user has now requested the [phased slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md); Phase 1 proposes concrete planning decisions and Phase 2 owns later tool/project proof. This supersedes the earlier planning-gate deferral, not the implementation/installation approval boundary. Later authorized build/editor validation may justify revisiting this toolchain baseline.
+No Unreal project is created. [Phases 1.1–1.3](../implementation/vertical-slice-1-implementation-plan.md)
+are complete for planning; Phase 1.4 architecture/asset/validation decisions and Phase 1.5 gate review
+remain unstarted. Phase 2 owns later authorized tool/project proof. This supersedes the earlier
+planning-gate deferral, not implementation/installation boundaries. Tool observations are dated;
+this documentation sweep performs no fresh host inventory or build validation.

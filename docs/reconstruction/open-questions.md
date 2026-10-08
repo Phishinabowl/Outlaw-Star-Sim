@@ -12,7 +12,16 @@ The reference foundation is substantially complete for initial-slice implementat
 | Terminology/topology | Original Japanese, Newton/Münchhausen assignments, actual initial-service source, circuits | Before making naming/power dependencies authoritative; no invented topology as canon. |
 | Performance | Disputed ETA, percentage meanings, special modes, normal undamaged transition | Before numerical flight/power/combat models; not a prerequisite for Slice 1's non-flight endpoint. |
 
-UE family and Windows IDE/compiler direction are recorded in [Unreal strategy](../architecture/unreal-strategy.md). Target MSVC 14.50 installation and build validation remain future work. The newly requested [implementation-plan draft](../implementation/vertical-slice-1-implementation-plan.md) maps slice-critical unknowns to Phase 1 decisions and later fit/runtime checks; this research track does not itself authorize executing those phases.
+UE/toolchain direction is recorded in [Unreal strategy](../architecture/unreal-strategy.md). Phase 1.1
+verified target MSVC 14.50 installed; build validation and remaining setup gaps are later work.
+The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md) records completed
+1.1–1.3 planning and unstarted 1.4 onward. This research track does not authorize those later phases.
+
+Planning-resolved is distinct from source-resolved: provisional entry/room choices and initial-service,
+occupant/all-four, readiness/interruption behavior are accepted in the [1.3 closeout](../implementation/phase-1-3-closeout-audit.md).
+Original topology, unshown all-four manual procedures and dimensions remain research/fit questions.
+The 22-record figure is the original structured-pass checkpoint; later targeted reservations/headroom
+reviews do not silently authenticate sheets or constitute full fine-callout passes.
 
 ## Existing findings and unresolved details
 
@@ -60,7 +69,7 @@ Latest apparatus update: [Episode 26 follow-up](../../reference/indexes/episode-
 - Which contradictions require explicitly classified connecting geometry?
 - Which power progression and maintenance actions are canon, inference, or gameplay adaptation?
 - Which episode audio/subtitle tracks should support terminology review? Do translations disagree?
-- What engine version and project-owned asset/LFS policy should the later implementation phase use?
+- UE 5.8 is selected with installed candidate 5.8.3; actual build proof and project-owned binary/LFS policy remain later work.
 
 Detailed interior review adds these concrete checks:
 
@@ -76,4 +85,4 @@ The [focused Episode 4 startup review](../../reference/indexes/episode-04-startu
 
 The [six-item follow-up](../../reference/indexes/startup-open-items-followup.md) refines the visible handle/front-plate rotation before extension, and confirms selected plasma-drive/hyperspace-screw production labels. It leaves the exact internal lock mechanism, all-four procedure, complete navigation-platform/shield animation and Newton/Münchhausen assignments open. Recollections are requested as episode-search leads, not direct evidence.
 
-[Review of the user's Episode 4/7/8 locators](../../reference/indexes/startup-sequence-comparison.md) now verifies crossed bands on all four closed faces, Jim removing a band, handle rotation and extension, and all four cylinders later extended. The front shields withdraw around 10:33.5–10:35 local; full occupant descent remains open. Episode 7's corrected Newton-before-gravity-cycle instruction belongs to a fault simulation; Episode 8 shows actual standby/navigation transition, checks, stabilized engines and countdown. Original spoken terminology, long-term storage/shutdown procedures and individual manual treatment of every cylinder remain open.
+[Review of the user's Episode 4/7/8 locators](../../reference/indexes/startup-sequence-comparison.md) verifies crossed bands, one manual sequence, all-four endpoints and front-shield withdrawal around 10:33.5–10:35. EP-26 separately verifies occupant descent; complete joined choreography remains unverified. Episode 7's Newton-before-gravity-cycle instruction is training evidence; Episode 8 shows standby departure. Original speech, canonical storage/shutdown and every-unit manual treatment remain research questions; the demo's bounded adaptations are accepted separately.

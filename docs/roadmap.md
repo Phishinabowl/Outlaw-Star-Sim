@@ -46,7 +46,11 @@ The user subsequently requested the [expanded Vertical Slice 1 implementation pl
 7. Cockpit ignition, derived SHIP READY and repeatable fresh runs.
 8. Complete acceptance, measured budgets, standalone package and maintainer handoff.
 
-The user confirmed the plan and MCP additions for publication on 2026-10-07, then authorized Phase 1.1. Its read-only inventory and host/target decisions are complete: laptop, Win64, keyboard/mouse, no required desktop validation initially, and 1440p/120 FPS pending measurement. The user subsequently authorized [Phase 1.2 discussion](implementation/phase-1-2-spatial-motion-decision-packet.md) and accepted its planning closeout. Spatial choices are provisional pending actual fit; later subphases remain unstarted and require their own scope. Project creation and installations/modeling retain their authorization boundaries; inventory or documentation approval is not build approval.
+The user confirmed the plan/MCP additions on 2026-10-07 and subsequently accepted Phases 1.1–1.3.
+The dated readiness inventory selects laptop, Win64, keyboard/mouse, no initial desktop validation,
+and 1440p/120 FPS pending measurement. Spatial choices remain provisional pending fit; behavior
+contracts are accepted but unimplemented. Phase 1.4 onward requires its own scope. Project creation,
+installations/modeling and build proof retain their authorization boundaries.
 
 [Blender/Unreal MCP evaluation](architecture/editor-automation.md) is now included in Phase 1.4
 tool/asset decisions, an optional Unreal pilot after 2.3 ordinary build/editor proof, and an optional
@@ -69,7 +73,7 @@ fit/runtime validation remains later work. Phase 1.4 and implementation remain u
 The [Phase 1.2 closeout package](implementation/phase-1-2-closeout-proposal.md) was accepted by
 the user on 2026-10-07, including local canopy/platform/computer storage, planned MC demonstrations
 and the bounded opening contract supplement. Phase 1.2 planning is complete; its actual geometry
-tests remain unexecuted. Phase 1.3 has since started as preparation/discussion only.
+tests remain unexecuted. Phase 1.3 has since completed its planning closeout; no implementation followed.
 
 Graybox/Blender reconstruction and UE5 foundations can support the slice under a separately approved implementation scope. Exploration beyond required rooms, actual flight, sub-ether, expanded maintenance, faults/repairs, grapplers, detailed art and crew assistants remain later directions.
 

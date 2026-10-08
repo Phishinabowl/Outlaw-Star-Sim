@@ -8,9 +8,9 @@ inspect_episode.py requires Python 3 and FFprobe on PATH. Run python tools/refer
 
 cache_timestamp_index.py uses Python's standard library to cache public AnimeHistory HTML under ignored reference/cache/animehistory/ and generate timestamp/caption/image-link CSVs under reference/indexes/animehistory/. It downloads no images. It validates cached hashes, pagination, IDs and declared counts; reruns reuse cached pages and replace the generated index. See reference/indexes/animehistory/README.md for alignment limits and usage.
 
-Planned video tools: FFprobe for JSON container/stream/duration metadata; FFmpeg for selected timestamped frames; Pillow for contact sheets; CSV/JSON for scene/evidence records. ImageMagick is optional, not required. Manual visual review precedes transcription/translation; no blind OCR.
+The established reference workflow uses FFprobe metadata, FFmpeg selected frames, Pillow contact sheets and CSV/JSON provenance. ImageMagick is optional. Manual visual review precedes transcription/translation; no blind OCR.
 
-Future extractor requirements: reject destinations inside either source folder, refuse overwrites by default, use literal paths/argument arrays, document seek accuracy and actual timestamps, and extract only approved intervals. Broad episode extraction is not approved.
+Extractor constraints: source folders remain immutable, existing batches are refused, arguments are explicit, seek accuracy/actual timestamps are documented and extraction is limited to approved intervals. Broad episode extraction is not approved.
 
 extract_reference_frames.py implements focused still extraction for explicitly requested times. Example: `python tools/reference-extraction/extract_reference_frames.py 4 --batch example --time 833 --time 834`. It accepts seconds, up to 32 distinct times per invocation, refuses existing batches, reads video only and saves native-size PNGs/logs under ignored reference/extracted-frames/episode04/example/. A trackable JSON manifest records source, stream, FFmpeg version, requested time, original decoded PTS/time base, PNG hashes and arguments. `UNREVIEWED` is the initial annotation status; observations belong in authored evidence notes. It does not authorize new episode/frame scope. See the Episode 4 startup review for the authorized batch and its limitations.
 
