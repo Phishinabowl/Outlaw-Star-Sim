@@ -76,6 +76,15 @@ that demo lifecycle is recorded in the [Phase 1.2 packet](../../docs/implementat
 
 ## Connected Later Sequence — Existing Evidence
 
+### Registration Audio Addendum — User Verification, 2026-10-08
+
+| ID | Source / locator | Observation / category | Verification and limits |
+| --- | --- | --- | --- |
+| OPEN-13 | EP-04 English performance, Gilliam's Melfina registration reaction; local subtitle locator 07:08.74–07:11.34 for the preceding question, not measured timing of the added word | The user directly listened while watching and confirms an extended “interesting” after “Oh, my. And who might this be?” A — English-audio-specific direct observation, user-verified. | The cached English ASS omits the added word. Agent has not listened; exact audio timestamp, edition/stream identity and Japanese wording remain unverified. The delivery supports an intrigued reaction, not proof of what Gilliam knows about Melfina. |
+
+Use this delivery as a reference for the demo's registration dialogue/pod presentation. Do not
+silently replace the cached subtitle transcript or treat the observation as verified Japanese dialogue.
+
 | Stage | Existing evidence / English interval | Boundary |
 | --- | --- | --- |
 | Assign stations / prepare navigation | 09:04.96–09:34.51; cap at 09:18.016, manual at 09:34.032 | Gilliam provides placement/instruction and a manual while waiting. |

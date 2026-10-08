@@ -39,6 +39,54 @@ All new action rules, interlocks and service assumptions are E/F proposals, not 
 
 ## Minimal State And Ownership Proposal
 
+### Laptop Notes, Focused Screen And Local Connection — User-Selected Direction
+
+On 2026-10-08 the user selected the larger focused screen view and the following E/F interaction:
+
+- With Hilda's laptop drawn in hand, an on-demand open/use action opens a larger readable screen
+  view. Notes work while disconnected; Connected Device is disabled with a clear disconnected status.
+- Hilda's code message is a digital note found/read on the laptop, replacing the separate inventory
+  note proposal. Exact wording remains a placeholder; no inventory document viewer is required.
+- With the laptop drawn and a supported case/ship connector locally reachable, show a Connect
+  prompt. Activating it establishes the physical cable/workspace and opens the focused screen.
+  Merely approaching the device does not connect, unlock the case or boot Gilliam.
+- Enable Connected Device only after connection completes. Its controls reflect the actual target:
+  case authentication versus ship bootstrap/registration. The code is entered through the connected
+  laptop, not an invented alphanumeric keypad on the case's three unlabelled controls.
+- Provide both an on-screen Disconnect button and a disconnect hotkey, submitting the same action.
+  Exact binding remains open. Physical disconnect completion disables Connected Device;
+  Notes remain available. Drawing, opening, connecting and bootstrap are distinct states/actions.
+- Case opening is followed by a separate Begin Resuscitation prompt, selected by the user.
+  The existing 600 s duration and local shortcut remain in force. Laptop connection is not assumed
+  to supply the case's revival power or to remain necessary throughout the timer.
+
+Laptop-to-case authentication is an explicit adaptation: the
+[EP-01/02 review](../../reference/indexes/episode-01-02-melfina-case-review.md) and re-inspected
+EP-01 case frame 04 (21:48.015) show three unlabelled controls and a cabled connector, but do not
+establish an external controller's identity or input method. Reusing Hilda's laptop is E/F, not A.
+No full desktop, filesystem, browser, hacking minigame or general application framework is selected.
+
+The user agreed closing the focused screen view leaves the physical connection intact. A manual
+stow request performs safe disconnect → close → holster as one sequence, preserving the assigned
+hand item and reporting actual transition completion rather than making the cable disappear.
+The user selected a small connected workspace allowing turning/looking and limited local movement.
+An attempt to move beyond cable reach automatically requests the same safe disconnect; movement
+continues beyond the workspace after physical disconnect completes. No hard station anchoring or
+separate manual-disconnect requirement. Cable reach is an E fit parameter, not measured canon.
+This walk-away action does not by itself select automatic holstering or bootstrap completion;
+the explicit stow sequence remains distinct. Hands-required actions respect the connected workspace.
+Whether explicit Disconnect alone leaves the focused screen open remains open.
+One connection target at a time is the proposed default; never switch from case to ship while
+silently retaining a stale cable/session.
+
+The user selected disconnect cancellation for an unfinished connected operation: report the attempt
+as canceled with readable feedback, preserve no false completion and permit reconnect/retry.
+Completed results persist: the case stays unlocked after successful authentication and Gilliam
+stays online after completed bootstrap. The rule applies to the shared safe-disconnect action used
+by button, hotkey, walking beyond reach and stowing. A canceled operation's stale callbacks cannot
+complete it later. Revival already started on the case is independent of the laptop connection
+and is not canceled merely by disconnecting it. Fresh-run/reset still restores the initial state.
+
 ### Exterior Hatch — User-Selected Independent Actions
 
 During Phase 1.3 discussion the user selected independent exterior opening, boarding and interior
@@ -104,6 +152,110 @@ An open hatch does not turn off the field throughout the ship. Preserve movement
 the boundary, including falling/jumping/climbing and magnetic-boot contact. Exact field boundary,
 blend and acceleration remain E/F graybox tuning; do not assume a doorway opening changes pressure
 or gravity identically. No sudden velocity reset, respawn or mandatory boot-mode change is selected.
+
+### Device Screens And Text Focus — Discussion Update, 2026-10-08
+
+The user agreed the proposed case code screen: visible code field, clickable on-screen keyboard,
+Delete/Submit, result text and Disconnect; normal keyboard typing when the field is focused.
+Typing captures letter/number/edit inputs and suppresses gameplay hotkeys. Enter submits, Backspace
+edits and Escape first exits typing focus without closing/disconnecting. Show a readable focus hint;
+keep code characters visible rather than password dots. The exact visual arrangement remains to design.
+
+The user rejected using a similarly generic ship bootstrap screen and supplied the anime's ordered
+laptop screenshots. The [focused screen review](../../reference/indexes/episode-04-hilda-laptop-screen-review.md)
+records seven images: blue grid/status layout → activation graphic → three/two/one/zero presentation,
+with a distinct zero-stage palette. img002/img003 are wider/closer activation views, not automatically
+two separate machine states. Use this source-backed visual direction for ship bootstrap; the case
+interface is an E/F adaptation and need not duplicate the countdown layout.
+
+The user proposed and selected an additional scripted access-override stage before activation:
+on the initial blue-grid/four-box screen, click the top-right panel containing the polygon emblem.
+Animate the leftward chevrons toward the smaller left-hand status box and show short fictional
+operation messages, for example “Deleting crew manifest” and “Removing security policy files.”
+Exact wording/timing remains to review. On actual completion of this stage, show the activation
+screen; the player then clicks activation and can pause/resume its countdown with HOLD as agreed.
+Connection alone does not start the override, and clicking the override does not instantly boot Gilliam.
+
+This supplies the activity implied by Hilda's typing without a typing challenge, simulated shell,
+real malware, exploit or full permission/filesystem model. The
+[opening/bootstrap review](../../reference/indexes/episode-04-opening-bootstrap-review.md)
+records English-track dialogue at 06:18.29–07:15.58: missing crew records, partially deleted personnel
+regulations, recovery offered/declined and crew registration. The exact files deleted by the laptop,
+protocol, ownership rights and root/admin privilege model remain unverified. Crew-manifest/security
+messages are F presentation, not exact canon transcriptions or proof that Hilda uploaded a virus.
+Original-language speech remains unreviewed. This step is ship-specific; it does not replace the
+case's normal code authentication.
+
+Apply shared progress/cancellation rules to the override too: disconnect cancels an unfinished
+attempt with feedback/retry and stale callbacks cannot finish it. A completed override is a distinct
+result from completed bootstrap or registration; do not declare the ship ready from the log text.
+Whether completed override is retained on reconnect follows the existing completed-result rule;
+fresh run/reset restores initial conditions. Actual registration dialogue/choices remain D13-03.
+
+The user selected mouse-operated ship controls: click the activation control to begin, then the
+sequence advances automatically; no code field or on-screen keyboard is required for this ship
+screen. Click HOLD to pause the bootstrap operation and its displayed countdown together.
+KEY remains a visual element with no action for this slice; do not attach an invented required step.
+These control meanings are F adaptations, not verified Hilda input behavior. The user selected
+HOLD as a toggle: click again to resume the same operation from its paused point. While paused,
+change the HOLD button's color and show a readable paused indicator; restore its normal appearance
+when resumed. Exact colors remain to design; state must be legible beyond color alone.
+Paused/running/completed results must agree with actual progress. Disconnect cancels an unfinished
+operation even when paused, using the existing feedback/retry rule. Pausing bootstrap does not
+pause the independent case revival or the whole world. Timing, translations/readability and
+post-bootstrap state remain open. This laptop bootstrap is not the later engine ignition key and
+does not enable ship gravity. General close/disconnect/equipment inputs remain separate from the
+mouse-only device-specific controls.
+
+### Gilliam Registration And Cockpit Pod — User-Selected Direction, 2026-10-08
+
+Follow EP-04's introductory/registration exchange closely, using exact supported wording where
+appropriate to the chosen dialogue track and otherwise an explicit one-player adaptation. Present
+Gilliam through text and player dialogue choices for now, rather than laptop-only registration forms.
+The user selected Gene Starwind as the fixed player identity for this demo; no name entry or
+character creator is required. Future player-identity choices remain deferred. Response choices,
+pacing and exact script remain to discuss; no voice production
+or LLM is required. Original/dub dialogue cannot be called verified from English subtitles alone.
+
+Include Gilliam's ceiling-mounted cockpit housing/display in the slice: initially inactive,
+lights/presentation activate after successful laptop bootstrap, and the face/panel animates during
+his dialogue and later relevant guidance/status. The user selected a recognizable speaking/reacting
+presentation without requiring exact source-matched animation yet. This is a bounded addition to
+the previous minimal deterministic guidance scope, not full robot/crew simulation.
+
+The [opening review](../../reference/indexes/episode-04-opening-bootstrap-review.md), OPEN-05/10,
+already records the dim overhead housing and illuminated red regions during introduction; its
+06:18.29–07:15.58 English-track review owns registration evidence. Detailed expression shapes and
+motion/timing still need targeted visual comparison. Keep this overhead cockpit unit distinct from
+mobile rail-mounted maintenance robots; those locomotion/AI mechanisms remain future reservations.
+Include its physical body/presentation in the cockpit canopy/seat/rail clearance checks rather than
+overlaying a face without reserving the housing. Exact mounting/animation asset choice remains later work.
+
+Pod animation reads the shared dialogue/service state; it does not independently boot Gilliam,
+complete registration or set readiness. Talking/idle/listening distinctions are possible presentation
+choices, not newly verified source modes. Later phase ownership: physical proxy/clearance 3.3/3.4,
+bootstrap and text/choice presentation 5.3/5.4, consistent guidance 7.2 and integrated readability 8.2.
+
+The user additionally wants the scene's individual photo/personnel-record beats and Gilliam's
+characterful remarks retained, particularly his intrigued reaction to Melfina. They propose using
+that recognition to register her before revival completes rather than postponing all registration
+until she connects to the apparatus. This is an E/F adaptation; no awake pose or response is required
+from the sleeping occupant. Exact snapshot framing/display and Gene reaction remain to discuss.
+
+Rechecked cached EP-04 English ASS: 07:08.74–07:11.34 contains “Oh, my. And who might this be?”,
+with a REGISTERED caption spanning 07:08.95–07:12.91 and personnel-recording completion afterward.
+The user directly listened to the English performance while watching and confirmed the extended
+“interesting” addition, which is absent from the cached subtitles. This is recorded as user-verified,
+English-audio-specific A evidence in the opening review's OPEN-13 addendum; the agent has not
+listened, exact audio timing/stream is unspecified and Japanese wording remains unverified.
+Preserve the intrigued delivery as a demo reference. The scene does not prove hidden knowledge,
+biometric identity inference or a canonical database connection to Melfina's case.
+
+Recommended staging: when the case is open/occupant visible, Gilliam's overhead presentation can
+notice her, show a personnel-image beat and the intrigued line, then record her with a simple Gene
+identification if needed. Exact case-open dependency/fallback remains to select; do not identify an
+occluded occupant through an unopened trunk without an explicit adaptation. Registration and
+revival/awake status remain separate from actual occupied navigation deployment/availability.
 
 ### Hand Slot And Draw/Stow — User-Selected Direction
 
@@ -190,12 +342,12 @@ endpoint, not merely an accepted request. Order permits the stated parallel prep
 | A13-05b Interior hatch closure | At proposed interior panel; hatch sweep clear; player has independently entered | Actual closed endpoint; separate seal/pressure check may clear the represented departure warning | D13-09 check/service behavior; closure does not gate ignition |
 | A13-06 H03 ascent | Local ladder/access; loaded route fit; drawn computer may auto-stow before hands-required climb | Same player/trunk reaches upper landing; computer remains assigned/accounted for; restore its prior draw state when permitted | D13-02 climb feel and protected-transition handling |
 | A13-07 Place trunk | At designated cockpit marker, carrying closed case | Case placed in agreed orientation; back mount clear | Re-pickup during revival recommended unavailable; D13-04 |
-| A13-08 Unlock/open case | Local case panel; placed; valid code | Lock released and lid reaches open endpoint; invalid code gives readable feedback | D13-04 code delivery and input format |
-| A13-09 Start revival | Local case control; placed/open; occupant inactive | Running 600 s progress; completion makes occupant awake, not navigation ready | D13-04 automatic on opening versus explicit start |
+| A13-08 Unlock/open case | Placed case, drawn laptop connected locally, code read from laptop note and entered through Connected Device | Lock released after valid entry; case opening reaches endpoint; wrong entry gets feedback | Exact code-entry widget, opening action and post-authentication disconnect handling remain open |
+| A13-09 Start revival | Separate local Begin Resuscitation interaction after case open; occupant inactive | Running 600 s progress; completion makes occupant awake, not navigation ready | Explicit start selected; pause/carry/closure rules still to discuss |
 | A13-10 Revival shortcut | Local case control only while running | Remaining time skipped; same completion/transfer path, other prerequisites unchanged | Clear demo label; no instant all-systems completion |
-| A13-11 Computer setup/connect | At pilot workspace; computer available; connection area reachable | Workspace/cable established; separate from bootstrap completion | D13-02 one contextual setup versus several small actions |
+| A13-11 Computer setup/connect | Laptop drawn; supported case/ship connector locally reachable; no conflicting connection | Connect prompt establishes cable/workspace, opens focused screen and enables target-specific Connected Device controls | Notes/open-on-demand work disconnected; exact input and setup motion remain open |
 | A13-12 Bootstrap/register | Local bridge computer session; connected; ship hatch need not be closed | Laptop bootstrap makes Gilliam and limited services available, without ship gravity; registration result reported distinctly | D13-03 registration scope; hatch opening alone never boots Gilliam |
-| A13-13 Disconnect/close/stow | At workspace; bootstrap complete; no active session requiring connection | Cable clear and computer secured; Gilliam persists | Approved spatial holster; D13-02 interaction granularity |
+| A13-13 Disconnect/close/stow | Disconnect button/hotkey share one action; walking beyond connected workspace requests the same safe disconnect; stow hotkey requests disconnect then close/holster | Cancel unfinished attempt with feedback/retry; preserve completed results; cable cleared before leaving reach; screen close alone keeps connection; holstering keeps assignment | Explicit-disconnect screen behavior and walk-away draw state remain open |
 | A13-14 Engineering wrapping/release | At each required unit's controls; service prerequisites according to selected contract | Individual wrapping/release progress; no prepared flag yet | D13-06 repeated steps and interaction feel |
 | A13-15 Engineering extension | Local unit, released, powered if required, operator/sweep clear | Actual extended/prepared endpoint; all-four aggregate derived | D13-06 mechanical adaptation; D13-08 obstruction behavior |
 | A13-16 Occupant transfer | Revival complete, open apparatus approach clear; Gilliam/services as selected | Short scripted movement to apparatus, readable pending if blocked | D13-05 automatic versus player acknowledgement |
@@ -283,9 +435,9 @@ Exact key bindings, art style, timings and metric locomotion can follow the beha
 | ID / topic | Recommendation to discuss | Material alternative / effect |
 | --- | --- | --- |
 | D13-01 Initial services and gravity | User selected low gravity throughout preparation, ship gravity available after completed main ignition and Gilliam notification; boots stay manually toggled. Laptop bootstrap supplies limited services without gravity. | Qualitative supply assumptions, exact gravity blend/tuning and low-gravity occupant-transfer staging remain to resolve. EP-04 motion leads are recorded, not yet visually verified. |
-| D13-02 Boarding and everyday actions | User selected assigned hand slot, on-demand draw/stow hotkey, separate HUD drawn status, temporary auto-stow and restoration of the prior draw state afterward. Guided physical ascent/local interact remain recommendations. | Protected-action feedback, climb feel and connect/disconnect granularity still need discussion. |
-| D13-03 Gilliam registration | Brief local scripted acknowledgement and fixed demo operator role; registration completes without a character creator, followed by text guidance/status. | A name entry or several questions can personalize the opening; scope/identity/wording must be selected. |
-| D13-04 Case and code | Code available as a readable starting note; enter it locally; opening and “begin revival” are separate deliberate actions. Running case cannot be moved/closed. Shortcut clearly labeled; timer uses active play time and freezes on full-game pause. | Known-code prompt or automatic revival on opening reduces actions; discovery/puzzle format needs a source of the code and cannot block the demo unintentionally. Confirm pause semantics with pacing. |
+| D13-02 Boarding and everyday actions | User selected assigned hand slot, on-demand draw/stow hotkey, separate HUD drawn status, temporary auto-stow/restoration and laptop connect/disconnect/stow handling. Guided internal ascent/local interact remain recommendations. | Protected-action feedback and internal climb feel still need discussion; laptop-specific remaining choices are in D13-04. |
+| D13-03 Gilliam registration | User selected Gene Starwind as fixed demo player, a close EP-04 exchange via text/dialogue choices, and ceiling-mounted cockpit pod power-up/animated speaking presentation. No name entry, exact-animation or voice requirement. | Exact dialogue/choices, pacing and detailed pod reference/clearance remain open. Future player identity remains deferred. |
+| D13-04 Case and code | User selected a digital Hilda note, larger on-demand focused screen, local Connect/device controls, visible code field with typed/clickable keyboard input and focus capture, then separate Begin Resuscitation. Ship override/activation/countdown and HOLD toggle follow the selected anime-inspired flow. Both Disconnect inputs; safe stow/walk-away disconnect; unfinished attempts cancel, completed results persist. | Note wording, visual layout, stage timing and post-disconnect screen/draw state remain open. Timer pause and no-case-movement rules remain recommendations. |
 | D13-05 Melfina and apparatus | On revival completion, notify player; local acknowledgement initiates short transfer and a staged deployment. Keep cap closure an explicit provisional transition. | Automatic transfer/deployment lets prep continue but may make the player miss the central machinery sequence. Separate apparatus controls offer more hands-on staging. |
 | D13-06 All-four engineering workflow | Repeat a short local unseal/release/extend workflow per unit, preserving distinct completion and source order; describe three repetitions as F. | One local bank-wide command after physical releases is shorter; fully gestural handles/wrapping is more tactile and requires additional motion/input fit. |
 | D13-07 Seat and ignition | Explicit take-station action triggers protected seat lift after stow/navigation; separate key interaction starts ignition after all-four prep, with visible progress. | Separate seat-raise control is more manual. Ignition should remain a distinct deliberate action under either option. |
@@ -299,7 +451,14 @@ Resolve D13-09 with initial-service dependencies before freezing the ignition/re
 ## Validation To Specify After Discussion
 
 Planned scenarios, not executed tests: boot ON/no contact versus attached; loaded boarding in both
-views; open hatch without boarding, return to hangar and later re-entry, interior closure and blocked
+views; laptop Notes readable offline, Connected Device disabled offline, proximity alone causes no
+connection, Connect opens focused target screen, disconnect disables device controls, case versus
+ship target remains correct and no stale session survives disconnect/reset;
+closing the screen preserves connection; both disconnect inputs share behavior; stow completes
+disconnect/close/holster in order while preserving slot assignment;
+turning/looking and local movement within cable reach keep connection; walking beyond reach safely
+disconnects before departure without completing an unfinished device operation;
+open hatch without boarding, return to hangar and later re-entry, interior closure and blocked
 closure, separate seal/pressure completion and invalidation on reopening;
 computer physically accounted for through climb/stow; manual draw/stow keeps slot assignment
 and HUD icon, temporary auto-stow preserves assignment and respects connection/context restrictions;
@@ -311,6 +470,13 @@ in-progress/completed readiness; fresh reset during timer/motion/ignition with n
 Also verify successful ignition with hatch open, separate departure warning, seat exit after startup,
 continued traversal, hatch reopen/close and exit/re-entry through the active-ship/low-gravity-hangar
 boundary in both views. Startup completion must not end play or make the seat permanently occupied.
+
+Laptop-specific checks: text focus suppresses gameplay hotkeys, Escape releases text focus first,
+typed and clickable case input share validation; override needs an explicit click and completes
+before activation; HOLD freezes/resumes bootstrap progress with consistent visual state without
+pausing independent revival; cancel during running/paused override or bootstrap cannot complete
+later; completed results persist on reconnect. Registration checks include Gene's fixed identity,
+pod power-up/dialogue presentation and separate personnel-record versus navigation availability.
 
 Use existing VS/VS1 validation owners in the implementation plan; Phase 1.4 will set concrete
 procedures and manual/automated evidence arrangements. No checklist is complete from these drafts.
