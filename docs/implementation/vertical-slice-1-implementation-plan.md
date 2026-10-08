@@ -553,6 +553,10 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 
 **Prerequisite:** Phase 5 exit; VS-D03/05 decisions. **Deliverable:** functional apparatus sequence with occupant proxy.
 
+Optional later visual comparison: [fan pod render note](../../reference/indexes/fan-melfina-pod-reference.md).
+Third-party reference only; use our own assets and primary source constraints. It establishes no
+dimensions, animation/rig behavior or asset reuse/publication permission.
+
 - [ ] Implement the reviewed cap opening, occupant descent, cap closure, cylinder rise and lateral cover stages.
 - [ ] Label unmeasured timing/closure/support details as E/F; preserve supported stage appearance without treating combined scenes as one measured animation.
 - [ ] Bind stage progress/completion to authoritative state; demonstrate actual occupant/cavity/sweep collision and declared interruption behavior.
@@ -565,6 +569,7 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 **Prerequisite:** 6.1 accepted fit and Phase 5 interaction; chosen coordination contract. **Deliverable:** occupied low/operating seat states.
 
 - [ ] Implement required lift motion and station transitions with the same physical player/control context.
+- [ ] Keep take-seat at the low position separate from raising; Phase 7 ignition triggers the lift under the user-corrected 1.3 ordering. Isolated mechanism proof here does not require pre-ignition raising in the normal route.
 - [ ] Ensure cluster/apparatus/doorway/rail can coexist and player access remains valid at both endpoints.
 - [ ] Include M06 movement only if required by the accepted station-access arrangement; no full grappler rig.
 
@@ -579,6 +584,7 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 - [ ] Apply the agreed F handling for unshown units, retaining four distinct project identities and all four prepared endpoints.
 - [ ] Require physical intervention where declared; control panels expose real per-unit progress/status rather than a global prepare-all shortcut.
 - [ ] Verify access with all four extended and match the actual preparation state to later ignition prerequisites.
+- [ ] Preserve optional early preparation after registration; normal guidance follows Melfina's linked sealed-engine discovery. Her check reports actual remaining units or the all-four early-preparation acknowledgement without resetting progress or bypassing final key ignition.
 
 **Validation:** VS1-M03 per-unit states/locality/duplicate requests, MC-03/04 and VS-04/06.
 **Recovery / deferral:** restore/revise an individual cylinder adapter/asset and repeat bank-wide clearance; do not infer exterior-engine movement or add maintenance/fault simulation.
@@ -607,6 +613,8 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 **Prerequisite:** Phase 6 exit and accepted readiness contract. **Deliverable:** physical ignition with actual progression.
 
 - [ ] Implement cockpit key action and declared prerequisites through the shared command path.
+- [ ] Trigger occupied seat/control lift as part of ignition from the low seated position; the raised endpoint contributes to completion and is not a prerequisite for accepting the key action.
+- [ ] Implement the accepted bounded reversible key contract: local insertion/removal hotkey, clicked OFF/ON position, shutdown/seat lowering and temporary occupied lock in both travel directions. Resolve pending shutdown/removal rules in 1.3 before execution.
 - [ ] Demonstrate an early/incomplete ignition attempt cannot report ready; accepted startup shows progress until its declared completion.
 - [ ] Connect minimal engine/generator/main-service presentation to the completed state, preserving early-service versus main-service distinction.
 
@@ -621,6 +629,7 @@ it does not waive base ship/machinery fit. This pointer preserves inputs without
 - [ ] Add only guidance needed for physical progression and understandable unmet prerequisites.
 - [ ] Keep the ship supported; SHIP READY is a startup milestone, not a demo ending. Allow seat exit, continued traversal and hatch exit/re-entry with local gravity transitions. No launch command, ship movement, cockpit-flight controls or placeholder combat becomes a dependency.
 - [ ] Distinguish startup completion from represented departure readiness: an open hatch/outstanding seal-pressure check reports a warning without blocking ignition or shutting down engines/gravity in the breathable hangar.
+- [ ] Retain the per-run completed-startup milestone while current engine/service/seat/readiness results reflect subsequent OFF/ON operation; fresh reset clears milestone and state. Do not require repeating revival/unsealing merely to preserve sim play.
 
 **Validation:** VS1-R02 eight-condition aggregate and guidance/query consistency; confirm VS-06/09 without fixture bypass.
 **Recovery / deferral:** simplify presentation while preserving required state feedback; no crew dialogue generation, LLM or future mode controls.

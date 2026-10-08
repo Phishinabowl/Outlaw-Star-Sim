@@ -71,6 +71,12 @@ off those services. Leaving the captain's seat after success does not revoke the
 transition. The [Phase 1.3 record](../../implementation/phase-1-3-action-readiness-draft.md)
 owns these E/F rules and remaining check/gravity-boundary details; no full flight or pressure model is added.
 
+The user also selected reversible key operation and occupied seat lowering on OFF. Retain a
+per-run completed-startup milestone after the successful sequence, independently of the current
+running/ready result when later switched OFF. Raise/lower motion temporarily locks seat exit;
+physical key insertion/removal and OFF/ON switching are distinct actions. Exact shutdown service
+consequences remain in the Phase 1.3 discussion; this does not add full storage reversal or saved achievements.
+
 ## Acceptance review for the later implementation
 
 | ID | Observable pass condition |

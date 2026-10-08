@@ -51,6 +51,29 @@ Compare later against SET-032/098 hyperspace-screw labels and SET-048/094/102/10
 
 ## Loss of control, isolation and restart
 
+Phase 1.3 user lead, 2026-10-08: the user points out Melfina's pod light becoming dark and her
+pose becoming droopy after key cutoff, then recovering on restart. Exact pose-change instants
+remain to verify. Re-inspected existing recovery-a 28 (black frame), recovery-b 12 (dim Gene close-up)
+and recovery-b 27 (bright wide bridge with deployed apparatus); these context stills do not alone
+verify the full droop/recovery motion. No new extraction/audio review. The demo's graceful OFF
+degraded presentation is recorded as an E/F adaptation in the
+[Phase 1.3 draft](../../docs/implementation/phase-1-3-action-readiness-draft.md), separate from
+this emergency incident and its auxiliary-service evidence.
+
+The user subsequently supplied the exact OFF/ON comparison as two attached 2560 × 1440 images
+(displayed at 2048 × 1152); inspected both directly. Source attachment identities:
+
+| Image / user-assigned state | Visible observation — A, supplied screenshot | Limits |
+| --- | --- | --- |
+| codex-clipboard-967ac949-cd04-43e4-a49a-cd1b1c21a195.png — OFF / reduced power | Interior/body illumination is substantially dimmer but still visibly blue/green. Melfina's eyes are closed; hands/wrists are more relaxed and lowered, with less spread fingers. Apparatus remains deployed around her. | Not a fully black pod or proof every circuit is dead; no measured brightness or physiological diagnosis. |
+| codex-clipboard-39bf51ec-8686-44f0-9365-1d12a7ebbd67.png — ON / restored power | Brighter turquoise interior and stronger highlights on Melfina; eyes open, hands/fingers more lifted/spread, hair spread differently. Apparatus remains deployed. | Still comparison supports changed presentation, not full transition timing, animation path or general shutdown rule. |
+
+EP-11 cutoff/restart attribution is user-supplied; exact PTS, capture edition/stream and original
+audio remain unverified for these attachments. This upgrades the specific visual contrast from
+an uninspected lead to directly inspected screenshot evidence; continuous droop/recovery motion
+still needs separate review if necessary. Images remain attachments/local-only and are not copied
+into tracked files or authorized for publication. A mild graceful-OFF adaptation remains E/F.
+
 | Local frames / subtitle intervals | Evidence | Limits |
 |---|---|---|
 | 15:34.016–15:37.019; recovery-a 02–05 | Ship changes orientation in pale space with blue curved/branching trails; bridge perspective subsequently tilts. | Loss-of-control presentation, not measured forces. |
