@@ -1,10 +1,18 @@
 # Phase 1.3 — Player Actions And Readiness Discussion Draft
 
-Status: authorized preparation in progress, 2026-10-07. The user asked for independent draft work
-and a prepared discussion queue while away. New recommendations below are **not accepted**.
-No implementation, installation or model is authorized by this preparation. The user confirmed
-publication of the current discussion checkpoint; that does not accept the remaining recommendations
-or complete Phase 1.3.
+Status: Phase 1.3 planning accepted and complete, 2026-10-08. No implementation, installation,
+model or runtime/fit pass is claimed. The user confirmed publication of this final closeout.
+
+The [accepted closeout](phase-1-3-closeout-audit.md) owns the consolidated current behavior contract.
+This file retains detailed selected interactions and discussion history. Where an earlier paragraph
+still calls a settled C13 choice or supporting default recommended/open, the closeout supersedes it.
+Exact metrics/art/source uncertainty and later implementation contracts remain deferred as recorded.
+
+Closeout review update: C13-01/02/03/05 are now user-selected (post-disconnect presentation,
+deferred visible-Melfina registration beat, cap-closure bridge and bounded automatic seal check).
+C13-04's revised reverse travel/relocking is also user-selected: only after completed OFF/shutdown,
+with no new ribbons, and all-unit readiness revalidated on restart. The user also accepted all seven
+supporting defaults, completing the Phase 1.3 planning package. Phase 1.4 remains unstarted.
 
 Inputs: accepted [Phase 1.2 closeout](phase-1-2-closeout-proposal.md), its
 [discussion record](phase-1-2-spatial-motion-decision-packet.md),
@@ -366,6 +374,21 @@ Input acceptance is not completed extension. Guidance cannot bypass local action
 must accommodate the moving sweep while retaining a usable exit route. Upper-row reach still
 requires the planned physical fit check; clicks do not authorize remote or through-wall interaction.
 
+The user selected reversible engineering operation after completed main-engine OFF/shutdown:
+grip plus forward movement pushes a unit back along the same path; at fully inserted position,
+reverse the handle to locked. Do not replace ribbons. Retain partial handle rotation on release
+and resume on re-grip; pulling requires the fully released rotation. Forward/backward travel
+requires actual occupied path clearance and preserves partial extension when stopped.
+
+Leaving the full prepared endpoint clears that unit's prepared state. Partly extended, inserted
+or relocked units cannot pass the same all-four prerequisite used on the first startup. Every ON
+request revalidates current states; if any units are unprepared, reject startup with Gilliam and
+matching cockpit/status feedback identifying the remaining work. No ignition/lift or running
+report on a rejected request. Redeploy locally to restore preparation, without new ribbons or
+replaying registration/revival. Historical completed-startup milestone remains true until reset;
+it never overrides live validation. Repeat ON/OFF/stow/redeploy is a reusable F simulation contract,
+not proof of a canonical reverse commissioning procedure. No stow/relock while main engines run.
+
 Direct manipulation remains a future experiment because its usability depends on control method
 and tuning. No drag-input system, physics-grab framework or alternate-control integration is
 required now. Later iteration can change interaction presentation while preserving local validation,
@@ -457,9 +480,13 @@ The user selected physical key presence and switch position as distinct states:
 
 This is an explicitly user-authorized expansion from one-way ignition to reversible demo operation,
 not a complete canonical shutdown/storage procedure. Key turn acceptance is not finished startup,
-shutdown or seat travel. First startup still requires completed local preparation. Removal while
-ON/moving, transition interruption and exact OFF service/physical consequences remain to decide;
-do not silently make a hotkey an alternate instantaneous shutdown path.
+shutdown or seat travel. First startup still requires completed local preparation.
+The user selected key removal only when OFF and shutdown/occupied lowering have actually finished.
+While startup or shutdown is in progress, another toggle click leaves the current sequence unchanged
+and reports “transition in progress”; no queued reversal or overlapping lift motion. Once complete,
+normal OFF/ON switching is available again. Removal attempts while ON or transitioning give readable
+unavailable feedback rather than emergency cutoff. Immediate key-removal shutdown and emergency
+recovery are explicitly deferred; these F demo rules are not canonical ignition interlocks.
 
 Preserve a per-run “full startup completed” milestone once the whole successful sequence is actually
 complete, even when the player later switches OFF and explores/restarts. Live engine/services,
@@ -480,8 +507,12 @@ shutdown script from the source-linked startup vocabulary; reversed narration, e
 words are F unless separately verified in a shutdown scene. Each report must reflect the actual
 transition/progress/completion, not cause a second state change or announce a service offline
 before it is. OFF initiates a shutdown sequence rather than instantaneously cutting every supply.
-Maintain the service capability needed to lower the occupied assembly safely; precise ordering
-of lowering, lighting transfer and gravity withdrawal remains to agree/test. Use current state to
+The user selected shutdown ordering: retain sufficient services and ship gravity while lowering
+the occupied seat/control assembly; after its actual low endpoint, withdraw ship gravity and
+settle into limited lighting/Gilliam operation. Do not lose gravity midway through seat travel.
+Final shutdown completion/key-removal availability follows the completed transition, not merely
+the low-seat endpoint. Detailed durations and individual service reports remain to refine/test.
+Use current state to
 avoid reporting nonexistent transitions on duplicate requests. No damage, emergency cutoff,
 reactor cooldown model, storage seals or universal reverse-startup assumption is introduced.
 
@@ -503,6 +534,35 @@ Applying it to graceful limited-power OFF is E/F, not proof
 that every canonical shutdown has the same effects. No health damage, incapacitation timer or
 sub-ether/emergency incident simulation is added. Exact pose/brightness and transition timing remain
 to review; retain enough readable presentation for continued exploration.
+
+### Internal Ladder — User-Selected Controls
+
+The user selected a local interact action to grab the internal lower-entry/main-passage ladder.
+Temporarily auto-stow a drawn laptop using the existing safe disconnect/close/stow contract if
+needed, retaining its hand-slot assignment. Hold forward/backward movement to climb up/down;
+releasing movement stops Gene on the ladder. At either endpoint, a short assisted step-off ends
+the climb and restores the previous draw state when hands/current context permit. No midway
+jump-off in this demo. Preserve the same physical body and back-mounted trunk, both camera views
+and actual loaded clearance rather than teleporting equipment through the hatch. Exact bindings,
+climb speed, endpoint animation and obstruction/reset recovery remain to tune/test.
+
+### Optional Empty-Trunk Cleanup — User-Selected Direction
+
+After Melfina has physically left the trunk, allow a local close interaction, then reattach the
+closed empty trunk to Gene's back using the existing carrying behavior. Carry it out through the
+normal ladder/hatch route and set it down at a marked hangar staging spot using the placement
+interaction already required in the cockpit. No deletion/disposal, hidden cargo room, prop shrinking
+or cleanup minigame. The trunk remains an accounted-for object at its new location.
+
+Cleanup is optional and never a startup/readiness prerequisite. Leaving the open case in the
+cockpit retains the agreed demo nonblocking-player exception. Do not enable pickup/closure while
+revival runs or while Melfina remains inside; availability follows actual occupant departure, not
+timer completion alone. Test closed-case handling on descent, exterior exit/re-entry and the
+ship/hangar gravity boundary, with both camera views and hand-item auto-stow. Empty does not
+reduce its geometric envelope. Extra material/weight simulation is not required.
+
+The user approved this bounded handling addition; exact hangar marker placement and prompt/carry
+timing remain E/F fit/presentation choices. No additional inventory/storage system is implied.
 
 ### Hand Slot And Draw/Stow — User-Selected Direction
 
@@ -533,7 +593,7 @@ implementation ownership and presentation technology belong to Phase 1.4.
 
 | Domain | Minimum information to distinguish | Initial draft condition / boundary |
 | --- | --- | --- |
-| Player context | Physical location, exploration/climb/station/seated context; assigned hand item, drawn/stowed status and temporary hands-required restriction | Exploration; trunk back-carried, computer assigned and drawn. Initial boot mode ON is recommended, contact requires a suitable surface. |
+| Player context | Physical location, exploration/climb/station/seated context; assigned hand item, drawn/stowed status and temporary hands-required restriction | Exploration; trunk back-carried, computer assigned and drawn. Initial boot mode ON selected; contact requires suitable surface. |
 | Player condition | Supported initial healthy condition | No damage, numerical health, oxygen, stamina or equipment battery drain introduced. |
 | Environment | Facility lighting sequence, local gravity availability, suitable contact surfaces, bounded atmosphere status | Facility lights off; pressurized/breathable hangar selected; low-gravity premise. Stable walk is F boot-assisted tuning, not boots generating gravity. |
 | Access | Each chosen door/hatch state and traversability; selected hatch closure and prospective seal-check result kept separate | Facility doors closed; selected ship entry closed. Independent opening/boarding/interior closure agreed; startup pressure contract pending. Keep unrelated hatch identities distinct. |
@@ -587,18 +647,19 @@ endpoint, not merely an accepted request. Order permits the stated parallel prep
 | A13-04 Jump/steady at ship entry | Boots disengaged for jump; reachable handhold; loaded body fits | Stable hatch-control context; release/return to hangar or enter separately | D13-02 movement/entry feel; opening never auto-boards |
 | A13-05 Exterior hatch | Local exterior panel while supported by handhold/stance; clear sweep | Opening complete; remains open for independent later entry; guide lighting available under service proposal | D13-01 supply assumption; exact hatch path remains E |
 | A13-05b Interior hatch closure | At proposed interior panel; hatch sweep clear; player has independently entered | Actual closed endpoint; separate seal/pressure check may clear the represented departure warning | D13-09 check/service behavior; closure does not gate ignition |
-| A13-06 H03 ascent | Local ladder/access; loaded route fit; drawn computer may auto-stow before hands-required climb | Same player/trunk reaches upper landing; computer remains assigned/accounted for; restore its prior draw state when permitted | D13-02 climb feel and protected-transition handling |
-| A13-07 Place trunk | At designated cockpit marker, carrying closed case | Case placed in agreed orientation; back mount clear | Re-pickup during revival recommended unavailable; D13-04 |
+| A13-06 H03 ascent | Local interact grabs ladder; loaded route fits; laptop temporarily auto-stows as needed | Hold forward/backward climbs; release stops; assisted endpoint step-off; previous draw state restored when permitted; no midway jump-off | Climb tuning, actual fit and recovery remain open |
+| A13-07 Place trunk | At designated cockpit marker, carrying closed case | Case staged; no pickup during revival/occupancy. After Melfina leaves, optional close/back-carry and placement at marked hangar spot | Return-route fit and marker/prompt details remain to tune |
 | A13-08 Unlock/open case | Placed case, drawn laptop connected locally, code read from laptop note and entered through Connected Device | Lock released after valid entry; case opening reaches endpoint; wrong entry gets feedback | Exact code-entry widget, opening action and post-authentication disconnect handling remain open |
-| A13-09 Start revival | Separate local Begin Resuscitation interaction after case open; occupant inactive | Running 600 s progress; completion makes occupant awake, not navigation ready | Explicit start selected; pause/carry/closure rules still to discuss |
+| A13-09 Start revival | Separate local Begin Resuscitation interaction after case open; occupant inactive | 600 s simulation-time progress; case cannot be carried/closed while running; awake is not navigation ready | Menu alone does not pause; explicit sim pause and optional focus-loss pause freeze progress |
 | A13-10 Revival shortcut | Local case control only while running | Remaining time skipped; same completion/transfer path, other prerequisites unchanged | Clear demo label; no instant all-systems completion |
 | A13-11 Computer setup/connect | Laptop drawn; supported case/ship connector locally reachable; no conflicting connection | Connect prompt establishes cable/workspace, opens focused screen and enables target-specific Connected Device controls | Notes/open-on-demand work disconnected; exact input and setup motion remain open |
 | A13-12 Bootstrap/register | Bootstrap from connected bridge laptop; subsequent text/choices through cockpit pod; hatch need not be closed | Bootstrap enables Gilliam/limited lighting without gravity; registration suspends/resumes at saved pod step without undoing bootstrap | Exploration/laptop/case/hatches available before registration; ship preparation gated; hold-off is not completion |
-| A13-13 Disconnect/close/stow | Disconnect button/hotkey share one action; walking beyond connected workspace requests the same safe disconnect; stow hotkey requests disconnect then close/holster | Cancel unfinished attempt with feedback/retry; preserve completed results; cable cleared before leaving reach; screen close alone keeps connection; holstering keeps assignment | Explicit-disconnect screen behavior and walk-away draw state remain open |
+| A13-13 Disconnect/close/stow | Disconnect inputs share action; walking beyond workspace safely disconnects; stow requests disconnect/close/holster | Cancel unfinished attempts, retain completed results; explicit disconnect keeps focused Notes view; walk-away closes view/keeps laptop drawn; stow holsters without unassigning | Cable distance/transition presentation deferred |
 | A13-14 Engineering wrapping/release | Local unit; registration complete, applicable services available; click removes ribbon seals, hold initiates handle turn/pull | Quick seal-removal endpoint and separate release/rotation progress; no prepared flag yet | User's 90-degree clockwise detail needs reference reconciliation; other-unit repetition F |
 | A13-15 Engineering extension | Mouse grip held after handle rotation plus backward keyboard input; coordinated retreat fits; unrelated obstruction absent | Releasing backward pauses with grip; releasing mouse lets go at retained extension; re-grab to finish; only full endpoint prepares unit | Turn interruption and D13-08 obstruction behavior remain open; no operator stand-clear step |
+| A13-15b Engineering stow/relock | Main engines OFF and shutdown complete; local grip plus forward input and clear occupied path | Push back, relock handle at full insertion; any departure from full prepared endpoint clears unit readiness; partial turn/travel retained | Reverse operator-path/handle fit and timing still require proof |
 | A13-16 Occupant transfer | Revival/registration complete; Gene locally acknowledges Melfina; required services and opening/approach clear | Gilliam opens cap before Melfina's short low-gravity entry; she waits by case beforehand | Waiting pose/dialogue and obstruction handling remain open |
-| A13-17 Apparatus deployment | Coordinated local-start sequence; cap opened and occupant entered; clear stage volumes/services | Automatic descent/rise/cover stages reach actual available endpoint, with player camera control retained; closure bridge explicitly F | Cap closure details, timing and D13-08 interruption remain open |
+| A13-17 Apparatus deployment | Coordinated local start; cap opened, occupant enters; clear stages/services | Descend clear, cap closes, cylinder rises/covers move automatically to actual available endpoint; blocked stage waits/resumes; camera retained | Joined choreography F; exact timing/fit later |
 | A13-18 Take station | Low captain's seat accessible; computer/cable clear for ignition/lift | Gene seated in low position; sitting does not raise assembly | Seat entry/exit presentation remains to refine |
 | A13-19 Ignition | Gene occupies low-seat pilot key; registration/navigation/all-four/services prepared; occupied lift fit valid; hatch check does not gate ignition | Key starts ignition/lift; seat exit temporarily locked during motion and restored at endpoint; actual completion required for startup milestone | Internal timing/recovery remain to refine; no circular raised-seat prerequisite |
 | A13-20 Ready report | Derived query after actual ignition completion and all eight conditions | SHIP READY startup milestone; keep playing, leave seat and explore/exit/re-enter; separate departure warning if hatch open/check outstanding | Actual startup and departure results remain distinct; no launch action required |
@@ -651,11 +712,31 @@ power circuit. Whether engineering extension specifically needs initial services
 - Climb, station lift and occupant transfer need a defined protected transition/cancel boundary;
   no mid-shaft drop or automatic camera-mode workaround. Camera changes cannot bypass it.
 - Revival keeps progressing after the player leaves, and cannot be canceled/restarted through a
-  duplicate activation. Recommend preventing case carry/closure while running; this is a usability
-  rule to discuss, not a general canonical medical model.
-- Recommend measuring revival in active play time: it continues while walking away, but a deliberate
-  full-game pause freezes it with other simulation progress. No background wall-clock completion
-  while the demo is closed. Pause/time semantics remain D13-04 discussion input, not a selected engine timer.
+  duplicate activation. The user selected preventing case carry and lid closure while revival runs;
+  this is F demo usability, not a general canonical medical model.
+- The user replaced the earlier menu-triggered pause setting: opening the pause menu always leaves
+  an already-running simulation running. Include an explicit **Pause Sim / Resume Sim** button
+  that toggles simulation time/progress. Opening/closing the menu alone neither pauses nor resumes
+  a sim already explicitly paused. Apply sim pause consistently to timers/motion, not just revival;
+  laptop HOLD remains an independent local operation pause. The UI remains usable while sim paused.
+- The user also selected an in-game **Pause/Resume Sim hotkey**, without opening the menu.
+  Hotkey and menu button share the same manual sim-pause action/state. Exact binding remains open;
+  respect laptop text-entry/UI focus so typing cannot inadvertently toggle simulation pause.
+  Provide readable paused/running status even when the menu is closed. Focus-return behavior must
+  preserve a manual pause initiated through either control.
+- The configurable option is **Automatically pause on focus loss**, covering Alt+Tab and similar
+  app focus changes. The user selected default enabled and automatic resume on focus return only
+  when focus loss caused the pause. If disabled, focus loss alone leaves the sim running. A sim
+  manually paused through hotkey/menu stays paused across focus changes; focus return cannot
+  clear that manual pause. Setting persistence remains a later configuration choice.
+  No offline progress while the app is closed
+  or saved-state persistence is selected.
+- Menu input owns keyboard/mouse regardless of simulation pause policy. Recommend releasing
+  gameplay hold/grip input on menu entry rather than latching engine-pull/movement commands;
+  returning requires fresh input. This input-release rule is accepted in the closeout. Automatic operations may finish and leave results/notifications
+  pending while simulation continues. Validate with seat locks, low-gravity movement and apparatus
+  obstruction; no secret world freeze just because the menu is open or false completion. Exact player
+  motion/menu treatment remains to refine.
 - On a fresh run/reset, restore doors, lights, equipment, case lock/timer/occupant, computer session,
   services/gravity, four units, apparatus, seats, ignition and ready result. Prior callbacks cannot
   complete new operations. Save/load, checkpoints and universal shutdown remain deferred.
@@ -687,12 +768,12 @@ Exact key bindings, art style, timings and metric locomotion can follow the beha
 | ID / topic | Recommendation to discuss | Material alternative / effect |
 | --- | --- | --- |
 | D13-01 Initial services and gravity | User selected low gravity throughout preparation, ship gravity available after completed main ignition and Gilliam notification; boots stay manually toggled. Laptop bootstrap supplies limited services without gravity. | Qualitative supply assumptions, exact gravity blend/tuning and low-gravity occupant-transfer staging remain to resolve. EP-04 motion leads are recorded, not yet visually verified. |
-| D13-02 Boarding and everyday actions | User selected assigned hand slot, on-demand draw/stow hotkey, separate HUD drawn status, temporary auto-stow/restoration and laptop connect/disconnect/stow handling. Guided internal ascent/local interact remain recommendations. | Protected-action feedback and internal climb feel still need discussion; laptop-specific remaining choices are in D13-04. |
+| D13-02 Boarding and everyday actions | Manual hand-item draw/stow, temporary auto-stow/restoration and laptop handling selected. Internal ladder: interact to grab, forward/backward climbs, release stops, assisted endpoint step-off, no midway jump-off. | Binding/speed/animation, loaded fit and protected-action recovery remain to tune/test; laptop-specific choices in D13-04. |
 | D13-03 Gilliam registration | Gene fixed identity; scene-faithful text/choices, animated pod/photo beats and Melfina recognition. Exact proceed line; optional failed recovery branch. Walk-away/hold-off resumes at saved pod step with bootstrap lighting active. Before completion, exploration/laptop/case/hatches allowed; guided ship preparation gated. | Remaining script/pacing, Melfina visibility fallback, mid-line presentation and pod reference/clearance remain open. Future identity/full crew deferred. |
-| D13-04 Case and code | User selected a digital Hilda note, larger on-demand focused screen, local Connect/device controls, visible code field with typed/clickable keyboard input and focus capture, then separate Begin Resuscitation. Ship override/activation/countdown and HOLD toggle follow the selected anime-inspired flow. Both Disconnect inputs; safe stow/walk-away disconnect; unfinished attempts cancel, completed results persist. | Note wording, visual layout, stage timing and post-disconnect screen/draw state remain open. Timer pause and no-case-movement rules remain recommendations. |
+| D13-04 Case and code | Laptop/code/connection and separate revival rules selected. Menu leaves sim running; shared manual Pause/Resume Sim button/hotkey. Focus-loss auto-pause defaults ON; return resumes only focus-caused pause, never manual pause. | Note/layout/timing, post-disconnect screen/draw state and settings persistence remain open. |
 | D13-05 Melfina and apparatus | Notification, waiting by case and local acknowledgement after registration selected. Gilliam opens cap, Melfina enters, automatic descent/rise/cover sequence follows with camera control retained; no separate player start control. | Waiting pose/dialogue, cap closure bridge, stage timing and obstruction/interruption handling remain open. |
-| D13-06 All-four engineering workflow | Click removes seals; mouse hold grips/turns; mouse plus backward pulls with Gene. Input release preserves partial extension; re-grab to finish. User specifies clockwise quarter-turn. Full endpoint required; other three procedures F. | Turn interruption/collision, tuning, rotation reconciliation and occupied/upper-row reach fit remain open. Free-form handle dragging deferred. |
-| D13-07 Seat and ignition | Insert/remove hotkey; click OFF/ON; occupied lift/lowering with temporary lock. Graceful narrated OFF retains Gilliam/limited lighting/preparation/registration/milestone; main services/gravity offline. Melfina stays deployed/linked with dimmed/drooping low-power presentation, recovering on restart. | Key removal while ON/moving, detailed service/gravity/lowering order, pose/brightness, timing and interruption remain open; source timing review pending. |
+| D13-06 All-four engineering workflow | Click seals; grip/turn then backward pull. Partial turn/travel retained. After completed OFF, grip/forward pushes and inserted handle relocks; no new ribbons. Every startup checks all-four current prepared endpoints; failed restart reports missing work. Other three repeated procedures F. | Collision/tuning, rotation reconciliation and occupied/upper-row/reverse reach fit remain open. Free-form dragging deferred. |
+| D13-07 Seat and ignition | Insert/remove hotkey; click OFF/ON; occupied lift/lowering lock. Remove only after completed OFF; no mid-transition reversal. Lower seat with gravity/services retained, then withdraw gravity and settle to limited lighting/Gilliam. Preparation/registration/milestone persist; Melfina remains deployed with reduced-power presentation. | Detailed service reports, pose/brightness and durations remain open; source timing review pending. Emergency cutoff deferred. |
 | D13-08 Interruptions and presentation | User selected temporary seat-exit lock during occupied lift, restored afterward; Gene can block apparatus opening/sweep, with pointed Gilliam feedback and pause until clear. No damage/teleport; preserve motion stage. | Exact lines, blocked/resume presentation, unexpected interruption/reset behavior and fit remain to verify; no damage system introduced. |
 | D13-09 Hatch sealing and pressurization | Independent opening/entry/interior closure and seal/pressure results agreed. Hangar breathable. Hatch/check results gate represented departure readiness, not ignition; reopening updates that warning without shutting down engines/gravity. Startup success allows continued exploration and ship/hangar gravity transitions. | Decide check execution/services, represented boundaries and status wording. No whole-ship pressure network, launch system or exact gravity-field shape selected. |
 
@@ -749,8 +830,16 @@ Reversible-operation checks must cover key presence versus OFF/ON position, occu
 partial engineering pause/re-grab, main-service/gravity changes with limited lighting/Gilliam retained,
 Melfina's deployed reduced-power/recovery presentation, and current status separate from retained
 per-run startup completion. Restart must not repeat registration/revival/seal removal; fresh reset
-clears the completion milestone and restored states. Pending removal/timing rules need review first.
+clears the completion milestone and restored states. Reject key removal while ON or transitioning;
+mid-transition toggle clicks must not queue reversal or overlap motion, and key removal becomes
+available after actual OFF/lowering completion. Pending timing rules still need review.
+Check menu-open simulation progress, shared menu-button/in-game-hotkey Pause/Resume Sim, text-focus
+suppression of the gameplay hotkey, and focus-loss auto-pause enabled/
+disabled: revival/motion obey actual pause state, UI remains usable, menu input cannot issue gameplay
+commands and engineering pull does not continue from latched input. Focus return must not undo a
+manual pause. Case carry/closure rejects during revival without resetting it.
 
 Use existing VS/VS1 validation owners in the implementation plan; Phase 1.4 will set concrete
-procedures and manual/automated evidence arrangements. No checklist is complete from these drafts.
-VS-D04–06 remain open for discussion. Phase 1.4 is not started automatically.
+procedures and manual/automated evidence arrangements. No runtime acceptance test is complete from this planning.
+VS-D04–06 have accepted bounded planning contracts in the closeout; these statements do not claim
+runtime or fit validation. Phase 1.4 remains unstarted and requires explicit authorization.

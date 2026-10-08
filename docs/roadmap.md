@@ -61,8 +61,10 @@ The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 player, mechanism and readiness recommendations plus a discussion queue. User-selected directions
 now include manual hand-item draw/stow and restoration, independent hatch operation, breathable
 hangar, gravity after ignition and continued exploration after startup success. Seal/pressure status
-affects represented departure readiness rather than ignition. Remaining recommendations are open;
-Phase 1.4 and implementation remain unstarted.
+affects represented departure readiness rather than ignition. Remaining art/metric details are deferred.
+The user accepted the [Phase 1.3 closeout](implementation/phase-1-3-closeout-audit.md), its five
+behavior choices and seven supporting defaults on 2026-10-08. Phase 1.3 planning is complete;
+fit/runtime validation remains later work. Phase 1.4 and implementation remain unstarted.
 
 The [Phase 1.2 closeout package](implementation/phase-1-2-closeout-proposal.md) was accepted by
 the user on 2026-10-07, including local canopy/platform/computer storage, planned MC demonstrations

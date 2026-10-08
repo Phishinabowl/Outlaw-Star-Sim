@@ -79,6 +79,11 @@ consequences remain in the Phase 1.3 discussion; this does not add full storage 
 
 ## Acceptance review for the later implementation
 
+The [accepted Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md) owns the current
+bounded action/service/readiness contract, including pause/reset, optional cleanup and reversible
+engineering/ignition. The discussion record retains source-qualified details and history. Metric/art
+choices and actual implementation/fit proof remain deferred; planning completion is not gameplay acceptance.
+
 | ID | Observable pass condition |
 |---|---|
 | VS-01 | A run begins at the specified dormant starting condition; physical approach and chosen entry lead to the bridge. |

@@ -2,12 +2,12 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 |
-| Status | Phases 1.1 and 1.2 planning complete; Phase 1.3 discussion/preparation authorized; implementation not authorized |
+| Created / last edited | 2026-10-07 / 2026-10-08 |
+| Status | Phases 1.1–1.3 planning complete; Phase 1.4 unstarted; implementation not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 1.3 action/readiness draft; user discussion pending |
+| Current checkpoint | Accepted Phase 1.3 planning closeout; Phase 1.4 unstarted |
 
 ## Purpose And Placement
 
@@ -268,8 +268,13 @@ later fit checks; source correspondence and final geometry remain explicitly unr
 The user authorized Phase 1.3 preparation on 2026-10-07, asking for independent draft work and
 a discussion queue for their return. The [action/readiness draft](phase-1-3-action-readiness-draft.md)
 records established constraints, recommended service/state/action rules, eight readiness mappings
-and D13-01–09 choices. User-selected directions are marked in the draft; remaining recommendations
-are unaccepted and all Phase 1.3 completion checklist items below stay open.
+and D13-01–09 choices. The user accepted C13-01–05 (including revised reverse engineering) and
+all seven supporting defaults on 2026-10-08. The five Phase 1.3 planning items are complete;
+metrics/art/source uncertainties and runtime/fit evidence remain later work.
+
+**Closeout review:** [Phase 1.3 audit](phase-1-3-closeout-audit.md) assembles the current route,
+five accepted C13 choices, supporting defaults, validation owners and tuning/evidence deferrals.
+This is the accepted current behavior contract; it does not authorize Phase 1.4 or implementation.
 
 Carry forward the [opening discussion's dependency/interaction questions](phase-1-2-spatial-motion-decision-packet.md):
 case activation/skip, computer boot and registration, initial service availability, preparation overlap
@@ -278,13 +283,16 @@ gravity-available notification and in-game character/equipment HUD; distinguish 
 from deferred health/damage mechanics. Bound their state ownership, feedback and reset contract
 before assigning implementation work. Also reconcile the proposed placed-case player-blocking
 exception with interaction detection, occupant transfer and the demo's explicit clearance limits;
-it does not waive base ship/machinery fit. This pointer preserves inputs without starting Phase 1.3 or changing its scope gate.
+it does not waive base ship/machinery fit. The closeout reconciles these inputs and accepted scope additions.
 
-- [ ] Specify initial available services and player initialization, preserving early bridge access before main ignition.
-- [ ] Decide placeholder occupant deployment, cap closure/interlocks across cuts, seat lift coordination and all-four cylinder preparation behavior as F where unshown.
-- [ ] Define per-action locality/station context, in-progress/completed/rejected results, duplicate/conflicting requests and declared prerequisites.
-- [ ] Translate the eight baseline readiness conditions into observable outcomes; define key/ignition completion and minimal guidance without a numerical power model.
-- [ ] Identify mechanism interruption/collision behavior needed for safe slice operation; do not add simulated faults or repairs.
+- [x] Specify initial available services and player initialization, preserving early bridge access before main ignition.
+- [x] Decide placeholder occupant deployment, cap closure/interlocks across cuts, seat lift coordination and all-four cylinder preparation behavior as F where unshown.
+- [x] Define per-action locality/station context, in-progress/completed/rejected results, duplicate/conflicting requests and declared prerequisites.
+- [x] Translate the eight baseline readiness conditions into observable outcomes; define key/ignition completion and minimal guidance without a numerical power model.
+- [x] Identify mechanism interruption/collision behavior needed for safe slice operation; do not add simulated faults or repairs.
+
+**Completion record:** user accepted the remaining behavior choices/defaults on 2026-10-08.
+VS-D04–06 are settled bounded E/F planning contracts; no runtime/geometry pass. Phase 1.4 remains unstarted.
 
 **Validation:** action/state table matches commissioning scope; all-four endpoints retained; player can return to the bridge; no guidance shortcut bypasses local work.
 **Recovery / deferral:** revise F prerequisites/timing before implementation, retaining supported visible stages. Reactor wattage/topology, universal shutdown and crew AI remain deferred.
@@ -585,6 +593,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Require physical intervention where declared; control panels expose real per-unit progress/status rather than a global prepare-all shortcut.
 - [ ] Verify access with all four extended and match the actual preparation state to later ignition prerequisites.
 - [ ] Preserve optional early preparation after registration; normal guidance follows Melfina's linked sealed-engine discovery. Her check reports actual remaining units or the all-four early-preparation acknowledgement without resetting progress or bypassing final key ignition.
+- [ ] Support local reverse push/relock only after completed OFF/shutdown; preserve partial travel/turn and clear prepared state on leaving the full endpoint. Redeployment requires no new ribbons; validate reverse occupied access.
 
 **Validation:** VS1-M03 per-unit states/locality/duplicate requests, MC-03/04 and VS-04/06.
 **Recovery / deferral:** restore/revise an individual cylinder adapter/asset and repeat bank-wide clearance; do not infer exterior-engine movement or add maintenance/fault simulation.
@@ -614,8 +623,9 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 
 - [ ] Implement cockpit key action and declared prerequisites through the shared command path.
 - [ ] Trigger occupied seat/control lift as part of ignition from the low seated position; the raised endpoint contributes to completion and is not a prerequisite for accepting the key action.
-- [ ] Implement the accepted bounded reversible key contract: local insertion/removal hotkey, clicked OFF/ON position, shutdown/seat lowering and temporary occupied lock in both travel directions. Resolve pending shutdown/removal rules in 1.3 before execution.
+- [ ] Implement the accepted bounded reversible key contract: local insertion/removal hotkey, clicked OFF/ON position, shutdown/seat lowering and temporary occupied lock in both directions, using the accepted 1.3 removal/transition rules. Tune/test durations during authorized execution.
 - [ ] Demonstrate an early/incomplete ignition attempt cannot report ready; accepted startup shows progress until its declared completion.
+- [ ] Revalidate current all-four preparation on every restart after stow/relock; failed requests produce consistent Gilliam/status feedback without lift/ignition, regardless of retained historical success.
 - [ ] Connect minimal engine/generator/main-service presentation to the completed state, preserving early-service versus main-service distinction.
 
 **Validation:** VS1-R01 ignition complete/incomplete/duplicate outcomes and baseline VS-05/06; no numerical power simulation.
