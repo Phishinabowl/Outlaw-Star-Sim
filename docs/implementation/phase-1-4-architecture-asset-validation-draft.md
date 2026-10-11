@@ -223,8 +223,8 @@ state and events report actual changes/completion. Commands distinguish rejectio
 completion and failure after starting. Acceptance alone cannot set readiness or announce success.
 
 - Repeated input cannot start duplicate operations. Repeated ignition input during an active startup
-  does not create additional startup sequences; exact request identifiers and duplicate-result handling
-  remain implementation details to specify.
+  does not create additional startup sequences; the session/operation identity rules below define
+  the agreed tracking boundary without selecting concrete identifier types or APIs.
 - Conflicting requests receive clear reasons rather than silently competing for a mechanism. Cylinder
   restow while ON remains disallowed under the accepted Phase 1.3 contract.
 - Interruption follows each action's existing contract: released grip preserves partial engineering
@@ -237,8 +237,35 @@ completion and failure after starting. Acceptance alone cannot set readiness or 
 
 All callers use the same validation/results path without bypassing physical locality or control-context
 requirements. No external transport, network service or voice integration is selected or implemented.
-Exact Unreal types, schemas, operation identity and validation procedures remain pending; accepting
+Exact Unreal types, schemas and executable validation procedures remain pending; accepting
 these rules does not complete the seven Phase 1.4 checklist items.
+
+### Session And Operation Identity — Accepted 2026-10-11
+
+Use a session identifier for the current fresh run and an operation identifier for each particular
+tracked action. Pair the two when attributing asynchronous work/results. Session control owns fresh-run
+identity; the authoritative action owner tracks operation state through the shared request/result path.
+Concrete identifier formats, C++ types and storage details remain implementation choices.
+
+| Situation | Required outcome |
+| --- | --- |
+| Repeated ignition input while startup is active | Reference the existing operation/current result or return a clear in-progress reason; do not start a duplicate sequence. |
+| Conflicting action on a busy mechanism | Validate through the shared path and report the reason; unrelated allowed operations need not be globally serialized. |
+| Reset during seat motion, bootstrap or a timer | Invalidate the old session/work, stop outstanding motion/timers as appropriate and restore starting authority/presentation before accepting new actions. |
+| Late callback after reset | Ignore the previous session's callback; it cannot set readiness or change the new run's presentation. |
+| Late callback after same-session cancellation/replacement | Check that its operation is still current and permitted to complete; matching the session alone is insufficient. |
+| Reopened laptop or dialogue UI | Query current state/checkpoints; missed events cannot leave stale UI. |
+
+Results distinguish rejected, accepted/in-progress, completed and failed, with operation identity and
+a reason where appropriate. Accepted is not completed. Interruption retains the Phase 1.3 action
+contract: handle release preserves partial extension; disconnect cancels unfinished laptop work;
+independent revival and completed effects persist where already agreed. IDs do not turn all releases
+into resets or create permission to bypass physical locality.
+
+Use existing VS1-S02 for duplicate/conflict results and VS1-S03/VS1-R03 for reset, interrupted work
+and stale-callback/repeated-session proof. These identifiers are internal lifecycle tracking, not
+player/account identity, save-game support or a multiplayer/network service. No implementation occurs
+in this planning increment.
 
 ## Accepted Asset Versioning Policy
 

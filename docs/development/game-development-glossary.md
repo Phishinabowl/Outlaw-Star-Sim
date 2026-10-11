@@ -314,6 +314,10 @@ room fits. [Blender glossary](https://docs.blender.org/manual/en/latest/glossary
 | State machine / prerequisite | Defined states and transitions / condition required before an action. |
 | Command / query / event | Request a change / read current state / announce something happened. |
 | Callback / lifecycle / reset | Work invoked later / creation-to-teardown behavior / restoring a new session's starting state. |
+| Session ID | Identifies the current fresh run. Reset changes it so work from an earlier run cannot affect the new one; not a player/account ID. |
+| Operation ID | Identifies one tracked action, such as an ignition sequence or seat lift. Results/callbacks must match the current operation as well as the session. |
+| Duplicate / conflicting request | Repeated attempt to start the same active action / action incompatible with current work or state. Neither should create competing sequences. |
+| Stale callback | Delayed result from work that was reset, cancelled or replaced. Must not update current state just because it eventually arrives. |
 | UI / HUD | User interface broadly / information displayed during gameplay. |
 | Enhanced Input | Unreal system separating logical actions from device bindings and contextual input rules. |
 | Input action / mapping context | Meaning such as Interact / bindings active in a situation such as exploration or seated use. |
@@ -330,6 +334,11 @@ the starting experience; C++/Blueprint describes how starting code is supplied. 
 to prove the minimal build first, then add our player at Phase 3.1. We can learn from character
 templates without importing all their content or inventing our own engine.
 [Epic templates reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-templates-reference).
+
+For example, a seat-lift completion from session A must be ignored after resetting to session B.
+Even within session B, a cancelled operation's late result must not complete its replacement.
+The [session/operation contract](../implementation/phase-1-4-architecture-asset-validation-draft.md#session-and-operation-identity--accepted-2026-10-11)
+owns our rules; tracking IDs do not require networking or change each action's interruption behavior.
 
 ### Asset Name Prefixes
 
