@@ -322,6 +322,24 @@ neither gets its own readiness rules. Actual device/backend combinations require
 [Epic Enhanced Input](https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine),
 [project input/ownership plan](../implementation/phase-1-4-architecture-asset-validation-draft.md).
 
+### Asset Name Prefixes
+
+These prefixes help identify the kinds of assets you see in an Unreal project or packaged-content
+inspection. They are naming conventions, not what determines the underlying file's type.
+
+| Prefix / example | What it identifies |
+| --- | --- |
+| `SM_EngineeringCylinder` | Static mesh: visible geometry for the cylinder. A static mesh can still move as a rigid object; it does not mean permanently fixed in place. |
+| `BP_EngineeringCylinder` | Blueprint: configured object/behavior that may reference the cylinder mesh and materials. |
+| `M_PaintedMetal` | Material: surface appearance rules. |
+| `MI_PaintedMetal_Red` | Material instance: variation of the parent material. |
+| `IA_Interact` | Input action: logical player action, separate from its physical key/button. |
+
+These can describe different pieces of the same object, rather than duplicate models. The accepted
+initial naming convention and folder layout live in the
+[Phase 1.4 plan](../implementation/phase-1-4-architecture-asset-validation-draft.md#folder-subdivisions-and-initial-naming--accepted-2026-10-11).
+[Epic's naming reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/recommended-asset-naming-conventions-in-unreal-engine-projects).
+
 ## Files, Builds And Version Control
 
 | Term | Plain-language meaning |

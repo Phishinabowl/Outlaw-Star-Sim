@@ -32,7 +32,7 @@ This draft is not a completed technical plan. The seven implementation-plan chec
 Exact startup behavior stays with 1.3; technology decisions cannot silently remove required dialogue,
 machinery, pause, reversible operation or continued exploration merely to simplify the build.
 
-## Initial Project Identity — Accepted; Remaining Layout For Review
+## Initial Project Identity And Folder Layout — Accepted
 
 The user agreed the internal project/module name **OutlawStarSim**, with project file planned at
 `Unreal/OutlawStarSim/OutlawStarSim.uproject`. This follows the repository's existing Unreal ignore
@@ -41,20 +41,54 @@ title may remain “Outlaw Star XGP Simulator”; internal identifier does not d
 The one-module C++ authority/Blueprint presentation direction is agreed in principle; detailed
 ownership/lifecycle/map/asset contracts still need review. No project/folder creation is authorized.
 
-| Proposed location | Ownership / role |
+| Accepted planned location | Ownership / role |
 | --- | --- |
 | `Unreal/OutlawStarSim/Source/OutlawStarSim/` | One initial runtime C++ module; add modules/plugins only for an actual separation need |
 | `Unreal/OutlawStarSim/Config/` | Reviewed project configuration; no host credentials/client configuration |
-| `Unreal/OutlawStarSim/Content/XGP/` | Owned maps, Blueprints, UI/proxy materials and imported assets; naming policy still to agree |
-| `assets/` | Project-owned Blender sources, export recipes/manifests and designated handoff assets; detailed subfolders remain pending |
+| `Unreal/OutlawStarSim/Content/XGP/` | Owned maps, Blueprints, UI/proxy materials and imported assets; subdivisions and initial prefixes accepted below |
+| `assets/` | Project-owned Blender sources, export recipes/manifests and designated handoff assets, separated below |
 | `docs/implementation/` | Accepted contracts, validation procedures/results and later handoff records |
 | Existing `_source_*` and ignored reference media | Immutable/local-only evidence; not game assets or packaging dependencies |
 
 Plan one opening map containing the hangar and required route, plus small separate validation maps
 only where isolation materially helps reproduce a failure. No world streaming/open-world infrastructure
 required for this slice. A neutral build fixture still precedes the playable map under Phase 2.
-The map organization is accepted below; exact folders/template and names remain proposals. No
+The map organization and folder layout are accepted below; template and exact map names remain to select. No
 project initialization is authorized by these planning choices.
+
+### Folder Subdivisions And Initial Naming — Accepted 2026-10-11
+
+| Planned path | Contents |
+| --- | --- |
+| `assets/blender/` | Editable project-owned Blender originals. |
+| `assets/exports/` | Designated handoff files imported into Unreal; retain the accepted source/export relationship. |
+| `assets/recipes/` | Authored export settings, scripts/recipes and manifests for reproducible handoff. |
+| `Unreal/OutlawStarSim/Content/XGP/Maps/` | Playable maps. |
+| `Unreal/OutlawStarSim/Content/XGP/Ship/`, `Characters/`, `Props/`, `Materials/`, `UI/`, `Input/` | Content grouped by role; the shortened paths in this row are all under `Content/XGP/`. |
+| `Unreal/OutlawStarSim/Content/XGP/Development/` | Test Lab and development-only fixtures; intended to be excluded from the playable distribution. |
+| `docs/implementation/validation/` | Authored procedures/results tied to existing VS1 IDs; raw captures/logs remain local working data. |
+
+Development folder placement alone does not enforce package exclusion. Specify the playable map
+allowlist/exclusion configuration during authorized package work and verify that runtime references
+do not pull test-only assets into the distribution. Reusable content needed by Awakening belongs
+outside the development-only folder. The early neutral proof package is intentionally a separate
+development artifact, not the final playable distribution.
+
+Use type prefixes and readable names to distinguish cooperating assets:
+
+| Prefix | Type | Illustrative name |
+| --- | --- | --- |
+| `SM_` | Static mesh | `SM_EngineeringCylinder` |
+| `BP_` | Blueprint | `BP_EngineeringCylinder` |
+| `M_` | Material | `M_PaintedMetal` |
+| `MI_` | Material instance | `MI_PaintedMetal_Red` |
+| `IA_` | Input action | `IA_Interact` |
+
+These names illustrate the accepted convention; they do not mandate a particular class or asset
+inventory. A Blueprint may reference a mesh and material rather than duplicate them. Extend prefixes
+when needed instead of inventing a full asset taxonomy before content exists. General reference:
+[Epic asset naming guidance](https://dev.epicgames.com/documentation/en-us/unreal-engine/recommended-asset-naming-conventions-in-unreal-engine-projects).
+No directories, Unreal assets, export files, packaging rules or Git/LFS configuration are created here.
 
 ## Accepted Map And Input Organization — Detailed Bindings Pending
 
@@ -62,7 +96,7 @@ Accepted in discussion, 2026-10-10. Start with one Test Lab map for scale, mater
 mechanisms and player-clearance fixtures, and one continuous Awakening map for the playable hangar
 and required ship interiors. Create extra isolated maps only for a reproducibility need. The minimal
 Phase 2 engine/build/package fixture still comes first; test-map existence is not validation evidence.
-Exact asset names, folders and shipping/package allowlists remain to specify.
+Folder roles are accepted above; exact map names and shipping/package allowlists remain to specify.
 
 Use Unreal Enhanced Input to separate logical actions from physical keys/buttons and organize bindings
 by situation. Exploration, grip, ladder, seated interaction, focused laptop/dialogue/menu UI and code
