@@ -322,6 +322,11 @@ comparisons in the learning track. The user prefers clear gameplay views; initia
 those two effects are accepted, without expanding the current phase into a graphics
 menu implementation.
 
+Keyboard/mouse remains the first required input proof. An optional controller learning trial is
+accepted for later authorized player/interaction/UI work, using the Phase 1.4 draft's bounded device
+and input-transition checks. Preserve common actions for Xbox, PS4 and Switch Pro exploration;
+controller backends, bindings and complete multi-device support are not initial acceptance requirements.
+
 - [ ] Select project name/path, minimum C++ ownership, Blueprint configuration boundary, map/test/evidence layout and input/camera approach; keep illustrative APIs out of the accepted registry until reviewed.
 - [ ] Specify a shared command/query path, result lifecycle and reset ownership with no external transport or second readiness writer.
 - [ ] Agree publication/versioning for owned maps/Blueprints/proxy assets and whether Git LFS is needed before their first commit; keep source media excluded.

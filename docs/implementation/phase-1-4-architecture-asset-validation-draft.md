@@ -51,7 +51,76 @@ ownership/lifecycle/map/asset contracts still need review. No project/folder cre
 Plan one opening map containing the hangar and required route, plus small separate validation maps
 only where isolation materially helps reproduce a failure. No world streaming/open-world infrastructure
 required for this slice. A neutral build fixture still precedes the playable map under Phase 2.
-Folder/template, naming and map choices are proposals, not an instruction to initialize Unreal now.
+The map organization is accepted below; exact folders/template and names remain proposals. No
+project initialization is authorized by these planning choices.
+
+## Accepted Map And Input Organization — Detailed Bindings Pending
+
+Accepted in discussion, 2026-10-10. Start with one Test Lab map for scale, materials/lighting,
+mechanisms and player-clearance fixtures, and one continuous Awakening map for the playable hangar
+and required ship interiors. Create extra isolated maps only for a reproducibility need. The minimal
+Phase 2 engine/build/package fixture still comes first; test-map existence is not validation evidence.
+Exact asset names, folders and shipping/package allowlists remain to specify.
+
+Use Unreal Enhanced Input to separate logical actions from physical keys/buttons and organize bindings
+by situation. Exploration, grip, ladder, seated interaction, focused laptop/dialogue/menu UI and code
+text-entry are logical situations, not a requirement for six mapping assets. Configure mappings and
+route requests through accepted authority; contexts do not replace command permission/locality checks.
+UI/text focus must explicitly suppress conflicting gameplay actions, release grips/movement on the
+accepted menu/focus transitions and require fresh input afterward. Test actual routing rather than
+assuming mapping priority alone handles text focus and widgets.
+
+First/third person share the same physical Gene, reach, equipment and permissions. Exact keys/buttons,
+camera offsets and transitions remain for discussion/fit proof. Initial required validation remains
+keyboard/mouse; Enhanced Input capability is not an expansion to required controller/HOTAS support.
+
+Reference: [Epic Enhanced Input documentation](https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine).
+No project, mapping asset or input code is created by this accepted planning choice.
+
+### Optional Controller Learning Trial — Accepted Direction
+
+Keyboard/mouse remains the required first proof; preserve device-independent actions and multiple
+bindings for later input expansion. The user wants an optional controller trial for learning, with
+Xbox, DualShock 4/PS4 and Switch Pro as longer-term devices of interest. This is not a promise of
+complete support for all devices or console-platform builds in the first slice.
+
+After basic movement/local interaction and focused UI work, trial one available supported controller,
+preferably Xbox/XInput on Windows, before widening to other device paths. Record model, wired/Bluetooth
+connection, driver/input backend and any translation layer. Enhanced Input handles action mapping;
+device recognition/protocol support is a separate compatibility concern. Evaluate native support or
+an explicitly selected adapter for other devices; do not assume every controller is plug-and-play.
+No input plugin, translation utility or Steam integration is installed/enabled by this decision.
+
+Trial movement/look and stick dead zones, interact/draw/stow/boots, grip plus directional cylinder
+movement, ladder/seat/key actions, laptop pointer or focus navigation, the on-screen code keyboard,
+dialogue/menu/manual pause and return to keyboard/mouse. Test disconnect/reconnect while gripping or
+in UI, clearing held input without changing mechanism progress or creating duplicate actions. Device
+prompts must reflect the actual mapping; correct native glyphs are a later presentation decision,
+especially when a translation layer reports a different device. Save/report limitations and defer
+the pilot if it would block keyboard/mouse slice proof; no controller-only behavior or readiness writer.
+
+Sources checked 2026-10-10: [Steam Input device support](https://partner.steamgames.com/doc/features/steam_controller/device)
+lists Xbox, PS4 and Switch Pro families; [Epic RawInput guidance](https://dev.epicgames.com/documentation/unreal-engine/rawinput-plugin-in-unreal-engine)
+describes a configurable route for devices not handled by XInput. Neither is selected or verified on
+this host. Exact controller bindings, backend and optional execution scope remain to agree later.
+
+Include a controller-routing lesson: physical USB/Bluetooth device, Windows driver/API, optional
+translation/virtual controller, Unreal input backend, Enhanced Input mappings and authoritative action.
+Compare native and translated routes where available; inspect identity, duplicate input, button-label
+differences, dead zones and reconnection behavior. Virtual Xbox-compatible output does not prove that
+the physical controller's driver was replaced. Record only inspected host configuration as verified.
+The user reports an existing DS4Windows installation and familiarity with Steam Input and custom
+adapter setups; versions/driver/routing on this host remain uninspected. GameCube-adapter examples may
+help explain the layers, but do not add another required device or authorize driver changes.
+
+Use upstream references for explanations, including [ViGEm's virtual-device model](https://github.com/nefarius/ViGEmBus).
+That project is retired; this historical architectural reference is not a recommendation to install
+it or evidence that this host uses it. Review the actual installed utility/backend before any trial.
+
+For the adapter lesson, distinguish [Zadig's USB driver assignment](https://zadig.akeo.ie/) from
+[vJoy's virtual joystick](https://github.com/shauleiz/vJoy). Either layer may affect the input route;
+do not diagnose past conflicts or current installed drivers without inspection. Input/controller
+planning additions are confirmed for publication on 2026-10-10; device trials remain unexecuted.
 
 ## Accepted Ownership Boundaries — Same Behavior, Clear Responsibilities
 
