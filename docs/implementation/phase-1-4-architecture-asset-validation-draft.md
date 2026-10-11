@@ -1,7 +1,7 @@
 # Phase 1.4 — Architecture, Assets And Validation Discussion Draft
 
-Status: planning/discussion in progress, 2026-10-10. This documentation increment is confirmed for
-publication. Accepted identity, ownership, communication, asset/handoff, proxy, performance and learning
+Status: planning/discussion in progress, updated 2026-10-11. This documentation increment is confirmed
+for publication. Accepted identity, ownership, communication, asset/handoff, proxy, performance and learning
 contracts are distinguished below from remaining technical decisions; Phase 1.4 is not complete.
 No project, folders/assets, code, installation, plugin enablement or Git/LFS configuration is created
 by this document. Phase 1.5 and implementation remain unstarted.
@@ -13,6 +13,8 @@ Inputs: accepted [Phase 1.2 spatial package](phase-1-2-closeout-proposal.md),
 [Unreal strategy](../architecture/unreal-strategy.md) and
 [editor-automation contract](../architecture/editor-automation.md).
 Tool observations are dated; no fresh compatibility/build proof is claimed in this opening pass.
+Use the [game development glossary](../development/game-development-glossary.md) for grouped,
+plain-language definitions; this plan remains authoritative for choices and experiment scope.
 
 ## Scope And Discussion Order
 
@@ -352,6 +354,8 @@ remastering comparisons; do not assume it is required for Unreal authoring or im
 | PBR versus color-only surface changes | Same object/light/camera; vary base color, roughness, metallic and normal detail; compare painted/exposed metal, rubber, wood and glass transmission/refraction | Simple material exercise alongside authorized proxy/render work; detailed ship art still deferred |
 | Direct light, shadows, AO and bounced lighting | Hangar/cockpit view; isolate each contribution, including dark/guide/limited/full-power states | After representative geometry and controllable lights exist |
 | Lumen and supported software/hardware tracing | Matched camera/settings; compare indirect light, reflections, motion artifacts and frame cost | Pin supported engine settings; configuration trials within authorized scope |
+| Vulkan versus DirectX 12 | User-requested learning comparison; same fixture/route, resolution and supported features; compare frame times, stability and visible results | DirectX 12 remains the proposed starting backend; verify installed-engine/driver support and separate Vulkan hardware-ray-tracing compatibility before later authorized trials |
+| Shadow methods | User accepted exploring conventional shadow maps, Virtual Shadow Maps, per-light hardware ray-traced shadows, distance-field shadows, contact-shadow supplementation and baked lighting/shadows where supported | Accepted learning scope, not a requirement to ship every method; use moving mechanisms, small controls and varied light sizes, restoring the baseline between comparisons |
 | Path-traced reference | Fixed view of same geometry/materials/light; compare converged image with gameplay rendering | Optional offline/editor learning capture, not a runtime acceptance requirement |
 | DLSS Super Resolution / DLAA | Same route; compare native versus reconstructed output, fine controls/text and motion stability | Verify compatible plugin and separately authorize adoption; record internal/output resolutions |
 | Frame generation | Separate base-rendered and displayed rates; examine input feel and moving HUD/control artifacts | Supported integration only; never substitute generated output for native acceptance |
@@ -366,6 +370,14 @@ where possible, restore the baseline afterward, and keep observations separate f
 Unsupported experiments remain explicitly deferred with a reason; requesting exploration is not a
 promise that every technology can be enabled together. Raw traces/captures remain local working data
 unless publication is specifically reviewed; authored results/settings are trackable text.
+
+Vulkan is a graphics API/backend, not a lighting or shadow technique; it is not assumed faster on this
+host. Epic's current [hardware ray tracing documentation](https://dev.epicgames.com/documentation/unreal-engine/hardware-ray-tracing-in-unreal-engine)
+describes Vulkan ray tracing on Windows/Linux as experimental. Backend comparisons must identify
+feature differences rather than credit a faster result obtained by dropping effects. Baked lighting/
+shadows may be demonstrated separately for learning, but do not replace the slice's required changing
+lights and moving machinery. [Epic's shadowing overview](https://dev.epicgames.com/documentation/unreal-engine/shadowing-in-unreal-engine)
+is the reference for shadow-method selection; compatibility is checked before each experiment.
 
 The user accepted the first learning fixture concept: painted hull/exposed metal, glass, an emissive
 control screen, a doorway/recess, one switchable overhead light and one guide light. Start with matched
@@ -396,6 +408,36 @@ documented mip-sidecar support from user-reported texture-pack problems. No defe
 pack/loader is independently diagnosed by this note. Graphics settings, menu implementation and
 asset tests remain later execution work; this update records contracts and learning intent only.
 
+## Initial Rendering And Anti-Aliasing Direction — Accepted 2026-10-11
+
+Use DirectX 12 and the desktop deferred renderer as the initial candidate. Evaluate Lumen global
+illumination/reflections with hardware ray tracing first on the primary laptop, retaining a matched
+software-tracing comparison. Start with Virtual Shadow Maps; Lumen hardware tracing does not imply
+that every light uses hardware ray-traced shadows. These are revisable starting choices, not build
+compatibility or performance proof.
+
+Start with TSR at 100% primary rendering resolution: internal and output resolution both 2560 × 1440,
+dynamic resolution and frame generation disabled for native acceptance. Native rendering can still
+use temporal anti-aliasing. Keep depth of field and motion blur OFF as already accepted. Exact quality
+levels, tracing/reflection settings and shadow budgets remain to select or tune from measured results.
+
+Accepted anti-aliasing learning comparisons: AA off, FXAA, TAA and native-resolution TSR in the same
+deferred fixture; DLAA and DLSS Super Resolution after compatible integration is verified and authorized.
+Judge stationary detail, moving detail and GPU cost, using cockpit labels, thin handles, metallic
+highlights and extending engineering cylinders. Record shimmer, softness, ghost trails and newly
+revealed surfaces rather than choosing from still images alone.
+
+Desktop MSAA requires Unreal's forward renderer, which does not support Lumen. Explore forward/MSAA
+in a separate fixture with compatible lighting; it is not a selectable AA mode in the deferred/Lumen
+baseline. Vulkan is a separately accepted graphics-backend comparison and does not inherently require
+switching from deferred to forward. Keep feature differences explicit when comparing performance.
+
+References: [Epic rendering-path feature comparison](https://dev.epicgames.com/documentation/en-us/unreal-engine/supported-features-by-rendering-path-for-desktop-with-unreal-engine),
+[anti-aliasing overview](https://dev.epicgames.com/documentation/unreal-engine/anti-aliasing-and-upscaling-in-unreal-engine),
+[TSR](https://dev.epicgames.com/documentation/unreal-engine/temporal-super-resolution-in-unreal-engine)
+and [NVIDIA DLSS/DLAA](https://developer.nvidia.com/rtx/dlss).
+No engine settings, plugins, fixtures or project files are changed by this planning acceptance.
+
 ## Remaining Asset And Validation Boundaries
 
 Git LFS policy is accepted, but its repository configuration has not been performed. Existing generated-output exclusions are a starting
@@ -409,7 +451,7 @@ is deferred; selected Gene/Melfina/Gilliam presentation still needs readable pla
 Performance target is the agreed laptop, Win64, keyboard/mouse and native 1440p/60 FPS required,
 120 FPS stretch; it is not a
 measured promise. Native measurement and separate optional-mode reporting are accepted; detailed
-renderer settings, the revised required p99 limit and executable lighting/capture procedures remain
+quality/tracing settings, the revised required p99 limit and executable lighting/capture procedures remain
 to select. Do not hide settings/host conditions in an FPS claim.
 
 ## MCP Evaluation Order And Local Pilots — Accepted 2026-10-11
