@@ -18,6 +18,7 @@ and learning experiments. Version-specific support must be checked before use.
 - [Anti-aliasing and reconstruction](#anti-aliasing-and-reconstruction)
 - [Camera and image effects](#camera-and-image-effects)
 - [Performance and measurement](#performance-and-measurement)
+- [Shaders, pipelines and caches](#shaders-pipelines-and-caches)
 - [Blender, geometry and asset handoff](#blender-geometry-and-asset-handoff)
 - [Unreal, gameplay and input](#unreal-gameplay-and-input)
 - [Files, builds and version control](#files-builds-and-version-control)
@@ -62,7 +63,7 @@ for the current contract rather than treating this glossary as another settings 
 | Graphics API / backend | Interface used to submit graphics work to the GPU. DirectX 12 and Vulkan are alternatives. |
 | RHI — Rendering Hardware Interface | Unreal's abstraction over graphics backends, helping engine code work across APIs. |
 | Shader | A program used for rendering work, including material appearance and image processing. |
-| Shader compilation | Preparing shader code for a particular platform/configuration. Can create waiting or stutters if work happens at an inconvenient time. |
+| Shader compilation | Preparing shader code for a platform/configuration. Related to, but distinct from, GPU/driver pipeline preparation; see [shaders and caches](#shaders-pipelines-and-caches). |
 
 In Unreal's desktop paths, forward/MSAA and deferred/Lumen are different supported combinations.
 Changing DX12 to Vulkan does not inherently change forward to deferred or vice versa.
@@ -235,12 +236,47 @@ reveal so adaptation does not accidentally undermine it.
 | Input latency | Delay between input and its visible result. High displayed FPS alone does not establish low latency. |
 | Profiling / trace | Measuring where time/resources go / recorded events used for analysis. |
 | Unreal Insights / GPU profiler | Unreal tools for examining timing and resource use / investigating rendering pass costs. |
-| Warm-up / cold run | Letting startup work and operating conditions settle / measuring a fresh start separately. |
+| Warm-up / cold run | Letting startup work and operating conditions settle / measuring a fresh start separately. A fresh process launch does not imply empty caches. |
 | Scalability / quality preset | Grouped settings controlling visual cost and quality. Must preserve gameplay rules and usability. |
 
 A five-minute cylinder/cockpit route with recorded settings tells us more than a single FPS screenshot.
 The plan owns acceptance thresholds; this glossary does not set new ones.
 [Epic profiling introduction](https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine).
+
+## Shaders, Pipelines And Caches
+
+| Term | Plain-language meaning / example |
+| --- | --- |
+| Shader compilation | Converts shader programs into a platform-ready form. Unreal prepares required shader code during cooking for a packaged game. |
+| Shader permutation | A shader variation for a particular set of features/settings; changing those can require different compiled code. |
+| Graphics pipeline / PSO — Pipeline State Object | A prepared combination of shaders and rendering state, such as how a surface is drawn and blended. Both DX12 and Vulkan use pipeline concepts. |
+| Pipeline compilation / creation | GPU/driver preparation of that combination. Can still cost time in a packaged game with cooked shaders. |
+| PSO precaching | Predicts needed pipelines and prepares them ahead of use, instead of waiting for the first draw. |
+| Bundled PSO cache | Shipped descriptions of needed pipeline combinations, used to prepare them early; not universal ready-made machine code for every GPU. |
+| Cache hit / miss | Needed work is already available / must be created or retrieved. |
+| Cache invalidation | Previously cached work is no longer usable—for example, after some code, settings or driver changes. |
+| Shader/pipeline compilation stutter | Visible stall when preparation delays a needed frame. Not every hitch has this cause. |
+
+Imagine full ignition first showing a new cockpit-screen effect: a missing pipeline can cause a hitch,
+while the next ignition appears smooth. That is why we capture first-use and warm performance separately.
+[Epic shader development](https://dev.epicgames.com/documentation/unreal-engine/shader-development-in-unreal-engine),
+[PSO caching](https://dev.epicgames.com/documentation/unreal-engine/optimizing-rendering-with-pso-caches-in-unreal-engine),
+[PSO precaching](https://dev.epicgames.com/documentation/unreal-engine/pso-precaching-for-unreal-engine).
+
+| Cache / test term | What it means |
+| --- | --- |
+| DDC — Derived Data Cache | Unreal development cache for rebuildable processed asset data, including compiled shaders. Cooked games do not use the editor DDC. |
+| GPU/driver pipeline cache | Retains hardware/driver-specific preparation results. Different role from an editor DDC or bundled PSO descriptions. |
+| Warm cache | Relevant preparation has already happened; repeat runs may reuse it. |
+| Cold cache | Relevant cached preparation is absent or unusable. State which cache is cold. |
+| Cold launch | New game process; caches from an earlier run may still exist. |
+| First-use test | Exercise content before that test route has prepared it through use; record existing cache conditions. |
+| Startup preparation | Work before player control, timed separately from active play. |
+
+Caches save repeated work but do not all serve the same purpose. We will use project-scoped test
+recipes, not delete broad system or unrelated game caches. No cache has been changed by this glossary.
+[Epic DDC documentation](https://dev.epicgames.com/documentation/unreal-engine/using-derived-data-cache-in-unreal-engine),
+[project performance contract](../implementation/phase-1-4-architecture-asset-validation-draft.md#accepted-performance-measurement-contract--execution-pending).
 
 ## Blender, Geometry And Asset Handoff
 
@@ -334,6 +370,8 @@ playable-game dependency. [Editor automation contract](../architecture/editor-au
 - **Bloom versus illumination:** visible glow versus actual light reaching nearby surfaces.
 - **Visual geometry versus collision:** an object looking solid does not prove its physical blocking shape.
 - **Tool success versus playtest proof:** successful execution does not establish readable visuals or good controls.
+- **Shader compilation versus pipeline compilation:** cooked shader code does not eliminate all GPU/driver pipeline preparation.
+- **Cold launch versus cold cache:** closing and reopening a game may preserve cached work.
 
 ## Adding To This Glossary
 

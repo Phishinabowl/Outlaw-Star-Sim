@@ -279,12 +279,14 @@ This accepted production direction creates no assets and does not claim runtime 
 
 ## Accepted Performance Measurement Contract — Execution Pending
 
-Accepted in discussion, 2026-10-10; not executed. Target primary laptop, Win64, keyboard/mouse.
+Accepted in discussion, 2026-10-10, with p99 and first-use/cache clarification accepted 2026-10-11;
+not executed. Target primary laptop, Win64, keyboard/mouse.
 Later discussion revises the original required 120 FPS target to required native 1440p/60 FPS,
-with 120 FPS retained as a stretch goal. Lumen is the preferred lighting candidate for a representative
-comparison, not an automatic maximum-quality or hardware-ray-tracing selection. The user wants to
-learn through visible technology comparisons. Renderer settings and individual feature adoption still
-need review and proof; no additional plugin, engine branch or implementation is authorized.
+with 120 FPS retained as a stretch goal. Use the accepted initial rendering direction below, including
+hardware-traced Lumen as the first candidate; this is not an automatic maximum-quality selection or
+performance proof. The user wants to learn through visible technology comparisons. Detailed quality
+settings and individual feature adoption still need review and proof; no additional plugin, engine
+branch or implementation is authorized.
 Use 2560 x 1440 output and native internal resolution for the baseline, with dynamic resolution,
 upscaling and frame generation disabled. Native-resolution temporal antialiasing remains compatible
 with this baseline. Any later upscaled/frame-generated mode gets separate recorded results and image
@@ -307,9 +309,9 @@ gets a separate capture, with loading boundaries identified rather than hitches 
 Exercise the natural 600 s revival path separately for duration/progression and sustained operation.
 
 Required acceptance for each representative route segment in each warm run: average throughput
-at least 60 FPS (frames divided by elapsed time); 95th-percentile frame time at most 16.67 ms.
-The revised required 99th-percentile numerical limit remains for explicit review; do not silently
-carry over or relax the earlier 120 FPS limit. Stretch criteria retain average at least 120 FPS,
+at least 60 FPS (frames divided by elapsed time); 95th-percentile frame time at most 16.67 ms;
+99th-percentile frame time at most 25 ms, accepted 2026-10-11. This allows occasional modest slowdown,
+not sustained operation below the average/p95 requirements. Stretch criteria retain average at least 120 FPS,
 95th-percentile at most 8.33 ms and 99th-percentile at most 12.5 ms.
 Percentiles use recorded frame durations, not an average
 of instantaneous FPS counters or an ambiguously defined '1% low'. Log/count maximum spikes and any
@@ -327,7 +329,41 @@ lower resolution, change lighting/quality, enable generated frames or relax the 
 Reference: [Epic profiling guidance](https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine)
 and [Unreal Insights](https://dev.epicgames.com/documentation/unreal-engine/unreal-insights-in-unreal-engine).
 Exact capture tools/settings and reproducible route remain to specify before execution; no tool is
-installed or benchmark run by this contract. Renderer and lighting configuration remain separate decisions.
+installed or benchmark run by this contract. Detailed renderer/lighting quality settings remain separate decisions.
+
+### First-Use, Shader/PSO Preparation And Cache Evidence — Accepted 2026-10-11
+
+Keep three complementary measurements against the existing performance/package validation scenarios:
+
+| Check | Required evidence |
+| --- | --- |
+| First-use gameplay | Capture the first reveal, lighting changes, screens, pod motion, engineering and ignition before the measured route has warmed those combinations. Record encountered stalls and their causes; a smooth later replay does not erase them. |
+| Warm sustained performance | Apply the agreed warm-up and three route captures with the average/p95/p99 thresholds above. Record cache conditions as well as thermal/host conditions. |
+| Startup preparation | Record shader/pipeline preparation and loading durations separately, with the point at which player control begins. Do not relabel an in-play stall as loading to omit it. |
+
+Unreal prepares shader code during development/cooking, but a packaged game can still incur GPU/driver
+pipeline creation costs. A PSO (Pipeline State Object) describes a combination of shaders and graphics
+state. This affects both DirectX 12 and Vulkan; shader compilation and PSO preparation are related,
+not interchangeable terms. Evaluate Unreal's PSO precaching and, if actual coverage gaps justify it,
+bundled-cache workflows within later authorized build work. Enabling precaching alone is not proof
+that the first-use route is hitch-free; use diagnostics to identify actual misses/late preparation.
+
+Record build, backend, driver/settings and relevant cache state for each run. Distinguish a fresh
+process launch from a cold-cache test: restarting can retain cached work. Any deliberate cache reset
+needs a reviewed, project-scoped recipe; do not clear unrelated games' caches or broad driver/global
+editor caches. Backend comparisons must report their own preparation/cache conditions. Development
+DDC (Derived Data Cache), PSO descriptions and GPU/driver pipeline caches serve different roles.
+
+First-use active-play spikes follow the same reporting and recurring/reproducible-hitch review rule
+as warm runs. Startup duration remains reported evidence rather than a newly invented numeric limit.
+A warm-run pass alone is not complete slice performance evidence. RAM/VRAM budgets remain deferred
+until representative measurements; retain usage and repeated-loop growth as diagnostics.
+
+References: [Epic shader development/cooking](https://dev.epicgames.com/documentation/unreal-engine/shader-development-in-unreal-engine),
+[PSO cache overview](https://dev.epicgames.com/documentation/unreal-engine/optimizing-rendering-with-pso-caches-in-unreal-engine),
+[PSO precaching](https://dev.epicgames.com/documentation/unreal-engine/pso-precaching-for-unreal-engine)
+and [DDC](https://dev.epicgames.com/documentation/unreal-engine/using-derived-data-cache-in-unreal-engine).
+No compilation, cache deletion, configuration change or benchmark is performed by this update.
 
 ## Accepted Rendering Learning Track — Bounded Experiments Pending
 
@@ -451,7 +487,7 @@ is deferred; selected Gene/Melfina/Gilliam presentation still needs readable pla
 Performance target is the agreed laptop, Win64, keyboard/mouse and native 1440p/60 FPS required,
 120 FPS stretch; it is not a
 measured promise. Native measurement and separate optional-mode reporting are accepted; detailed
-quality/tracing settings, the revised required p99 limit and executable lighting/capture procedures remain
+quality/tracing settings and executable lighting/capture procedures remain
 to select. Do not hide settings/host conditions in an FPS claim.
 
 ## MCP Evaluation Order And Local Pilots — Accepted 2026-10-11
