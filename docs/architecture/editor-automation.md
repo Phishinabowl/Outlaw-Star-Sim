@@ -1,9 +1,52 @@
 # Blender And Unreal Editor Automation
 
-Status: development-tool evaluation requirements confirmed for publication, 2026-10-07. No connector selected,
-installed, enabled or connected. This document owns editor-automation requirements; the
+Status: local MCP pilot direction accepted, 2026-10-11; setup/execution not authorized. Official Unreal
+and Blender candidates are selected for bounded evaluation, not proven adoption. Neither is installed,
+enabled or connected for this project. This document owns editor-automation requirements; the
 [slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md) owns
 execution checklists and gates. Baseline v1 remains authoritative for reconstruction.
+
+Current 2026-10-10 investigation: the user accepted official Unreal-first/Blender-later evaluation
+and requested a [Blender Sandbox pilot design](../implementation/blender-sandbox-pilot-design.md).
+That record owns pinned official source/transport/license findings and host Sandbox state, superseding
+the earlier unavailable-source/host checks below. Official candidates are preferred for evaluation;
+adoption, installation/enablement and execution remain unapproved. No isolation success is claimed.
+
+## Current Local Pilot Contract — Accepted 2026-10-11
+
+The user explicitly chose local development for both MCP pilots and deferred Sandbox/VM work.
+This supersedes the earlier isolation prerequisite below. Preserve the Sandbox document's source and
+host findings as a dated reference; its guest/network/setup gates are not prerequisites for current
+local pilots. No restricted-account provisioning, virtualization, network relay or host firewall
+configuration is required by the accepted local direction.
+
+- Run editors, the Blender bridge and any background Blender without administrator privileges.
+- Use local stdio for the Blender bridge where the actual client supports it; Blender add-on socket
+  remains loopback-only. Use Unreal's documented loopback HTTP endpoint. Verify actual bindings,
+  tool discovery and stop/reconnect behavior; do not expose either listener to the LAN or internet.
+- Start connectors on demand and stop/verify them after the task. Review/disallow pilot auto-start;
+  keep existing unrelated client/editor configuration intact.
+- Begin with owned disposable fixtures and explicit output paths. Preserve originals/checkpoints and
+  inspect actual changed files. A dedicated folder and Git backups are recovery/scope measures,
+  not filesystem or network containment.
+- Prefer specific reviewed tools and repeatable scripts. Review broader generated Python/CLI operations
+  before running them; background execution remains subject to the same non-admin account and scope.
+  Limit enabled toolsets where feasible rather than treating every discovered tool as authorized.
+- Editor automation must not handle credentials, change drivers, install/download extra software,
+  publish Git changes or modify unrelated files. Any such new task requires its own authorization.
+- Keep the existing fixture, save/reopen, export/import, package independence and recovery proofs.
+  Computer Use still needs separate explicit permission. No server belongs in the playable package.
+
+Accepted tradeoff: generated Blender Python can access files/network using the Windows process's
+permissions; local-only listeners do not sandbox its code. Unreal toolsets also have powerful project
+effects and lack a general OS isolation guarantee. The read-only inspection found import/builtin and
+file-path restrictions in the installed EditorToolset programmatic/file tools, plus asset deletion
+and file overwrite operations; it was not a comprehensive security audit of every enabled tool.
+Neither official provenance nor restricted scripting alone establishes containment.
+
+The user chose this simpler workflow with those limits understood. Revisit isolation if a concrete
+new dependency/workload warrants it; do not restart Sandbox investigation as a default blocking gate.
+Later setup must pin packages/dependencies and confirm the actual client/server/editor versions.
 
 ## Role And Sequence
 
@@ -42,9 +85,12 @@ Local read-only inspection found these descriptors in the installed UE 5.8.3 eng
 
 The first descriptor marks the plugin experimental and disabled by default. File presence proves
 availability for later evaluation, not project enablement, connection or successful execution.
-Blender installation/version and the chosen client/server combination remain unverified here.
-The Blender official page's full fetch failed; its indexed official-page text supplied the requirements
-and warning above. These must be reconfirmed before setup.
+At this earlier checkpoint Blender installation/version and client/server compatibility were unverified.
+The later Phase 1.1 inventory records Blender 5.2 metadata, not a launch proof. The Blender official
+page's full fetch failed; indexed text supplied the warning above. On 2026-10-10 the pinned source
+review succeeded via HTTPS API: consult the pilot design for current verified limits, including
+bridge-side background execution. The requirement to place both components in a guest belongs to
+the now-deferred isolation design. Current local compatibility, bindings and recovery still need proof.
 
 ## Adoption Requirements
 
@@ -54,8 +100,8 @@ authorization covers any installation, plugin/configuration change and pilot sce
 - Pin the application and server/add-on revision; record source, license, dependencies, transport,
   startup/stop procedure and actual client compatibility. Preserve existing client configuration.
 - Select only tools needed for the pilot. Review arbitrary Python, shell, file, network and destructive
-  operations; a structured schema or loopback listener is not a sandbox. Resolve the official Blender
-  warning through an accepted isolated environment or choose another reviewed workflow.
+  operations; a structured schema or loopback listener is not a sandbox. Apply the accepted local
+  pilot contract and its explicit permission-boundary tradeoff; stronger isolation is deferred.
 - Use project-owned disposable assets with recoverable copies and explicit output paths. Source
   media stays immutable/local-only; no media upload or external generation service is included.
 - For Unreal, keep the listener local. Epic documents no authentication and serialized game-thread

@@ -58,6 +58,11 @@ Blender pilot after 3.1 before repeated geometry production. Both have explicit 
 fallbacks; neither is required by the playable slice. No connector installation or activation is authorized
 by this documentation addition.
 
+On 2026-10-11 the user selected local MCP pilots for both editors under the
+[local editor-automation contract](architecture/editor-automation.md#current-local-pilot-contract--accepted-2026-10-11).
+Sandbox/VM work is deferred; its source/host findings remain reference material. This changes the
+planning path, not installation/enablement authorization or the pilots' later execution checkpoints.
+
 ## Current Planning And Later Execution Boundaries
 
 On 2026-10-10 the user authorized Phase 1.4 planning/discussion. Its

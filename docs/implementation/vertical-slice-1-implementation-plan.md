@@ -2,7 +2,7 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 / 2026-10-10 |
+| Created / last edited | 2026-10-07 / 2026-10-11 |
 | Status | Phases 1.1–1.3 complete; Phase 1.4 planning/discussion in progress; implementation not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
@@ -326,6 +326,13 @@ Keyboard/mouse remains the first required input proof. An optional controller le
 accepted for later authorized player/interaction/UI work, using the Phase 1.4 draft's bounded device
 and input-transition checks. Preserve common actions for Xbox, PS4 and Switch Pro exploration;
 controller backends, bindings and complete multi-device support are not initial acceptance requirements.
+
+On 2026-10-11 the user selected [local MCP pilots for both editors](../architecture/editor-automation.md#current-local-pilot-contract--accepted-2026-10-11)
+and deferred Sandbox/VM work. Keep non-admin execution, loopback connections, reviewed operations,
+disposable fixtures and save/reopen/export/recovery proof. The [Sandbox design](blender-sandbox-pilot-design.md)
+retains pinned source/host findings as an alternative; its guest/network gates are not current
+prerequisites. Unreal retains its post-2.3 pilot and Blender its post-3.1 checkpoint. This planning
+choice does not authorize setup or verify an MCP connection.
 
 - [ ] Select project name/path, minimum C++ ownership, Blueprint configuration boundary, map/test/evidence layout and input/camera approach; keep illustrative APIs out of the accepted registry until reviewed.
 - [ ] Specify a shared command/query path, result lifecycle and reset ownership with no external transport or second readiness writer.
@@ -745,8 +752,13 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 
 ## Validation Register And Requirement Traceability
 
-These IDs identify planned scenarios, not already implemented tests. Choose their executable/manual owners
-in Phase 1.4. Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
+These IDs identify planned scenarios, not already implemented tests. The accepted Phase 1.4
+[validation split and evidence ownership](phase-1-4-architecture-asset-validation-draft.md#accepted-validation-split-and-evidence-ownership--2026-10-11)
+combines code/state, in-world and packaged-build checks. Codex performs appropriate tool-driven build/state
+checks; the user is the main reviewer for playtest feel, readability and visual fit. Record starting
+state, build/settings, steps, expected and actual results, appropriate evidence, performer and untested
+parts against these IDs. Exact scenario procedures remain to be defined at their owning checkpoints.
+Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
 
 | ID | Scenario / minimum proof | Owning checkpoint |

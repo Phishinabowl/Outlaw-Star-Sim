@@ -52,7 +52,7 @@ The intended engine baseline is **UE 5.8**, with installed candidate **5.8.3**. 
 
 [Unreal strategy](docs/architecture/unreal-strategy.md) owns the choice/compatibility limits; the [Phase 1.1 readiness record](docs/implementation/phase-1-1-host-tooling-readiness.md) owns dated host observations. Core state/gameplay foundations are planned in C++, with Blueprints for configuration/content/presentation and Blender for reconstruction. Primary proof target is the laptop, Win64, keyboard/mouse, native 1440p/60 FPS required with 120 FPS as a stretch goal, pending measured proof; no initial desktop validation required. Phase 1.4 revises the earlier 120 FPS target and selects Lumen as the preferred lighting candidate for evaluation.
 
-Python/Pillow, FFmpeg/FFprobe and optional ImageMagick have supported the reference workflow. [Tool documentation](tools/reference-extraction/README.md) explains reproducible inventories, metadata checks, targeted frame extraction and subtitle screening. No renderer, project template, external transport or broad gameplay framework has been selected by this update.
+Python/Pillow, FFmpeg/FFprobe and optional ImageMagick have supported the reference workflow. [Tool documentation](tools/reference-extraction/README.md) explains reproducible inventories, metadata checks, targeted frame extraction and subtitle screening. Phase 1.4 selects [local MCP pilots](docs/architecture/editor-automation.md#current-local-pilot-contract--accepted-2026-10-11) for Unreal and Blender; Sandbox/VM work is deferred, with setup/enablement still unperformed and unauthorized. No renderer, project template, gameplay external transport or broad gameplay framework has been selected by this update.
 
 ## Evidence and source handling
 

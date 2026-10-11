@@ -412,20 +412,126 @@ measured promise. Native measurement and separate optional-mode reporting are ac
 renderer settings, the revised required p99 limit and executable lighting/capture procedures remain
 to select. Do not hide settings/host conditions in an FPS claim.
 
+## MCP Evaluation Order And Local Pilots — Accepted 2026-10-11
+
+The user accepted evaluating Epic's built-in Unreal MCP after the project/build proof, followed by
+a Blender pilot at the existing post-3.1/pre-repeated-production checkpoint. Prefer the official
+Blender candidate for investigation; adoption is conditional on code/license/client compatibility
+and an agreed execution boundary. The user wants a practical workflow suitable for learning.
+
+The user now selects local MCP pilots for both editors and defers Sandbox/VM work. The
+[editor-automation local pilot contract](../architecture/editor-automation.md#current-local-pilot-contract--accepted-2026-10-11)
+owns this current direction: non-admin processes, loopback-only connections, on-demand servers,
+reviewed specific tools/scripts, disposable fixtures, checkpoints and observed save/reopen/handoff/
+recovery. Blender's bridge and background execution are local under the same reviewed account/scope.
+No guest, custom transport relay or virtualization prerequisite remains on the initial path.
+
+The accepted local tradeoff is explicit: generated code has the process account's filesystem/network
+permissions. Project folders, backups and loopback listeners are not code containment. Unreal also
+needs tool-surface review; its inspected restricted scripting/file tools do not establish blanket
+OS isolation. Keep credentials, drivers, installation, unrelated filesystem work and Git publication
+outside editor automation. Nothing is installed, enabled or connected by this plan update.
+
+### Earlier Blender Isolation Investigation — Deferred Reference
+
+The following 2026-10-10 investigation is retained history. Its proposed guest/network gates are
+superseded by the local contract above and are not current execution prerequisites. Resume only
+for a concrete reason with newly agreed scope; findings remain useful independent of adoption.
+
+The [Sandbox pilot design and findings](blender-sandbox-pilot-design.md) now owns the 2026-10-10
+read-only source/host investigation and proposed execution stages. Official source was retrieved
+through its HTTPS API at pinned revision `dbbf836ad4b1025f14a2b3b504c43903f39e0b04` after browser
+fetches failed. It confirms arbitrary Python execution and bypassable limited guardrails, not OS
+filesystem/network isolation. Official provenance alone does not establish safe execution.
+
+| Option | Practical benefit | Limit / unresolved proof |
+| --- | --- | --- |
+| Windows Sandbox pilot | Disposable virtualized Windows environment with configurable folder, clipboard, network and vGPU access | Verify availability, Blender graphics and actual MCP connection; closing discards guest state, while writable shared output survives and remains exposed |
+| Persistent VM | Dedicated authoring environment with snapshots and limited guest data; more convenient repeated setup | More administration/storage; ordinary virtualized graphics may not expose the laptop GPU's native capabilities; verify authoring/export rather than assume Cycles/RTX parity |
+| Restricted local Windows account | Native host GPU access with separate profile and explicit file permissions | Same OS; shared/public/project files remain reachable according to ACLs, network/credentials need separate controls; weaker boundary than VM and needs deliberate tradeoff review |
+| Normal account with reviewed scripts/backups | Lowest friction and deterministic script review/recovery | Review and backups reduce mistakes but do not restrict arbitrary Python's filesystem/network access; not equivalent to isolation |
+
+Recommendation for discussion: evaluate Windows Sandbox as a disposable pilot subject to the
+connected-boundary gate in the design; use a persistent VM if required for practical isolation or
+repeated setup. WMI confirms Sandbox is currently disabled and a hypervisor is already active.
+No BIOS change, enablement or launch was attempted. The pilot record distinguishes those observations
+from unavailable administrative servicing checks and unexecuted graphics/connectivity proofs.
+
+A viable isolated pilot contains Blender and its execution-capable server/add-on in the guest, with
+no personal profile, browser/Git/cloud credentials, source-media drives or full repository mounted.
+Supply owned fixture/tool inputs through a read-only transfer folder and export only into a dedicated
+writable disposable-output folder. Do not expose the parent repo, `.git` or home directory. Any writable
+share is accessible to guest code; treat it as disposable and preserve originals outside it.
+
+Disable unnecessary clipboard/device sharing. Install/bootstrap vetted dependencies separately, then
+restrict network access for execution. Define and test the actual client-to-guest transport: disabling
+all networking may prevent a host MCP connection, while a host-only virtual link does not automatically
+prevent guest access to host services. A bridge/network rule must allow only the required control path;
+do not enable general outbound access merely to make connection succeed. Keep execution in the guest,
+not a host-side server with unrestricted local code. Exact network/bridge/isolation settings remain
+specified in the pilot design as a preflight decision; source review is complete at its documented
+limits, while exact transport/enforcement and executable setup recipes remain unselected. Both
+Blender and the official bridge must be inside the guest because the bridge can launch background
+Blender on its own machine. Stock HTTP is not an authenticated/restricted network boundary.
+
+The user authorized drafting the Sandbox pilot and recording findings, not setup or execution.
+Its offline bootstrap/graphics stage precedes connected access proof and generated geometry. A .wsb
+networking toggle cannot express a destination allowlist, and guest-admin firewall rules alone are
+not accepted enforcement against guest-generated code. If the restricted connected path is not
+practical, revise the isolation choice rather than broadening access. Phase 1.4 remains open.
+
+Pilot acceptance: show fixture input readable but not writable; confirm unrelated host paths absent
+and intended network restrictions; discover tools, inspect scene, make one reversible fixture change,
+save/reopen, export and stop/reconnect. Review output files before host import, including embedded code
+and dependencies; keep Blender file auto-execution disabled for unreviewed output. This setting alone
+does not sandbox explicit MCP Python execution. GPU/performance observations in a VM are not native
+runtime benchmark results. On failure preserve logs/outputs, stop the pilot and return to reviewed
+scripts/editor workflow while revisiting the isolation design; never broaden access silently.
+
+Sources: [Blender Lab](https://www.blender.org/lab/mcp-server/),
+[Microsoft Sandbox overview](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/),
+[Sandbox configuration](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file)
+and [Blender scripting security](https://docs.blender.org/UATEST/manual/en/dev/advanced/scripting/security.html).
+No VM, account, firewall rule, driver, connector or application is installed/changed by this investigation.
+
 MCP remains optional development automation. Candidate documents are dated and require verification
-before selection/adoption. Pilot authorization, isolation, license/dependencies, save/reopen recovery
+before selection/adoption. Pilot authorization, the chosen local permission boundary, license/dependencies, save/reopen recovery
 and ordinary-editor/script fallback follow the existing contract. No always-on or packaged server.
 Computer Use still requires specific explicit permission; ordinary phase approval does not grant it.
 
-Every VS1 scenario needs steps, expected results, owner/performer, artifact/build/configuration ID and
-observed versus unexecuted status. Choose targeted automation for actual state/lifecycle risks and
-in-world/manual proof for motion, both views, readability and source fit. Preserve early standalone
-package proof; agent tool success/editor launch alone cannot substitute for observing the real result.
+## Accepted Validation Split And Evidence Ownership — 2026-10-11
+
+Use three complementary forms of proof against the existing
+[VS1 validation register](vertical-slice-1-implementation-plan.md#validation-register-and-requirement-traceability):
+
+| Validation type | What it proves | Example |
+| --- | --- | --- |
+| Code/state checks | Rules, prerequisites, transitions and lifecycle behavior | Ignition rejects a partially stowed cylinder; reset prevents an old callback from changing the new session. |
+| In-world checks | Physical interaction, motion, presentation and player experience | The upper engineering handle is reachable, the pod has clearance, and cockpit controls remain readable in both views. |
+| Packaged-build checks | The actual build works outside the editor without MCP or source-media dependencies | A standalone build launches and completes its intended scenario with the required project-owned content. |
+
+A passing state check does not establish physical fit or readable presentation. Scenarios that involve
+both require both forms of evidence. Keep the early tiny standalone package proof at VS1-T04 before
+investing in ship construction; repeat package validation at the later integrated checkpoints.
+
+Each scenario's evidence record must include:
+
+- Starting state, artifact/build identity and relevant settings/configuration.
+- Steps and expected outcome.
+- Actual outcome, with logs or visual evidence appropriate to the claim.
+- Who performed the check, and explicit untested status for any part not executed or observed.
+
+Codex performs appropriate build/state checks through available tools. The user is the main playtest
+reviewer for feel, readability and visual fit. Tool success or editor launch alone cannot substitute
+for observing the claimed result; any Computer Use observation still requires specific permission.
+Reuse the existing scenario IDs and record evidence with them rather than creating a second checklist
+or validation framework. Exact per-scenario procedures remain to be defined at their owning checkpoints.
+This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
 
 ## Next Review
 
 Identity, responsibility, communication, asset versioning, handoff, proxies, performance direction and
 learning conventions are accepted at the boundaries recorded above. Next review detailed renderer/settings choices, remaining project/map/input
-details, exact lifecycle/recipe procedures, optional MCP selection/deferral and validation procedures.
+details, exact lifecycle/recipe procedures, local MCP setup/client/tool checks and validation procedures.
 Do not treat accepted conventions as executed fixture/build proof. Phase 1.4 completion needs all seven concrete contracts reviewed;
 Phase 1.5 remains the separate final gate before authorized Phase 2 work.
