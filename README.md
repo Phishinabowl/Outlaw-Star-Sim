@@ -4,7 +4,7 @@ An evidence-driven reconstruction of the XGP-15AII and a planned interactive shi
 
 **The reference/research foundation is substantially complete for implementation purposes within the first slice.** This means enough evidence exists to define a constrained initial build; it does not mean every room, mechanism, translation or performance figure is settled. Unresolved research continues as an [ongoing parallel track](docs/reconstruction/open-questions.md).
 
-Current status: **Phases 1.1–1.3 planning complete; Phase 1.4 unstarted; implementation not started**. No Unreal project, modeled ship or playable build exists yet. The accepted [implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) links the [Phase 1.1 readiness record](docs/implementation/phase-1-1-host-tooling-readiness.md), [Phase 1.2 packet](docs/implementation/phase-1-2-spatial-motion-decision-packet.md) and [accepted Phase 1.3 closeout](docs/implementation/phase-1-3-closeout-audit.md). Later subphases, Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
+Current status: **Phases 1.1–1.3 planning complete; Phase 1.4 planning/discussion in progress; implementation not started**. No Unreal project, modeled ship or playable build exists yet. The [implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) links the accepted earlier contracts and the [Phase 1.4 discussion draft](docs/implementation/phase-1-4-architecture-asset-validation-draft.md). Later subphases, Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
 
 ## First experience — Awakening the Outlaw Star
 
@@ -50,7 +50,7 @@ The accepted overall exterior envelope is **72 × 21 × 16 m**, supported by the
 
 The intended engine baseline is **UE 5.8**, with installed candidate **5.8.3**. Intended Windows C++ tooling is **Visual Studio Community 2026 + MSVC 14.50 + Windows SDK 10.0.26100.0**. The dated Phase 1.1 inventory verified MSVC 14.50 installed alongside 14.51, plus Blender 5.2 and Git LFS 3.7.1. No project build/editor/export/MCP proof or LFS asset-policy setup has been performed. Remaining vendor-guidance setup gaps require a later authorized installation scope.
 
-[Unreal strategy](docs/architecture/unreal-strategy.md) owns the choice/compatibility limits; the [Phase 1.1 readiness record](docs/implementation/phase-1-1-host-tooling-readiness.md) owns dated host observations. Core state/gameplay foundations are planned in C++, with Blueprints for configuration/content/presentation and Blender for reconstruction. Primary proof target is the laptop, Win64, keyboard/mouse, 1440p/120 FPS pending measured proof; no initial desktop validation required.
+[Unreal strategy](docs/architecture/unreal-strategy.md) owns the choice/compatibility limits; the [Phase 1.1 readiness record](docs/implementation/phase-1-1-host-tooling-readiness.md) owns dated host observations. Core state/gameplay foundations are planned in C++, with Blueprints for configuration/content/presentation and Blender for reconstruction. Primary proof target is the laptop, Win64, keyboard/mouse, native 1440p/60 FPS required with 120 FPS as a stretch goal, pending measured proof; no initial desktop validation required. Phase 1.4 revises the earlier 120 FPS target and selects Lumen as the preferred lighting candidate for evaluation.
 
 Python/Pillow, FFmpeg/FFprobe and optional ImageMagick have supported the reference workflow. [Tool documentation](tools/reference-extraction/README.md) explains reproducible inventories, metadata checks, targeted frame extraction and subtitle screening. No renderer, project template, external transport or broad gameplay framework has been selected by this update.
 
@@ -58,7 +58,7 @@ Python/Pillow, FFmpeg/FFprobe and optional ImageMagick have supported the refere
 
 The [canon policy](docs/canon-policy.md) separates anime observations (A), authenticated production evidence (B), official supplements (C), strong inference (D), reconstruction extrapolation (E) and gameplay adaptation (F). Our scanned production collection remains B candidate pending provenance. **D/E/F are never canon.** Original Japanese, translation confidence and contradictions stay explicit.
 
-`_source_settei/` and `_source_episodes/` are immutable local references. Generated frames, contact sheets, cached HTML and full subtitle copies remain ignored/local-only. Authored Markdown, CSV, JSON provenance and helper scripts are trackable. Individual supplied images may be published when explicitly authorized; that does not authorize source-media publication. Git LFS for future project-owned binary assets remains undecided.
+`_source_settei/` and `_source_episodes/` are immutable local references. Generated frames, contact sheets, cached HTML and full subtitle copies remain ignored/local-only. Authored Markdown, CSV, JSON provenance and helper scripts are trackable. Individual supplied images may be published when explicitly authorized; that does not authorize source-media publication. Phase 1.4 accepts Git LFS for future project-owned Blender files, Unreal assets/maps and designated handoff exports; tracking configuration and cost controls remain unperformed.
 
 ## Repository guide
 
@@ -74,7 +74,7 @@ The [canon policy](docs/canon-policy.md) separates anime observations (A), authe
 
 Keep hatch/room correspondence, apparatus clearances, remaining mechanical families, Japanese wording, power topology and performance interpretation in [open questions](docs/reconstruction/open-questions.md). Research should be targeted when it could invalidate a chosen slice connection, motion or interaction; broader full-ship archaeology need not hold the entire project indefinitely. Any provisional solution remains explicitly E/F and reviewable.
 
-The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns execution sequence, prerequisites, validation, recovery and exit reviews. Phase 1 is the formal decision/planning gate; it resolves the existing [slice decisions](docs/reconstruction/baseline-v1/vertical-slice-1.md#decisions-before-the-next-phase) before project creation. Phases 1.1–1.3 planning are complete. Spatial choices remain provisional pending fit proof, and accepted behavior contracts require later runtime validation. Phase 1.4 onward is not authorized.
+The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns execution sequence, prerequisites, validation, recovery and exit reviews. Phases 1.1–1.3 planning are complete and Phase 1.4 discussion is authorized. Spatial choices remain provisional pending fit proof; behavior contracts require runtime validation. Phase 1.5 and installation/project/modeling/implementation work are not authorized by this planning step.
 
 ## Start here
 

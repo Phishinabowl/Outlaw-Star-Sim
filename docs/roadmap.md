@@ -48,8 +48,8 @@ The user subsequently requested the [expanded Vertical Slice 1 implementation pl
 
 The user confirmed the plan/MCP additions on 2026-10-07 and subsequently accepted Phases 1.1–1.3.
 The dated readiness inventory selects laptop, Win64, keyboard/mouse, no initial desktop validation,
-and 1440p/120 FPS pending measurement. Spatial choices remain provisional pending fit; behavior
-contracts are accepted but unimplemented. Phase 1.4 onward requires its own scope. Project creation,
+and native 1440p/60 FPS required, with 120 FPS as a stretch goal pending measurement (revised in Phase 1.4). Spatial choices remain provisional pending fit; behavior
+contracts are accepted but unimplemented. Phase 1.4 discussion is authorized below; later phases require their own scope. Project creation,
 installations/modeling and build proof retain their authorization boundaries.
 
 [Blender/Unreal MCP evaluation](architecture/editor-automation.md) is now included in Phase 1.4
@@ -58,7 +58,13 @@ Blender pilot after 3.1 before repeated geometry production. Both have explicit 
 fallbacks; neither is required by the playable slice. No connector installation or activation is authorized
 by this documentation addition.
 
-## Later directions — not yet authorized
+## Current Planning And Later Execution Boundaries
+
+On 2026-10-10 the user authorized Phase 1.4 planning/discussion. Its
+[architecture/asset/validation draft](implementation/phase-1-4-architecture-asset-validation-draft.md)
+records the accepted architecture/asset/handoff/proxy/performance and rendering-learning increment,
+confirmed for publication on 2026-10-10, with remaining technical decisions explicit. Phase 1.5 and installation/project/modeling/implementation
+remain unstarted and require their own scope; seven Phase 1.4 checklist items remain open.
 
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 [action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,
@@ -68,7 +74,8 @@ hangar, gravity after ignition and continued exploration after startup success. 
 affects represented departure readiness rather than ignition. Remaining art/metric details are deferred.
 The user accepted the [Phase 1.3 closeout](implementation/phase-1-3-closeout-audit.md), its five
 behavior choices and seven supporting defaults on 2026-10-08. Phase 1.3 planning is complete;
-fit/runtime validation remains later work. Phase 1.4 and implementation remain unstarted.
+fit/runtime validation remains later work. Phase 1.4 was unstarted at that checkpoint; its planning
+has since been authorized as recorded above. Implementation remains unstarted.
 
 The [Phase 1.2 closeout package](implementation/phase-1-2-closeout-proposal.md) was accepted by
 the user on 2026-10-07, including local canopy/platform/computer storage, planned MC demonstrations

@@ -2,12 +2,12 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 / 2026-10-08 |
-| Status | Phases 1.1–1.3 planning complete; Phase 1.4 unstarted; implementation not authorized |
+| Created / last edited | 2026-10-07 / 2026-10-10 |
+| Status | Phases 1.1–1.3 complete; Phase 1.4 planning/discussion in progress; implementation not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Accepted Phase 1.3 planning closeout; Phase 1.4 unstarted |
+| Current checkpoint | Phase 1.4 accepted planning increment; remaining technical contracts pending |
 
 ## Purpose And Placement
 
@@ -227,7 +227,9 @@ test was completed by that publication. The next unchecked checkpoint belongs to
 - [x] Record that existing tool installs do not establish build compatibility; select measured responsiveness/performance criteria to propose in 1.4.
 
 **Completion record:** [Phase 1.1 inventory and decisions](phase-1-1-host-tooling-readiness.md), 2026-10-07.
-Laptop / Win64 / keyboard-mouse; no required initial desktop validation; 1440p/120 FPS measurement target.
+Laptop / Win64 / keyboard-mouse; no required initial desktop validation. Phase 1.4 revises the original
+120 FPS measurement target to required native 1440p/60 FPS with 120 FPS as a stretch goal, and Lumen
+as the preferred lighting candidate for evaluation.
 MSVC 14.50 is installed; remaining vendor-guidance setup gaps are proposed changes, not performed installs.
 
 **Validation:** observed versus reported facts distinguished; no install or project creation during inventory.
@@ -301,6 +303,24 @@ VS-D04–06 are settled bounded E/F planning contracts; no runtime/geometry pass
 ### Phase 1.4: Minimal Architecture, Asset And Validation Contracts
 
 **Prerequisite:** 1.1–1.3 proposals. **Deliverable:** concrete project/ownership/persistence boundary and planned validation procedures.
+
+The user authorized Phase 1.4 on 2026-10-10. The
+[discussion draft](phase-1-4-architecture-asset-validation-draft.md) starts with proposed project layout,
+authority/presentation boundaries and the remaining seven decision areas. The draft distinguishes
+accepted conventions from pending decisions and unexecuted proofs; no installation, project creation,
+modeling or implementation is performed/authorized.
+
+The accepted rendering learning track includes PBR, lighting contributions, Lumen/tracing and supported
+DLSS comparisons using matched owned fixtures, plus RTX Remix context. Schedule experiments within
+later authorized proxy/render work; they are not a requirement to ship every technology. Use the
+[Dusklight learning reference](../development/dusklight-learning-reference.md) for familiar technical
+analogies, with verified repository observations separate from unverified community features.
+
+Graphics quality must preserve simulation behavior, physical clearance, required controls and readable
+readiness feedback. Include texture/mipmap/filtering and independent depth-of-field/motion-blur
+comparisons in the learning track. The user prefers clear gameplay views; initial OFF defaults for
+those two effects are accepted, without expanding the current phase into a graphics
+menu implementation.
 
 - [ ] Select project name/path, minimum C++ ownership, Blueprint configuration boundary, map/test/evidence layout and input/camera approach; keep illustrative APIs out of the accepted registry until reviewed.
 - [ ] Specify a shared command/query path, result lifecycle and reset ownership with no external transport or second readiness writer.

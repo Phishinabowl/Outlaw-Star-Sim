@@ -15,7 +15,9 @@ query confirms it is installed. Remaining .NET workloads/matching ATL are propos
 no install or build was performed. This supersedes the earlier absence observations below.
 
 The user selected the inspected laptop, Win64 and keyboard/mouse, with no initial desktop validation
-requirement and a 1440p/120 FPS target pending measured proof. Detailed budgets belong to Phase 1.4.
+requirement and a native 1440p/60 FPS required target, with 120 FPS as a stretch goal pending measured
+proof (revised in Phase 1.4). Lumen is the preferred lighting candidate for evaluation, not a measured
+performance promise. Detailed budgets belong to Phase 1.4.
 
 ## Earlier read-only observations — before Phase 1.1
 
@@ -46,7 +48,7 @@ and fallbacks. Epic's experimental server/tool-provider descriptors are present 
 none has been enabled or tested. Evaluate after ordinary project proof, keeping packaged slice execution
 independent of MCP. Blender server selection and local compatibility remain open.
 
-C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git is established, and a policy for later project-owned binary assets/Git LFS still needs discussion.
+C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git is established, and Phase 1.4 accepts Git LFS for project-owned binary assets, with tracking configuration and cost controls still to perform under later authorized scope.
 
 [Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. Project/module layout, serialization, networking, renderer choices and integrations are undecided. Reference-derived percentages do not select physics constants.
 
