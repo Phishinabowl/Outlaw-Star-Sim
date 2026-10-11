@@ -380,7 +380,7 @@ choice does not authorize setup or verify an MCP connection.
 
 **Prerequisite:** 2.1 and accepted project/asset policy. **Deliverable:** smallest agreed C++ project and neutral test map.
 
-- [ ] Create only the selected project/module layout, baseline input/config and neutral map required for first proof.
+- [ ] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
 - [ ] Apply owned-binary tracking and generated-output exclusions before publishing assets; preserve source folders/working references.
 - [ ] Add concise build/open instructions and repository-relative asset/evidence ownership.
 

@@ -303,6 +303,9 @@ room fits. [Blender glossary](https://docs.blender.org/manual/en/latest/glossary
 | Term | Plain-language meaning / project use |
 | --- | --- |
 | Unreal Engine / editor | Runtime/tooling framework / application used to build and inspect the game. |
+| Project template | Preassembled starting content/settings/behavior; editable, not a permanent restriction on the finished game. |
+| Blank C++ | Minimal template with a C++ foundation. Our selected starting point; engine components and Blueprints remain available. |
+| First Person / Third Person template | Starting character/camera/content examples; neither automatically supplies all our player requirements. |
 | C++ / Blueprint | Text-based compiled code / Unreal's visual scripting and content configuration system. Both can implement behavior; our ownership split is a project choice. |
 | Module / plugin | Code unit in an Unreal project / packaged extension providing functionality. |
 | Actor / component | Object placed or spawned in the world / reusable part supplying behavior or data. |
@@ -321,6 +324,12 @@ For our sim, a keyboard click or future controller button requests the same engi
 neither gets its own readiness rules. Actual device/backend combinations require testing.
 [Epic Enhanced Input](https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine),
 [project input/ownership plan](../implementation/phase-1-4-architecture-asset-validation-draft.md).
+
+**Template choice and starting-code choice are separate:** Blank/First Person/Third Person describes
+the starting experience; C++/Blueprint describes how starting code is supplied. We chose Blank C++
+to prove the minimal build first, then add our player at Phase 3.1. We can learn from character
+templates without importing all their content or inventing our own engine.
+[Epic templates reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-templates-reference).
 
 ### Asset Name Prefixes
 

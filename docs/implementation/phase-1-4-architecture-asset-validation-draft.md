@@ -53,8 +53,27 @@ ownership/lifecycle/map/asset contracts still need review. No project/folder cre
 Plan one opening map containing the hangar and required route, plus small separate validation maps
 only where isolation materially helps reproduce a failure. No world streaming/open-world infrastructure
 required for this slice. A neutral build fixture still precedes the playable map under Phase 2.
-The map organization and folder layout are accepted below; template and exact map names remain to select. No
+The map organization, folder layout and Blank C++ template are accepted below; exact map names remain to select. No
 project initialization is authorized by these planning choices.
+
+### Starting Template — Blank C++ Accepted 2026-10-11
+
+Select the Games **Blank** template with **C++** for the main OutlawStarSim project. Template choice
+sets the initial content/behavior; C++ versus Blueprint is a separate starting-code choice. C++ does
+not exclude Blueprints, and Blank does not require replacing Unreal's built-in character, movement,
+collision or input systems.
+
+Phase 2 creates only the minimal agreed skeleton and neutral fixture, then proves build, editor
+startup and standalone packaging. Phase 3.1 adds the shared physical player and both views using
+appropriate engine components and reviewed template examples. Low gravity/boots, handholds, ladders,
+equipment and seated interactions remain at their planned checkpoints; template selection does not
+claim those behaviors are already supplied or tested.
+
+Use Epic's character templates as references rather than adopting their complete starting content
+and camera/movement assumptions. Selective mannequin/animation use may be reviewed later with its
+dependencies, ownership and fit; it is not mandated by this selection. No separate sample project,
+template asset import or Unreal initialization is authorized by recording this decision.
+Reference: [Epic template overview](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-templates-reference).
 
 ### Folder Subdivisions And Initial Naming — Accepted 2026-10-11
 
