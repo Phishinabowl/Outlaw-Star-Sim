@@ -2,9 +2,9 @@
 
 ## Intended baseline — recorded 2026-10-07
 
-**Unreal Engine 5.8** is the intended project baseline, as requested by the user. The current local installation is **5.8.3**, verified from the engine's `Engine\Build\Build.version` (changelist 58210709, release-5.8 branch) and launcher inventory. The 5.8 family is selected; this does not freeze every future patch or establish a working project build. Revisit it only if later testing exposes a concrete compatibility or project requirement, recording the reason and obtaining agreement before migration.
+**Unreal Engine 5.8** is the intended project baseline. The current local installation is **5.8.3**, verified from the engine's `Engine\Build\Build.version` (changelist 58210709, release-5.8 branch) and launcher inventory. The 5.8 family is selected; this does not freeze every future patch or establish a working project build. Revisit it only if later testing exposes a concrete compatibility or project requirement, recording the reason and obtaining agreement before migration.
 
-The chosen Windows toolchain is **Visual Studio Community 2026, MSVC 14.50, Windows SDK 10.0.26100.0**. The user explicitly selected the preferred 14.50 compiler target instead of treating the installed 14.51 as validated. Any missing component installation is deferred for discussion; no installer or settings change was run.
+The chosen Windows toolchain is **Visual Studio Community 2026, MSVC 14.50, Windows SDK 10.0.26100.0**. MSVC 14.50 is the preferred compiler target; installed 14.51 is not build-validated. Any missing component installation is deferred for discussion; no installer or settings change was run.
 
 ## Current Phase 1.1 inventory
 
@@ -14,7 +14,7 @@ compiler product version 14.50.35739 clears the engine's banned range. The corre
 query confirms it is installed. Remaining .NET workloads/matching ATL are proposed setup additions;
 no install or build was performed. This supersedes the earlier absence observations below.
 
-The user selected the inspected laptop, Win64 and keyboard/mouse, with no initial desktop validation
+The primary proof target is the inspected laptop, Win64 and keyboard/mouse, with no initial desktop validation
 requirement and a native 1440p/60 FPS required target, with 120 FPS as a stretch goal pending measured
 proof (revised in Phase 1.4). Lumen is the preferred lighting candidate for evaluation, not a measured
 performance promise. Detailed budgets belong to Phase 1.4.
@@ -46,14 +46,16 @@ The preferred compiler is now available side by side. The remaining installation
 [Editor automation](editor-automation.md) records optional Blender/Unreal MCP evaluation, requirements
 and fallbacks. Epic's experimental server/tool-provider descriptors are present in installed UE 5.8.3;
 none has been enabled or tested. Evaluate after ordinary project proof, keeping packaged slice execution
-independent of MCP. Blender server selection and local compatibility remain open.
+independent of MCP. The official Blender candidate is selected for bounded evaluation under the
+accepted local pilot contract; client/server compatibility and operational adoption remain unproven.
 
 C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git is established, and Phase 1.4 accepts Git LFS for project-owned binary assets, with tracking configuration and cost controls still to perform under later authorized scope.
 
-[Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. Project/module layout, serialization, networking, renderer choices and integrations are undecided. Reference-derived percentages do not select physics constants.
+[Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. The [Phase 1.4 draft](../implementation/phase-1-4-architecture-asset-validation-draft.md) records accepted project/module layout and initial rendering candidates. Detailed implementation types, serialization, networking, renderer quality settings and integration compatibility remain unresolved. Reference-derived percentages do not select physics constants.
 
 No Unreal project is created. [Phases 1.1–1.3](../implementation/vertical-slice-1-implementation-plan.md)
-are complete for planning; Phase 1.4 architecture/asset/validation decisions and Phase 1.5 gate review
-remain unstarted. Phase 2 owns later authorized tool/project proof. This supersedes the earlier
+are complete for planning; Phase 1.4 architecture/asset/validation planning is in progress, with
+remaining contracts pending. Phase 1.5 gate review remains unstarted. Phase 2 owns later authorized
+tool/project proof. This supersedes the earlier
 planning-gate deferral, not implementation/installation boundaries. Tool observations are dated;
 this documentation sweep performs no fresh host inventory or build validation.

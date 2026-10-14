@@ -4,6 +4,10 @@
 and all seven supporting defaults. No implementation, modeling, installation or Phase 1.4 is
 authorized by this acceptance. Runtime/fit checks remain unexecuted; E/F choices remain non-canonical.
 
+Subsequent status: Phase 1.4 planning/discussion is in progress in the
+[implementation plan](vertical-slice-1-implementation-plan.md#phase-14-minimal-architecture-asset-and-validation-contracts).
+Phase 1.5 and implementation remain unstarted. The approval boundary above records the October 8 closeout.
+
 Review update: the user accepted C13-01–05, including revised C13-04 reverse unit travel/relocking
 only after completed OFF/shutdown, without replacement ribbons. Restart revalidates actual unit
 preparation and reports incomplete units; prior success never bypasses current prerequisites.
@@ -65,10 +69,10 @@ a chronology lock. No promise that other tasks fill all 600 s, and no new chores
 | C13-01 | Laptop after disconnect | Explicit Disconnect leaves focused screen open, Notes available/device controls disabled. Walking beyond cable reach closes focused view but keeps laptop drawn. Stow performs agreed disconnect/close/holster. | Three different intentions; no surprise unequip or stale target connection. |
 | C13-02 | Registration if trunk still closed | Complete Gene's registration independently; defer Melfina's local photo/recognition beat until visible in open case. Run once whether revival running/complete. Transfer waits for her personnel beat plus normal awake/local conditions. | No scanning an occluded occupant or forced case-first order; Gene can still prepare engineering early after registration. |
 | C13-03 | Cap closure across unseen transition | Once Melfina descends clear of aperture, close cap before cylinder rise; obstructed sweep waits/resumes under existing no-damage rule. | Concrete F choreography, not a verified uninterrupted anime cycle. |
-| C13-04 | Releasing grip and reverse engineering operation | User-selected: retain partial turn/re-grip; grip + backward pulls, grip + forward pushes on same path; fully inserted handle turns back to locked. Stow/relock only after main engines OFF/shutdown complete; no replacement ribbons. | Reverse operator-path/handle fit still required. Revalidate all units on every startup; partial/stowed units fail preparation with Gilliam/status feedback. Historical success persists. |
+| C13-04 | Releasing grip and reverse engineering operation | Retain partial turn/re-grip; grip + backward pulls, grip + forward pushes on same path; fully inserted handle turns back to locked. Stow/relock only after main engines OFF/shutdown complete; no replacement ribbons. | Reverse operator-path/handle fit still required. Revalidate all units on every startup; partial/stowed units fail preparation with Gilliam/status feedback. Historical success persists. |
 | C13-05 | Bounded seal/pressure check | Actual exterior-hatch closure plus limited services starts a short indicated check automatically. Represent that seal and acceptable breathable cabin condition; other out-of-slice exterior openings stay static/assumed closed. Reopen invalidates affected departure result. | No ignition gate, extra pressure task, universal hatch merger or full leak/room network. Clearing this check is not complete launch certification. |
 
-C13-01–05 are user-selected, including the revised reverse-operation rule. These close
+C13-01–05 are accepted bounded behavior contracts, including the revised reverse-operation rule. These close
 bounded behavior gaps. C13-02 is a deferred photo/dialogue beat, not autonomous crew behavior.
 
 ## Seven Accepted Supporting Defaults

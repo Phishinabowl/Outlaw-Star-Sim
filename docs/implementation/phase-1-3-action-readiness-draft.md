@@ -12,7 +12,10 @@ Closeout review update: C13-01/02/03/05 are now user-selected (post-disconnect p
 deferred visible-Melfina registration beat, cap-closure bridge and bounded automatic seal check).
 C13-04's revised reverse travel/relocking is also user-selected: only after completed OFF/shutdown,
 with no new ribbons, and all-unit readiness revalidated on restart. The user also accepted all seven
-supporting defaults, completing the Phase 1.3 planning package. Phase 1.4 remains unstarted.
+supporting defaults, completing the Phase 1.3 planning package. Phase 1.4 was unstarted at that
+October 8 closeout; its planning/discussion is now in progress in the
+[implementation plan](vertical-slice-1-implementation-plan.md#phase-14-minimal-architecture-asset-and-validation-contracts).
+Phase 1.5 and implementation remain unstarted.
 
 Inputs: accepted [Phase 1.2 closeout](phase-1-2-closeout-proposal.md), its
 [discussion record](phase-1-2-spatial-motion-decision-packet.md),

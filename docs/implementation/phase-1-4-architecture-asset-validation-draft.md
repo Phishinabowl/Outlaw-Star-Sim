@@ -34,7 +34,7 @@ machinery, pause, reversible operation or continued exploration merely to simpli
 
 ## Initial Project Identity And Folder Layout — Accepted
 
-The user agreed the internal project/module name **OutlawStarSim**, with project file planned at
+The accepted internal project/module name is **OutlawStarSim**, with project file planned at
 `Unreal/OutlawStarSim/OutlawStarSim.uproject`. This follows the repository's existing Unreal ignore
 boundary and avoids mixing engine outputs with documentation/source references. The game's display
 title may remain “Outlaw Star XGP Simulator”; internal identifier does not decide branding.
@@ -135,7 +135,7 @@ No project, mapping asset or input code is created by this accepted planning cho
 ### Optional Controller Learning Trial — Accepted Direction
 
 Keyboard/mouse remains the required first proof; preserve device-independent actions and multiple
-bindings for later input expansion. The user wants an optional controller trial for learning, with
+bindings for later input expansion. An optional controller learning trial is accepted for later authorized work, with
 Xbox, DualShock 4/PS4 and Switch Pro as longer-term devices of interest. This is not a promise of
 complete support for all devices or console-platform builds in the first slice.
 
@@ -364,7 +364,7 @@ not executed. Target primary laptop, Win64, keyboard/mouse.
 Later discussion revises the original required 120 FPS target to required native 1440p/60 FPS,
 with 120 FPS retained as a stretch goal. Use the accepted initial rendering direction below, including
 hardware-traced Lumen as the first candidate; this is not an automatic maximum-quality selection or
-performance proof. The user wants to learn through visible technology comparisons. Detailed quality
+performance proof. The accepted learning track includes visible technology comparisons. Detailed quality
 settings and individual feature adoption still need review and proof; no additional plugin, engine
 branch or implementation is authorized.
 Use 2560 x 1440 output and native internal resolution for the baseline, with dynamic resolution,
@@ -447,7 +447,7 @@ No compilation, cache deletion, configuration change or benchmark is performed b
 
 ## Accepted Rendering Learning Track — Bounded Experiments Pending
 
-The user explicitly wants hands-on comparisons of the discussed rendering technologies as development
+The accepted rendering learning track includes hands-on comparisons as development
 progresses: direct/bounced lighting, Lumen, software/hardware ray tracing where supported, path-traced
 reference rendering and supported DLSS features (Super Resolution, frame generation, ray reconstruction
 and DLAA). Include PBR material/light-response comparisons as part of the same learning approach. Explain
@@ -470,8 +470,8 @@ remastering comparisons; do not assume it is required for Unreal authoring or im
 | PBR versus color-only surface changes | Same object/light/camera; vary base color, roughness, metallic and normal detail; compare painted/exposed metal, rubber, wood and glass transmission/refraction | Simple material exercise alongside authorized proxy/render work; detailed ship art still deferred |
 | Direct light, shadows, AO and bounced lighting | Hangar/cockpit view; isolate each contribution, including dark/guide/limited/full-power states | After representative geometry and controllable lights exist |
 | Lumen and supported software/hardware tracing | Matched camera/settings; compare indirect light, reflections, motion artifacts and frame cost | Pin supported engine settings; configuration trials within authorized scope |
-| Vulkan versus DirectX 12 | User-requested learning comparison; same fixture/route, resolution and supported features; compare frame times, stability and visible results | DirectX 12 remains the proposed starting backend; verify installed-engine/driver support and separate Vulkan hardware-ray-tracing compatibility before later authorized trials |
-| Shadow methods | User accepted exploring conventional shadow maps, Virtual Shadow Maps, per-light hardware ray-traced shadows, distance-field shadows, contact-shadow supplementation and baked lighting/shadows where supported | Accepted learning scope, not a requirement to ship every method; use moving mechanisms, small controls and varied light sizes, restoring the baseline between comparisons |
+| Vulkan versus DirectX 12 | Accepted learning comparison; same fixture/route, resolution and supported features; compare frame times, stability and visible results | DirectX 12 remains the proposed starting backend; verify installed-engine/driver support and separate Vulkan hardware-ray-tracing compatibility before later authorized trials |
+| Shadow methods | Accepted exploration scope: conventional shadow maps, Virtual Shadow Maps, per-light hardware ray-traced shadows, distance-field shadows, contact-shadow supplementation and baked lighting/shadows where supported | Accepted learning scope, not a requirement to ship every method; use moving mechanisms, small controls and varied light sizes, restoring the baseline between comparisons |
 | Path-traced reference | Fixed view of same geometry/materials/light; compare converged image with gameplay rendering | Optional offline/editor learning capture, not a runtime acceptance requirement |
 | DLSS Super Resolution / DLAA | Same route; compare native versus reconstructed output, fine controls/text and motion stability | Verify compatible plugin and separately authorize adoption; record internal/output resolutions |
 | Frame generation | Separate base-rendered and displayed rates; examine input feel and moving HUD/control artifacts | Supported integration only; never substitute generated output for native acceptance |
@@ -495,7 +495,7 @@ shadows may be demonstrated separately for learning, but do not replace the slic
 lights and moving machinery. [Epic's shadowing overview](https://dev.epicgames.com/documentation/unreal-engine/shadowing-in-unreal-engine)
 is the reference for shadow-method selection; compatibility is checked before each experiment.
 
-The user accepted the first learning fixture concept: painted hull/exposed metal, glass, an emissive
+The accepted first learning fixture comprises painted hull/exposed metal, glass, an emissive
 control screen, a doorway/recess, one switchable overhead light and one guide light. Start with matched
 direct-light versus Lumen GI/reflection views, then supported tracing comparisons and an optional
 path-traced reference. Inspect appearance, lighting-change response and frame cost before testing
@@ -511,12 +511,12 @@ openings at every supported quality level. Visual LOD/culling cannot remove nece
 supporting surfaces in their use context. Test essential screens/prompts and moving mechanisms when
 quality changes; no lower-quality preset receives a pass solely because it is faster.
 
-The user prefers clear gameplay views and commonly disables depth of field and motion blur; compare
-both deliberately and independently rather than removing them from the learning track. Depth of
-field is focus-related image blur, distinct from view distance or asset streaming. Recommend both
-OFF for the initial gameplay baseline, accepted by the user's confirmation of this increment;
-later optional player controls and exact menu scope remain for review. Artistic/cinematic experiments do not silently override that
-gameplay preference, and quality presets should not unexpectedly re-enable separately chosen effects.
+Clear gameplay views are the accepted viewing preference. Depth of field and motion blur are
+OFF in the accepted initial gameplay baseline; compare both deliberately and independently in the
+learning track. Depth of field is focus-related image blur, distinct from view distance or asset streaming.
+Later optional player controls and exact menu scope remain for review. Artistic/cinematic experiments
+do not silently override that gameplay preference, and quality presets should not unexpectedly
+re-enable separately chosen effects.
 
 Inspect texture mip completeness/consistency and close-to-far transitions in owned fixtures. Connect
 the lesson to the [Dusklight reference](../development/dusklight-learning-reference.md), distinguishing
@@ -572,12 +572,12 @@ to select. Do not hide settings/host conditions in an FPS claim.
 
 ## MCP Evaluation Order And Local Pilots — Accepted 2026-10-11
 
-The user accepted evaluating Epic's built-in Unreal MCP after the project/build proof, followed by
+The accepted evaluation order places Epic's built-in Unreal MCP after the project/build proof, followed by
 a Blender pilot at the existing post-3.1/pre-repeated-production checkpoint. Prefer the official
 Blender candidate for investigation; adoption is conditional on code/license/client compatibility
-and an agreed execution boundary. The user wants a practical workflow suitable for learning.
+and an agreed execution boundary. The accepted direction favors a practical workflow suitable for learning.
 
-The user now selects local MCP pilots for both editors and defers Sandbox/VM work. The
+Local MCP pilots are the accepted initial direction for both editors; Sandbox/VM work is deferred. The
 [editor-automation local pilot contract](../architecture/editor-automation.md#current-local-pilot-contract--accepted-2026-10-11)
 owns this current direction: non-admin processes, loopback-only connections, on-demand servers,
 reviewed specific tools/scripts, disposable fixtures, checkpoints and observed save/reopen/handoff/

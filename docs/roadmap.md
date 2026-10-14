@@ -4,7 +4,7 @@
 
 Phase 0 bootstrap and subsequent user-approved reference increments established source protection, evidence records and a planning foundation. Approval is scoped to the work below; it is not general implementation authorization.
 
-The user requested that the reference/research foundation be declared **substantially complete for implementation purposes within Slice 1**. Enough evidence exists to define a bounded initial build; this is not a claim of complete canon verification, final geometry or a tested engine project. Unresolved research continues in [open questions](reconstruction/open-questions.md) as an ongoing parallel track, targeted when it affects concrete choices.
+The reference/research foundation is **substantially complete for implementation purposes within Slice 1**. Enough evidence exists to define a bounded initial build; this is not a claim of complete canon verification, final geometry or a tested engine project. Unresolved research continues in [open questions](reconstruction/open-questions.md) as an ongoing parallel track, targeted when it affects concrete choices.
 
 Completed and previously confirmed:
 
@@ -31,7 +31,7 @@ Baseline v1 consolidates the accepted direction into a reviewable planning contr
 
 ## Engine/toolchain direction — recorded, not build-validated
 
-UE **5.8** is intended unless later testing supplies a reason to revisit it; **5.8.3** is installed. The user selected **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. Phase 1.1 confirms patched MSVC 14.50 is installed alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) owns tooling direction; the [dated readiness record](implementation/phase-1-1-host-tooling-readiness.md) owns current inventory and remaining proposed setup gaps.
+UE **5.8** is intended unless later testing supplies a reason to revisit it; **5.8.3** is installed. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. Phase 1.1 confirms patched MSVC 14.50 is installed alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) owns tooling direction; the [dated readiness record](implementation/phase-1-1-host-tooling-readiness.md) owns current inventory and remaining proposed setup gaps.
 
 ## Phased implementation plan — accepted planning baseline
 

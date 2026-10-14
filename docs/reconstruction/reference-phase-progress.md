@@ -1,9 +1,11 @@
 # Reference phase — first review increment
 
-Current publication checkpoint: Phases 1.1–1.3 planning are accepted, with final Phase 1.3 closeout
+Historical publication checkpoint, 2026-10-08: Phases 1.1–1.3 planning were accepted, with final Phase 1.3 closeout
 published in `209b87d` on 2026-10-08. The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md)
 owns current phase status and the [behavior closeout](../implementation/phase-1-3-closeout-audit.md)
-owns selected E/F contracts. Phase 1.4 and implementation remain unstarted.
+owns selected E/F contracts. Phase 1.4 and implementation were unstarted at that checkpoint.
+Current status: Phase 1.4 planning/discussion is in progress; Phase 1.5 and implementation remain
+unstarted. The linked implementation plan owns subsequent approvals and remaining gates.
 
 Entries below preserve dated reference increments. Their “uncommitted”, extraction/tool absence
 and open-behavior language describes that checkpoint, not current repository state. Later targeted

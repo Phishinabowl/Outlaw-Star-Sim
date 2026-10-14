@@ -14,7 +14,7 @@ adoption, installation/enablement and execution remain unapproved. No isolation 
 
 ## Current Local Pilot Contract — Accepted 2026-10-11
 
-The user explicitly chose local development for both MCP pilots and deferred Sandbox/VM work.
+The accepted initial direction is local MCP pilots for both editors; Sandbox/VM work is deferred.
 This supersedes the earlier isolation prerequisite below. Preserve the Sandbox document's source and
 host findings as a dated reference; its guest/network/setup gates are not prerequisites for current
 local pilots. No restricted-account provisioning, virtualization, network relay or host firewall
@@ -44,8 +44,8 @@ file-path restrictions in the installed EditorToolset programmatic/file tools, p
 and file overwrite operations; it was not a comprehensive security audit of every enabled tool.
 Neither official provenance nor restricted scripting alone establishes containment.
 
-The user chose this simpler workflow with those limits understood. Revisit isolation if a concrete
-new dependency/workload warrants it; do not restart Sandbox investigation as a default blocking gate.
+The local workflow was accepted on 2026-10-11 with those permission limits understood. Revisit
+isolation if a concrete new dependency/workload warrants it; do not restart Sandbox investigation as a default blocking gate.
 Later setup must pin packages/dependencies and confirm the actual client/server/editor versions.
 
 ## Role And Sequence

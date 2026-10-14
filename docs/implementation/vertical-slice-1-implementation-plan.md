@@ -30,8 +30,8 @@ Reference/research is substantially complete for defining this bounded slice. Ba
 and published. No Unreal project, graybox, gameplay code, machinery rig or playable build exists.
 No planned runtime tests have run. Installation observations are not compilation proof.
 
-The user has now requested this expanded formal planning document, superseding the earlier hold on
-**introducing the planning gate**. That authorizes this document and navigation/status updates only.
+The October 7, 2026 planning authorization superseded the earlier hold on
+**introducing the planning gate**. Its scope covered this document and navigation/status updates only.
 The user confirmed this plan and its MCP additions for publication on 2026-10-07.
 The user initially authorized Phase 1.1 only; its read-only inventory and host/target decisions are
 complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Subsequent Phase 1.2/1.3
@@ -103,7 +103,7 @@ pauses for every file or test. Publication still follows the user's explicit con
   compiler-family constraints in Unreal strategy. Phase 1.1 confirms patched 14.50 alongside 14.51.
 - [x] Keep unresolved archaeology in a parallel track and preserve original-language uncertainty.
 - [x] Preserve shared command/state requirements without implementing a transport or external client.
-- [x] Accept the plan's phase boundaries and the initial Phase 1.1-only inventory scope; later subphases are not authorized.
+- [x] Accept the plan's phase boundaries and the initial Phase 1.1-only inventory scope; later subphases were not authorized by that initial acceptance. Subsequent planning approvals are recorded below.
 - [ ] Decide concrete VS-D01–07 choices and validation budgets in Phase 1; no new architecture is
   accepted merely because its checklist is present.
 
@@ -268,8 +268,8 @@ has since completed its own planning closeout below.
 
 **Prerequisite:** 1.2 spatial proposal. **Deliverable:** VS-D04–06 decisions and a normal-path action/result table.
 
-The user authorized Phase 1.3 preparation on 2026-10-07, asking for independent draft work and
-a discussion queue for their return. The [action/readiness draft](phase-1-3-action-readiness-draft.md)
+The user authorized Phase 1.3 preparation on 2026-10-07.
+The [action/readiness draft](phase-1-3-action-readiness-draft.md)
 records established constraints, recommended service/state/action rules, eight readiness mappings
 and D13-01–09 choices. The user accepted C13-01–05 (including revised reverse engineering) and
 all seven supporting defaults on 2026-10-08. The five Phase 1.3 planning items are complete;
@@ -295,7 +295,8 @@ it does not waive base ship/machinery fit. The closeout reconciles these inputs 
 - [x] Identify mechanism interruption/collision behavior needed for safe slice operation; do not add simulated faults or repairs.
 
 **Completion record:** user accepted the remaining behavior choices/defaults on 2026-10-08.
-VS-D04–06 are settled bounded E/F planning contracts; no runtime/geometry pass. Phase 1.4 remains unstarted.
+VS-D04–06 are settled bounded E/F planning contracts; no runtime/geometry pass. Phase 1.4 was unstarted
+at this October 8 checkpoint; its subsequent planning authorization and current scope are recorded below.
 
 **Validation:** action/state table matches commissioning scope; all-four endpoints retained; player can return to the bridge; no guidance shortcut bypasses local work.
 **Recovery / deferral:** revise F prerequisites/timing before implementation, retaining supported visible stages. Reactor wattage/topology, universal shutdown and crew AI remain deferred.
@@ -318,8 +319,8 @@ analogies, with verified repository observations separate from unverified commun
 
 Graphics quality must preserve simulation behavior, physical clearance, required controls and readable
 readiness feedback. Include texture/mipmap/filtering and independent depth-of-field/motion-blur
-comparisons in the learning track. The user prefers clear gameplay views; initial OFF defaults for
-those two effects are accepted, without expanding the current phase into a graphics
+comparisons in the learning track. Initial OFF defaults for those two effects are accepted under the
+[Phase 1.4 viewing contract](phase-1-4-architecture-asset-validation-draft.md#accepted-graphics-quality-invariant-and-viewing-preference), without expanding the current phase into a graphics
 menu implementation.
 
 Keyboard/mouse remains the first required input proof. An optional controller learning trial is

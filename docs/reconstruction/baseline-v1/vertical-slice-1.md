@@ -9,7 +9,7 @@ records the bounded opening supplement accepted by the user on 2026-10-07, conso
 case/computer, reveal, boots, HUD and dining-shell directions. Read it alongside the historical
 contract below; its eight readiness conditions remain intact. Source observations are unchanged.
 
-One physical player approaches the dormant XGP inside a minimal asteroid hangar, finds and operates an exterior entry, explores the bridge and required passage route, brings limited ship services online, deploys the navigation apparatus with a placeholder occupant, performs engineering preparation, returns to the bridge and completes ignition. Reach **SHIP READY**, still supported inside the hangar; no departure. The user clarified in Phase 1.3 that this is a startup milestone, not the end of play: leave the seat and continue exploring, including hatch exit/re-entry between active ship gravity and hangar low gravity.
+One physical player approaches the dormant XGP inside a minimal asteroid hangar, finds and operates an exterior entry, explores the bridge and required passage route, brings limited ship services online, deploys the navigation apparatus with a placeholder occupant, performs engineering preparation, returns to the bridge and completes ignition. Reach **SHIP READY**, still supported inside the hangar; no departure. SHIP READY is a startup milestone, not the end of play: leave the seat and continue exploring, including hatch exit/re-entry between active ship gravity and hangar low gravity.
 
 The path is a gameplay adaptation of EP-04's ensemble commissioning scene. The player can perform activities seen across Gene/Jim rather than requiring crew AI. A placeholder occupant/script supplies Melfina's apparatus sequence; it does not grant the player magical direct control over the ship's canonical bio-navigation. This role consolidation is F, not an anime retelling with exact actions/characters.
 
@@ -64,14 +64,15 @@ The endpoint is an F aggregate of the following declared conditions, supported b
 
 These are completion criteria, not a new canonical claim that each condition is a universal launch interlock. Exact hatch closure, pressure checks, power thresholds and station-local permissions are recorded as decisions before implementation. No unfinished feature should be required to obtain this endpoint.
 
-User-selected Phase 1.3 clarification: hatch closure/seal/pressure readiness affects the represented
+Under the accepted Phase 1.3 contract, hatch closure/seal/pressure readiness affects the represented
 departure status, not ignition or startup completion. Engines and ship gravity can run with the
 hatch open in the breathable hangar. Reopening updates the departure warning without switching
 off those services. Leaving the captain's seat after success does not revoke the completed seat
-transition. The [Phase 1.3 record](../../implementation/phase-1-3-action-readiness-draft.md)
-owns these E/F rules and remaining check/gravity-boundary details; no full flight or pressure model is added.
+transition. The [Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md)
+owns the current E/F behavior contract; the [detailed record](../../implementation/phase-1-3-action-readiness-draft.md)
+retains selected interactions and remaining check/gravity-boundary details. No full flight or pressure model is added.
 
-The user also selected reversible key operation and occupied seat lowering on OFF. Retain a
+Reversible key operation and occupied seat lowering on OFF are accepted behavior. Retain a
 per-run completed-startup milestone after the successful sequence, independently of the current
 running/ready result when later switched OFF. Raise/lower motion temporarily locks seat exit;
 physical key insertion/removal and OFF/ON switching are distinct actions. Exact shutdown service

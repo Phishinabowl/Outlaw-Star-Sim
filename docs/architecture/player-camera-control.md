@@ -9,7 +9,7 @@ for the demo, ladder controls, equipment draw/stow, key-triggered seat raising/l
 seat locks and pause/focus behavior. Exact bindings, animation technology, camera offsets and
 physical collision/clipping proof remain later work. No implementation is authorized here.
 
-The user agreed reusable switchable magnetic boots and an in-game character/equipment status HUD during
+Reusable switchable magnetic boots and an in-game character/equipment status HUD are accepted design requirements from
 [Phase 1.2 discussion](../implementation/phase-1-2-spatial-motion-decision-packet.md#reusable-equipment-and-character-status-hud--agreed-direction).
 Equipment belongs to the same physical player across camera modes and future environments.
 Status presentation reads player condition and equipment/environment state; it does not own a
