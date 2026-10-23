@@ -734,6 +734,8 @@ The [interaction procedures](validation/interaction-validation-procedures.md) sp
 accepted for planning 2026-10-23: physical targeting/focus, independent hatch/boarding and limited-service initialization.
 The [machinery procedures](validation/machinery-validation-procedures.md) specify VS1-M01–M03,
 accepted for planning 2026-10-23: actual occupied apparatus, seat motion and all-four engineering preparation/reverse operation.
+The [readiness procedures](validation/readiness-validation-procedures.md) specify VS1-R01–R03,
+accepted for planning 2026-10-23: physical ignition/shutdown, eight-condition reporting/continued exploration and repeatable fresh runs.
 All remain unexecuted. Other
 per-scenario procedures remain to be defined at their owning checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.

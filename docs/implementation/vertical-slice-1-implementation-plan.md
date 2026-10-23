@@ -662,7 +662,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Revalidate current all-four preparation on every restart after stow/relock; failed requests produce consistent Gilliam/status feedback without lift/ignition, regardless of retained historical success.
 - [ ] Connect minimal engine/generator/main-service presentation to the completed state, preserving early-service versus main-service distinction.
 
-**Validation:** VS1-R01 ignition complete/incomplete/duplicate outcomes and baseline VS-05/06; no numerical power simulation.
+**Validation:** [Accepted VS1-R01 procedure](validation/readiness-validation-procedures.md#vs1-r01): actual key/startup/shutdown, incomplete/duplicate outcomes and current-condition restart; baseline VS-05/06, no numerical power simulation.
 **Recovery / deferral:** isolate key/presentation adapter versus state-contract failures; return to 1.3 if extra prerequisites are needed rather than adding hidden locks.
 
 ### Phase 7.2: Readiness, Deterministic Guidance And Endpoint
@@ -675,7 +675,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Distinguish startup completion from represented departure readiness: an open hatch/outstanding seal-pressure check reports a warning without blocking ignition or shutting down engines/gravity in the breathable hangar.
 - [ ] Retain the per-run completed-startup milestone while current engine/service/seat/readiness results reflect subsequent OFF/ON operation; fresh reset clears milestone and state. Do not require repeating revival/unsealing merely to preserve sim play.
 
-**Validation:** VS1-R02 eight-condition aggregate and guidance/query consistency; confirm VS-06/09 without fixture bypass.
+**Validation:** [Accepted VS1-R02 procedure](validation/readiness-validation-procedures.md#vs1-r02): eight-condition evidence, guidance/query agreement and continued exploration; confirm VS-06/09 without fixture bypass.
 **Recovery / deferral:** simplify presentation while preserving required state feedback; no crew dialogue generation, LLM or future mode controls.
 
 ### Phase 7.3: Fresh-Run And Integrated Lifecycle
@@ -686,7 +686,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Repeat after an incomplete run and after a completed run; old callbacks/progress do not carry readiness into the new run.
 - [ ] Recheck camera switching and denied local bypasses during the integrated sequence.
 
-**Validation:** VS1-R03 fresh-run/aborted-run/reset evidence plus state regressions; test repeated runs, not save/load persistence.
+**Validation:** [Accepted VS1-R03 procedure](validation/readiness-validation-procedures.md#vs1-r03): incomplete/completed-run reset and repeated physical startup plus state regressions; no save/load persistence.
 **Recovery / deferral:** return to owning lifecycle/adapter phase for leaks/stale state; debug reset stays distinct from player completion and no save system is added.
 
 ### Phase 7 Exit Gate
@@ -763,6 +763,7 @@ are accepted for planning as of 2026-10-23, not executed. The [G01–G03 spatial
 are accepted for planning as of 2026-10-23, also unexecuted. The [S01–S03 state/lifecycle procedures](validation/state-lifecycle-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. The [I01–I03 interaction procedures](validation/interaction-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. The [M01–M03 machinery procedures](validation/machinery-validation-procedures.md)
+are accepted for planning as of 2026-10-23 and unexecuted. The [R01–R03 readiness/lifecycle procedures](validation/readiness-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
