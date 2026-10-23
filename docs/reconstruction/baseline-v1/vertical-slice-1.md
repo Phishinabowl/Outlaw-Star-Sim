@@ -108,8 +108,11 @@ Preserve one authoritative state and a reusable command/query boundary per [exte
 
 Current status: VS-D01–03 have accepted provisional spatial choices (actual fit pending), and
 VS-D04–06 have accepted E/F behavior contracts in the Phase 1.3 closeout. Their source uncertainties
-remain explicit. VS-D07 tool/asset/implementation authorization and concrete Phase 1.4/1.5 contracts
-are still pending. The register below retains its original decision IDs; it is not a list of six
+remain explicit. Concrete Phase 1.4 tool/asset/architecture/validation contracts are accepted in the
+[planning closeout](../../implementation/phase-1-4-closeout-review.md). The
+[Phase 1.5 gate review](../../implementation/phase-1-5-gate-review.md) is accepted with explicit
+authorization for read-only 2.1 preflight only. VS-D07 installation, configuration and project/asset
+creation authorization remain pending. The register below retains its original decision IDs; it is not a list of six
 behavior choices still awaiting initial agreement.
 
 | ID | Decision / required review | Evidence or assumption boundary |

@@ -70,8 +70,10 @@ On 2026-10-10 the user authorized Phase 1.4 planning/discussion. Its
 records accepted architecture, asset/recovery, handoff, proxy, performance, rendering-learning and
 validation contracts. Map identifiers and the [deferral schedule](implementation/phase-1-4-closeout-review.md#details-that-remain-later-work)
 were accepted on 2026-10-23. All seven planning items have accepted coverage; Phase 1.4 planning
-closeout was accepted on 2026-10-23. All validation scenarios remain unexecuted. Phase 1.5 and
-installation/project/modeling/implementation remain unstarted and require their own scope.
+closeout was accepted on 2026-10-23. All runtime validation scenarios remain unexecuted. Phase 1.5
+[gate review](implementation/phase-1-5-gate-review.md) is accepted, with explicit authorization on
+2026-10-23 for the read-only 2.1 tooling preflight only. Installation, configuration changes, project
+initialization, modeling and implementation remain unstarted and require their own scope.
 
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 [action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,

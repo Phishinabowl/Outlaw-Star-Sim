@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phases 1.1–1.4 planning complete; Phase 1.5 unstarted; implementation not authorized |
+| Status | Phase 1 planning complete; read-only Phase 2.1 preflight authorized; installation/project/gameplay work not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 1.4 planning closeout accepted 2026-10-23; Phase 1.5 unstarted |
+| Current checkpoint | Phase 1.5 accepted 2026-10-23; read-only 2.1 tooling preflight |
 
 ## Purpose And Placement
 
@@ -35,7 +35,9 @@ The October 7, 2026 planning authorization superseded the earlier hold on
 The user confirmed this plan and its MCP additions for publication on 2026-10-07.
 The user initially authorized Phase 1.1 only; its read-only inventory and host/target decisions are
 complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Subsequent Phase 1.2/1.3
-planning is also complete, with Phase 1.4 onward still unchecked. Phase 1.2 began with the opening experience
+planning is also complete; Phase 1.4 closeout and Phase 1.5 gate review are accepted. Only the read-only
+2.1 preflight is authorized; installations, configuration changes and project creation remain unapproved.
+Phase 1.2 began with the opening experience
 and additional targeted references. Its [decision packet](phase-1-2-spatial-motion-decision-packet.md)
 and [closeout package](phase-1-2-closeout-proposal.md) are now accepted for planning. No later
 subphase starts automatically. Phase 1's exit review still precedes project creation.
@@ -356,20 +358,24 @@ exact implementation/recipe details have named later checkpoints. Planning close
 
 **Prerequisite:** 1.1–1.4 reviewable outputs. **Deliverable:** accepted decisions or explicit revisions; scoped Phase 2 proposal.
 
-- [ ] Reconcile VS-D01–07, accepted E/F assumptions, validation IDs and any necessary Baseline v1 amendment without silently changing authority.
-- [ ] Include the accepted visual-development planning addition: Phase 3.2A reconstruction sheets/selected concept views before room grayboxing, followed by targeted refinements before affected Phase 6 machinery work. Review its scope and evidence/publication boundaries without generating art during this gate.
-- [ ] Review the actual installation, project-creation, binary publication and test operations proposed for Phase 2.
-- [ ] Identify blocking decisions versus parallel research and confirm the first independent execution increment.
+**Accepted review:** [decision reconciliation and bounded first execution scope](phase-1-5-gate-review.md),
+2026-10-23. Explicit authorization covers the read-only 2.1 tooling preflight only, with no installs,
+configuration changes or project initialization. Later Phase 2 operations require their own scope.
+
+- [x] Reconcile VS-D01–07, accepted E/F assumptions, validation IDs and any necessary Baseline v1 amendment without silently changing authority.
+- [x] Include the accepted visual-development planning addition: Phase 3.2A reconstruction sheets/selected concept views before room grayboxing, followed by targeted refinements before affected Phase 6 machinery work. Review its scope and evidence/publication boundaries without generating art during this gate.
+- [x] Review the actual installation, project-creation, binary publication and test operations proposed for Phase 2.
+- [x] Identify blocking decisions versus parallel research and confirm the first independent execution increment.
 
 **Validation:** planning review does not claim runtime proof; unresolved blockers have named owners/checkpoints.
 **Recovery / deferral:** keep gate open, revise only affected decisions and preserve accepted baseline; do not bootstrap a project to force the proposal through.
 
 ### Phase 1 Exit Gate
 
-- [ ] Concrete slice connections, clearances, interactions, state ownership and artifact policy accepted.
-- [ ] Tool changes, proof host/build, validation procedures and measurable budgets are specified.
-- [ ] No blocking VS-D01–07 decision is hidden in future code; permitted parallel research is explicit.
-- [ ] Maintainer authorizes the bounded Phase 2 scope. This plan's confirmation alone is not that authorization.
+- [x] Concrete slice connections, clearances, interactions, state ownership and artifact policy accepted.
+- [x] Tool direction, proof host/build, validation procedures and measurable budgets are specified; any actual tool changes await preflight and separate authorization.
+- [x] No blocking VS-D01–07 decision is hidden in future code; permitted parallel research is explicit.
+- [x] Maintainer explicitly authorizes the read-only 2.1 preflight only. No installation, configuration, initialization or later Phase 2 scope follows from documentation confirmation.
 
 ## Phase 2: Toolchain And Minimal C++ Project Foundation
 

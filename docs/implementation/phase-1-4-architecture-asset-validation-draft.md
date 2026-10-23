@@ -6,7 +6,8 @@ Accepted identity, ownership,
 communication, asset/handoff, proxy, performance and learning contracts are distinguished below
 from later implementation choices and unexecuted proofs.
 No project, folders/assets, code, installation, plugin enablement or Git/LFS configuration is created
-by this document. Phase 1.5 and implementation remain unstarted.
+by this document. Subsequent Phase 1.5 planning progress is recorded in the
+[gate review](phase-1-5-gate-review.md); implementation remains unstarted.
 
 Inputs: accepted [Phase 1.2 spatial package](phase-1-2-closeout-proposal.md),
 [Phase 1.3 behavior contract](phase-1-3-closeout-audit.md),
@@ -766,4 +767,5 @@ settings, current MCP compatibility/setup and paid-LFS checks to their owning ch
 detail before the affected authorized work; deferral does not waive accepted behavior or evidence.
 
 Planning closeout is accepted; no fixture/build proof is claimed.
-Phase 1.5 remains unstarted and is the separate formal gate before authorized Phase 2 work.
+Phase 1.5 is the separate formal gate before authorized Phase 2 work; its subsequent planning review
+is recorded in the [gate document](phase-1-5-gate-review.md).
