@@ -728,7 +728,9 @@ or validation framework. The [foundation procedures](validation/foundation-valid
 specify VS1-T01–T04, accepted for planning 2026-10-23: availability versus effective selection, repository/LFS retrieval,
 ordinary build/editor reopening and neutral packaged execution. The [spatial procedures](validation/spatial-validation-procedures.md)
 specify VS1-G01–G03, accepted for planning 2026-10-23, distinguishing shared-body/route/proxy-clearance proof from actual
-machinery operation and future reservations. All remain unexecuted. Other
+machinery operation and future reservations. The [state/lifecycle procedures](validation/state-lifecycle-validation-procedures.md)
+specify VS1-S01–S03, accepted for planning 2026-10-23: shared ownership, command/results and reset/interruption/pause boundaries.
+All remain unexecuted. Other
 per-scenario procedures remain to be defined at their owning checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
 

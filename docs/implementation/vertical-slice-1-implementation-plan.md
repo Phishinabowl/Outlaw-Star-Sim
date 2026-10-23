@@ -495,7 +495,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Keep camera/presentation separate from ship state; stable project IDs do not claim external reactor/pod correspondence.
 - [ ] Define the agreed initial/reset snapshot without building numerical electrical/propulsion networks.
 
-**Validation:** VS1-S01 initial-domain/ownership checks; state is readable without final ship UI or finished geometry.
+**Validation:** [Accepted VS1-S01 procedure](validation/state-lifecycle-validation-procedures.md#vs1-s01): initial-domain/ownership checks; state is readable without final ship UI or finished geometry.
 **Recovery / deferral:** revise narrow ownership/schema before adapters; do not invent a universal component framework or serialize speculative future systems.
 
 ### Phase 4.2: Request Validation And Result Lifecycle
@@ -506,7 +506,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Define duplicate/conflicting request behavior without replaying consequential motion or setting completion prematurely.
 - [ ] Expose actual status to consumers; no UI-owned readiness flag or ungated guidance mutation.
 
-**Validation:** VS1-S02 valid/missing-prerequisite/remote-bypass/duplicate cases with meaningful state assertions.
+**Validation:** [Accepted VS1-S02 procedure](validation/state-lifecycle-validation-procedures.md#vs1-s02): valid/missing-prerequisite/invalid-locality/duplicate cases with meaningful state assertions and later real-control repeats.
 **Recovery / deferral:** return to 1.3/4.1 if semantics conflict; external authentication, transport and LLM command interpretation stay deferred.
 
 ### Phase 4.3: Mechanism Completion And Reset Boundary
@@ -517,7 +517,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Specify safe handling of interrupted motion/teardown according to the accepted slice behavior, without a fault model.
 - [ ] Reset fixture state and pending operations to the declared baseline; callbacks from a prior run cannot mark new operations complete.
 
-**Validation:** VS1-S03 reset/interruption/stale-completion cases; no full save/load system implied.
+**Validation:** [Accepted VS1-S03 procedure](validation/state-lifecycle-validation-procedures.md#vs1-s03): reset/interruption/pause/stale-completion cases; no full save/load system implied.
 **Recovery / deferral:** retain/replay the last known fixture case and fix lifecycle before installing real machinery adapters.
 
 ### Phase 4.4: Foundation Contract Review
@@ -760,7 +760,8 @@ checks; the user is the main reviewer for playtest feel, readability and visual 
 state, build/settings, steps, expected and actual results, appropriate evidence, performer and untested
 parts against these IDs. The [T01–T04 foundation procedures](validation/foundation-validation-procedures.md)
 are accepted for planning as of 2026-10-23, not executed. The [G01–G03 spatial procedures](validation/spatial-validation-procedures.md)
-are accepted for planning as of 2026-10-23, also unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
+are accepted for planning as of 2026-10-23, also unexecuted. The [S01–S03 state/lifecycle procedures](validation/state-lifecycle-validation-procedures.md)
+are accepted for planning as of 2026-10-23 and unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
 
