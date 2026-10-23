@@ -1,7 +1,8 @@
 # Phase 1.4 — Architecture, Assets And Validation Discussion Draft
 
 Status: planning/discussion in progress, updated 2026-10-23. This documentation increment is confirmed
-for publication. Accepted identity, ownership, communication, asset/handoff, proxy, performance and learning
+for publication. Accepted identity,
+ownership, communication, asset/handoff, proxy, performance and learning
 contracts are distinguished below from remaining technical decisions; Phase 1.4 is not complete.
 No project, folders/assets, code, installation, plugin enablement or Git/LFS configuration is created
 by this document. Phase 1.5 and implementation remain unstarted.
@@ -736,8 +737,10 @@ The [machinery procedures](validation/machinery-validation-procedures.md) specif
 accepted for planning 2026-10-23: actual occupied apparatus, seat motion and all-four engineering preparation/reverse operation.
 The [readiness procedures](validation/readiness-validation-procedures.md) specify VS1-R01–R03,
 accepted for planning 2026-10-23: physical ignition/shutdown, eight-condition reporting/continued exploration and repeatable fresh runs.
-All remain unexecuted. Other
-per-scenario procedures remain to be defined at their owning checkpoints.
+The [acceptance procedures](validation/acceptance-validation-procedures.md) specify VS1-A01–A04,
+accepted for planning 2026-10-23: complete acceptance, measured performance/readability, exact standalone reproduction
+and documentation/artifact/publication closure. All scenarios remain unexecuted. Exact run-specific
+recipes/settings and observed results remain work at the owning execution checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
 
 ## Next Review

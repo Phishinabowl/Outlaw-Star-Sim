@@ -706,7 +706,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Reconcile real machinery fit and future reservations, evidence categories and source pointers against all baseline criteria.
 - [ ] Classify failures, accepted limitations and unexecuted checks; fix them at their owning checkpoint and repeat affected validation.
 
-**Validation:** VS1-A01 full acceptance evidence; an editor run alone does not close package proof.
+**Validation:** [VS1-A01](validation/acceptance-validation-procedures.md#vs1-a01) full acceptance evidence; an editor run alone does not close package proof.
 **Recovery / deferral:** bounded fixes to the owning phase; no art or new systems to mask a blocked route, stale state or missing acceptance.
 
 ### Phase 8.2: Readability, Responsiveness And Agreed Host Budget
@@ -717,7 +717,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Inspect dim-hangar visibility, prompts, mechanism feedback, camera clipping and required-control reach during the full sequence.
 - [ ] Adjust bounded proxy/lighting/interaction settings and repeat affected functional and clearance checks.
 
-**Validation:** VS1-A02 budget/readability results against accepted thresholds; no performance claim for untested hardware.
+**Validation:** [VS1-A02](validation/acceptance-validation-procedures.md#vs1-a02) budget/readability results against accepted thresholds; no performance claim for untested hardware.
 **Recovery / deferral:** return to last acceptable visual/configuration profile and iterate its bottleneck; detailed-art optimization and other-platform budgets remain deferred.
 
 ### Phase 8.3: Full Standalone Slice Reproduction
@@ -729,7 +729,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Inspect content references/packaging inputs for unintended source media; distinguish project-owned artifacts from local reference derivatives.
 - [ ] If a second host was included in Phase 1 scope, reproduce only its agreed claims; otherwise record single-host proof without broad support claims.
 
-**Validation:** VS1-A03 complete package reproduction, VS-08/09 and relevant budgets; no requirement for a store installer or remote deployment.
+**Validation:** [VS1-A03](validation/acceptance-validation-procedures.md#vs1-a03) complete package reproduction, VS-08/09 and relevant budgets; no requirement for a store installer or remote deployment.
 **Recovery / deferral:** preserve accepted source and earlier runnable package, fix missing cook/runtime dependencies and repeat exact affected proof; no silent engine upgrade.
 
 ### Phase 8.4: Documentation, Publication And Maintainer Closure
@@ -741,7 +741,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Follow established Git confirmation workflow and verify worktree/upstream state, retaining unrelated user changes.
 - [ ] Record maintainer acceptance and later direction without automatically starting another slice, flight or detailed-art work.
 
-**Validation:** VS1-A04 artifact/document/source-boundary review and actual publication/acceptance state.
+**Validation:** [VS1-A04](validation/acceptance-validation-procedures.md#vs1-a04) artifact/document/source-boundary review and actual publication/acceptance state.
 **Recovery / deferral:** hold closure for unproven acceptance or unreviewed binary policy; prepare focused reversions if requested, preserving sources and unrelated work.
 
 ### Phase 8 Exit Gate
@@ -764,7 +764,9 @@ are accepted for planning as of 2026-10-23, also unexecuted. The [S01–S03 stat
 are accepted for planning as of 2026-10-23 and unexecuted. The [I01–I03 interaction procedures](validation/interaction-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. The [M01–M03 machinery procedures](validation/machinery-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. The [R01–R03 readiness/lifecycle procedures](validation/readiness-validation-procedures.md)
-are accepted for planning as of 2026-10-23 and unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
+are accepted for planning as of 2026-10-23 and unexecuted. The [A01–A04 acceptance procedures](validation/acceptance-validation-procedures.md)
+are accepted for planning as of 2026-10-23 and unexecuted. Exact run-specific recipes/settings and observed results remain
+work at the owning execution checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
 
