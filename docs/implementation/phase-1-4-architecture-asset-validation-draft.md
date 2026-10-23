@@ -1,6 +1,6 @@
 # Phase 1.4 — Architecture, Assets And Validation Discussion Draft
 
-Status: planning/discussion in progress, updated 2026-10-11. This documentation increment is confirmed
+Status: planning/discussion in progress, updated 2026-10-23. This documentation increment is confirmed
 for publication. Accepted identity, ownership, communication, asset/handoff, proxy, performance and learning
 contracts are distinguished below from remaining technical decisions; Phase 1.4 is not complete.
 No project, folders/assets, code, installation, plugin enablement or Git/LFS configuration is created
@@ -276,10 +276,11 @@ authoring sources and the actual imported game assets together with their handof
 
 Temporary exports, Blender backups, engine caches and build outputs remain ignored. Existing
 immutable sources and generated reference media remain local-only under the current publication
-policy. LFS is not an exception to that policy. Exact tracking patterns, source/export subfolders
-and a fresh-clone/import proof remain pending before the first asset commit.
+policy. LFS is not an exception to that policy. Source/export folders are accepted in the layout
+contract above. The storage/recovery contract below specifies their planned handling; executable
+tracking configuration and fresh-checkout/import proof remain unperformed.
 
-The user is open to modest LFS costs if needed; no numeric spending limit has been selected.
+Modest paid LFS usage is acceptable in principle; no numeric spending limit has been selected.
 Before paid usage, check the repository owner's current allowance/usage, estimate storage including
 retained revisions and download bandwidth, and agree a spending cap. Do not enable uncapped billing
 or purchase/change account billing on the strength of this planning acceptance. No LFS configuration
@@ -290,6 +291,46 @@ checked 2026-10-10, lists 10 GiB storage and 10 GiB download bandwidth per billi
 accounts. These are account allowances, not a verified remaining allowance for this repository.
 Each changed binary revision stores the whole file again; uploads do not consume download bandwidth.
 Recheck pricing/usage before paid adoption rather than treating this dated record as a cost promise.
+
+### Asset Storage And Recovery Contract — Accepted 2026-10-23
+
+| File scope | Planned storage |
+| --- | --- |
+| Editable project-owned `.blend` files under `assets/blender/` | Git LFS. |
+| Designated `.fbx` handoff files under `assets/exports/` | Git LFS; temporary export attempts remain local working data. |
+| Owned Unreal `.uasset` and `.umap` files under `Unreal/OutlawStarSim/Content/` | Git LFS, including versioned development fixtures. Development-only packaging exclusion remains a separate concern. |
+| C++ source, project descriptors, configuration, recipes, manifests and documentation | Ordinary Git. |
+| Temporary exports, Blender backups, engine caches and packaged builds | Ignored/generated working data. |
+| Source episodes/settei and generated reference media | Existing immutable-source/local-only exclusions; no publication through LFS. |
+
+Apply repository-local tracking rules before the first authorized binary publication. Review the
+eventual `.gitattributes` patterns against these scopes and retain generated-output exclusions;
+configuration is Phase 2.2 work, not an action performed by this planning acceptance. Other binary
+formats require a scoped policy decision when introduced rather than an unrestricted all-binary rule.
+
+Preserve each asset's editable source, designated export, import recipe/manifest and imported Unreal
+asset as one traceable revision set. The handoff record links their paths/revisions and the existing
+dimension, orientation, pivot, assembly-offset and collision expectations. An export or cooked asset
+does not replace its editable source.
+
+Before a reimport, retain a recoverable known-good revision or local checkpoint of the affected
+asset set and recipe. Publication of checkpoints still follows explicit Git confirmation. If a
+reimport breaks scale, hinges, references, materials or collision, preserve the failed result/logs
+locally and restore only the affected known-good asset set. Preserve unrelated edits. Reproduce and
+correct the problem in the small handoff fixture before repeating the recipe across ship assets.
+Do not hide conversion errors with arbitrary per-instance scale or pivot adjustments.
+
+Validate retrieval after the first authorized binary publication, before relying on the workflow
+for repeated production: a fresh checkout must retrieve the actual LFS payloads rather than unresolved
+pointer files; the designated Blender/Unreal test assets must open, and the recorded handoff must
+retain expected scale, orientation, pivots and collision. Record the revision, tool/recipe versions,
+observed results and remaining untested checks. VS1-T02 owns the repository/storage boundary proof;
+the existing handoff fixture owns import/reimport behavior. No fresh checkout or editor test has run.
+
+References: [GitHub LFS overview](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
+and [repository tracking configuration](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage).
+This increment changes documentation only. It creates no `.gitattributes`, tracking rules, assets,
+exports, backups or clones, and performs no LFS setup, upload, restoration or history migration.
 
 ## Accepted Blender To Unreal Handoff Conventions — Fixture Proof Pending
 

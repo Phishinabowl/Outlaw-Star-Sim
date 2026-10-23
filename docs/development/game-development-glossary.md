@@ -366,6 +366,11 @@ initial naming convention and folder layout live in the
 | Source asset / export / generated output | Editable original / handoff representation / rebuildable output such as a cache. |
 | Git / GitHub | Version-history system / hosting and collaboration service for repositories. |
 | Git LFS — Large File Storage | Stores designated large file contents separately while Git tracks pointers. Does not make binary files easy to merge. |
+| LFS pointer / payload | Small reference stored in Git / actual binary content retrieved through LFS. An unresolved pointer is not a usable Blender or Unreal asset. |
+| .gitattributes | Repository rules assigning handling to file paths, including LFS tracking. Separate from `.gitignore`, which controls normal addition of untracked files. |
+| Handoff manifest / recipe | Record linking source, export and imported asset revisions / instructions and settings used to reproduce the handoff. |
+| Known-good checkpoint / rollback | Recoverable version saved before a risky change / restoring the affected earlier state while preserving unrelated edits. |
+| Fresh-checkout proof | Retrieve a recorded revision into a separate checkout and verify its real binary contents and test assets work without relying on the original working folder. |
 | .gitignore | Excludes matching untracked files from normal Git addition; does not untrack already committed files. |
 | Build / cook / package | Compile code / prepare content for the platform / assemble a runnable distribution. |
 | Development / Shipping build | Build configurations emphasizing development diagnostics / distribution; costs and capabilities can differ. |
@@ -375,6 +380,19 @@ initial naming convention and folder layout live in the
 Our source episodes/settei are research inputs, not game assets. Git LFS does not authorize their
 publication. [Epic packaging overview](https://dev.epicgames.com/documentation/unreal-engine/packaging-your-project),
 [project asset policy](../implementation/phase-1-4-architecture-asset-validation-draft.md).
+
+For example, keep a cylinder's editable `.blend`, designated `.fbx`, Unreal mesh and import recipe
+linked. If a reimport moves its pivot or closes its collision opening, restore the affected known-good
+set and fix the recipe on the small fixture before applying it across the ship. Keeping only the
+export would lose part of the editable authoring workflow.
+
+The [accepted storage/recovery contract](../implementation/phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23)
+assigns Blender originals, designated FBX exports and owned Unreal assets/maps to planned LFS storage;
+text remains in ordinary Git, generated outputs are ignored, and reference media stays local-only.
+This is a planning decision, not evidence that LFS is configured or asset recovery has been tested.
+[GitHub's LFS explanation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
+and [tracking configuration](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage)
+explain the pointer and repository-rule mechanics.
 
 ## MCP And Development Automation
 

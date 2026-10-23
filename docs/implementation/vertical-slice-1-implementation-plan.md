@@ -2,7 +2,7 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 / 2026-10-11 |
+| Created / last edited | 2026-10-07 / 2026-10-23 |
 | Status | Phases 1.1–1.3 complete; Phase 1.4 planning/discussion in progress; implementation not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
@@ -337,7 +337,7 @@ choice does not authorize setup or verify an MCP connection.
 
 - [ ] Select project name/path, minimum C++ ownership, Blueprint configuration boundary, map/test/evidence layout and input/camera approach; keep illustrative APIs out of the accepted registry until reviewed.
 - [ ] Specify a shared command/query path, result lifecycle and reset ownership with no external transport or second readiness writer.
-- [ ] Agree publication/versioning for owned maps/Blueprints/proxy assets and whether Git LFS is needed before their first commit; keep source media excluded.
+- [ ] Review the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23), including ordinary-Git/LFS/generated boundaries and fresh-checkout proof; keep source media excluded. Tracking configuration and retrieval/import tests remain later authorized work.
 - [ ] Choose proxy production approach, limited renderer/lighting settings, primary-host budget and test session conditions; verify any required Blender/tool work separately from assumptions.
 - [ ] Record Blender/Unreal MCP selection or deferral using the editor-automation contract: actual versions/client compatibility, pinned source/license/dependencies, isolation, bounded tools, configuration ownership and fallback. Neither connector is required for slice acceptance.
 - [ ] Specify Blender→Unreal units, orientation, pivots, export/import/collision and recipe/binary ownership; nominate a known-size handoff fixture before repeated geometry production.
@@ -382,7 +382,7 @@ choice does not authorize setup or verify an MCP connection.
 **Prerequisite:** 2.1 and accepted project/asset policy. **Deliverable:** smallest agreed C++ project and neutral test map.
 
 - [ ] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
-- [ ] Apply owned-binary tracking and generated-output exclusions before publishing assets; preserve source folders/working references.
+- [ ] Apply the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): configure owned-binary tracking and generated-output exclusions before publishing assets; preserve editable sources, recipes/manifests and imported assets. Verify actual LFS payload retrieval in a fresh checkout after authorized publication; complete the handoff fixture proof before repeated asset production.
 - [ ] Add concise build/open instructions and repository-relative asset/evidence ownership.
 
 **Validation:** VS1-T02 configuration/source audit; tracked versus ignored files match the accepted policy.
