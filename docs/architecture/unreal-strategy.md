@@ -6,19 +6,29 @@
 
 The chosen Windows toolchain is **Visual Studio Community 2026, MSVC 14.50, Windows SDK 10.0.26100.0**. MSVC 14.50 is the preferred compiler target; installed 14.51 is not build-validated. Any missing component installation is deferred for discussion; no installer or settings change was run.
 
-## Current Read-Only Preflight — 2026-10-23
+## Current Post-Installation Check — 2026-10-23
+
+The [post-installation results and Phase 2.1 closeout proposal](../implementation/phase-2-1-closeout.md)
+record VS **18.11.1 / 18.11.12315.225**, installed .NET Desktop/MAUI workloads and matching **14.50 ATL**
+component plus representative headers/libraries. MSVC **14.50.35739**, SDK **10.0.26100.0** and engine
+**5.8.4** remain available; system .NET SDK **10.0.402** is now present alongside **10.0.204**.
+The earlier three setup gaps are resolved at the availability level. Phase 2.1 closeout was accepted
+on 2026-10-23, with no new installation recommendation. UBT's effective selection, compile/link,
+editor integration and package proof remain unexecuted. No global compiler default was changed.
+
+## Earlier Read-Only Preflight — 2026-10-23
 
 The [Phase 2.1 preflight](../implementation/validation/phase-2-1-tooling-preflight-2026-10-23.md)
 records installed UE **5.8.4 / CL 58902052**, corroborated by Build.version and editor executable
-metadata, while the launcher record still names 5.8.3. Visual Studio is now **18.11.0**. The preferred
+metadata, while the launcher record still named 5.8.3. Visual Studio was **18.11.0**. The preferred
 MSVC **14.50.35739** and SDK **10.0.26100.0** remain available. Blender **5.2.3** is reported installed;
 executable metadata confirms only the 5.2 family. These observations supersede earlier current-version
 claims below without rewriting their dated evidence. Installed 5.8.4 is the recommended first-proof
 candidate within the accepted 5.8 family, not a working-build claim.
 
-.NET Desktop/MAUI and matching ATL queries still do not match. Review the preflight's scoped setup
-recommendations before any mutation. No build, editor/Blender launch, compiler override or installation
-was performed; actual selection remains later build evidence.
+.NET Desktop/MAUI and matching ATL queries did not match at that checkpoint; the later check above
+supersedes those absence findings. No build, editor/Blender launch, compiler override or installation
+was performed by the preflight; actual selection remains later build evidence.
 
 ## Earlier Phase 1.1 inventory
 
@@ -67,9 +77,7 @@ C++ foundations own inspectable, testable, diffable simulation/gameplay state. B
 
 [Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. The [Phase 1.4 draft](../implementation/phase-1-4-architecture-asset-validation-draft.md) records accepted project/module layout and initial rendering candidates. Detailed implementation types, serialization, networking, renderer quality settings and integration compatibility remain unresolved. Reference-derived percentages do not select physics constants.
 
-No Unreal project is created. [Phases 1.1–1.3](../implementation/vertical-slice-1-implementation-plan.md)
-are complete for planning; Phase 1.4 architecture/asset/validation planning is in progress, with
-remaining contracts pending. Phase 1.5 gate review remains unstarted. Phase 2 owns later authorized
-tool/project proof. This supersedes the earlier
-planning-gate deferral, not implementation/installation boundaries. Tool observations are dated;
-this documentation sweep performs no fresh host inventory or build validation.
+No Unreal project is created. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slice-1-implementation-plan.md)
+are complete; guided Phase 2.2 skeleton/repository work only is authorized. Build/editor/package proof
+remains at later checkpoints. This supersedes the earlier planning-gate deferral, not phase boundaries.
+Tool observations are dated; documentation publication does not establish build validation.

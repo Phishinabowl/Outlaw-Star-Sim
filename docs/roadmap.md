@@ -31,7 +31,7 @@ Baseline v1 consolidates the accepted direction into a reviewable planning contr
 
 ## Engine/toolchain direction — recorded, not build-validated
 
-UE **5.8** is intended unless later testing supplies a reason to revisit it; the [2026-10-23 preflight](implementation/validation/phase-2-1-tooling-preflight-2026-10-23.md) identifies installed **5.8.4** despite stale launcher metadata. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. VS metadata now identifies 18.11.0; patched MSVC 14.50 remains installed alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) owns tooling direction; the preflight distinguishes current findings from the [earlier readiness record](implementation/phase-1-1-host-tooling-readiness.md). Remaining setup-gap corrections require separate authorization.
+UE **5.8** is intended unless later testing supplies a reason to revisit it; the preflight identified installed **5.8.4** despite stale launcher metadata. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. The [2026-10-23 post-installation check](implementation/phase-2-1-closeout.md) identifies VS **18.11.1** and resolves the three selected .NET Desktop/MAUI/14.50 ATL setup gaps. Patched MSVC 14.50 remains alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) distinguishes current findings from the [earlier readiness record](implementation/phase-1-1-host-tooling-readiness.md). Phase 2.1 closeout is accepted; effective build selection is not yet proven.
 
 ## Phased implementation plan — accepted planning baseline
 
@@ -72,8 +72,11 @@ validation contracts. Map identifiers and the [deferral schedule](implementation
 were accepted on 2026-10-23. All seven planning items have accepted coverage; Phase 1.4 planning
 closeout was accepted on 2026-10-23. All runtime validation scenarios remain unexecuted. Phase 1.5
 [gate review](implementation/phase-1-5-gate-review.md) is accepted, with explicit authorization on
-2026-10-23 for the read-only 2.1 tooling preflight only. Installation, configuration changes, project
-initialization, modeling and implementation remain unstarted and require their own scope.
+2026-10-23 for the read-only 2.1 tooling preflight. Subsequent scoped owner-run VS installations were
+verified read-only; [Phase 2.1 closeout](implementation/phase-2-1-closeout.md) was accepted on 2026-10-23.
+Phase 2.2 skeleton/repository setup only is explicitly authorized with guided Unreal steps; later
+subphases and modeling/gameplay remain outside that scope. Unreal MCP follows ordinary 2.3 build/editor proof; Blender
+MCP follows the 3.1 player/scale fixture, each as a separately scoped optional local pilot.
 
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 [action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,

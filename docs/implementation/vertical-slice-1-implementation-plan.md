@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phase 1 planning complete; read-only Phase 2.1 preflight authorized; installation/project/gameplay work not authorized |
+| Status | Phase 1 and Phase 2.1 complete; Phase 2.2 only authorized; no gameplay or MCP setup authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 1.5 accepted 2026-10-23; read-only 2.1 tooling preflight |
+| Current checkpoint | Phase 2.1 closeout accepted 2026-10-23; guided Phase 2.2 skeleton/repository setup |
 
 ## Purpose And Placement
 
@@ -35,8 +35,10 @@ The October 7, 2026 planning authorization superseded the earlier hold on
 The user confirmed this plan and its MCP additions for publication on 2026-10-07.
 The user initially authorized Phase 1.1 only; its read-only inventory and host/target decisions are
 complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). Subsequent Phase 1.2/1.3
-planning is also complete; Phase 1.4 closeout and Phase 1.5 gate review are accepted. Only the read-only
-2.1 preflight is authorized; installations, configuration changes and project creation remain unapproved.
+planning is also complete; Phase 1.4 closeout and Phase 1.5 gate review are accepted. The read-only
+2.1 preflight and follow-up verified the scoped repository-owner installations. Phase 2.1 closeout
+was accepted on 2026-10-23. Phase 2.2 skeleton/repository work is explicitly authorized, with guided
+Unreal setup; no automatic 2.3 execution or MCP setup.
 Phase 1.2 began with the opening experience
 and additional targeted references. Its [decision packet](phase-1-2-spatial-motion-decision-packet.md)
 and [closeout package](phase-1-2-closeout-proposal.md) are now accepted for planning. No later
@@ -383,16 +385,15 @@ configuration changes or project initialization. Later Phase 2 operations requir
 
 **Prerequisite:** Phase 1 exit; explicit installation scope if needed. **Deliverable:** recorded actual intended toolchain availability.
 
-**Read-only preflight:** [2026-10-23 availability/policy findings](validation/phase-2-1-tooling-preflight-2026-10-23.md).
-Installed engine files identify 5.8.4, VS metadata identifies 18.11.0, and the patched preferred MSVC
-14.50 / intended SDK remain available. Setup-gap disposition and all effective build-selection proof
-remain open. On 2026-10-23 the repository owner elected to install .NET Desktop, MAUI and matching
-MSVC 14.50 ATL with guided steps. Outcomes await a follow-up inventory; Codex performs no installer
-or configuration changes. Project initialization remains unauthorized; do not start 2.2.
+**Evidence:** [pre-installation preflight](validation/phase-2-1-tooling-preflight-2026-10-23.md) and
+[post-installation results / closeout proposal](phase-2-1-closeout.md), 2026-10-23. VS is now 18.11.1;
+the two .NET workloads and matching 14.50 ATL are verified present. Preferred MSVC 14.50 and intended
+SDK remain available against UE 5.8.4 policy. The repository owner performed installations; Codex
+performed read-only verification. Closeout was accepted on 2026-10-23; 2.2 only is explicitly authorized.
 
-- [ ] Perform only agreed side-by-side compiler/component changes; retain existing tools unless their change is specifically approved.
-- [ ] Recheck actual compiler/SDK/.NET availability against engine configuration and record effective versions/paths for the upcoming build.
-- [ ] Record installation outcomes/limitations without claiming Unreal compile success yet.
+- [x] Perform only agreed side-by-side compiler/component changes; retain existing tools unless their change is specifically approved.
+- [x] Recheck compiler/SDK/.NET availability against engine configuration and record intended versions/paths; actual effective build selection remains Phase 2.3 proof.
+- [x] Record installation outcomes/limitations without claiming Unreal compile success yet.
 
 **Validation:** [Accepted VS1-T01 procedure](validation/foundation-validation-procedures.md#vs1-t01): inventory and engine preferred/banned-family checks; no silent substitution of installed 14.51. Effective selection requires later build evidence.
 **Recovery / deferral:** retain prior installation; diagnose or revert only approved component changes. Engine/toolchain migration requires a reviewed reason.
@@ -400,6 +401,10 @@ or configuration changes. Project initialization remains unauthorized; do not st
 ### Phase 2.2: Project Skeleton And Repository Boundary
 
 **Prerequisite:** 2.1 and accepted project/asset policy. **Deliverable:** smallest agreed C++ project and neutral test map.
+
+**Preparation:** the [Phase 2.1 closeout walkthrough](phase-2-1-closeout.md#next-scope--phase-22-not-yet-authorized)
+outlines this increment, authorized on 2026-10-23. MCP setup is not part of 2.2: the optional Unreal pilot follows
+ordinary 2.3 build/editor proof, and the optional Blender pilot follows the 3.1 player/scale fixture.
 
 - [ ] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
 - [ ] Apply the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): configure owned-binary tracking and generated-output exclusions before publishing assets; preserve editable sources, recipes/manifests and imported assets. Verify actual LFS payload retrieval in a fresh checkout after authorized publication; complete the handoff fixture proof before repeated asset production.
