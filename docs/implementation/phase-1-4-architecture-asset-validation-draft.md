@@ -724,7 +724,10 @@ Codex performs appropriate build/state checks through available tools. The user 
 reviewer for feel, readability and visual fit. Tool success or editor launch alone cannot substitute
 for observing the claimed result; any Computer Use observation still requires specific permission.
 Reuse the existing scenario IDs and record evidence with them rather than creating a second checklist
-or validation framework. Exact per-scenario procedures remain to be defined at their owning checkpoints.
+or validation framework. The [foundation procedures](validation/foundation-validation-procedures.md)
+specify VS1-T01–T04, accepted for planning 2026-10-23: availability versus effective selection, repository/LFS retrieval,
+ordinary build/editor reopening and neutral packaged execution. All remain unexecuted. Other
+per-scenario procedures remain to be defined at their owning checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
 
 ## Next Review

@@ -374,7 +374,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Recheck actual compiler/SDK/.NET availability against engine configuration and record effective versions/paths for the upcoming build.
 - [ ] Record installation outcomes/limitations without claiming Unreal compile success yet.
 
-**Validation:** VS1-T01 inventory and engine preferred/banned-family checks; no silent substitution of installed 14.51.
+**Validation:** [Accepted VS1-T01 procedure](validation/foundation-validation-procedures.md#vs1-t01): inventory and engine preferred/banned-family checks; no silent substitution of installed 14.51. Effective selection requires later build evidence.
 **Recovery / deferral:** retain prior installation; diagnose or revert only approved component changes. Engine/toolchain migration requires a reviewed reason.
 
 ### Phase 2.2: Project Skeleton And Repository Boundary
@@ -385,7 +385,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Apply the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): configure owned-binary tracking and generated-output exclusions before publishing assets; preserve editable sources, recipes/manifests and imported assets. Verify actual LFS payload retrieval in a fresh checkout after authorized publication; complete the handoff fixture proof before repeated asset production.
 - [ ] Add concise build/open instructions and repository-relative asset/evidence ownership.
 
-**Validation:** VS1-T02 configuration/source audit; tracked versus ignored files match the accepted policy.
+**Validation:** [Accepted VS1-T02 procedure](validation/foundation-validation-procedures.md#vs1-t02): configuration/source audit and staged retrieval/open proof; tracked versus ignored files match the accepted policy.
 **Recovery / deferral:** preserve pre-creation baseline and user files; replace only this skeleton if layout is rejected. No gameplay/ship geometry in this checkpoint.
 
 ### Phase 2.3: Reproducible Build And Editor Proof
@@ -396,7 +396,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Open the neutral project/map through approved methods; inspect startup/build logs and demonstrate basic input using identified visual evidence.
 - [ ] Repeat after restart so hot-reload state is not the only proof of compatibility.
 
-**Validation:** VS1-T03 build/editor result with commands/logs and observed launch; no fake pass from binaries merely existing.
+**Validation:** [Accepted VS1-T03 procedure](validation/foundation-validation-procedures.md#vs1-t03): build/editor result with commands/logs and observed launch; no fake pass from binaries merely existing.
 **Recovery / deferral:** iterate skeleton/tool selection rather than adding gameplay to hide build issues; keep engine migration separate.
 
 **Optional Unreal MCP pilot checkpoint (after ordinary build/editor proof):**
@@ -416,7 +416,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] If Unreal MCP was adopted, prove the package runs with no MCP client/server and record development automation exclusion/disablement; otherwise record pilot deferral/fallback.
 - [ ] Preserve recipe/version identity and keep generated package output out of ordinary source commits.
 
-**Validation:** VS1-T04 package proof; later full slice acceptance is not implied.
+**Validation:** [Accepted VS1-T04 procedure](validation/foundation-validation-procedures.md#vs1-t04): actual neutral package startup/input/exit and repeat launch outside the editor; later full slice acceptance is not implied.
 **Recovery / deferral:** return to 2.2/2.3 for packaging dependencies; do not wait until final slice delivery to expose foundational cook failures.
 
 ### Phase 2 Exit Gate
@@ -758,7 +758,8 @@ These IDs identify planned scenarios, not already implemented tests. The accepte
 combines code/state, in-world and packaged-build checks. Codex performs appropriate tool-driven build/state
 checks; the user is the main reviewer for playtest feel, readability and visual fit. Record starting
 state, build/settings, steps, expected and actual results, appropriate evidence, performer and untested
-parts against these IDs. Exact scenario procedures remain to be defined at their owning checkpoints.
+parts against these IDs. The [T01–T04 foundation procedures](validation/foundation-validation-procedures.md)
+are accepted for planning as of 2026-10-23, not executed. Other scenario procedures remain to be defined at their owning checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
 
