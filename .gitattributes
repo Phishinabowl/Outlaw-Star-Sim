@@ -1,0 +1,7 @@
+# Project-owned authoring sources and designated rigid-mesh handoffs
+assets/blender/**/*.blend filter=lfs diff=lfs merge=lfs -text
+assets/exports/**/*.fbx filter=lfs diff=lfs merge=lfs -text
+
+# Project-owned Unreal content, including versioned development fixtures
+Unreal/OutlawStarSim/Content/**/*.uasset filter=lfs diff=lfs merge=lfs -text
+Unreal/OutlawStarSim/Content/**/*.umap filter=lfs diff=lfs merge=lfs -text

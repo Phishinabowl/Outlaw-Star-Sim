@@ -77,7 +77,8 @@ C++ foundations own inspectable, testable, diffable simulation/gameplay state. B
 
 [Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. The [Phase 1.4 draft](../implementation/phase-1-4-architecture-asset-validation-draft.md) records accepted project/module layout and initial rendering candidates. Detailed implementation types, serialization, networking, renderer quality settings and integration compatibility remain unresolved. Reference-derived percentages do not select physics constants.
 
-No Unreal project is created. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slice-1-implementation-plan.md)
-are complete; guided Phase 2.2 skeleton/repository work only is authorized. Build/editor/package proof
+The Blank C++ project skeleton is generated; [setup observations](../development/unreal-project-setup.md)
+record its current limits. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slice-1-implementation-plan.md)
+and Phase 2.2 skeleton/repository setup are complete; 2.2 closeout is accepted. Reproducible build/editor/package proof
 remains at later checkpoints. This supersedes the earlier planning-gate deferral, not phase boundaries.
 Tool observations are dated; documentation publication does not establish build validation.

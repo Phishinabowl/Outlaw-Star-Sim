@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phase 1 and Phase 2.1 complete; Phase 2.2 only authorized; no gameplay or MCP setup authorized |
+| Status | Phase 1 and Phase 2.1–2.2 complete; Phase 2.3 and MCP setup not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 2.1 closeout accepted 2026-10-23; guided Phase 2.2 skeleton/repository setup |
+| Current checkpoint | Phase 2.2 closeout accepted 2026-10-23; stop before 2.3/MCP |
 
 ## Purpose And Placement
 
@@ -27,8 +27,9 @@ project facts, deployment policies or framework lifecycles are imported from the
 ## Current State And Next Action
 
 Reference/research is substantially complete for defining this bounded slice. Baseline v1 is approved
-and published. No Unreal project, graybox, gameplay code, machinery rig or playable build exists.
-No planned runtime tests have run. Installation observations are not compilation proof.
+and published. The Blank C++ OutlawStarSim skeleton has been generated at its accepted location;
+the neutral map is saved and selected for editor/game startup. No ship graybox, slice gameplay or machinery rig exists.
+No planned runtime tests have run; initial wizard activity is not Phase 2.3 reproducible build proof.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
 **introducing the planning gate**. Its scope covered this document and navigation/status updates only.
@@ -182,6 +183,7 @@ Do not start a dependent checkpoint while its prerequisite gate has an unresolve
 | Project name/path/module/test/evidence layout | 1.4 | Must precede creation; avoid speculative multi-module/plugin hierarchy. |
 | Animation rate, reach and camera margins | 1.2/1.3; refine 3/6 | Provisional E/F, not canonical millimetres/seconds; adjust only with fit/interaction evidence. |
 | Flight, sub-ether, combat, damage, crew/LLM, networking/adapters | Outside Slice 1 | Keep compatibility seams/reservations only; no owning implementation phase in this plan. |
+| Planetary coordinates, terrain/atmosphere, day/night cycles and celestial lighting | Deferred beyond Slice 1; review when planetary/space-flight scope is proposed | Evaluate geographic/planet-relative frames, planet rotation/orbits and star-relative illumination/occlusion against actual requirements. SunPosition/GeoReferencing are optional candidates, not adopted dependencies; Earth solar equations are not a general fictional-system model. Games Blank does not prevent later plugin adoption. No planet generation, orbital model, plugin enablement or new Slice 1 lighting requirement follows. |
 | Detailed art, advanced fluid/physics, final rigging, every room | Outside Slice 1 | Replaceable proxies now; no polishing phase that expands these into required scope. |
 | Save/load, installer, store release, hosted CI farm | Deferred | Fresh-run reset/local package proof required; these systems are not. |
 
@@ -406,9 +408,18 @@ performed read-only verification. Closeout was accepted on 2026-10-23; 2.2 only 
 outlines this increment, authorized on 2026-10-23. MCP setup is not part of 2.2: the optional Unreal pilot follows
 ordinary 2.3 build/editor proof, and the optional Blender pilot follows the 3.1 player/scale fixture.
 
+**Closeout accepted 2026-10-23:** [guided setup and repository checks](../development/unreal-project-setup.md).
+Scoped `.gitattributes` and repository-local LFS setup are prepared; representative attributes and
+source/generated ignore checks passed. The generated descriptor and one runtime module now exist at
+the accepted path; the Basic neutral map is saved at `Content/XGP/Development/L_NeutralProof.umap`
+and selected as both editor startup and game default map in saved configuration. Guided IDE setup
+reports green overall status. The [repository review and closeout proposal](phase-2-2-closeout.md)
+records local binary/boundary checks and the completed Android file-server disable/token cleanup.
+Publication, LFS retrieval and reopening evidence remain pending. No separate 2.3 or MCP setup has started.
+
 - [ ] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
 - [ ] Apply the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): configure owned-binary tracking and generated-output exclusions before publishing assets; preserve editable sources, recipes/manifests and imported assets. Verify actual LFS payload retrieval in a fresh checkout after authorized publication; complete the handoff fixture proof before repeated asset production.
-- [ ] Add concise build/open instructions and repository-relative asset/evidence ownership.
+- [x] Add concise build/open instructions and repository-relative asset/evidence ownership.
 
 **Validation:** [Accepted VS1-T02 procedure](validation/foundation-validation-procedures.md#vs1-t02): configuration/source audit and staged retrieval/open proof; tracked versus ignored files match the accepted policy.
 **Recovery / deferral:** preserve pre-creation baseline and user files; replace only this skeleton if layout is rejected. No gameplay/ship geometry in this checkpoint.
