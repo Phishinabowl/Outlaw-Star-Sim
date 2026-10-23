@@ -547,7 +547,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Submit requests with actual player/station context to Phase 4 validation; bind progress/results from that shared state.
 - [ ] Make unavailable/in-progress/completed interactions readable without displaying implementation class names or debug telemetry as ordinary gameplay.
 
-**Validation:** VS1-I01 in-world targeting/locality/feedback and the relevant state regression cases.
+**Validation:** [Accepted VS1-I01 procedure](validation/interaction-validation-procedures.md#vs1-i01): in-world targeting/locality/equipment/focus feedback and the relevant state regression cases.
 **Recovery / deferral:** adjust adapter/reach/camera presentation without weakening authoritative locality; detailed UI styling/controller platforms stay deferred.
 
 ### Phase 5.2: Exterior Hatch And Boarding
@@ -558,7 +558,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Respect M09 sweep/operator access and distinct hatch identities; no unreviewed airlock pressure simulation.
 - [ ] Verify approach, request, movement, traversal and permitted closure with the same player body.
 
-**Validation:** VS1-I02 entry/collision proof, MC-05/06 where affected, VS-01; no mocked hatch-complete pass.
+**Validation:** [Accepted VS1-I02 procedure](validation/interaction-validation-procedures.md#vs1-i02): independent hatch/loaded boarding/collision proof, MC-05/06 where affected, VS-01; no mocked hatch-complete pass.
 **Recovery / deferral:** restore the accepted static route or revise only chosen hatch/connection E geometry; rerun affected fit tests if that identity/placement changes.
 
 ### Phase 5.3: Limited-Service Initialization And Bridge Access
@@ -569,7 +569,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Preserve the distinction between a usable early bridge and engines/main services not yet operating.
 - [ ] Expose the same availability/prerequisite status through physical controls and deterministic guidance.
 
-**Validation:** VS1-I03 initial-service success/rejection/reset cases; record the F source assumption explicitly.
+**Validation:** [Accepted VS1-I03 procedure](validation/interaction-validation-procedures.md#vs1-i03): actual laptop bootstrap/limited-service success, unavailable-service feedback and reset; record E/F service assumptions explicitly.
 **Recovery / deferral:** return to 1.3 if the early-power premise contradicts evidence or creates an unplayable deadlock; no battery chemistry/capacity or service endurance added.
 
 ### Phase 5.4: Boarding-To-Engineering Interaction Review
@@ -761,6 +761,7 @@ state, build/settings, steps, expected and actual results, appropriate evidence,
 parts against these IDs. The [T01–T04 foundation procedures](validation/foundation-validation-procedures.md)
 are accepted for planning as of 2026-10-23, not executed. The [G01–G03 spatial procedures](validation/spatial-validation-procedures.md)
 are accepted for planning as of 2026-10-23, also unexecuted. The [S01–S03 state/lifecycle procedures](validation/state-lifecycle-validation-procedures.md)
+are accepted for planning as of 2026-10-23 and unexecuted. The [I01–I03 interaction procedures](validation/interaction-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.

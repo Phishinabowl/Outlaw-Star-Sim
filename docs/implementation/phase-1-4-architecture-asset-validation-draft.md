@@ -730,6 +730,8 @@ ordinary build/editor reopening and neutral packaged execution. The [spatial pro
 specify VS1-G01–G03, accepted for planning 2026-10-23, distinguishing shared-body/route/proxy-clearance proof from actual
 machinery operation and future reservations. The [state/lifecycle procedures](validation/state-lifecycle-validation-procedures.md)
 specify VS1-S01–S03, accepted for planning 2026-10-23: shared ownership, command/results and reset/interruption/pause boundaries.
+The [interaction procedures](validation/interaction-validation-procedures.md) specify VS1-I01–I03,
+accepted for planning 2026-10-23: physical targeting/focus, independent hatch/boarding and limited-service initialization.
 All remain unexecuted. Other
 per-scenario procedures remain to be defined at their owning checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
