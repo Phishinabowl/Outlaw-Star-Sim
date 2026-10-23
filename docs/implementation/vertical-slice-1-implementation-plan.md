@@ -357,6 +357,7 @@ exact implementation/recipe details have named later checkpoints. Planning close
 **Prerequisite:** 1.1–1.4 reviewable outputs. **Deliverable:** accepted decisions or explicit revisions; scoped Phase 2 proposal.
 
 - [ ] Reconcile VS-D01–07, accepted E/F assumptions, validation IDs and any necessary Baseline v1 amendment without silently changing authority.
+- [ ] Include the accepted visual-development planning addition: Phase 3.2A reconstruction sheets/selected concept views before room grayboxing, followed by targeted refinements before affected Phase 6 machinery work. Review its scope and evidence/publication boundaries without generating art during this gate.
 - [ ] Review the actual installation, project-creation, binary publication and test operations proposed for Phase 2.
 - [ ] Identify blocking decisions versus parallel research and confirm the first independent execution increment.
 
@@ -452,9 +453,39 @@ exact implementation/recipe details have named later checkpoints. Planning close
 
 **Pilot validation / recovery:** actual handoff fit and recoverable fixture changes under the [editor-automation contract](../architecture/editor-automation.md). Restore only owned pilot assets/settings on failure; no source edits, inferred canon or dependency on MCP availability.
 
+### Phase 3.2A: Reconstruction Sheets And Visual Direction
+
+**Prerequisite:** 3.1 scale/player fixture; accepted Phase 1.2 layout and Phase 1.3 behavior contracts.
+**Deliverable:** bounded, reviewable visual references for the next graybox increment, not finished art
+or a replacement for Baseline v1. This added subphase precedes existing 3.2; later IDs are unchanged.
+Its planning scope is accepted; art generation and execution remain separately authorized work.
+
+- [ ] Reconcile relevant anime/settei views into annotated source pointers and coordinated room plans,
+  side sections and machinery endpoint/sweep sheets where needed. Start with cockpit and engineering
+  fit risks, plus hangar reveal composition/lighting; cover remaining route connections only as needed
+  for 3.2. Full-ship concept art and every room are not prerequisites.
+- [ ] Base views on one shared provisional layout and the player/scale fixture. Label observed source
+  details, unresolved contradictions, E reconstruction assumptions and F gameplay adaptations; retain
+  evidence IDs and revision relationships. Drawings do not establish measured canonical dimensions.
+- [ ] Use selected AI-generated perspective concepts where useful for appearance, atmosphere or
+  composition. Iterate with maintainer feedback and retain the accepted visual direction and relevant
+  unresolved points. Image acceptance does not approve invented dimensions, change gameplay or prove
+  cross-view consistency, clearance or actual fit; coordinated layout sheets govern geometry proposals.
+- [ ] Record the bounded sheet/view revision accepted for the next modeling increment and its links
+  to authoritative layout/evidence records. Keep source media/derivatives local-only; generated-image
+  retention and publication follow a scoped asset-format/publication review before committing images.
+  Do not extend the existing LFS policy to new image formats implicitly.
+
+**Validation:** layout views agree on critical openings, equipment placement, occupant paths and
+reserved motion volumes sufficiently to guide 3.2/3.3; the maintainer reviews visual direction.
+This is visual-reference acceptance, not a pass for VS1-G/MC checks. Polished artwork is not required.
+**Recovery / deferral:** revise only affected views/assumptions, then build simple geometry and use
+actual 3.2–3.4 observations to update both sheets and proxies. Preserve prior accepted revisions and
+flag changes that reopen Phase 1.2 constraints. Detailed production art remains outside this slice.
+
 ### Phase 3.2: Hangar, Hull And Required Route
 
-**Prerequisite:** 3.1 and VS-D01/02 accepted. **Deliverable:** minimum supported hull/context and connected walkable route.
+**Prerequisite:** 3.1, bounded 3.2A visual-reference acceptance and VS-D01/02 accepted. **Deliverable:** minimum supported hull/context and connected walkable route.
 
 - [ ] Place hull envelope/supports, chosen entrance, bridge, passage and engineering proxies at the agreed E layout.
 - [ ] Include the user-approved minimal dining/common-area shell in the chosen route, once the Phase 1.2 connection/dimension proposal is accepted; preserve unresolved lounge identity, separate hatch records and future spatial reservations.
@@ -481,6 +512,7 @@ exact implementation/recipe details have named later checkpoints. Planning close
 - [ ] Demonstrate traversal/reach in both views with proxies at low/raised/extended endpoints and placeholder occupant included.
 - [ ] Check operator escape from all-four-extended engineering, bridge doorway/cap/cylinder coexistence and below-floor hull fit.
 - [ ] Record camera clipping, collisions, inaccessible controls and E revisions; identify MC checks that remain reservation-only.
+- [ ] Reconcile affected 3.2A sheets/concepts with observed graybox changes; retain visual proposals separately from demonstrated fit and accepted geometry revisions.
 
 **Validation:** VS1-G01–G03, applicable MC checks and VS-02/03/07; visual results require observed evidence.
 **Recovery / deferral:** return to 3.2/3.3 or 1.2 for structural contradictions; do not shrink canonical mechanisms/player secretly or add another deck to pass.
@@ -596,6 +628,27 @@ exact implementation/recipe details have named later checkpoints. Planning close
 - [ ] Maintainer accepts the interaction/service increment before apparatus and engineering depend on it.
 
 ## Phase 6: Navigation Apparatus, Seating And Engineering Preparation
+
+**Targeted visual-refinement checkpoint — before affected machinery implementation:**
+
+**Prerequisite:** Phase 5 exit and accepted Phase 3 occupied layout/clearance evidence.
+**Deliverable:** only the additional views/annotations needed to remove ambiguity for the next
+apparatus, seat or engineering increment. This is not a new full-room concept-art phase.
+
+- [ ] Compare the validated graybox and current 3.2A sheets with source evidence for the affected
+  mechanism. Clarify moving-part separation, pivots/slide axes, visible stages, occupant/operator paths
+  and neighboring clearance before implementing that mechanism in 6.1, 6.2 or 6.3.
+- [ ] Refine coordinated sheets and, where useful, iterate selected concept views with maintainer
+  feedback. Preserve accepted choreography and E/F labels; do not let a generated view override actual
+  fit, evidence or approved behavior. Existing sufficient sheets need no cosmetic redraw.
+- [ ] Record the reviewed revision and outstanding tuning items at the affected checkpoint; repeat
+  dependent fit checks if the proposal changes geometry or sweeps. Apply the same source/image
+  retention and publication boundaries as 3.2A.
+
+**Validation / recovery:** affected geometry, motion and presentation are sufficiently clear for the
+bounded machinery increment. Actual motion/occupied-clearance proof remains VS1-M01–M03 and 6.4.
+Return to the affected sheet/graybox on conflict; reopen structural assumptions only when necessary.
+No detailed art, new mechanics or full production rigs are added by this checkpoint.
 
 ### Phase 6.1: Placeholder-Occupied Navigation Apparatus
 
