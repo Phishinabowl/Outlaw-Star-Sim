@@ -383,6 +383,13 @@ configuration changes or project initialization. Later Phase 2 operations requir
 
 **Prerequisite:** Phase 1 exit; explicit installation scope if needed. **Deliverable:** recorded actual intended toolchain availability.
 
+**Read-only preflight:** [2026-10-23 availability/policy findings](validation/phase-2-1-tooling-preflight-2026-10-23.md).
+Installed engine files identify 5.8.4, VS metadata identifies 18.11.0, and the patched preferred MSVC
+14.50 / intended SDK remain available. Setup-gap disposition and all effective build-selection proof
+remain open. On 2026-10-23 the repository owner elected to install .NET Desktop, MAUI and matching
+MSVC 14.50 ATL with guided steps. Outcomes await a follow-up inventory; Codex performs no installer
+or configuration changes. Project initialization remains unauthorized; do not start 2.2.
+
 - [ ] Perform only agreed side-by-side compiler/component changes; retain existing tools unless their change is specifically approved.
 - [ ] Recheck actual compiler/SDK/.NET availability against engine configuration and record effective versions/paths for the upcoming build.
 - [ ] Record installation outcomes/limitations without claiming Unreal compile success yet.

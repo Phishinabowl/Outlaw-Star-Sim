@@ -6,10 +6,24 @@
 
 The chosen Windows toolchain is **Visual Studio Community 2026, MSVC 14.50, Windows SDK 10.0.26100.0**. MSVC 14.50 is the preferred compiler target; installed 14.51 is not build-validated. Any missing component installation is deferred for discussion; no installer or settings change was run.
 
-## Current Phase 1.1 inventory
+## Current Read-Only Preflight — 2026-10-23
 
-The [dated readiness record](../implementation/phase-1-1-host-tooling-readiness.md) owns the latest
-observed host/tool inventory and limitations. MSVC 14.50 is now installed alongside 14.51; actual
+The [Phase 2.1 preflight](../implementation/validation/phase-2-1-tooling-preflight-2026-10-23.md)
+records installed UE **5.8.4 / CL 58902052**, corroborated by Build.version and editor executable
+metadata, while the launcher record still names 5.8.3. Visual Studio is now **18.11.0**. The preferred
+MSVC **14.50.35739** and SDK **10.0.26100.0** remain available. Blender **5.2.3** is reported installed;
+executable metadata confirms only the 5.2 family. These observations supersede earlier current-version
+claims below without rewriting their dated evidence. Installed 5.8.4 is the recommended first-proof
+candidate within the accepted 5.8 family, not a working-build claim.
+
+.NET Desktop/MAUI and matching ATL queries still do not match. Review the preflight's scoped setup
+recommendations before any mutation. No build, editor/Blender launch, compiler override or installation
+was performed; actual selection remains later build evidence.
+
+## Earlier Phase 1.1 inventory
+
+The [dated readiness record](../implementation/phase-1-1-host-tooling-readiness.md) owns the October 7
+observed host/tool inventory and limitations. MSVC 14.50 was installed alongside 14.51; actual
 compiler product version 14.50.35739 clears the engine's banned range. The corrected Unreal Test Adapter
 query confirms it is installed. Remaining .NET workloads/matching ATL are proposed setup additions;
 no install or build was performed. This supersedes the earlier absence observations below.

@@ -31,7 +31,7 @@ Baseline v1 consolidates the accepted direction into a reviewable planning contr
 
 ## Engine/toolchain direction — recorded, not build-validated
 
-UE **5.8** is intended unless later testing supplies a reason to revisit it; **5.8.3** is installed. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. Phase 1.1 confirms patched MSVC 14.50 is installed alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) owns tooling direction; the [dated readiness record](implementation/phase-1-1-host-tooling-readiness.md) owns current inventory and remaining proposed setup gaps.
+UE **5.8** is intended unless later testing supplies a reason to revisit it; the [2026-10-23 preflight](implementation/validation/phase-2-1-tooling-preflight-2026-10-23.md) identifies installed **5.8.4** despite stale launcher metadata. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. VS metadata now identifies 18.11.0; patched MSVC 14.50 remains installed alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) owns tooling direction; the preflight distinguishes current findings from the [earlier readiness record](implementation/phase-1-1-host-tooling-readiness.md). Remaining setup-gap corrections require separate authorization.
 
 ## Phased implementation plan — accepted planning baseline
 
