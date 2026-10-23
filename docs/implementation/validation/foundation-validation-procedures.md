@@ -82,7 +82,9 @@ Visual Studio or select extra components. Repeat affected checks after an author
 
 **Project, asset storage and generated/source boundaries**
 
-**Owning checkpoint:** 2.2; retrieval after the first authorized binary publication.
+**Owning checkpoints:** 2.2 boundary/publication/file-recovery evidence; retrieved-map editor
+corroboration in 2.3. The later Blender handoff fixture belongs to 3.1 before repeated geometry production.
+Completion of 2.2 does not require executing those later checkpoints or declaring the whole scenario passed.
 
 **Prerequisites / starting state:** 2.1 readiness sufficient for the authorized skeleton scope and the
 accepted [storage/recovery contract](../phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23).

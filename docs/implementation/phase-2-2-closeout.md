@@ -4,7 +4,7 @@
 | --- | --- |
 | Prepared | 2026-10-23 |
 | Reviewed baseline | `main` at `7e4381a`, plus uncommitted Phase 2.2 changes |
-| Status | Phase 2.2 closeout accepted 2026-10-23; publication authorized; recovery/open proof remains scheduled |
+| Status | Phase 2.2 fully closed; accepted delivery published as `49511af` and fresh-clone file recovery verified |
 | Scope | Blank C++ skeleton, neutral map, IDE setup and repository/source boundaries |
 | Evidence | File/configuration inspection; Git status/diff/attribute/ignore checks; SHA-256; repository-owner editor/IDE screenshots and reported restarts |
 | Authority | [Phase 2.2](vertical-slice-1-implementation-plan.md#phase-22-project-skeleton-and-repository-boundary), [VS1-T02](validation/foundation-validation-procedures.md#vs1-t02) |
@@ -18,7 +18,7 @@
 | Map | Basic level at `Content/XGP/Development/L_NeutralProof.umap`; sole Content file, 49,070 bytes | Screenshot shows floor/sky/lighting and All Saved; runtime and retrieved-copy proof pending |
 | Defaults | EditorStartupMap and GameDefaultMap select `/Game/XGP/Development/L_NeutralProof.L_NeutralProof` | Saved INI verified; default-map relaunch not performed in this review |
 | IDE | Scoped naming, HLSL JSON, aligned `.vsconfig`, VisualStudioTools 2.8 source package | Green overall status observed; good status after restart reported; tests/diagnostics unverified |
-| LFS | Owned Blender/FBX/Unreal patterns configured; actual map attributes verified | No staged pointer, upload or retrieval yet |
+| LFS | Owned Blender/FBX/Unreal patterns configured; actual map attributes and committed pointer verified; map uploaded and recovered from GitHub | Retrieved-map editor opening and later Blender handoff remain pending |
 | Ignores | Project/plugin Binaries, Intermediate, Saved, DDC, solution files and protected source/frame/local paths excluded | No files tracked under checked protected source/frame or Unreal paths at this pre-publication checkpoint |
 
 Working map SHA-256:
@@ -61,10 +61,42 @@ Publication review verifies the staged map's LFS pointer hash and size match the
 The full staged whitespace check reports existing whitespace in the retained Microsoft plugin
 distribution; vendor files are preserved rather than reformatted. Owned files are checked separately.
 
-VS1-T02 has local layout/attribute/ignore audit evidence, not a full pass. Confirmation must review
-the staged LFS pointer and intended diff before publishing. Fresh-checkout retrieval follows authorized
-publication; retrieved-map opening is coordinated with authorized editor proof. The later Blender
-handoff fixture remains deferred; no Blender assets exist to validate here.
+VS1-T02 has local layout/attribute/ignore audit, publication and fresh-clone payload recovery evidence,
+not a full pass. The staged LFS pointer and publication set were reviewed before commit `49511af`;
+push uploaded one LFS object. Retrieved-map opening is coordinated with authorized editor proof.
+The later Blender handoff fixture remains deferred; no Blender assets exist to validate here.
+
+## Fresh-Clone Recovery Result — 2026-10-23
+
+Explicitly authorized recovery used a fresh clone from
+`https://github.com/Phishinabowl/Outlaw-Star-Sim.git`, not a local clone/copy. Commands:
+
+```text
+git clone --single-branch --branch main https://github.com/Phishinabowl/Outlaw-Star-Sim.git .local/recovery-check-49511af
+git rev-parse HEAD
+git lfs pull
+git lfs env
+git status --porcelain
+```
+
+Commands after cloning ran in the temporary clone. HEAD was
+`49511af2a932e630a224c9f3e2637c50e9757058`. LFS reported the GitHub endpoint, clone-local object
+storage and no reference directories. The clone had no Git object alternates. The recovered map
+and the original each measured **49,070 bytes**, with the SHA-256 recorded above. A clone-local
+LFS payload object was present; the recovered working map was actual binary content, not pointer text.
+The clone's final worktree status was clean. These checks passed through file inspection and Git/LFS;
+no Unreal process was started.
+
+An initial restricted-process status check failed to start the Git/LFS filter process. Repeating the
+same read-only status command with runtime approval succeeded; this was not an asset mismatch.
+
+Cleanup used native PowerShell after verifying the resolved absolute target was the exact designated
+folder beneath the workspace and that its ancestor path had no reparse points. The complete temporary
+clone, including `.git` and its LFS storage, was deleted. A subsequent existence check confirmed the
+folder was absent. Only this authored result record is retained; no temporary checkout remains.
+
+Retrieved-map editor opening is **not executed**. Recreate an isolated checkout when that separately
+authorized validation is performed; this file recovery result does not establish engine compatibility.
 
 VS1-T01 effective compiler/SDK selection, VS1-T03 independent non-Live-Coding compile/repeated editor
 proof, and VS1-T04 packaging remain at later checkpoints. Incidental wizard/plugin rebuild activity
@@ -77,6 +109,8 @@ not recovery sources. Do not reset owner changes or delete caches to obtain a cl
 ## Accepted Gate
 
 Scoped 2.2 delivery and publication were approved on 2026-10-23. The Android file-server
-configuration correction is complete. Carry scheduled retrieval/open checks without marking all of T02 passed.
+configuration correction and file recovery are complete. No Phase 2.2 tasks remain open.
+VS1-T02 editor corroboration belongs to Phase 2.3; the Blender handoff fixture belongs to Phase 3.1.
+These later checks do not reopen 2.2 or imply a full T02 pass before its editor evidence exists.
 Closeout acceptance/publication does not automatically authorize 2.3, packaging, MCP, gameplay or
 modeling. Phase 2.3 and MCP remain unstarted and unauthorized.

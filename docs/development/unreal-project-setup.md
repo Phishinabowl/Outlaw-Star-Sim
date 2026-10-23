@@ -1,8 +1,9 @@
 # Guided Unreal Project Setup — Phase 2.2
 
-Status: Phase 2.2 closeout accepted 2026-10-23; skeleton/map saved and local repository review complete.
+Status: Phase 2.2 fully closed; closeout accepted 2026-10-23 and file recovery verified.
 The [closeout proposal](../implementation/phase-2-2-closeout.md) records disabled Android file-server
-settings and the cleared token; publication is authorized, with scheduled recovery proof still pending.
+settings and the cleared token. Publication and fresh-clone file recovery are verified for `49511af`;
+retrieved-map editor opening belongs to Phase 2.3 and the handoff fixture to Phase 3.1, not open 2.2 work.
 The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md#phase-22-project-skeleton-and-repository-boundary)
 owns scope and completion. These instructions are a guide, not evidence that steps have been performed.
 
@@ -142,7 +143,8 @@ Repository preparation performed 2026-10-23: added scoped root `.gitattributes` 
 representative direct/nested owned asset paths and ordinary treatment for C++/protected sources;
 `git check-ignore --no-index` verified representative source-media/cache/output exclusions. These
 were path-policy checks, not created test assets. No LFS assets were staged, uploaded or retrieved.
-Project generation is now observed; actual content audit remains pending. VS1-T02 is not complete.
+Project generation and content audit are recorded in the closeout. Publication and fresh-clone map
+recovery subsequently passed; VS1-T02 still awaits retrieved-map editor observation.
 Generated `.slnx` files, like `.sln` files, are excluded from source publication; `.vsconfig` is
 retained for review of its suggested-component contract rather than imported automatically.
 
@@ -154,8 +156,8 @@ exports and future package outputs in ignored `.local/` working locations rather
 
 Actual new files need an attribute/ignore and intended-diff review. Do not force-add source media or
 generated caches. Confirmation is required before publishing project assets; review any paid LFS
-usage before incurring it. Fresh-checkout payload retrieval and observed asset reopening remain
-pending until their publication/editor checkpoints; rules alone cannot prove recovery.
+usage before incurring it. Fresh-clone payload retrieval passed for the published neutral map;
+observed opening of a retrieved copy remains pending. Rules alone cannot prove recovery.
 
 ## Stop Boundary And MCP Sequence
 

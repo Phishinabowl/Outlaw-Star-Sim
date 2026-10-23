@@ -415,13 +415,17 @@ the accepted path; the Basic neutral map is saved at `Content/XGP/Development/L_
 and selected as both editor startup and game default map in saved configuration. Guided IDE setup
 reports green overall status. The [repository review and closeout proposal](phase-2-2-closeout.md)
 records local binary/boundary checks and the completed Android file-server disable/token cleanup.
-Publication, LFS retrieval and reopening evidence remain pending. No separate 2.3 or MCP setup has started.
+Publication and fresh-clone LFS retrieval are verified for `49511af`; see the
+[recovery result](phase-2-2-closeout.md#fresh-clone-recovery-result--2026-10-23).
+All Phase 2.2 deliverables are complete. Retrieved-map editor opening belongs to 2.3;
+the Blender handoff fixture belongs to 3.1 before repeated geometry production.
+Neither is a remaining 2.2 task. No separate 2.3 or MCP setup has started.
 
-- [ ] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
-- [ ] Apply the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): configure owned-binary tracking and generated-output exclusions before publishing assets; preserve editable sources, recipes/manifests and imported assets. Verify actual LFS payload retrieval in a fresh checkout after authorized publication; complete the handoff fixture proof before repeated asset production.
+- [x] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
+- [x] Configure the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): owned-binary tracking and generated-output exclusions are applied; editable sources and imported assets are retained with the setup recipe. Actual LFS map retrieval from GitHub in a fresh clone is verified for `49511af`.
 - [x] Add concise build/open instructions and repository-relative asset/evidence ownership.
 
-**Validation:** [Accepted VS1-T02 procedure](validation/foundation-validation-procedures.md#vs1-t02): configuration/source audit and staged retrieval/open proof; tracked versus ignored files match the accepted policy.
+**Validation:** [Accepted VS1-T02 procedure](validation/foundation-validation-procedures.md#vs1-t02): 2.2 configuration/source audit, publication and file recovery are complete. The scenario's retrieved-map editor observation is carried by 2.3; its remaining evidence does not reopen 2.2.
 **Recovery / deferral:** preserve pre-creation baseline and user files; replace only this skeleton if layout is rejected. No gameplay/ship geometry in this checkpoint.
 
 ### Phase 2.3: Reproducible Build And Editor Proof
@@ -430,6 +434,7 @@ Publication, LFS retrieval and reopening evidence remain pending. No separate 2.
 
 - [ ] Run the agreed non-Live-Coding build from a fresh session and record actual compiler/SDK selected by the engine.
 - [ ] Open the neutral project/map through approved methods; inspect startup/build logs and demonstrate basic input using identified visual evidence.
+- [ ] Corroborate VS1-T02 recovery by opening the neutral map from a freshly retrieved published checkout; recreate the disposable clone because the earlier file-recovery clone was deleted. File/hash recovery is already verified; this check establishes editor opening of the retrieved asset.
 - [ ] Repeat after restart so hot-reload state is not the only proof of compatibility.
 
 **Validation:** [Accepted VS1-T03 procedure](validation/foundation-validation-procedures.md#vs1-t03): build/editor result with commands/logs and observed launch; no fake pass from binaries merely existing.
@@ -470,6 +475,7 @@ Publication, LFS retrieval and reopening evidence remain pending. No separate 2.
 - [ ] Establish agreed player body/collision scale, basic traversal and first/third-person perspective over that same body.
 - [ ] Verify camera switching does not move/replace the physical actor or change equipment access context.
 - [ ] Create only neutral scale references needed for hull/room testing; approximately 2 m settei convention is not imposed as every deck's height.
+- [ ] Complete the accepted known-size Blender→Unreal handoff fixture before repeated geometry production: retain the source/recipe and verify save/reopen, units, orientation, pivots and collision after export/import. This requirement applies through the ordinary workflow if the optional MCP pilot is deferred.
 
 **Validation:** [Accepted VS1-G01 procedure](validation/spatial-validation-procedures.md#vs1-g01): shared body/camera checks in the neutral fixture, with later equipment/context repeats explicit.
 **Recovery / deferral:** adjust reviewed camera/body choices before building tight rooms; character art/animation polish stays deferred.
@@ -861,7 +867,7 @@ and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01
 | ID | Scenario / minimum proof | Owning checkpoint |
 | --- | --- | --- |
 | VS1-T01 | Actual tool inventory, preferred compiler availability and effective-version checks | 2.1, completed build corroboration 2.3 |
-| VS1-T02 | Project source/owned/generated/media boundary matches agreed layout/policy | 2.2 |
+| VS1-T02 | Project source/owned/generated/media boundary and file recovery; retrieved asset opens in editor | 2.2 complete; editor corroboration 2.3 |
 | VS1-T03 | Fresh C++ build and observed editor startup, repeated beyond hot reload | 2.3 |
 | VS1-T04 | Neutral package runs outside editor | 2.4 |
 | VS1-G01 | One body; two views; camera changes preserve physical state/context | 3.1, integrated repeat 8.1 |
