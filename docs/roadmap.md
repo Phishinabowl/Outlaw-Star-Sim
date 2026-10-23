@@ -49,7 +49,7 @@ The user subsequently requested the [expanded Vertical Slice 1 implementation pl
 The user confirmed the plan/MCP additions on 2026-10-07 and subsequently accepted Phases 1.1–1.3.
 The dated readiness inventory selects laptop, Win64, keyboard/mouse, no initial desktop validation,
 and native 1440p/60 FPS required, with 120 FPS as a stretch goal pending measurement (revised in Phase 1.4). Spatial choices remain provisional pending fit; behavior
-contracts are accepted but unimplemented. Phase 1.4 discussion is authorized below; later phases require their own scope. Project creation,
+contracts are accepted but unimplemented. Phase 1.4 planning closeout is recorded below; later phases require their own scope. Project creation,
 installations/modeling and build proof retain their authorization boundaries.
 
 [Blender/Unreal MCP evaluation](architecture/editor-automation.md) is now included in Phase 1.4
@@ -67,9 +67,11 @@ planning path, not installation/enablement authorization or the pilots' later ex
 
 On 2026-10-10 the user authorized Phase 1.4 planning/discussion. Its
 [architecture/asset/validation draft](implementation/phase-1-4-architecture-asset-validation-draft.md)
-records the accepted architecture/asset/handoff/proxy/performance and rendering-learning increment,
-confirmed for publication on 2026-10-10, with remaining technical decisions explicit. Phase 1.5 and installation/project/modeling/implementation
-remain unstarted and require their own scope; seven Phase 1.4 checklist items remain open.
+records accepted architecture, asset/recovery, handoff, proxy, performance, rendering-learning and
+validation contracts. Map identifiers and the [deferral schedule](implementation/phase-1-4-closeout-review.md#details-that-remain-later-work)
+were accepted on 2026-10-23. All seven planning items have accepted coverage; Phase 1.4 planning
+closeout was accepted on 2026-10-23. All validation scenarios remain unexecuted. Phase 1.5 and
+installation/project/modeling/implementation remain unstarted and require their own scope.
 
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 [action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,

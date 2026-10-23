@@ -1,9 +1,10 @@
 # Phase 1.4 — Architecture, Assets And Validation Discussion Draft
 
-Status: planning/discussion in progress, updated 2026-10-23. This documentation increment is confirmed
-for publication. Accepted identity,
-ownership, communication, asset/handoff, proxy, performance and learning
-contracts are distinguished below from remaining technical decisions; Phase 1.4 is not complete.
+Status: Phase 1.4 planning closeout accepted 2026-10-23. Map identifiers and
+the deferral schedule are accepted in the [closeout record](phase-1-4-closeout-review.md).
+Accepted identity, ownership,
+communication, asset/handoff, proxy, performance and learning contracts are distinguished below
+from later implementation choices and unexecuted proofs.
 No project, folders/assets, code, installation, plugin enablement or Git/LFS configuration is created
 by this document. Phase 1.5 and implementation remain unstarted.
 
@@ -29,7 +30,8 @@ plain-language definitions; this plan remains authoritative for choices and expe
 | Blender-to-Unreal handoff | Units/orientation/pivots/collision, export recipe and known-size fixture | Before repeated geometry production |
 | Validation procedures | Named performer, expected outcomes, evidence and standalone proof for existing VS1 IDs | Before Phase 1.5 gate review |
 
-This draft is not a completed technical plan. The seven implementation-plan checkboxes remain open.
+The seven implementation-plan checkboxes record accepted planning coverage, not implemented or
+tested systems. Formal planning closeout was accepted on 2026-10-23.
 Exact startup behavior stays with 1.3; technology decisions cannot silently remove required dialogue,
 machinery, pause, reversible operation or continued exploration merely to simplify the build.
 
@@ -39,8 +41,9 @@ The accepted internal project/module name is **OutlawStarSim**, with project fil
 `Unreal/OutlawStarSim/OutlawStarSim.uproject`. This follows the repository's existing Unreal ignore
 boundary and avoids mixing engine outputs with documentation/source references. The game's display
 title may remain “Outlaw Star XGP Simulator”; internal identifier does not decide branding.
-The one-module C++ authority/Blueprint presentation direction is agreed in principle; detailed
-ownership/lifecycle/map/asset contracts still need review. No project/folder creation is authorized.
+The one-module C++ authority/Blueprint presentation direction and logical ownership/lifecycle/map/asset
+contracts are accepted below. Concrete classes and execution recipes follow the accepted deferral
+schedule. No project/folder creation is authorized.
 
 | Accepted planned location | Ownership / role |
 | --- | --- |
@@ -54,7 +57,7 @@ ownership/lifecycle/map/asset contracts still need review. No project/folder cre
 Plan one opening map containing the hangar and required route, plus small separate validation maps
 only where isolation materially helps reproduce a failure. No world streaming/open-world infrastructure
 required for this slice. A neutral build fixture still precedes the playable map under Phase 2.
-The map organization, folder layout and Blank C++ template are accepted below; exact map names remain to select. No
+The map organization, folder layout, map identifiers and Blank C++ template are accepted below. No
 project initialization is authorized by these planning choices.
 
 ### Starting Template — Blank C++ Accepted 2026-10-11
@@ -116,7 +119,18 @@ Accepted in discussion, 2026-10-10. Start with one Test Lab map for scale, mater
 mechanisms and player-clearance fixtures, and one continuous Awakening map for the playable hangar
 and required ship interiors. Create extra isolated maps only for a reproducibility need. The minimal
 Phase 2 engine/build/package fixture still comes first; test-map existence is not validation evidence.
-Folder roles are accepted above; exact map names and shipping/package allowlists remain to specify.
+Map identifiers and locations are accepted on 2026-10-23:
+
+| Planned asset | Role / checkpoint |
+| --- | --- |
+| `Content/XGP/Development/L_NeutralProof` | Minimal Phase 2 build/editor/package fixture. |
+| `Content/XGP/Development/L_TestLab` | Later isolated scale, material, machinery and clearance checks. |
+| `Content/XGP/Maps/L_Awakening` | Continuous playable hangar and ship route, progressing from graybox toward polished content. |
+
+These paths are relative to the planned Unreal project. `L_` identifies a level/map asset; no asset
+exists yet. Awakening retains its identity as content improves; a `_Prod` rename or separate production
+copy is not required. Package allowlists remain authorized execution work: the neutral proof package
+includes its fixture, while final playable packaging excludes development-only content.
 
 Use Unreal Enhanced Input to separate logical actions from physical keys/buttons and organize bindings
 by situation. Exploration, grip, ladder, seated interaction, focused laptop/dialogue/menu UI and code
@@ -201,9 +215,9 @@ complete; subsequent shutdown changes live readiness without clearing that miles
 ordering remains governed by Phase 1.3, not by this illustrative ownership example.
 
 The following implementation boundaries support that accepted division; exact Unreal types and
-request/lifecycle mechanics remain for discussion.
+request/lifecycle representation remains implementation work at the accepted checkpoints.
 
-| Responsibility | Proposed authority | Presentation/configuration boundary |
+| Responsibility | Accepted logical authority | Presentation/configuration boundary |
 | --- | --- | --- |
 | Player context/equipment, locality and permitted actions | C++ | One physical body; camera perspective and UI do not grant alternate permissions |
 | Ship units/services, navigation, key/seat transitions | C++ | Blueprint assets supply positions, motion paths, durations and visuals; configured motion reports actual progress/endpoints |
@@ -238,8 +252,8 @@ completion and failure after starting. Acceptance alone cannot set readiness or 
 
 All callers use the same validation/results path without bypassing physical locality or control-context
 requirements. No external transport, network service or voice integration is selected or implemented.
-Exact Unreal types, schemas and executable validation procedures remain pending; accepting
-these rules does not complete the seven Phase 1.4 checklist items.
+Exact Unreal types and schemas remain implementation choices. The accepted state/lifecycle procedures
+specify the validation approach; executable tests and observed results remain later work.
 
 ### Session And Operation Identity — Accepted 2026-10-11
 
@@ -396,7 +410,8 @@ and elaborate character animation remain deferred.
 Test intended dark-hangar reveal, guide lighting, limited-power and full-ignition lighting early:
 visibility/navigation and reveal composition are functional design concerns, not only final polish.
 Graybox success requires observed fit, movement and interactions; a recognizable appearance alone
-cannot prove readiness. Renderer/settings/performance procedure still require separate review.
+cannot prove readiness. Rendering direction and performance procedures are accepted below; exact
+candidate settings and execution evidence remain later work.
 This accepted production direction creates no assets and does not claim runtime validation.
 
 ## Accepted Performance Measurement Contract — Execution Pending
@@ -743,10 +758,12 @@ and documentation/artifact/publication closure. All scenarios remain unexecuted.
 recipes/settings and observed results remain work at the owning execution checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
 
-## Next Review
+## Closeout And Deferred Execution Details
 
-Identity, responsibility, communication, asset versioning, handoff, proxies, performance direction and
-learning conventions are accepted at the boundaries recorded above. Next review detailed renderer/settings choices, remaining project/map/input
-details, exact lifecycle/recipe procedures, local MCP setup/client/tool checks and validation procedures.
-Do not treat accepted conventions as executed fixture/build proof. Phase 1.4 completion needs all seven concrete contracts reviewed;
-Phase 1.5 remains the separate final gate before authorized Phase 2 work.
+All seven planning areas have accepted coverage. The [closeout review and accepted deferral schedule](phase-1-4-closeout-review.md)
+assign concrete classes, bindings/camera tuning, exporter/importer recipes, detailed graphics/capture
+settings, current MCP compatibility/setup and paid-LFS checks to their owning checkpoints. Resolve each
+detail before the affected authorized work; deferral does not waive accepted behavior or evidence.
+
+Planning closeout is accepted; no fixture/build proof is claimed.
+Phase 1.5 remains unstarted and is the separate formal gate before authorized Phase 2 work.

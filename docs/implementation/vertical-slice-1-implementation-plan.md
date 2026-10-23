@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phases 1.1–1.3 complete; Phase 1.4 planning/discussion in progress; implementation not authorized |
+| Status | Phases 1.1–1.4 planning complete; Phase 1.5 unstarted; implementation not authorized |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 1.4 accepted planning increment; remaining technical contracts pending |
+| Current checkpoint | Phase 1.4 planning closeout accepted 2026-10-23; Phase 1.5 unstarted |
 
 ## Purpose And Placement
 
@@ -306,9 +306,10 @@ at this October 8 checkpoint; its subsequent planning authorization and current 
 **Prerequisite:** 1.1–1.3 proposals. **Deliverable:** concrete project/ownership/persistence boundary and planned validation procedures.
 
 The user authorized Phase 1.4 on 2026-10-10. The
-[discussion draft](phase-1-4-architecture-asset-validation-draft.md) starts with proposed project layout,
-authority/presentation boundaries and the remaining seven decision areas. The draft distinguishes
-accepted conventions from pending decisions and unexecuted proofs; no installation, project creation,
+[architecture/asset/validation contract](phase-1-4-architecture-asset-validation-draft.md) records accepted
+project layout, authority/presentation boundaries and all seven planning areas. Map identifiers and
+the [deferral schedule](phase-1-4-closeout-review.md#details-that-remain-later-work) were accepted on
+2026-10-23. Phase 1.4 planning closeout was accepted on 2026-10-23. No installation, project creation,
 modeling or implementation is performed/authorized.
 
 The accepted rendering learning track includes PBR, lighting contributions, Lumen/tracing and supported
@@ -335,13 +336,18 @@ retains pinned source/host findings as an alternative; its guest/network gates a
 prerequisites. Unreal retains its post-2.3 pilot and Blender its post-3.1 checkpoint. This planning
 choice does not authorize setup or verify an MCP connection.
 
-- [ ] Select project name/path, minimum C++ ownership, Blueprint configuration boundary, map/test/evidence layout and input/camera approach; keep illustrative APIs out of the accepted registry until reviewed.
-- [ ] Specify a shared command/query path, result lifecycle and reset ownership with no external transport or second readiness writer.
-- [ ] Review the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23), including ordinary-Git/LFS/generated boundaries and fresh-checkout proof; keep source media excluded. Tracking configuration and retrieval/import tests remain later authorized work.
-- [ ] Choose proxy production approach, limited renderer/lighting settings, primary-host budget and test session conditions; verify any required Blender/tool work separately from assumptions.
-- [ ] Record Blender/Unreal MCP selection or deferral using the editor-automation contract: actual versions/client compatibility, pinned source/license/dependencies, isolation, bounded tools, configuration ownership and fallback. Neither connector is required for slice acceptance.
-- [ ] Specify Blender→Unreal units, orientation, pivots, export/import/collision and recipe/binary ownership; nominate a known-size handoff fixture before repeated geometry production.
-- [ ] Write procedures/expected outcomes for the validation register below, including manual performer and minimum package proof; select narrow automation, not a new CI program.
+- [x] Select project name/path, minimum C++ ownership, Blueprint configuration boundary, map/test/evidence layout and input/camera approach; keep illustrative APIs out of the accepted registry until reviewed.
+- [x] Specify a shared command/query path, result lifecycle and reset ownership with no external transport or second readiness writer.
+- [x] Review the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23), including ordinary-Git/LFS/generated boundaries and fresh-checkout proof; keep source media excluded. Tracking configuration and retrieval/import tests remain later authorized work.
+- [x] Choose proxy production approach, limited renderer/lighting settings, primary-host budget and test session conditions; verify any required Blender/tool work separately from assumptions.
+- [x] Record Blender/Unreal MCP conditional evaluation and fallback under the editor-automation contract, including the accepted local permission boundary. Verify actual versions/client compatibility, pinned source/license/dependencies, bounded tools and configuration ownership before each separately authorized pilot. Neither connector is required for slice acceptance.
+- [x] Specify Blender→Unreal units, orientation, pivots, export/import/collision and recipe/binary ownership; nominate a known-size handoff fixture before repeated geometry production.
+- [x] Write procedures/expected outcomes for the validation register below, including manual performer and minimum package proof; select narrow automation, not a new CI program.
+
+**Closeout review:** [seven-contract assessment and accepted decision timing](phase-1-4-closeout-review.md).
+Checked items record accepted planning coverage only. All validation scenarios remain unexecuted;
+exact implementation/recipe details have named later checkpoints. Planning closeout was accepted on
+2026-10-23. Phase 1.5 and Phase 1 exit remain open.
 
 **Validation:** decisions are concrete enough to create only the bounded foundation; source/owned/generated outputs and rollback locations are distinguishable.
 **Recovery / deferral:** choose simpler reviewed proxies/configuration if tooling or performance assumptions are uncertain. Detailed art, networking, serialization and broad plugin frameworks remain deferred.

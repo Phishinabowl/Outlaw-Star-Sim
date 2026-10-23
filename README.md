@@ -4,7 +4,7 @@ An evidence-driven reconstruction of the XGP-15AII and a planned interactive shi
 
 **The reference/research foundation is substantially complete for implementation purposes within the first slice.** This means enough evidence exists to define a constrained initial build; it does not mean every room, mechanism, translation or performance figure is settled. Unresolved research continues as an [ongoing parallel track](docs/reconstruction/open-questions.md).
 
-Current status: **Phases 1.1–1.3 planning complete; Phase 1.4 planning/discussion in progress; implementation not started**. No Unreal project, modeled ship or playable build exists yet. The [implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) links the accepted earlier contracts and the [Phase 1.4 discussion draft](docs/implementation/phase-1-4-architecture-asset-validation-draft.md). Later subphases, Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
+Current status: **Phases 1.1–1.4 planning complete; Phase 1.5 unstarted; implementation not started**. No Unreal project, modeled ship or playable build exists yet. The [implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) links the accepted earlier contracts and the [Phase 1.4 architecture/asset/validation contract](docs/implementation/phase-1-4-architecture-asset-validation-draft.md). The [accepted closeout record](docs/implementation/phase-1-4-closeout-review.md) records map names and deferral checkpoints; planning closeout was accepted on 2026-10-23. Unreal creation, gameplay implementation, modeling and further installations still require their own approved scope.
 
 ## First experience — Awakening the Outlaw Star
 
@@ -74,7 +74,7 @@ The [canon policy](docs/canon-policy.md) separates anime observations (A), authe
 
 Keep hatch/room correspondence, apparatus clearances, remaining mechanical families, Japanese wording, power topology and performance interpretation in [open questions](docs/reconstruction/open-questions.md). Research should be targeted when it could invalidate a chosen slice connection, motion or interaction; broader full-ship archaeology need not hold the entire project indefinitely. Any provisional solution remains explicitly E/F and reviewable.
 
-The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns execution sequence, prerequisites, validation, recovery and exit reviews. Phases 1.1–1.3 planning are complete and Phase 1.4 discussion is authorized. Spatial choices remain provisional pending fit proof; behavior contracts require runtime validation. Phase 1.5 and installation/project/modeling/implementation work are not authorized by this planning step.
+The [phased implementation plan](docs/implementation/vertical-slice-1-implementation-plan.md) owns execution sequence, prerequisites, validation, recovery and exit reviews. Phases 1.1–1.4 planning are complete. Spatial choices remain provisional pending fit proof; behavior contracts require runtime validation. Phase 1.5 and installation/project/modeling/implementation work are not authorized by this planning step.
 
 ## Start here
 
