@@ -726,7 +726,9 @@ for observing the claimed result; any Computer Use observation still requires sp
 Reuse the existing scenario IDs and record evidence with them rather than creating a second checklist
 or validation framework. The [foundation procedures](validation/foundation-validation-procedures.md)
 specify VS1-T01–T04, accepted for planning 2026-10-23: availability versus effective selection, repository/LFS retrieval,
-ordinary build/editor reopening and neutral packaged execution. All remain unexecuted. Other
+ordinary build/editor reopening and neutral packaged execution. The [spatial procedures](validation/spatial-validation-procedures.md)
+specify VS1-G01–G03, accepted for planning 2026-10-23, distinguishing shared-body/route/proxy-clearance proof from actual
+machinery operation and future reservations. All remain unexecuted. Other
 per-scenario procedures remain to be defined at their owning checkpoints.
 This acceptance records the validation approach only; no tests, fixtures or builds have been implemented.
 

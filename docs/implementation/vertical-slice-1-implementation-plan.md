@@ -435,7 +435,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Verify camera switching does not move/replace the physical actor or change equipment access context.
 - [ ] Create only neutral scale references needed for hull/room testing; approximately 2 m settei convention is not imposed as every deck's height.
 
-**Validation:** VS1-G01 body/camera checks in neutral fixture.
+**Validation:** [Accepted VS1-G01 procedure](validation/spatial-validation-procedures.md#vs1-g01): shared body/camera checks in the neutral fixture, with later equipment/context repeats explicit.
 **Recovery / deferral:** adjust reviewed camera/body choices before building tight rooms; character art/animation polish stays deferred.
 
 **Optional Blender MCP pilot checkpoint (before repeated 3.2/3.3 production):**
@@ -454,7 +454,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Include the user-approved minimal dining/common-area shell in the chosen route, once the Phase 1.2 connection/dimension proposal is accepted; preserve unresolved lounge identity, separate hatch records and future spatial reservations.
 - [ ] Traverse outside→bridge→engineering→bridge with the same player; annotate every invented connection.
 
-**Validation:** VS1-G02 route/scale proof; baseline S/H references and VS-01/02 traced, without claiming final entry mechanism.
+**Validation:** [Accepted VS1-G02 procedure](validation/spatial-validation-procedures.md#vs1-g02): route/scale proof; baseline S/H references and VS-01/02 traced, without claiming final entry mechanism.
 **Recovery / deferral:** revise affected E connection/room proxy, not the canonical overall scale, to conceal a fit problem; reopen 1.2 if central constraints conflict.
 
 ### Phase 3.3: Mechanism Endpoints And Reservation Proxies
@@ -465,7 +465,7 @@ choice does not authorize setup or verify an MCP connection.
 - [ ] Reserve rail, other hatch and future mechanism volumes M08–M13 where the chosen layout touches them.
 - [ ] Keep operator/occupant access paths visible; these proxies do not report runtime preparation completion.
 
-**Validation:** VS1-G03 endpoint/sweep inspection against MC-01–08; separate demonstrated active fit from provisional future reservations.
+**Validation:** [Accepted VS1-G03 procedure](validation/spatial-validation-procedures.md#vs1-g03): occupied endpoint/sweep inspection against MC-01–08; separate demonstrated proxy fit from actual motion and provisional future reservations.
 **Recovery / deferral:** preserve accepted route fixture, revise individual swept volumes/placements and rerun affected MC checks. No finished rigs or extra room mechanisms.
 
 ### Phase 3.4: Occupied Clearance And Layout Acceptance
@@ -759,7 +759,8 @@ combines code/state, in-world and packaged-build checks. Codex performs appropri
 checks; the user is the main reviewer for playtest feel, readability and visual fit. Record starting
 state, build/settings, steps, expected and actual results, appropriate evidence, performer and untested
 parts against these IDs. The [T01–T04 foundation procedures](validation/foundation-validation-procedures.md)
-are accepted for planning as of 2026-10-23, not executed. Other scenario procedures remain to be defined at their owning checkpoints.
+are accepted for planning as of 2026-10-23, not executed. The [G01–G03 spatial procedures](validation/spatial-validation-procedures.md)
+are accepted for planning as of 2026-10-23, also unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
 
