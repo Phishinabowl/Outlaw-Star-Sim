@@ -603,7 +603,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Label unmeasured timing/closure/support details as E/F; preserve supported stage appearance without treating combined scenes as one measured animation.
 - [ ] Bind stage progress/completion to authoritative state; demonstrate actual occupant/cavity/sweep collision and declared interruption behavior.
 
-**Validation:** VS1-M01 sequence/occupied clearance, MC-01/02 and VS-03/05; missing prerequisites do not complete deployment.
+**Validation:** [Accepted VS1-M01 procedure](validation/machinery-validation-procedures.md#vs1-m01): revival/transfer and actual occupied stages/obstruction recovery, MC-01/02 and VS-03/05; missing prerequisites do not complete deployment.
 **Recovery / deferral:** retain stowed/deployed proxies and revise one rig/timeline at a time; reopen 1.2/1.3 for a fit/ordering conflict. Fluid simulation/full character AI remain deferred.
 
 ### Phase 6.2: Bridge Seat And Control-Cluster Lift
@@ -615,7 +615,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Ensure cluster/apparatus/doorway/rail can coexist and player access remains valid at both endpoints.
 - [ ] Include M06 movement only if required by the accepted station-access arrangement; no full grappler rig.
 
-**Validation:** VS1-M02 occupied lift/camera/reach, MC-01/04 and VS-02/03/07.
+**Validation:** [Accepted VS1-M02 procedure](validation/machinery-validation-procedures.md#vs1-m02): actual occupied lift/camera/reach, MC-01/04 and VS-02/03/07; isolated motion is distinct from Phase 7 ignition/shutdown proof.
 **Recovery / deferral:** revise isolated lift/camera offsets before changing room scale; reconsider E/F coordination explicitly rather than teleporting or duplicating the player silently.
 
 ### Phase 6.3: Four Engineering Control Cylinders
@@ -629,7 +629,7 @@ dimensions, animation/rig behavior or asset reuse/publication permission.
 - [ ] Preserve optional early preparation after registration; normal guidance follows Melfina's linked sealed-engine discovery. Her check reports actual remaining units or the all-four early-preparation acknowledgement without resetting progress or bypassing final key ignition.
 - [ ] Support local reverse push/relock only after completed OFF/shutdown; preserve partial travel/turn and clear prepared state on leaving the full endpoint. Redeployment requires no new ribbons; validate reverse occupied access.
 
-**Validation:** VS1-M03 per-unit states/locality/duplicate requests, MC-03/04 and VS-04/06.
+**Validation:** [Accepted VS1-M03 procedure](validation/machinery-validation-procedures.md#vs1-m03): all-four local seal/grip-turn/pull, retained partial motion, reverse push/relock and current-state restart checks; MC-03/04 and VS-04/06.
 **Recovery / deferral:** restore/revise an individual cylinder adapter/asset and repeat bank-wide clearance; do not infer exterior-engine movement or add maintenance/fault simulation.
 
 ### Phase 6.4: Machinery Coexistence And Prepared-State Review
@@ -762,6 +762,7 @@ parts against these IDs. The [T01–T04 foundation procedures](validation/founda
 are accepted for planning as of 2026-10-23, not executed. The [G01–G03 spatial procedures](validation/spatial-validation-procedures.md)
 are accepted for planning as of 2026-10-23, also unexecuted. The [S01–S03 state/lifecycle procedures](validation/state-lifecycle-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. The [I01–I03 interaction procedures](validation/interaction-validation-procedures.md)
+are accepted for planning as of 2026-10-23 and unexecuted. The [M01–M03 machinery procedures](validation/machinery-validation-procedures.md)
 are accepted for planning as of 2026-10-23 and unexecuted. Other scenario procedures remain to be defined at their owning checkpoints.
 Prefix every test ID with **VS1-** to distinguish it from baseline spatial S IDs, motion M IDs
 and acceptance VS IDs. Compact ranges retain the VS1 prefix, for example VS1-T01–T04.
