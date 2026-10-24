@@ -50,3 +50,6 @@ Thumbs.db
 
 # .local folder
 .local/
+
+# Host-local Codex MCP connection; setup recipe is documented separately
+/.codex/config.toml

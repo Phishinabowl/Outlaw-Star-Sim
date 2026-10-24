@@ -1,16 +1,18 @@
 # Blender And Unreal Editor Automation
 
-Status: local MCP pilot direction accepted, 2026-10-11; setup/execution not authorized. Official Unreal
-and Blender candidates are selected for bounded evaluation, not proven adoption. Neither is installed,
-enabled or connected for this project. This document owns editor-automation requirements; the
+Status: the authorized Unreal pilot completed on 2026-10-23; [2.3 closeout](../implementation/phase-2-3-closeout.md)
+was accepted. ModelContextProtocol/EditorToolset and the project-local Codex connection are retained;
+owner-approved interactive auto-start is verified on loopback. Blender setup remains deferred to its
+later pilot. This document owns editor-automation requirements; the
 [slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md) owns
 execution checklists and gates. Baseline v1 remains authoritative for reconstruction.
 
-Current 2026-10-10 investigation: the user accepted official Unreal-first/Blender-later evaluation
+Historical 2026-10-10 investigation: the user accepted official Unreal-first/Blender-later evaluation
 and requested a [Blender Sandbox pilot design](../implementation/blender-sandbox-pilot-design.md).
 That record owns pinned official source/transport/license findings and host Sandbox state, superseding
 the earlier unavailable-source/host checks below. Official candidates are preferred for evaluation;
-adoption, installation/enablement and execution remain unapproved. No isolation success is claimed.
+those initial adoption/setup decisions were pending at that checkpoint. Later Unreal authorization
+and evidence are recorded above; no Blender isolation success is claimed.
 
 ## Current Local Pilot Contract — Accepted 2026-10-11
 
@@ -24,8 +26,10 @@ configuration is required by the accepted local direction.
 - Use local stdio for the Blender bridge where the actual client supports it; Blender add-on socket
   remains loopback-only. Use Unreal's documented loopback HTTP endpoint. Verify actual bindings,
   tool discovery and stop/reconnect behavior; do not expose either listener to the LAN or internet.
-- Start connectors on demand and stop/verify them after the task. Review/disallow pilot auto-start;
-  keep existing unrelated client/editor configuration intact.
+- Initial pilots start connectors on demand and stop/verify them after the task. Following the
+  successful Unreal pilot, project-user interactive auto-start was approved and verified on 2026-10-23;
+  MCP runs alongside that editor session, not as a Windows service. StopServer removes MCP routes;
+  editor exit releases the shared HTTP listener. Blender remains on demand. Preserve unrelated configuration.
 - Begin with owned disposable fixtures and explicit output paths. Preserve originals/checkpoints and
   inspect actual changed files. A dedicated folder and Git backups are recovery/scope measures,
   not filesystem or network containment.

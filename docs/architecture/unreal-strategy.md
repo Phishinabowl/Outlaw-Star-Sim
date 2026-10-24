@@ -14,7 +14,10 @@ component plus representative headers/libraries. MSVC **14.50.35739**, SDK **10.
 **5.8.4** remain available; system .NET SDK **10.0.402** is now present alongside **10.0.204**.
 The earlier three setup gaps are resolved at the availability level. Phase 2.1 closeout was accepted
 on 2026-10-23, with no new installation recommendation. UBT's effective selection, compile/link,
-editor integration and package proof remain unexecuted. No global compiler default was changed.
+editor integration and package proof were unexecuted at that inventory checkpoint. Subsequent
+[2.3 results](../implementation/phase-2-3-closeout.md) verify compile/link, intended effective
+compiler/SDK selection and repeated editor/input/recovery proof. Package proof remains unexecuted.
+No global compiler default was changed.
 
 ## Earlier Read-Only Preflight — 2026-10-23
 
@@ -73,12 +76,13 @@ none has been enabled or tested. Evaluate after ordinary project proof, keeping 
 independent of MCP. The official Blender candidate is selected for bounded evaluation under the
 accepted local pilot contract; client/server compatibility and operational adoption remain unproven.
 
-C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git is established, and Phase 1.4 accepts Git LFS for project-owned binary assets, with tracking configuration and cost controls still to perform under later authorized scope.
+C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git and scoped LFS tracking are configured, with neutral-map recovery verified. Later authoring/handoff assets retain their separate validation checkpoints.
 
 [Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. The [Phase 1.4 draft](../implementation/phase-1-4-architecture-asset-validation-draft.md) records accepted project/module layout and initial rendering candidates. Detailed implementation types, serialization, networking, renderer quality settings and integration compatibility remain unresolved. Reference-derived percentages do not select physics constants.
 
 The Blank C++ project skeleton is generated; [setup observations](../development/unreal-project-setup.md)
 record its current limits. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slice-1-implementation-plan.md)
-and Phase 2.2 skeleton/repository setup are complete; 2.2 closeout is accepted. Reproducible build/editor/package proof
-remains at later checkpoints. This supersedes the earlier planning-gate deferral, not phase boundaries.
+and Phase 2.2 skeleton/repository setup are complete; 2.2 closeout is accepted. Reproducible build/editor
+and selected local Unreal MCP proof passed in 2.3; its closeout is accepted. Package proof remains
+at separately authorized 2.4. This supersedes the earlier planning-gate deferral, not phase boundaries.
 Tool observations are dated; documentation publication does not establish build validation.

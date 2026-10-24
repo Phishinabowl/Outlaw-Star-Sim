@@ -3,7 +3,7 @@
 Status: Phase 2.2 fully closed; closeout accepted 2026-10-23 and file recovery verified.
 The [closeout proposal](../implementation/phase-2-2-closeout.md) records disabled Android file-server
 settings and the cleared token. Publication and fresh-clone file recovery are verified for `49511af`;
-retrieved-map editor opening belongs to Phase 2.3 and the handoff fixture to Phase 3.1, not open 2.2 work.
+retrieved-map editor opening subsequently passed in Phase 2.3. The handoff fixture remains Phase 3.1 work.
 The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md#phase-22-project-skeleton-and-repository-boundary)
 owns scope and completion. These instructions are a guide, not evidence that steps have been performed.
 
@@ -34,7 +34,7 @@ detected and Test Adapter green, not a completed test run. No MCP entry was adde
 is saved as `Content/XGP/Development/L_NeutralProof.umap` (49,070 bytes at inspection). Screenshots
 show its floor, sky/lighting and All Saved status. Saved `DefaultEngine.ini` selects
 `/Game/XGP/Development/L_NeutralProof.L_NeutralProof` for both EditorStartupMap and GameDefaultMap.
-Default-map relaunch and runtime proof remain pending, as does Phase 2.2 closeout.
+Default-map relaunch and neutral Play input subsequently passed in 2.3; Phase 2.2 is fully closed.
 
 Generated defaults include DX12, Lumen methods, Virtual Shadow Maps and ray-tracing settings. These
 are configuration observations, not proof of effective rendering, final quality approval or performance.
@@ -119,9 +119,9 @@ root, the proposed command is:
 & 'D:\Epic Games\UE_5.8\Engine\Build\BatchFiles\Build.bat' OutlawStarSimEditor Win64 Development '-Project=D:\Repos\Outlaw-Star-Game\Unreal\OutlawStarSim\OutlawStarSim.uproject' -WaitMutex
 ```
 
-This recipe has not been executed as independent validation. Phase 2.3 must capture its exit status,
-actual compiler/SDK selection and complete local log, then perform the accepted repeated editor/input
-observations. Do not use Build Solution on the generated engine/tool projects as a substitute.
+This recipe subsequently passed independent [2.3 validation](../implementation/validation/phase-2-3-build-editor-results.md),
+with actual compiler/SDK evidence, logs and repeated editor/input observations. Do not use Build Solution
+on the generated engine/tool projects as a substitute.
 
 References: [Microsoft naming checker](https://learn.microsoft.com/en-us/cpp/ide/lnt-naming-convention)
 and [sample rules](https://github.com/microsoft/vc-ue-extensions/blob/v2.8/Source/.editorconfig).
@@ -144,7 +144,7 @@ representative direct/nested owned asset paths and ordinary treatment for C++/pr
 `git check-ignore --no-index` verified representative source-media/cache/output exclusions. These
 were path-policy checks, not created test assets. No LFS assets were staged, uploaded or retrieved.
 Project generation and content audit are recorded in the closeout. Publication and fresh-clone map
-recovery subsequently passed; VS1-T02 still awaits retrieved-map editor observation.
+recovery subsequently passed; VS1-T02 retrieved-map editor observation also passed during 2.3.
 Generated `.slnx` files, like `.sln` files, are excluded from source publication; `.vsconfig` is
 retained for review of its suggested-component contract rather than imported automatically.
 
@@ -157,7 +157,7 @@ exports and future package outputs in ignored `.local/` working locations rather
 Actual new files need an attribute/ignore and intended-diff review. Do not force-add source media or
 generated caches. Confirmation is required before publishing project assets; review any paid LFS
 usage before incurring it. Fresh-clone payload retrieval passed for the published neutral map;
-observed opening of a retrieved copy remains pending. Rules alone cannot prove recovery.
+observed opening of a retrieved copy subsequently passed in 2.3. Rules alone cannot prove recovery.
 
 ## Stop Boundary And MCP Sequence
 

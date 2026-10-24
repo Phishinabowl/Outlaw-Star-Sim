@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phase 1 and Phase 2.1–2.2 complete; Phase 2.3 and MCP setup not authorized |
+| Status | Phase 1 and Phase 2.1–2.3 complete; 2.3 closeout accepted; no 2.4 authorization |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 2.2 closeout accepted 2026-10-23; stop before 2.3/MCP |
+| Current checkpoint | Phase 2.3 closeout accepted 2026-10-23; 2.4 walkthrough only |
 
 ## Purpose And Placement
 
@@ -29,7 +29,8 @@ project facts, deployment policies or framework lifecycles are imported from the
 Reference/research is substantially complete for defining this bounded slice. Baseline v1 is approved
 and published. The Blank C++ OutlawStarSim skeleton has been generated at its accepted location;
 the neutral map is saved and selected for editor/game startup. No ship graybox, slice gameplay or machinery rig exists.
-No planned runtime tests have run; initial wizard activity is not Phase 2.3 reproducible build proof.
+Neutral build/editor/Play input, repeated launch and fresh-checkout editor checks passed in 2.3;
+the selected Unreal MCP pilot also completed. Slice gameplay, packaging and performance acceptance remain untested.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
 **introducing the planning gate**. Its scope covered this document and navigation/status updates only.
@@ -39,7 +40,8 @@ complete in the [dated readiness record](phase-1-1-host-tooling-readiness.md). S
 planning is also complete; Phase 1.4 closeout and Phase 1.5 gate review are accepted. The read-only
 2.1 preflight and follow-up verified the scoped repository-owner installations. Phase 2.1 closeout
 was accepted on 2026-10-23. Phase 2.2 skeleton/repository work is explicitly authorized, with guided
-Unreal setup; no automatic 2.3 execution or MCP setup.
+Unreal setup. Subsequent explicit authorization covered 2.3 and its optional Unreal MCP pilot;
+the [2.3 closeout](phase-2-3-closeout.md) is accepted. No 2.4 work is authorized.
 Phase 1.2 began with the opening experience
 and additional targeted references. Its [decision packet](phase-1-2-spatial-motion-decision-packet.md)
 and [closeout package](phase-1-2-closeout-proposal.md) are now accepted for planning. No later
@@ -419,7 +421,7 @@ Publication and fresh-clone LFS retrieval are verified for `49511af`; see the
 [recovery result](phase-2-2-closeout.md#fresh-clone-recovery-result--2026-10-23).
 All Phase 2.2 deliverables are complete. Retrieved-map editor opening belongs to 2.3;
 the Blender handoff fixture belongs to 3.1 before repeated geometry production.
-Neither is a remaining 2.2 task. No separate 2.3 or MCP setup has started.
+Neither is a remaining 2.2 task. Subsequent 2.3 execution and MCP results are recorded below.
 
 - [x] Create the accepted Games Blank C++ skeleton in the selected project/module layout, with only baseline input/config and the neutral map required for first proof; follow the [template decision](phase-1-4-architecture-asset-validation-draft.md#starting-template--blank-c-accepted-2026-10-11). Player/gameplay work remains at its later checkpoints.
 - [x] Configure the accepted [asset storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23): owned-binary tracking and generated-output exclusions are applied; editable sources and imported assets are retained with the setup recipe. Actual LFS map retrieval from GitHub in a fresh clone is verified for `49511af`.
@@ -430,21 +432,29 @@ Neither is a remaining 2.2 task. No separate 2.3 or MCP setup has started.
 
 ### Phase 2.3: Reproducible Build And Editor Proof
 
+Explicitly authorized 2026-10-23, with Unreal reported closed. The
+[execution record](validation/phase-2-3-build-editor-results.md) captures the first successful compile/link
+and effective MSVC 14.50/SDK 26100 selection. Editor, retrieved-map and repeat checks passed.
+The optional Unreal MCP pilot was subsequently requested after ordinary proof passed; its
+[pilot record](validation/phase-2-3-unreal-mcp-pilot.md) records verified mutation/recovery, native
+connection and owner-approved loopback auto-start. The [closeout](phase-2-3-closeout.md)
+was accepted on 2026-10-23. No 2.4 execution is authorized.
+
 **Prerequisite:** 2.2. **Deliverable:** actual C++ editor build/launch evidence on primary host.
 
-- [ ] Run the agreed non-Live-Coding build from a fresh session and record actual compiler/SDK selected by the engine.
-- [ ] Open the neutral project/map through approved methods; inspect startup/build logs and demonstrate basic input using identified visual evidence.
-- [ ] Corroborate VS1-T02 recovery by opening the neutral map from a freshly retrieved published checkout; recreate the disposable clone because the earlier file-recovery clone was deleted. File/hash recovery is already verified; this check establishes editor opening of the retrieved asset.
-- [ ] Repeat after restart so hot-reload state is not the only proof of compatibility.
+- [x] Run the agreed non-Live-Coding build from a fresh session and record actual compiler/SDK selected by the engine.
+- [x] Open the neutral project/map through approved methods; inspect startup/build logs and demonstrate basic input using identified visual evidence.
+- [x] Corroborate VS1-T02 recovery by opening the neutral map from a freshly retrieved published checkout; preserve evidence and delete the disposable clone after validation.
+- [x] Repeat after restart so hot-reload state is not the only proof of compatibility.
 
 **Validation:** [Accepted VS1-T03 procedure](validation/foundation-validation-procedures.md#vs1-t03): build/editor result with commands/logs and observed launch; no fake pass from binaries merely existing.
 **Recovery / deferral:** iterate skeleton/tool selection rather than adding gameplay to hide build issues; keep engine migration separate.
 
 **Optional Unreal MCP pilot checkpoint (after ordinary build/editor proof):**
 
-- [ ] If selected and scoped, evaluate installed Epic MCP/tool-provider plugins on the neutral fixture under the [editor-automation requirements](../architecture/editor-automation.md); record actual client discovery, local binding and serialized calls.
-- [ ] Inspect, make one reversible actor change, save/reopen, stop/reconnect and verify scene/files independently; preserve the build-proven checkpoint and existing client settings.
-- [ ] Record adoption, deferral or failure plus ordinary editor/file fallback. Carry an adopted configuration through 2.4; no packaged runtime dependence or implicit desktop-control permission.
+- [x] Evaluate installed ModelContextProtocol/EditorToolset plugins under the [editor-automation requirements](../architecture/editor-automation.md); native discovery, loopback binding and serialized calls verified.
+- [x] Inspect, make one reversible actor change, save/reopen, stop/reconnect and verify scene/files independently; disposable content removed and original map unchanged.
+- [x] Record accepted retention with observed limitations and ordinary editor/file fallback; owner-approved project-user auto-start verified. Carry this configuration through separately authorized 2.4; packaged independence remains untested and no desktop-control permission is implied.
 
 **Pilot validation / recovery:** observed fixture result, bounded diff and successful restoration or repeatability. Disable/revert only pilot changes if unstable; MCP success is not VS1-T03 proof and pilot deferral does not block Phase 2.
 

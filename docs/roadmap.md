@@ -70,12 +70,14 @@ On 2026-10-10 the user authorized Phase 1.4 planning/discussion. Its
 records accepted architecture, asset/recovery, handoff, proxy, performance, rendering-learning and
 validation contracts. Map identifiers and the [deferral schedule](implementation/phase-1-4-closeout-review.md#details-that-remain-later-work)
 were accepted on 2026-10-23. All seven planning items have accepted coverage; Phase 1.4 planning
-closeout was accepted on 2026-10-23. All runtime validation scenarios remain unexecuted. Phase 1.5
+closeout was accepted on 2026-10-23. Slice runtime acceptance remains unexecuted; neutral foundation
+build/editor/input and recovery proof have since passed in 2.3. Phase 1.5
 [gate review](implementation/phase-1-5-gate-review.md) is accepted, with explicit authorization on
 2026-10-23 for the read-only 2.1 tooling preflight. Subsequent scoped owner-run VS installations were
 verified read-only; [Phase 2.1 closeout](implementation/phase-2-1-closeout.md) was accepted on 2026-10-23.
 Phase 2.2 skeleton/repository setup and its [closeout](implementation/phase-2-2-closeout.md) were accepted
-on 2026-10-23; Phase 2.3 and MCP setup remain unauthorized. Later
+on 2026-10-23. Subsequently authorized 2.3 build/editor and Unreal MCP work is complete, with
+[closeout accepted](implementation/phase-2-3-closeout.md); 2.4 remains unstarted and unauthorized. Later
 subphases and modeling/gameplay remain outside that scope. Unreal MCP follows ordinary 2.3 build/editor proof; Blender
 MCP follows the 3.1 player/scale fixture, each as a separately scoped optional local pilot.
 
