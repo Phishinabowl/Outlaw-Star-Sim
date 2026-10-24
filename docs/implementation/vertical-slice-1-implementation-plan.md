@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phases 1 and 2 complete; Phase 2 exit accepted; Phase 3.1 walkthrough only |
+| Status | Phases 1 and 2 complete; Phase 3.1 execution authorized and in progress |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 2 foundation accepted 2026-10-23; explain 3.1 before execution authorization |
+| Current checkpoint | Phase 3.1 player/scale fixture and early local Blender MCP pilot authorized 2026-10-23; stop before 3.2A |
 
 ## Purpose And Placement
 
@@ -491,6 +491,10 @@ Acceptance of this gate does not automatically authorize Phase 3.1 execution or 
 ### Phase 3.1: Player And Scale Fixture
 
 **Prerequisite:** Phase 2 exit; accepted scale/player decisions. **Deliverable:** one physical avatar and scale fixture.
+
+Execution authorized 2026-10-23, including early preparation of the optional local Blender MCP
+pilot with guided editor steps. Connectivity setup may precede the player fixture; final handoff
+and passage proof still require that fixture. Phase 3.2A and later work remain unauthorized.
 
 - [ ] Establish agreed player body/collision scale, basic traversal and first/third-person perspective over that same body.
 - [ ] Verify camera switching does not move/replace the physical actor or change equipment access context.

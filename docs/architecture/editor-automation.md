@@ -2,8 +2,10 @@
 
 Status: the authorized Unreal pilot completed on 2026-10-23; [2.3 closeout](../implementation/phase-2-3-closeout.md)
 was accepted. ModelContextProtocol/EditorToolset and the project-local Codex connection are retained;
-owner-approved interactive auto-start is verified on loopback. Blender setup remains deferred to its
-later pilot. This document owns editor-automation requirements; the
+owner-approved interactive auto-start is verified on loopback. The [3.1 Blender pilot](../implementation/validation/phase-3-1-blender-mcp-pilot.md)
+has passed native connectivity, reversible edits, save/reopen and stop/reconnect checks. Blender
+interactive auto-start was approved and verified on loopback on 2026-10-23; full handoff proof remains
+pending. This document owns editor-automation requirements; the
 [slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md) owns
 execution checklists and gates. Baseline v1 remains authoritative for reconstruction.
 
@@ -34,7 +36,10 @@ configuration is required by the accepted local direction.
 - Initial pilots start connectors on demand and stop/verify them after the task. Following the
   successful Unreal pilot, project-user interactive auto-start was approved and verified on 2026-10-23;
   MCP runs alongside that editor session, not as a Windows service. StopServer removes MCP routes;
-  editor exit releases the shared HTTP listener. Blender remains on demand. Preserve unrelated configuration.
+  editor exit releases the shared HTTP listener. Blender interactive auto-start was subsequently
+  approved and verified on 2026-10-23 after its stop/reconnect and reversible-edit checks. Its add-on
+  starts with Blender at `127.0.0.1:9876`; the project-local stdio bridge is launched by Codex. Neither
+  configuration adds a Windows service. Manual stop remains available. Preserve unrelated configuration.
 - Begin with owned disposable fixtures and explicit output paths. Preserve originals/checkpoints and
   inspect actual changed files. A dedicated folder and Git backups are recovery/scope measures,
   not filesystem or network containment.
