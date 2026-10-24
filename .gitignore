@@ -13,6 +13,7 @@
 /Unreal/**/DerivedDataCache/
 /Unreal/**/Intermediate/
 /Unreal/**/Saved/
+/Unreal/**/Build/**/FileOpenOrder/
 /Unreal/**/.vs/
 /Unreal/**/*.sln
 /Unreal/**/*.slnx

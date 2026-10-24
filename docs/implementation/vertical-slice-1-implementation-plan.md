@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phase 1 and Phase 2.1–2.3 complete; 2.3 closeout accepted; no 2.4 authorization |
+| Status | Phase 1 and Phase 2.1–2.4 complete; 2.4 closeout accepted; Phase 2 exit review only |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 2.3 closeout accepted 2026-10-23; 2.4 walkthrough only |
+| Current checkpoint | Phase 2.4 closeout accepted 2026-10-23; assess Phase 2 exit gate without later execution |
 
 ## Purpose And Placement
 
@@ -30,7 +30,8 @@ Reference/research is substantially complete for defining this bounded slice. Ba
 and published. The Blank C++ OutlawStarSim skeleton has been generated at its accepted location;
 the neutral map is saved and selected for editor/game startup. No ship graybox, slice gameplay or machinery rig exists.
 Neutral build/editor/Play input, repeated launch and fresh-checkout editor checks passed in 2.3;
-the selected Unreal MCP pilot also completed. Slice gameplay, packaging and performance acceptance remain untested.
+the selected Unreal MCP pilot also completed. Neutral standalone packaging and repeated input/exit
+passed in 2.4; slice gameplay and performance acceptance remain untested.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
 **introducing the planning gate**. Its scope covered this document and navigation/status updates only.
@@ -438,7 +439,7 @@ and effective MSVC 14.50/SDK 26100 selection. Editor, retrieved-map and repeat c
 The optional Unreal MCP pilot was subsequently requested after ordinary proof passed; its
 [pilot record](validation/phase-2-3-unreal-mcp-pilot.md) records verified mutation/recovery, native
 connection and owner-approved loopback auto-start. The [closeout](phase-2-3-closeout.md)
-was accepted on 2026-10-23. No 2.4 execution is authorized.
+was accepted on 2026-10-23. Subsequent 2.4 authorization and results are recorded below.
 
 **Prerequisite:** 2.2. **Deliverable:** actual C++ editor build/launch evidence on primary host.
 
@@ -460,12 +461,17 @@ was accepted on 2026-10-23. No 2.4 execution is authorized.
 
 ### Phase 2.4: Early Standalone Package Smoke
 
+Explicitly authorized 2026-10-23 with no automatic later-phase work. The
+[execution record](validation/phase-2-4-package-results.md) owns configuration, commands and results,
+including completed package/audit and first/repeat runtime checks. The
+[closeout](phase-2-4-closeout.md) was accepted on 2026-10-23; no later phase is authorized.
+
 **Prerequisite:** 2.3. **Deliverable:** minimal local package that runs outside editor.
 
-- [ ] Build/cook/package the neutral map under the chosen configuration to an owned generated destination.
-- [ ] Run it outside the editor and prove startup/input using the planned performer; record missing runtime/plugin/content dependencies.
-- [ ] If Unreal MCP was adopted, prove the package runs with no MCP client/server and record development automation exclusion/disablement; otherwise record pilot deferral/fallback.
-- [ ] Preserve recipe/version identity and keep generated package output out of ordinary source commits.
+- [x] Build/cook/package the neutral map under the chosen configuration to an owned generated destination; attempt 01 passed with exit 0 and local artifact audit.
+- [x] Run it outside the editor and prove startup/input/exit and repeat launch through owner observations and runtime logs; no missing runtime/module/content failure identified.
+- [x] Prove the package runs with editor/MCP stopped; Editor-target plugin restrictions, Game receipt and staging/runtime audit corroborate development automation exclusion.
+- [x] Preserve recipe/version identity and keep generated package output/logs out of ordinary source commits, including generated FileOpenOrder logs.
 
 **Validation:** [Accepted VS1-T04 procedure](validation/foundation-validation-procedures.md#vs1-t04): actual neutral package startup/input/exit and repeat launch outside the editor; later full slice acceptance is not implied.
 **Recovery / deferral:** return to 2.2/2.3 for packaging dependencies; do not wait until final slice delivery to expose foundational cook failures.

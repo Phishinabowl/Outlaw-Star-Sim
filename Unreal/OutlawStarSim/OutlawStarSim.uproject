@@ -13,11 +13,13 @@
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
-			"Enabled": true
+			"Enabled": true,
+			"TargetAllowList": ["Editor"]
 		},
 		{
 			"Name": "VisualStudioTools",
 			"Enabled": true,
+			"TargetAllowList": ["Editor"],
 			"SupportedTargetPlatforms": [
 				"Win64"
 			],
@@ -25,11 +27,13 @@
 		},
 		{
 			"Name": "ModelContextProtocol",
-			"Enabled": true
+			"Enabled": true,
+			"TargetAllowList": ["Editor"]
 		},
 		{
 			"Name": "EditorToolset",
-			"Enabled": true
+			"Enabled": true,
+			"TargetAllowList": ["Editor"]
 		}
 	]
 }

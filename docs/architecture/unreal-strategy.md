@@ -16,7 +16,9 @@ The earlier three setup gaps are resolved at the availability level. Phase 2.1 c
 on 2026-10-23, with no new installation recommendation. UBT's effective selection, compile/link,
 editor integration and package proof were unexecuted at that inventory checkpoint. Subsequent
 [2.3 results](../implementation/phase-2-3-closeout.md) verify compile/link, intended effective
-compiler/SDK selection and repeated editor/input/recovery proof. Package proof remains unexecuted.
+compiler/SDK selection and repeated editor/input/recovery proof. Subsequent
+[2.4 results](../implementation/phase-2-4-closeout.md) corroborate Game-target selection and standalone
+package/input/repeat operation on the primary host; closeout is accepted.
 No global compiler default was changed.
 
 ## Earlier Read-Only Preflight — 2026-10-23
@@ -83,6 +85,7 @@ C++ foundations own inspectable, testable, diffable simulation/gameplay state. B
 The Blank C++ project skeleton is generated; [setup observations](../development/unreal-project-setup.md)
 record its current limits. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slice-1-implementation-plan.md)
 and Phase 2.2 skeleton/repository setup are complete; 2.2 closeout is accepted. Reproducible build/editor
-and selected local Unreal MCP proof passed in 2.3; its closeout is accepted. Package proof remains
-at separately authorized 2.4. This supersedes the earlier planning-gate deferral, not phase boundaries.
+and selected local Unreal MCP proof passed in 2.3; its closeout is accepted. Authorized 2.4 package
+and repeated standalone runtime proof passed; closeout is accepted. This supersedes the earlier
+planning-gate deferral, not phase boundaries; no later work is authorized.
 Tool observations are dated; documentation publication does not establish build validation.

@@ -77,7 +77,8 @@ build/editor/input and recovery proof have since passed in 2.3. Phase 1.5
 verified read-only; [Phase 2.1 closeout](implementation/phase-2-1-closeout.md) was accepted on 2026-10-23.
 Phase 2.2 skeleton/repository setup and its [closeout](implementation/phase-2-2-closeout.md) were accepted
 on 2026-10-23. Subsequently authorized 2.3 build/editor and Unreal MCP work is complete, with
-[closeout accepted](implementation/phase-2-3-closeout.md); 2.4 remains unstarted and unauthorized. Later
+[closeout accepted](implementation/phase-2-3-closeout.md). Subsequently authorized 2.4 package and
+first/repeat standalone checks passed, with [closeout accepted](implementation/phase-2-4-closeout.md). Later
 subphases and modeling/gameplay remain outside that scope. Unreal MCP follows ordinary 2.3 build/editor proof; Blender
 MCP follows the 3.1 player/scale fixture, each as a separately scoped optional local pilot.
 

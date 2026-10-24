@@ -7,6 +7,11 @@ later pilot. This document owns editor-automation requirements; the
 [slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md) owns
 execution checklists and gates. Baseline v1 remains authoritative for reconstruction.
 
+Subsequent authorized [2.4 package proof](../implementation/phase-2-4-closeout.md) verified standalone
+operation without editor/MCP. Project references for MCP, EditorToolset and other editor tooling
+are restricted to Editor targets; receipt/staging/runtime evidence corroborates Game-target exclusion.
+This does not disable the accepted editor auto-start workflow. Phase 2.4 closeout is accepted.
+
 Historical 2026-10-10 investigation: the user accepted official Unreal-first/Blender-later evaluation
 and requested a [Blender Sandbox pilot design](../implementation/blender-sandbox-pilot-design.md).
 That record owns pinned official source/transport/license findings and host Sandbox state, superseding

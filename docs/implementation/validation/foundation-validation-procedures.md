@@ -10,8 +10,12 @@
 
 These procedures refine existing scenario IDs. They do not create another test framework or authorize
 installations, LFS configuration, project creation, engine execution or publication. Phase 1.4 remains
-planning in progress. All four scenarios are **not executed**. This document verifies no new host or
-tool availability.
+planning in progress at that historical acceptance checkpoint, and all four scenarios were then
+**not executed**. This procedure document itself verifies no host/tool availability.
+Subsequent execution evidence is maintained separately in the
+[2.1 inventory](../phase-2-1-closeout.md), [2.3 build/editor closeout](../phase-2-3-closeout.md) and
+[2.4 package closeout](../phase-2-4-closeout.md). Current Phase 2.4 evidence includes
+successful first/repeat standalone runtime checks; phase acceptance remains distinct from test results.
 
 ## Shared Execution And Evidence Rules
 
