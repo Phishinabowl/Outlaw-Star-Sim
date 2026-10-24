@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phase 1 and Phase 2.1–2.4 complete; 2.4 closeout accepted; Phase 2 exit review only |
+| Status | Phases 1 and 2 complete; Phase 2 exit accepted; Phase 3.1 walkthrough only |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 2.4 closeout accepted 2026-10-23; assess Phase 2 exit gate without later execution |
+| Current checkpoint | Phase 2 foundation accepted 2026-10-23; explain 3.1 before execution authorization |
 
 ## Purpose And Placement
 
@@ -478,9 +478,13 @@ including completed package/audit and first/repeat runtime checks. The
 
 ### Phase 2 Exit Gate
 
-- [ ] VS1-T01–T04 have actual evidence, source/owned/generated boundaries hold, and primary host is reproducible.
-- [ ] No hidden source-media dependency, accidental unsupported compiler choice or editor-only launch assumption remains.
-- [ ] Maintainer accepts the foundation and next spatial/state increment; no spatial/player/system acceptance yet.
+The [exit review](phase-2-exit-review.md) assesses published baseline `e8a91fb`. Technical criteria
+are satisfied within the agreed primary-host neutral scope; foundation acceptance was given on 2026-10-23.
+Acceptance of this gate does not automatically authorize Phase 3.1 execution or the Blender pilot.
+
+- [x] VS1-T01–T04 have actual evidence, source/owned/generated boundaries hold, and primary host is reproducible within the documented scope.
+- [x] No identified hidden source-media dependency, accidental unsupported compiler choice or editor-only launch assumption remains.
+- [x] Maintainer accepts the foundation and readiness for the next spatial/state increment; no spatial/player/system acceptance or Phase 3 execution is implied.
 
 ## Phase 3: Spatial Graybox And One-Player Traversal
 

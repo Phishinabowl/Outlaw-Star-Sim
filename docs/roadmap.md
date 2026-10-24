@@ -82,6 +82,9 @@ first/repeat standalone checks passed, with [closeout accepted](implementation/p
 subphases and modeling/gameplay remain outside that scope. Unreal MCP follows ordinary 2.3 build/editor proof; Blender
 MCP follows the 3.1 player/scale fixture, each as a separately scoped optional local pilot.
 
+The [Phase 2 foundation exit](implementation/phase-2-exit-review.md) was accepted on 2026-10-23.
+Phase 3.1 is ready for a scope walkthrough; no Phase 3 implementation or Blender pilot has started.
+
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 [action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,
 player, mechanism and readiness recommendations plus a discussion queue. User-selected directions
