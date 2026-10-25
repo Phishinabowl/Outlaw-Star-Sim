@@ -496,19 +496,29 @@ Execution authorized 2026-10-23, including early preparation of the optional loc
 pilot with guided editor steps. Connectivity setup may precede the player fixture; final handoff
 and passage proof still require that fixture. Phase 3.2A and later work remain unauthorized.
 
-- [ ] Establish agreed player body/collision scale, basic traversal and first/third-person perspective over that same body.
-- [ ] Verify camera switching does not move/replace the physical actor or change equipment access context.
-- [ ] Create only neutral scale references needed for hull/room testing; approximately 2 m settei convention is not imposed as every deck's height.
-- [ ] Complete the accepted known-size Blender→Unreal handoff fixture before repeated geometry production: retain the source/recipe and verify save/reopen, units, orientation, pivots and collision after export/import. This requirement applies through the ordinary workflow if the optional MCP pilot is deferred.
+The 2026-10-24 editor build, saved `L_TestLab` measurements and scoped VS1-G01 owner-run input,
+camera and neutral clearance checks passed; [player/scale results](validation/phase-3-1-player-scale-results.md)
+record evidence and later equipment/interaction repeat limits. The neutral proof map/defaults
+remain unchanged. [Guided checks](../development/player-scale-fixture.md) cover the first Play pass.
+
+- [x] Establish agreed player body/collision scale, basic traversal and first/third-person perspective over that same body.
+- [x] Verify camera switching does not move/replace the physical actor or change available context; equipment/access repeats remain explicit in VS1-G01 at 3.4/later integration.
+- [x] Create only neutral scale references needed for hull/room testing; approximately 2 m settei convention is not imposed as every deck's height.
+- [x] Complete the accepted known-size Blender→Unreal handoff fixture: retained source/recipes, save/reopen, units, orientation, pivots, collision, deliberate reimport and owner-run player passage checks passed locally. Publication/retrieval proof remains in the closeout below.
 
 **Validation:** [Accepted VS1-G01 procedure](validation/spatial-validation-procedures.md#vs1-g01): shared body/camera checks in the neutral fixture, with later equipment/context repeats explicit.
 **Recovery / deferral:** adjust reviewed camera/body choices before building tight rooms; character art/animation polish stays deferred.
 
 **Optional Blender MCP pilot checkpoint (before repeated 3.2/3.3 production):**
 
-- [ ] If selected and scoped, verify actual Blender/add-on/server/client versions, source/license/dependencies and the agreed isolation before connecting; use only an owned disposable fixture.
-- [ ] Inspect and create one known-size proxy, preserve a reviewable recipe, save/reopen and export/import through the accepted handoff; verify units, orientation, pivots and collision in the same player fixture.
-- [ ] Record reproducibility, stop/reconnect, bounded output diff and recovery; choose adoption or reviewed Python/manual fallback before producing ship proxies.
+- [x] Verify actual Blender/add-on/server/client versions, source/license/dependencies and the accepted local boundary; use only owned fixtures. [Connector evidence](validation/phase-3-1-blender-mcp-pilot.md).
+- [x] Create known-size proxies with retained recipes, save/reopen and export/import; verify units, orientation, pivots and collision with the same player. [Handoff evidence](validation/phase-3-1-blender-handoff-results.md).
+- [x] Record reproducibility, stop/reconnect, bounded changes and local recovery. Retain the verified local MCP workflow with approved loopback auto-start; reviewed Python/manual operations remain fallback. Storage retrieval is not implied by local pilot success.
+
+**3.1 closeout remaining:** review/confirm publication, then execute the existing post-publication
+fresh-checkout LFS retrieval/open check for the newly introduced Blender/FBX/Unreal asset set.
+See [closeout review](phase-3-1-closeout.md). Local validation is complete; the subphase is not yet
+accepted closed, and no 3.2A execution is authorized.
 
 **Pilot validation / recovery:** actual handoff fit and recoverable fixture changes under the [editor-automation contract](../architecture/editor-automation.md). Restore only owned pilot assets/settings on failure; no source edits, inferred canon or dependency on MCP availability.
 

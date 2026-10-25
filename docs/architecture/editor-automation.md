@@ -4,8 +4,9 @@ Status: the authorized Unreal pilot completed on 2026-10-23; [2.3 closeout](../i
 was accepted. ModelContextProtocol/EditorToolset and the project-local Codex connection are retained;
 owner-approved interactive auto-start is verified on loopback. The [3.1 Blender pilot](../implementation/validation/phase-3-1-blender-mcp-pilot.md)
 has passed native connectivity, reversible edits, save/reopen and stop/reconnect checks. Blender
-interactive auto-start was approved and verified on loopback on 2026-10-23; full handoff proof remains
-pending. This document owns editor-automation requirements; the
+interactive auto-start was approved and verified on loopback on 2026-10-23; local
+[handoff/reimport and player-fit checks](../implementation/validation/phase-3-1-blender-handoff-results.md)
+passed on 2026-10-24. Post-publication storage proof remains in the 3.1 closeout. This document owns editor-automation requirements; the
 [slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md) owns
 execution checklists and gates. Baseline v1 remains authoritative for reconstruction.
 

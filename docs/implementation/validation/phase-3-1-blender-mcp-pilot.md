@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Date | 2026-10-23 |
-| Status | Connectivity/reversible-edit stage and approved loopback auto-start passed; full handoff proof pending |
+| Status | Connector and local handoff checks passed; post-publication asset retrieval/open proof pending |
 | Scope | Early local connector setup and disposable scale/handoff fixture; no 3.2A execution |
 | Authority | [3.1 plan](../vertical-slice-1-implementation-plan.md#phase-31-player-and-scale-fixture), [local automation contract](../../architecture/editor-automation.md#current-local-pilot-contract--accepted-2026-10-11) |
 
@@ -110,8 +110,9 @@ socket server is running. Subsequent restart/reconnection and reversal results f
 
 ## Remaining Handoff Proof
 
-Final export/import, pivot/orientation/collision and passage checks require the
-3.1 player fixture. Neither source availability nor successful installation closes those checks.
+The [handoff results](phase-3-1-blender-handoff-results.md) now record passed export/import,
+pivot/orientation/collision, deliberate reimport and owner-run player passage checks. Publication
+and fresh-checkout storage proof remain in the [3.1 closeout review](../phase-3-1-closeout.md).
 
 The accepted local permission tradeoff remains in force. Generated Python is reviewed for each
 bounded task; no source media, credentials, external asset services, desktop control or ship

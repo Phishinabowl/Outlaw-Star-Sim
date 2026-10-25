@@ -1,6 +1,6 @@
 # Roadmap
 
-## Current stage — reference foundation substantially complete; pre-implementation
+## Current stage — Phase 3.1 local validation complete; closeout pending
 
 Phase 0 bootstrap and subsequent user-approved reference increments established source protection, evidence records and a planning foundation. Approval is scoped to the work below; it is not general implementation authorization.
 
@@ -83,7 +83,9 @@ subphases and modeling/gameplay remain outside that scope. Unreal MCP follows or
 MCP follows the 3.1 player/scale fixture, each as a separately scoped optional local pilot.
 
 The [Phase 2 foundation exit](implementation/phase-2-exit-review.md) was accepted on 2026-10-23.
-Phase 3.1 is ready for a scope walkthrough; no Phase 3 implementation or Blender pilot has started.
+Authorized Phase 3.1 player/scale and local Blender MCP/handoff checks passed on 2026-10-24.
+The [3.1 closeout review](implementation/phase-3-1-closeout.md) records publication confirmation
+and post-publication asset retrieval/open proof still pending. No 3.2A execution is authorized.
 
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
 [action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,
