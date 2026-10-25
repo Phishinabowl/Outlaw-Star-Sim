@@ -3,8 +3,8 @@
 | Field | Value |
 | --- | --- |
 | Started | 2026-10-23 |
-| Status | Scoped VS1-G01 and local Blender handoff checks passed; publication/storage proof and later equipment repeats remain separate |
-| Baseline | `a0141b9`; subsequent player/fixture edits uncommitted |
+| Status | Scoped VS1-G01, Blender handoff and published recovery checks passed; later equipment repeats remain separate |
+| Baseline | Initial checks followed `a0141b9`; implementation published as `6b2de6f` |
 | Scope | One physical player, first/third-person cameras and isolated scale references; no 3.2A |
 | Configuration / guide | [Player scale fixture](../../development/player-scale-fixture.md) |
 
@@ -87,5 +87,5 @@ Log: `.local/validation/phase-3-1/editor-build-01.log`. Effective toolchain rema
 
 Equipment, low-gravity traversal and interaction locality are
 not implemented by this fixture. The [Blender handoff](phase-3-1-blender-handoff-results.md) has
-passed local checks, including imported-frame player passage. Post-publication storage proof and
-acceptance remain in the [3.1 closeout review](../phase-3-1-closeout.md).
+passed local checks, including imported-frame player passage. [Published asset recovery](phase-3-1-recovery-results.md)
+also passed. The [3.1 closeout review](../phase-3-1-closeout.md) records acceptance and closure.

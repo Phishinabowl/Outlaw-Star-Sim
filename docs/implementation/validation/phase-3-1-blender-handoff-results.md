@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Date | 2026-10-24 |
-| Status | Local handoff/reimport and owner visual/traversal checks passed; publication and fresh-checkout storage proof pending |
+| Status | Local handoff/reimport, owner visual/traversal and published recovery checks passed |
 | Scope | Owned cube, hinged flap and doorway frame in L_TestLab; no ship geometry or 3.2A |
 | Authority | [Handoff contract](../phase-1-4-architecture-asset-validation-draft.md#accepted-blender-to-unreal-handoff-conventions--fixture-proof-pending), [3.1 plan](../vertical-slice-1-implementation-plan.md#phase-31-player-and-scale-fixture) |
 
@@ -124,6 +124,6 @@ not a finished texture/lightmap layout. Reimport results below verify the fix in
   and capsule 30/90 cm. The latest Play segment has no Error/Fatal/failed-ensure messages and
   records teardown. Earlier diagnostic messages remain in the historical portion of the log.
 - Local handoff, deliberate reimport and player-fit checks pass for these owned proxies. Equipment
-  and actual ship mechanism motion remain outside the fixture. Post-publication retrieval/open
-  proof for the new source/export/imported asset set remains under the existing storage contract.
-  Complete Phase 3.1 acceptance is not claimed before its remaining closeout steps.
+  and actual ship mechanism motion remain outside the fixture. [Published retrieval/open proof](phase-3-1-recovery-results.md)
+  for the new source/export/imported asset set also passed under the existing storage contract.
+  The [3.1 closeout](../phase-3-1-closeout.md) records acceptance and closure within those limits.

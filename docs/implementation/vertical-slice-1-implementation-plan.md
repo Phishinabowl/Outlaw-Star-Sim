@@ -2,12 +2,12 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 / 2026-10-23 |
-| Status | Phases 1 and 2 complete; Phase 3.1 execution authorized and in progress |
+| Created / last edited | 2026-10-07 / 2026-10-24 |
+| Status | Phases 1 and 2 and subphase 3.1 complete; 3.2A unstarted |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 3.1 player/scale fixture and early local Blender MCP pilot authorized 2026-10-23; stop before 3.2A |
+| Current checkpoint | Phase 3.1 accepted and closed 2026-10-24, including published asset recovery; stop before 3.2A |
 
 ## Purpose And Placement
 
@@ -504,7 +504,7 @@ remain unchanged. [Guided checks](../development/player-scale-fixture.md) cover 
 - [x] Establish agreed player body/collision scale, basic traversal and first/third-person perspective over that same body.
 - [x] Verify camera switching does not move/replace the physical actor or change available context; equipment/access repeats remain explicit in VS1-G01 at 3.4/later integration.
 - [x] Create only neutral scale references needed for hull/room testing; approximately 2 m settei convention is not imposed as every deck's height.
-- [x] Complete the accepted known-size Blender→Unreal handoff fixture: retained source/recipes, save/reopen, units, orientation, pivots, collision, deliberate reimport and owner-run player passage checks passed locally. Publication/retrieval proof remains in the closeout below.
+- [x] Complete the accepted known-size Blender→Unreal handoff fixture: retained source/recipes, save/reopen, units, orientation, pivots, collision, deliberate reimport and owner-run player passage checks passed. [Published asset recovery](validation/phase-3-1-recovery-results.md) also passed.
 
 **Validation:** [Accepted VS1-G01 procedure](validation/spatial-validation-procedures.md#vs1-g01): shared body/camera checks in the neutral fixture, with later equipment/context repeats explicit.
 **Recovery / deferral:** adjust reviewed camera/body choices before building tight rooms; character art/animation polish stays deferred.
@@ -515,10 +515,10 @@ remain unchanged. [Guided checks](../development/player-scale-fixture.md) cover 
 - [x] Create known-size proxies with retained recipes, save/reopen and export/import; verify units, orientation, pivots and collision with the same player. [Handoff evidence](validation/phase-3-1-blender-handoff-results.md).
 - [x] Record reproducibility, stop/reconnect, bounded changes and local recovery. Retain the verified local MCP workflow with approved loopback auto-start; reviewed Python/manual operations remain fallback. Storage retrieval is not implied by local pilot success.
 
-**3.1 closeout remaining:** review/confirm publication, then execute the existing post-publication
-fresh-checkout LFS retrieval/open check for the newly introduced Blender/FBX/Unreal asset set.
-See [closeout review](phase-3-1-closeout.md). Local validation is complete; the subphase is not yet
-accepted closed, and no 3.2A execution is authorized.
+**3.1 closeout accepted — 2026-10-24:** confirmed changes were published as `6b2de6f`.
+Fresh-checkout LFS retrieval, recovered Blender source/export and Unreal fixture/import checks
+passed; the temporary checkout was deleted. See [recovery results](validation/phase-3-1-recovery-results.md)
+and [closeout review](phase-3-1-closeout.md). No 3.2A execution is authorized.
 
 **Pilot validation / recovery:** actual handoff fit and recoverable fixture changes under the [editor-automation contract](../architecture/editor-automation.md). Restore only owned pilot assets/settings on failure; no source edits, inferred canon or dependency on MCP availability.
 

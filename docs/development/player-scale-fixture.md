@@ -1,8 +1,9 @@
 # Player And Scale Fixture — Phase 3.1
 
 Status: editor build, saved-map measurements and scoped owner-run input, traversal, camera and
-neutral clearance checks passed 2026-10-24. Local Blender handoff checks also passed; publication /
-storage proof and later equipment/context repeats remain separate. See the
+neutral clearance checks passed 2026-10-24. Blender handoff and
+[published asset recovery](../implementation/validation/phase-3-1-recovery-results.md) also passed;
+later equipment/context repeats remain separate. See the
 [results record](../implementation/validation/phase-3-1-player-scale-results.md).
 The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md#phase-31-player-and-scale-fixture)
 owns scope. [VS1-G01](../implementation/validation/spatial-validation-procedures.md#vs1-g01)

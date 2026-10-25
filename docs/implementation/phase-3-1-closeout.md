@@ -3,8 +3,8 @@
 | Field | Value |
 | --- | --- |
 | Prepared | 2026-10-24 |
-| Baseline | `a0141b9` plus uncommitted 3.1 source, assets, recipes and evidence |
-| Status | Local changes accepted for publication 2026-10-24; post-publication retrieval/open proof pending |
+| Published implementation | `6b2de6f7173f9c197da309ce5e62c44e0fab2d04` |
+| Status | Accepted and closed 2026-10-24; published asset recovery passed |
 | Scope | One physical walking proxy, first/third-person views, neutral scale lab and rigid Blender handoff; no 3.2A |
 
 ## Completed Evidence
@@ -23,20 +23,22 @@
 - Neutral proof map/defaults remain unchanged. The new lab has a per-level Game Mode override;
   it is not the ship, finished character art or a complete slice.
 
-## Repository Review And Remaining Closeout
+## Repository Review And Recovery
 
 All 11 new designated binary files match existing LFS rules: one Blender source, three FBX exports,
 six Unreal mesh/material assets and L_TestLab. Source/recipes/evidence remain ordinary Git.
 Blender backups, raw logs, connector packages/environments and local pilot checkpoints remain ignored.
 No source episode/settei media or generated reference frames are part of the intended increment.
 
-Publication was confirmed on 2026-10-24. After publication, the existing
+Publication was confirmed on 2026-10-24. The existing
 [storage/recovery contract](phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23)
 requires fresh-checkout retrieval of actual LFS payloads and opening the designated Blender/Unreal
-assets before repeated production relies on the new asset set. The Phase 2 retrieval proof covered
-the neutral fixture, not these newly authored files. Record that result and remove its owned temporary
-recovery copy afterward. This is an existing evidence requirement, not a new gameplay feature or
-additional art pass. Local data/owner checks do not substitute for published retrieval proof.
+assets before repeated production relies on the new asset set. That proof passed for `6b2de6f`:
+all 12 payloads matched, the recovered Blender source regenerated its exports, and the recovered
+Unreal module built and loaded the saved fixtures and regenerated FBX geometry successfully.
+The temporary checkout and its empty phase directory were deleted after verification.
+[Recovery results](validation/phase-3-1-recovery-results.md) record the evidence and limits.
+The confirmed scope and required recovery checks are complete; Phase 3.1 is closed.
 
 ## Retained Limits
 
