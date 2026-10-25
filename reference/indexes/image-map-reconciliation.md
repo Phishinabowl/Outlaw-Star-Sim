@@ -54,3 +54,36 @@ The user's Caster-first preference in SET-136 is preserved in the original map a
 ## Next review increment
 
 Compare repeated mechanical drawings and finish selected callout transcription for the new candidates, then establish Episode 4 scene alignment before proposing targeted frame extraction. The 16-sheet detailed interior batch remains distinct from these 11 selected XGP/support identity checks; 39 of the 66 scope records have neither individual pass documented yet. Fine translation and variant comparison are still incomplete across both passes.
+
+## CSV Reconciliation — 2026-10-24
+
+The [screening CSV](settei-screening.csv) now retains all 60 substantive entries from the original
+map, expanded across 78 distinct scan IDs. A correction cross-reference also appears on SET-028,
+giving 79 annotated rows within the unchanged 221-image inventory. The original map and the
+October 6 review above remain unchanged; their review counts and next-step statements describe
+that historical checkpoint.
+
+Three appended columns separate historical notes from reviewed observations:
+
+- `image_map_references`: original map path, line, section and entry/range; `imng040` is retained
+  in the reference and resolved to SET-040. Range descriptions are carried to each member without
+  implying that every detail applies independently to every scan.
+- `image_map_notes`: original descriptive wording, including uncertainty, episode recollections
+  and preferences. Both img027 entries remain on SET-027; the rear-view entry is additionally
+  cross-referenced on SET-028 according to the existing reviewed correction.
+- `image_map_disposition`: applicable reviewed correction or explicit unverified-lead status.
+  General identity/verification fields retain their prior values; importing a historical note does
+  not establish its subject identity, translate its labels or upgrade evidence classification.
+
+The columns preserve previously omitted other-ship, weapon-prop, environment and scale leads,
+as well as more detailed XGP observations. The Caster-first preference and sub-ether presentation
+priority remain attributed historical priorities, not additional feature authorization. Existing
+corrections for control cylinders, Jim's console, other-ship interiors, preliminary/rest-space
+designs, torch gun/laser cutter, Jim's computer and the episode-specific launch platform remain
+explicit. SET-088's map reference to img040 is flagged as inconsistent with the reviewed identities,
+rather than silently corrected in the original notes.
+
+This pass reconciles text records only. It performs no new scan inspection, Japanese transcription,
+episode verification, image generation or Phase 3.2A work. Broader collection review remains a
+separate next increment. Later evidence records may resolve historical leads; these columns do
+not supersede them or imply that every earlier question remains open today.
