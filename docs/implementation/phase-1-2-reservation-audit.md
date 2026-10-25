@@ -11,6 +11,11 @@ and [S/H spatial records](../reconstruction/baseline-v1/spatial-constraint-map.m
 The [canon policy](../canon-policy.md) applies: drawings remain B production candidates;
 necessary access is D, proposed allocation/margins are E, and demo behavior is F.
 
+The accepted [2026-10-25 corridor amendment](phase-1-2-corridor-route-amendment.md) removes
+the required dining shell from initial route fit. A closed side-hatch placeholder reserves a possible
+future connection; kitchen/dining placement and sizing are deferred. Existing machinery reservations
+remain in force, and a placeholder does not demonstrate fit for a room behind it.
+
 ## Targeted Source Inspection
 
 Re-inspected local scans SET-006, 024, 026, 032, 033, 045, 088, 104, 114, 125, 126 and 192.
@@ -46,7 +51,7 @@ not a measured solid box. Unknown envelope size must not be treated as zero.
 | RA-05 — H04/H05/H06; M09/M10; MC-06 | Lower entry and paired lateral root regions: reserve inside/outside boarding approach, door/panel sweep and grappler stowage/mount space together. | Candidate conflict: Layout A's 3 × 3 m entry box does not prove space is free of roots. Do not move the hatch or declare all H records identical merely to fit. Reconcile exterior cross-section and chosen hatch proxy in 3.2/3.4; arm deployment remains future reservation only. |
 | RA-06 — M11; S04/S05; MC-07 | Dorsal machinery region and main-passage upper access: preserve nested hardware, capsule/hatch/seat space and a future outward deployment line. Keep the ladder's approach free. | Envelope/station extent unknown. Do not reserve only the exterior extended tube or certify the unused aft approach as free of its stowed body. A closed access representation is sufficient now; reconcile full hull attachment before fixing affected roof/bulkhead geometry in 3.4. No Shooter operation required. |
 | RA-07 — M12; MC-08 | External supports, ground approach and aft machinery: preserve the supported dormant pose and future folding/sweep space. Treat Layout A's unallocated aft interval as unresolved structure/machinery, not an empty room. | Support feet/struts may affect the exterior jump, light-switch route and entry approach. Check the static supported pose in 3.2/3.4, separately from future screw/landing motion. Do not infer landing fold equals sub-ether transition. |
-| RA-08 — M13; S15 | Minimal dining/common-area shell: if later identified with the lounge, protect floor-panel and furniture emergence space plus circulation. Keep floor services and fixed furniture provisional. | Identity pending. Do not create another full room solely to avoid the question. No moving furniture required; revisit affected floor allocation in 3.2/3.4 if the identity or layout changes. |
+| RA-08 — M13; S15 | Kitchen/dining room placement and sizing deferred under the corridor amendment; initial route includes only an adjustable closed side-hatch placeholder. If later room placement overlaps the lounge candidate, protect floor-panel/furniture emergence space and circulation. | Room identity and fit pending; no initial room shell or moving furniture required. Preserve future reservations without assigning an unsupported footprint or treating the closed hatch as room-fit proof. |
 | RA-09 — future branches | At source-supported passage destinations, allow closed doors/hatches without claiming a complete cabin/cargo plan behind them. | Exact branch coordinates pending. Avoid invented named-room adjacency and do not use closed doors to conceal interference with the required route. Full rooms remain deferred. |
 | RA-10 — carried/stowed equipment; M01–M05/M09 | Boarding/climb path, entering-right trunk stage and pilot workspace: reserve carried equipment, opened trunk/lid, occupant transfer and a real stowed computer/cable location. | Stow location remains unselected. Disconnect/close/stow before seat lift is agreed; do not leave equipment suspended in the seat sweep. Placed trunk's F player-nonblocking exception does not waive visible machinery, carried-equipment or hull fit. Check in 3.3/3.4 and repeat with actual mechanisms in 6.4. |
 
@@ -60,7 +65,8 @@ to make this audit look complete.
 - **Active slice fit:** M01–M05, all-four M07, selected operating entry M09, case/occupant/computer,
   player route and both camera views. Their motion and access must work, with explicit E/F choices.
 - **Static/access fit now:** station-side controls in their selected access pose, protected rail/robot
-  regions, H02 and upper access representations, exterior supported pose and required dining shell.
+  regions, H02 and upper access representations, exterior supported pose and closed kitchen/dining
+  side-hatch placeholder clear of the active corridor. Kitchen-room fit remains deferred.
   M06 needs limited movement only if the chosen station access requires it.
 - **Future reservation only:** grappler deployment/combat, Shooter operation, mobile maintenance
   robot behavior, aft/landing transitions and convertible furniture. Recording these does not add them

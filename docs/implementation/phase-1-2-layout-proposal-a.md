@@ -6,6 +6,11 @@ not measured canon, final accepted geometry or a demonstrated fit. No model is c
 [Decision packet](phase-1-2-spatial-motion-decision-packet.md) owns agreements and exceptions;
 [Baseline v1](../reconstruction/baseline-v1/spatial-constraint-map.md) owns source constraints.
 
+The [accepted 2026-10-25 corridor amendment](phase-1-2-corridor-route-amendment.md) supersedes
+the required dining shell and its X=31–37 m / 6 × 4.5 m room trial below. The initial route instead
+uses a continuous corridor with an adjustable closed kitchen/dining side-hatch placeholder.
+Room placement/sizing are deferred; the original allocation is retained for decision history.
+
 ## Coordinate Convention And Evidence
 
 Use longitudinal station X=0 at the foremost overall-envelope point and X=72 m at its aft extent.

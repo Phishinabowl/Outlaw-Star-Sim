@@ -4,6 +4,11 @@ Planning baseline prepared 2026-10-07 after the user approved this documentation
 
 Planning continuation: the user subsequently requested the [expanded implementation-plan draft](../../implementation/vertical-slice-1-implementation-plan.md). That supersedes the publication-time planning-gate deferral above; these four baseline documents remain the authoritative constraints/scope, unchanged by the draft's execution scheduling. No implementation approval follows.
 
+Current initial route: the accepted [2026-10-25 corridor amendment](../../implementation/phase-1-2-corridor-route-amendment.md)
+replaces the later Phase 1.2 walk-through dining requirement with a central cockpit-to-engineering
+corridor and a closed kitchen/dining side-hatch placeholder. Room placement and sizing remain
+deferred. Named source directions below do not prove the room's geometry or the side hatch's identity.
+
 ## Evidence and status vocabulary
 
 Apply the [canon policy](../../canon-policy.md). **Confirmed** means the specific observation/label was verified in the cited material; a confirmed design label is still **B candidate** until collection provenance is authenticated. **Strongly inferred** is D, never canon. **Unknown** is unresolved and cannot supply a fixed placement. Any connecting geometry adopted for a future blockout is E; interaction adaptations are F. Status applies to each relationship, not automatically to an entire room or system.

@@ -8,6 +8,9 @@ The [Phase 1.2 closeout proposal](../../implementation/phase-1-2-closeout-propos
 records the bounded opening supplement accepted by the user on 2026-10-07, consolidating the
 case/computer, reveal, boots, HUD and dining-shell directions. Read it alongside the historical
 contract below; its eight readiness conditions remain intact. Source observations are unchanged.
+The accepted [2026-10-25 route amendment](../../implementation/phase-1-2-corridor-route-amendment.md)
+supersedes the walk-through dining-shell portion: use a continuous central corridor and a closed
+side-hatch placeholder, deferring the kitchen/dining room's placement, size and interior.
 
 One physical player approaches the dormant XGP inside a minimal asteroid hangar, finds and operates an exterior entry, explores the bridge and required passage route, brings limited ship services online, deploys the navigation apparatus with a placeholder occupant, performs engineering preparation, returns to the bridge and completes ignition. Reach **SHIP READY**, still supported inside the hangar; no departure. SHIP READY is a startup milestone, not the end of play: leave the seat and continue exploring, including hatch exit/re-entry between active ship gravity and hangar low gravity.
 
@@ -32,7 +35,7 @@ Ordering is the slice's F experience sequence, informed by the commissioning evi
 | Hangar / hull context | Minimal supported ship reveal and reachable boarding approach at the accepted overall hull scale | Provisional E hangar/support geometry; no detailed asteroid facility or launch opening animation. Use grey commissioning appearance as reference, not a finalized art pass. |
 | Entry | One selected exterior hatch with approach, interaction, movement and traversable interior connection | Entry identity/route is unresolved evidence; select an E/F solution explicitly before blockout. Keep other hatch records distinct. |
 | Player / camera | One physical avatar can traverse required spaces and operate local controls; first/third-person views preserve the same body/state | No full character art, crew AI or separate authority per camera. Camera mode and control mode remain distinct. |
-| Interior route | Lower entry/ladder, forward cockpit, main passage, minimal dining shell and engineering connected for play | Layout A is accepted provisional E geometry, not proved hull fit. Future branches reserved; full deck plan excluded. |
+| Interior route | Lower entry/ladder, forward cockpit and engineering connected by a continuous central corridor; closed kitchen/dining side-hatch placeholder | Accepted E reconstruction, not proved hull fit. Kitchen/dining room shell, placement and sizing deferred; no required walk-through room. Preserve future/machinery reservations; full deck plan excluded. |
 | Limited services | Guide lighting on entry; laptop bootstrap enables Gilliam/limited services before main ignition | Qualitative supplies accepted E/F; actual canonical topology/numerical power remain unknown. |
 | Navigation apparatus | Awake occupant waits for local acknowledgement; cap opens, entry/descent, cap closure, rise/cover stages reach actual link/available state | Joined choreography/closure bridge accepted E/F. Exact metric motion/rig fit later; no fluid simulation/full AI. |
 | Bridge seating | Raised/low control-cluster states and required lift motion, coordinated with access/apparatus reservations | No measured stroke or detailed actuator rig implied. |

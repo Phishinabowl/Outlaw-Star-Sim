@@ -2,7 +2,7 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 / 2026-10-24 |
+| Created / last edited | 2026-10-07 / 2026-10-25 |
 | Status | Phases 1 and 2 and subphase 3.1 complete; 3.2A unstarted |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
@@ -256,9 +256,11 @@ Layout A's general arrangement and the general engineering service-route arrange
 in principle. Dimensions, ceiling/bay heights, exact connections and fit remain provisional;
 the opening additions are reconciled by the accepted bounded contract supplement.
 The packet consolidates facility lighting, case/computer carrying, revival/skip, bootstrap and guided
-preparation direction. The user also approved a minimal walk-through dining/common-area shell in
-the route; its dimensions/connections and lounge identity remain unresolved. These discussions do
-not prove machinery fit. VS-D01–03 now have accepted provisional E planning choices with named
+preparation direction. The [2026-10-25 corridor amendment](phase-1-2-corridor-route-amendment.md)
+supersedes its earlier walk-through dining-shell requirement: the initial cockpit-to-engineering
+route uses a continuous corridor with a closed kitchen/dining side-hatch placeholder. Room placement,
+size and lounge identity stay deferred. These decisions do not prove machinery fit.
+VS-D01–03 have accepted provisional E planning choices with named
 later fit checks; source correspondence and final geometry remain explicitly unresolved.
 
 - [x] Propose selected entrance and entry→bridge→engineering route with S/H IDs and unresolved correspondence explicit.
@@ -557,7 +559,7 @@ flag changes that reopen Phase 1.2 constraints. Detailed production art remains 
 **Prerequisite:** 3.1, bounded 3.2A visual-reference acceptance and VS-D01/02 accepted. **Deliverable:** minimum supported hull/context and connected walkable route.
 
 - [ ] Place hull envelope/supports, chosen entrance, bridge, passage and engineering proxies at the agreed E layout.
-- [ ] Include the user-approved minimal dining/common-area shell in the chosen route, once the Phase 1.2 connection/dimension proposal is accepted; preserve unresolved lounge identity, separate hatch records and future spatial reservations.
+- [ ] Use the accepted [continuous cockpit-to-engineering corridor](phase-1-2-corridor-route-amendment.md), with an adjustable closed kitchen/dining side-hatch placeholder. Defer the room shell, placement and sizing until basic hull/corridor fit is understood; preserve separate hatch identities and machinery/future-space reservations.
 - [ ] Traverse outside→bridge→engineering→bridge with the same player; annotate every invented connection.
 
 **Validation:** [Accepted VS1-G02 procedure](validation/spatial-validation-procedures.md#vs1-g02): route/scale proof; baseline S/H references and VS-01/02 traced, without claiming final entry mechanism.
@@ -941,6 +943,31 @@ The register is the initial scenario reference, not a second implementation test
 tests own exact fixtures/assertions; evidence records link back here. A baseline visual criterion cannot be
 closed solely by a pure state test. Future mechanisms MC-06–08 may remain reserved/provisional; final
 evidence must say which fit was actually demonstrated and which functionality was excluded.
+
+## Deferred Presentation Direction — To Be Continued
+
+Recorded 2026-10-25. Use the anime's **To Be Continued** animation as a future sequence-ending
+presentation motif, with a project-authored 3D interpretation to explore. The awakening sequence
+is the initial candidate: after an explicitly chosen sequence endpoint, present the animation
+before a possible fade to black or return to the menu. Checkpoints and location changes are
+other possible uses; exact triggers, timing, visual treatment and destination remain undecided.
+
+[SET-051](../../reference/indexes/settei-collection-review-batch-13.md#SET-051) provides title artwork
+and production-notation reference. Three [supplied screenshots](../../reference/indexes/to-be-continued-supplied-reference.md)
+show the oversized “To”, oversized “be” and complete end-title compositions in the reported order.
+The intended future treatment follows the reported pattern: overlay “To” and then “be” on the
+ending scene, then cut to the complete title on black, with one gunshot synchronized to each of
+the three appearances. The screenshots' starfield is incidental scene content, not a required
+background. This sequence/audio account is owner-reported; targeted episode review is still needed
+to verify its execution and define exact motion/timing. Audio sourcing remains undecided.
+This is an F presentation adaptation; the
+3D treatment is not source-verified behavior.
+
+Implementation and placement in the phase schedule are deferred. This direction adds no current
+slice acceptance requirement, checkpoint/save system or automatic ending at SHIP READY: the
+accepted continued-exploration behavior remains in force. Revisit the ending flow separately
+before implementation. No animation generation, episode extraction or Phase 3.2A work is authorized
+by recording this direction.
 
 ## Risks And Iteration Points
 

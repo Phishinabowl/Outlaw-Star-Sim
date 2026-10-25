@@ -23,6 +23,11 @@ questions. Where they describe scope reconciliation or local profiles/storage as
 the accepted closeout supplies the current planning decision. Source uncertainties and fit
 limitations remain in force; later action/input questions stay with Phase 1.3.
 
+The [accepted 2026-10-25 corridor amendment](phase-1-2-corridor-route-amendment.md) supersedes
+the walk-through dining-shell topology recorded below. Current initial scope is a continuous
+cockpit-to-engineering corridor with a closed kitchen/dining side-hatch placeholder; room placement,
+sizing and interior are deferred. Earlier discussion, diagrams and dimensions remain historical.
+
 ## First Discussion — Arrival And Melfina's Case
 
 The user wants to discuss opening feel and additional episode references before choosing geometry.

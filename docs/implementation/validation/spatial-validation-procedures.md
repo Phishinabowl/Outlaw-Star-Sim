@@ -86,10 +86,12 @@ Use the supported dormant ship pose and separate source-derived landmarks from i
 3. Follow the selected lower entrance, lower connector and H03 ascent into the main passage, then
    reach the cockpit. Keep the boarding hatch, H03, cockpit emergency access and unresolved airlock
    identities distinct. Preserve the separate apparatus cavity below the forward cockpit.
-4. Walk cockpit → main passage → minimal dining/common-area shell → engineering → cockpit in both
+4. Walk cockpit → central corridor → engineering → cockpit in both
    views. Check openings, headroom, corners and return paths with the actual body/collision, recording
    any temporary equipment/occupant proxies used. Closed future branches must not conceal an active
-   route conflict or imply verified rooms beyond them.
+   route conflict or imply verified rooms beyond them. Include an adjustable closed kitchen/dining
+   side-hatch placeholder under the [2026-10-25 route amendment](../phase-1-2-corridor-route-amendment.md);
+   entering a kitchen/dining shell is not required. Its room placement and fit remain deferred.
 5. Repeat affected route portions with the G03 endpoint/reservation proxies present. If a debug/test
    placement establishes a future machinery state, label it as setup rather than a successful startup.
 

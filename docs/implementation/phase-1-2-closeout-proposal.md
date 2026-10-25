@@ -78,6 +78,11 @@ If a worn holster fails, revisit attachment/storage rather than allowing equipme
 through the ship. Exact stow input, animations and equipped-item presentation belong to 1.3;
 this does not add a general inventory screen, arbitrary item slots or weight simulation.
 
+The [accepted 2026-10-25 corridor amendment](phase-1-2-corridor-route-amendment.md) supersedes
+the required walk-through dining shell and its initial room allocation below. Current route scope
+uses a continuous corridor and closed kitchen/dining side-hatch placeholder; room placement and
+sizing are deferred. The original acceptance and trial geometry are preserved as historical records.
+
 ## Concrete Route Proposal And Remaining Correspondence
 
 For the first graybox proposal, use the rectangular exterior boarding proxy H05, informed by H04,

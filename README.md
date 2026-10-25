@@ -10,7 +10,10 @@ Current status: **Phases 1 and 2 and subphase 3.1 complete**. The Blank C++ Outl
 
 The accepted [Phase 1.2 spatial package](docs/implementation/phase-1-2-closeout-proposal.md) owns
 provisional layout and clearance reservations. The [Phase 1.3 behavior closeout](docs/implementation/phase-1-3-closeout-audit.md)
-owns the current action/service/readiness contract. Neither is a model or runtime validation.
+owns the current action/service/readiness contract. The accepted
+[2026-10-25 route amendment](docs/implementation/phase-1-2-corridor-route-amendment.md) selects a
+continuous cockpit-to-engineering corridor with a closed kitchen/dining side-hatch placeholder;
+room placement, sizing and interior are deferred. These are planning decisions, not model or runtime validation.
 
 The [Vertical Slice 1 contract](docs/reconstruction/baseline-v1/vertical-slice-1.md) defines a supported ship inside an asteroid hangar:
 
