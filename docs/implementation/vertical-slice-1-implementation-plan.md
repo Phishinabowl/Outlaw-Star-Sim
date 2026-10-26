@@ -42,8 +42,9 @@ supports the long-term game without expanding the accepted awakening slice. The 
 pilot's 24-image sheet was accepted for readability. The subsequent full Episode 4 preparation
 cached all 354 images and verified 15 sheets, including the final 18-image sheet. Disposable
 recovery tests and a full live RAR round trip passed. The authored category index and generated
-browsing view are initialized; the first 24 Episode 4 locators have preliminary annotations
-(22 screened / 2 needing recheck after attributed maintainer corrections). Further screening, post-review live cleanup/prune and
+browsing view are initialized. Episode 4 category screening is in progress; the
+[authored index and survey record](../../reference/indexes/animehistory/README.md#episode-4-category-survey-progress)
+own current coverage and recheck items. Further screening, post-review live cleanup/prune and
 official procedure adoption remain pending. See the [tool pilot evidence](../../tools/reference-extraction/README.md#pilot-commands-and-observed-results--2026-10-26).
 Phase 3.2A remains unstarted and separately authorized.
 

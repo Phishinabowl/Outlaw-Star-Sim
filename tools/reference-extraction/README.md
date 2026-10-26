@@ -16,8 +16,9 @@ The established reference workflow uses FFprobe metadata, FFmpeg selected frames
 and full Episode 4 cache/contact-sheet/RAR round-trip checks passed within the scope recorded below.
 Maintainer readability acceptance and full Episode 4 preparation passed on 2026-10-26;
 category-index initialization and first-subset integration passed within the evidence scope below;
-this is not an adopted operating procedure. The first 24 Episode 4 locators have preliminary
-screening records (22 screened / 2 needing recheck after attributed maintainer corrections); full episode screening remains pending. The
+this is not an adopted operating procedure. Episode 4 category screening is in progress; the
+[authored index and survey record](../../reference/indexes/animehistory/README.md#episode-4-category-survey-progress)
+own current per-image progress. Full episode screening remains pending. The
 [pre-3.2A research checkpoint](../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns research order and acceptance; this section owns the proposed tool behavior and validation.
 
@@ -159,7 +160,7 @@ prevent concurrent command mutations; the lock is released even when its process
 | Initial live archive/round trip | 24 images plus manifest: 4,548,973 input bytes → 4,507,922 RAR bytes, saving 41,051 bytes (about 0.9%), compression 3/non-solid. Archive test and extracted inventory/image hashes passed in about 4.7 s on this host. This partial archive/receipt was subsequently replaced by the verified full episode below. |
 | Full Episode 4 archive/round trip | 354 images plus manifest: 56,238,483 input bytes → 55,678,192 RAR bytes, saving 560,291 bytes (about 1.0%), compression 3/non-solid. Native archive integrity, staged restore and all image hashes/inventory passed in about 60.5 s. The tool replaced the partial archive only after this verification. Full archive/receipt, live cache and all 15 sheets retained; no live prune performed. |
 | Disposable recovery tests | Resume after request failure and interrupted file promotion; deterministic sheet mapping; corrupted-cache and unregistered-file refusals; explicit cleanup/prune; real RAR restore/replacement; corrupted-archive rejection; simulated archive/restore failure retention; path traversal/reparse-point refusal; OS lock release. These tests do not replace a full-episode production proof. |
-| Review integration | Authored CSV initialized with 9,204 unreviewed records. First 24 Episode 4 images received preliminary annotations; current counts after attributed maintainer corrections are 22 SCREENED / 2 NEEDS_RECHECK, with 330 unreviewed and no completed detailed review. The generated 27-tab ImportExcel view reopened with all 285,324 displayed values and 9,204 image links matching source/joined records. Gallery status reads the validated authored index and reports recheck, unavailable, unreviewed and detailed states separately from caching. See the [annotation evidence](../../reference/indexes/animehistory/README.md#category-index-initialization-and-first-screening--2026-10-26). |
+| Review integration | Authored CSV initialized with 9,204 unreviewed records. The first-sheet checkpoint passed with 22 SCREENED / 2 NEEDS_RECHECK after attributed maintainer corrections, leaving 330 unreviewed and no completed detailed review at that checkpoint. Further survey progress is recorded in the authored index. The generated 27-tab ImportExcel view reopened with all 285,324 displayed values and 9,204 image links matching source/joined records. Gallery status reads validated annotations and reports recheck, unavailable, unreviewed and detailed states separately from caching. See the [annotation evidence](../../reference/indexes/animehistory/README.md#category-index-initialization-and-first-screening--2026-10-26). |
 
 The initial sandbox network attempt failed DNS resolution; the authorized scoped retry outside
 that restriction downloaded the trial. Source CSVs and source episode/settei media were not modified.

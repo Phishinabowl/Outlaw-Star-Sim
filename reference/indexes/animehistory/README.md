@@ -143,6 +143,15 @@ The `subjects` register starts with:
 | `ron_macdougall`, `harry_macdougall` | MacDougall brothers; first-batch identifications supplied by the maintainer, with cropped visibility recorded per image. |
 | `space_pirate_foot_soldier` | Recurring mechanical space-pirate foot soldiers, identified by the maintainer; no specific unit/faction identity implied. |
 | `horus` | Hilda's spacecraft, identified by the maintainer in Episode 4 exterior/cockpit views. |
+| `horus_dropship` | Detachable crew-transfer craft carried by Horus; maintainer identification distinguishes it from the parent vessel in the asteroid-entry sequence. |
+| `ship_anchor` | Ship-launched tethered anchor hardware, identified by the maintainer; common equipment class does not imply identical mechanisms on every vessel. |
+| `jim_satchel` | Jim's carried satchel; contents and recurring inventory are not established. |
+| `xgp_maintenance_robot` | Small blue rail-mounted maintenance unit seen in the XGP passage/cockpit; physical unit identity does not establish its full capabilities or a ship-wide rail route. |
+| `hilda_laptop` | Hilda's folding portable computer used at the XGP cockpit station; keep distinct from Melfina's transport case. |
+| `hilda_wrist_controller` | Hilda's wrist controller/communicator, identified by the maintainer; reported uses include contacting Horus's AI and remotely commanding the ship/dropship. |
+| `pirate_attack_ship` | Blue/orange spacecraft attacking the crew at the asteroid in Episode 4, identified by the maintainer; proper vessel name remains unassigned. |
+| `pirate_away_team_leader` | Bald, mustached pirate leader portrait in Episode 4 locator 115; maintainer identifies his away-team leadership role, without a confirmed proper name. |
+| `pirate_landing_craft` | Green pirate landing/dropship units identified by the maintainer in Episode 4 locator 167; reported landing-foot action is retained separately from still-image observations. |
 | `xgp_hangar_asteroid` | Asteroid containing the Outlaw Star's storage hangar and awakening setting, identified by the maintainer; door motion and transfer context remain reported until checked in video. |
 | `starwind_hawking_hq` | Starwind & Hawking premises; identification does not establish a planet/location without supporting evidence. |
 | `unknown_character`, `unknown_creature`, `unknown_ship`, `unknown_vehicle`, `unknown_location`, `unknown_equipment` | Visible but unidentified subjects; describe distinguishing appearance in the summary. These are unresolved identity buckets, not assertions that different images depict the same subject. |
@@ -158,6 +167,10 @@ Initial `subject_details` tokens are:
 | Exterior views | `exterior`, `front_view`, `rear_view`, `side_view`, `top_view`, `underside_view`, `wide_view`, `close_up`; orientations are relative to the depicted subject. |
 | Ship areas | `cockpit`, `engineering`, `corridor`, `galley`, `dining`, `lounge`, `quarters`, `cargo`, `boarding_access`, `hangar`; uncertain room identities must be qualified, and co-occurrence does not establish adjacency. |
 | Assemblies/features | `hatch_door`, `window`, `seat`, `console`, `display`, `control`, `engine`, `landing_gear`, `grappler_arm`, `boarding_device`, `melfina_apparatus`, `gilliam_body`. |
+| Access and equipment details | `tether_cable` for a visible cable/tether without an assumed anchoring mechanism; `thruster` for visible propulsion nozzle/jet imagery; `entry_control` for local access-control hardware; `portable_computer` for folding/portable computing equipment; `instrument_panel` for grouped gauges and indicators. |
+| Anchor and carried bag | `anchor` for identified anchoring hardware; `satchel` for a carried soft-sided bag, without an assumed contents list. |
+| Graphic framing | `circular_view` for circular-masked images without asserting a camera technology; `registration_overlay` for portrait/status graphics associated with the established registration sequence, without inferring a biometric algorithm. |
+| Systems and action retrieval | `wraparound_display` for enclosing cockpit screen surfaces; `instruction_graphic` for onboard instructional imagery; `schematic` for line/diagram depictions rather than physical geometry; `wrist_device` for worn electronic hardware without assumed function; `maintenance_robot` and `guide_rail` for the observed maintenance-unit assembly; `projectile` for visible ammunition/rocket-like objects without identifying an ether weapon. |
 | Appearance/content | `face_expression`, `body_pose`, `clothing`, `accessory`, `handheld_object`, `weapon_detail`, `signage_text`, `material_surface`, `lighting`, `energy_effect`. |
 | Visible configuration | `deployed`, `stowed`, `open`, `closed`; identify the affected object in the summary. Static images establish visible endpoints only, not motion, direction or a complete operating sequence. |
 
@@ -221,8 +234,8 @@ These supplied identities/context are attributed in `reported_context`; static o
 separate from reported movement and future actions. A subsequent maintainer clarification identifies
 locator 22 as Gene, Jim and Melfina in Horus's passenger seats while Hilda flies them to the
 asteroid; its identity recheck is resolved, with travel context retained as attributed information.
-Current Episode 4 counts are **22 SCREENED / 2 NEEDS_RECHECK / 330 UNREVIEWED**. The remaining
-recheck records are locators 7 and 8. No detailed-review state changed.
+At the end of the first-sheet checkpoint, Episode 4 counts were **22 SCREENED / 2 NEEDS_RECHECK /
+330 UNREVIEWED**, with locators 7 and 8 needing recheck. No detailed-review state changed.
 
 Five category-validator tests cover initialization refusal, stable-ID resume despite reordered
 rows, overlapping tags, key/value failures, distinct recheck/unavailable/detail states and scene
@@ -230,7 +243,127 @@ groups. The gallery regression suite includes authored-status integration withou
 mutation. Rendered workbook previews support layout checks; native Excel/VS Code viewer behavior
 for this new workbook remains an owner-run check, not established by data verification alone.
 All progress stays in this CSV/documentation pair, without a Markdown file per batch. Phase 3.2A
-remains unstarted. The next Episode 4 navigation batch starts at locator 25 / image ID 847859.
+remains unstarted. Subsequent screening progress is recorded below and in the authored CSV.
+
+### Episode 4 category survey progress
+
+**Sheets 2–4 — 2026-10-26:** locators 25–96 / image IDs 847859–847930, web labels
+00:03:11–00:07:31. All 72 received individual visible-content summaries, overlapping tags and
+chronological shot/group membership; the pre-existing first-sheet annotations and other episodes
+were preserved. Three contact sheets and selected full-size cached images were visually inspected.
+No new downloads, video extraction, timing alignment, Japanese transcription or detailed-review
+completion occurred. Existing bootstrap/cockpit reviews supply contextual identity comparisons,
+not exact web-to-local timestamp matches.
+
+| Range | Preliminary grouping / revisit value |
+| --- | --- |
+| 25–32 | Horus anchors outside the asteroid; its detachable dropship transfers the crew through a smaller side gate. Maintainer corrections identify anchor use (25), dropship detachment/flight (28), side entrance (29), gate opening (31) and dropship entry (32); action context is attributed rather than established from static samples. Nearby passenger/pilot views are grouped with this dropship sequence. |
+| 33–40 | Episode title card; crew at an entry doorway; grey-green XGP exterior components and hangar reveal. High-value hull detailing (35–37) and ship/truss/crew compositions (39–40). No paint history, support load path or scale measurement established. |
+| 41–50 | Hangar crew, handled computer case, Jim's green satchel (44; maintainer identification, contents unknown), Melfina outfit views, circular entry-button array, boarding hatch and passage. Key access references are 47–49; no complete pressure cycle, door trajectory or measured corridor route inferred. |
+| 51–60 | Dim cockpit, seat backs/hoses/hand controls, Hilda's laptop staging and overhead seating views. Especially useful for cockpit spatial and operator-reach review; retain per-image visible subjects rather than copying the entire crew to every reaction crop. |
+| 61–66 | Laptop graphical bootstrap endpoints, analog-style gauge cluster and brightened cockpit compositions. Intermediate countdown states are absent from these gallery samples; no exact protocol, keystroke sequence or numeric gauge reading assigned. |
+| 67–84 | Gilliam overhead housing, contrasting illuminated/dark sectors, crew reactions and cockpit overview. Locator 78's circular-framed overhead composition is a high-value spatial reference; circular masking does not identify a camera technology. |
+| 85–96 | Hilda, Gene, Jim and Melfina portrait/reaction views, portrait/status cards, isolated Hilda card, wide cockpit/headroom views and further Gilliam samples. No biometric algorithm or exact animation timing inferred. |
+
+**Maintainer corrections — 2026-10-26:** Horus uses fired tethered anchors to secure itself to the
+asteroid, later turning it to shield Horus from pirate fire. The maintainer also recalls XGP anchors
+used on the advertisement ship in the bomb-threat/heist episode; retain this as an unverified
+cross-episode retrieval lead, without assigning an episode number or treating that sequence as
+reviewed. The smaller side gate admits Horus's detachable dropship while the parent vessel remains
+anchored outside; this is distinct from the large ship-exit bay doors. Locators 28–32 retain the
+supplied detachment, gate-opening and entry context in their attributed notes. Jim's satchel is
+identified in locator 44; its contents remain unknown rather than labeled as tools or normal inventory.
+
+**Sheets 5–7 — 2026-10-26:** locators 97–168 / image IDs 847931–848002, web labels
+00:07:34–00:11:54. All 72 were individually described and tagged after contact-sheet inspection;
+selected full-size images resolved hardware/scene distinctions. Earlier annotations, the two manual
+references and untouched episode/gallery records were preserved. Existing startup/cockpit/robot
+reviews provided identity comparisons without declaring exact gallery-to-local timing alignment.
+
+| Range | Preliminary grouping / revisit value |
+| --- | --- |
+| 97–110 | Cockpit crew exchange and wraparound information display. Locators 105–107 are strong central-field/side-screen/Gilliam composition references; decorative display wording is not technical specification. |
+| 111–117 | Hilda's wrist controller/communicator, exterior vessel context, blue/orange pirate attack ship (114), pirate away-team leader (115) and dark Horus hull/markings. Maintainer supplies the controller/AI/remote-command roles; proper ship and leader names remain unassigned. |
+| 118–130 | Hilda at the cockpit exit; remaining crew; Melfina beside the apparatus floor cap; Jim climbing into a seat; Gene seated without his coat; forward instructional display. Useful doorway/seat/cap references at 125–130. |
+| 131–140 | Low/short-raised apparatus states, Gene/Jim seat layout, then Hilda back in the main Horus cockpit (maintainer clarification) and a twin-bodied vessel schematic. Locator 137's drawing remains an onboard representation, not measured hull geometry. |
+| 141–148 | Asteroid/space attack context followed by Melfina inside the blue-green apparatus, including relaxed and crossed-arm poses and closed/open eyes. No fluid composition or biological mechanism established. |
+| 149–162 | Tall apparatus shell behind the seats, shielding/aperture views, seated character/control relations, small blue maintenance unit and its rail, and Gilliam housing. Major later-detail candidates include 149, 152, 154–155 and 161–162. Rail continuity, shell travel and numerical clearances remain unmeasured. |
+| 163–168 | Gene reaction, Horus exterior amid bursts, Hilda in the main Horus cockpit, green pirate landing-craft designs (167; maintainer identification) and Hilda reaction. Landing-foot operation remains attributed context pending video review. |
+
+**Maintainer corrections — 2026-10-26:** locators 111–112 show Hilda's controller/communicator
+used to contact Horus's AI, issue remote ship commands and summon/control its dropship. The
+maintainer describes the AI as similar in role to Gilliam; this does not identify a shared technical
+implementation or establish a complete command set. Locator 114 is the attacking pirate ship,
+retained as a later awakening-expansion reference. The pirate-leader description supplied with
+the number 116 is attached to the actual portrait at locator 115; locator 116 remains a Horus hull
+view. The leader is reported to command the pirate away team entering the asteroid to seize XGP.
+Hilda's later cockpit views are identified as the main Horus cockpit, resolving the parent-versus-
+dropship rechecks. Locator 167 shows pirate landing craft reported to descend and plant a foot
+against the asteroid; preserve this as a later landing/boarding animation research lead. These
+future-use notes do not expand the accepted awakening slice or authorize implementation.
+
+**Current gallery coverage:** 168 Episode 4 images inspected, comprising **167 SCREENED / 1 NEEDS_RECHECK /
+186 UNREVIEWED**, zero unavailable. Recheck locator: **7**.
+All 9,204 detail states remain `NOT_REVIEWED`; both manual supplements remain category-screened
+and unreconciled in timing. The next navigation batch starts at **locator 169 / image ID
+848003**. Per-image descriptions, priorities and questions live in `category-index.csv`; these
+group summaries do not replace them. The generated browsing workbook is refreshed from that CSV.
+
+### Manual supplemental references
+
+Maintainer-supplied images outside the gallery baseline are indexed in
+[supplemental-index.csv](supplemental-index.csv) and displayed on **Manual references** in the same
+`category-review.xlsx`. They are a separate source table for future Power BI joins, not additional
+gallery locators. The authored gallery table remains exactly 9,204 rows / 354 per episode.
+Manual rows use the same 21 annotation fields/vocabulary, with `image_id` formatted
+`EP-04-MAN-001` and the following nine provenance fields. IDs never depend on later timing matches.
+
+| Field | Meaning / initial validation |
+| --- | --- |
+| `media_path` | Repository-relative PNG path under ignored `reference/working/manual-supplements/`; images are retained locally, outside gallery cache cleanup/prune ownership. |
+| `media_sha256` | SHA-256 of the original supplied screenshot bytes, not of the source video. |
+| `media_bytes` | Original screenshot byte count, imported as a whole number. |
+| `local_timestamp` | Exact visible VLC `mm:ss` label; this is a player-display observation, not a verified decoded frame PTS. |
+| `local_seconds` | Whole-number seconds parsed from that label; must agree with it. |
+| `timestamp_basis` | Initially `PLAYER_UI_WHOLE_SECONDS`. No frame accuracy or fixed gallery offset implied. |
+| `alignment_status` | Initially `UNRECONCILED`. A later verified alignment requires an explicit contract update; preserve the original player label and ID. |
+| `related_gallery_ids` | Semicolon-separated same-episode gallery IDs used as contextual associations. These do not declare exact image matches or replace gallery timing. |
+| `source_description` | Supplied-image provenance and visible source/player context. Do not assert that a title-bar filename establishes the archive's exact edition/hash or timing. |
+
+The manual sheet is sorted by episode, observed local seconds and stable ID. It has local image
+links, source notes, tags and timing status. Its counts are shown separately on Overview; unaligned
+local seconds are never interleaved with gallery web seconds as if they shared a clock. File links
+require the retained local images. Gallery RAR archives do not include these independent manual
+sources; keep their copied PNGs separately. No image publication is authorized.
+
+**Initial manual batch — 2026-10-26:** two full VLC screenshots were copied byte-for-byte and
+hash-checked, preserving UI, pillarboxing, opening text and original PNG quality:
+
+- **EP-04-MAN-001**, VLC **01:56** (116 s): oblique rear XGP view with bright exhaust and visible
+  pods/connecting structures. Stored at `reference/working/manual-supplements/EP-04/EP-04-MAN-001.png`.
+- **EP-04-MAN-002**, VLC **01:57** (117 s): oblique forward XGP view with pointed hull, pods and
+  colored exterior bands. Stored alongside the first image under its own stable ID.
+
+Both are `SCREENED`, high priority, `OPENING`, and associated contextually with gallery locator
+006 / ID 847840. Their detailed-review states remain `NOT_REVIEWED`; no temporal offset or exact
+gallery match was assigned. The workbook now has 28 tabs (Overview, 26 gallery tabs and Manual
+references); saved-file checks cover 285,324 gallery cells, 9,204 gallery image links, 68 manual
+cells, both local media links and the separate manual count. Source CSV hashes remain unchanged
+by workbook generation. Eight validator tests include manual timing, identity/association/path
+refusals and media-integrity checks.
+
+**Opening corrections from maintainer context:** locator 008 / ID 847842 is the back of Gene's
+head. The maintainer describes him subsequently turning toward the camera and firing, followed by
+the cut to the caster on the table in locator 009; this surrounding action remains attributed, not
+independently viewed in this pass. Its identity recheck is resolved. Locator 007 remains uncertain:
+the maintainer proposes a ship/launchpad scene, possibly XGP or another ship on Gene's planet
+(possibly Sentinel), without confirming either identity. Preserve those alternatives in the index;
+do not promote the planet, vessel or launchpad interpretation to verified fact.
+
+`category_index.py supplement-data` validates manual metadata, reads and verifies retained media
+hashes/sizes, then produces only a disposable workbook join. Normal `validate` checks metadata
+without requiring every host to possess local-only screenshots. Refresh still uses the existing
+ImportExcel builder; it refuses a stale build if either authored CSV changes during generation.
 
 ## Reproducing the cache/index
 

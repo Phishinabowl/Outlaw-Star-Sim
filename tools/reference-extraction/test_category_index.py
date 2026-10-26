@@ -1,5 +1,6 @@
 """Annotation identity, progress and validation regression tests; no source changes."""
 from copy import deepcopy
+import hashlib
 import tempfile
 from pathlib import Path
 import unittest
@@ -76,6 +77,41 @@ class CategoryTests(unittest.TestCase):
         self.rows[1]['scene_summary'] = 'Conflicting summary.'
         with self.assertRaises(ValueError):
             ci.validate(self.rows, self.sources)
+
+    def manual_row(self):
+        row = {**dict.fromkeys(ci.SUPPLEMENT_FIELDS, ''), **ci.DEFAULTS}
+        row.update(episode_id='EP-04', image_id='EP-04-MAN-001',
+                   media_path='reference/working/manual-supplements/EP-04/EP-04-MAN-001.png',
+                   media_sha256=hashlib.sha256(b'image').hexdigest(), media_bytes='5',
+                   local_timestamp='01:56', local_seconds='116',
+                   timestamp_basis='PLAYER_UI_WHOLE_SECONDS', alignment_status='UNRECONCILED',
+                   related_gallery_ids='10', source_description='Test-supplied player screenshot.')
+        return row
+
+    def test_manual_timing_does_not_extend_gallery_coverage(self):
+        ci.validate_supplements([self.manual_row()], self.sources)
+        ci.validate(self.rows, self.sources)
+        self.assertEqual(len(self.rows), 3)
+        self.assertEqual(self.manual_row()['local_seconds'], '116')
+
+    def test_manual_bad_times_keys_associations_and_paths(self):
+        row = self.manual_row()
+        for field, value in [('local_seconds', '117'), ('alignment_status', 'VERIFIED'),
+                             ('media_path', '../outside.png'), ('related_gallery_ids', '999'),
+                             ('image_id', '10')]:
+            bad = dict(row); bad[field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                ci.validate_supplements([bad], self.sources)
+        with self.assertRaises(ValueError):
+            ci.validate_supplements([row, row], self.sources)
+
+    def test_manual_media_integrity_check(self):
+        from unittest.mock import patch
+        row = self.manual_row()
+        with patch.object(Path, 'read_bytes', return_value=b'image'):
+            ci.validate_supplements([row], self.sources, verify_media=True)
+        with patch.object(Path, 'read_bytes', return_value=b'changed'), self.assertRaises(ValueError):
+            ci.validate_supplements([row], self.sources, verify_media=True)
 
 
 if __name__ == '__main__':

@@ -2,6 +2,7 @@
 import argparse
 from collections import Counter
 import csv
+import hashlib
 from datetime import datetime
 import json
 from pathlib import Path
@@ -15,6 +16,9 @@ FIELDS = ('episode_id image_id scene_group_id scene_summary categories subjects 
           'detail_reviewed_by detail_reviewed_utc detail_references').split()
 DEFAULTS = dict(presentation='UNKNOWN', screening_status='UNREVIEWED', detail_status='NOT_REVIEWED',
                 identification_confidence='NOT_ASSESSED', research_priority='UNASSESSED')
+SUPPLEMENT_FIELDS = FIELDS + ['media_path', 'media_sha256', 'media_bytes', 'local_timestamp',
+                              'local_seconds', 'timestamp_basis', 'alignment_status',
+                              'related_gallery_ids', 'source_description']
 
 
 def read_csv(path):
@@ -141,9 +145,57 @@ def browsing_data(rows, sources):
     return joined
 
 
+def validate_supplements(rows, sources, verify_media=False):
+    """Separate manual records retain their own time basis and never enlarge gallery coverage."""
+    related = {(r['episode_id'], r['image_id']) for r in sources}
+    episodes = {r['episode_id'] for r in sources}
+    annotations = []
+    for row in rows:
+        if list(row) != SUPPLEMENT_FIELDS or any(not isinstance(v, str) for v in row.values()):
+            raise ValueError('Supplement header/values mismatch')
+        if row['episode_id'] not in episodes or not re.fullmatch(re.escape(row['episode_id']) + r'-MAN-\d{3}', row['image_id']):
+            raise ValueError('Invalid manual reference identity')
+        if row['timestamp_basis'] != 'PLAYER_UI_WHOLE_SECONDS' or row['alignment_status'] != 'UNRECONCILED':
+            raise ValueError('Manual timing must remain explicitly unreconciled under version 1')
+        if not re.fullmatch(r'\d{2}:\d{2}', row['local_timestamp']):
+            raise ValueError('Expected observed mm:ss player label')
+        minutes, seconds = map(int, row['local_timestamp'].split(':'))
+        if seconds >= 60 or str(minutes * 60 + seconds) != row['local_seconds']:
+            raise ValueError('Player label/seconds mismatch')
+        if not re.fullmatch('[0-9a-f]{64}', row['media_sha256']) or not row['media_bytes'].isdigit() or int(row['media_bytes']) < 1:
+            raise ValueError('Invalid manual media hash/size')
+        relative = Path(row['media_path'])
+        base = (ROOT / 'reference/working/manual-supplements').resolve()
+        target = (ROOT / relative).resolve()
+        if relative.is_absolute() or '..' in relative.parts or not target.is_relative_to(base):
+            raise ValueError('Supplement path outside owned manual-media folder')
+        if not row['source_description']:
+            raise ValueError('Missing manual source provenance')
+        ids = row['related_gallery_ids'].split(';') if row['related_gallery_ids'] else []
+        if len(ids) != len(set(ids)) or any((row['episode_id'], value) not in related for value in ids):
+            raise ValueError('Unknown/duplicate associated gallery image')
+        if verify_media:
+            data = target.read_bytes()
+            if len(data) != int(row['media_bytes']) or hashlib.sha256(data).hexdigest() != row['media_sha256']:
+                raise ValueError('Manual media hash/size mismatch')
+        annotations.append({field: row[field] for field in FIELDS})
+    validate(annotations, annotations)
+    return rows
+
+
+def supplements(sources, verify_media=False):
+    path = INDEX / 'supplemental-index.csv'
+    if not path.exists():
+        return []
+    fields, rows = read_csv(path)
+    if fields != SUPPLEMENT_FIELDS:
+        raise ValueError('Supplement CSV header mismatch')
+    return validate_supplements(rows, sources, verify_media)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('operation', choices=('initialize', 'validate', 'view-data'))
+    parser.add_argument('operation', choices=('initialize', 'validate', 'view-data', 'supplement-data'))
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     sources = locators()
@@ -154,15 +206,23 @@ def main():
     if fields != FIELDS:
         raise ValueError('Annotation CSV header mismatch')
     validate(rows, sources)
-    if args.operation == 'view-data':
+    manual = supplements(sources, verify_media=args.operation == 'supplement-data')
+    if args.operation in ('view-data', 'supplement-data'):
         output = args.output.resolve() if args.output else None
         if output is None or not output.is_relative_to((ROOT / '.tmp').resolve()):
             raise ValueError('Browsing intermediate must be under repository .tmp')
         output.parent.mkdir(parents=True, exist_ok=True)
-        output.write_text(json.dumps(browsing_data(rows, sources), ensure_ascii=False), encoding='utf-8')
+        if args.operation == 'view-data':
+            data = browsing_data(rows, sources)
+        else:
+            data = [{**r, 'image_key': key(r), 'episode_number': int(r['episode_id'][3:]),
+                     'media_uri': (ROOT / r['media_path']).resolve().as_uri()}
+                    for r in sorted(manual, key=lambda r: (r['episode_id'], int(r['local_seconds']), r['image_id']))]
+        output.write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
     print(json.dumps({'records': len(rows), 'screening': dict(Counter(r['screening_status'] for r in rows)),
                       'detail': dict(Counter(r['detail_status'] for r in rows)),
-                      'episode_04': dict(Counter(r['screening_status'] for r in rows if r['episode_id'] == 'EP-04'))}))
+                      'episode_04': dict(Counter(r['screening_status'] for r in rows if r['episode_id'] == 'EP-04')),
+                      'manual_supplements': len(manual)}))
 
 
 if __name__ == '__main__':
