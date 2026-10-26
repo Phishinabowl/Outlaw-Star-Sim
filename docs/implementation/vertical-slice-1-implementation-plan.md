@@ -41,7 +41,9 @@ Other subjects remain indexed for later world/character research. This broad ref
 supports the long-term game without expanding the accepted awakening slice. The 2026-10-26 tool
 pilot's 24-image sheet was accepted for readability. The subsequent full Episode 4 preparation
 cached all 354 images and verified 15 sheets, including the final 18-image sheet. Disposable
-recovery tests and a full live RAR round trip passed. Authored category-review integration and
+recovery tests and a full live RAR round trip passed. The authored category index and generated
+browsing view are initialized; the first 24 Episode 4 locators have preliminary annotations
+(22 screened / 2 needing recheck after attributed maintainer corrections). Further screening, post-review live cleanup/prune and
 official procedure adoption remain pending. See the [tool pilot evidence](../../tools/reference-extraction/README.md#pilot-commands-and-observed-results--2026-10-26).
 Phase 3.2A remains unstarted and separately authorized.
 
@@ -551,12 +553,18 @@ completion does not mean complete episode coverage, full translation or settled 
   [episode gallery tool proposal](../../tools/reference-extraction/README.md#episode-gallery-review-tool--proposal).
   Maintainer accepted the 24-image layout. Ten disposable-fixture tests, an offline cache repeat,
   full Episode 4 preparation (354 images / 15 sheets) and a full live RAR integrity/restore/hash
-  comparison passed. Authored-review integration and post-review live cleanup/prune remain pending.
+  comparison passed. First-subset authored-review integration passed; post-review live cleanup/prune remains pending.
   Adopt an official procedure only after the staged validation and maintainer review.
-- [ ] Establish a separate authored annotation index keyed to the generated
+- [x] Establish a separate authored annotation index keyed to the generated
   [AnimeHistory locator records](../../reference/indexes/animehistory/README.md) by episode and image ID;
   retain web timestamp, source image/page links and chronological scene-group membership. Do not
   overwrite generated CSVs or treat their captions as visual subject descriptions.
+  Design its stable keys, types and overlapping tags for the
+  [future Power BI research view](../../reference/indexes/animehistory/README.md#authored-category-index-and-future-power-bi-view);
+  retain the authored CSV as the source and derive workbook/report tables from it.
+  Version 1 initialized all 9,204 rows as unreviewed. The first 24 Episode 4 records subsequently
+  received preliminary screening; saved workbook values/links and annotation preservation passed
+  programmatic checks. Native viewer acceptance and full episode screening are separate.
 - [ ] Survey Episode 4 first, then Episodes 1–3 and 5–26 in order, completing one episode's category
   split before the next. The current locator baseline is 354 images per episode, 9,204 total.
   Account for each locator as visually screened or explicitly unavailable/unreviewed; inaccessible
@@ -574,6 +582,10 @@ completion does not mean complete episode coverage, full translation or settled 
 
 **Pass 2 — cross-episode XGP detail review:**
 
+- [ ] After the all-episode category survey, prepare and validate a Power BI research report
+  before detailed batches. Agree pages and filters for coverage, XGP/other subjects and the
+  uncertainty/rewatch queue; validate distinct-image counts and locator links. Image previews
+  remain subject to environment testing. No cloud publication or media upload is implied.
 - [ ] Consolidate XGP candidates by exterior, cockpit, engineering, corridors/living spaces,
   access/boarding, machinery and operating states. Preserve episode/scene context and review
   differing states or revisions rather than merging them into one assumed consistent design.

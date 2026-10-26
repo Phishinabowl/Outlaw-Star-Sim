@@ -12,6 +12,7 @@ from PIL import Image
 from episode_gallery import (Gallery, ROOT, archive, checked_path, episode_lock,
                              member_name, prune, rar_path, restore)
 import episode_gallery
+import category_index
 
 
 class FakeDownload:
@@ -29,6 +30,25 @@ class FakeDownload:
 
 
 class GalleryTests(unittest.TestCase):
+    def test_authored_review_counts_are_separate_from_cache(self):
+        index = self.root / 'reference/indexes/animehistory'
+        fields = list(self.gallery.rows[0])
+        with (index / 'all-episodes.csv').open('w', newline='', encoding='utf-8') as output:
+            writer = csv.DictWriter(output, fieldnames=fields)
+            writer.writeheader(); writer.writerows(self.gallery.rows)
+        target = index / 'category-index.csv'
+        rows = category_index.initialize(target, self.gallery.rows)
+        rows[0].update(screening_status='NEEDS_RECHECK', uncertainties='Identity uncertain.',
+                       visual_summary='Candidate ship.', screened_by='Test', screened_utc='2026-10-26T17:00:00Z')
+        with target.open('w', newline='', encoding='utf-8') as output:
+            writer = csv.DictWriter(output, fieldnames=category_index.FIELDS)
+            writer.writeheader(); writer.writerows(rows)
+        before = target.read_bytes()
+        status = self.gallery.status()
+        self.assertEqual((status['cached'], status['category_screened'], status['category_needs_recheck'],
+                          status['category_unreviewed'], status['detail_reviewed']), (0, 0, 1, 5, 0))
+        self.assertEqual(target.read_bytes(), before)
+
     def setUp(self):
         parent = ROOT / '.tmp/episode-gallery-tests'
         parent.mkdir(parents=True, exist_ok=True)

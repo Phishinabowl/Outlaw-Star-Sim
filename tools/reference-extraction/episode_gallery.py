@@ -373,10 +373,27 @@ class Gallery:
             self.validate_cache(self.folder, manifest)
         receipt = json.loads(self.receipt_path.read_text()) if self.receipt_path.exists() else None
         archive_valid = bool(receipt and self.archive_path.exists() and receipt['archive_sha256'] == digest(self.archive_path.read_bytes()))
+        review = {'category_screened': None, 'detail_reviewed': None,
+                  'review_status_note': 'No authored category index available.'}
+        category_path = self.root / 'reference/indexes/animehistory/category-index.csv'
+        if category_path.exists():
+            import category_index
+            fields, annotations = category_index.read_csv(category_path)
+            if fields != category_index.FIELDS:
+                raise ValueError('Category index header mismatch')
+            _, sources = category_index.read_csv(self.root / 'reference/indexes/animehistory/all-episodes.csv')
+            category_index.validate(annotations, sources)
+            selected = [r for r in annotations if r['episode_id'] == self.id]
+            review = {'category_screened': sum(r['screening_status'] == 'SCREENED' for r in selected),
+                      'category_needs_recheck': sum(r['screening_status'] == 'NEEDS_RECHECK' for r in selected),
+                      'category_unavailable': sum(r['screening_status'] == 'UNAVAILABLE' for r in selected),
+                      'category_unreviewed': sum(r['screening_status'] == 'UNREVIEWED' for r in selected),
+                      'detail_reviewed': sum(r['detail_status'] == 'REVIEWED' for r in selected),
+                      'detail_partial': sum(r['detail_status'] == 'PARTIAL' for r in selected),
+                      'review_status_note': 'Counts from validated authored annotations; cache does not imply review.'}
         return {'episode': self.id, 'expected': len(self.rows), 'cached': cached,
                 'failed': failed, 'not_cached': len(self.rows)-cached-failed,
-                'category_screened': None, 'detail_reviewed': None,
-                'review_status_note': 'Authored category schema/index not yet established; caching does not mark review.',
+                **review,
                 'contact_sheets': len(self.sheet_registry()['sheets']),
                 'archive_hash_valid': archive_valid, 'archived_images': receipt['cached'] if archive_valid else 0,
                 'archive_bytes': self.archive_path.stat().st_size if self.archive_path.exists() else 0,

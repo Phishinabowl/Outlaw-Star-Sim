@@ -15,8 +15,9 @@ The established reference workflow uses FFprobe metadata, FFmpeg selected frames
 **Status — 2026-10-26:** `episode_gallery.py` is implemented as a pilot. Disposable-fixture tests
 and full Episode 4 cache/contact-sheet/RAR round-trip checks passed within the scope recorded below.
 Maintainer readability acceptance and full Episode 4 preparation passed on 2026-10-26;
-category-index integration remains pending;
-this is not an adopted operating procedure. No category review has been recorded. The
+category-index initialization and first-subset integration passed within the evidence scope below;
+this is not an adopted operating procedure. The first 24 Episode 4 locators have preliminary
+screening records (22 screened / 2 needing recheck after attributed maintainer corrections); full episode screening remains pending. The
 [pre-3.2A research checkpoint](../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns research order and acceptance; this section owns the proposed tool behavior and validation.
 
@@ -43,14 +44,16 @@ cross-episode XGP reviews. Other subject groups remain available for future rese
   locators when grouping repeated shots; do not call a contact-sheet classification detailed review.
   Save progress after each reviewed group so later turns can resume from disk.
 - Generate the human-facing workbook with ImportExcel from authoritative textual records. The
-  existing locator workbook remains a locator view; the annotation schema and its workbook view
-  must be settled before creating new annotation files. No separate Markdown record per batch.
+  existing locator workbook remains a locator view. The
+  [category-index version 1 contract](../../reference/indexes/animehistory/README.md#category-index-field-contract--version-1)
+  defines the authored fields and initial tag vocabulary. `category_index.py` validates the authored
+  CSV; `build_category_workbook.ps1` creates its separate ImportExcel view. No separate Markdown record per batch.
 
 Implemented pilot storage uses existing ignored areas: episode image caches and recovery manifests under
 `reference/cache/animehistory-review/`, contact sheets under
 `reference/contact-sheets/animehistory-review/`, and RAR packages under
 `reference/cache/animehistory-review/archives/`. Authored category records remain outside archives
-under `reference/indexes/animehistory/` once that schema is agreed. Pilot commands are listed below.
+under `reference/indexes/animehistory/` in `category-index.csv`. Pilot commands are listed below.
 No source media, downloaded images, generated sheets or archives are published through Git.
 
 ### Proposed command responsibilities
@@ -96,9 +99,11 @@ tool-owned episode directory. Never delete by broad episode-name matching across
 - [x] Prepare the full Episode 4 baseline after trial acceptance; reconcile every locator with the
   cache manifest. All 354 images cached without failures, 15 sheets mapped in exact locator order,
   and the final 18-image sheet verified on 2026-10-26.
-- [ ] Validate category-index progress/resume and overlapping tags on a reviewed subset; keep
+- [x] Validate category-index progress/resume and overlapping tags on a reviewed subset; keep
   unreviewed, unavailable, category-screened and detail-reviewed states distinct. Reopen the
-  generated ImportExcel view without losing notes or stable-ID associations.
+  generated ImportExcel view without losing notes or stable-ID associations. Initialization,
+  first-24 screening, validator/resume tests and saved-workbook data/link checks passed on
+  2026-10-26. Native viewer acceptance remains an owner-run check.
 - [x] Measure RAR size and runtime; test archive integrity, staged restore and exact hash/inventory
   equality. Full Episode 4 round trip passed on 2026-10-26. Missing/corrupt inputs and interrupted
   operations were exercised using disposable fixtures, not by damaging the live cache.
@@ -116,8 +121,8 @@ alignment and canon classification retain the project's existing evidence requir
 Use Python with Pillow already available on the current host. Tests used bundled Python 3.12.14,
 Pillow 12.3.0 and RAR 7.13 x64. No packages were installed. The commands below are pilot examples,
 not an adopted general operating procedure. The first-sheet readability review passed; full
-Episode 4 preparation subsequently passed. Category-review integration and procedure adoption
-remain separate pending work.
+Episode 4 preparation subsequently passed. First-subset category integration passed; full survey,
+post-review live cleanup/prune and procedure adoption remain pending.
 
 ```text
 python tools/reference-extraction/episode_gallery.py prepare --episode 4 --limit 24
@@ -154,11 +159,11 @@ prevent concurrent command mutations; the lock is released even when its process
 | Initial live archive/round trip | 24 images plus manifest: 4,548,973 input bytes → 4,507,922 RAR bytes, saving 41,051 bytes (about 0.9%), compression 3/non-solid. Archive test and extracted inventory/image hashes passed in about 4.7 s on this host. This partial archive/receipt was subsequently replaced by the verified full episode below. |
 | Full Episode 4 archive/round trip | 354 images plus manifest: 56,238,483 input bytes → 55,678,192 RAR bytes, saving 560,291 bytes (about 1.0%), compression 3/non-solid. Native archive integrity, staged restore and all image hashes/inventory passed in about 60.5 s. The tool replaced the partial archive only after this verification. Full archive/receipt, live cache and all 15 sheets retained; no live prune performed. |
 | Disposable recovery tests | Resume after request failure and interrupted file promotion; deterministic sheet mapping; corrupted-cache and unregistered-file refusals; explicit cleanup/prune; real RAR restore/replacement; corrupted-archive rejection; simulated archive/restore failure retention; path traversal/reparse-point refusal; OS lock release. These tests do not replace a full-episode production proof. |
-| Review state | No authored category schema/index or annotation workbook created. Status reports category/detail counts as unavailable, rather than implying that caching or a visual layout check completed research. |
+| Review integration | Authored CSV initialized with 9,204 unreviewed records. First 24 Episode 4 images received preliminary annotations; current counts after attributed maintainer corrections are 22 SCREENED / 2 NEEDS_RECHECK, with 330 unreviewed and no completed detailed review. The generated 27-tab ImportExcel view reopened with all 285,324 displayed values and 9,204 image links matching source/joined records. Gallery status reads the validated authored index and reports recheck, unavailable, unreviewed and detailed states separately from caching. See the [annotation evidence](../../reference/indexes/animehistory/README.md#category-index-initialization-and-first-screening--2026-10-26). |
 
 The initial sandbox network attempt failed DNS resolution; the authorized scoped retry outside
 that restriction downloaded the trial. Source CSVs and source episode/settei media were not modified.
-Archives, manifests and contact sheets remain ignored/local-only. Actual category progress,
+Archives, manifests and contact sheets remain ignored/local-only. Further category screening,
 live cleanup/prune after saved review, and official procedure adoption remain pending above.
 
 Extractor constraints: source folders remain immutable, existing batches are refused, arguments are explicit, seek accuracy/actual timestamps are documented and extraction is limited to approved intervals. Broad episode extraction is not approved.
