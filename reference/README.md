@@ -1,5 +1,13 @@
 # Local reference workflow
 
+The proposed [cross-site context tool](../tools/reference-context/README.md) adds a shared
+`reference/indexes/context/` collection for condensed AnimeHistory/Fandom research, with separate
+local source caches under `reference/cache/context/` and disposable work under
+`reference/working/context/`. The proposal owns the layout and pilot design; these data files and
+the reusable tool are not implemented yet. The
+[pre-3.2A checkpoint](../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+owns execution order. Existing image indexes, media archives and observations retain their ownership.
+
 [All-episode subtitle performance audit](indexes/performance-subtitle-audit.md) searches the full English dialogue tracks of all 26 numbered episodes. The [metric CSV](indexes/performance-metrics.csv) contains curated context-reviewed leads, and [coverage JSON](indexes/performance-subtitle-coverage.json) records sources/stream selection/hashes. Full subtitle/candidate text remains local-only under ignored working storage.
 
 Original source folders are read-only and ignored. Generated frames, contact sheets, caches, and working images are ignored. Authored indexes and textual evidence are trackable.

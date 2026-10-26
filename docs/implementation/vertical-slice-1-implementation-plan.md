@@ -7,7 +7,7 @@
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Pre-3.2A visual-reference research: all-episode annotated survey, then Power BI and question-driven XGP synthesis/deep dives; stop before 3.2A |
+| Current checkpoint | Pre-3.2A reference research: source-context tool proposal/pilot, remaining episode surveys, then Power BI and question-driven XGP synthesis/deep dives; stop before 3.2A |
 
 ## Purpose And Placement
 
@@ -52,6 +52,12 @@ and all nine manual PNGs; expanded originals are pruned and all 15 contact sheet
 Live restore and unchanged sheet regeneration passed. The completed pilot and operating procedure
 were accepted on 2026-10-26; further episode surveys remain unstarted. See the
 [tool evidence](../../tools/reference-extraction/README.md#episode-retention-and-supplement-recovery--accepted-2026-10-26).
+The agreed next research direction adds a shared AnimeHistory/Fandom context register and modular
+tool to reduce repeated context lookup during the remaining surveys. The
+[tool proposal](../../tools/reference-context/README.md) records storage, evidence boundaries and
+successful bounded anonymous Fandom API/XML comparisons. The reusable tool, context tables and
+workbook remain unimplemented; the current increment documents the proposal only. Validate a
+bounded Episode 4 context pilot before resuming the remaining episode surveys.
 Phase 3.2A remains unstarted and separately authorized.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
@@ -555,6 +561,24 @@ This research checkpoint precedes 3.2A without renumbering later phases.
 **Deliverable:** a traceable annotated subject/scene index across all 26 sampled episode galleries,
 an XGP-focused reference collection and a targeted unresolved-question/rewatch shortlist. Research
 completion does not mean complete episode coverage, full translation or settled reconstruction.
+The 2026-10-26 context-tool planning addition supports this checkpoint without renumbering phases
+or reopening completed Phase 3.1. The source-context register complements the image survey and
+must preserve secondary claims separately from anime/settei observations.
+
+**Source-context preparation — before the next episode survey:**
+
+- [x] Agree on a modular AnimeHistory/Fandom tool direction and shared research/storage layout;
+  document the [proposal and access evidence](../../tools/reference-context/README.md).
+  Bounded anonymous Fandom API retrieval matched all three test XML articles exactly. This is
+  access feasibility, not acceptance of a reusable tool or an established operating procedure.
+- [ ] Finalize source-context table fields, link grain, review vocabulary and attribution rules;
+  implement the proposed shared core, site adapters and ImportExcel browsing view in an authorized
+  increment. Keep source responses local-only and maintained condensed research separate from
+  generated projections. No recurring manual Fandom export is part of the intended workflow.
+- [ ] Validate a bounded Episode 4 context pilot, cache/refresh/error handling, source comparison,
+  preservation of existing annotations and workbook/report joins. Record results and obtain
+  procedure acceptance before resuming the remaining episode surveys. Do not bulk-ingest either
+  site or treat fetched summaries as verified primary evidence.
 
 **Pass 1 — episode-by-episode annotated survey:**
 

@@ -1,5 +1,11 @@
 # Local AnimeHistory timestamp index
 
+Selected character/lore/article context from AnimeHistory and Fandom is planned in a separate
+shared register, not additional editable columns in the generated locators. The
+[context-tool proposal](../../../tools/reference-context/README.md) owns its proposed layout and
+pilot. Reuse the authored image index's subject IDs and link sources without overwriting survey
+observations or review status. Context tables and their workbook remain unimplemented.
+
 Source: [AnimeHistory Outlaw Star galleries](https://animehistory.org/anime/outlaw-star/) (EXT-001). These are sampled web screencap locator records, not annotated scene breakdowns or verified local-video times.
 
 Initial cache completed October 6, 2026 (America/New_York): **26 episodes, 104 gallery pages, 9,204 records**, plus the series hub and robots guidance. All episodes have 354 unique records across four pages. Episode 4 covers 00:01:43–00:23:14. The combined index and all per-episode counts/IDs/cache hashes were verified. Retrieval timestamps in the records use UTC.
