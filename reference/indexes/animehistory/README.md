@@ -21,8 +21,8 @@ A gallery's 354 records do not guarantee every scene or the full episode runtime
 ## Authored category index and future Power BI view
 
 **Planning requirement — 2026-10-26:** design the authored category index for later Power BI
-reporting. Complete the all-episode category survey, then prepare and validate a research report
-before collaborative cross-episode detail reviews. The authored index and generated category
+reporting. Complete the all-episode annotated survey, then prepare and validate a research report
+before question-driven cross-episode deep dives. The authored index and generated category
 workbook were initialized on 2026-10-26. Power BI implementation, page design and image display
 remain future work.
 
@@ -79,9 +79,9 @@ are ordered as shown. Initialization and screening evidence is recorded below.
 | `categories` | Zero or more broad category tags from the vocabulary below. |
 | `subjects` | Zero or more canonical subject identifiers from the subject register below. |
 | `subject_details` | Zero or more visible feature/area tags from the vocabulary below. These are image-level tags, not subject-to-feature assertions. |
-| `presentation` | Required single value: `UNKNOWN`, `STORY`, `OPENING`, `ENDING`, `RECAP`, `PREVIEW`, `EYECATCH`, `TITLE_CARD`, `END_CARD`, `OTHER`. Classify the sampled presentation, not an assumed source episode for reused footage. |
+| `presentation` | Required single value: `UNKNOWN`, `STORY`, `FLASHBACK`, `OPENING`, `ENDING`, `RECAP`, `PREVIEW`, `EYECATCH`, `TITLE_CARD`, `END_CARD`, `OTHER`. Classify the sampled presentation, not an assumed source episode for reused footage. `FLASHBACK` identifies an embedded memory/past-event sequence; it is distinct from an episode recap. |
 | `screening_status` | Required: `UNREVIEWED`, `SCREENED`, `NEEDS_RECHECK`, `UNAVAILABLE`. |
-| `detail_status` | Required: `NOT_REVIEWED`, `PARTIAL`, `REVIEWED`. Independent of preliminary screening. |
+| `detail_status` | Required: `NOT_REVIEWED`, `INITIAL_REVIEW_COMPLETE`, `PARTIAL`, `REVIEWED`. Review depth independent of screening/identity status. Initial means the annotated survey is complete; partial/reviewed refer to a documented targeted deep dive, not universal verification of every visible detail. |
 | `identification_confidence` | Required: `NOT_ASSESSED`, `HIGH`, `MEDIUM`, `LOW`. Applies to subject identification only, not canon/timing/detail accuracy. Where identities differ in confidence, use the lowest assessed confidence and identify the uncertain subject in `uncertainties`. |
 | `visual_summary` | Concise visible content; do not copy generated captions as observations or place recollections here. |
 | `research_priority` | Required: `UNASSESSED`, `HIGH`, `NORMAL`, `LOW`. Priority for further reference work, not canonical authority. |
@@ -90,8 +90,8 @@ are ordered as shown. Initialization and screening evidence is recorded below.
 | `reported_context` | Attributed recollections or supplied interpretations, distinguished from visible observations. Include who supplied the context; blank when none. |
 | `screened_by` | Reviewer identity for the latest screening/recheck attempt, including unavailable outcomes. A name here does not imply maintainer acceptance. |
 | `screened_utc` | ISO 8601 UTC timestamp for that attempt; blank for untouched records. |
-| `detail_reviewed_by` | Reviewer identity for the latest substantive detailed review; blank until partial/reviewed. |
-| `detail_reviewed_utc` | ISO 8601 UTC timestamp for that detailed review. |
+| `detail_reviewed_by` | Reviewer identity for the latest targeted deep dive; blank for not-reviewed/initial-review-complete. Initial survey provenance stays in screened_by/screened_utc. |
+| `detail_reviewed_utc` | ISO 8601 UTC timestamp for that targeted deep dive. |
 | `detail_references` | Semicolon-separated repository-relative evidence links/anchors for later detailed findings. Required when `detail_status` is `PARTIAL` or `REVIEWED`; do not store detailed canon claims solely in this screening table. |
 
 `SCREENED` means sufficient visual inspection to assign preliminary tags, including images with
@@ -101,6 +101,41 @@ means not visually inspected because the image could not be accessed/decoded; re
 notes if any. These are mutually exclusive current states, not an audit history. The workbook/report
 must show them separately. Detail review does not automatically resolve uncertain classifications.
 Git retains published annotation history; do not add a Markdown record for each screening batch.
+
+### Annotated survey and targeted review depth — accepted 2026-10-26
+
+The episode survey is the main initial review, not merely automated sorting. Record individual
+visible descriptions, useful overlapping tags, scene/state context, selected full-size checks,
+research priorities, uncertainties, maintainer corrections and supplemental references as needed.
+Preserve these findings for reuse; a later pass must not repeat already-answered descriptions.
+Survey in bounded contact-sheet batches, with concise grouped reports and image-specific callouts.
+
+Use `INITIAL_REVIEW_COMPLETE` when that annotated review is complete for the image. This is an
+explicit assessment, not an automatic consequence of downloading a cache or setting SCREENED.
+An image may be INITIAL_REVIEW_COMPLETE while still NEEDS_RECHECK for an unresolved identity:
+review depth and open questions are separate. UNREVIEWED/UNAVAILABLE images cannot carry this
+completed initial-review status. NOT_REVIEWED remains the default for unreviewed images and
+limited preliminary sorting that has not reached the annotated-survey level.
+
+PARTIAL and REVIEWED are reserved for question-driven deep dives with their own reviewer/time
+and evidence references. Evidence must state the question, findings and remaining limits; REVIEWED
+means the stated review scope is complete, not that dimensions, dialogue and animation are all
+verified. Deep dives are triggered by modeling/design needs or material uncertainties: compare
+full-resolution views for shape/fit, inspect continuous footage for motion, verify specific text
+or dialogue, reconcile conflicting evidence or align missing shots/timestamps. There is no required
+second review of every image, XGP candidate or non-XGP category. A high revisit priority is a
+research lead, not an automatic task or blocker to 3.2A.
+
+The all-episode survey still precedes the planned Power BI report; targeted XGP evidence synthesis
+and only the deep dives necessary for the first increment follow it. Research-readiness acceptance
+and separate 3.2A authorization remain required. The implementation plan owns those gates.
+
+**Initial-status adoption — 2026-10-26:** the completed Episode 4 annotated survey (354 gallery
+records, including unresolved locator 007) and nine manual supplements are assessed as
+INITIAL_REVIEW_COMPLETE. Existing annotations, screening states, source/timing limits and initial
+review provenance are preserved. No targeted-review dates, reviewers or evidence claims are
+manufactured. The other 8,850 gallery records remain NOT_REVIEWED. The additive enum preserves
+the 21-column schema, stable IDs and existing PARTIAL/REVIEWED meanings; projections must refresh.
 
 The generated view derives `image_key` as `episode_id + ':' + image_id`, numeric episode order,
 locator ordinal, web timestamp/seconds, episode title, source URLs and alignment status. It may
@@ -149,8 +184,15 @@ The `subjects` register starts with:
 | `xgp_maintenance_robot` | Small blue rail-mounted maintenance unit seen in the XGP passage/cockpit; physical unit identity does not establish its full capabilities or a ship-wide rail route. |
 | `hilda_laptop` | Hilda's folding portable computer used at the XGP cockpit station; keep distinct from Melfina's transport case. |
 | `hilda_wrist_controller` | Hilda's wrist controller/communicator, identified by the maintainer; reported uses include contacting Horus's AI and remotely commanding the ship/dropship. |
+| `hilda_grappling_device` | Hilda's handheld hook/line device used during the Episode 4 tether traversal and final confrontation, identified by maintainer action context; distinct from ship-launched anchors. |
 | `pirate_attack_ship` | Blue/orange spacecraft attacking the crew at the asteroid in Episode 4, identified by the maintainer; proper vessel name remains unassigned. |
 | `pirate_away_team_leader` | Bald, mustached pirate leader portrait in Episode 4 locator 115; maintainer identifies his away-team leadership role, without a confirmed proper name. |
+| `pirate_shipboard_leader` | Dark-haired female pirate leader with pink hair ribbons in Episode 4 locator 182; maintainer identifies her as directing the attack from the blue/orange vessel, separately from the asteroid away-team leader. Proper name remains unassigned. |
+| `pirate_main_section` | Main section of the blue/orange pirate attack ship, reported to separate from its grappler section and block the asteroid hangar exit. Component role is maintainer-supplied context. |
+| `pirate_grappler_section` | Detached grappler section of the blue/orange pirate attack ship, reported and visibly shown gripping Horus in Episode 4 locators 216–217. Keep distinct from the main section blocking XGP. |
+| `el_dorado` | MacDougall brothers' gold spacecraft, identified by the maintainer in Episode 4 locators 230 and 234–239; compare SET-107/112 for exterior and launcher references. |
+| `halcyon_missile` | Large El Dorado underside missile identified by the maintainer in supplemental references EP-04-MAN-003–007; compare SET-112's ハルシオン・ミサイル. Halcyon is a provisional Latin rendering, distinct from El Dorado's smaller nose-launched missiles. |
+| `gene_escape_pod` | Escape pod associated with Gene's childhood rescue in the Episode 4 flashback, identified from maintainer sequence context; do not transfer its design to Horus's dropship or other escape craft. |
 | `pirate_landing_craft` | Green pirate landing/dropship units identified by the maintainer in Episode 4 locator 167; reported landing-foot action is retained separately from still-image observations. |
 | `xgp_hangar_asteroid` | Asteroid containing the Outlaw Star's storage hangar and awakening setting, identified by the maintainer; door motion and transfer context remain reported until checked in video. |
 | `starwind_hawking_hq` | Starwind & Hawking premises; identification does not establish a planet/location without supporting evidence. |
@@ -172,6 +214,7 @@ Initial `subject_details` tokens are:
 | Graphic framing | `circular_view` for circular-masked images without asserting a camera technology; `registration_overlay` for portrait/status graphics associated with the established registration sequence, without inferring a biometric algorithm. |
 | Systems and action retrieval | `wraparound_display` for enclosing cockpit screen surfaces; `instruction_graphic` for onboard instructional imagery; `schematic` for line/diagram depictions rather than physical geometry; `wrist_device` for worn electronic hardware without assumed function; `maintenance_robot` and `guide_rail` for the observed maintenance-unit assembly; `projectile` for visible ammunition/rocket-like objects without identifying an ether weapon. |
 | Appearance/content | `face_expression`, `body_pose`, `clothing`, `accessory`, `handheld_object`, `weapon_detail`, `signage_text`, `material_surface`, `lighting`, `energy_effect`. |
+| Reported magic imagery | `magic_effect` for imagery associated with an identified magic action in supplied or verified context; describe the visible light/field separately, without assuming a full magic system or treating every transparent helmet as magic. |
 | Visible configuration | `deployed`, `stowed`, `open`, `closed`; identify the affected object in the summary. Static images establish visible endpoints only, not motion, direction or a complete operating sequence. |
 
 Do not tag a room `engineering` merely because it contains machinery, or label a feature
@@ -190,8 +233,9 @@ number. A 24-image sheet is a navigation batch, not an assumed scene group.
 Validate controlled values, canonical tag membership, duplicate tags, scene-group consistency,
 reviewer/time pairs and conditional requirements above. Treat `UNREVIEWED` rows as blank authored
 content with default enums; `SCREENED`/`NEEDS_RECHECK` require a visual summary and screening
-provenance. `UNAVAILABLE` requires an obstacle and attempt provenance. Detail states require their
-own provenance and evidence pointers. Schema version 1 is owned here; any future migration must
+provenance. `UNAVAILABLE` requires an obstacle and attempt provenance. INITIAL_REVIEW_COMPLETE
+uses the recorded initial-survey provenance; PARTIAL/REVIEWED require separate targeted-review
+provenance and evidence pointers. Schema version 1 is owned here; any future migration must
 preserve notes, IDs and existing review states. ImportExcel/report regeneration must never write
 back over authored annotations. No screening or Phase 3.2A execution occurs through this specification.
 
@@ -302,12 +346,122 @@ dropship rechecks. Locator 167 shows pirate landing craft reported to descend an
 against the asteroid; preserve this as a later landing/boarding animation research lead. These
 future-use notes do not expand the accepted awakening slice or authorize implementation.
 
-**Current gallery coverage:** 168 Episode 4 images inspected, comprising **167 SCREENED / 1 NEEDS_RECHECK /
-186 UNREVIEWED**, zero unavailable. Recheck locator: **7**.
-All 9,204 detail states remain `NOT_REVIEWED`; both manual supplements remain category-screened
-and unreconciled in timing. The next navigation batch starts at **locator 169 / image ID
-848003**. Per-image descriptions, priorities and questions live in `category-index.csv`; these
+**Sheets 8–10 — 2026-10-26:** locators 169–240 / image IDs 848003–848074. All 72 received
+individual descriptions and tags after contact-sheet inspection, with selected full-size checks.
+The pass adds 72 `SCREENED` records after the maintainer's El Dorado identification. Earlier annotations, manual
+supplements and untouched gallery rows remain unchanged.
+
+| Range | Preliminary grouping / revisit value |
+| --- | --- |
+| 169–175 | Jim and the passage maintenance unit, engineering cylinder faces/manual access (170–171), closed doorway, XGP inside the hangar and the pirate away team. No measured clearances or complete route inferred. |
+| 176–179 | Mid-episode eyecatch (176–178), followed by the XGP intrusion warning (179). Presentation and warning role follow maintainer context; unclear Japanese is not guessed. |
+| 180–188 | Horus under fire, shipboard female pirate leader, Hilda at the main Horus controls, reported anchor-assisted asteroid pivot (185–186), and separated pirate-vessel assemblies (188). |
+| 189–199 | Pirates in the hangar, Gene firing through/standing at the XGP hull hatch, passage Gilliam, and main-gate venting (198). Gun model remains unassigned; the gate timing, command and purpose are attributed action context. |
+| 200–211 | Pilot/apparatus relationship, key/socket control (201), extended engineering cylinders (202), startup graphic (203), low cockpit layout (204), Melfina shell framing and the main pirate section blocking the gate (208). |
+| 212–221 | Pirate main section firing, close Horus hull/contact views, detached grappler gripping Horus (216–217), enemy through the XGP forward view, Gilliam and joystick detail (221). The tight crop at 214 does not establish an attacker or mechanism. |
+| 222–229 | Away-team leader among hangar beams, cockpit reactions and incoming glare; body poses, seat/control relations and lighting references. |
+| 230–240 | El Dorado gold craft (maintainer identification), asteroid explosions, Ron portrait, Hilda reaction, El Dorado/projectiles and grappled Horus beside the blast. The maintainer identifies 239 as the initial smaller nose-launched missiles, distinct from the large underside Halcyon missile. Compare SET-107/112. |
+
+**Maintainer action context — 2026-10-26:** the female leader in 182 directs the attack from the
+blue/orange pirate ship while the male leader commands the asteroid assault. Horus uses anchors
+to pivot the asteroid for protection at 185–186. Gene has Gilliam briefly open the main hangar
+gate to vent invading pirates at 198. At 208, the detached main pirate section blocks the exit;
+the separate grappler section attacks and grips Horus at 216–217. These descriptions are retained
+in `reported_context` separately from visible still observations; they are not a timed video
+verification or approval to expand implementation. Main section, grappler section and shipboard
+leader have separate retrieval tokens; their proper names remain unassigned.
+
+**El Dorado clarification — 2026-10-26:** the maintainer identifies the gold craft as El Dorado,
+operated by the MacDougall brothers. Reported story context: pirates previously hired them to find
+Hilda and XGP; after that contract ended, another client hired them and they double-cross the
+pirates in this encounter. The maintainer associates the attack with the large underside missile
+depicted in SET-112. That sheet's existing reading is `ハルシオン・ミサイル`, provisionally rendered
+**Halcyon missile**; official Latin spelling remains unverified. This resolves the gold-craft
+identity rechecks. A subsequent maintainer clarification identifies 239 as the initial smaller
+missiles fired from El Dorado's nose launchers, distinct from the large underside Halcyon missile.
+Contract history, firing sequence and exact launcher-to-shot matches still require video/dialogue
+verification in a later detailed pass. SET-107/112 are cross-references, not new detailed reviews.
+
+**Sheets 11–13 — 2026-10-26:** locators 241–312 / image IDs 848075–848146, web labels
+00:16:21–00:20:40. Contact sheets and selected full-size images support 72 individual annotations:
+67 `SCREENED`, five `NEEDS_RECHECK`. Previous annotations and all seven manual supplements are
+unchanged. `FLASHBACK` is added to the presentation vocabulary for embedded memory/past-event
+sequences; no existing presentation values are remapped.
+
+| Range | Preliminary grouping / revisit value |
+| --- | --- |
+| 241–249 | Ron at the El Dorado station, asteroid damage, pirate leaders, XGP in the hangar and Gilliam over the circular forward display/interference. The clear camera feed after 249 is supplied context, not a sampled frame here. |
+| 250–254 | Gene recognition/memory sequence, classified FLASHBACK from maintainer context: white transition, pod-related hardware, burning ship/pod/El Dorado staging and young Gene. Locator 254 is a present-day-looking reaction associated with the memory sequence, not a childhood-design assertion. |
+| 255–264 | Reported missile order, Harry reaction, Ron monologue, pirate vessel/glow, Hilda and El Dorado against the star. MAN-003–007 retain deployment/firing/flight inserts. The glow at 260 is not identified as a shield or physical gravity contour. |
+| 265–279 | MacDougall portraits, stellar exterior, pirate grappler, trajectory graphic (270–271), pirate/Hilda reactions and debris. Display/voiceover ownership follows maintainer context; selected Japanese labels are separate from unverified dialogue and physics. |
+| 280–289 | Reported asteroid breakout at 280, 281 and 283, excluding 282. Major XGP hull/arm-root and broken-rock exit references; raised Gene/Jim seat/control relationships at 284–287. |
+| 290–299 | Pirate leaders, grappler section during escape, Hilda/craft views, XGP cockpit, pirate green-hatched boarding hand (297), XGP hand/wrist (298) and leader reaction (299). Crushing/death and throwing action remain attributed context. |
+| 300–312 | Powered pirate anchor (302), tether across XGP wrist (303), thrust/tether staging, dropship exterior (307), Melfina behind the slotted shell (308), crew reactions and suit equipment (312). Later Hilda/anchor outcome is deferred to the final set. |
+
+**Maintainer sequence context — 2026-10-26:** Gene recognizes El Dorado on Gilliam's camera feed,
+recalling his father's contract killing by the MacDougalls and escape-pod rescue. Pirate-ship
+voiceover at 270–271 explains the stellar gravity-well danger. XGP breaks through damaged rock
+because the main gate is unusable. During escape, damaged Horus prompts Hilda's planned dropship
+abandonment and XGP-grappler catch. The pirate grappler section turns back; its green-hatched
+boarding hand carries the male leader. XGP's hand crushes it, killing the leader, and Gene throws
+the pirate vessel behind. The anchor at 302 reportedly diverts the dropship and restrains XGP's
+arm. These action/backstory reports remain in `reported_context`, distinct from visible stills,
+verified dialogue, measured mechanics and implementation scope. No final rescue/fate interpretation
+is assigned by this pass.
+
+**Shot-ownership corrections — 2026-10-26:** the maintainer confirms Hilda's main Horus cockpit
+at 293 and the main Horus ship in the background of 294. Locators 301 and 306 show the dropship
+cockpit. Locator 312 shows Hilda putting on her space suit in the dropship cockpit before her
+reported attempt to abandon it and reach XGP in the following gallery set. These five ownership
+rechecks are resolved; the later sequence remains unreviewed. Locators 298–299 link to new manual
+crushing-contact/boarding-interior references below without changing their detailed-review status.
+
+**Sheets 14–15 — 2026-10-26:** locators 313–354 / image IDs 848147–848188, web labels
+00:20:44–00:23:14. All 42 have individual category-screening descriptions and tags, supported by
+contact sheets and selected full-size hardware/contact checks. Earlier gallery annotations and
+all nine manual records are preserved. Handheld grappling-device and magic-associated imagery
+tokens distinguish personal equipment, ship anchors and reported magical actions.
+
+| Range | Preliminary grouping / revisit value |
+| --- | --- |
+| 313–319 | Dropship access crop, Hilda in her suit, handheld grappling device and clamp on the pirate tether, cable grips, Gene reaction and extended-arm XGP exterior. Major equipment/attachment references at 314–316; XGP exterior at 318. |
+| 320–323 | Pirate tether pursuit/zipline-like equipment, female leader's raised-hand defensive imagery, Hilda above the approaching pursuer and handgun aim. Magic/bullet-blocking function follows maintainer context rather than a complete effect/weapon analysis. |
+| 324–329 | Frayed tether beside the pirate anchor and XGP wrist (324), Hilda reaching after departing XGP, crew reactions and separation. Full-size 324 shows damaged cable sections; complete failure timing and escape constraints remain reported context. |
+| 330–337 | Final Hilda/pirate confrontation, large translucent field and smaller orb, handheld hook contact at the leader's foot (334), Hilda expressions. No identifiable dental device is exposed in the close-ups. |
+| 338–341 | Bright sphere and distant flashes against the star, associated by maintainer context with the explosion killing both characters. These effect samples do not independently establish a trigger mechanism or visible occupant deaths. |
+| 342–346 | XGP beyond the stellar limb, clear underside/pod exterior (343), cockpit side/rear pan with pale seat/console shells, gauges and partial Gilliam. Strong later exterior and cockpit-modeling references. |
+| 347–354 | Jim turning toward Gene with Melfina's slotted apparatus behind, Gene portraits, Gilliam face/mount (351) and closing nebula view. The tiny form at 354 is not resolved as detailed vessel geometry. |
+
+**Final-sequence context — 2026-10-26:** the maintainer describes Hilda leaving the dropship,
+hooking the pirate tether attached to XGP's arm, reeling/climbing toward XGP, and being pursued
+by pirates on a faster tether transport. The female leader uses magic to counter Hilda's gunfire.
+The tether breaks and XGP accelerates away; returning for Hilda would reportedly prevent escape
+from the gravity well. Hilda hooks the leader's foot, speaks and bites down on a suspected
+tooth-carried explosive/trigger, causing an explosion that kills both. This narrative is retained
+as attributed context. Trigger construction, exact dialogue, continuous choreography, final
+effect identification and quantitative gravity/propulsion constraints are not independently
+verified by the category pass. No new gameplay or later-phase implementation is authorized.
+
+**Current gallery coverage:** all **354 Episode 4 baseline images inspected**, comprising
+**353 SCREENED / 1 NEEDS_RECHECK / 0 UNREVIEWED**, zero unavailable. Recheck locator: **7**;
+the ship/launchpad and planet identity remain unresolved. This completes baseline screening
+coverage with that retained question, not detailed review or every-frame episode coverage.
+All 354 Episode 4 gallery records and nine manual supplements are `INITIAL_REVIEW_COMPLETE`;
+the other 8,850 gallery records remain `NOT_REVIEWED`. No targeted deep dive is marked complete.
+All nine manual supplements remain category-screened
+and unreconciled in timing. Episode 4's gallery baseline is exhausted. The planned next episode
+is Episode 1; its screening remains unstarted, as do Episodes 2–3 and 5–26. Locator 7 can be
+revisited independently without reopening completed image descriptions. Per-image descriptions,
+priorities and questions live in `category-index.csv`; these
 group summaries do not replace them. The generated browsing workbook is refreshed from that CSV.
+
+**Post-review storage — 2026-10-26:** Episode 4's verified format-2 RAR contains all 354 gallery
+originals and nine supplemental PNGs with recovery metadata. Both expanded image sets are pruned;
+all 15 contact sheets and their registry remain available. Full gallery restore and identical
+sheet regeneration passed before final pruning. CSV annotations are unchanged by cleanup;
+supplement rows show NOT_LOCAL in the refreshed workbook until restored. Detailed commands,
+retention rules and recovery evidence are owned by the
+[tool record](../../../tools/reference-extraction/README.md#episode-retention-and-supplement-recovery--accepted-2026-10-26).
 
 ### Manual supplemental references
 
@@ -331,10 +485,16 @@ Manual rows use the same 21 annotation fields/vocabulary, with `image_id` format
 | `source_description` | Supplied-image provenance and visible source/player context. Do not assert that a title-bar filename establishes the archive's exact edition/hash or timing. |
 
 The manual sheet is sorted by episode, observed local seconds and stable ID. It has local image
-links, source notes, tags and timing status. Its counts are shown separately on Overview; unaligned
-local seconds are never interleaved with gallery web seconds as if they shared a clock. File links
-require the retained local images. Gallery RAR archives do not include these independent manual
-sources; keep their copied PNGs separately. No image publication is authorized.
+links, source notes, tags, timing status and derived media availability. Its counts are shown
+separately on Overview; unaligned local seconds are never interleaved with gallery web seconds as
+if they shared a clock. File links require a local restored image. The cleanup refinement bundles selected-episode
+supplemental PNGs and recovery metadata into that episode's RAR alongside gallery originals.
+Normal verified pruning removes gallery originals and supplemental PNGs, retaining contact sheets.
+The workbook marks absent supplemental images `NOT_LOCAL`; restore them from the RAR for full-size
+inspection or to use the local link. This availability is generated host-local state, not an authored
+review/timing status or proof of archive completeness. Authored CSVs remain outside the archive as working records; recovery
+metadata inside the archive is a snapshot, not a competing annotation source. No image publication
+is authorized. See the [archive/retention contract](../../../tools/reference-extraction/README.md#episode-retention-and-supplement-recovery--accepted-2026-10-26).
 
 **Initial manual batch — 2026-10-26:** two full VLC screenshots were copied byte-for-byte and
 hash-checked, preserving UI, pillarboxing, opening text and original PNG quality:
@@ -360,9 +520,52 @@ the maintainer proposes a ship/launchpad scene, possibly XGP or another ship on 
 (possibly Sentinel), without confirming either identity. Preserve those alternatives in the index;
 do not promote the planet, vessel or launchpad interpretation to verified fact.
 
-`category_index.py supplement-data` validates manual metadata, reads and verifies retained media
-hashes/sizes, then produces only a disposable workbook join. Normal `validate` checks metadata
-without requiring every host to possess local-only screenshots. Refresh still uses the existing
+**Halcyon deployment supplements — 2026-10-26:** five additional full VLC screenshots are
+retained byte-for-byte under `reference/working/manual-supplements/EP-04/`, with separate stable
+IDs, hashes and visible player-time labels:
+
+| Manual ID | VLC label | Visible state / supplied sequence association |
+| --- | --- | --- |
+| EP-04-MAN-003 | 17:15 | El Dorado underside panel partly separated with a narrow dark opening; maintainer places the deployment inserts between gallery 256–257. |
+| EP-04-MAN-004 | 17:16 | Large purple/white missile exposed on a lowered yellow carrier beneath the open bay, with extended support struts. Same reported interval. |
+| EP-04-MAN-005 | 17:17 | Missile remains on the carrier with a long forward guide member and aft plate structure visible. Same reported interval; compare SET-112 guide catapult/blast-reflector design. |
+| EP-04-MAN-006 | 17:25 | Closer underside view with missile still visible and a bright plume extending aft; maintainer identifies firing between gallery 259–260. A departed/free-flight missile is not shown in this still. |
+| EP-04-MAN-007 | 17:27 | Detached purple missile with a large white exhaust plume, seen near a dark asteroid silhouette and bright orange/white background. Maintainer places this post-launch travel shot before the cut to gallery 260. |
+
+The maintainer reports Ron orders firing at gallery 255, Harry becomes excited and triggers
+deployment, the deployment inserts occur between 256–257, and the sequence returns to Ron's
+monologue at 257. Firing is reported between 259–260. These gallery-relative intervals and
+dialogue/action descriptions remain attributed associations, not verified frame matching or a
+shared timestamp clock. At supplemental ingestion, gallery rows 241 onward were unreviewed;
+supplemental indexing itself did not screen them. The later sheets 11–13 pass is recorded above.
+All five supplements are `STORY`, `SCREENED`, high priority and `NOT_REVIEWED` for detailed
+evidence. SET-112 is a research cross-reference; exact continuous motion, timing and official
+Latin weapon spelling remain open. MAN-007 adds the visible free-flight state missing from MAN-006;
+the maintainer reports a few seconds of travel toward the asteroid/ships before gallery 260.
+This does not establish a measured trajectory, speed or exact duration. Current manual coverage
+at this checkpoint was seven records, with 238 saved-cell checks and seven local image links;
+the subsequent grappler supplements below extend manual coverage without changing gallery counts.
+
+**Grappler contact and boarding-area supplements — 2026-10-26:** two original full VLC PNGs
+are saved byte-for-byte alongside the earlier supplements, with hash/size verification:
+
+| Manual ID | VLC label | Visible state / supplied sequence association |
+| --- | --- | --- |
+| EP-04-MAN-008 | 19:49 | XGP fingers enclose the red pirate hand near its green hatch, with white jagged marks across the hub; the cream arm connects back to the blue spherical pirate grappler section. |
+| EP-04-MAN-009 | 19:49 | Low interior view of the male leader and blue/white foot soldiers beneath curved purple boarding-area panels, loose fragments and exposed cables. |
+
+Both are associated with the reported interval between gallery 298–299. The maintainer describes
+the XGP crush leading to an explosion that kills the leader in that landing/boarding area. Visible
+contact and interior states are separated from this subsequent action/outcome; neither still is
+marked as a continuous-motion or death verification. Both share a whole-second player label;
+attachment order is preserved by stable IDs without inventing subsecond timing. Detailed review
+remains `NOT_REVIEWED`, timing remains `UNRECONCILED`, and priority is high. Current manual
+coverage is nine records; generated workbook checks cover 306 manual cells and nine image links.
+
+`category_index.py supplement-data` validates manual metadata, checks hashes/sizes for present
+local images, and adds derived `media_availability` (`LOCAL_VERIFIED` or `NOT_LOCAL`) to its
+disposable workbook join. Missing media after pruning does not prevent refresh. Normal `validate`
+checks metadata without requiring a host to possess local-only screenshots. Refresh uses the existing
 ImportExcel builder; it refuses a stale build if either authored CSV changes during generation.
 
 ## Reproducing the cache/index

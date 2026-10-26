@@ -216,9 +216,9 @@ class Gallery:
             raise ValueError('Invalid start/limit')
         return self.rows[start-1:None if limit is None else start-1+limit]
 
-    def validate_cache(self, folder, manifest):
+    def validate_cache(self, folder, manifest, extra_files=()):
         self.validate_manifest(manifest)
-        expected = {'manifest.json'}
+        expected = {'manifest.json', *extra_files}
         for image_id, record in manifest['images'].items():
             if record['state'] != 'cached':
                 continue
@@ -373,7 +373,7 @@ class Gallery:
             self.validate_cache(self.folder, manifest)
         receipt = json.loads(self.receipt_path.read_text()) if self.receipt_path.exists() else None
         archive_valid = bool(receipt and self.archive_path.exists() and receipt['archive_sha256'] == digest(self.archive_path.read_bytes()))
-        review = {'category_screened': None, 'detail_reviewed': None,
+        review = {'category_screened': None, 'initial_review_complete': None, 'detail_reviewed': None,
                   'review_status_note': 'No authored category index available.'}
         category_path = self.root / 'reference/indexes/animehistory/category-index.csv'
         if category_path.exists():
@@ -388,6 +388,7 @@ class Gallery:
                       'category_needs_recheck': sum(r['screening_status'] == 'NEEDS_RECHECK' for r in selected),
                       'category_unavailable': sum(r['screening_status'] == 'UNAVAILABLE' for r in selected),
                       'category_unreviewed': sum(r['screening_status'] == 'UNREVIEWED' for r in selected),
+                      'initial_review_complete': sum(r['detail_status'] == 'INITIAL_REVIEW_COMPLETE' for r in selected),
                       'detail_reviewed': sum(r['detail_status'] == 'REVIEWED' for r in selected),
                       'detail_partial': sum(r['detail_status'] == 'PARTIAL' for r in selected),
                       'review_status_note': 'Counts from validated authored annotations; cache does not imply review.'}
@@ -397,6 +398,7 @@ class Gallery:
                 'contact_sheets': len(self.sheet_registry()['sheets']),
                 'archive_hash_valid': archive_valid, 'archived_images': receipt['cached'] if archive_valid else 0,
                 'archive_bytes': self.archive_path.stat().st_size if self.archive_path.exists() else 0,
+                'archived_supplements': receipt.get('supplements', 0) if archive_valid else 0,
                 'unpacked_bytes': sum(p.stat().st_size for p in self.folder.rglob('*') if p.is_file()) if self.folder.exists() else 0}
 
 
@@ -420,9 +422,67 @@ def member_name(name):
     path = PurePosixPath(name)
     if path.is_absolute() or any(p in ('..', '.') or ':' in p for p in path.parts) or not name:
         raise ValueError(f'Unsafe archive member: {name}')
-    if not (name == 'manifest.json' or re.fullmatch(r'images/\d+\.jpg', name)):
+    if not (name in ('manifest.json', 'supplements.json') or re.fullmatch(r'images/\d+\.jpg', name)
+            or re.fullmatch(r'supplements/EP-\d{2}-MAN-\d{3}\.png', name)):
         raise ValueError(f'Unexpected archive member: {name}')
     return name
+
+
+def empty_supplements(gallery):
+    return {'owner': OWNER, 'format_version': 1, 'episode': gallery.id, 'records': []}
+
+
+def validate_supplement_snapshot(gallery, snapshot):
+    """Recovery metadata has a fixed episode-owned path contract, independent of review enums."""
+    if (snapshot.get('owner'), snapshot.get('format_version'), snapshot.get('episode')) != (OWNER, 1, gallery.id):
+        raise ValueError('Supplement archive ownership/version mismatch')
+    records = snapshot.get('records')
+    if not isinstance(records, list) or len(records) > 1000:
+        raise ValueError('Invalid supplemental archive inventory')
+    seen = set()
+    for item in records:
+        identity = item.get('image_id', '')
+        if not re.fullmatch(re.escape(gallery.id) + r'-MAN-\d{3}', identity) or identity in seen:
+            raise ValueError('Invalid/duplicate supplemental archive identity')
+        seen.add(identity)
+        if (item.get('file') != f'supplements/{identity}.png'
+                or item.get('media_path') != f'reference/working/manual-supplements/{gallery.id}/{identity}.png'
+                or not re.fullmatch('[0-9a-f]{64}', item.get('sha256', ''))
+                or type(item.get('bytes')) is not int or not 0 < item['bytes'] <= MAX_IMAGE):
+            raise ValueError('Invalid supplemental archive path/hash/size')
+    return snapshot
+
+
+def current_supplements(gallery, require_media=True):
+    """Read only the selected episode's authored media records; never modify review CSVs."""
+    import category_index
+    index = checked_path(gallery.root / 'reference/indexes/animehistory/supplemental-index.csv', gallery.root)
+    snapshot = empty_supplements(gallery)
+    if not index.exists():
+        return snapshot
+    fields, rows = category_index.read_csv(index)
+    if fields != category_index.SUPPLEMENT_FIELDS:
+        raise ValueError('Supplemental index header mismatch')
+    selected = [r for r in rows if r['episode_id'] == gallery.id]
+    category_index.validate_supplements(selected, gallery.rows)
+    for row in sorted(selected, key=lambda r: r['image_id']):
+        target = checked_path(gallery.root / row['media_path'], gallery.root)
+        info = {'sha256': row['media_sha256'], 'bytes': int(row['media_bytes'])}
+        if target.exists() or require_media:
+            actual = image_info(target.read_bytes())
+            if actual['sha256'] != info['sha256'] or actual['bytes'] != info['bytes']:
+                raise ValueError(f'Supplement differs from authored hash: {row["image_id"]}')
+        snapshot['records'].append(dict(image_id=row['image_id'], file=f'supplements/{row["image_id"]}.png',
+            media_path=row['media_path'], sha256=info['sha256'], bytes=info['bytes'],
+            local_timestamp=row['local_timestamp'], local_seconds=row['local_seconds'],
+            timestamp_basis=row['timestamp_basis'], alignment_status=row['alignment_status'],
+            related_gallery_ids=row['related_gallery_ids'], source_description=row['source_description']))
+    return validate_supplement_snapshot(gallery, snapshot)
+
+
+def staged_supplements(gallery, folder):
+    path = checked_path(folder / 'supplements.json', folder)
+    return validate_supplement_snapshot(gallery, json.loads(path.read_text(encoding='utf-8'))) if path.exists() else empty_supplements(gallery)
 
 
 def unpack_verified(gallery, archive, destination, executable):
@@ -436,20 +496,63 @@ def unpack_verified(gallery, archive, destination, executable):
         raise ValueError('Oversized manifest')
     manifest = json.loads(raw)
     gallery.validate_manifest(manifest)
-    expected = {'manifest.json', *(r['file'] for r in manifest['images'].values() if r['state'] == 'cached')}
+    supplement_raw = None
+    snapshot = empty_supplements(gallery)
+    if 'supplements.json' in names:
+        supplement_raw = rar(executable, ['p', '-inul', '-cfg-', '-p-', str(archive), 'supplements.json'])
+        if len(supplement_raw) > 2*1024*1024:
+            raise ValueError('Oversized supplemental manifest')
+        snapshot = validate_supplement_snapshot(gallery, json.loads(supplement_raw))
+    extra_files = {r['file'] for r in snapshot['records']}
+    if supplement_raw is not None:
+        extra_files.add('supplements.json')
+    expected = {'manifest.json', *extra_files, *(r['file'] for r in manifest['images'].values() if r['state'] == 'cached')}
     if set(names) != expected:
         raise ValueError('Archive inventory differs from manifest')
     destination.mkdir(parents=True, exist_ok=False)
     (destination / 'manifest.json').write_bytes(raw)
-    for name in sorted(expected - {'manifest.json'}):
+    if supplement_raw is not None:
+        (destination / 'supplements.json').write_bytes(supplement_raw)
+    supplement_by_file = {r['file']: r for r in snapshot['records']}
+    for name in sorted(expected - {'manifest.json', 'supplements.json'}):
         target = checked_path(destination / name, destination)
         argument = name.replace('/', '\\') if os.name == 'nt' else name
         data = rar(executable, ['p', '-inul', '-cfg-', '-p-', str(archive), argument])
-        image_info(data)
+        info = image_info(data)
+        if name in supplement_by_file:
+            item = supplement_by_file[name]
+            if info['sha256'] != item['sha256'] or info['bytes'] != item['bytes']:
+                raise ValueError(f'Archived supplement hash/size mismatch: {name}')
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(data)
-    gallery.validate_cache(destination, manifest)
+    gallery.validate_cache(destination, manifest, extra_files)
     return manifest
+
+
+def restore_supplements(gallery, staging):
+    """Preflight every destination, then recover only missing original PNGs. Never edit indexes."""
+    snapshot = staged_supplements(gallery, staging)
+    pending = []
+    for item in snapshot['records']:
+        target = checked_path(gallery.root / item['media_path'], gallery.root)
+        if target.exists():
+            data = target.read_bytes()
+            if digest(data) != item['sha256'] or len(data) != item['bytes']:
+                raise ValueError(f'Conflicting supplemental restore destination: {target}')
+        else:
+            pending.append((target, checked_path(staging / item['file'], staging)))
+    for target, source in pending:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        # Exclusive create protects against changes after preflight. Source was hash-verified.
+        with target.open('xb') as output:
+            output.write(source.read_bytes())
+    for item in snapshot['records']:
+        checked_path(staging / item['file'], staging).unlink()
+    extras = checked_path(staging / 'supplements', staging)
+    if extras.exists():
+        extras.rmdir()
+    checked_path(staging / 'supplements.json', staging).unlink(missing_ok=True)
+    return len(pending)
 
 
 def remove_owned(folder, base):
@@ -501,17 +604,41 @@ def archive(gallery, compression=3, allow_partial=False, replace=False):
     gallery.archives.mkdir(parents=True, exist_ok=True)
     candidate = checked_path(gallery.archives / f'{gallery.id}-{uuid.uuid4().hex}.candidate.rar', gallery.archives)
     staging = checked_path(gallery.cache_base / f'verify-{uuid.uuid4().hex}', gallery.cache_base)
+    packing = checked_path(gallery.cache_base / f'pack-{uuid.uuid4().hex}', gallery.cache_base)
+    supplements = current_supplements(gallery)
     started = time.monotonic()
     try:
+        packing.mkdir(parents=True, exist_ok=False)
+        for name in members:
+            target = checked_path(packing / name, packing)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(checked_path(gallery.folder / name, gallery.folder), target)
+        extra_files = {'supplements.json'}
+        write_json(packing / 'supplements.json', supplements)
+        for item in supplements['records']:
+            target = checked_path(packing / item['file'], packing)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(checked_path(gallery.root / item['media_path'], gallery.root), target)
+            info = image_info(target.read_bytes())
+            if info['sha256'] != item['sha256'] or info['bytes'] != item['bytes']:
+                raise ValueError('Supplement changed during archive preparation')
+            extra_files.add(item['file'])
+        gallery.validate_cache(packing, manifest, extra_files)
+        members = members | extra_files
         args = ['a', '-cfg-', '-idq', '-p-', '-r-', '-ol-', f'-m{compression}', '-s-', str(candidate), *sorted(members)]
-        rar(executable, args, cwd=gallery.folder)
+        rar(executable, args, cwd=packing)
         rar(executable, ['t', '-cfg-', '-idq', '-p-', str(candidate)])
         unpack_verified(gallery, candidate, staging, executable)
-        source_bytes = sum((gallery.folder / name).stat().st_size for name in members)
+        if staged_supplements(gallery, staging) != supplements:
+            raise ValueError('Supplement recovery metadata mismatch')
+        if current_supplements(gallery) != supplements:
+            raise ValueError('Supplemental sources changed during archive verification')
+        source_bytes = sum((packing / name).stat().st_size for name in members)
         archive_bytes = candidate.stat().st_size
         receipt = {'owner': OWNER, 'episode': gallery.id, 'csv_sha256': gallery.csv_hash,
                    'archive_sha256': digest(candidate.read_bytes()), 'cached': cached,
                    'expected': len(gallery.rows), 'complete': cached == len(gallery.rows),
+                   'archive_format': 2, 'supplements': len(supplements['records']),
                    'input_bytes': source_bytes, 'archive_bytes': archive_bytes,
                    'saved_bytes': source_bytes-archive_bytes,
                    'compression_level': compression, 'solid': False,
@@ -524,6 +651,8 @@ def archive(gallery, compression=3, allow_partial=False, replace=False):
         candidate.unlink(missing_ok=True)
         if staging.exists():
             remove_owned(staging, gallery.cache_base)
+        if packing.exists():
+            remove_owned(packing, gallery.cache_base)
 
 
 def read_receipt(gallery):
@@ -535,35 +664,55 @@ def read_receipt(gallery):
     return item
 
 
-def restore(gallery):
+def restore(gallery, supplements_only=False):
     read_receipt(gallery)
-    if gallery.folder.exists():
+    if gallery.folder.exists() and not supplements_only:
         raise ValueError('Unpacked cache already exists; refusing restore conflict')
     staging = checked_path(gallery.cache_base / f'restore-{uuid.uuid4().hex}', gallery.cache_base)
     try:
         unpack_verified(gallery, gallery.archive_path, staging, rar_path())
-        staging.replace(gallery.folder)
+        restore_supplements(gallery, staging)
+        if not supplements_only:
+            staging.replace(gallery.folder)
     finally:
         if staging.exists():
             remove_owned(staging, gallery.cache_base)
     return gallery.status()
 
 
-def prune(gallery, progress_saved=False):
+def prune(gallery, progress_saved=False, remove_sheets=False):
+    if not progress_saved:
+        raise ValueError('Prune requires --progress-saved acknowledgement')
     read_receipt(gallery)
-    current = gallery.load()
-    gallery.validate_cache(gallery.folder, current)
+    current = gallery.load() if gallery.folder.exists() else None
+    if current is not None:
+        gallery.validate_cache(gallery.folder, current)
     staging = checked_path(gallery.cache_base / f'prune-verify-{uuid.uuid4().hex}', gallery.cache_base)
     try:
         archived = unpack_verified(gallery, gallery.archive_path, staging, rar_path())
-        if current != archived:
+        if current is not None and current != archived:
             raise ValueError('Archive does not match current manifest; prune refused')
-        gallery.cleanup(progress_saved)
-        remove_owned(gallery.folder, gallery.cache_base)
+        supplements = current_supplements(gallery, require_media=False)
+        if staged_supplements(gallery, staging) != supplements:
+            raise ValueError('Archive does not include the current supplements; refresh archive before pruning')
+        if remove_sheets:
+            gallery.cleanup(progress_saved)
+        removed_supplements = 0
+        # Every present original was preflighted against the authored and restored hashes above.
+        for item in supplements['records']:
+            target = checked_path(gallery.root / item['media_path'], gallery.root)
+            if target.exists():
+                target.unlink()
+                removed_supplements += 1
+        manual_folder = checked_path(gallery.root / f'reference/working/manual-supplements/{gallery.id}', gallery.root)
+        if manual_folder.exists() and not any(manual_folder.iterdir()):
+            manual_folder.rmdir()
+        if gallery.folder.exists():
+            remove_owned(gallery.folder, gallery.cache_base)
     finally:
         if staging.exists():
             remove_owned(staging, gallery.cache_base)
-    return gallery.status()
+    return {**gallery.status(), 'removed_supplements': removed_supplements}
 
 
 def main():
@@ -577,7 +726,13 @@ def main():
     parser.add_argument('--allow-partial', action='store_true')
     parser.add_argument('--replace-archive', action='store_true')
     parser.add_argument('--compression', type=int, choices=range(6), default=3)
+    parser.add_argument('--remove-sheets', action='store_true', help='Prune only: also remove registered contact sheets; default retains them')
+    parser.add_argument('--supplements-only', action='store_true', help='Restore only: recover missing supplemental PNGs without replacing the gallery cache')
     args = parser.parse_args()
+    if args.remove_sheets and args.operation != 'prune':
+        parser.error('--remove-sheets is only valid with prune')
+    if args.supplements_only and args.operation != 'restore':
+        parser.error('--supplements-only is only valid with restore')
     gallery = Gallery(args.episode)
     with episode_lock(gallery):
         if args.operation == 'prepare':
@@ -591,9 +746,9 @@ def main():
         elif args.operation == 'archive':
             result = archive(gallery, args.compression, args.allow_partial, args.replace_archive)
         elif args.operation == 'restore':
-            result = restore(gallery)
+            result = restore(gallery, args.supplements_only)
         else:
-            result = prune(gallery, args.progress_saved)
+            result = prune(gallery, args.progress_saved, args.remove_sheets)
     print(json.dumps(result, indent=2))
 
 

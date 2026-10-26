@@ -25,7 +25,7 @@ $columns = @('Open image','web_timestamp','image_id','screening_status','categor
  'screened_by','screened_utc','detail_reviewed_by','detail_reviewed_utc','detail_references',
  'image_key','episode_id','episode_number','locator_ordinal','episode_title','web_seconds',
  'image_url','source_page_url','alignment_status')
-$widths = @(14,19,15,23,34,32,36,80,17,20,65,22,70,80,29,22,75,20,31,24,31,60,24,17,20,20,40,20,65,65,23)
+$widths = @(14,19,15,23,34,32,36,80,17,20,65,22,70,80,29,32,75,20,31,24,31,60,24,17,20,20,40,20,65,65,23)
 $expected = @{}
 $summaries = @()
 $manualTable = @()
@@ -90,24 +90,26 @@ try {
    Recheck=@($rows | Where-Object screening_status -eq 'NEEDS_RECHECK').Count;
    Unavailable=@($rows | Where-Object screening_status -eq 'UNAVAILABLE').Count;
    Unreviewed=@($rows | Where-Object screening_status -eq 'UNREVIEWED').Count;
-   'Detail partial'=@($rows | Where-Object detail_status -eq 'PARTIAL').Count;
-   'Detail reviewed'=@($rows | Where-Object detail_status -eq 'REVIEWED').Count}
+   'Initial review complete'=@($rows | Where-Object detail_status -eq 'INITIAL_REVIEW_COMPLETE').Count;
+   'Deep dive partial'=@($rows | Where-Object detail_status -eq 'PARTIAL').Count;
+   'Deep dive reviewed'=@($rows | Where-Object detail_status -eq 'REVIEWED').Count}
  }
  $null = $summaries | Export-Excel -ExcelPackage $package -WorksheetName Overview -StartRow 6 -TableName CategoryCoverage -TableStyle Medium2 -PassThru
  $overview.Cells[2,1].Value = 'Episode reference coverage'
  $overview.Cells[2,1].Style.Font.Size = 14
  $overview.Cells[4,1].Value = 'Counts describe sampled gallery images. Recheck and unavailable remain unresolved.'
- $overview.Cells[35,1].Value = 'Edit the authored CSV; refresh replaces this workbook. No detailed review implied by screening.'
+ $overview.Cells[35,1].Value = 'Initial review complete = annotated survey. Deep dive counts cover scoped questions; see the index README.'
  $overview.View.ShowGridLines = $false
- $overview.Cells[1,1,35,8].Style.Font.Name = 'Arial'
- $overview.Cells[1,1,35,8].Style.Font.Size = 10
+ $overview.Cells[1,1,35,9].Style.Font.Name = 'Arial'
+ $overview.Cells[1,1,35,9].Style.Font.Size = 10
  $overview.Column(1).Width = 16
- for ($c=2;$c -le 8;$c++) { $overview.Column($c).Width = 20 }
+ for ($c=2;$c -le 9;$c++) { $overview.Column($c).Width = 20 }
+ $overview.Column(7).Width = 27
  for ($i=0;$i -lt 26;$i++) {
   $overview.Cells[($i+7),1].Hyperlink = [OfficeOpenXml.ExcelHyperLink]::new("'$($summaries[$i].Episode)'!A1",$summaries[$i].Episode)
  }
  if ($manual.Count -gt 0) {
-  $manualColumns = @('Open image','local_timestamp','image_id','episode_id','alignment_status',
+  $manualColumns = @('Open image','local_timestamp','image_id','episode_id','alignment_status','media_availability',
    'categories','subjects','subject_details','visual_summary','related_gallery_ids')
   $manualColumns += @($manual[0].PSObject.Properties.Name | Where-Object { $_ -notin $manualColumns })
   $manualTable = @($manual | ForEach-Object {
@@ -119,7 +121,7 @@ try {
   $sheet = $package.Workbook.Worksheets['Manual references']
   $sheet.Cells[2,1].Value = 'Manual episode references'
   $sheet.Cells[2,1].Style.Font.Size = 14
-  $sheet.Cells[3,1].Value = 'Local player times are unreconciled. Gallery counts and web ordering remain separate.'
+  $sheet.Cells[3,1].Value = 'NOT_LOCAL images require archive restore before opening. Player times are unreconciled; gallery counts remain separate.'
   $sheet.View.ShowGridLines = $false
   $sheet.View.FreezePanes(6,5)
   $sheet.Cells[5,1,($manual.Count+5),$manualColumns.Count].Style.Font.Name = 'Arial'
@@ -128,6 +130,7 @@ try {
   for ($c=0;$c -lt $manualColumns.Count;$c++) {
    $field = $manualColumns[$c]
    $sheet.Column($c+1).Width = 25
+   if ($field -eq 'detail_status') { $sheet.Column($c+1).Width = 32 }
    if ($field -in @('visual_summary','reported_context','uncertainties','revisit_reason','source_description','media_path')) { $sheet.Column($c+1).Width = 85 }
    if ($field -in @('categories','subjects','subject_details','media_sha256','image_key','timestamp_basis')) { $sheet.Column($c+1).Width = 40 }
    $sheet.Cells[6,($c+1),($manual.Count+5),($c+1)].Style.WrapText = $true
@@ -176,7 +179,7 @@ try {
   }
  }
  foreach ($i in 0..25) {
-  foreach ($c in 1..8) {
+  foreach ($c in 1..9) {
    $field = @($summaries[$i].PSObject.Properties.Name)[$c-1]
    if ([string]$check.Workbook.Worksheets['Overview'].Cells[($i+7),$c].Value -cne [string]$summaries[$i].$field) { throw 'Coverage summary mismatch' }
   }

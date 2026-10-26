@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-26 |
-| Status | Phases 1 and 2 and subphase 3.1 complete; pre-3.2A gallery-tool pilot in progress; 3.2A unstarted |
+| Status | Phases 1 and 2 and subphase 3.1 complete; pre-3.2A research in progress; gallery review procedure accepted; 3.2A unstarted |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Pre-3.2A visual-reference research: all-episode category survey, then cross-episode XGP detail review; stop before 3.2A |
+| Current checkpoint | Pre-3.2A visual-reference research: all-episode annotated survey, then Power BI and question-driven XGP synthesis/deep dives; stop before 3.2A |
 
 ## Purpose And Placement
 
@@ -36,16 +36,22 @@ passed in 2.4; slice gameplay and performance acceptance remain untested.
 The full 221-image settei collection review is checkpointed in `a9cba32`. The accepted
 2026-10-26 research approach adds a separate [visual-reference research checkpoint](#pre-32a-checkpoint-all-episode-visual-reference-research)
 before reconstruction sheets or concept generation. Survey all episode galleries one episode at a
-time, starting with Episode 4, then consolidate XGP candidates across episodes for detailed review.
+time, starting with Episode 4, then consolidate XGP candidates and investigate specific unresolved
+design/evidence questions. The accepted annotated-survey refinement treats this as the main initial
+review, with targeted deep dives rather than a mandatory second review of every candidate.
 Other subjects remain indexed for later world/character research. This broad reference coverage
 supports the long-term game without expanding the accepted awakening slice. The 2026-10-26 tool
 pilot's 24-image sheet was accepted for readability. The subsequent full Episode 4 preparation
 cached all 354 images and verified 15 sheets, including the final 18-image sheet. Disposable
 recovery tests and a full live RAR round trip passed. The authored category index and generated
-browsing view are initialized. Episode 4 category screening is in progress; the
+browsing view are initialized. All 354 Episode 4 gallery images and nine manual supplements have
+completed the annotated initial review; gallery locator 007 retains an identity recheck. The
 [authored index and survey record](../../reference/indexes/animehistory/README.md#episode-4-category-survey-progress)
-own current coverage and recheck items. Further screening, post-review live cleanup/prune and
-official procedure adoption remain pending. See the [tool pilot evidence](../../tools/reference-extraction/README.md#pilot-commands-and-observed-results--2026-10-26).
+own current coverage and recheck items. Episode 4's verified RAR now contains gallery originals
+and all nine manual PNGs; expanded originals are pruned and all 15 contact sheets retained.
+Live restore and unchanged sheet regeneration passed. The completed pilot and operating procedure
+were accepted on 2026-10-26; further episode surveys remain unstarted. See the
+[tool evidence](../../tools/reference-extraction/README.md#episode-retention-and-supplement-recovery--accepted-2026-10-26).
 Phase 3.2A remains unstarted and separately authorized.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
@@ -542,20 +548,24 @@ and [closeout review](phase-3-1-closeout.md). No 3.2A execution is authorized.
 ### Pre-3.2A Checkpoint: All-Episode Visual-Reference Research
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
-**Planning scope accepted — 2026-10-26:** complete a broad category survey before detailed,
-cross-episode XGP review. This research checkpoint precedes 3.2A without renumbering later phases.
-**Deliverable:** a traceable preliminary subject/scene index across all 26 sampled episode galleries,
-an XGP-focused detailed reference collection and a targeted local-video rewatch shortlist. Research
+**Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete
+an episode-by-episode annotated survey as the main initial review, followed by cross-episode XGP
+synthesis and question-driven deep dives. No blanket second per-image review is required.
+This research checkpoint precedes 3.2A without renumbering later phases.
+**Deliverable:** a traceable annotated subject/scene index across all 26 sampled episode galleries,
+an XGP-focused reference collection and a targeted unresolved-question/rewatch shortlist. Research
 completion does not mean complete episode coverage, full translation or settled reconstruction.
 
-**Pass 1 — episode-by-episode category survey:**
+**Pass 1 — episode-by-episode annotated survey:**
 
-- [ ] Implement and validate the bounded contact-sheet/cache/RAR pilot against the
+- [x] Implement and validate the bounded contact-sheet/cache/RAR pilot against the
   [episode gallery tool proposal](../../tools/reference-extraction/README.md#episode-gallery-review-tool--proposal).
   Maintainer accepted the 24-image layout. Ten disposable-fixture tests, an offline cache repeat,
   full Episode 4 preparation (354 images / 15 sheets) and a full live RAR integrity/restore/hash
-  comparison passed. First-subset authored-review integration passed; post-review live cleanup/prune remains pending.
-  Adopt an official procedure only after the staged validation and maintainer review.
+  comparison passed. Authored-review integration, full Episode 4 annotated survey and post-review
+  archive/prune/restore/sheet-regeneration checks passed. Final retention keeps contact sheets and
+  metadata, bundles supplemental PNGs in the episode RAR and prunes both expanded image sets.
+  The maintainer accepted the operating procedure on 2026-10-26 after staged validation and review.
 - [x] Establish a separate authored annotation index keyed to the generated
   [AnimeHistory locator records](../../reference/indexes/animehistory/README.md) by episode and image ID;
   retain web timestamp, source image/page links and chronological scene-group membership. Do not
@@ -566,45 +576,55 @@ completion does not mean complete episode coverage, full translation or settled 
   Version 1 initialized all 9,204 rows as unreviewed. The first 24 Episode 4 records subsequently
   received preliminary screening; saved workbook values/links and annotation preservation passed
   programmatic checks. Native viewer acceptance and full episode screening are separate.
-- [ ] Survey Episode 4 first, then Episodes 1–3 and 5–26 in order, completing one episode's category
-  split before the next. The current locator baseline is 354 images per episode, 9,204 total.
+- [ ] Survey Episode 4 first, then Episodes 1–3 and 5–26 in order, completing one episode's
+  annotated initial review before the next. The baseline is 354 images per episode, 9,204 total.
   Account for each locator as visually screened or explicitly unavailable/unreviewed; inaccessible
   images are unresolved coverage, not silently completed screening.
+  Episode 4's 354 gallery records and nine supplements are INITIAL_REVIEW_COMPLETE, with gallery
+  locator 007 still NEEDS_RECHECK. Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
 - [ ] Group consecutive/repeated views into scene ranges while preserving individual locators,
-  distinctive angles and state changes. Larger overview/contact sheets may support category sorting;
-  thumbnail inspection does not verify fine details. Use independent initial sorting, followed by
-  a concise per-episode category/coverage report and maintainer corrections.
-- [ ] Finish the all-episode category survey and combined candidate inventory before beginning the
-  collaborative detailed XGP batches. Keep uncertain XGP/room identities in an explicit review queue
-  so preliminary classification does not exclude potentially relevant shots unnoticed.
+  distinctive angles and state changes. Record per-image visible descriptions, priorities,
+  uncertainties, selected full-size inspections, maintainer context/corrections and useful manual
+  supplements during bounded batches. Contact sheets do not verify fine details. Retain concise
+  grouped reports with individual-image callouts; reuse findings rather than repeating them later.
+- [ ] Finish the all-episode annotated survey and combined candidate inventory before the planned
+  report and cross-episode synthesis. Keep uncertain XGP/room identities in an explicit queue so
+  initial classification does not exclude potentially relevant shots unnoticed. Review depth and
+  identification status follow the [index contract](../../reference/indexes/animehistory/README.md#annotated-survey-and-targeted-review-depth--accepted-2026-10-26).
 
-**Pass 2 — cross-episode XGP detail review:**
+**Pass 2 — Power BI, cross-episode synthesis and targeted deep dives:**
 
-- [ ] After the all-episode category survey, prepare and validate a Power BI research report
-  before detailed batches. Agree pages and filters for coverage, XGP/other subjects and the
+- [ ] After the all-episode annotated survey, prepare and validate a Power BI research report
+  before targeted deep dives. Agree pages and filters for coverage, XGP/other subjects and the
   uncertainty/rewatch queue; validate distinct-image counts and locator links. Image previews
   remain subject to environment testing. No cloud publication or media upload is implied.
 - [ ] Consolidate XGP candidates by exterior, cockpit, engineering, corridors/living spaces,
   access/boarding, machinery and operating states. Preserve episode/scene context and review
   differing states or revisions rather than merging them into one assumed consistent design.
-- [ ] Review useful subject groups in focused batches with maintainer feedback and individual-image
-  inspection where needed. Link findings to SET records and existing local episode evidence; record
-  visible appearance, colour/material cues, controls, motion endpoints, lighting and composition
-  separately from uncertain readings, owner recollections and E/F reconstruction/gameplay proposals.
+- [ ] Reuse annotated findings to assemble useful subject groups and link SET records/existing
+  episode evidence. Perform focused deep dives only for a stated modeling/design or evidence
+  question: full-resolution shape/fit comparisons, continuous machinery motion, text/dialogue,
+  contradictions or missing-shot/timing alignment. Record the question, findings, evidence and
+  limits; do not re-describe every image. High revisit priority is a lead, not an automatic task.
+  Preserve observed appearance, controls, motion endpoints and composition separately from
+  recollections, uncertain readings and E/F reconstruction/gameplay proposals.
 - [ ] Build a targeted rewatch shortlist specifying episode, candidate range, subject and the question
   video must resolve, particularly motion, dialogue, edits, brief missing shots or spatial continuity.
   Match recognizable gallery shots against local media before assigning verified local times;
   offsets may vary. Gallery times remain web locators until checked, not frame-accurate local PTS.
 - [ ] Record the bounded XGP findings and unresolved questions needed for the first 3.2A increment,
-  then obtain maintainer acceptance of research readiness. Detailed analysis of every non-XGP
-  category is deferred to relevant future work and is not a prerequisite for 3.2A.
+  then obtain maintainer acceptance of research readiness. Only questions material to that increment
+  need resolution or an explicit accepted deferral. No exhaustive second review of XGP candidates
+  or other categories is a prerequisite for 3.2A; later research follows relevant implementation needs.
 
 **Validation / evidence limits:** maintain episode-level counts, image-level review status and links
-from category/scene groups to original locators. Category-screened and detail-reviewed are distinct
-states. A sampled gallery cannot establish absence from an episode or exhaustive scene coverage.
+from category/scene groups to original locators. Screening/identity status, completed annotated
+initial review and targeted deep-dive status are distinct. INITIAL_REVIEW_COMPLETE recognizes the
+survey and may coexist with NEEDS_RECHECK; it does not verify dimensions, translations or animation.
+A sampled gallery cannot establish absence from an episode or exhaustive scene coverage.
 Keep directly observed anime details, source authenticity/timing limits, recollections, contradictions
 and reconstruction proposals distinct under the [canon policy](../canon-policy.md).
 

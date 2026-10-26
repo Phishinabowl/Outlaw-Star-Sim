@@ -78,6 +78,27 @@ class CategoryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             ci.validate(self.rows, self.sources)
 
+    def test_initial_review_is_separate_from_identity_and_targeted_evidence(self):
+        self.screened()
+        self.rows[0]['detail_status'] = 'INITIAL_REVIEW_COMPLETE'
+        ci.validate(self.rows, self.sources)
+        self.rows[0].update(screening_status='NEEDS_RECHECK', uncertainties='Identity still open.')
+        ci.validate(self.rows, self.sources)
+        for state in ('PARTIAL', 'REVIEWED'):
+            bad = deepcopy(self.rows); bad[0]['detail_status'] = state
+            with self.subTest(state=state), self.assertRaises(ValueError):
+                ci.validate(bad, self.sources)
+        bad = deepcopy(self.rows)
+        bad[0].update(screening_status='UNAVAILABLE', uncertainties='Could not inspect.')
+        with self.assertRaises(ValueError):
+            ci.validate(bad, self.sources)
+        bad = deepcopy(self.rows)
+        bad[0]['detail_reviewed_by'] = 'Invented deep reviewer'
+        bad[0]['detail_reviewed_utc'] = '2026-10-26T17:00:00Z'
+        bad[0]['detail_references'] = 'reference/indexes/animehistory/README.md'
+        with self.assertRaises(ValueError):
+            ci.validate(bad, self.sources)
+
     def manual_row(self):
         row = {**dict.fromkeys(ci.SUPPLEMENT_FIELDS, ''), **ci.DEFAULTS}
         row.update(episode_id='EP-04', image_id='EP-04-MAN-001',
@@ -112,6 +133,20 @@ class CategoryTests(unittest.TestCase):
             ci.validate_supplements([row], self.sources, verify_media=True)
         with patch.object(Path, 'read_bytes', return_value=b'changed'), self.assertRaises(ValueError):
             ci.validate_supplements([row], self.sources, verify_media=True)
+
+    def test_manual_browsing_survives_archived_media_and_checks_present_files(self):
+        row = self.manual_row()
+        target = Path(self.temp.name) / row['media_path']
+        before = dict(row)
+        view = ci.supplement_browsing_data([row], Path(self.temp.name))
+        self.assertEqual(view[0]['media_availability'], 'NOT_LOCAL')
+        target.parent.mkdir(parents=True)
+        target.write_bytes(b'image')
+        self.assertEqual(ci.supplement_browsing_data([row], Path(self.temp.name))[0]['media_availability'], 'LOCAL_VERIFIED')
+        target.write_bytes(b'changed')
+        with self.assertRaises(ValueError):
+            ci.supplement_browsing_data([row], Path(self.temp.name))
+        self.assertEqual(row, before)
 
 
 if __name__ == '__main__':

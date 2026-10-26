@@ -113,7 +113,9 @@ def validate(rows, sources, enums=None, vocabulary=None):
             require(row['identification_confidence'] != 'NOT_ASSESSED', 'Named/candidate subjects need confidence')
         if row['research_priority'] == 'HIGH':
             require(bool(row['revisit_reason']), 'High priority needs revisit reason')
-        if row['detail_status'] != 'NOT_REVIEWED':
+        if row['detail_status'] == 'INITIAL_REVIEW_COMPLETE':
+            require(status in ('SCREENED', 'NEEDS_RECHECK'), 'Initial review needs an inspected image')
+        if row['detail_status'] in ('PARTIAL', 'REVIEWED'):
             require(bool(row['detail_reviewed_by'] and row['detail_references']), 'Detailed review needs provenance/evidence')
         else:
             require(not row['detail_reviewed_by'] and not row['detail_references'], 'Unexpected detailed-review data')
@@ -193,6 +195,21 @@ def supplements(sources, verify_media=False):
     return validate_supplements(rows, sources, verify_media)
 
 
+def supplement_browsing_data(rows, root=ROOT):
+    """Archived originals may be absent. Verify present files; never confuse absence with review."""
+    data = []
+    for row in sorted(rows, key=lambda r: (r['episode_id'], int(r['local_seconds']), r['image_id'])):
+        target = (root / row['media_path']).resolve()
+        available = target.exists()
+        if available:
+            raw = target.read_bytes()
+            if len(raw) != int(row['media_bytes']) or hashlib.sha256(raw).hexdigest() != row['media_sha256']:
+                raise ValueError(f'Local supplemental image changed: {row["image_id"]}')
+        data.append({**row, 'image_key': key(row), 'episode_number': int(row['episode_id'][3:]),
+                     'media_uri': target.as_uri(), 'media_availability': 'LOCAL_VERIFIED' if available else 'NOT_LOCAL'})
+    return data
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('operation', choices=('initialize', 'validate', 'view-data', 'supplement-data'))
@@ -206,7 +223,7 @@ def main():
     if fields != FIELDS:
         raise ValueError('Annotation CSV header mismatch')
     validate(rows, sources)
-    manual = supplements(sources, verify_media=args.operation == 'supplement-data')
+    manual = supplements(sources)
     if args.operation in ('view-data', 'supplement-data'):
         output = args.output.resolve() if args.output else None
         if output is None or not output.is_relative_to((ROOT / '.tmp').resolve()):
@@ -215,9 +232,7 @@ def main():
         if args.operation == 'view-data':
             data = browsing_data(rows, sources)
         else:
-            data = [{**r, 'image_key': key(r), 'episode_number': int(r['episode_id'][3:]),
-                     'media_uri': (ROOT / r['media_path']).resolve().as_uri()}
-                    for r in sorted(manual, key=lambda r: (r['episode_id'], int(r['local_seconds']), r['image_id']))]
+            data = supplement_browsing_data(manual)
         output.write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
     print(json.dumps({'records': len(rows), 'screening': dict(Counter(r['screening_status'] for r in rows)),
                       'detail': dict(Counter(r['detail_status'] for r in rows)),
