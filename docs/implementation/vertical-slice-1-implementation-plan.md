@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-07 / 2026-10-26 |
-| Status | Phases 1 and 2 and subphase 3.1 complete; pre-3.2A visual research planned; 3.2A unstarted |
+| Status | Phases 1 and 2 and subphase 3.1 complete; pre-3.2A gallery-tool pilot in progress; 3.2A unstarted |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
@@ -38,8 +38,12 @@ The full 221-image settei collection review is checkpointed in `a9cba32`. The ac
 before reconstruction sheets or concept generation. Survey all episode galleries one episode at a
 time, starting with Episode 4, then consolidate XGP candidates across episodes for detailed review.
 Other subjects remain indexed for later world/character research. This broad reference coverage
-supports the long-term game without expanding the accepted awakening slice. No gallery-image
-survey or retrieval has started under this addition; 3.2A remains unstarted and separately authorized.
+supports the long-term game without expanding the accepted awakening slice. The 2026-10-26 tool
+pilot's 24-image sheet was accepted for readability. The subsequent full Episode 4 preparation
+cached all 354 images and verified 15 sheets, including the final 18-image sheet. Disposable
+recovery tests and a full live RAR round trip passed. Authored category-review integration and
+official procedure adoption remain pending. See the [tool pilot evidence](../../tools/reference-extraction/README.md#pilot-commands-and-observed-results--2026-10-26).
+Phase 3.2A remains unstarted and separately authorized.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
 **introducing the planning gate**. Its scope covered this document and navigation/status updates only.
@@ -545,8 +549,10 @@ completion does not mean complete episode coverage, full translation or settled 
 
 - [ ] Implement and validate the bounded contact-sheet/cache/RAR pilot against the
   [episode gallery tool proposal](../../tools/reference-extraction/README.md#episode-gallery-review-tool--proposal).
-  Begin with one 24-image Episode 4 sheet; archive/restore/prune behavior remains unverified until
-  demonstrated. Adopt an official procedure only after the staged validation and maintainer review.
+  Maintainer accepted the 24-image layout. Ten disposable-fixture tests, an offline cache repeat,
+  full Episode 4 preparation (354 images / 15 sheets) and a full live RAR integrity/restore/hash
+  comparison passed. Authored-review integration and post-review live cleanup/prune remain pending.
+  Adopt an official procedure only after the staged validation and maintainer review.
 - [ ] Establish a separate authored annotation index keyed to the generated
   [AnimeHistory locator records](../../reference/indexes/animehistory/README.md) by episode and image ID;
   retain web timestamp, source image/page links and chronological scene-group membership. Do not
