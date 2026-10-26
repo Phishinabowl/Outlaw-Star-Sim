@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE = 'https://animehistory.org'
 CACHE = ROOT / 'reference' / 'cache' / 'animehistory'
 INDEX = ROOT / 'reference' / 'indexes' / 'animehistory'
+EPISODE_INDEX = INDEX / 'CSVs'
 AGENT = 'OutlawStarReferenceIndexer/1.0 (HTML metadata cache; no images)'
 
 
@@ -67,6 +68,7 @@ def parse(text):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     INDEX.mkdir(parents=True, exist_ok=True)
+    EPISODE_INDEX.mkdir(parents=True, exist_ok=True)
     robots_text, robots_info = fetch(BASE + '/robots.txt', 'robots.txt')
     robots = RobotFileParser()
     robots.parse(robots_text.splitlines())
@@ -128,7 +130,7 @@ def main():
             raise ValueError(f'Count mismatch EP-{episode:02}: {len(rows)} != {expected}')
         if [r['web_seconds'] for r in rows] != sorted(r['web_seconds'] for r in rows):
             raise ValueError(f'Non-monotonic gallery timestamps: episode {episode}')
-        with (INDEX / f'episode-{episode:02}.csv').open('w', newline='', encoding='utf-8') as output:
+        with (EPISODE_INDEX / f'episode-{episode:02}.csv').open('w', newline='', encoding='utf-8') as output:
             writer = csv.DictWriter(output, fieldnames=list(rows[0]))
             writer.writeheader()
             writer.writerows(rows)

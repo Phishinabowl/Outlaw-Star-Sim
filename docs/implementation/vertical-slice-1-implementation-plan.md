@@ -2,12 +2,12 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-07 / 2026-10-25 |
-| Status | Phases 1 and 2 and subphase 3.1 complete; 3.2A unstarted |
+| Created / last edited | 2026-10-07 / 2026-10-26 |
+| Status | Phases 1 and 2 and subphase 3.1 complete; pre-3.2A visual research planned; 3.2A unstarted |
 | Prepared by | Codex, from approved Reconstruction / Implementation Baseline v1 |
 | Maintainer | Repository owner |
 | Planning baseline | Baseline v1 published in `d05d1822a41b3e0a3b03bd015676d97124a08fab` |
-| Current checkpoint | Phase 3.1 accepted and closed 2026-10-24, including published asset recovery; stop before 3.2A |
+| Current checkpoint | Pre-3.2A visual-reference research: all-episode category survey, then cross-episode XGP detail review; stop before 3.2A |
 
 ## Purpose And Placement
 
@@ -32,6 +32,14 @@ the neutral map is saved and selected for editor/game startup. No ship graybox, 
 Neutral build/editor/Play input, repeated launch and fresh-checkout editor checks passed in 2.3;
 the selected Unreal MCP pilot also completed. Neutral standalone packaging and repeated input/exit
 passed in 2.4; slice gameplay and performance acceptance remain untested.
+
+The full 221-image settei collection review is checkpointed in `a9cba32`. The accepted
+2026-10-26 research approach adds a separate [visual-reference research checkpoint](#pre-32a-checkpoint-all-episode-visual-reference-research)
+before reconstruction sheets or concept generation. Survey all episode galleries one episode at a
+time, starting with Episode 4, then consolidate XGP candidates across episodes for detailed review.
+Other subjects remain indexed for later world/character research. This broad reference coverage
+supports the long-term game without expanding the accepted awakening slice. No gallery-image
+survey or retrieval has started under this addition; 3.2A remains unstarted and separately authorized.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
 **introducing the planning gate**. Its scope covered this document and navigation/status updates only.
@@ -524,9 +532,75 @@ and [closeout review](phase-3-1-closeout.md). No 3.2A execution is authorized.
 
 **Pilot validation / recovery:** actual handoff fit and recoverable fixture changes under the [editor-automation contract](../architecture/editor-automation.md). Restore only owned pilot assets/settings on failure; no source edits, inferred canon or dependency on MCP availability.
 
+### Pre-3.2A Checkpoint: All-Episode Visual-Reference Research
+
+**Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
+**Planning scope accepted — 2026-10-26:** complete a broad category survey before detailed,
+cross-episode XGP review. This research checkpoint precedes 3.2A without renumbering later phases.
+**Deliverable:** a traceable preliminary subject/scene index across all 26 sampled episode galleries,
+an XGP-focused detailed reference collection and a targeted local-video rewatch shortlist. Research
+completion does not mean complete episode coverage, full translation or settled reconstruction.
+
+**Pass 1 — episode-by-episode category survey:**
+
+- [ ] Implement and validate the bounded contact-sheet/cache/RAR pilot against the
+  [episode gallery tool proposal](../../tools/reference-extraction/README.md#episode-gallery-review-tool--proposal).
+  Begin with one 24-image Episode 4 sheet; archive/restore/prune behavior remains unverified until
+  demonstrated. Adopt an official procedure only after the staged validation and maintainer review.
+- [ ] Establish a separate authored annotation index keyed to the generated
+  [AnimeHistory locator records](../../reference/indexes/animehistory/README.md) by episode and image ID;
+  retain web timestamp, source image/page links and chronological scene-group membership. Do not
+  overwrite generated CSVs or treat their captions as visual subject descriptions.
+- [ ] Survey Episode 4 first, then Episodes 1–3 and 5–26 in order, completing one episode's category
+  split before the next. The current locator baseline is 354 images per episode, 9,204 total.
+  Account for each locator as visually screened or explicitly unavailable/unreviewed; inaccessible
+  images are unresolved coverage, not silently completed screening.
+- [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
+  characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
+  lighting/effects and uncertain identities. Retain non-XGP material for future game research.
+- [ ] Group consecutive/repeated views into scene ranges while preserving individual locators,
+  distinctive angles and state changes. Larger overview/contact sheets may support category sorting;
+  thumbnail inspection does not verify fine details. Use independent initial sorting, followed by
+  a concise per-episode category/coverage report and maintainer corrections.
+- [ ] Finish the all-episode category survey and combined candidate inventory before beginning the
+  collaborative detailed XGP batches. Keep uncertain XGP/room identities in an explicit review queue
+  so preliminary classification does not exclude potentially relevant shots unnoticed.
+
+**Pass 2 — cross-episode XGP detail review:**
+
+- [ ] Consolidate XGP candidates by exterior, cockpit, engineering, corridors/living spaces,
+  access/boarding, machinery and operating states. Preserve episode/scene context and review
+  differing states or revisions rather than merging them into one assumed consistent design.
+- [ ] Review useful subject groups in focused batches with maintainer feedback and individual-image
+  inspection where needed. Link findings to SET records and existing local episode evidence; record
+  visible appearance, colour/material cues, controls, motion endpoints, lighting and composition
+  separately from uncertain readings, owner recollections and E/F reconstruction/gameplay proposals.
+- [ ] Build a targeted rewatch shortlist specifying episode, candidate range, subject and the question
+  video must resolve, particularly motion, dialogue, edits, brief missing shots or spatial continuity.
+  Match recognizable gallery shots against local media before assigning verified local times;
+  offsets may vary. Gallery times remain web locators until checked, not frame-accurate local PTS.
+- [ ] Record the bounded XGP findings and unresolved questions needed for the first 3.2A increment,
+  then obtain maintainer acceptance of research readiness. Detailed analysis of every non-XGP
+  category is deferred to relevant future work and is not a prerequisite for 3.2A.
+
+**Validation / evidence limits:** maintain episode-level counts, image-level review status and links
+from category/scene groups to original locators. Category-screened and detail-reviewed are distinct
+states. A sampled gallery cannot establish absence from an episode or exhaustive scene coverage.
+Keep directly observed anime details, source authenticity/timing limits, recollections, contradictions
+and reconstruction proposals distinct under the [canon policy](../canon-policy.md).
+
+**Storage / recovery:** source folders remain immutable. Any retrieved gallery images, overview
+sheets or local-video derivatives remain ignored/local-only; commit authored textual metadata only
+through the established confirmation workflow. Image retrieval/extraction must follow the scoped
+research procedure and existing access rules; the index does not authorize broad episode extraction.
+Preserve generated locator metadata and mark unavailable references for retry or targeted local-video
+fallback. This checkpoint introduces no installations, concept generation, modeling, gameplay,
+new image publication policy or automatic transition into 3.2A.
+
 ### Phase 3.2A: Reconstruction Sheets And Visual Direction
 
-**Prerequisite:** 3.1 scale/player fixture; accepted Phase 1.2 layout and Phase 1.3 behavior contracts.
+**Prerequisite:** 3.1 scale/player fixture; accepted pre-3.2A visual-research readiness for the first
+increment; accepted Phase 1.2 layout and Phase 1.3 behavior contracts.
 **Deliverable:** bounded, reviewable visual references for the next graybox increment, not finished art
 or a replacement for Baseline v1. This added subphase precedes existing 3.2; later IDs are unchanged.
 Its planning scope is accepted; art generation and execution remain separately authorized work.

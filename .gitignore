@@ -7,6 +7,8 @@
 /reference/contact-sheets/
 /reference/cache/
 /reference/working/
+# Regenerated AnimeHistory review workbook; textual CSVs remain authoritative
+/reference/indexes/animehistory/animehistory-review.xlsx
 
 # Unreal generated files; authored source and content remain trackable
 /Unreal/**/Binaries/

@@ -27,7 +27,7 @@ Video timestamps use a 1/1000-second time base despite the fractional frame rate
 
 Use gallery captions as candidate times only. Before a targeted extraction batch, match at least two recognizable shots against local playback/frame data (preferably before and after the relevant sequence). Record external time, local decoded PTS, source, and match status; allow changing offsets if the edits differ. No broad sampling is needed to inspect metadata.
 
-Subsequent direct HTML caching succeeded: [local Episode 4 CSV](animehistory/episode-04.csv) now contains all 354 gallery records across four pages, covering 00:01:43–00:23:14. This resolves access to timestamp metadata, not visual matching or alignment. See [cache/index usage](animehistory/README.md).
+Subsequent direct HTML caching succeeded: [local Episode 4 CSV](animehistory/CSVs/episode-04.csv) now contains all 354 gallery records across four pages, covering 00:01:43–00:23:14. This resolves access to timestamp metadata, not visual matching or alignment. See [cache/index usage](animehistory/README.md).
 
 ## Proposed targeted evidence targets — not yet extracted
 
