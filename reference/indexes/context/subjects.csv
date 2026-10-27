@@ -13,3 +13,5 @@ jim_hawking,Jim Hawking,CHARACTER,Jim,ESTABLISHED,,
 ron_macdougall,Ron MacDougall,CHARACTER,Ron,ESTABLISHED,,
 harry_macdougall,Harry MacDougall,CHARACTER,Harry,ESTABLISHED,,
 xgp_hangar_asteroid,XGP hangar asteroid,LOCATION,,ESTABLISHED,,Facility identity only; inconsistent Farfallus/Farfallas and star/planet wording in secondary sources is not resolved here.
+starwind_hawking_hq,Starwind & Hawking premises,LOCATION,Starwind and Hawking Enterprises;Starwind and Hawking,AGGREGATE,,Existing image-index identity. Secondary article covers Sentinel III and Heifong premises; do not merge their buildings or apply later-branch details to Episode 1. Future player-HQ intent remains a design choice.
+caster,Gene's caster,WEAPON,,ESTABLISHED,,Existing image-index identity; a generic pistol is not automatically a caster.

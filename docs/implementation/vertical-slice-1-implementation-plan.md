@@ -627,7 +627,9 @@ must preserve secondary claims separately from anime/settei observations.
   Account for each locator as visually screened or explicitly unavailable/unreviewed; inaccessible
   images are unresolved coverage, not silently completed screening.
   Episode 4's 354 gallery records and nine supplements are INITIAL_REVIEW_COMPLETE, with gallery
-  locator 007 still NEEDS_RECHECK. Other episode surveys remain unstarted.
+  locator 007 still NEEDS_RECHECK. Episode 1 preparation is authorized and complete: 354 images,
+  15 verified contact sheets and a bounded six-record secondary context brief. Its annotated survey
+  has not yet started; all 354 rows remain unreviewed. Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

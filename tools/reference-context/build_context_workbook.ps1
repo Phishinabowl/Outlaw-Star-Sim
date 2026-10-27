@@ -41,7 +41,7 @@ try {
  $tabNames = @('Subjects','Sources','Context','Links')
  $overview = $package.Workbook.Worksheets.Add('Overview')
  $overview.View.ShowGridLines = $false
- $overview.Cells[2,1].Value = 'Episode 4 context pilot'
+ $overview.Cells[2,1].Value = 'Reference context review'
  $overview.Cells[2,1].Style.Font.Size = 14
  $overview.Cells[3,1].Value = 'Generated view. Maintain research in the CSVs; refresh replaces workbook edits.'
  $overview.Column(1).Width = 36; $overview.Column(2).Width = 18

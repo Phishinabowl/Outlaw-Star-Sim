@@ -1,10 +1,11 @@
 # Local AnimeHistory timestamp index
 
-Selected character/lore/article context from AnimeHistory and Fandom is planned in a separate
+Selected character/lore/article context from AnimeHistory and Fandom is maintained in a separate
 shared register, not additional editable columns in the generated locators. The
-[context-tool proposal](../../../tools/reference-context/README.md) owns its proposed layout and
-pilot. Reuse the authored image index's subject IDs and link sources without overwriting survey
-observations or review status. Context tables and their workbook remain unimplemented.
+[context tool](../../../tools/reference-context/README.md) owns its accepted bounded workflow,
+layout and validation. Reuse the authored image index's subject IDs and link sources without
+overwriting survey observations or review status. The maintained context register and generated
+workbook supplement the image survey; they do not mark images reviewed.
 
 Source: [AnimeHistory Outlaw Star galleries](https://animehistory.org/anime/outlaw-star/) (EXT-001). These are sampled web screencap locator records, not annotated scene breakdowns or verified local-video times.
 
@@ -15,6 +16,24 @@ Initial cache completed October 6, 2026 (America/New_York): **26 episodes, 104 g
 - `CSVs/episode-01.csv` through `CSVs/episode-26.csv` provide the authoritative individual episode records. Start with [Episode 4](CSVs/episode-04.csv).
 - manifest.json records expected/actual counts, page URLs, retrieval timestamps, raw-HTML hashes, and coverage ranges.
 - Original HTML and per-page retrieval sidecars live under ignored reference/cache/animehistory/. They can be reparsed without visiting the site. No screenshots, CSS, scripts, or other linked assets are downloaded.
+
+## Episode 1 preparation — 2026-10-26
+
+Authorized preparation downloaded all 354 sampled gallery images (IDs 846773–847126,
+web locators 01:43–22:03) and generated 15 chronological 24-image contact sheets; the final
+sheet contains 18 images. Cache decoding/hashes, all sheet hashes/dimensions (1600×2056),
+and all 354 ordered ID/time mappings passed. Early, middle and final layouts were inspected.
+Gallery originals occupy 60,722,405 bytes and sheets 51,022,124 bytes. No Episode 1 RAR exists
+yet; expanded images remain available during review, with verified archive/prune at episode end.
+
+The source-context preparation reuses the cached AnimeHistory Episode 1 synopsis and Hilda
+biography and adds selected Fandom Outlaw World and Starwind and Hawking articles. Six concise
+SECONDARY_ONLY records (CTX-000019–000024) preserve disguise, opening-Horus, case/computer,
+caster and headquarters context. The biography's Episode 1/2 boundary and the headquarters
+article's Sentinel III/Heifong distinction remain explicit. No context-to-image links were
+inferred, and all 354 Episode 1 annotation rows remain UNREVIEWED/NOT_REVIEWED pending the
+annotated survey. The context workbook was refreshed and checked; existing image/supplement
+annotations are unchanged. The next review batch is sheets 1–3, locators 001–072.
 
 ## Using the records
 

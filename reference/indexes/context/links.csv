@@ -75,3 +75,26 @@ CTXLINK-000073,CTX-000018,ABOUT,SUBJECT,horus,
 CTXLINK-000074,CTX-000004,SAME_ASSERTION_AS,CONTEXT,CTX-000005,Same reported escape-cover assertion on two pages of the same site; not independent corroboration.
 CTXLINK-000075,CTX-000012,SAME_ASSERTION_AS,CONTEXT,CTX-000013,Same secondary interpretation across sites; independence and primary evidence are not established.
 CTXLINK-000076,CTX-000015,CHECKED_AGAINST,EVIDENCE,reference/indexes/episode-04-startup-review.md,Existing Visually reviewed observations at 10:42.016 and 14:05.011 corroborate only the apparatus-behind-seats relationship; no new primary media inspection.
+CTXLINK-000077,CTX-000019,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000078,CTX-000019,ABOUT,SUBJECT,jim_hawking,
+CTXLINK-000079,CTX-000019,ABOUT,SUBJECT,hilda,
+CTXLINK-000080,CTX-000019,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
+CTXLINK-000081,CTX-000020,ABOUT,SUBJECT,hilda,
+CTXLINK-000082,CTX-000020,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
+CTXLINK-000083,CTX-000021,ABOUT,SUBJECT,horus,
+CTXLINK-000084,CTX-000021,ABOUT,SUBJECT,hilda,
+CTXLINK-000085,CTX-000021,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
+CTXLINK-000086,CTX-000022,ABOUT,SUBJECT,melfina,
+CTXLINK-000087,CTX-000022,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000088,CTX-000022,ABOUT,SUBJECT,jim_hawking,
+CTXLINK-000089,CTX-000022,ABOUT,SUBJECT,hilda,
+CTXLINK-000090,CTX-000022,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
+CTXLINK-000091,CTX-000023,ABOUT,SUBJECT,starwind_hawking_hq,
+CTXLINK-000092,CTX-000023,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000093,CTX-000023,ABOUT,SUBJECT,jim_hawking,
+CTXLINK-000094,CTX-000023,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
+CTXLINK-000095,CTX-000024,ABOUT,SUBJECT,caster,
+CTXLINK-000096,CTX-000024,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000097,CTX-000024,ABOUT,SUBJECT,hilda,
+CTXLINK-000098,CTX-000024,ABOUT,SUBJECT,jim_hawking,
+CTXLINK-000099,CTX-000024,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
