@@ -117,3 +117,31 @@ CTXLINK-000115,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846841,Secondary context
 CTXLINK-000116,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846842,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
 CTXLINK-000117,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846844,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
 CTXLINK-000118,CTX-000021,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846823,Locator 051 exterior matches the previously identified Episode 4 Horus form; this does not assign every cockpit or ship in the chase to Horus.
+CTXLINK-000119,CTX-000029,ABOUT,SUBJECT,iris,Secondary source association; no primary evidence promotion.
+CTXLINK-000120,CTX-000029,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary source association; no primary evidence promotion.
+CTXLINK-000121,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846847,Secondary source association; no primary evidence promotion.
+CTXLINK-000122,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846853,Secondary source association; no primary evidence promotion.
+CTXLINK-000123,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846854,Secondary source association; no primary evidence promotion.
+CTXLINK-000124,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846867,Secondary source association; no primary evidence promotion.
+CTXLINK-000125,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846884,Secondary source association; no primary evidence promotion.
+CTXLINK-000126,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846885,Secondary source association; no primary evidence promotion.
+CTXLINK-000127,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846886,Secondary source association; no primary evidence promotion.
+CTXLINK-000128,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846887,Secondary source association; no primary evidence promotion.
+CTXLINK-000129,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846888,Secondary source association; no primary evidence promotion.
+CTXLINK-000130,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846889,Secondary source association; no primary evidence promotion.
+CTXLINK-000131,CTX-000029,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846890,Secondary source association; no primary evidence promotion.
+CTXLINK-000132,CTX-000030,ABOUT,SUBJECT,jim_pda,Secondary source association; no primary evidence promotion.
+CTXLINK-000133,CTX-000030,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary source association; no primary evidence promotion.
+CTXLINK-000134,CTX-000030,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846871,Secondary source association; no primary evidence promotion.
+CTXLINK-000135,CTX-000031,ABOUT,SUBJECT,hilda,Secondary source association; no primary evidence promotion.
+CTXLINK-000136,CTX-000031,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary source association; no primary evidence promotion.
+CTXLINK-000137,CTX-000031,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846894,Secondary source association; no primary evidence promotion.
+CTXLINK-000138,CTX-000032,ABOUT,SUBJECT,iris,Secondary biography context; no primary evidence promotion.
+CTXLINK-000139,CTX-000032,MENTIONS,SUBJECT,clydes_bar,Secondary biography context; no primary evidence promotion.
+CTXLINK-000140,CTX-000032,MENTIONS,SUBJECT,sentinel_iii,Secondary biography context; no primary evidence promotion.
+CTXLINK-000141,CTX-000032,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary biography context; no primary evidence promotion.
+CTXLINK-000142,CTX-000032,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846847,Secondary biography context; no primary evidence promotion.
+CTXLINK-000143,CTX-000033,ABOUT,SUBJECT,iris,Secondary biography context; no primary evidence promotion.
+CTXLINK-000144,CTX-000033,MENTIONS,SUBJECT,gene_starwind,Secondary biography context; no primary evidence promotion.
+CTXLINK-000145,CTX-000033,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary biography context; no primary evidence promotion.
+CTXLINK-000146,CTX-000033,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846884,Secondary biography context; no primary evidence promotion.

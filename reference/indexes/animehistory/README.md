@@ -409,6 +409,9 @@ The `subjects` register starts with:
 | `pirate_fighter`, `pirate_fighter_pilot` | Episode 1 pursuing fighter craft and goggled pilot, identified through the bounded subtitle/scene check. The pilot's personal name and exact readiness-call attribution remain unassigned; do not equate the craft with Episode 4's landing units automatically. |
 | `sentinel_iii` | Planet named by the Episode 1 establishing narration, corroborated against local globe/city views; does not identify the separate pre-title launch facility. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
+| `rob_cain`, `clyde` | Rob Cain / Death Rob and Clyde, identified through the Episode 1 confrontation and aftermath subtitles. Secondary Rob Kane spelling is an alias, not a separate person. |
+| `iris` | Green-haired woman at Clyde's Bar, identified by the maintainer; cached summary caption CTX-000029 and Iris biography CTX-000032–033 provide separately attributed secondary context. |
+| `jim_pda` | Jim's dark blue hinged handheld device; PDA/diagnostic role is secondary context (CTX-000030). Its rear-facing image does not verify a readable interface. |
 | `unknown_character`, `unknown_creature`, `unknown_ship`, `unknown_vehicle`, `unknown_location`, `unknown_equipment` | Visible but unidentified subjects; describe distinguishing appearance in the summary. These are unresolved identity buckets, not assertions that different images depict the same subject. |
 
 Register additional named ships, locations, characters and recurring props as encountered. For
@@ -842,3 +845,22 @@ mismatched inputs suppress derived timings. Direct intervals and model estimates
 unsupported times are blank. The original generated `alignment_status` is unchanged. Episode 1's
 bounded mapping does not apply to other episodes or its uncovered opening/ending regions.
 The workbook remains generated and ignored; record durable evidence in the maintained CSVs.
+
+### Episode 1 annotated survey — sheets 4–6 (2026-10-27)
+
+Locators 073–144 now have individual initial-review annotations, covering the bar confrontation,
+cyborg fight, aftermath, nighttime walkway and industrial landing transition. All three contact
+sheets and ten ambiguous full-size gallery images were inspected. Subtitle cues 57–116 and eleven
+bounded scene windows support the context; the [batch evidence record](../episode-01-review-batch-02.md)
+distinguishes primary observations, secondary names and timing limits. No alignment mapping changed.
+
+Episode 1 now has 144 reviewed gallery records: 137 SCREENED and seven NEEDS_RECHECK, with
+86 INITIAL_REVIEW_COMPLETE and 58 PARTIAL. The remaining 210 records remain UNREVIEWED/NOT_REVIEWED.
+Maintainer clarifications resolve 084 as boot detailing and 140–144 as the pirate ship from the
+opening chase; exact facility geography remains unknown. The seven earlier tentative launch-site
+rechecks remain. Iris is maintainer-identified, with separate secondary biography context in
+CTX-000032–033. PDA attribution and Hilda's crowd appearance retain their secondary-source limits.
+
+The owned 132-frame temporary decode set and two previews are removed after recording hashes,
+timestamps and inspection selections. Gallery originals, contact sheets and EP-01-MAN-001 remain
+under the existing episode retention policy; no episode-completion archive or cleanup is implied.

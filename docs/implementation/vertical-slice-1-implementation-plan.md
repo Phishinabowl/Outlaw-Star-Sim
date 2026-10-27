@@ -686,7 +686,12 @@ review workflow, not a full-show alignment prerequisite.
   58 have PARTIAL depth for the targeted context check. EP-01-MAN-001 retains the supplied Horus
   missile-salvo screenshot for episode-end RAR retention. Launch
   presentation, fighter roles, Horus drive context and Sentinel III identification are clarified.
-  No timing mapping was extended. The remaining 282 rows are unreviewed.
+  [Sheets 4–6 (073–144)](../../reference/indexes/episode-01-review-batch-02.md) now have initial
+  annotations with bounded subtitle/scene checks and attributed secondary context. Episode 1
+  totals are 137 SCREENED and seven NEEDS_RECHECK; 86 INITIAL_REVIEW_COMPLETE and 58 PARTIAL.
+  Maintainer clarifications resolve 084 as boot detailing and 140–144 as the earlier pirate ship;
+  seven earlier tentative launch-site rechecks remain.
+  No timing mapping was extended. The remaining 210 rows are unreviewed.
   Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
