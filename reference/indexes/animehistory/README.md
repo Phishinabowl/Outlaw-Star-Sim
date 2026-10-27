@@ -182,6 +182,43 @@ Workbook refresh preserves ISO UTC review timestamps as text, using the same dat
 guard as the context builder. Maintained annotation validation, saved workbook equality and
 preservation of all out-of-batch rows are checked before reporting the batch. Next: 073–144.
 
+### Episode 1 subtitle-context follow-up — 2026-10-27
+
+The complete 293-event English ASS track was read and its registered hash/source identity verified.
+The [scoped review](../episode-01-subtitle-context-review.md) and
+[bounded decode provenance](../episode-01-subtitle-context-frames.json) record the first-batch
+follow-up. All three sheets and selected full-size images were revisited; 19 three-second local
+windows supplied scene checks without extending the validated timing mapping or assigning exact
+gallery-frame timestamps. No later gallery annotations or secondary context records were changed.
+
+The launch sequence in 011–019 is corrected from OPENING to pre-title STORY. Pirate fighter/pilot
+roles, pursuit commands, damaged-Horus/sub-ether context and Sentinel III's establishing identity
+are clearer. The maintainer identifies Horus's four yellow rear-pylon units as sub-ether drives;
+the wider local view corroborates four assemblies, with spin-up/configuration details and limits
+in the linked review. The glass in 071 repeats the visitor's face, distinct from the bartender;
+its precise optical treatment remains open.
+
+Only 58 rows changed: 011–019 and 024–072 have PARTIAL status for this targeted context check,
+not completed mechanism/translation verification. First-batch totals are now 60 SCREENED and
+12 NEEDS_RECHECK, with 58 PARTIAL and 14 INITIAL_REVIEW_COMPLETE. All remaining 282 Episode 1
+locators and every other episode/supplement remain unchanged. Next: 073–144 after this follow-up;
+the full subtitle read does not mark those later images reviewed.
+
+**Subsequent maintainer clarifications:** figure 007 is Gene; 034 is the fighter launch tunnel,
+037 the fighter targeting screen, 038 the incoming missile salvo, 042 Horus's return-fire missile
+launchers, and 045–046 a deployed defensive pod described tentatively as laser-based. The faceted
+glass's physical implementation is deferred rather than an unresolved scene identity. The
+Sentinel launch-site attribution remains tentative. Current first-batch counts are **65 SCREENED /
+7 NEEDS_RECHECK**, with 58 PARTIAL and 14 INITIAL_REVIEW_COMPLETE. Only launch-scene locators
+011–014 and 016–018 remain flagged. A total of 59 first-batch gallery rows changed across the
+follow-up and clarifications; later rows remain untouched.
+
+**EP-01-MAN-001** preserves the supplied Horus salvo screenshot at player label 04:05, linked
+contextually to locator 042. Its ten-record supplemental register retains the original hash,
+player-time basis and uncertainty. Likely at least four launchers remains a tentative estimate,
+separate from the visibly four yellow drive assemblies. The screenshot remains local and will
+be bundled into Episode 1's RAR at completion through the accepted retention procedure.
+
 ## Using the records
 
 Search/filter CSVs by episode_id or web_seconds/web_timestamp. Each row has the source caption, image ID/URL, gallery/page URL, retrieval time, and source HTML digest. Image links still require internet access; caching the HTML does not make the images available offline. Opening cached HTML in a browser may load remote resources, so use the CSV index for offline lookup.
@@ -369,6 +406,8 @@ The `subjects` register starts with:
 | `xgp_hangar_asteroid` | Asteroid containing the Outlaw Star's storage hangar and awakening setting, identified by the maintainer; door motion and transfer context remain reported until checked in video. |
 | `starwind_hawking_hq` | Starwind & Hawking premises; identification does not establish a planet/location without supporting evidence. |
 | `guugaku` | Bald Kei pirate with large neck bolts; Episode 1 identification uses the cached secondary appearance description and visible features. |
+| `pirate_fighter`, `pirate_fighter_pilot` | Episode 1 pursuing fighter craft and goggled pilot, identified through the bounded subtitle/scene check. The pilot's personal name and exact readiness-call attribution remain unassigned; do not equate the craft with Episode 4's landing units automatically. |
+| `sentinel_iii` | Planet named by the Episode 1 establishing narration, corroborated against local globe/city views; does not identify the separate pre-title launch facility. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
 | `unknown_character`, `unknown_creature`, `unknown_ship`, `unknown_vehicle`, `unknown_location`, `unknown_equipment` | Visible but unidentified subjects; describe distinguishing appearance in the summary. These are unresolved identity buckets, not assertions that different images depict the same subject. |
 
@@ -383,6 +422,7 @@ Initial `subject_details` tokens are:
 | Exterior views | `exterior`, `front_view`, `rear_view`, `side_view`, `top_view`, `underside_view`, `wide_view`, `close_up`; orientations are relative to the depicted subject. |
 | Ship areas | `cockpit`, `engineering`, `corridor`, `galley`, `dining`, `lounge`, `quarters`, `cargo`, `boarding_access`, `hangar`; uncertain room identities must be qualified, and co-occurrence does not establish adjacency. |
 | Assemblies/features | `hatch_door`, `window`, `seat`, `console`, `display`, `control`, `engine`, `landing_gear`, `grappler_arm`, `boarding_device`, `melfina_apparatus`, `gilliam_body`. |
+| Identified drive hardware | `sub_ether_drive` for supported sub-ether-drive component references; Horus's yellow cone units are identified by the maintainer with Episode 1 escape-dialogue corroboration. Keep component motion and other ships' designs separately qualified. |
 | Access and equipment details | `tether_cable` for a visible cable/tether without an assumed anchoring mechanism; `thruster` for visible propulsion nozzle/jet imagery; `entry_control` for local access-control hardware; `portable_computer` for folding/portable computing equipment; `instrument_panel` for grouped gauges and indicators. |
 | Anchor and carried bag | `anchor` for identified anchoring hardware; `satchel` for a carried soft-sided bag, without an assumed contents list. |
 | Graphic framing | `circular_view` for circular-masked images without asserting a camera technology; `registration_overlay` for portrait/status graphics associated with the established registration sequence, without inferring a biometric algorithm. |

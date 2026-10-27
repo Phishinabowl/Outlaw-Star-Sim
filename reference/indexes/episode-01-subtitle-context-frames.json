@@ -1,0 +1,2211 @@
+{
+  "identity": {
+    "episode_id": "EP-01",
+    "locator_sha256": "7acb9259f289e10c599bda728f1acb64a60c101c09872f630d85939bbca0da82",
+    "media_origin_seconds": "0/1",
+    "subtitle_sha256": "edbb42674cf707b51122ddd54b132d16ffde7fe981b54f24170c155810d0b0f3",
+    "subtitle_shift_seconds": "0/1",
+    "subtitle_stream_index": 4,
+    "subtitle_time_basis": "MEDIA_RELATIVE",
+    "video_sha256": "05f4bfbe5e0d84d0e03a854699f2cc14bdcb8ded74f7ea4f6fef0ec3d0182e48",
+    "video_source": "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+    "video_stream_index": 0,
+    "video_time_base": "1/1000"
+  },
+  "scope": "Sparse local scene context, not exact gallery alignment or continuous motion review",
+  "subtitle_check": {
+    "ass_seconds": [
+      "549/50",
+      "651/50",
+      "2173/100"
+    ],
+    "compared_cues": 3,
+    "packet_seconds": [
+      "549/50",
+      "651/50",
+      "2173/100"
+    ],
+    "scope": "first three cues in bounded probe; not whole-track dialogue verification"
+  },
+  "windows": [
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "192.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,192.000000000)*lt(t,195.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/pilot/frame-%05d.png"
+      ],
+      "end": 195,
+      "frames": [
+        {
+          "local_seconds": "7681/40",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00000.png",
+          "pts": 192025,
+          "sha256": "07e1c4f1234cf7759e4893e032022504841a0ae984cbe9537011b0dc21cde100"
+        },
+        {
+          "local_seconds": "7691/40",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00001.png",
+          "pts": 192275,
+          "sha256": "2fd9baadf2a737eda661f5baf895e43beae9816320564ec9359437d941f7b912"
+        },
+        {
+          "local_seconds": "96263/500",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00002.png",
+          "pts": 192526,
+          "sha256": "5f7a13a91cd2276e7f6876bb0c23a200d2cb89e04a925ee8b785f673e26bae42"
+        },
+        {
+          "local_seconds": "24097/125",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00003.png",
+          "pts": 192776,
+          "sha256": "aa8c0cdc9ec8440664194705236a92e3cf44197ce0affc69ec903657048d74ee"
+        },
+        {
+          "local_seconds": "96513/500",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00004.png",
+          "pts": 193026,
+          "sha256": "2d4bcbf8a159dca8bfdaedf7b67eac5f0280f41bd1b58e3cd2634c4d9c09d284"
+        },
+        {
+          "local_seconds": "48319/250",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00005.png",
+          "pts": 193276,
+          "sha256": "675837e33afa39a63ea979bc29133fbdd33b28055271f74456c0026870517903"
+        },
+        {
+          "local_seconds": "193527/1000",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00006.png",
+          "pts": 193527,
+          "sha256": "28d80bafaa7effde8879b726e2978b315f40d8f924e4cf58d401d584f4ea0648"
+        },
+        {
+          "local_seconds": "193777/1000",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00007.png",
+          "pts": 193777,
+          "sha256": "d45000b27f228ff845fc57e189b69aa46ebf4f5cc0159c0b0c481de2819767c7"
+        },
+        {
+          "local_seconds": "194027/1000",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00008.png",
+          "pts": 194027,
+          "sha256": "c4da1a8f4044e96388c81aeb1e792844811b0b888ae34f24489590edeabf7732"
+        },
+        {
+          "local_seconds": "194277/1000",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00009.png",
+          "pts": 194277,
+          "sha256": "e1e62c4f09b46e2b7189247ae69c69b86e5949033ae9b8ff66c1f33c045b4465"
+        },
+        {
+          "local_seconds": "24316/125",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00010.png",
+          "pts": 194528,
+          "sha256": "5a0e4e9e899a267555d66a63e147a153ba15c0de7aebceaa26ff05158d423a34"
+        },
+        {
+          "local_seconds": "97389/500",
+          "path": ".tmp/ep01-context/decoded/pilot/frame-00011.png",
+          "pts": 194778,
+          "sha256": "b74ca19d24c7476549610a9db90f46e321ffbcaef0b0731fcf2a52f00d0bca85"
+        }
+      ],
+      "name": "pilot",
+      "start": 192,
+      "visually_inspected_pts": [
+        192025,
+        193026,
+        194027,
+        194778
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "202.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,202.000000000)*lt(t,205.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/blue_leader/frame-%05d.png"
+      ],
+      "end": 205,
+      "frames": [
+        {
+          "local_seconds": "40407/200",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00000.png",
+          "pts": 202035,
+          "sha256": "ec3f6dcd77bf90d8d1e51755b1d7d4f1fed4797af77eb6f801f85774fa601aa4"
+        },
+        {
+          "local_seconds": "40457/200",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00001.png",
+          "pts": 202285,
+          "sha256": "c7695a9761af1cfc5d2cbe5c660e0f4b231bae55b78418013fa634f920cd3934"
+        },
+        {
+          "local_seconds": "25317/125",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00002.png",
+          "pts": 202536,
+          "sha256": "8c7b657789c55569609755fad6ee133068213cf0391a07e3ed94ac2290f90df4"
+        },
+        {
+          "local_seconds": "101393/500",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00003.png",
+          "pts": 202786,
+          "sha256": "abb9afd42c902341c44ea6e76029be5ed3517e5cb573893bd1f62dbf7d2fc157"
+        },
+        {
+          "local_seconds": "50759/250",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00004.png",
+          "pts": 203036,
+          "sha256": "7ed13bf66c80db4c33a466758dc4e15077eea8ac2c4b710a87aafff0f359f8f0"
+        },
+        {
+          "local_seconds": "101643/500",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00005.png",
+          "pts": 203286,
+          "sha256": "412903acc896525fb3d6537ce613369c6d3311e741ae10c0a0ef4ee4b583f562"
+        },
+        {
+          "local_seconds": "203537/1000",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00006.png",
+          "pts": 203537,
+          "sha256": "e377d1af1f41a2fe10f949012b2bbc3abc1ac7df02c0fe6abb8f628aa429a7cb"
+        },
+        {
+          "local_seconds": "203787/1000",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00007.png",
+          "pts": 203787,
+          "sha256": "14d02745d86b89cd94b06623ff497ca8138aa760c675affa4c74e94acdd3b19c"
+        },
+        {
+          "local_seconds": "204037/1000",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00008.png",
+          "pts": 204037,
+          "sha256": "855f62ff32782b641766ad370cdbc5ac6010ceb3efb5dc8de09a37ecebbb7042"
+        },
+        {
+          "local_seconds": "204287/1000",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00009.png",
+          "pts": 204287,
+          "sha256": "e2621c670310e34b6dd7a742146f43581875d37214724057d287e504171cc35d"
+        },
+        {
+          "local_seconds": "102269/500",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00010.png",
+          "pts": 204538,
+          "sha256": "cafdc27a7dde6207bf2b0407a0b41e8bc625db100c269c0e73509d031dbcb0d7"
+        },
+        {
+          "local_seconds": "51197/250",
+          "path": ".tmp/ep01-context/decoded/blue_leader/frame-00011.png",
+          "pts": 204788,
+          "sha256": "9a538be8483363a81b1d72201bba9634afa46437f533177de6d5b9c2a15fc608"
+        }
+      ],
+      "name": "blue_leader",
+      "start": 202,
+      "visually_inspected_pts": [
+        202035,
+        203036,
+        204037,
+        204788
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "224.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,224.000000000)*lt(t,227.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/screen_missiles/frame-%05d.png"
+      ],
+      "end": 227,
+      "frames": [
+        {
+          "local_seconds": "44803/200",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00000.png",
+          "pts": 224015,
+          "sha256": "27c98c3ad859019f3e4baa56c7016af0131a4bd298fbdfb0d4553e8c1bf6b18e"
+        },
+        {
+          "local_seconds": "112133/500",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00001.png",
+          "pts": 224266,
+          "sha256": "96aee9313ca59c96485253b7eae3f8ac83bbbbc6877318bc85fef822e0854b73"
+        },
+        {
+          "local_seconds": "56129/250",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00002.png",
+          "pts": 224516,
+          "sha256": "17693636dd2da916a8faad5445e56c34079592304aadf451f09f97bfb00932b3"
+        },
+        {
+          "local_seconds": "112383/500",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00003.png",
+          "pts": 224766,
+          "sha256": "4065dfaa6d6a8b705d087413b6a68c433465f6c81a10ba356df2d7fdba21b088"
+        },
+        {
+          "local_seconds": "28127/125",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00004.png",
+          "pts": 225016,
+          "sha256": "7870989e0ad7aecc6ae6f9b88a443ebec3f1069b8ed41f824197041f5c85f152"
+        },
+        {
+          "local_seconds": "225267/1000",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00005.png",
+          "pts": 225267,
+          "sha256": "7eddf75e41353c7d30e4396d0f51f3fb27a13bd3a0421c89c6e2e1d2c26a4b9c"
+        },
+        {
+          "local_seconds": "225517/1000",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00006.png",
+          "pts": 225517,
+          "sha256": "e2692f77dca0740304e1c449f690a0d2143989466b1ecd4824d5b005a69fc238"
+        },
+        {
+          "local_seconds": "225767/1000",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00007.png",
+          "pts": 225767,
+          "sha256": "89b250a73f273a059a4a71c190981d3a5dbc88eee94f5d3012aa0ed6a4d64564"
+        },
+        {
+          "local_seconds": "226017/1000",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00008.png",
+          "pts": 226017,
+          "sha256": "cbf2f16df06e234d488775e32ca06e0aa4445bffe6c627e6671e41c345c8d356"
+        },
+        {
+          "local_seconds": "56567/250",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00009.png",
+          "pts": 226268,
+          "sha256": "2646133b6beb2b086f50fc7262fe072c8cdf4192b364bc70f00d7c0d35ddc760"
+        },
+        {
+          "local_seconds": "113259/500",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00010.png",
+          "pts": 226518,
+          "sha256": "8793e05161398b586469f67782fd02b905ef9a0a204f784ebde3f70e0b62dc9d"
+        },
+        {
+          "local_seconds": "28346/125",
+          "path": ".tmp/ep01-context/decoded/screen_missiles/frame-00011.png",
+          "pts": 226768,
+          "sha256": "220fd9889295d36e46bb465180689f83e9d3c594dfe67c9ea7ff3247ca6ffbbc"
+        }
+      ],
+      "name": "screen_missiles",
+      "start": 224,
+      "visually_inspected_pts": [
+        224015,
+        225016,
+        226017,
+        226768
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "231.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,231.000000000)*lt(t,234.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/barrier_dialogue/frame-%05d.png"
+      ],
+      "end": 234,
+      "frames": [
+        {
+          "local_seconds": "115511/500",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00000.png",
+          "pts": 231022,
+          "sha256": "5159a7b3cf9e8911d8683d84dc7a114a7e938e5b94c1d189c600cadb53b80bdd"
+        },
+        {
+          "local_seconds": "231273/1000",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00001.png",
+          "pts": 231273,
+          "sha256": "b16c3c87c211e78bf8115a3c93e81327ba7c1f1f9b9454f26a5351468c4e90f4"
+        },
+        {
+          "local_seconds": "231523/1000",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00002.png",
+          "pts": 231523,
+          "sha256": "17d9770ccdab5f8e1396350cfad80c7807639100edb2e5bfc0b593d2f418ba2b"
+        },
+        {
+          "local_seconds": "231773/1000",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00003.png",
+          "pts": 231773,
+          "sha256": "eb94a7e8b4b5f4b132026dd46318214e7eb49ac2a9ea3bd254e0cc520cfda724"
+        },
+        {
+          "local_seconds": "232023/1000",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00004.png",
+          "pts": 232023,
+          "sha256": "39fe9f16c4d30184900fa1ab3cc9845984eed8ded3adf3d039e238b7023d6e9a"
+        },
+        {
+          "local_seconds": "116137/500",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00005.png",
+          "pts": 232274,
+          "sha256": "069f52f81dcd48bb96165505edb9aba01713cd91188b7cac47c30e816e96bf43"
+        },
+        {
+          "local_seconds": "58131/250",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00006.png",
+          "pts": 232524,
+          "sha256": "7c752fc47977d7857fc7e75f28a1409a9d8ffcc92fc71508e08221d5fb301583"
+        },
+        {
+          "local_seconds": "116387/500",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00007.png",
+          "pts": 232774,
+          "sha256": "5c607a41394c0015499111e31167133440a9609bbc46419d9c056b1e2d3f6424"
+        },
+        {
+          "local_seconds": "29128/125",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00008.png",
+          "pts": 233024,
+          "sha256": "a7615949a53bb1a051db25c2c19893f90fd03bc65a6e464ac9ad9848ffcfc9f0"
+        },
+        {
+          "local_seconds": "9331/40",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00009.png",
+          "pts": 233275,
+          "sha256": "39ed7cf224426d73e4a31f0a35f2a7d275d54eea5f9c821b17cbafa626ceec52"
+        },
+        {
+          "local_seconds": "9341/40",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00010.png",
+          "pts": 233525,
+          "sha256": "01c3cc89c8fa617dd36c1e36cf838be924a8091d59b9a3ca92737b652e7ea16a"
+        },
+        {
+          "local_seconds": "9351/40",
+          "path": ".tmp/ep01-context/decoded/barrier_dialogue/frame-00011.png",
+          "pts": 233775,
+          "sha256": "3d354bed01de9860ee2dd2453f88f63345f53dce8401ff4060a542d54dc3d3bd"
+        }
+      ],
+      "name": "barrier_dialogue",
+      "start": 231,
+      "visually_inspected_pts": [
+        231022,
+        232023,
+        233024,
+        233775
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "238.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,238.000000000)*lt(t,241.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/cones/frame-%05d.png"
+      ],
+      "end": 241,
+      "frames": [
+        {
+          "local_seconds": "238029/1000",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00000.png",
+          "pts": 238029,
+          "sha256": "25c5910456b130f8d2a89ecece9369f109be603ac84ec2cbb0d2f61ac9e548f3"
+        },
+        {
+          "local_seconds": "5957/25",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00001.png",
+          "pts": 238280,
+          "sha256": "bbc98e32b5cdf0d4c28e1011cabf36ef4ffec2464375cc28d5f9f8a4dfb50485"
+        },
+        {
+          "local_seconds": "23853/100",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00002.png",
+          "pts": 238530,
+          "sha256": "fb836a8283693a16444304ccf12c06ef0b73e700f07ca643e2f44eb8320a5722"
+        },
+        {
+          "local_seconds": "11939/50",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00003.png",
+          "pts": 238780,
+          "sha256": "a3c82c10c9a961a4a28f8c056ff7265720931c915453dfff062b6531da4598e5"
+        },
+        {
+          "local_seconds": "23903/100",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00004.png",
+          "pts": 239030,
+          "sha256": "91a75fa9fc1ad30451baa2d17a1b124fba551339c06e53389a4d80178b39d832"
+        },
+        {
+          "local_seconds": "239281/1000",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00005.png",
+          "pts": 239281,
+          "sha256": "5033de2909076b38e748725624f5a89a16fb181c1a3d61f13165ce8e08083df3"
+        },
+        {
+          "local_seconds": "239531/1000",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00006.png",
+          "pts": 239531,
+          "sha256": "c41c5eb110c3a3e11ae5356d0d11c3d5a47ca7d5596bc63582824146e81699ee"
+        },
+        {
+          "local_seconds": "239781/1000",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00007.png",
+          "pts": 239781,
+          "sha256": "4adc26d39f039bedf9d116fcc4b3808597d1e54de62f44a80584179414331385"
+        },
+        {
+          "local_seconds": "240031/1000",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00008.png",
+          "pts": 240031,
+          "sha256": "c25b9325e5daf8e4e67ead9bbfdcfce2e39d98c05880ad2af91f533ea220550b"
+        },
+        {
+          "local_seconds": "120141/500",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00009.png",
+          "pts": 240282,
+          "sha256": "4d788241f678f0bf29f1949186afd466ebae468979b03cb18386135ecc3464bc"
+        },
+        {
+          "local_seconds": "60133/250",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00010.png",
+          "pts": 240532,
+          "sha256": "cf08f9990999509cb394384f5a2c061cf9a162bd868d130cce27cc44e42116af"
+        },
+        {
+          "local_seconds": "120391/500",
+          "path": ".tmp/ep01-context/decoded/cones/frame-00011.png",
+          "pts": 240782,
+          "sha256": "1e2831c1abbec09d698b586519f94874d42daa93bf36127211c4a3df0b1ccdd2"
+        }
+      ],
+      "name": "cones",
+      "start": 238,
+      "visually_inspected_pts": [
+        238029,
+        239030,
+        240031,
+        240782
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "242.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,242.000000000)*lt(t,245.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/apertures/frame-%05d.png"
+      ],
+      "end": 245,
+      "frames": [
+        {
+          "local_seconds": "242033/1000",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00000.png",
+          "pts": 242033,
+          "sha256": "8077ac26e6b8305cf872599bcbf32f6bf50924a86c127ce309495b5f4251504b"
+        },
+        {
+          "local_seconds": "60571/250",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00001.png",
+          "pts": 242284,
+          "sha256": "738db2df109cc4fe02618c474da33f50555737699fef154645f57c95a017117b"
+        },
+        {
+          "local_seconds": "121267/500",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00002.png",
+          "pts": 242534,
+          "sha256": "8c9cae49ec85592f7fabd9dc0373b594c5c5860a9eb29115d30426dafa02473e"
+        },
+        {
+          "local_seconds": "30348/125",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00003.png",
+          "pts": 242784,
+          "sha256": "3062089ee8747b85d149dcfda58d896569d7a3fd85918f25b0b97708a5037f2a"
+        },
+        {
+          "local_seconds": "121517/500",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00004.png",
+          "pts": 243034,
+          "sha256": "bf74ea56d4430ba2075a63e56dad002cd887feb3e6403680d0ed6012bb381cd8"
+        },
+        {
+          "local_seconds": "48657/200",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00005.png",
+          "pts": 243285,
+          "sha256": "d77d7a92ad85e983dd83d6005ebb6d0c1dcd73f1e2a1037834fe27cb326d3864"
+        },
+        {
+          "local_seconds": "48707/200",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00006.png",
+          "pts": 243535,
+          "sha256": "09e5ce2ab2210655e9b2a1cf1ebcce72bd4b002316e7fe5106dbedac3cfe68be"
+        },
+        {
+          "local_seconds": "48757/200",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00007.png",
+          "pts": 243785,
+          "sha256": "5c0c47b7ad92b5cf75c505d7721ba4ddc40817c50c976bc9356ab8b154028ebf"
+        },
+        {
+          "local_seconds": "48807/200",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00008.png",
+          "pts": 244035,
+          "sha256": "758cf1c3c73c467a61a6f0e88a76ddf71f075672c08c66dec34c6508b5b54e31"
+        },
+        {
+          "local_seconds": "122143/500",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00009.png",
+          "pts": 244286,
+          "sha256": "a2c6aa9e972b96f46e775e6693727fb5244aaa6b61f8c3bdbcd8c0c31b55c5c7"
+        },
+        {
+          "local_seconds": "30567/125",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00010.png",
+          "pts": 244536,
+          "sha256": "da2c098a35a6de249f9746fba3d1b26d4f95b9d661fab2880de17065c12e2511"
+        },
+        {
+          "local_seconds": "122393/500",
+          "path": ".tmp/ep01-context/decoded/apertures/frame-00011.png",
+          "pts": 244786,
+          "sha256": "66ebe2bf8394600bc092487e48e98cd9ec2a55d89fd5479db079a92cef8fecac"
+        }
+      ],
+      "name": "apertures",
+      "start": 242,
+      "visually_inspected_pts": [
+        242033,
+        243034,
+        244035,
+        244786
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "257.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,257.000000000)*lt(t,260.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/hull_warning/frame-%05d.png"
+      ],
+      "end": 260,
+      "frames": [
+        {
+          "local_seconds": "257007/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00000.png",
+          "pts": 257007,
+          "sha256": "2e73677cf824a0178e2e7bc4a63f8d92be1237a36512fae5573b7567351a5c6c"
+        },
+        {
+          "local_seconds": "257257/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00001.png",
+          "pts": 257257,
+          "sha256": "f56944a7fbf16b3044de31a802977293df5d89d6a817acf133d03cad42e5f598"
+        },
+        {
+          "local_seconds": "257507/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00002.png",
+          "pts": 257507,
+          "sha256": "5be370d60e819af705033ff18c81d4a4845a5724ea4bbe31b388d3e05d091f8d"
+        },
+        {
+          "local_seconds": "257757/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00003.png",
+          "pts": 257757,
+          "sha256": "edf53eb0a2b8aec62bece475e95e2ad235d729fd1282b91fa058943010a0ddc3"
+        },
+        {
+          "local_seconds": "32251/125",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00004.png",
+          "pts": 258008,
+          "sha256": "4e8bf0497aac24628511000dc14aa84fa7f4e7a5e24289e3514b55bf75a46ba7"
+        },
+        {
+          "local_seconds": "129129/500",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00005.png",
+          "pts": 258258,
+          "sha256": "c1a8bca0e14da9bed4220287b64fbf166605f8f9d3efc68733a2b29c6dc80e6b"
+        },
+        {
+          "local_seconds": "64627/250",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00006.png",
+          "pts": 258508,
+          "sha256": "889686988d02ca344b829c459a4841278325ea87af894bfb0c846b4b1b0766e6"
+        },
+        {
+          "local_seconds": "129379/500",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00007.png",
+          "pts": 258758,
+          "sha256": "dd74073d0b3230e3f8e2c11179066c9e334d385f7a7fdce8549abf8bb45639a7"
+        },
+        {
+          "local_seconds": "259009/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00008.png",
+          "pts": 259009,
+          "sha256": "7edd407b079e867afcb626796629245aafbe12ee20924b1041d2eef3ff1f6d25"
+        },
+        {
+          "local_seconds": "259259/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00009.png",
+          "pts": 259259,
+          "sha256": "922f2373c399ccdf7d8ee825bf2b10ffb73843723913cd9d1675f5907ef16f69"
+        },
+        {
+          "local_seconds": "259509/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00010.png",
+          "pts": 259509,
+          "sha256": "d285466079c7455a80ddfcc442e17af34456e680ab9fc874ad5e606c1f675cbd"
+        },
+        {
+          "local_seconds": "259759/1000",
+          "path": ".tmp/ep01-context/decoded/hull_warning/frame-00011.png",
+          "pts": 259759,
+          "sha256": "2e6a8785da4bb4fc964e3bd48dd97c60732e2842e30221b868c4895f0b7ab8a3"
+        }
+      ],
+      "name": "hull_warning",
+      "start": 257,
+      "visually_inspected_pts": [
+        257007,
+        258008,
+        259009,
+        259759
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "286.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,286.000000000)*lt(t,289.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/cone_extended/frame-%05d.png"
+      ],
+      "end": 289,
+      "frames": [
+        {
+          "local_seconds": "71509/250",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00000.png",
+          "pts": 286036,
+          "sha256": "7059754f26ad4e1fccf0675e6b7fbb6f8747b97c902cb72c3b9b7c34e712edd4"
+        },
+        {
+          "local_seconds": "143143/500",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00001.png",
+          "pts": 286286,
+          "sha256": "7c617ad156b70cbad4f4b4da4aa0894db3710b7392d102db6fd33f56c2d2289b"
+        },
+        {
+          "local_seconds": "35817/125",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00002.png",
+          "pts": 286536,
+          "sha256": "b8063a579859a95dc84921544df04961b01e268858ddebafe0e7ca8e47c409d7"
+        },
+        {
+          "local_seconds": "143393/500",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00003.png",
+          "pts": 286786,
+          "sha256": "a0366b03048002a2037c7b22b3da78e7d182433fa8c43c3cc2cd6a083170fb7f"
+        },
+        {
+          "local_seconds": "287037/1000",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00004.png",
+          "pts": 287037,
+          "sha256": "a462a8dccef13b7dc58971c747765a1998df5b68fa714c27afac915f81d53129"
+        },
+        {
+          "local_seconds": "287287/1000",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00005.png",
+          "pts": 287287,
+          "sha256": "8ffa25040595f79370b2e1044d03323e15ce0d62a727eee589f47d606fac3f73"
+        },
+        {
+          "local_seconds": "287537/1000",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00006.png",
+          "pts": 287537,
+          "sha256": "17078019958ef0d192993e4afec0176432645096f12e0931c9a7d0b0b6ac956e"
+        },
+        {
+          "local_seconds": "287787/1000",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00007.png",
+          "pts": 287787,
+          "sha256": "d68048e19797fb3d1e7af805155cae53af12ff325a99f2585c2043f2170c368e"
+        },
+        {
+          "local_seconds": "144019/500",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00008.png",
+          "pts": 288038,
+          "sha256": "309278b236863bf725bc56be852581f685ddede15438eca1540f65bf46fa8642"
+        },
+        {
+          "local_seconds": "36036/125",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00009.png",
+          "pts": 288288,
+          "sha256": "1c5c5da059635b21102f299a844b5803e371a1aa633963d644b6289cfa451e00"
+        },
+        {
+          "local_seconds": "144269/500",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00010.png",
+          "pts": 288538,
+          "sha256": "702197c594ab73e01a1b35e07fd1d275b381f527cbce4cd0d907ed165ad6d10d"
+        },
+        {
+          "local_seconds": "72197/250",
+          "path": ".tmp/ep01-context/decoded/cone_extended/frame-00011.png",
+          "pts": 288788,
+          "sha256": "42fe86aeb8b766b660dde534d2763d596645d7c201518e3024c6822ab69fa02f"
+        }
+      ],
+      "name": "cone_extended",
+      "start": 286,
+      "visually_inspected_pts": [
+        286036,
+        287037,
+        288038,
+        288788
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "290.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,290.000000000)*lt(t,293.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/cone_shorter/frame-%05d.png"
+      ],
+      "end": 293,
+      "frames": [
+        {
+          "local_seconds": "7251/25",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00000.png",
+          "pts": 290040,
+          "sha256": "08ef45055e1e5351d66f8cad2e402e3d4b54a1a43e399ccb2cffbb633a21dab9"
+        },
+        {
+          "local_seconds": "29029/100",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00001.png",
+          "pts": 290290,
+          "sha256": "988d89567c3b4c77398ab960549ae3dbb079b832e384c700c3994170510e6964"
+        },
+        {
+          "local_seconds": "14527/50",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00002.png",
+          "pts": 290540,
+          "sha256": "4a1273a346e61e667a82cbdf5e8b016d85204139fdb9b4e7c73d46562d97d34e"
+        },
+        {
+          "local_seconds": "29079/100",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00003.png",
+          "pts": 290790,
+          "sha256": "4194ddbd481b345dc3344dff0fde2cb143dd893b735006c76f2e6e1bd06983ec"
+        },
+        {
+          "local_seconds": "291041/1000",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00004.png",
+          "pts": 291041,
+          "sha256": "63f0fec227b98102679b00bcb70f7aee5f7c849dbe32126f826f1139a0ad8466"
+        },
+        {
+          "local_seconds": "291291/1000",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00005.png",
+          "pts": 291291,
+          "sha256": "8c9e00b6468cdfea7166547d65beee999f75acbd804abce4a4d654250cc32490"
+        },
+        {
+          "local_seconds": "291541/1000",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00006.png",
+          "pts": 291541,
+          "sha256": "f34db7c9ac3eea9944a925a35ec5c5e5b66b451b0d1f6f0accf5608cb5322ed7"
+        },
+        {
+          "local_seconds": "291791/1000",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00007.png",
+          "pts": 291791,
+          "sha256": "1863656bd6eeaf7aed47d77ea103f05771426c64620c3a5742c21641fcbe353a"
+        },
+        {
+          "local_seconds": "146021/500",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00008.png",
+          "pts": 292042,
+          "sha256": "b4b220e682fe0d7cc29daf4cd1b399270530c2c8d37c25026e19198a89e3b4c3"
+        },
+        {
+          "local_seconds": "73073/250",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00009.png",
+          "pts": 292292,
+          "sha256": "76508b00e97910e0e3f283a6b6756ff9e28eb15a6c0eb2fdff4c45058a98925d"
+        },
+        {
+          "local_seconds": "146271/500",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00010.png",
+          "pts": 292542,
+          "sha256": "00454545d3624b77aacd334fa06df2efbd09f24caa56fe006d16f4b93b178ec0"
+        },
+        {
+          "local_seconds": "36599/125",
+          "path": ".tmp/ep01-context/decoded/cone_shorter/frame-00011.png",
+          "pts": 292792,
+          "sha256": "a36bee3089cc9d0c621548e0b1e130a5fc3e36ca4c9dedd6dc447a2802888c5e"
+        }
+      ],
+      "name": "cone_shorter",
+      "start": 290,
+      "visually_inspected_pts": [
+        290040,
+        291041,
+        292042,
+        292792
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "294.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,294.000000000)*lt(t,297.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/tethers/frame-%05d.png"
+      ],
+      "end": 297,
+      "frames": [
+        {
+          "local_seconds": "147001/500",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00000.png",
+          "pts": 294002,
+          "sha256": "d54bffb0a753d845153715574af4d9e606a104fff478db5f044f99eedcbc2c16"
+        },
+        {
+          "local_seconds": "73563/250",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00001.png",
+          "pts": 294252,
+          "sha256": "06e930425c770748c58d8a48066ad9dd820a6e4b8991d9b5fd37f813cff68c98"
+        },
+        {
+          "local_seconds": "294503/1000",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00002.png",
+          "pts": 294503,
+          "sha256": "d48058fdde1b5d59bbb6213a491a8b30205832ed2970b2e0b73eb2098e8d6084"
+        },
+        {
+          "local_seconds": "294753/1000",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00003.png",
+          "pts": 294753,
+          "sha256": "4804150adfe317ddda914b3afbaee5b27129d8e39ad63240b7d0fcaae74723ad"
+        },
+        {
+          "local_seconds": "295003/1000",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00004.png",
+          "pts": 295003,
+          "sha256": "a18e4458d32f1eb189cb2204df20f8b50302d9cb23e2bd653cb09ba98bff75dc"
+        },
+        {
+          "local_seconds": "295253/1000",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00005.png",
+          "pts": 295253,
+          "sha256": "a177a363db3f42fc336a7eebbe662e714a81e415a8bb1619077a8dd7e552d697"
+        },
+        {
+          "local_seconds": "36938/125",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00006.png",
+          "pts": 295504,
+          "sha256": "c43a379f5ac177ff0c8550961ebb73d8e93c53991446b54de5846066fe8446c0"
+        },
+        {
+          "local_seconds": "147877/500",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00007.png",
+          "pts": 295754,
+          "sha256": "01a47aece9deb78894d8f4383cc81477e37e91a9ec9599fa5490d2ab0365de20"
+        },
+        {
+          "local_seconds": "74001/250",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00008.png",
+          "pts": 296004,
+          "sha256": "4665fb4a0d39ef6bfc3490c582b2ef80540f9da2da57fc5f11799a5743c9a616"
+        },
+        {
+          "local_seconds": "148127/500",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00009.png",
+          "pts": 296254,
+          "sha256": "853bf7d190ba19674ae54d615dda8e1850da39388b2018175c4bc46dcc3a1426"
+        },
+        {
+          "local_seconds": "59301/200",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00010.png",
+          "pts": 296505,
+          "sha256": "c89b27536fdcd820d1e513776839f4b88c1338f05e56a204a8556b7c4243d89e"
+        },
+        {
+          "local_seconds": "59351/200",
+          "path": ".tmp/ep01-context/decoded/tethers/frame-00011.png",
+          "pts": 296755,
+          "sha256": "f21ee6346099e5898c51b15a89fe0bf021f32af68b90960363c62afb779967ce"
+        }
+      ],
+      "name": "tethers",
+      "start": 294,
+      "visually_inspected_pts": [
+        294002,
+        295003,
+        296004,
+        296755
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "299.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,299.000000000)*lt(t,302.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/flare/frame-%05d.png"
+      ],
+      "end": 302,
+      "frames": [
+        {
+          "local_seconds": "299007/1000",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00000.png",
+          "pts": 299007,
+          "sha256": "1b8acbb959843647be58a54d0d70d3e103138f9f4a7d45d9b5c7b4b3126fbf81"
+        },
+        {
+          "local_seconds": "299257/1000",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00001.png",
+          "pts": 299257,
+          "sha256": "22f28870ba1838b5572b18b8cdde2118d64b1df351ada68977f4ea33e9548394"
+        },
+        {
+          "local_seconds": "74877/250",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00002.png",
+          "pts": 299508,
+          "sha256": "3c547271c5f2cccec856a066c525c2ddb1aefac9011edf2924eb9fc1069e4d71"
+        },
+        {
+          "local_seconds": "149879/500",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00003.png",
+          "pts": 299758,
+          "sha256": "f4ab6a32f2d94482b5962716328abdf274ff625a9dd6dd8f24a95b24d8ece97a"
+        },
+        {
+          "local_seconds": "37501/125",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00004.png",
+          "pts": 300008,
+          "sha256": "6e1ea1c4739def2f647ca851b666584d38a8c0b7332bd7f8796c9de11f2fb581"
+        },
+        {
+          "local_seconds": "150129/500",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00005.png",
+          "pts": 300258,
+          "sha256": "b9f50fa71d0cb354bea42ef3beaf1d1025ab786cca240c2bf5fb2198b4f30578"
+        },
+        {
+          "local_seconds": "300509/1000",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00006.png",
+          "pts": 300509,
+          "sha256": "5b16d13ab2d49f396739b47531dc62d35854634538ea29a17a00cda1cd9e86ac"
+        },
+        {
+          "local_seconds": "300759/1000",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00007.png",
+          "pts": 300759,
+          "sha256": "8d78af79caa6d856ba22ba9ea4a62c92d89fb1a561e33ac274568ba0fcfecb4a"
+        },
+        {
+          "local_seconds": "301009/1000",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00008.png",
+          "pts": 301009,
+          "sha256": "a4428675a10f671cb5ce8e6609978135412821075db35d345c3ae99762c621f8"
+        },
+        {
+          "local_seconds": "301259/1000",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00009.png",
+          "pts": 301259,
+          "sha256": "bcdc05794d5a428bea995b3693d2b3dbde0073bd5cbdc0fa9e5d9194119dfc5d"
+        },
+        {
+          "local_seconds": "30151/100",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00010.png",
+          "pts": 301510,
+          "sha256": "3f7f2047155798e5910dad20a97dc6727f8bba3f8045db605fb82ae1617ad424"
+        },
+        {
+          "local_seconds": "7544/25",
+          "path": ".tmp/ep01-context/decoded/flare/frame-00011.png",
+          "pts": 301760,
+          "sha256": "6e292e1ee401094c082a3384335e5f15151884604fcf6c07099be1e28397fea2"
+        }
+      ],
+      "name": "flare",
+      "start": 299,
+      "visually_inspected_pts": [
+        299007,
+        300008,
+        301009,
+        301760
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "304.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,304.000000000)*lt(t,307.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/drive_dialogue/frame-%05d.png"
+      ],
+      "end": 307,
+      "frames": [
+        {
+          "local_seconds": "76003/250",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00000.png",
+          "pts": 304012,
+          "sha256": "e9369c64bfa01e001a6b71412f40abdb6c2b783f37cd492e70966f5eacb851b6"
+        },
+        {
+          "local_seconds": "152131/500",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00001.png",
+          "pts": 304262,
+          "sha256": "e72001e9b55878851e0252c862b322eb8596cd0824afae4d15e3c9dd5a7bf014"
+        },
+        {
+          "local_seconds": "304513/1000",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00002.png",
+          "pts": 304513,
+          "sha256": "fac00cca2ed7f36ec3e548998328bf27901247f693d1d3166078d094ccac1839"
+        },
+        {
+          "local_seconds": "304763/1000",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00003.png",
+          "pts": 304763,
+          "sha256": "50a48afc16c9489a05dc31e1ae17f428bc9149aa32d7a99bb0e47a8f4fcf64b6"
+        },
+        {
+          "local_seconds": "305013/1000",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00004.png",
+          "pts": 305013,
+          "sha256": "82cdde7d09fffadf983e04e70998ce47d83e102108bc6436a32c6426514d784c"
+        },
+        {
+          "local_seconds": "305263/1000",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00005.png",
+          "pts": 305263,
+          "sha256": "ff5dbb7380cf4c14e77470b1d219a0a985888c5c23b3ee1f6a4ddfe76ccf7f95"
+        },
+        {
+          "local_seconds": "152757/500",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00006.png",
+          "pts": 305514,
+          "sha256": "016b5fde95eac08142e58b875a97d23c9a640c59c83570ba02456d2075f3c9d9"
+        },
+        {
+          "local_seconds": "76441/250",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00007.png",
+          "pts": 305764,
+          "sha256": "a8d69d793cc6d514d0714637f51e0c9628dad1e33cd1fe0c872733cadbc31710"
+        },
+        {
+          "local_seconds": "153007/500",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00008.png",
+          "pts": 306014,
+          "sha256": "f8e0dac5c6821873882adf201167a3d49cfce23614d1608829d243f2a8df28f8"
+        },
+        {
+          "local_seconds": "38283/125",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00009.png",
+          "pts": 306264,
+          "sha256": "49fe959f3f780326825646412adebd338187cd19c63c2a6057c0f1c76f8bbfc9"
+        },
+        {
+          "local_seconds": "61303/200",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00010.png",
+          "pts": 306515,
+          "sha256": "bfb84e14e9f673ed5a34660029ce829a4308011e1eee432a6cfa041ada076234"
+        },
+        {
+          "local_seconds": "61353/200",
+          "path": ".tmp/ep01-context/decoded/drive_dialogue/frame-00011.png",
+          "pts": 306765,
+          "sha256": "32d88f488cd5499be5603263bb8009bff893e15e24195b32a878bc001e6c0e8a"
+        }
+      ],
+      "name": "drive_dialogue",
+      "start": 304,
+      "visually_inspected_pts": [
+        304012,
+        305013,
+        306014,
+        306765
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "320.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,320.000000000)*lt(t,323.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/planet/frame-%05d.png"
+      ],
+      "end": 323,
+      "frames": [
+        {
+          "local_seconds": "80007/250",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00000.png",
+          "pts": 320028,
+          "sha256": "6252e08ddcdde1e3ac2f5840d637d1a0e4db7f6c9df3b6d3348af16cabe93770"
+        },
+        {
+          "local_seconds": "160139/500",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00001.png",
+          "pts": 320278,
+          "sha256": "0579c43295fd1ea6a1e51b263b7373315aea0d67967863747af2acb1858cea13"
+        },
+        {
+          "local_seconds": "320529/1000",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00002.png",
+          "pts": 320529,
+          "sha256": "bdcd1af842439a27247b185e533fa1ebc87cbdd4abff1339cd7209e0f638508b"
+        },
+        {
+          "local_seconds": "320779/1000",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00003.png",
+          "pts": 320779,
+          "sha256": "56e63e2d8ac3b07f6a66de9457868df0c4e091ba90ce5a9384b2233c3fd98bff"
+        },
+        {
+          "local_seconds": "321029/1000",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00004.png",
+          "pts": 321029,
+          "sha256": "970cfe7a0a93ab9809854b01846f128ef3c02d050d7e06b01de4d14b85ffdba4"
+        },
+        {
+          "local_seconds": "321279/1000",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00005.png",
+          "pts": 321279,
+          "sha256": "04209073302c2e115db0aed2e4281d3124b632ad59c34db045ed4f2c8ab4937f"
+        },
+        {
+          "local_seconds": "32153/100",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00006.png",
+          "pts": 321530,
+          "sha256": "8015e9ff814e00c1eebc609569b6dbf4e1c05b7ed1fbc846230600d7d050e391"
+        },
+        {
+          "local_seconds": "16089/50",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00007.png",
+          "pts": 321780,
+          "sha256": "4cc5012542f6d4f591aa19fd2af82d18f74359bf202e1b70b1666b57ed46999a"
+        },
+        {
+          "local_seconds": "32203/100",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00008.png",
+          "pts": 322030,
+          "sha256": "e73079469392802a2242fadf66d2b47675a47fb1d4eedf3f4546a987b1297e89"
+        },
+        {
+          "local_seconds": "8057/25",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00009.png",
+          "pts": 322280,
+          "sha256": "345b2f663aecf9a57e568cf4736e1f813a8697b05559258b7575a710fa17e27c"
+        },
+        {
+          "local_seconds": "322531/1000",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00010.png",
+          "pts": 322531,
+          "sha256": "17e3dd39186de12d8d71ed735def64c43e861f539441e0521c910c0cb0175b13"
+        },
+        {
+          "local_seconds": "322781/1000",
+          "path": ".tmp/ep01-context/decoded/planet/frame-00011.png",
+          "pts": 322781,
+          "sha256": "a024532c1297a76d70705d9413235d91eedb3f05bc85d8f877b2217829d33e13"
+        }
+      ],
+      "name": "planet",
+      "start": 320,
+      "visually_inspected_pts": [
+        320028,
+        321029,
+        322030,
+        322781
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "324.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,324.000000000)*lt(t,327.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/city/frame-%05d.png"
+      ],
+      "end": 327,
+      "frames": [
+        {
+          "local_seconds": "40504/125",
+          "path": ".tmp/ep01-context/decoded/city/frame-00000.png",
+          "pts": 324032,
+          "sha256": "78922b94ab63f3a86944bf4eed8e3644bd4adec37ccf1f9cfb4fa61ce2a840b9"
+        },
+        {
+          "local_seconds": "162141/500",
+          "path": ".tmp/ep01-context/decoded/city/frame-00001.png",
+          "pts": 324282,
+          "sha256": "abc1c1fc3d21f3e8251ac0f7b50dc5360549a327a5b72ccd2701fc5bf644f703"
+        },
+        {
+          "local_seconds": "324533/1000",
+          "path": ".tmp/ep01-context/decoded/city/frame-00002.png",
+          "pts": 324533,
+          "sha256": "88ff2802e63f0667720f2847e49c37ad28262ebc098e8e381a97e8753ebaf094"
+        },
+        {
+          "local_seconds": "324783/1000",
+          "path": ".tmp/ep01-context/decoded/city/frame-00003.png",
+          "pts": 324783,
+          "sha256": "62e56cb2feb25238ab4d417fe0a8947984d2d070d5235d8f53084af5a9358671"
+        },
+        {
+          "local_seconds": "325033/1000",
+          "path": ".tmp/ep01-context/decoded/city/frame-00004.png",
+          "pts": 325033,
+          "sha256": "fff6da6cbcf172248c7f1753d3d52e5f444db0f4430ba754ab02d75f3dbaf4ab"
+        },
+        {
+          "local_seconds": "325283/1000",
+          "path": ".tmp/ep01-context/decoded/city/frame-00005.png",
+          "pts": 325283,
+          "sha256": "37415bc50ad87bdb6be90d6dc0a724b4e507ac78570ed326328d34b5d195cb97"
+        },
+        {
+          "local_seconds": "162767/500",
+          "path": ".tmp/ep01-context/decoded/city/frame-00006.png",
+          "pts": 325534,
+          "sha256": "b522ede2279c00b763e0cab3a3dc7626c8303d4585976a9720789dcf64366091"
+        },
+        {
+          "local_seconds": "40723/125",
+          "path": ".tmp/ep01-context/decoded/city/frame-00007.png",
+          "pts": 325784,
+          "sha256": "a3de354f2827590c1c0674f13952422502def74e0adfb9354789e135ade8ba7a"
+        },
+        {
+          "local_seconds": "163017/500",
+          "path": ".tmp/ep01-context/decoded/city/frame-00008.png",
+          "pts": 326034,
+          "sha256": "ca7fbfdaddce76e76745f680cd42c99a08c8569133bea6562bd525166028c40d"
+        },
+        {
+          "local_seconds": "81571/250",
+          "path": ".tmp/ep01-context/decoded/city/frame-00009.png",
+          "pts": 326284,
+          "sha256": "6ef84f1bf9a70786cb44b0d9d34f68af436a003125fb4fc96b0f2d557aea2441"
+        },
+        {
+          "local_seconds": "65307/200",
+          "path": ".tmp/ep01-context/decoded/city/frame-00010.png",
+          "pts": 326535,
+          "sha256": "5d2c86fd1d5e06d239cdc9c95cc8c70c8c8fc369a0390ebc3d1193e58e574b07"
+        },
+        {
+          "local_seconds": "65357/200",
+          "path": ".tmp/ep01-context/decoded/city/frame-00011.png",
+          "pts": 326785,
+          "sha256": "5a9ea305f0511fb73ab19ee8d41d48d2cc9cbc83de8b578218acbca5e0f66d1f"
+        }
+      ],
+      "name": "city",
+      "start": 324,
+      "visually_inspected_pts": [
+        324032,
+        325033,
+        326034,
+        326785
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "340.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,340.000000000)*lt(t,343.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/bar_glass/frame-%05d.png"
+      ],
+      "end": 343,
+      "frames": [
+        {
+          "local_seconds": "170003/500",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00000.png",
+          "pts": 340006,
+          "sha256": "1b418137335795690041f14e118cf3528b6bdde4b7b5f9fde7b143310b1e12b1"
+        },
+        {
+          "local_seconds": "340257/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00001.png",
+          "pts": 340257,
+          "sha256": "133a3d058630b24c6fcb75f4c7d8055cd2822ce258ba097e8c76c71bb1b73d2e"
+        },
+        {
+          "local_seconds": "340507/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00002.png",
+          "pts": 340507,
+          "sha256": "679d861a9c8c7594b407f30c11f8d6600b24bca7414c4eb0297e0925eaec5d8f"
+        },
+        {
+          "local_seconds": "340757/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00003.png",
+          "pts": 340757,
+          "sha256": "061d0f71f785e48f1e5aa23ccb18c9a7b59d3850201c47acf70ab401ec581247"
+        },
+        {
+          "local_seconds": "341007/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00004.png",
+          "pts": 341007,
+          "sha256": "1f13d274ea2ca55ac7a21a3652cc55028cf68d0f6b57fa8e6349693d9f6e2412"
+        },
+        {
+          "local_seconds": "170629/500",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00005.png",
+          "pts": 341258,
+          "sha256": "3ac7349cd504fe4a560fb92f039570113b00e46b046eb5c5b28ab6ceaac466e1"
+        },
+        {
+          "local_seconds": "85377/250",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00006.png",
+          "pts": 341508,
+          "sha256": "46f8d4917297d26462146358ed4b7410b52c6174d3689b652c65c59d34bd3c25"
+        },
+        {
+          "local_seconds": "170879/500",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00007.png",
+          "pts": 341758,
+          "sha256": "98372ad5fecfdc37187cb5b3f88ff3732025bc3efa1a55aa9192eddc00766548"
+        },
+        {
+          "local_seconds": "42751/125",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00008.png",
+          "pts": 342008,
+          "sha256": "c03c64fc28dbbc647a0a9a7595f6a826c2214505c725bd62fadd80f7273cd138"
+        },
+        {
+          "local_seconds": "342259/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00009.png",
+          "pts": 342259,
+          "sha256": "3602d8faa061ee590927553ec90ea25f21f65b4ae5feb00f530d2339139ccd67"
+        },
+        {
+          "local_seconds": "342509/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00010.png",
+          "pts": 342509,
+          "sha256": "2b5f272f4afa9a0983990b73a75750310422c6d75f4ce40f9a32e551e57b18f2"
+        },
+        {
+          "local_seconds": "342759/1000",
+          "path": ".tmp/ep01-context/decoded/bar_glass/frame-00011.png",
+          "pts": 342759,
+          "sha256": "c7627ca1712304466d7b00fd0f6421c5af3f5c14738658501f0a3e3e446eadf9"
+        }
+      ],
+      "name": "bar_glass",
+      "start": 340,
+      "visually_inspected_pts": [
+        340006,
+        341007,
+        342008,
+        342759
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "343.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,343.000000000)*lt(t,346.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/glass_close/frame-%05d.png"
+      ],
+      "end": 346,
+      "frames": [
+        {
+          "local_seconds": "343009/1000",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00000.png",
+          "pts": 343009,
+          "sha256": "d65f03219ca6ab079f327c95ace8cce8d06630760be51e08179d7f12229ab6bc"
+        },
+        {
+          "local_seconds": "17163/50",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00001.png",
+          "pts": 343260,
+          "sha256": "82e4c0f668466df24c010bb0d18f6b3d9ed87ebddf62632aefe0f51ee05d14d9"
+        },
+        {
+          "local_seconds": "34351/100",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00002.png",
+          "pts": 343510,
+          "sha256": "e1c9202babc81327886a1fbb72520c687a832f55e9f37370ab594b15423ff843"
+        },
+        {
+          "local_seconds": "8594/25",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00003.png",
+          "pts": 343760,
+          "sha256": "09cd46aa4da385f59761659eadf8d928ad7f38b9d16b61db5af5d9f5cdf27c26"
+        },
+        {
+          "local_seconds": "34401/100",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00004.png",
+          "pts": 344010,
+          "sha256": "4dfeef8c32a9e653223bfecef428933ce57fbf3b546c05b7f3028941f22e098d"
+        },
+        {
+          "local_seconds": "344261/1000",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00005.png",
+          "pts": 344261,
+          "sha256": "5eb43c3abb74686b178914e3fe122e7b1b40ab4dca165460f91be9df004b3bf7"
+        },
+        {
+          "local_seconds": "344511/1000",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00006.png",
+          "pts": 344511,
+          "sha256": "63f406d2db3554bf6291af01a432ed7b7cbcc3659adca95dc61e8c520f3a83cd"
+        },
+        {
+          "local_seconds": "344761/1000",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00007.png",
+          "pts": 344761,
+          "sha256": "4b31a7f98f216042fbb06fa5fdaf7dd8cd94c4d7cdf7e77ff309d0ed99483145"
+        },
+        {
+          "local_seconds": "345011/1000",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00008.png",
+          "pts": 345011,
+          "sha256": "39744a818db619b80876884857f96f9ebbfe9beb02e4869ee2192511b2b8146e"
+        },
+        {
+          "local_seconds": "172631/500",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00009.png",
+          "pts": 345262,
+          "sha256": "275bb8273599464d2759e01e7ae1c2dcd55a93a51e6027d941bca38b30407492"
+        },
+        {
+          "local_seconds": "43189/125",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00010.png",
+          "pts": 345512,
+          "sha256": "b1d3e6769df0665c18eca04c83d386c81808b744cdf4d1ae86b56831b77d1f34"
+        },
+        {
+          "local_seconds": "172881/500",
+          "path": ".tmp/ep01-context/decoded/glass_close/frame-00011.png",
+          "pts": 345762,
+          "sha256": "76598680ef6bad92d8c6f5b4ee1c03fc4c6e3d896784544de9f5604560854198"
+        }
+      ],
+      "name": "glass_close",
+      "start": 343,
+      "visually_inspected_pts": [
+        343009,
+        343510,
+        344010,
+        344511,
+        345011,
+        345512
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "136.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,136.000000000)*lt(t,139.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/launch_after_song/frame-%05d.png"
+      ],
+      "end": 139,
+      "frames": [
+        {
+          "local_seconds": "136011/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00000.png",
+          "pts": 136011,
+          "sha256": "1db0a06fcf745deb2380cd182c74cfd716817253b55a4d10c4cfde95183fe942"
+        },
+        {
+          "local_seconds": "136261/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00001.png",
+          "pts": 136261,
+          "sha256": "3a35fcd7b44b694dc1585ec10551a2d06278ff62af552c210cee91fb85c9a033"
+        },
+        {
+          "local_seconds": "136511/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00002.png",
+          "pts": 136511,
+          "sha256": "3790f5575c15721b7f61ba253926f9e6eeda4c3e2678dccf93fb7ab751577fd4"
+        },
+        {
+          "local_seconds": "68381/500",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00003.png",
+          "pts": 136762,
+          "sha256": "bb70d6286fdb9bff9981b5d0396710c1928b31cad73c9376342b19aec2a27132"
+        },
+        {
+          "local_seconds": "34253/250",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00004.png",
+          "pts": 137012,
+          "sha256": "57d4fab73e9183e2d8e1f7b0623137cf4a22f5edd7bb86c7032486ff171fbb37"
+        },
+        {
+          "local_seconds": "68631/500",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00005.png",
+          "pts": 137262,
+          "sha256": "160f689c79296a0c8c3b64007f0db68884e9e8f90ba0b23e1c6b35c9602770e3"
+        },
+        {
+          "local_seconds": "17189/125",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00006.png",
+          "pts": 137512,
+          "sha256": "a401d9291fac9797755f887673a300d99fcc2d6402b33655bab3d392a3a72894"
+        },
+        {
+          "local_seconds": "137763/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00007.png",
+          "pts": 137763,
+          "sha256": "eccac19be0fa2503a07602afa4dd880638834ace4381d09e323054c3fded9190"
+        },
+        {
+          "local_seconds": "138013/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00008.png",
+          "pts": 138013,
+          "sha256": "6a79f054d24efb1029d419695eb556797501c53f190829c44e4939d1d1077294"
+        },
+        {
+          "local_seconds": "138263/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00009.png",
+          "pts": 138263,
+          "sha256": "a22d2377e5078b71dc89e9515faf2bc20ab7d443cfe092a397e80350c2ab92dd"
+        },
+        {
+          "local_seconds": "138513/1000",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00010.png",
+          "pts": 138513,
+          "sha256": "0c6d0fd848e1b180f79bcc71b111977f36021ab95933aa62f4c4a25decd0205c"
+        },
+        {
+          "local_seconds": "34691/250",
+          "path": ".tmp/ep01-context/decoded/launch_after_song/frame-00011.png",
+          "pts": 138764,
+          "sha256": "91d51a08d0ce2c0c69957e7285bee35a7cf889290d318109f96cf187b19f2475"
+        }
+      ],
+      "name": "launch_after_song",
+      "start": 136,
+      "visually_inspected_pts": [
+        136011,
+        137012,
+        138013,
+        138764
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "162.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,162.000000000)*lt(t,165.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/gene_space/frame-%05d.png"
+      ],
+      "end": 165,
+      "frames": [
+        {
+          "local_seconds": "162037/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00000.png",
+          "pts": 162037,
+          "sha256": "c965ba7b130240c2d3f14f2b78f47a815761dd537b118c2eebfc9644c4491b9f"
+        },
+        {
+          "local_seconds": "162287/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00001.png",
+          "pts": 162287,
+          "sha256": "72aa0af9b04bf76169d59796bfacd38af683c0ebbbab3b57e920feed96784abd"
+        },
+        {
+          "local_seconds": "162537/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00002.png",
+          "pts": 162537,
+          "sha256": "91945c6892855e8bdbc35c3811797195c88c7bbc3f21ce3b07050f273c8da1d2"
+        },
+        {
+          "local_seconds": "40697/250",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00003.png",
+          "pts": 162788,
+          "sha256": "334d3189012904f3e723a79f14ed8881ad30e83afb7766eec3f11bfca1dca2bc"
+        },
+        {
+          "local_seconds": "81519/500",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00004.png",
+          "pts": 163038,
+          "sha256": "b693197c106f8f21c63d88cc4a7fceb726e4acf09be50fe97476d98bc912a3f8"
+        },
+        {
+          "local_seconds": "20411/125",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00005.png",
+          "pts": 163288,
+          "sha256": "cf563a3ae6a6a166d0270b120fe08fef6a50291ee6697904e15e7b21735eecb7"
+        },
+        {
+          "local_seconds": "81769/500",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00006.png",
+          "pts": 163538,
+          "sha256": "ca348665cb924a974338b657bb658f6083c6e0dbe3163ac9a54551670ac48b44"
+        },
+        {
+          "local_seconds": "163789/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00007.png",
+          "pts": 163789,
+          "sha256": "c9d167311536dedc8c461666a4aff5b803351cbb4041957fff73f6295a9ada69"
+        },
+        {
+          "local_seconds": "164039/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00008.png",
+          "pts": 164039,
+          "sha256": "05e85d7217a9be1b55ae32fdfb553433ec9869ca900c9efb6fa81b1363811075"
+        },
+        {
+          "local_seconds": "164289/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00009.png",
+          "pts": 164289,
+          "sha256": "fdeadc1a0d89b5eb80360eaac9e46569b0391442639a8400c58fba1bb399d68f"
+        },
+        {
+          "local_seconds": "164539/1000",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00010.png",
+          "pts": 164539,
+          "sha256": "5115384e8ed579b60d5c9248341a5a5fcad5766bbb8ded33eadfcecbc34c29f2"
+        },
+        {
+          "local_seconds": "16479/100",
+          "path": ".tmp/ep01-context/decoded/gene_space/frame-00011.png",
+          "pts": 164790,
+          "sha256": "026a972f758a90f42bb4198f871946f2841035a2c62be43a88d057d8b17997a0"
+        }
+      ],
+      "name": "gene_space",
+      "start": 162,
+      "visually_inspected_pts": [
+        162037,
+        163038,
+        164039,
+        164790
+      ]
+    },
+    {
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "249.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "_source_episodes/[CBM]_Outlaw_Star_-_01_-_Outlaw_World_[720p]_[A5BBC231].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,249.000000000)*lt(t,252.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        ".tmp/ep01-context/decoded/four_drives/frame-%05d.png"
+      ],
+      "end": 252,
+      "frames": [
+        {
+          "local_seconds": "6226/25",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00000.png",
+          "pts": 249040,
+          "sha256": "5bce7e36990863b4bdcdd20aba9f300b1fe021e7023971ae489f3bf047fe8646"
+        },
+        {
+          "local_seconds": "249291/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00001.png",
+          "pts": 249291,
+          "sha256": "32bc2fc3992c385ca23b83a17d704a2e39e6b4720a91ce2071a1a6ac44ba182f"
+        },
+        {
+          "local_seconds": "249541/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00002.png",
+          "pts": 249541,
+          "sha256": "17cfd3e0502c744d73d45cad0acf15fe95a6371153cf5488f34d0635ba9a5fad"
+        },
+        {
+          "local_seconds": "249791/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00003.png",
+          "pts": 249791,
+          "sha256": "0ef29f6a71b39b635f1d1bec768ffffee523b880cff8c04ab8cb132e9fb7bb1a"
+        },
+        {
+          "local_seconds": "250041/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00004.png",
+          "pts": 250041,
+          "sha256": "1e2e9480a02464dfb61720d168156e99d83c0f2d01de598b98cef2390a0ff346"
+        },
+        {
+          "local_seconds": "62573/250",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00005.png",
+          "pts": 250292,
+          "sha256": "9e60382926e822d655500844f4c5cbcb5ea1aacca9c2c6eacf07bcb4e62a9b0a"
+        },
+        {
+          "local_seconds": "125271/500",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00006.png",
+          "pts": 250542,
+          "sha256": "a36325f0801ff31cc1fdd3e6b40d9cfc9f9905ee63805e38227f56fd0fecdf04"
+        },
+        {
+          "local_seconds": "31349/125",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00007.png",
+          "pts": 250792,
+          "sha256": "d8279c42e1639a613809c44aabd6dd96f518c22427262c3f490181322f2e086d"
+        },
+        {
+          "local_seconds": "125521/500",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00008.png",
+          "pts": 251042,
+          "sha256": "abf473d64cde25a0181891e5d828d1d1df8fe457d5974f40525ad63c3f412216"
+        },
+        {
+          "local_seconds": "251293/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00009.png",
+          "pts": 251293,
+          "sha256": "d98894c923fc71a84f2e0657acf5aac0551508eb61948829f06c2446192dc021"
+        },
+        {
+          "local_seconds": "251543/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00010.png",
+          "pts": 251543,
+          "sha256": "6cf1c087e2d663abc25312423e8ebb0d5e008f2d9eaf397b62a4358ed155c270"
+        },
+        {
+          "local_seconds": "251793/1000",
+          "path": ".tmp/ep01-context/decoded/four_drives/frame-00011.png",
+          "pts": 251793,
+          "sha256": "4794ce9437a0ab5c082c60f14565e14adc13122b6a6e497afc8b226a38dc57b9"
+        }
+      ],
+      "name": "four_drives",
+      "start": 249,
+      "visually_inspected_pts": [
+        249040,
+        250041,
+        251042,
+        251793
+      ]
+    }
+  ],
+  "reviewed_utc": "2026-10-27T15:50:38.538441+00:00",
+  "reviewer": "Codex",
+  "temporary_media_removed": true,
+  "full_subtitle_dialogue_events_read": 293,
+  "gallery_scope": "EP-01 locators 001-072",
+  "inspected_gallery_full_size": [
+    "846809",
+    "846814",
+    "846829",
+    "846843"
+  ]
+}

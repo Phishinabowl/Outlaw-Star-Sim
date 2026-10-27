@@ -679,8 +679,14 @@ review workflow, not a full-show alignment prerequisite.
   Episode 4's 354 gallery records and nine supplements are INITIAL_REVIEW_COMPLETE, with gallery
   locator 007 still NEEDS_RECHECK. Episode 1 preparation is authorized and complete: 354 images,
   15 verified contact sheets and a bounded six-record secondary context brief. Its annotated survey
-  is underway: the first three sheets (001–072) received individual initial-review annotations;
-  51 are SCREENED and 21 retain explicit rechecks. The remaining 282 rows are unreviewed.
+  is underway: the first three sheets (001–072) received individual initial-review annotations.
+  The [2026-10-27 subtitle-context follow-up](../../reference/indexes/episode-01-subtitle-context-review.md)
+  read all 293 English ASS events and checked bounded local scenes. Subsequent maintainer
+  clarifications leave 65 first-batch rows SCREENED and seven tentative launch-site rechecks;
+  58 have PARTIAL depth for the targeted context check. EP-01-MAN-001 retains the supplied Horus
+  missile-salvo screenshot for episode-end RAR retention. Launch
+  presentation, fighter roles, Horus drive context and Sentinel III identification are clarified.
+  No timing mapping was extended. The remaining 282 rows are unreviewed.
   Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
