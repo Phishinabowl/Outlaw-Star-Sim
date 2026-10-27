@@ -616,16 +616,25 @@ Episode 1 screenshots support an approximate opening-only `local ≈ web − 2 s
 no whole-episode or all-episode offset is verified. The existing numbered workflow remains in force.
 
 - [x] Document the alignment proposal and five-stage pilot sequence without implementing it.
-- [ ] Stage 1: define anchor/mapping CSV contracts, time bases, statuses, input identities,
-  precision limits, bounded resources and predetermined acceptance/holdout criteria.
-- [ ] Stage 2: implement and validate bounded matching against selected Episode 1 images;
-  inspect candidates and test ambiguity, failure, preservation and cleanup behavior.
+- [x] Stage 1: define [contract v1 and bounded test design](../../tools/reference-alignment/README.md#stage-1-data-contract-v1):
+  exact ordered anchor/mapping fields, rational time bases, stable input identities, separate
+  match/model states, bounded candidate searches and predetermined fit/holdout acceptance criteria.
+  Design checks use existing metadata only; no CSV initialization, media decoding or executable
+  synthetic/live validation occurred within Stage 1.
+- [x] Stage 2: implement and validate bounded matching against the five declared Episode 1
+  images. [Prototype results](../../tools/reference-alignment/README.md#stage-2-prototype-validation--2026-10-27)
+  record 22 passing tests, five visually inspected candidate shots and identical repeat results.
+  Image 028 remains temporally ambiguous. The final run used 381 frames / about 273 MiB / 13.344 s;
+  duplicate-run cleanup passed. No accepted anchors, timing model or workbook changes were made.
 - [ ] Stage 3: validate separated Episode 1 anchors and independent holdouts, selecting a fixed,
   drift or piecewise mapping only within supported ranges. Record subtitle-context checks and limits.
 - [ ] Stage 4: validate ImportExcel integration in the existing category workbook and report-ready
   joins, keeping matched/estimated times separate and preserving original records and review states.
 - [ ] Stage 5: verify temporary-output cleanup and reproducibility, obtain procedure acceptance,
-  then integrate timing preparation into the ordered episode workflow. No automatic later-episode
+  then integrate timing preparation and episode-finish cleanup into the ordered episode workflow.
+  Alignment frames/comparison sheets are disposable: retain durable timing/provenance records,
+  preview/check eligible owned runs and remove unnecessary outputs after validation; keeping
+  output is an explicit temporary option for unresolved review/debugging. No automatic later-episode
   processing or 3.2A execution is authorized by this proposal.
 
 - [x] Implement and validate the bounded contact-sheet/cache/RAR pilot against the
@@ -653,7 +662,9 @@ no whole-episode or all-episode offset is verified. The existing numbered workfl
   Episode 4's 354 gallery records and nine supplements are INITIAL_REVIEW_COMPLETE, with gallery
   locator 007 still NEEDS_RECHECK. Episode 1 preparation is authorized and complete: 354 images,
   15 verified contact sheets and a bounded six-record secondary context brief. Its annotated survey
-  has not yet started; all 354 rows remain unreviewed. Other episode surveys remain unstarted.
+  is underway: the first three sheets (001–072) received individual initial-review annotations;
+  51 are SCREENED and 21 retain explicit rechecks. The remaining 282 rows are unreviewed.
+  Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

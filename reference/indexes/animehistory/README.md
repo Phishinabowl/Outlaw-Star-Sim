@@ -72,8 +72,11 @@ described as subtitle-assisted; revisit their specific open questions when this 
    name without establishing which mechanism is visible, its dimensions or its complete motion.
    The [alignment-tool proposal](../../../tools/reference-alignment/README.md) defines a staged
    Episode 1 pilot for measured anchors, offset/drift/segment mappings and later workbook views.
-   It is not implemented or an accepted timing procedure; no fixed offset is established by
-   documenting the proposal. This step retains its current evidence limits until Stage 5 integration.
+   Stage 1's [alignment contract](../../../tools/reference-alignment/README.md#stage-1-data-contract-v1)
+   is defined; Stage 2's bounded five-image Episode 1 matcher and repeat pilot are tested.
+   Maintained alignment tables and timing-model fitting remain unimplemented. No fixed
+   offset is established by the contract. This step retains its current evidence limits until
+   Stage 5 integration and acceptance.
 
 7. **Review a bounded image batch.** Normally inspect three sheets (up to 72 images) together,
    with selected full-size checks for ambiguous identities or valuable details. Record individual
@@ -139,6 +142,28 @@ article's Sentinel III/Heifong distinction remain explicit. No context-to-image 
 inferred, and all 354 Episode 1 annotation rows remain UNREVIEWED/NOT_REVIEWED pending the
 annotated survey. The context workbook was refreshed and checked; existing image/supplement
 annotations are unchanged. The next review batch is sheets 1–3, locators 001–072.
+
+### Episode 1 annotated survey — sheets 1–3
+
+Locators 001–072 (846773–846844; web labels 01:43–05:48) received individual descriptions,
+overlapping tags, 15 chronological scene groups and INITIAL_REVIEW_COMPLETE status. Fifty-one
+are SCREENED and 21 retain NEEDS_RECHECK; remaining 282 locators are unreviewed. All three sheets
+and full-size locators 028, 045, 054 and 058 were inspected. Opening/title material is distinguished
+from story footage. Launch-site craft/location, goggled pilot/craft, certain display/emitter views
+and the glass imagery remain explicit rechecks. Horus identity uses the previously identified
+Episode 4 form plus secondary Episode 1 context; no complete chase action or propulsion model
+was verified. A shorter cone configuration is visible across 055–056, without assigning its function.
+
+The bounded lookup added cached Roi Fong, Guugaku and Soi Len appearance descriptions, four
+SECONDARY_ONLY context records (CTX-000025–000028) and selected image associations. Proper-name
+matches to the existing pirate-leader IDs remain candidates; no earlier Episode 4 IDs were renamed.
+Guugaku's neck-bolt description and Clyde's Bar signage support preliminary subject tags. The
+city/globe remains a Sentinel III context lead rather than a verified location match. No new manual
+supplements, primary source-video inspection, translation or timing alignment occurred.
+
+Workbook refresh preserves ISO UTC review timestamps as text, using the same date-conversion
+guard as the context builder. Maintained annotation validation, saved workbook equality and
+preservation of all out-of-batch rows are checked before reporting the batch. Next: 073–144.
 
 ## Using the records
 
@@ -326,6 +351,8 @@ The `subjects` register starts with:
 | `pirate_landing_craft` | Green pirate landing/dropship units identified by the maintainer in Episode 4 locator 167; reported landing-foot action is retained separately from still-image observations. |
 | `xgp_hangar_asteroid` | Asteroid containing the Outlaw Star's storage hangar and awakening setting, identified by the maintainer; door motion and transfer context remain reported until checked in video. |
 | `starwind_hawking_hq` | Starwind & Hawking premises; identification does not establish a planet/location without supporting evidence. |
+| `guugaku` | Bald Kei pirate with large neck bolts; Episode 1 identification uses the cached secondary appearance description and visible features. |
+| `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
 | `unknown_character`, `unknown_creature`, `unknown_ship`, `unknown_vehicle`, `unknown_location`, `unknown_equipment` | Visible but unidentified subjects; describe distinguishing appearance in the summary. These are unresolved identity buckets, not assertions that different images depict the same subject. |
 
 Register additional named ships, locations, characters and recurring props as encountered. For

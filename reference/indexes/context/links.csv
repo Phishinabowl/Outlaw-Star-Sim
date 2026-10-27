@@ -98,3 +98,22 @@ CTXLINK-000096,CTX-000024,ABOUT,SUBJECT,gene_starwind,
 CTXLINK-000097,CTX-000024,ABOUT,SUBJECT,hilda,
 CTXLINK-000098,CTX-000024,ABOUT,SUBJECT,jim_hawking,
 CTXLINK-000099,CTX-000024,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode preparation context only; no gallery image has been visually reviewed or linked automatically.
+CTXLINK-000100,CTX-000025,ABOUT,SUBJECT,roi_fong,
+CTXLINK-000101,CTX-000025,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode 1 identification context; not complete character biography verification.
+CTXLINK-000102,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846798,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000103,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846834,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000104,CTX-000026,ABOUT,SUBJECT,guugaku,
+CTXLINK-000105,CTX-000026,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode 1 identification context; not complete character biography verification.
+CTXLINK-000106,CTX-000026,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846799,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000107,CTX-000026,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846832,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000108,CTX-000027,ABOUT,SUBJECT,soi_len,
+CTXLINK-000109,CTX-000027,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode 1 identification context; not complete character biography verification.
+CTXLINK-000110,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846797,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000111,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846833,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000112,CTX-000028,ABOUT,SUBJECT,clydes_bar,
+CTXLINK-000113,CTX-000028,APPLIES_TO_EPISODE,EPISODE,EP-01,Episode 1 identification context; not complete character biography verification.
+CTXLINK-000114,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846840,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000115,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846841,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000116,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846842,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000117,CTX-000028,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846844,Secondary context association. Proper names and individual image content retain the survey uncertainty; no primary promotion.
+CTXLINK-000118,CTX-000021,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846823,Locator 051 exterior matches the previously identified Episode 4 Horus form; this does not assign every cockpit or ship in the chase to Horus.

@@ -13,12 +13,19 @@ New-Item -ItemType Directory -Path $stage -Force | Out-Null
 $dataPath = Join-Path $stage 'joined.json'
 & $Python (Join-Path $PSScriptRoot 'category_index.py') view-data --output $dataPath
 if ($LASTEXITCODE -ne 0) { throw 'Category validation/join failed' }
-$data = @(Get-Content -LiteralPath $dataPath -Raw -Encoding UTF8 | ConvertFrom-Json)
+$jsonOptions = @{}
+if ((Get-Command ConvertFrom-Json).Parameters.ContainsKey('DateKind')) { $jsonOptions.DateKind = 'String' }
+$data = @(Get-Content -LiteralPath $dataPath -Raw -Encoding UTF8 | ConvertFrom-Json @jsonOptions)
 $manualPath = Join-Path $stage 'manual.json'
 & $Python (Join-Path $PSScriptRoot 'category_index.py') supplement-data --output $manualPath
 if ($LASTEXITCODE -ne 0) { throw 'Manual reference validation/join failed' }
-$manual = @(Get-Content -LiteralPath $manualPath -Raw -Encoding UTF8 | ConvertFrom-Json)
+$manual = @(Get-Content -LiteralPath $manualPath -Raw -Encoding UTF8 | ConvertFrom-Json @jsonOptions)
 $output = Join-Path $stage 'category-review.xlsx'
+foreach ($record in @($data) + @($manual)) {
+ foreach ($field in @('screened_utc','detail_reviewed_utc')) {
+  if ($record.$field -is [datetime]) { throw 'JSON review timestamps must remain strings; run with PowerShell 7.5 or newer.' }
+ }
+}
 $columns = @('Open image','web_timestamp','image_id','screening_status','categories','subjects',
  'subject_details','visual_summary','presentation','scene_group_id','scene_summary','research_priority',
  'revisit_reason','uncertainties','identification_confidence','detail_status','reported_context',
