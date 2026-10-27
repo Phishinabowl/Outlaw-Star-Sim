@@ -443,6 +443,7 @@ def main():
     sub.add_argument('--ffprobe',default=shutil.which('ffprobe'))
     sub.add_argument('--mask',action='append',default=[],help='Explicit normalized rectangle x0,y0,x1,y1; maximum 30 percent union')
     sub=commands.add_parser('cleanup');sub.add_argument('--episode',type=int,required=True);sub.add_argument('--run-id',required=True)
+    sub.add_argument('--discard-unregistered',action='store_true',help='Explicitly discard an unregistered disposable run; registered evidence uses finish.py')
     args=parser.parse_args()
     try:
         if args.command=='search':
@@ -450,7 +451,13 @@ def main():
             path=search(ROOT,args.episode,args.image_id,args.ffmpeg,args.ffprobe,[list(map(int,box.split(','))) for box in args.mask],args.pilot_stage)
             print(json.dumps({'run':str(path),'status':'COMPLETE_CANDIDATES','authored_tables_changed':False}))
         else:
-            cleanup(ROOT,args.run_id,args.episode);print(json.dumps({'removed_run':args.run_id}))
+            if not args.discard_unregistered:raise ValueError('Use finish.py for validated cleanup or explicitly --discard-unregistered')
+            import models
+            with writer(safe_path(ROOT,'reference/working/alignment/registry')):
+                anchors,_=models.load(ROOT)
+                if any(r['run_id']==args.run_id for r in anchors):raise ValueError('Registered runs require finish.py provenance checks')
+                cleanup(ROOT,args.run_id,args.episode)
+            print(json.dumps({'removed_run':args.run_id}))
     except (ValueError,OSError,KeyError,StopIteration,subprocess.SubprocessError) as exc:
         print(json.dumps({'error':str(exc)}),file=sys.stderr);return 1
     return 0

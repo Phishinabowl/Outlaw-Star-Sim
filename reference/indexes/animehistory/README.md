@@ -24,6 +24,9 @@ Initial cache completed October 6, 2026 (America/New_York): **26 episodes, 104 g
 owns episode order and phase authorization; tool documents own commands and their validation.
 The subtitle-context step is newly integrated here. Earlier batches are not retrospectively
 described as subtitle-assisted; revisit their specific open questions when this step is applied.
+Timing preparation and alignment-output cleanup were accepted with alignment-tool Stages 4–5
+on 2026-10-27. Alignment occurs within each episode review, rather than as a full-show prerequisite.
+These additions do not authorize later episodes or Phase 3.2A.
 
 1. **Select the episode and resume point.** Follow the planned episode order: Episode 4 first,
    then 1–3 and 5–26. Read existing annotation/context records, unresolved questions and the last
@@ -70,16 +73,19 @@ described as subtitle-assisted; revisit their specific open questions when this 
    gallery timestamp or assume a constant episode-wide offset. Record verified matches with their
    provenance; retain unverified associations as such. Dialogue can clarify a reported command or
    name without establishing which mechanism is visible, its dimensions or its complete motion.
-   The [alignment-tool proposal](../../../tools/reference-alignment/README.md) defines a staged
-   Episode 1 pilot for measured anchors, offset/drift/segment mappings and later workbook views.
-   Stage 1's [alignment contract](../../../tools/reference-alignment/README.md#stage-1-data-contract-v1)
-   is implemented through the bounded Stage 3 pilot. The maintained `alignment-anchors.csv` and
-   `alignment-mappings.csv` preserve direct evidence, unresolved attempts and measured model
-   history. The pinned Episode 1 release has a validated navigation offset of -1.388 s only for
-   whole-second web labels 06:40–20:40; other regions/episodes remain unmapped. The tool doc owns
-   the [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).
-   Generated locator fields remain unchanged; workbook joins and the established timing procedure
-   await Stages 4–5 and acceptance.
+   **Timing preparation, before timed dialogue/image associations:** follow the
+   [accepted alignment procedure](../../../tools/reference-alignment/README.md#episode-alignment-procedure--accepted-2026-10-27).
+   Validate existing anchor/mapping records and check current input identity where available.
+   Reuse a supported direct interval or bounded mapping for navigation; when coverage is missing,
+   record the gap or obtain scoped authorization for bounded matching rather than extrapolating.
+   Declare FIT/HOLDOUT roles before searches, visually assess candidates, retain durable
+   provenance and independently validate a proposed mapping before using estimates. Refresh the
+   category workbook and distinguish direct, estimated, player-lead and unmapped timing.
+   The pinned Episode 1 release has a validated navigation offset of -1.388 s only for whole-second
+   web labels 06:40–20:40; other regions/episodes remain unmapped. The tool doc owns the
+   [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).
+   A two-second navigation search window is not a verified subtitle-to-frame association.
+   Generated locator fields and existing review states remain unchanged.
 
 7. **Review a bounded image batch.** Normally inspect three sheets (up to 72 images) together,
    with selected full-size checks for ambiguous identities or valuable details. Record individual
@@ -121,6 +127,14 @@ described as subtitle-assisted; revisit their specific open questions when this 
     status and refresh availability displays. Cited website caches and existing subtitle copies
     have separate provenance/retention and are not deleted by episode-image pruning. Remove only
     identified disposable preparation/preview artifacts; do not sweep unrelated working files.
+    **Before gallery pruning**, run the alignment tool's Stage 5 episode-finish preview. Check
+    durable assessments/provenance, explicitly retain unresolved runs with `--keep-output`, or
+    apply the inspected preview token to eligible owned runs. Failed/abandoned unregistered runs
+    require explicit discard; no candidate is accepted merely to enable cleanup. Verify that no
+    unnecessary alignment PNGs, comparison sheets or run directories remain. These reproducible
+    search outputs do not enter the episode RAR; gallery originals and registered supplements do.
+    Finish current-media/reproduction checks while required gallery inputs are available; after
+    pruning, restore verified inputs before requesting a fresh source/gallery verification.
 
 12. **Record the checkpoint and next scope.** Summarize coverage, retained artifacts, cleanup
     evidence and unresolved questions. Leave changes uncommitted until confirmation through the
@@ -745,7 +759,9 @@ own authoritative textual data; do not keep unique edits only in the workbook.
 fields against `all-episodes.csv`, and writes `animehistory-review.xlsx` in this folder. It retains
 all 14 source fields and adds a View image hyperlink column. Image IDs and timestamp labels remain
 text; seconds and page numbers are numeric. The overview links to episode tabs and totals records.
-The builder performs no network requests or media extraction. Web/local alignment remains unverified.
+The builder performs no network requests or media extraction. This locator-only workbook retains
+the original unverified timing fields; bounded derived alignment is available separately in the
+existing category workbook as described below.
 
 Use PowerShell with the installed ImportExcel module (tested with 7.8.10). The script checks for
 the module and does not install dependencies or start Excel. Run from the repository root:
@@ -763,3 +779,26 @@ The ImportExcel test opened directly in VS Code Office Viewer on 2026-10-26, as 
 maintainer. The earlier artifact-tool export required an Excel resave for that viewer; the exact
 incompatible XML feature was not isolated. ImportExcel is the retained authoring path. No XLSX/LFS
 publication rule is introduced.
+
+### Category workbook alignment view
+
+The existing `category-review.xlsx` now includes **Alignment anchors** and **Alignment mappings**
+tabs and derived timing fields on episode/manual tabs. The [alignment tool's Stage 4 results](../../../tools/reference-alignment/README.md#stage-4-integration-results--2026-10-27)
+own the field contracts, availability modes, report bridge grains and validation evidence.
+All 9,204 gallery locators and nine supplements retain their original data and review states.
+This integration passed saved-value/link checks, visual inspection and maintainer-reported native
+viewer checks on 2026-10-27; the maintainer confirmed the integration on that date.
+
+Refresh with PowerShell 7 and installed ImportExcel:
+
+```powershell
+./tools/reference-extraction/build_category_workbook.ps1 -Python <python.exe-path>
+./tools/reference-extraction/build_category_workbook.ps1 -Python <python.exe-path> -VerifyAlignmentMedia -FFprobe <ffprobe.exe-path>
+```
+
+The default labels available alignment records `RECORDED_UNCHECKED`; explicit media verification
+can establish `VERIFIED_CURRENT` at refresh time within the current pilot contract. Missing or
+mismatched inputs suppress derived timings. Direct intervals and model estimates remain separate;
+unsupported times are blank. The original generated `alignment_status` is unchanged. Episode 1's
+bounded mapping does not apply to other episodes or its uncovered opening/ending regions.
+The workbook remains generated and ignored; record durable evidence in the maintained CSVs.

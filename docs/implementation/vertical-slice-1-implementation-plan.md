@@ -610,10 +610,11 @@ verify earlier batches or authorize additional media extraction. Existing scope 
 
 **Pass 1 — episode-by-episode annotated survey:**
 
-**Timing-alignment extension — proposal documented 2026-10-27:** the
-[tool proposal](../../tools/reference-alignment/README.md) owns its stages, storage and validation.
-Episode 1 screenshots support an approximate opening-only `local ≈ web − 2 s` search seed;
-no whole-episode or all-episode offset is verified. The existing numbered workflow remains in force.
+**Timing-alignment extension — validated and accepted 2026-10-27:** the
+[tool documentation](../../tools/reference-alignment/README.md) owns its stages, storage and validation.
+The bounded Episode 1 mapping and its uncovered regions remain explicit; no whole-episode or
+all-episode offset is verified. Timing preparation and cleanup are part of each episode's numbered
+review workflow, not a full-show alignment prerequisite.
 
 - [x] Document the alignment proposal and five-stage pilot sequence without implementing it.
 - [x] Stage 1: define [contract v1 and bounded test design](../../tools/reference-alignment/README.md#stage-1-data-contract-v1):
@@ -632,11 +633,22 @@ no whole-episode or all-episode offset is verified. The existing numbered workfl
   error 0.648 s, two separated subtitle-context checks and 38 passing tests. Opening/early/ending
   regions remain unmapped. The two CSV registers contain 25 assessments and proposal/validation
   history. Completed pilot search outputs were removed after durable provenance checks; Stage 5's
-  integrated cleanup/procedure and reproduction tests remain pending. No workbook/locator changes.
-- [ ] Stage 4: validate ImportExcel integration in the existing category workbook and report-ready
+  integrated cleanup/procedure and reproduction tests were pending at that checkpoint. No
+  workbook/locator changes were made during Stage 3.
+- [x] Stage 4: validate ImportExcel integration in the existing category workbook and report-ready
   joins, keeping matched/estimated times separate and preserving original records and review states.
-- [ ] Stage 5: verify temporary-output cleanup and reproducibility, obtain procedure acceptance,
+  [Technical validation](../../tools/reference-alignment/README.md#stage-4-integration-results--2026-10-27)
+  passed: 30 worksheet views preserve 9,204 gallery rows, nine supplements and the two alignment
+  registers; 49 alignment tests and 10 category tests passed. Native-viewer feedback passed,
+  including separate direct/estimated times at EP-01 row 92. Confirmed on 2026-10-27.
+- [x] Stage 5: verify temporary-output cleanup and reproducibility, obtain procedure acceptance,
   then integrate timing preparation and episode-finish cleanup into the ordered episode workflow.
+  [Implementation and live validation](../../tools/reference-alignment/README.md#stage-5-cleanup-and-reproduction-results--2026-10-27)
+  passed: 64 tests; all eight accepted anchors reproduced 16 retained PNG hashes; a new disposable
+  run passed preview/keep/explicit-discard checks and was removed. No alignment runs remain;
+  33 maintained/index/subtitle inputs are unchanged. The maintainer accepted and confirmed the
+  procedure on 2026-10-27. Alignment preparation and cleanup are integrated per episode in the
+  numbered review workflow; full-show alignment is not a prerequisite for continuing reviews.
   Alignment frames/comparison sheets are disposable: retain durable timing/provenance records,
   preview/check eligible owned runs and remove unnecessary outputs after validation; keeping
   output is an explicit temporary option for unresolved review/debugging. No automatic later-episode

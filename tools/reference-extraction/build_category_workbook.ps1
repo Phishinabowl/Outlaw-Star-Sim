@@ -1,5 +1,5 @@
 # Generated annotation browsing view. The authored CSV is never modified.
-param([string]$Python = 'python')
+param([string]$Python = 'python', [switch]$VerifyAlignmentMedia, [string]$FFprobe = 'ffprobe')
 $ErrorActionPreference = 'Stop'
 Import-Module ImportExcel -MinimumVersion 7.8.10 -ErrorAction Stop
 $repo = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
@@ -8,6 +8,11 @@ $sourcePath = Join-Path $index 'category-index.csv'
 $sourceHash = (Get-FileHash -LiteralPath $sourcePath).Hash
 $supplementPath = Join-Path $index 'supplemental-index.csv'
 $supplementHash = if (Test-Path -LiteralPath $supplementPath) { (Get-FileHash -LiteralPath $supplementPath).Hash } else { '' }
+$inputHashes = @{}
+$inputPaths = @((Get-ChildItem -LiteralPath $index -Filter '*.csv').FullName)
+$inputPaths += @((Get-ChildItem -LiteralPath (Join-Path $index 'CSVs') -Filter 'episode-*.csv').FullName)
+$inputPaths += (Join-Path $repo 'reference/indexes/performance-subtitle-coverage.json')
+foreach ($path in $inputPaths) { $inputHashes[$path] = (Get-FileHash -LiteralPath $path).Hash }
 $stage = Join-Path $repo ('.tmp/category-workbook/' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stage -Force | Out-Null
 $dataPath = Join-Path $stage 'joined.json'
@@ -20,6 +25,29 @@ $manualPath = Join-Path $stage 'manual.json'
 & $Python (Join-Path $PSScriptRoot 'category_index.py') supplement-data --output $manualPath
 if ($LASTEXITCODE -ne 0) { throw 'Manual reference validation/join failed' }
 $manual = @(Get-Content -LiteralPath $manualPath -Raw -Encoding UTF8 | ConvertFrom-Json @jsonOptions)
+$alignmentPath = Join-Path $stage 'alignment.json'
+$projectionArgs = @((Join-Path $repo 'tools/reference-alignment/projection.py'),'--output',$alignmentPath)
+if ($VerifyAlignmentMedia) { $projectionArgs += @('--verify-current','--ffprobe',$FFprobe) }
+& $Python @projectionArgs
+if ($LASTEXITCODE -ne 0) { throw 'Alignment projection failed; existing workbook preserved' }
+$alignment = Get-Content -LiteralPath $alignmentPath -Raw -Encoding UTF8 | ConvertFrom-Json @jsonOptions
+$timingFields = @('matched_local_start','matched_local_end','estimated_local_time','timing_basis','mapping_id',
+ 'alignment_availability','suggested_search_half_window_seconds','anchor_id','anchor_status','alignment_input_id',
+ 'alignment_method','alignment_reason','alignment_checked_utc','matched_local_start_seconds',
+ 'matched_local_end_seconds','estimated_local_seconds')
+$numericTiming = @('suggested_search_half_window_seconds','matched_local_start_seconds','matched_local_end_seconds','estimated_local_seconds')
+foreach ($pair in @(@{Rows=$data;Timing=@($alignment.gallery_timing)},@{Rows=$manual;Timing=@($alignment.manual_timing)})) {
+ $byKey = @{}
+ foreach ($row in $pair.Timing) {
+  if ($byKey.ContainsKey($row.image_key)) { throw 'Duplicate timing projection key' }
+  $byKey[$row.image_key] = $row
+ }
+ if ($byKey.Count -ne $pair.Rows.Count) { throw 'Timing projection row count mismatch' }
+ foreach ($row in $pair.Rows) {
+  if (-not $byKey.ContainsKey($row.image_key)) { throw 'Missing timing projection key' }
+  foreach ($field in $timingFields) { $row | Add-Member -NotePropertyName $field -NotePropertyValue $byKey[$row.image_key].$field }
+ }
+}
 $output = Join-Path $stage 'category-review.xlsx'
 foreach ($record in @($data) + @($manual)) {
  foreach ($field in @('screened_utc','detail_reviewed_utc')) {
@@ -33,10 +61,18 @@ $columns = @('Open image','web_timestamp','image_id','screening_status','categor
  'image_key','episode_id','episode_number','locator_ordinal','episode_title','web_seconds',
  'image_url','source_page_url','alignment_status')
 $widths = @(14,19,15,23,34,32,36,80,17,20,65,22,70,80,29,32,75,20,31,24,31,60,24,17,20,20,40,20,65,65,23)
+$primaryTiming = @('estimated_local_time','matched_local_start','matched_local_end','timing_basis',
+ 'alignment_availability','mapping_id','suggested_search_half_window_seconds')
+$metadataTiming = @($timingFields | Where-Object { $_ -notin $primaryTiming })
+$columns = @($columns[0..1]) + $primaryTiming + @($columns[2..($columns.Count-1)]) + $metadataTiming
+$widths = @($widths[0..1]) + @(24,24,24,24,29,23,37) + @($widths[2..($widths.Count-1)]) + @(23,26,68,34,75,32,32,32,32)
 $expected = @{}
 $summaries = @()
 $manualTable = @()
 $manualColumns = @()
+$alignmentTables = @{}
+$alignmentColumns = @{}
+$galleryTargets = @{}
 $package = Open-ExcelPackage -Path $output -Create
 try {
  $overview = $package.Workbook.Worksheets.Add('Overview')
@@ -53,12 +89,14 @@ try {
   $sheet = $package.Workbook.Worksheets[$id]
   $sheet.Cells[2,1].Value = "$id category screening"
   $sheet.Cells[2,1].Style.Font.Size = 14
-  $sheet.Cells[3,1].Value = 'Generated view. Save annotations in category-index.csv. Web times are unaligned.'
+  $sheet.Cells[3,1].Value = 'Generated view. Times: direct intervals / bounded model estimates / unmapped. Check availability; edit CSVs, not this workbook.'
   $sheet.View.ShowGridLines = $false
   $sheet.View.FreezePanes(6,4)
   $sheet.Cells[5,1,($rows.Count+5),$columns.Count].Style.Font.Name = 'Arial'
   $sheet.Cells[5,1,($rows.Count+5),$columns.Count].Style.Font.Size = 10
   $sheet.Cells[5,1,($rows.Count+5),$columns.Count].Style.VerticalAlignment = 'Center'
+  $sheet.Cells[5,1,5,$columns.Count].Style.WrapText = $true
+  $sheet.Row(5).Height = 42
   for ($c=1;$c -le $columns.Count;$c++) { $sheet.Column($c).Width = $widths[$c-1] }
   for ($i=0;$i -lt $rows.Count;$i++) {
    $r = $i+6
@@ -67,11 +105,14 @@ try {
    }
    $sheet.Cells[$r,1].Hyperlink = [uri]$rows[$i].image_url
    $sheet.Cells[$r,1].Style.Font.Color.SetColor([System.Drawing.Color]::FromArgb(29,78,216))
-   foreach ($column in @('episode_number','locator_ordinal','web_seconds')) {
+   foreach ($column in @('episode_number','locator_ordinal','web_seconds') + $numericTiming) {
     $c = [array]::IndexOf($columns,$column)+1
-    $sheet.Cells[$r,$c].Value = [int]$rows[$i].$column
-    $sheet.Cells[$r,$c].Style.Numberformat.Format = '0'
+    if ($null -ne $rows[$i].$column -and [string]$rows[$i].$column -ne '') {
+     $sheet.Cells[$r,$c].Value = [double]$rows[$i].$column
+     $sheet.Cells[$r,$c].Style.Numberformat.Format = if ($column -in $numericTiming) { '0.000' } else { '0' }
+    }
    }
+   $galleryTargets[$rows[$i].image_key] = "'$id'!A$r"
    $sheet.Row($r).Height = 22
   }
   foreach ($column in @('categories','subjects','subject_details','visual_summary','uncertainties','revisit_reason','reported_context','scene_summary')) {
@@ -106,6 +147,26 @@ try {
  $overview.Cells[2,1].Style.Font.Size = 14
  $overview.Cells[4,1].Value = 'Counts describe sampled gallery images. Recheck and unavailable remain unresolved.'
  $overview.Cells[35,1].Value = 'Initial review complete = annotated survey. Deep dive counts cover scoped questions; see the index README.'
+ $overview.Cells[42,1].Value = 'Alignment evidence and navigation (separate from review progress)'
+ $overview.Cells[43,1].Value = 'Alignment anchors'
+ $overview.Cells[43,2].Value = @($alignment.anchors).Count
+ $overview.Cells[43,1].Hyperlink = [OfficeOpenXml.ExcelHyperLink]::new("'Alignment anchors'!A1",'Alignment anchors')
+ $overview.Cells[44,1].Value = 'Alignment mappings'
+ $overview.Cells[44,2].Value = @($alignment.mappings).Count
+ $overview.Cells[44,1].Hyperlink = [OfficeOpenXml.ExcelHyperLink]::new("'Alignment mappings'!A1",'Alignment mappings')
+ $overview.Cells[46,1].Value = 'Direct matches'
+ $overview.Cells[46,2].Value = $alignment.report.timing_basis.DIRECT_MATCH
+ $overview.Cells[47,1].Value = 'Model estimates'
+ $overview.Cells[47,2].Value = $alignment.report.timing_basis.MAPPING_ESTIMATE
+ $overview.Cells[48,1].Value = 'Unmapped'
+ $overview.Cells[48,2].Value = $alignment.report.timing_basis.UNMAPPED
+ $overview.Cells[50,1].Value = 'Episode 1 CBM: local = web - 1.388 s; validated web labels 06:40-20:40 only. Suggested search +/-2 s.'
+ $overview.Cells[51,1].Value = 'Direct timestamps describe reviewed intervals; model timestamps are navigation estimates. Blank is not zero.'
+ $overview.Cells[52,1].Value = if ($VerifyAlignmentMedia) { 'Explicit current-input verification requested; each row records its result and check time.' } else { 'Routine build: video digests not recomputed. Recorded alignment is labeled RECORDED_UNCHECKED.' }
+ $overview.Cells[1,1,52,9].Style.Font.Name = 'Arial'
+ $overview.Cells[1,1,52,9].Style.Font.Size = 10
+ $overview.Cells[42,1].Style.Font.Bold = $true
+ $overview.Column(1).Width = 25
  $overview.View.ShowGridLines = $false
  $overview.Cells[1,1,35,9].Style.Font.Name = 'Arial'
  $overview.Cells[1,1,35,9].Style.Font.Size = 10
@@ -134,6 +195,8 @@ try {
   $sheet.Cells[5,1,($manual.Count+5),$manualColumns.Count].Style.Font.Name = 'Arial'
   $sheet.Cells[5,1,($manual.Count+5),$manualColumns.Count].Style.Font.Size = 10
   $sheet.Cells[5,1,($manual.Count+5),$manualColumns.Count].Style.VerticalAlignment = 'Center'
+  $sheet.Cells[5,1,5,$manualColumns.Count].Style.WrapText = $true
+  $sheet.Row(5).Height = 42
   for ($c=0;$c -lt $manualColumns.Count;$c++) {
    $field = $manualColumns[$c]
    $sheet.Column($c+1).Width = 25
@@ -143,9 +206,9 @@ try {
    $sheet.Cells[6,($c+1),($manual.Count+5),($c+1)].Style.WrapText = $true
    for ($i=0;$i -lt $manual.Count;$i++) {
     if ([string]$manualTable[$i].$field -eq '') { $sheet.Cells[($i+6),($c+1)].Value = $null }
-    if ($field -in @('local_seconds','episode_number','media_bytes')) {
-     $sheet.Cells[($i+6),($c+1)].Value = [int64]$manualTable[$i].$field
-     $sheet.Cells[($i+6),($c+1)].Style.Numberformat.Format = '0'
+    if ($field -in (@('local_seconds','episode_number','media_bytes') + $numericTiming) -and $null -ne $manualTable[$i].$field -and [string]$manualTable[$i].$field -ne '') {
+     $sheet.Cells[($i+6),($c+1)].Value = [double]$manualTable[$i].$field
+     $sheet.Cells[($i+6),($c+1)].Style.Numberformat.Format = if ($field -in $numericTiming) { '0.000' } else { '0' }
     }
    }
   }
@@ -159,12 +222,56 @@ try {
   $overview.Cells[39,2].Value = $manual.Count
   $overview.Cells[39,1].Hyperlink = [OfficeOpenXml.ExcelHyperLink]::new("'Manual references'!A1",'Total')
  }
+ foreach ($spec in @(
+  @{Name='Alignment anchors';Rows=@($alignment.anchors);First=@('anchor_id','episode_id','image_id','web_timestamp','role','status','match_kind','matched_local_start','matched_local_end','alignment_availability','notes','reviewer','reviewed_utc','method');Table='AlignmentAnchors'},
+  @{Name='Alignment mappings';Rows=@($alignment.mappings);First=@('mapping_id','episode_id','status','segment_label','web_range','model','scale','offset_seconds','fit_count','holdout_count','alignment_availability','limitations');Table='AlignmentMappings'})) {
+  if ($spec.Rows.Count -eq 0) { throw 'Alignment register is empty; no accepted Stage 4 pilot to project' }
+  $fields = @($spec.First) + @($spec.Rows[0].PSObject.Properties.Name | Where-Object { $_ -notin $spec.First })
+  $table = @($spec.Rows | ForEach-Object {
+   $item = [ordered]@{}
+   foreach ($field in $fields) { $item[$field] = $_.$field }
+   [pscustomobject]$item
+  })
+  $alignmentTables[$spec.Name] = $table; $alignmentColumns[$spec.Name] = $fields
+  $null = $table | Export-Excel -ExcelPackage $package -WorksheetName $spec.Name -StartRow 5 -TableName $spec.Table -TableStyle Medium2 -NoNumberConversion '*' -NoHyperLinkConversion '*' -PassThru
+  $sheet = $package.Workbook.Worksheets[$spec.Name]
+  $sheet.Cells[2,1].Value = $spec.Name
+  $sheet.Cells[2,1].Style.Font.Size = 14
+  $sheet.Cells[3,1].Value = 'Generated evidence/history view. Only active MATCHED anchors / VALIDATED bounded mappings can supply derived times. Edit the owning CSV.'
+  $sheet.View.ShowGridLines = $false; $sheet.View.FreezePanes(6,4)
+  $sheet.Cells[5,1,($table.Count+5),$fields.Count].Style.Font.Name = 'Arial'
+  $sheet.Cells[5,1,($table.Count+5),$fields.Count].Style.Font.Size = 10
+  $sheet.Cells[5,1,($table.Count+5),$fields.Count].Style.VerticalAlignment = 'Top'
+  $sheet.Cells[5,1,5,$fields.Count].Style.WrapText = $true
+  $sheet.Row(5).Height = 42
+  for ($c=0;$c -lt $fields.Count;$c++) {
+   $field=$fields[$c]; $sheet.Column($c+1).Width = 25
+   if ($field -in @('notes','limitations','recipe_json')) { $sheet.Column($c+1).Width = 85 }
+   if ($field -in @('input_id','video_sha256','subtitle_sha256','locator_sha256','image_sha256','alignment_input_id')) { $sheet.Column($c+1).Width = 68 }
+   if ($field -in @('fit_anchor_ids','holdout_anchor_ids','video_source')) { $sheet.Column($c+1).Width = 65 }
+   $sheet.Cells[6,($c+1),($table.Count+5),($c+1)].Style.WrapText = $true
+   for ($i=0;$i -lt $table.Count;$i++) {
+    $value=$table[$i].$field
+    if ([string]$value -eq '') { $sheet.Cells[($i+6),($c+1)].Value=$null }
+    if ($field -in @('fit_count','holdout_count') -and $null -ne $value) { $sheet.Cells[($i+6),($c+1)].Value=[int]$value }
+    if (([string]$value).Length -gt 32767) { throw 'Alignment field exceeds Excel cell capacity' }
+   }
+  }
+  for ($i=0;$i -lt $table.Count;$i++) {
+   $sheet.Row($i+6).Height=100
+   if ($spec.Name -eq 'Alignment anchors') {
+    $target=$galleryTargets[$spec.Rows[$i].image_key]
+    if (-not $target) { throw 'Anchor gallery link cannot resolve' }
+    $sheet.Cells[($i+6),3].Hyperlink=[OfficeOpenXml.ExcelHyperLink]::new($target,$table[$i].image_id)
+   }
+  }
+ }
  $package.Save()
 } finally { $package.Dispose() }
 
 $check = Open-ExcelPackage -Path $output
 try {
- $sheetCount = 27 + [int]($manual.Count -gt 0)
+ $sheetCount = 29 + [int]($manual.Count -gt 0)
  if ($check.Workbook.Worksheets.Count -ne $sheetCount) { throw 'Worksheet count mismatch' }
  $verified = 0; $links = 0
  foreach ($n in 1..26) {
@@ -208,11 +315,31 @@ try {
   }
   if ($check.Workbook.Worksheets['Overview'].Cells[39,2].Value -ne $manual.Count) { throw 'Manual overview count mismatch' }
  }
+ $alignmentVerified=0
+ foreach ($name in @('Alignment anchors','Alignment mappings')) {
+  $sheet=$check.Workbook.Worksheets[$name]; $rows=$alignmentTables[$name]; $fields=$alignmentColumns[$name]
+  if ($sheet.Tables.Count -ne 1 -or $sheet.Dimension.End.Row -ne $rows.Count+5) { throw "Alignment table/row mismatch: $name" }
+  for ($c=0;$c -lt $fields.Count;$c++) {
+   if ($sheet.Cells[5,($c+1)].Value -cne $fields[$c]) { throw 'Alignment header mismatch' }
+   for ($i=0;$i -lt $rows.Count;$i++) {
+    if ([string]$sheet.Cells[($i+6),($c+1)].Value -cne [string]$rows[$i].($fields[$c])) { throw "Alignment value mismatch: $name / $i / $($fields[$c])" }
+    if ($sheet.Cells[($i+6),($c+1)].Formula) { throw 'Unexpected alignment formula' }
+    $alignmentVerified++
+   }
+  }
+ }
+ for ($i=0;$i -lt @($alignment.anchors).Count;$i++) {
+  $link=$check.Workbook.Worksheets['Alignment anchors'].Cells[($i+6),3].Hyperlink
+  if ($link.ReferenceAddress -cne $galleryTargets[$alignment.anchors[$i].image_key]) { throw 'Anchor gallery link mismatch' }
+ }
+ if ($check.Workbook.Worksheets['Overview'].Cells[43,2].Value -ne @($alignment.anchors).Count -or $check.Workbook.Worksheets['Overview'].Cells[44,2].Value -ne @($alignment.mappings).Count) { throw 'Alignment overview count mismatch' }
 } finally { $check.Dispose() }
 if ((Get-FileHash -LiteralPath $sourcePath).Hash -ne $sourceHash) { throw 'Authored CSV changed during build; refusing stale view' }
 if ($supplementHash -and (Get-FileHash -LiteralPath $supplementPath).Hash -ne $supplementHash) { throw 'Supplement CSV changed during build' }
+foreach ($path in $inputHashes.Keys) { if ((Get-FileHash -LiteralPath $path).Hash -ne $inputHashes[$path]) { throw "Input changed during build; refusing stale view: $path" } }
 Move-Item -LiteralPath $output -Destination (Join-Path $index 'category-review.xlsx') -Force
 Remove-Item -LiteralPath $dataPath
 Remove-Item -LiteralPath $manualPath
+Remove-Item -LiteralPath $alignmentPath
 Remove-Item -LiteralPath $stage
-[pscustomobject]@{Output=(Join-Path $index 'category-review.xlsx');Records=$data.Count;ManualReferences=$manual.Count;Sheets=$sheetCount;VerifiedCells=$verified;VerifiedImageLinks=$links;VerifiedManualCells=$manualVerified;AuthoredCsvUnchanged=$true} | ConvertTo-Json
+[pscustomobject]@{Output=(Join-Path $index 'category-review.xlsx');Records=$data.Count;ManualReferences=$manual.Count;Sheets=$sheetCount;VerifiedCells=$verified;VerifiedImageLinks=$links;VerifiedManualCells=$manualVerified;VerifiedAlignmentCells=$alignmentVerified;AlignmentReport=$alignment.report;AuthoredCsvUnchanged=$true} | ConvertTo-Json -Depth 5

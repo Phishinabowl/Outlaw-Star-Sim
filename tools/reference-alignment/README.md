@@ -1,10 +1,10 @@
-# Episode alignment tool — proposal
+# Episode alignment tool
 
 **Status — 2026-10-27:** proposal published as `10678c8`; Stages 1–2 and the cleanup amendment
-were confirmed and published in checkpoint `2c31b99`. Stage 3's bounded Episode 1 validation is
-implemented and tested, with results and coverage limits below; its changes await confirmation.
-The two maintained alignment CSVs are initialized. Workbook integration and the accepted
-episode-finish procedure remain Stages 4–5. No all-episode extraction or whole-runtime timing
+were confirmed and published in checkpoint `2c31b99`. Stage 3's bounded Episode 1 validation was
+confirmed and published as `2be404f`. Stages 4–5 and the episode-review integration procedure were
+accepted by the maintainer on 2026-10-27 after workbook, cleanup and reproduction validation.
+The two maintained alignment CSVs are initialized. No all-episode extraction or whole-runtime timing
 claim is implied.
 
 ## Purpose and ownership
@@ -76,11 +76,12 @@ debugging or an unresolved review, rather than the default end state for every e
   candidates to accepted evidence. Such disposal must remain distinct from validated-result
   cleanup; the latter requires durable accepted-result provenance first.
 
-The prototype provides explicit `cleanup --episode ... --run-id ...`, which
-deletes the entire named owned run. It does **not** yet check maintained alignment records or
-perform the planned episode-finish preview/provenance gate automatically. Stage 3 manually checked
-durable records and used this existing command to remove completed pilot outputs. That scoped
-cleanup does not complete Stage 5's automated episode-finish/procedure validation.
+Stage 5 implements the preview/provenance gate in `finish.py`, with explicit keep-output and
+unregistered-discard modes. The earlier `alignment.py cleanup` command now requires
+`--discard-unregistered` and refuses any run referenced by the anchor register. Registered-result
+cleanup must use `finish.py`. Stage 3's historical cleanup used the earlier command after manual
+provenance checks; the [Stage 5 results](#stage-5-cleanup-and-reproduction-results--2026-10-27)
+record the subsequent automated validation.
 
 Stage 1's contract implements these record requirements:
 
@@ -226,8 +227,10 @@ existing confirmation workflow and never includes source or derivative media imp
 Stages 1–3 are technically complete within their recorded pilot scopes. Stage 3 adds reviewed
 anchor records, exact-rational model/registry validation and a measured navigation mapping for
 part of Episode 1. Unsupported regions and ambiguous/sampled no-match attempts remain explicit.
-No generated locator timing fields or existing survey annotations change. Workbook integration
-and the accepted integrated procedure remain unstarted Stages 4–5.
+No generated locator timing fields or existing survey annotations change. Stage 4's derived
+workbook/report projections are validated, including native-viewer feedback.
+Stage 5's cleanup/reproduction implementation and integrated procedure are validated and accepted
+on 2026-10-27; no later episode or Phase 3.2A work is authorized by these results.
 
 ## Stage 1 data contract v1
 
@@ -536,6 +539,9 @@ python -m unittest discover -s tools/reference-alignment -p 'test_*.py' -v
 python tools/reference-alignment/alignment.py cleanup --episode 1 --run-id <exact-ALNRUN-id>
 ```
 
+The cleanup example above records the historical Stage 2 command. Current cleanup uses the
+Stage 5 preview/apply procedure; direct unregistered discard requires its explicit flag.
+
 Cleanup validates the explicit resolved run path, run ID, owner manifest and descendants before
 recursive removal. It cannot delete a gallery cache, source directory or arbitrary path. This
 section records prototype behavior and validation; it is not yet the accepted integrated procedure.
@@ -653,9 +659,9 @@ An explicit `validate --current --ffprobe ...` check also rehashes the Episode 1
 gallery inputs, registered subtitle and locator baseline after cleanup; logical `validate` alone
 does not make that current-media claim.
 
-This manually checked cleanup uses the already tested command; it does not implement Stage 5's
-episode-finish preview/provenance gate or complete its regeneration-from-durable-records test.
-Stages 4–5 remain unstarted. No workbook, generated locator, category/context annotation,
+At Stage 3 completion, this manually checked cleanup used the already tested command; it did not
+implement Stage 5's episode-finish preview/provenance gate or regeneration-from-durable-records test.
+Stages 4–5 were then unstarted. No workbook, generated locator, category/context annotation,
 other episode or Phase 3.2A change is included in Stage 3.
 
 ### Stage 3 commands
@@ -674,3 +680,212 @@ MATCHED result, reviewer and rationale. Registration never chooses those values 
 Revision of an existing anchor assessment requires explicit supersession; that authoring command
 is not implemented yet, so repeated registration of the same run/image is refused. Model proposals
 are recorded before independent testing; final assessment refuses changed frozen coefficients.
+
+## Stage 4 integration results — 2026-10-27
+
+**Status:** implemented, validated and confirmed by the maintainer on 2026-10-27. The maintainer reported that
+the new tabs open correctly in the native viewer and that EP-01 row 92 displays the direct time
+`00:06:38.940` separately from the mapping estimate `00:06:38.612`. Stage 5 was then unstarted;
+its subsequent results are recorded below.
+
+`projection.py` derives read-only timing views from the existing locator, supplement and alignment
+registers. `build_category_workbook.ps1` uses ImportExcel 7.8.10 to refresh the existing ignored
+`category-review.xlsx`. Its 30 worksheets include the original overview, 26 episode tabs and
+manual-supplement tab, plus **Alignment anchors** and **Alignment mappings**. All 9,204 gallery
+rows, nine supplements, 25 anchor assessments and two mapping-history records are preserved.
+Authored CSVs, original web/player labels, annotations and review statuses remain unchanged.
+
+### Derived fields and availability
+
+The seven required timing fields are implemented. Additional provenance columns are `anchor_id`,
+`anchor_status`, `alignment_input_id`, `alignment_method`, `alignment_reason` and
+`alignment_checked_utc`. Three numeric companions, `matched_local_start_seconds`,
+`matched_local_end_seconds` and `estimated_local_seconds`, support report calculations without
+parsing display labels. These values and the suggested search half-window are numeric or null;
+unavailable times are blank, never zero. IDs and `HH:MM:SS.mmm` display labels remain text.
+Exact rational values and decoded PTS remain authoritative in the alignment registers;
+millisecond display rounding does not establish millisecond accuracy.
+
+- `DIRECT_MATCH` supplies the accepted anchor interval. A bounded mapping estimate can coexist
+  in its separate column; neither replaces the other.
+- `MAPPING_ESTIMATE` requires a validated mapping with matching identity and a web label inside
+  its half-open domain. Ambiguous/candidate/no-match assessments never become direct matches.
+- `UNMAPPED` leaves unsupported times blank. Other episodes do not inherit Episode 1's mapping.
+- `PLAYER_LEAD` preserves manual supplements' unreconciled player labels in their original fields,
+  without inventing gallery associations or local timing.
+
+Default refresh checks locally available registration metadata and small-input digests, without
+rehashing the source video. Its available records read `RECORDED_UNCHECKED`. Explicit
+`-VerifyAlignmentMedia` performs the current pilot's source/input verification and records
+`VERIFIED_CURRENT` with a UTC check time. Missing or mismatched inputs read `MISSING` or
+`MISMATCH` and suppress derived image timings; historical raw evidence remains visible in the
+alignment tabs. An episode row can be `VERIFIED_CURRENT` and `UNMAPPED`: source identity passed,
+but no timing match or mapping covers that image. Availability is not a precision/confidence score.
+The original locator `alignment_status` remains `UNVERIFIED`; use the new derived fields for
+bounded timing provenance. Fresh verification currently follows the Episode 1 pilot contract.
+
+The verified pilot projection contains eight directly matched rows, 236 estimate-only rows and
+8,960 unmapped rows. The 244 rows with mapping coverage are limited to Episode 1 web labels
+06:40–20:40; the recommended search half-window remains two seconds.
+
+### Report-ready grains
+
+The disposable JSON projection provides separate arrays rather than expanding the gallery table:
+
+| Array | Grain / relationship | Pilot count |
+| --- | --- | ---: |
+| `gallery_timing` | One `image_key` (`episode_id:image_id`) per gallery locator | 9,204 |
+| `manual_timing` | One manual supplement key; separate from gallery counts | 9 |
+| `anchors` | One `anchor_id`; includes raw history and input identity | 25 |
+| `mappings` | One `mapping_id`; includes superseded and validated history | 2 |
+| `image_anchors` | Image key to anchor ID and input ID | 25 |
+| `image_mappings` | Image key to applicable validated mapping ID and input ID | 244 |
+| `mapping_anchors` | Mapping ID to anchor ID with FIT/HOLDOUT role and mapping status | 12 |
+
+Join bridges to their unique image/anchor/mapping keys. Filter mapping status explicitly when
+reporting current accepted coverage: the 12 mapping-anchor links include four superseded-proposal
+FIT links and eight validated FIT/HOLDOUT links. Do not flatten the bridges into the image fact
+table or count their rows as images. Conflicting identities, duplicate keys or overlapping active
+mapping coverage fail refresh instead of selecting an arbitrary record. No Power BI model or
+dashboard is built or published in this stage; JSON is a generated projection, not another authority.
+
+### Validation evidence
+
+The alignment suite passed **49 tests**, including 11 projection tests; the existing category suite
+passed **10 tests**. Projection fixtures cover interval/estimate separation, half-open boundaries,
+unaccepted history, missing/mismatched inputs, manual leads, unchanged source data, bridge grains,
+identity conflicts, blank versus zero, timestamp rounding and verification modes.
+
+The production workbook was saved and reopened with ImportExcel. Checks compared **432,588
+gallery cells**, **459 manual cells**, **1,029 alignment cells**, all **9,204 image links**, nine
+manual links and 25 anchor-to-gallery links. Overview totals and all 30 worksheet names passed.
+OpenXML inspection independently confirmed timestamp/ID string types, numeric second values and
+physically blank unsupported timing cells. No formulas are introduced. Input digest checks guard
+promotion; an intentionally invalid FFprobe path failed refresh and left the existing XLSX
+byte-identical. Temporary staging from that negative test was removed.
+
+Read-only rendering of the saved ImportExcel workbook covered the overview alignment summary,
+direct/estimated/unsupported Episode 1 rows, both alignment tabs, manual supplements and headers
+plus initial rows for all 26 episode tabs. Visual inspection found readable labels and distinct
+timing/availability states. Native-viewer feedback subsequently passed as recorded above.
+No source-video extraction, new image survey, CSV migration or Phase 3.2A work occurred.
+
+### Stage 4 commands
+
+Run with PowerShell 7 and installed ImportExcel; close Excel's workbook before refresh if locked.
+Use executable paths appropriate to the current host. No dependencies are installed automatically.
+
+```powershell
+./tools/reference-extraction/build_category_workbook.ps1 -Python <python.exe-path>
+./tools/reference-extraction/build_category_workbook.ps1 -Python <python.exe-path> -VerifyAlignmentMedia -FFprobe <ffprobe.exe-path>
+python tools/reference-alignment/projection.py --output .tmp/alignment-report.json
+python tools/reference-alignment/projection.py --output .tmp/alignment-report.json --verify-current --ffprobe <ffprobe.exe-path>
+```
+
+Projection outputs must remain inside repository `.tmp/`. Routine refresh neither decodes media
+nor downloads/restores archived galleries. Explicit verification needs its registered inputs
+available; failure preserves the existing workbook. Workbook values represent the last refresh,
+not continuous monitoring. No additional permanent workbook or projection CSV is created.
+
+## Stage 5 cleanup and reproduction results — 2026-10-27
+
+**Status:** implementation and bounded pilot validation passed; Stages 4–5 and the integrated
+procedure were accepted and confirmed by the maintainer on 2026-10-27. No episode review or
+Phase 3.2A work was started by Stage 5.
+
+`finish.py` adds a default read-only deletion preview for one episode. It validates the maintained
+registers and inventories only owned `ALNRUN-<32 lowercase hex digits>` directories beneath the
+resolved `reference/working/alignment/EP-NN/` boundary. Unknown entries, active runs, symlinks,
+Windows reparse points and unsafe paths are refused. Nonstandard files inside a run block removal
+because they may contain unique review material. Source media, gallery originals, supplements,
+contact sheets, caches and workbooks are outside this deletion boundary.
+
+Registered-result eligibility requires a durable assessed row for every run image, matching run
+manifest digest, input/image identity, role, search bounds and the complete retained recipe.
+Accepted frame hashes must also match the decoded files. Unresolved CANDIDATE rows block routine
+cleanup. AMBIGUOUS/NO_MATCH/REJECTED assessments remain legitimate durable outcomes; cleanup does
+not promote them or require a passing model. Registry validation checks referenced model history
+and votes independently. Missing source media does not destroy historical record validity.
+
+`--keep-output` explicitly retains output and reports eligibility/blockers. An unregistered failed
+or abandoned completed run can be named with `--discard-run`; that decision is distinct from
+validated-result cleanup. Discard refuses registered evidence and cannot bypass unexpected-file
+checks. Apply requires the exact inspected preview SHA-256. That digest covers run inventories,
+file bytes, register bytes and locator bytes; changes require a fresh preview. Search and registry
+writer locks are held during recheck/deletion. All runs are preflighted before deletion begins.
+Deletion is sequential rather than a filesystem transaction: an OS/lock failure is reported and
+remaining output is retained; inspect a fresh preview before retrying. A successful rerun on an
+empty episode is harmless. Preview creates only the existing one-byte writer lock files.
+
+`reproduce.py` verifies one accepted anchor against current registered inputs, checks the retained
+FFmpeg version, and regenerates its recorded native-frame seek window (at most one second).
+It parses the saved seek/duration rather than executing stored command text. Every retained
+accepted PNG hash must match; source modification during the operation is refused. Its private
+`.tmp/alignment-reproduction/` child directory is removed after success or failure. This proves
+decoded-frame reproducibility with the pinned decoder; it does not repeat visual interpretation
+or claim another FFmpeg build will produce byte-identical PNGs.
+
+### Validation evidence
+
+The complete alignment suite passed **64 tests**, with the actual FFmpeg synthetic decode enabled.
+The 15 added Stage 5 tests cover preview/keep/apply, idempotence, unchanged evidence/out-of-boundary
+media, stale file/register tokens, missing/unresolved assessments, changed manifests/frames,
+registered-discard refusal, explicit failed/abandoned discard, invalid/unknown paths and states,
+reparse-guard refusal, OS deletion failure/retry, unexpected unique files, decoder-version mismatch,
+bounded reproduction, frame-hash mismatch and cleanup after interrupted decoding. Reparse refusal
+is simulated at the path guard; these tests do not claim elevated Windows junction creation.
+
+Live validation ran after the original seven search runs had already been removed. All eight
+accepted Episode 1 anchors reproduced successfully: **188 decoded frames across eight one-second
+windows matched all 16 retained accepted-frame hashes**. Each window's temporary images/logs were
+removed immediately. Anchor IDs were `ALNANC-000005`, `000008`, `000009`, `000011`, `000016`,
+`000017`, `000019` and `000020` (all with the `ALNANC-` prefix).
+
+A fresh bounded single-image search for image `846859` created disposable run
+`ALNRUN-68a2f73af1304c0e8ff80c04693c7764`. Its unregistered candidate was correctly ineligible for
+routine result cleanup. Keep-output retained it; explicit unregistered-discard preview/apply then
+removed **75 files / 50,214,352 bytes**. No assessment or mapping was added. Registered-result
+deletion was exercised by deterministic fixtures; the live new run exercised unregistered discard.
+An empty-episode apply also passed. The final workspace contains no ALNRUN directories or
+reproduction child outputs. **33 index/register/subtitle inputs were byte-identical** before and
+after the pilot. The 25-anchor/two-mapping register still validates, and the explicit current-media
+check passed as `VERIFIED_CURRENT_EP01` after cleanup. The bounded mapping and uncertainty did not change.
+
+### Episode alignment procedure — accepted 2026-10-27
+
+1. Prepare the authorized episode's verified gallery inputs/contact sheets, website context and
+   pinned subtitle copy through the owning episode workflow. Read existing anchors, model limits
+   and unresolved work. Do not reuse another release's or episode's timing parameters.
+2. Validate maintained records. Request an explicit current-input verification before treating a
+   saved mapping as current; absent archived inputs require verified restoration, not silent reuse.
+   Unsupported regions stay unmapped. Narrative-only context can still be reviewed without a match.
+3. Where authorized and necessary, declare FIT/HOLDOUT roles before bounded searches. Visually
+   assess candidates, retain identities, PTS, recipes, rationale and unsuccessful/ambiguous results.
+   Freeze model coefficients before independent validation. Do not widen extraction automatically.
+4. Refresh the existing category workbook, checking direct intervals separately from estimates
+   and original player/web labels. Use estimates only to navigate; verify the actual scene and
+   surrounding subtitle intervals before making substantive dialogue/image associations.
+5. Before pruning gallery originals at episode completion, validate durable records and perform
+   any required current-media/reproduction checks. Preview alignment cleanup. Resolve missing
+   provenance or explicitly keep output for open review; discard unregistered runs only deliberately.
+6. Inspect the preview's exact runs, eligibility and byte counts, then apply its digest. Check that
+   eligible outputs are gone and records still validate. Do not put reproducible alignment frames
+   in the episode RAR. Archive gallery originals/supplements and retain contact sheets through the
+   separately accepted gallery retention procedure; then record the checkpoint and unresolved scope.
+
+```powershell
+python tools/reference-alignment/models.py validate --current --ffprobe <ffprobe.exe-path>
+python tools/reference-alignment/reproduce.py --anchor-id <accepted-anchor-id> --ffmpeg <ffmpeg.exe-path> --ffprobe <ffprobe.exe-path>
+python tools/reference-alignment/finish.py --episode 1
+python tools/reference-alignment/finish.py --episode 1 --keep-output
+python tools/reference-alignment/finish.py --episode 1 --apply --preview-sha256 <inspected-preview-digest>
+# Unregistered discard: include the same exact run selection in preview and apply.
+python tools/reference-alignment/finish.py --episode 1 --discard-run <exact-unregistered-ALNRUN-id>
+python tools/reference-alignment/finish.py --episode 1 --discard-run <exact-unregistered-ALNRUN-id> --apply --preview-sha256 <inspected-preview-digest>
+```
+
+The ordered episode workflow integrates timing preparation and cleanup per episode, rather than
+requiring full-show alignment before reviews resume. No additional batch, episode,
+installation, modeling or phase execution follows automatically. Current search, registration,
+source verification and reproduction commands retain the bounded Episode 1 pilot restriction;
+future episode support needs an explicit scoped increment and its own validation.
