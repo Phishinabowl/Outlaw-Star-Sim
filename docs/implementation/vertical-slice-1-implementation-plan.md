@@ -610,6 +610,24 @@ verify earlier batches or authorize additional media extraction. Existing scope 
 
 **Pass 1 — episode-by-episode annotated survey:**
 
+**Timing-alignment extension — proposal documented 2026-10-27:** the
+[tool proposal](../../tools/reference-alignment/README.md) owns its stages, storage and validation.
+Episode 1 screenshots support an approximate opening-only `local ≈ web − 2 s` search seed;
+no whole-episode or all-episode offset is verified. The existing numbered workflow remains in force.
+
+- [x] Document the alignment proposal and five-stage pilot sequence without implementing it.
+- [ ] Stage 1: define anchor/mapping CSV contracts, time bases, statuses, input identities,
+  precision limits, bounded resources and predetermined acceptance/holdout criteria.
+- [ ] Stage 2: implement and validate bounded matching against selected Episode 1 images;
+  inspect candidates and test ambiguity, failure, preservation and cleanup behavior.
+- [ ] Stage 3: validate separated Episode 1 anchors and independent holdouts, selecting a fixed,
+  drift or piecewise mapping only within supported ranges. Record subtitle-context checks and limits.
+- [ ] Stage 4: validate ImportExcel integration in the existing category workbook and report-ready
+  joins, keeping matched/estimated times separate and preserving original records and review states.
+- [ ] Stage 5: verify temporary-output cleanup and reproducibility, obtain procedure acceptance,
+  then integrate timing preparation into the ordered episode workflow. No automatic later-episode
+  processing or 3.2A execution is authorized by this proposal.
+
 - [x] Implement and validate the bounded contact-sheet/cache/RAR pilot against the
   [episode gallery tool proposal](../../tools/reference-extraction/README.md#episode-gallery-review-tool--proposal).
   Maintainer accepted the 24-image layout. Ten disposable-fixture tests, an offline cache repeat,

@@ -70,6 +70,10 @@ described as subtitle-assisted; revisit their specific open questions when this 
    gallery timestamp or assume a constant episode-wide offset. Record verified matches with their
    provenance; retain unverified associations as such. Dialogue can clarify a reported command or
    name without establishing which mechanism is visible, its dimensions or its complete motion.
+   The [alignment-tool proposal](../../../tools/reference-alignment/README.md) defines a staged
+   Episode 1 pilot for measured anchors, offset/drift/segment mappings and later workbook views.
+   It is not implemented or an accepted timing procedure; no fixed offset is established by
+   documenting the proposal. This step retains its current evidence limits until Stage 5 integration.
 
 7. **Review a bounded image batch.** Normally inspect three sheets (up to 72 images) together,
    with selected full-size checks for ambiguous identities or valuable details. Record individual
