@@ -73,10 +73,13 @@ described as subtitle-assisted; revisit their specific open questions when this 
    The [alignment-tool proposal](../../../tools/reference-alignment/README.md) defines a staged
    Episode 1 pilot for measured anchors, offset/drift/segment mappings and later workbook views.
    Stage 1's [alignment contract](../../../tools/reference-alignment/README.md#stage-1-data-contract-v1)
-   is defined; Stage 2's bounded five-image Episode 1 matcher and repeat pilot are tested.
-   Maintained alignment tables and timing-model fitting remain unimplemented. No fixed
-   offset is established by the contract. This step retains its current evidence limits until
-   Stage 5 integration and acceptance.
+   is implemented through the bounded Stage 3 pilot. The maintained `alignment-anchors.csv` and
+   `alignment-mappings.csv` preserve direct evidence, unresolved attempts and measured model
+   history. The pinned Episode 1 release has a validated navigation offset of -1.388 s only for
+   whole-second web labels 06:40–20:40; other regions/episodes remain unmapped. The tool doc owns
+   the [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).
+   Generated locator fields remain unchanged; workbook joins and the established timing procedure
+   await Stages 4–5 and acceptance.
 
 7. **Review a bounded image batch.** Normally inspect three sheets (up to 72 images) together,
    with selected full-size checks for ambiguous identities or valuable details. Record individual

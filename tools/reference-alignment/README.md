@@ -1,11 +1,11 @@
 # Episode alignment tool — proposal
 
-**Status — 2026-10-27:** proposal confirmed and published as `10678c8`. Stage 1's data contract
-and bounded test design are defined below. Stage 2's bounded candidate matcher is implemented
-and tested against the five declared Episode 1 images, with comparison sheets visually inspected.
-Maintained alignment CSVs, timing-model fitting and workbook integration remain unimplemented.
-Stages 3–5 require scoped continuation. No all-episode extraction or retrospective verification
-is implied. Changes following `10678c8` remain pending confirmation.
+**Status — 2026-10-27:** proposal published as `10678c8`; Stages 1–2 and the cleanup amendment
+were confirmed and published in checkpoint `2c31b99`. Stage 3's bounded Episode 1 validation is
+implemented and tested, with results and coverage limits below; its changes await confirmation.
+The two maintained alignment CSVs are initialized. Workbook integration and the accepted
+episode-finish procedure remain Stages 4–5. No all-episode extraction or whole-runtime timing
+claim is implied.
 
 ## Purpose and ownership
 
@@ -76,10 +76,11 @@ debugging or an unresolved review, rather than the default end state for every e
   candidates to accepted evidence. Such disposal must remain distinct from validated-result
   cleanup; the latter requires durable accepted-result provenance first.
 
-The Stage 2 prototype already provides explicit `cleanup --episode ... --run-id ...`, which
+The prototype provides explicit `cleanup --episode ... --run-id ...`, which
 deletes the entire named owned run. It does **not** yet check maintained alignment records or
-perform the planned episode-finish preview/provenance gate. Its retained Episode 1 pilot run is
-still needed for the current review; this retention decision does not authorize deleting it now.
+perform the planned episode-finish preview/provenance gate automatically. Stage 3 manually checked
+durable records and used this existing command to remove completed pilot outputs. That scoped
+cleanup does not complete Stage 5's automated episode-finish/procedure validation.
 
 Stage 1's contract implements these record requirements:
 
@@ -222,16 +223,17 @@ existing confirmation workflow and never includes source or derivative media imp
 
 ## Current completion boundary
 
-Proposal publication, Stage 1 contract design and the bounded Stage 2 matcher pilot are complete
-within their recorded scopes. Stage 1 used metadata only; Stage 2 added the executable, synthetic
-tests, selected-video hashing, bounded decoding, candidate comparison and duplicate-run cleanup
-documented below. No maintained alignment CSV initialization, accepted anchors, fitted model,
-timing-field change or workbook integration has occurred. Stages 3–5 remain unstarted.
+Stages 1–3 are technically complete within their recorded pilot scopes. Stage 3 adds reviewed
+anchor records, exact-rational model/registry validation and a measured navigation mapping for
+part of Episode 1. Unsupported regions and ambiguous/sampled no-match attempts remain explicit.
+No generated locator timing fields or existing survey annotations change. Workbook integration
+and the accepted integrated procedure remain unstarted Stages 4–5.
 
 ## Stage 1 data contract v1
 
 This section is authoritative for the new alignment records; the existing image-index README
-continues to own survey fields. It specifies later implementation, not currently available commands.
+continues to own survey fields. Stage 3 implements decoded-search records and model validation;
+player-only observation authoring and future workbook projections are not implemented commands.
 Maintain exactly two cross-episode CSVs with UTF-8, one header, standard CSV quoting and no formulas.
 Identifiers, digests, rational numbers, player labels and UTC values are text; numeric ordering
 fields are explicitly typed on import. Empty optional values mean unrecorded, never zero.
@@ -282,7 +284,7 @@ attempts/candidates for the same image are allowed. A revised assessment receive
 `supersedes_anchor_id`; preserve the earlier evidence and mark it SUPERSEDED explicitly. Refuse
 cycles, cross-image/input supersession and competing active accepted matches unless reconciled.
 
-Exact ordered header for later initialization:
+Exact ordered header:
 
 ```text
 anchor_id,episode_id,image_id,input_id,video_source,video_sha256,video_stream_index,video_time_base,media_origin_seconds,subtitle_stream_index,subtitle_sha256,subtitle_time_basis,subtitle_shift_seconds,locator_sha256,image_sha256,run_id,role,method,recipe_json,search_start_seconds,search_end_seconds,match_kind,status,local_start_pts,local_end_pts,player_timestamp,player_precision_seconds,candidate_score,runner_up_gap,reviewer,reviewed_utc,supersedes_anchor_id,notes
@@ -319,7 +321,7 @@ formula type. `supersedes_mapping_ids` lists earlier IDs separated by semicolons
 forbid cycles and reconcile replaced ranges explicitly. No two active VALIDATED mappings may
 overlap for the same episode/input; unresolved conflicts disable derived timing for that overlap.
 
-Exact ordered header for later initialization:
+Exact ordered header:
 
 ```text
 mapping_id,episode_id,input_id,segment_label,web_start_seconds,web_end_seconds,model,scale,offset_seconds,fit_anchor_ids,holdout_anchor_ids,status,max_fit_interval_error_seconds,median_holdout_interval_error_seconds,max_holdout_interval_error_seconds,max_anchor_width_seconds,estimated_half_window_seconds,method_version,reviewer,reviewed_utc,supersedes_mapping_ids,limitations
@@ -414,6 +416,24 @@ The planned Stage 3 image ordinals resolve in Episode 1's existing 354-row locat
 visual review of future batches or proof of a constant offset. No synthetic/live test has run,
 no anchor/mapping is initialized and no existing review/timing status changes as part of Stage 1.
 
+## Stage 3 execution selection — 2026-10-27
+
+The initial FIT/HOLDOUT partition remains unchanged. Initial FIT searches flagged five broad
+score regions; visual inspection does not justify precise points for those held/similar drawings.
+Preserve them as ambiguous attempts. Before additional matching or model fitting, declare
+supplementary FIT ordinals **084, 087, 204, 208, 257, 259, 328** (IDs 846856, 846859, 846976,
+846980, 847029, 847031, 847100). They target visible action, the spinning mid-episode graphic,
+the following display shot, combat and the caster effect. Selection uses existing gallery sheets,
+not measured residuals; no original HOLDOUT changes role. Gallery-sheet inspection also exposed
+the holdout thumbnails at 252/330 incidentally; their local matches remain unmeasured at this point
+and do not influence fitting-image selection or coefficients. Eyecatch graphics appear at
+204–207, between web 13:25 and 13:35; check both sides explicitly rather than assuming continuity.
+Before freezing coefficients or searching any holdout, add HOLDOUT ordinals **213, 258, 321**
+(IDs 846985, 847030, 847093), selected from visible hand/combat/projectile motion in the existing
+sheets. These supplement rather than replace the four original holdouts. They provide an explicit
+post-eyecatch check and additional moving shots if original samples are held or missed by coarse
+sampling. Keep every attempted result; do not discard a failed precise holdout to improve acceptance.
+
 ## Stage 2 prototype validation — 2026-10-27
 
 ### Implemented boundary
@@ -466,11 +486,13 @@ Subtitle stream 4 and the registered ASS digest matched; the first three ASS cue
 bounded time-axis check only. Whole-track synchronization, dialogue interpretation and separated
 subtitle-context checks remain Stage 3 work.
 
-The final run took **13.344 s**, saved **381 decoded PNGs**, and occupied **285,988,256 bytes**
+The final Stage 2 run took **13.344 s**, saved **381 decoded PNGs**, and occupied **285,988,256 bytes**
 (about **272.74 MiB**) after final manifest writing. Initial search coverage was 60 s; the sum
 of initial/refinement window widths was 66 s, a conservative upper bound on their union and
 within the 70 s cap. The duplicate earlier run was removed through `cleanup`; the retained
-run remains local and ignored for review. Synthetic test fixtures are removed automatically.
+run remained local and ignored for review at Stage 2 completion. Stage 3 subsequently retained
+its five leads in the anchor CSV and removed its disposable outputs. Synthetic fixtures are
+removed automatically.
 
 ### Regression evidence and remaining limits
 
@@ -517,3 +539,138 @@ python tools/reference-alignment/alignment.py cleanup --episode 1 --run-id <exac
 Cleanup validates the explicit resolved run path, run ID, owner manifest and descendants before
 recursive removal. It cannot delete a gallery cache, source directory or arbitrary path. This
 section records prototype behavior and validation; it is not yet the accepted integrated procedure.
+
+## Stage 3 validation results — 2026-10-27
+
+### Records, independence and visual assessments
+
+`models.py` adds reviewed-run registration, exact-rational OFFSET/LINEAR calculations, proposal
+freezing and register validation. It uses the ordered schemas above and initializes only
+`alignment-anchors.csv` and `alignment-mappings.csv`. Registration/model acceptance recomputes
+the full selected-video digest and checks source/gallery/subtitle/locator identities before
+writing. Changed input, invalid schema, stale votes or failed validation preserve existing files.
+Registry `validate` checks recorded evidence and calculations without assuming current media
+availability; its output explicitly reports `current_media_check=NOT_PERFORMED`.
+
+Each new Stage 3 image was searched only after its role was declared, with the unchanged scoring
+mask, thresholds and 12 s bounds. All 20 comparison packets were visually inspected. High scores
+were not sufficient for precise acceptance: held dialogue/credit drawings remain ambiguous,
+and the smoke/caster-effect searches did not establish corresponding drawings in sampled output.
+NO_MATCH here describes that bounded sampled attempt, not absence from the underlying episode.
+
+| Role | Ordinals accepted at decoded-frame/short-interval precision | Ambiguous | Sampled no-match |
+| --- | --- | --- | --- |
+| FIT | 087, 204, 257, 288 | 010, 072, 084, 144, 208, 216, 259, 348 | 328 |
+| HOLDOUT | 252, 258, 321, 330 | 108, 213 | 018 |
+
+No unresolved image was relabeled as a passing holdout or a precise failed holdout. Individual
+notes explain the visible mismatch/ambiguity; no original attempt was deleted from the register.
+The additional selections and incidental holdout-thumbnail exposure are recorded in the execution
+selection above. Selection was based on gallery content, not residuals, and no masks, thresholds,
+intervals or coefficients were tuned using holdout errors.
+
+`ALNMAP-000001` froze the OFFSET coefficients using FIT anchors 000005, 000008, 000009 and
+000011 **before any local holdout search**. It was PROPOSED and unvalidated at that point.
+After independent holdout inspection, `ALNMAP-000002` retained the exact same fit IDs and
+coefficients; the initial proposal is preserved as SUPERSEDED. Accepted holdouts are 000016,
+000017, 000019 and 000020. The remaining original/supplementary assessments retain their states.
+The five historical Stage 2 leads are also retained as four CANDIDATE and one AMBIGUOUS LEAD,
+without promotion or fitting votes. Final totals: **25 anchors; 8 MATCHED, 11 AMBIGUOUS,
+2 NO_MATCH, 4 CANDIDATE; 2 mapping-history rows, 1 VALIDATED**.
+
+### Validated mapping and coverage limits
+
+For the pinned Episode 1 CBM release/input identity recorded in Stage 2:
+
+`local_seconds = web_seconds − 347/250` (−1.388 s).
+
+| Measure | Observed result | Gate |
+| --- | --- | --- |
+| Independent FIT / HOLDOUT count | 4 / 4 | At least 3 / 2 for OFFSET |
+| Maximum fit interval error | 41/125 s = 0.328 s | ≤1 s |
+| Median holdout interval error | 471/2000 s = 0.2355 s | ≤0.5 s |
+| Maximum holdout interval error | 81/125 s = 0.648 s | ≤1 s |
+| Maximum accepted anchor interval width | 63/500 s = 0.126 s | ≤0.5 s |
+| Web-label applicability | `[400,1241)`, whole-second labels 06:40 through 20:40 | Checked-label envelope only |
+
+OFFSET passes; no live LINEAR model is justified under the predetermined simpler-model rule.
+The mapping is sampled navigation guidance with a suggested ±2 s search window, not exact
+frame synchronization or a bound on every uninspected instant. The opening, early story before
+06:40, and ending after 20:40 remain **unmapped**. Held original samples near the beginning/end
+are not converted into precise endpoints. No parameter is copied to another episode/release.
+
+The eyecatch is sampled at the spinning graphic (204) and following display/face shots (208/213).
+The latter corroborate the far-side scene at shot precision but are not model votes. Later precise
+holdouts pass without a coefficient change; no discontinuity was demonstrated at the inspected
+resolution. Sparse checks cannot prove uninterrupted frame correspondence through the break or
+exclude an unobserved short edit. More precise boundary/full-runtime coverage remains separate
+research when needed, not an implicit expansion of this validation.
+
+### Subtitle-context checks
+
+The registered ASS digest remains
+`edbb42674cf707b51122ddd54b132d16ffde7fe981b54f24170c155810d0b0f3`, stream 4, with the
+MEDIA_RELATIVE basis established by the bounded packet check. Two separated local intervals
+inside the supported navigation region were inspected:
+
+| ASS dialogue ordinal / local interval | Visual/context check |
+| --- | --- |
+| Cue 76, 396.64–402.84 s | The subtitle challenges Gene about the earlier Butch confrontation. Accepted local frame 398.940 s shows the coat/hand/torso bar confrontation; adjoining gallery/candidate views establish that scene context. |
+| Cue 198, 969.84–972.97 s | The subtitle demands that the woman be left behind. Saved local frame PTS 971012 (971.012 s) shows the blue-clad attacker's close-up in the alley, following the group composition at holdout 252. |
+
+These checks support scene-level dialogue lookup on the recorded local time axis. They do not
+verify the original Japanese wording, speaker identity from timing alone, continuous whole-track
+sync or an exact dialogue-to-gallery-frame match. Cue text was summarized rather than used to
+override the visible evidence or assign new survey tags. No existing annotation is retrospectively
+marked subtitle-reviewed by this pilot.
+
+### Tests, resources and disposable-output cleanup
+
+**38 tests pass**: the 22 matcher regressions plus 16 model/registry tests. Added cases cover
+negative offset sign, even-count medians, exact residual edges, holdout coefficient independence,
+recoverable drift, insufficient span/counts, invalid scale, unnecessary LINEAR fits, inadequate
+holdout improvement, planted step changes with separately passing segments, wide intervals,
+duplicate votes/IDs, identity/role/state mismatches, stored metric/coefficient corruption,
+half-open domain/extrapolation checks, conflicting validated coverage, supersession cycles,
+CSV round trips, stale-input refusal before registry writes and changed gallery bytes with an
+otherwise unchanged video/input identity. Synthetic step/drift tests do not
+assert those features exist in Episode 1. Current media availability is separate from record validity.
+
+Six Stage 3 runs searched 20 declared images and saved 1,478 decoded frames, occupying
+1,141,293,360 bytes in total; recorded processing time summed to 53.251 s. Each run stayed below
+the existing per-run 900-frame / 600 MiB / 15-minute cap; the largest used 359 frames and
+325,371,616 bytes. No automatic widening or full-episode frame dump occurred.
+
+After recording the complete methods/identities, actual accepted PTS/frame hashes, review notes,
+ambiguous/no-match attempts and model history, the six Stage 3 runs and retained Stage 2 run
+were removed with the existing explicit owned-run cleanup command. This removed **1,427,281,616
+bytes** (about 1.33 GiB), including 1,859 decoded PNGs and comparison/log output. Seven disposable
+assessment JSON inputs were also removed after their notes were retained in the CSV. No ALNRUN
+directory remains under the Episode 1 alignment workspace. Ten maintained-input/register/subtitle
+files have identical pre/post-cleanup hashes, and the 25-anchor / 2-mapping register validates
+after removal. Gallery images, contact sheets, source videos and subtitle files are preserved.
+An explicit `validate --current --ffprobe ...` check also rehashes the Episode 1 video, selected
+gallery inputs, registered subtitle and locator baseline after cleanup; logical `validate` alone
+does not make that current-media claim.
+
+This manually checked cleanup uses the already tested command; it does not implement Stage 5's
+episode-finish preview/provenance gate or complete its regeneration-from-durable-records test.
+Stages 4–5 remain unstarted. No workbook, generated locator, category/context annotation,
+other episode or Phase 3.2A change is included in Stage 3.
+
+### Stage 3 commands
+
+```powershell
+python tools/reference-alignment/alignment.py search --pilot-stage 3 --episode 1 --image-id <declared-image-id> --ffmpeg <ffmpeg.exe-path> --ffprobe <ffprobe.exe-path> --mask 0,204,320,240
+python tools/reference-alignment/models.py record --run-id <exact-ALNRUN-id> --assessments <local-reviewed-assessment.json> --ffprobe <ffprobe.exe-path>
+python tools/reference-alignment/models.py propose --fit <FIT-anchor-ids> --label <scope-label> --limitations <recorded-limits> --ffprobe <ffprobe.exe-path>
+python tools/reference-alignment/models.py propose --fit <same-FIT-ids> --holdout <reviewed-HOLDOUT-ids> --label <scope-label> --limitations <recorded-limits> --ffprobe <ffprobe.exe-path> --assess --supersedes <frozen-proposal-id>
+python tools/reference-alignment/models.py validate
+python tools/reference-alignment/models.py validate --current --ffprobe <ffprobe.exe-path>
+```
+
+Assessment inputs explicitly name image ID, status, match kind, supported start/end PTS for a
+MATCHED result, reviewer and rationale. Registration never chooses those values from scores.
+Revision of an existing anchor assessment requires explicit supersession; that authoring command
+is not implemented yet, so repeated registration of the same run/image is refused. Model proposals
+are recorded before independent testing; final assessment refuses changed frozen coefficients.

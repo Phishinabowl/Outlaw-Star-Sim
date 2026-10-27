@@ -626,8 +626,13 @@ no whole-episode or all-episode offset is verified. The existing numbered workfl
   record 22 passing tests, five visually inspected candidate shots and identical repeat results.
   Image 028 remains temporally ambiguous. The final run used 381 frames / about 273 MiB / 13.344 s;
   duplicate-run cleanup passed. No accepted anchors, timing model or workbook changes were made.
-- [ ] Stage 3: validate separated Episode 1 anchors and independent holdouts, selecting a fixed,
-  drift or piecewise mapping only within supported ranges. Record subtitle-context checks and limits.
+- [x] Stage 3: validate a bounded Episode 1 navigation mapping with four precise FIT anchors and
+  four independent HOLDOUTs; preserve ambiguous/no-match attempts. [Results and limits](../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27)
+  record `local = web - 1.388 s` for whole-second web labels 06:40–20:40 only, maximum holdout
+  error 0.648 s, two separated subtitle-context checks and 38 passing tests. Opening/early/ending
+  regions remain unmapped. The two CSV registers contain 25 assessments and proposal/validation
+  history. Completed pilot search outputs were removed after durable provenance checks; Stage 5's
+  integrated cleanup/procedure and reproduction tests remain pending. No workbook/locator changes.
 - [ ] Stage 4: validate ImportExcel integration in the existing category workbook and report-ready
   joins, keeping matched/estimated times separate and preserving original records and review states.
 - [ ] Stage 5: verify temporary-output cleanup and reproducibility, obtain procedure acceptance,

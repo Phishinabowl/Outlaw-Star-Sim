@@ -25,6 +25,10 @@ MAX_FRAMES = 900
 MAX_BYTES = 600 * 1024**2
 MAX_SECONDS = 900
 PROTOTYPE = {'846774', '846776', '846800', '846823', '846843'}
+STAGE3_ROLES = dict.fromkeys(['846782','846844','846916','846988','847060','847120'],'FIT')
+STAGE3_ROLES.update(dict.fromkeys(['846790','846880','847024','847102'],'HOLDOUT'))
+STAGE3_ROLES.update(dict.fromkeys(['846856','846859','846976','846980','847029','847031','847100'],'FIT'))
+STAGE3_ROLES.update(dict.fromkeys(['846985','847030','847093'],'HOLDOUT'))
 
 
 def ratio(value):
@@ -321,13 +325,13 @@ def comparison_sheet(gallery, records, groups, destination, label, rectangles):
     canvas.save(destination)
 
 
-def search(root, episode, selected, ffmpeg, ffprobe, rectangles):
+def search(root, episode, selected, ffmpeg, ffprobe, rectangles, pilot_stage=2):
     root = Path(root).absolute()
     if not 1 <= episode <= 26 or not 1 <= len(selected) <= 5 or len(set(selected)) != len(selected):
         raise ValueError('Select one episode and 1-5 unique image IDs')
-    # Stage 2 deliberately cannot consume later pilot/holdout images or other episodes.
-    if episode != 1 or not set(selected) <= PROTOTYPE:
-        raise ValueError('Stage 2 scope is the five declared Episode 1 prototype images')
+    allowed = PROTOTYPE if pilot_stage==2 else set(STAGE3_ROLES) if pilot_stage==3 else set()
+    if episode != 1 or not set(selected) <= allowed:
+        raise ValueError('Selection outside the declared Episode 1 pilot stage')
     mask, retained = masks_checked(rectangles)
     base = safe_path(root, f'reference/working/alignment/EP-{episode:02d}')
     with writer(base):
@@ -336,7 +340,7 @@ def search(root, episode, selected, ffmpeg, ffprobe, rectangles):
         stage.mkdir()
         budget = Budget(stage)
         started = time.monotonic()
-        manifest = {'owner': VERSION, 'run_id': run_id, 'created_utc': datetime.now(timezone.utc).isoformat(), 'status': 'RUNNING', 'results': []}
+        manifest = {'owner': VERSION, 'run_id': run_id, 'pilot_stage':pilot_stage, 'declared_roles':{i:STAGE3_ROLES[i] if pilot_stage==3 else 'LEAD' for i in selected}, 'created_utc': datetime.now(timezone.utc).isoformat(), 'status': 'RUNNING', 'results': []}
         tracked = []
         try:
             source, images, identity, probe, subtitle_check, duration = inspect_inputs(root, episode, selected, ffprobe, budget)
@@ -395,7 +399,7 @@ def search(root, episode, selected, ffmpeg, ffprobe, rectangles):
                 for group in groups[:3]:
                     top=max(group,key=lambda r:(r['score'],-r['local']))
                     group_data.append(dict(start=ratio(group[0]['local']),end=ratio(group[-1]['local']),best_pts=top['pts'],best_local=ratio(top['local']),score=ratio(top['score'])))
-                result=dict(image_id=image['image_id'],web_seconds=image['web_seconds'],image_sha256=image['image_sha256'],search_start=ratio(start),search_end=ratio(end),role='LEAD',status='CANDIDATE',diagnostic=state,runner_up_gap=ratio(gap) if gap is not None else None,clusters=group_data,frames=output)
+                result=dict(image_id=image['image_id'],web_seconds=image['web_seconds'],image_sha256=image['image_sha256'],search_start=ratio(start),search_end=ratio(end),role=manifest['declared_roles'][image['image_id']],status='CANDIDATE',diagnostic=state,runner_up_gap=ratio(gap) if gap is not None else None,clusters=group_data,frames=output)
                 manifest['results'].append(result)
                 atomic(stage/'run.json',encode(manifest)); budget.check()
                 print(json.dumps({'image_id':image['image_id'],'diagnostic':state,'top':group_data[:1]}),flush=True)
@@ -434,6 +438,7 @@ def main():
     sub=commands.add_parser('search')
     sub.add_argument('--episode',type=int,required=True)
     sub.add_argument('--image-id',action='append',required=True)
+    sub.add_argument('--pilot-stage',type=int,choices=(2,3),default=2)
     sub.add_argument('--ffmpeg',default=shutil.which('ffmpeg'))
     sub.add_argument('--ffprobe',default=shutil.which('ffprobe'))
     sub.add_argument('--mask',action='append',default=[],help='Explicit normalized rectangle x0,y0,x1,y1; maximum 30 percent union')
@@ -442,7 +447,7 @@ def main():
     try:
         if args.command=='search':
             if not args.ffmpeg or not args.ffprobe:raise ValueError('Locate installed FFmpeg/FFprobe explicitly; no automatic installation')
-            path=search(ROOT,args.episode,args.image_id,args.ffmpeg,args.ffprobe,[list(map(int,box.split(','))) for box in args.mask])
+            path=search(ROOT,args.episode,args.image_id,args.ffmpeg,args.ffprobe,[list(map(int,box.split(','))) for box in args.mask],args.pilot_stage)
             print(json.dumps({'run':str(path),'status':'COMPLETE_CANDIDATES','authored_tables_changed':False}))
         else:
             cleanup(ROOT,args.run_id,args.episode);print(json.dumps({'removed_run':args.run_id}))
