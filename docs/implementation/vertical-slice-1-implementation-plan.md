@@ -567,6 +567,12 @@ The 2026-10-26 context-tool planning addition supports this checkpoint without r
 or reopening completed Phase 3.1. The source-context register complements the image survey and
 must preserve secondary claims separately from anime/settei observations.
 
+The [ordered episode-review workflow](../../reference/indexes/animehistory/README.md#ordered-episode-review-workflow)
+owns the operational sequence, including download/restore and contact-sheet checks before website
+and full-subtitle preparation, bounded annotated batches, corrections, validation and verified
+archive/prune. The subtitle-context integration was adopted on 2026-10-27; it does not retroactively
+verify earlier batches or authorize additional media extraction. Existing scope gates remain in force.
+
 **Source-context preparation — before the next episode survey:**
 
 - [x] Agree on a modular AnimeHistory/Fandom tool direction and shared research/storage layout;

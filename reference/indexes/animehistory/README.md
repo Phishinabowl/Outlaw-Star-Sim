@@ -17,6 +17,107 @@ Initial cache completed October 6, 2026 (America/New_York): **26 episodes, 104 g
 - manifest.json records expected/actual counts, page URLs, retrieval timestamps, raw-HTML hashes, and coverage ranges.
 - Original HTML and per-page retrieval sidecars live under ignored reference/cache/animehistory/. They can be reparsed without visiting the site. No screenshots, CSS, scripts, or other linked assets are downloaded.
 
+## Ordered episode-review workflow
+
+**Adopted — 2026-10-27:** this section owns the end-to-end sequence. The
+[implementation plan](../../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+owns episode order and phase authorization; tool documents own commands and their validation.
+The subtitle-context step is newly integrated here. Earlier batches are not retrospectively
+described as subtitle-assisted; revisit their specific open questions when this step is applied.
+
+1. **Select the episode and resume point.** Follow the planned episode order: Episode 4 first,
+   then 1–3 and 5–26. Read existing annotation/context records, unresolved questions and the last
+   reviewed image key. Preserve completed work and stable IDs. Confirm available gallery locators,
+   source caches and episode archive state; preparation does not mark images reviewed.
+
+2. **Download or restore the gallery images.** Use the existing
+   [gallery tool](../../../tools/reference-extraction/README.md#episode-gallery-review-tool--proposal)
+   to prepare the selected episode, resuming verified cache entries. Restore an existing verified
+   RAR when appropriate instead of downloading duplicates. Verify expected/cached/failed/missing
+   counts, decoding and hashes. Keep unavailable images explicit; sampled gallery coverage is not
+   full-video coverage. Source episodes remain immutable.
+
+3. **Generate and verify contact sheets.** Use chronological 24-image sheets with stable image
+   IDs, ordinals and web timestamp labels. Check the sheet registry, hashes, dimensions and ordered
+   mapping to the locators; visually inspect representative layouts. Keep sheets in the episode's
+   folder under `reference/contact-sheets/animehistory-review/`. Do not infer local-video timing
+   or detailed machinery motion from the sheet labels or sampled endpoints.
+
+4. **Prepare the website context.** Read the episode summary and reuse relevant existing context
+   records. Retrieve only selected character, ship, location, equipment or lore pages needed for
+   the episode through the [context tool](../../../tools/reference-context/README.md#proposed-routine).
+   Inspect source sections and warnings, retain version/hash and attribution, and record concise
+   useful assertions in the context register. Keep episode boundaries, continuity, interpretation,
+   conflicting claims and uncertain identity matches explicit. Website assertions remain secondary
+   unless separately corroborated within a stated primary-evidence scope.
+
+5. **Prepare the subtitle context.** Reuse the full English dialogue ASS copy at
+   `reference/working/performance-subtitles/episode-NN.ass`. Verify its hash, episode/source
+   filename and selected track against the existing [subtitle coverage/provenance index](../performance-subtitle-coverage.json).
+   Read the episode's full ordered dialogue, not just the earlier performance-keyword candidates,
+   to understand names, speakers where supported, commands, action context and scene progression.
+   Revisit surrounding lines while reviewing ambiguous images. These are translated English
+   subtitles, not a verified English-dub transcript or original-Japanese transcription; formatting
+   or an empty speaker field must not be turned into a guessed speaker identity. Preserve source,
+   track/hash and local start/end intervals for substantive subtitle-based findings, using existing
+   annotation/evidence fields and linked reviews. Full subtitle text remains ignored/local-only.
+   Missing or mismatched copies are a recorded preparation gap; do not silently rerun the
+   all-episode extraction or treat the performance-audit status as dialogue verification.
+
+6. **Relate dialogue to scenes carefully.** Subtitle times follow the indexed local release;
+   website times remain unaligned until matching shots are checked. Use narrative context to form
+   identification leads, but do not automatically attach a subtitle to the numerically nearest
+   gallery timestamp or assume a constant episode-wide offset. Record verified matches with their
+   provenance; retain unverified associations as such. Dialogue can clarify a reported command or
+   name without establishing which mechanism is visible, its dimensions or its complete motion.
+
+7. **Review a bounded image batch.** Normally inspect three sheets (up to 72 images) together,
+   with selected full-size checks for ambiguous identities or valuable details. Record individual
+   visible summaries, overlapping category/subject/detail tags, presentation, chronological scene
+   groups, confidence, priority, revisit reasons and screening provenance. Use the websites and
+   subtitles during the review rather than deferring every ambiguity to maintainer recollection.
+   Keep visible content, translated dialogue, secondary claims and attributed maintainer context
+   distinguishable. INITIAL_REVIEW_COMPLETE records annotated-survey depth; NEEDS_RECHECK can
+   remain for a material identity or interpretation question. Do not promote to targeted
+   PARTIAL/REVIEWED without the required scoped evidence record.
+
+8. **Report findings and incorporate corrections.** Present a bulleted batch review with image
+   ordinals/ranges, distinctive per-image callouts, valuable references and remaining questions.
+   Incorporate supplied corrections with attribution. Register supplemental manual screenshots
+   with stable episode-specific IDs, original hashes, local-player times, provenance and relevant
+   gallery associations; do not fabricate archive alignment or drop unsupported uncertainty.
+   Reuse existing context records and add justified links rather than duplicating claims or
+   overwriting existing observations.
+
+9. **Validate, refresh and repeat.** Validate image/supplement annotations, context records,
+   source caches, link targets and review-state requirements. Check that out-of-batch records,
+   stable IDs and the full locator inventory are preserved. Refresh the generated ImportExcel
+   category/context workbooks, verify saved values/links and inspect affected views. Authoritative
+   edits remain in the textual records. Continue from the next pending image key within the
+   authorized episode, repeating steps 6–9; no batch download or workbook refresh counts as review.
+
+10. **Check episode coverage and unresolved work.** Account for every sampled locator and
+    registered supplement, preserving unavailable/unreviewed states and named recheck queues.
+    Reconcile corrections and useful source/subtitle context; retain targeted full-size/video,
+    translation and design questions for later work. Do not call incomplete coverage complete or
+    require every reconstruction question to be settled before finishing an initial survey.
+
+11. **Archive and remove expanded episode images.** Follow the accepted
+    [retention/recovery procedure](../../../tools/reference-extraction/README.md#episode-retention-and-supplement-recovery--accepted-2026-10-26):
+    package gallery originals and all registered episode supplements in the episode RAR; verify
+    integrity, staged restoration, inventory and hashes before promotion or pruning. Then remove
+    both expanded gallery images and registered supplemental originals. Retain contact sheets,
+    sheet registry, RAR/recovery receipt, maintained records and generated workbooks. Verify final
+    status and refresh availability displays. Cited website caches and existing subtitle copies
+    have separate provenance/retention and are not deleted by episode-image pruning. Remove only
+    identified disposable preparation/preview artifacts; do not sweep unrelated working files.
+
+12. **Record the checkpoint and next scope.** Summarize coverage, retained artifacts, cleanup
+    evidence and unresolved questions. Leave changes uncommitted until confirmation through the
+    existing Git workflow; confirmation may cover several batches rather than require a commit
+    after each one. Advance to the next episode only within explicit scoped authorization.
+    The later Power BI/cross-episode synthesis and Phase 3.2A boundaries remain unchanged.
+
 ## Episode 1 preparation — 2026-10-26
 
 Authorized preparation downloaded all 354 sampled gallery images (IDs 846773–847126,

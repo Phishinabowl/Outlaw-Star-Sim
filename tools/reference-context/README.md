@@ -437,6 +437,11 @@ observation or a guarantee of compatibility with every viewer/version.
 
 ### Proposed routine
 
+This source-context routine is one part of the authoritative
+[ordered episode-review workflow](../../reference/indexes/animehistory/README.md#ordered-episode-review-workflow),
+which places image/contact-sheet preparation first and integrates existing subtitle context before
+batch review. The commands and source-cache rules below remain owned by this tool document.
+
 1. Select the current episode or a bounded research question. Reuse existing subject IDs and
    image keys. Check the maintained context tables and offline cache before collecting more text.
 2. Retrieve only explicitly selected Fandom titles with `fetch`, or selected supported AnimeHistory
