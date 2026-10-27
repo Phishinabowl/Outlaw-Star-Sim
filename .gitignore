@@ -10,6 +10,8 @@
 # Regenerated AnimeHistory review workbook; textual CSVs remain authoritative
 /reference/indexes/animehistory/animehistory-review.xlsx
 /reference/indexes/animehistory/category-review.xlsx
+# Generated cross-site context browsing workbook; maintained CSVs remain trackable
+/reference/indexes/context/context-review.xlsx
 
 # Unreal generated files; authored source and content remain trackable
 /Unreal/**/Binaries/

@@ -1,10 +1,12 @@
 # Local reference workflow
 
-The proposed [cross-site context tool](../tools/reference-context/README.md) adds a shared
+The [cross-site context tool](../tools/reference-context/README.md) adds a shared
 `reference/indexes/context/` collection for condensed AnimeHistory/Fandom research, with separate
 local source caches under `reference/cache/context/` and disposable work under
-`reference/working/context/`. The proposal owns the layout and pilot design; these data files and
-the reusable tool are not implemented yet. The
+`reference/working/context/`. The tool record owns the layout, usage and bounded validation.
+The [data contract](indexes/context/README.md), both adapters, maintained Episode 4 pilot and
+ImportExcel workbook passed their staged checks. Stage 5's bounded procedure is accepted after
+maintainer-reported native filtering and link checks; further episode surveys remain unstarted. The
 [pre-3.2A checkpoint](../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns execution order. Existing image indexes, media archives and observations retain their ownership.
 

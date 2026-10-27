@@ -55,9 +55,11 @@ were accepted on 2026-10-26; further episode surveys remain unstarted. See the
 The agreed next research direction adds a shared AnimeHistory/Fandom context register and modular
 tool to reduce repeated context lookup during the remaining surveys. The
 [tool proposal](../../tools/reference-context/README.md) records storage, evidence boundaries and
-successful bounded anonymous Fandom API/XML comparisons. The reusable tool, context tables and
-workbook remain unimplemented; the current increment documents the proposal only. Validate a
-bounded Episode 4 context pilot before resuming the remaining episode surveys.
+successful bounded anonymous Fandom API/XML comparisons. All five tool stages are complete within
+their documented scope: the shared contract, both adapters, maintained Episode 4 context tables
+and ImportExcel workbook passed 53 tests and bounded live API/XML/HTML/cache checks. Stage 5's
+procedure was accepted after maintainer-reported native filtering and link checks. The pilot
+contains 18 context records with explicit research limits; remaining episode surveys have not resumed.
 Phase 3.2A remains unstarted and separately authorized.
 
 The October 7, 2026 planning authorization superseded the earlier hold on
@@ -571,14 +573,34 @@ must preserve secondary claims separately from anime/settei observations.
   document the [proposal and access evidence](../../tools/reference-context/README.md).
   Bounded anonymous Fandom API retrieval matched all three test XML articles exactly. This is
   access feasibility, not acceptance of a reusable tool or an established operating procedure.
-- [ ] Finalize source-context table fields, link grain, review vocabulary and attribution rules;
-  implement the proposed shared core, site adapters and ImportExcel browsing view in an authorized
-  increment. Keep source responses local-only and maintained condensed research separate from
-  generated projections. No recurring manual Fandom export is part of the intended workflow.
-- [ ] Validate a bounded Episode 4 context pilot, cache/refresh/error handling, source comparison,
-  preservation of existing annotations and workbook/report joins. Record results and obtain
-  procedure acceptance before resuming the remaining episode surveys. Do not bulk-ingest either
-  site or treat fetched summaries as verified primary evidence.
+- [x] Define Stage 1's [shared data contract v1](../../reference/indexes/context/README.md):
+  ordered fields, stable IDs, link grain, continuity, source/primary review distinctions,
+  attribution and common adapter/cache output. Design checks cover existing image keys and
+  Fandom fixtures; no CSV initialization, implementation or runtime validation is implied.
+- [x] Implement and validate Stage 2's shared core with Fandom first. The
+  [bounded pilot](../../tools/reference-context/README.md#stage-2-commands-and-evidence--2026-10-26)
+  passed 30 tests, anonymous three-article fetch/refresh, exact XML comparison, offline cache reuse,
+  XML import and immutable-source reparse. Unresolved templates remain explicitly PARTIAL.
+  Existing annotations are unchanged; no maintained CSVs or workbook initialized.
+- [x] Implement and validate Stage 3's AnimeHistory adapter using public HTML and advertised
+  sitemap discovery. The [bounded pilot](../../tools/reference-context/README.md#stage-3-commands-and-evidence--2026-10-26)
+  passed robots checks, hub/profile/lore boundaries, anchor deduplication, offline reading/reparse,
+  refresh/version retention and 48 tests including Fandom regressions. No bulk article collection,
+  maintained CSV initialization or new episode survey is implied.
+- [x] Validate Stage 4's combined Episode 4 editorial pilot and ImportExcel browsing view.
+  The [scoped results](../../tools/reference-context/README.md#stage-4-commands-and-evidence--2026-10-26)
+  cover 18 context records, seven source versions, 14 subjects, 76 links, 53 tests and reopened
+  workbook values/hyperlinks. One missile naming recheck and one draft lead remain explicit;
+  only one narrow placement assertion is primary corroborated against an existing evidence record.
+  Keep source responses local-only and maintained condensed research separate from generated
+  projections. No recurring manual Fandom export is part of the intended workflow.
+- [x] Complete Stage 5 procedure acceptance after review of the bounded pilot results and native
+  workbook browsing. The [closeout](../../tools/reference-context/README.md#stage-5-closeout--2026-10-26)
+  records scoped duplicate-export/preview cleanup, retained pinned caches and the proposed routine.
+  Accepted 2026-10-26 after the maintainer reported successful Context filtering, source website
+  navigation and internal subject links. Research rechecks remain explicit. Publication and further
+  surveys do not start automatically. Do not bulk-ingest either site or treat fetched summaries as
+  verified primary evidence. Phase 3.2A remains unstarted.
 
 **Pass 1 — episode-by-episode annotated survey:**
 

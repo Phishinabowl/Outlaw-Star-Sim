@@ -1,0 +1,15 @@
+subject_id,display_name,subject_type,aliases,identity_status,identification_cues,notes
+xgp,Outlaw Star / XGP,SHIP,XGP15A-II;Outlaw Star,ESTABLISHED,,Existing image-index identity; aliases are lookup labels.
+hilda,Hilda,CHARACTER,Hot Ice Hilda;Rachel Sweet,ESTABLISHED,,
+horus,Horus,SHIP,,ESTABLISHED,,Keep the main ship separate from horus_dropship.
+horus_dropship,Horus dropship,SHIP,Hilda's dropship,ESTABLISHED,,Existing survey identity; no dimensions or canonical model designation established here.
+gene_starwind,Gene Starwind,CHARACTER,Gene,ESTABLISHED,,
+gene_escape_pod,Gene's childhood escape pod,EQUIPMENT,,ESTABLISHED,,Existing survey identity; no recovered model specification.
+el_dorado,El Dorado,SHIP,,ESTABLISHED,,Explicit wiki-title lookup returned NOT_FOUND during this pilot; no successful source record was created for that title.
+halcyon_missile,Halcyon missile (provisional spelling),WEAPON,Helicon missile (unverified equivalence),PROVISIONAL,,Existing halcyon_missile ID retained. Maintainer reports the earlier Halcyon spelling was probably a typo (2026-10-26); primary terminology/equivalence check against SET-112 remains open. Distinct from initial small nose-launched projectiles.
+melfina,Melfina,CHARACTER,,ESTABLISHED,,
+gilliam,Gilliam II,CHARACTER,Gilliam,ESTABLISHED,,Ship AI identity; individual maintenance units are not automatically the same physical object.
+jim_hawking,Jim Hawking,CHARACTER,Jim,ESTABLISHED,,
+ron_macdougall,Ron MacDougall,CHARACTER,Ron,ESTABLISHED,,
+harry_macdougall,Harry MacDougall,CHARACTER,Harry,ESTABLISHED,,
+xgp_hangar_asteroid,XGP hangar asteroid,LOCATION,,ESTABLISHED,,Facility identity only; inconsistent Farfallus/Farfallas and star/planet wording in secondary sources is not resolved here.

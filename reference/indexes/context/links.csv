@@ -1,0 +1,77 @@
+link_id,context_id,relation,target_type,target_id,notes
+CTXLINK-000001,CTX-000001,ABOUT,SUBJECT,horus,
+CTXLINK-000002,CTX-000001,MENTIONS,SUBJECT,hilda,
+CTXLINK-000003,CTX-000001,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000004,CTX-000001,CONTEXT_FOR_IMAGE,IMAGE,EP-04:847853,"Existing survey identifies Horus; contextual association, not fresh image verification."
+CTXLINK-000005,CTX-000002,ABOUT,SUBJECT,hilda,
+CTXLINK-000006,CTX-000002,ABOUT,SUBJECT,horus,
+CTXLINK-000007,CTX-000002,MENTIONS,SUBJECT,xgp,
+CTXLINK-000008,CTX-000002,MENTIONS,SUBJECT,gene_starwind,
+CTXLINK-000009,CTX-000002,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000010,CTX-000002,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848127,Existing survey identifies the main Horus cockpit.
+CTXLINK-000011,CTX-000003,ABOUT,SUBJECT,hilda,
+CTXLINK-000012,CTX-000003,ABOUT,SUBJECT,horus_dropship,
+CTXLINK-000013,CTX-000003,MENTIONS,SUBJECT,horus,
+CTXLINK-000014,CTX-000003,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000015,CTX-000003,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848135,Existing survey identifies the dropship cockpit.
+CTXLINK-000016,CTX-000003,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848140,Existing survey identifies the dropship cockpit.
+CTXLINK-000017,CTX-000003,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848146,Existing survey identifies Hilda preparing her suit inside the dropship.
+CTXLINK-000018,CTX-000004,ABOUT,SUBJECT,hilda,
+CTXLINK-000019,CTX-000004,ABOUT,SUBJECT,xgp,
+CTXLINK-000020,CTX-000004,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000021,CTX-000005,ABOUT,SUBJECT,hilda,
+CTXLINK-000022,CTX-000005,ABOUT,SUBJECT,xgp,
+CTXLINK-000023,CTX-000005,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000024,CTX-000006,ABOUT,SUBJECT,xgp_hangar_asteroid,
+CTXLINK-000025,CTX-000006,ABOUT,SUBJECT,xgp,
+CTXLINK-000026,CTX-000006,MENTIONS,SUBJECT,hilda,
+CTXLINK-000027,CTX-000006,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000028,CTX-000006,CONTEXT_FOR_IMAGE,IMAGE,EP-04:847857,Existing survey identifies the asteroid and main bay doors; no metric geometry implied.
+CTXLINK-000029,CTX-000007,ABOUT,SUBJECT,xgp,
+CTXLINK-000030,CTX-000007,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000031,CTX-000008,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000032,CTX-000008,ABOUT,SUBJECT,xgp,
+CTXLINK-000033,CTX-000008,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000034,CTX-000009,ABOUT,SUBJECT,melfina,
+CTXLINK-000035,CTX-000009,ABOUT,SUBJECT,xgp,
+CTXLINK-000036,CTX-000009,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000037,CTX-000010,ABOUT,SUBJECT,gilliam,
+CTXLINK-000038,CTX-000010,ABOUT,SUBJECT,xgp,
+CTXLINK-000039,CTX-000010,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000040,CTX-000011,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000041,CTX-000011,ABOUT,SUBJECT,gene_escape_pod,
+CTXLINK-000042,CTX-000011,MENTIONS,SUBJECT,el_dorado,
+CTXLINK-000043,CTX-000011,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000044,CTX-000011,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848085,Existing flashback grouping; exact edit/timing is not established by the article.
+CTXLINK-000045,CTX-000011,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848086,"Existing survey associates the golden ship; the article links that ship label to El Dorado, whose explicit title lookup was missing."
+CTXLINK-000046,CTX-000011,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848087,Existing survey identifies younger Gene in the escape-pod sequence.
+CTXLINK-000047,CTX-000012,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000048,CTX-000012,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000049,CTX-000013,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000050,CTX-000013,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000051,CTX-000013,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848088,"Context for the existing flashback/reaction grouping, not proof from this portrait alone."
+CTXLINK-000052,CTX-000014,ABOUT,SUBJECT,halcyon_missile,
+CTXLINK-000053,CTX-000014,MENTIONS,SUBJECT,ron_macdougall,
+CTXLINK-000054,CTX-000014,MENTIONS,SUBJECT,harry_macdougall,
+CTXLINK-000055,CTX-000014,MENTIONS,SUBJECT,el_dorado,
+CTXLINK-000056,CTX-000014,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000057,CTX-000014,CONTEXT_FOR_IMAGE,IMAGE,EP-04:EP-04-MAN-003,Existing supplemental deployment/launch sequence. Naming equivalence is unverified; original PNG may require RAR recovery.
+CTXLINK-000058,CTX-000014,CONTEXT_FOR_IMAGE,IMAGE,EP-04:EP-04-MAN-004,Existing supplemental deployment/launch sequence. Naming equivalence is unverified; original PNG may require RAR recovery.
+CTXLINK-000059,CTX-000014,CONTEXT_FOR_IMAGE,IMAGE,EP-04:EP-04-MAN-005,Existing supplemental deployment/launch sequence. Naming equivalence is unverified; original PNG may require RAR recovery.
+CTXLINK-000060,CTX-000014,CONTEXT_FOR_IMAGE,IMAGE,EP-04:EP-04-MAN-006,Existing supplemental deployment/launch sequence. Naming equivalence is unverified; original PNG may require RAR recovery.
+CTXLINK-000061,CTX-000014,CONTEXT_FOR_IMAGE,IMAGE,EP-04:EP-04-MAN-007,Existing supplemental deployment/launch sequence. Naming equivalence is unverified; original PNG may require RAR recovery.
+CTXLINK-000062,CTX-000015,ABOUT,SUBJECT,melfina,
+CTXLINK-000063,CTX-000015,ABOUT,SUBJECT,xgp,
+CTXLINK-000064,CTX-000015,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000065,CTX-000016,ABOUT,SUBJECT,xgp,
+CTXLINK-000066,CTX-000016,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000067,CTX-000017,ABOUT,SUBJECT,xgp,
+CTXLINK-000068,CTX-000017,MENTIONS,SUBJECT,gene_starwind,
+CTXLINK-000069,CTX-000017,MENTIONS,SUBJECT,melfina,
+CTXLINK-000070,CTX-000017,MENTIONS,SUBJECT,jim_hawking,
+CTXLINK-000071,CTX-000017,MENTIONS,SUBJECT,gilliam,
+CTXLINK-000072,CTX-000017,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research relevance; not a claim that all described backstory occurs in this episode.
+CTXLINK-000073,CTX-000018,ABOUT,SUBJECT,horus,
+CTXLINK-000074,CTX-000004,SAME_ASSERTION_AS,CONTEXT,CTX-000005,Same reported escape-cover assertion on two pages of the same site; not independent corroboration.
+CTXLINK-000075,CTX-000012,SAME_ASSERTION_AS,CONTEXT,CTX-000013,Same secondary interpretation across sites; independence and primary evidence are not established.
+CTXLINK-000076,CTX-000015,CHECKED_AGAINST,EVIDENCE,reference/indexes/episode-04-startup-review.md,Existing Visually reviewed observations at 10:42.016 and 14:05.011 corroborate only the apparatus-behind-seats relationship; no new primary media inspection.
