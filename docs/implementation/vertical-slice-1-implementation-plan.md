@@ -695,7 +695,23 @@ review workflow, not a full-show alignment prerequisite.
   Club Temptation, early Sentinel HQ, Rachel's call and mid-episode graphics references. Episode 1
   now has 209 SCREENED and seven NEEDS_RECHECK; 158 INITIAL_REVIEW_COMPLETE and 58 PARTIAL.
   Cover-profile fields and unnamed companion identity retain explicit limits.
-  No timing mapping was extended. The remaining 138 rows are unreviewed.
+  [Sheets 10–12 (217–288)](../../reference/indexes/episode-01-review-batch-04.md) add the bodyguard
+  agreement, foot-soldier ambush, red car/control details, repair and roadblock references.
+  Episode 1 totals are 281 SCREENED and seven NEEDS_RECHECK; 230 INITIAL_REVIEW_COMPLETE and
+  58 PARTIAL. Ordinary-pistol/caster and unknown car mechanism distinctions remain explicit.
+  No timing mapping was extended.
+  [Sheets 13–15 (289–354)](../../reference/indexes/episode-01-review-batch-05.md) complete the
+  sampled Episode 1 initial survey, adding disguise removal, Tao-magic pursuit, separate blaster
+  and caster references, farm/barn staging and Melfina's transport-case reveal. Current totals:
+  346 SCREENED / eight NEEDS_RECHECK; 296 INITIAL_REVIEW_COMPLETE and 58 prior PARTIAL records.
+  Seven launch-site flags remain, plus locator 350's code O/0 transcription question. Locators
+  331–354 remain outside mapping coverage. The
+  [Episode 1 retention checkpoint](../../reference/indexes/episode-01-retention-checkpoint.md)
+  records verified RAR recovery and completed pruning of all 354 expanded gallery originals and
+  the manual supplement, retaining all 15 sheets and unchanged annotations. Eight rechecks remain;
+  full-video/design verification is not implied. Phase 3.2A remains unstarted.
+  The maintainer accepted pending batches 04–05, the tentative case-code follow-up and the
+  Episode 1 retention checkpoint on 2026-10-28; unresolved rechecks remain open.
   Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,

@@ -161,3 +161,51 @@ CTXLINK-000159,CTX-000035,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846987,Secondary episode
 CTXLINK-000160,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846973,Rachel/Hilda secondary identity association; no cover-profile field is adopted as a true biographical specification.
 CTXLINK-000161,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846975,Rachel/Hilda secondary identity association; no cover-profile field is adopted as a true biographical specification.
 CTXLINK-000162,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846980,Rachel/Hilda secondary identity association; no cover-profile field is adopted as a true biographical specification.
+CTXLINK-000163,CTX-000036,ABOUT,SUBJECT,hilda,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000164,CTX-000036,MENTIONS,SUBJECT,gene_starwind,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000165,CTX-000036,MENTIONS,SUBJECT,clydes_bar,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000166,CTX-000036,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000167,CTX-000036,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846998,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000168,CTX-000036,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847003,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000169,CTX-000036,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847004,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000170,CTX-000036,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847013,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000171,CTX-000037,ABOUT,SUBJECT,hilda,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000172,CTX-000037,MENTIONS,SUBJECT,gene_starwind,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000173,CTX-000037,MENTIONS,SUBJECT,jim_hawking,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000174,CTX-000037,MENTIONS,SUBJECT,starwind_hawking_car,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000175,CTX-000037,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000176,CTX-000037,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847022,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000177,CTX-000037,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847024,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000178,CTX-000037,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847033,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000179,CTX-000037,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847035,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000180,CTX-000037,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847037,Secondary scene context association; visible content and dialogue limits retained in the batch record.
+CTXLINK-000181,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847077,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000182,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847078,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000183,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847080,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000184,CTX-000024,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847098,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000185,CTX-000024,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847099,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000186,CTX-000024,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847100,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000187,CTX-000024,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847101,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000188,CTX-000024,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847102,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000189,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847104,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000190,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847105,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000191,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847106,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000192,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847107,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000193,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847108,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000194,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847109,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000195,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847110,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000196,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847111,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000197,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847114,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000198,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847115,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000199,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847116,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000200,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847117,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000201,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847118,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000202,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847119,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000203,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847120,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000204,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847121,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000205,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847122,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000206,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847123,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000207,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847124,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000208,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847125,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000209,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847126,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
+CTXLINK-000210,CTX-000022,ABOUT,SUBJECT,melfina_transport_case,Descriptive subject corresponding to the trunk in the secondary summary; primary visible details remain in image annotations.

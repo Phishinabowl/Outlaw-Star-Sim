@@ -408,6 +408,9 @@ The `subjects` register starts with:
 | `guugaku` | Bald Kei pirate with large neck bolts; Episode 1 identification uses the cached secondary appearance description and visible features. |
 | `pirate_fighter`, `pirate_fighter_pilot` | Episode 1 pursuing fighter craft and goggled pilot, identified through the bounded subtitle/scene check. The pilot's personal name and exact readiness-call attribution remain unassigned; do not equate the craft with Episode 4's landing units automatically. |
 | `sentinel_iii` | Planet named by the Episode 1 establishing narration, corroborated against local globe/city views; does not identify the separate pre-title launch facility. |
+| `gene_modular_blaster` | Descriptive Episode 1 ID for the purple revolver-style blaster and fitted component kit, supported by short-barrel-blaster dialogue. Distinct from the gold caster; no model/caliber or full modification mechanism established. |
+| `melfina_transport_case` | Reinforced transport trunk revealing Melfina in Episode 1; distinct from the XGP pod/apparatus and Hilda's laptop. No complete life-support specification implied. |
+| `starwind_hawking_car` | Descriptive continuity ID for the red open-top classic-style car used by Gene and Jim in Episode 1. No verified model designation, legal ownership or complete propulsion mechanism implied. |
 | `club_temptation` | Club identified by the visible Episode 1 sign and secondary scene context CTX-000034; its private-room companion remains unnamed. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
 | `rob_cain`, `clyde` | Rob Cain / Death Rob and Clyde, identified through the Episode 1 confrontation and aftermath subtitles. Secondary Rob Kane spelling is an alias, not a separate person. |
@@ -884,3 +887,60 @@ Eight bounded local windows produced 100 temporary frames over 25 requested seco
 preview was inspected. Hash/PTS provenance is retained and the owned decode set is pruned after
 verification. Original gallery images, contact sheets and the manual supplement remain under the
 existing episode-completion RAR policy. No alignment mapping or 3.2A status changes.
+
+### Episode 1 annotated survey — sheets 10–12 (2026-10-27)
+
+Locators 217–288 have individual initial-review annotations, covering HQ departure, the bodyguard
+agreement at Clyde's Bar, alley ambush, red car and controls, roadside repair and pirate roadblock.
+The [batch record](../episode-01-review-batch-04.md) distinguishes subtitle context, secondary
+associations, selected full-size imagery and bounded local scene checks. The ordinary pistol is
+kept distinct from the later caster; the red-car subject is a descriptive continuity ID.
+
+All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 1 now has 288 reviewed:
+281 SCREENED and seven earlier launch-site NEEDS_RECHECK; 230 INITIAL_REVIEW_COMPLETE and
+58 PARTIAL. The remaining 66 rows are UNREVIEWED/NOT_REVIEWED. No earlier annotations or other
+episodes changed. Locator 225 is an OTHER scene-change flash, not an asserted physical gunshot;
+285's obscured occupants do not establish an empty car. Exact car model, propulsion, control
+labels and repair procedure remain unverified; no layout or gameplay implementation is implied.
+
+Seven bounded windows produced 132 temporary frames over 33 requested seconds. Selected preview
+frames were visually inspected, provenance retained and the owned temporary set pruned after hash
+verification. Cached gallery originals, contact sheets and the manual supplement remain under the
+existing episode-completion RAR policy. Alignment records are unchanged; Phase 3.2A is unstarted.
+
+### Episode 1 annotated survey — sheets 13–15
+
+The [final batch](../episode-01-review-batch-05.md) annotates locators 289–354 with individual
+descriptions, eight scene groups and bounded subtitle/video context. All 354 sampled Episode 1
+gallery records now have an initial survey: **346 SCREENED / eight NEEDS_RECHECK**, with
+296 INITIAL_REVIEW_COMPLETE and 58 prior targeted PARTIAL records. Seven flags concern the
+earlier tentative launch-site identity; locator 350 adds the case-code O/0 transcription question.
+This is complete sampled-gallery survey coverage, not full-video or targeted design verification.
+
+High-value references include the purple modular blaster kit, the distinct gold caster loading
+and aiming views, and Melfina's transport-case exterior, access panel and interior reveal.
+Existing CTX-000020/022/024 records are reused with new image links; no new secondary claims,
+source captures, mapping anchors or prior annotations were introduced. Locators 331–354 are
+outside the validated mapping: scene context does not provide estimated gallery timestamps.
+
+Both generated ImportExcel views are refreshed and checked. Own bounded-decode outputs are
+pruned after frame-hash verification, retaining provenance. Contact sheets, gallery originals
+and EP-01-MAN-001 were retained for corrections until the subsequent cleanup below.
+No next episode or Phase 3.2A work starts here. Changes remain uncommitted pending confirmation.
+
+### Episode 1 retention checkpoint — 2026-10-28
+
+The [retention record](../episode-01-retention-checkpoint.md) documents the completed archive
+and cleanup. EP-01.rar contains all 354 gallery originals and EP-01-MAN-001 plus recovery metadata;
+native integrity, staged restoration, exact inventory and image hashes passed. Prune repeated
+recovery verification before removing both expanded image sets. Final status: cached 0, archived
+gallery 354, archived supplement 1, all 15 contact sheets retained and archive hash valid.
+
+The archive is 62,978,197 bytes; pruning reclaimed 63,495,276 bytes of redundant expanded data.
+All 20 preserved CSV/sheet/registry hashes matched. No temporary alignment image runs or archive
+staging directories remain. Generated views are refreshed with the supplement marked NOT_LOCAL;
+the eight rechecks, authored review states and bounded alignment remain unchanged. Restore from
+the verified RAR for future full-size checks. No next episode or Phase 3.2A work starts here.
+
+The maintainer accepted pending batches 04–05, the tentative case-code follow-up and the verified
+Episode 1 retention checkpoint on 2026-10-28. The eight rechecks remain open.

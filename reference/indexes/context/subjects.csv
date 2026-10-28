@@ -25,3 +25,6 @@ iris,Iris,CHARACTER,,ESTABLISHED,,Catalogue identity; see image review for prima
 jim_pda,Jim's PDA,EQUIPMENT,,ESTABLISHED,,Catalogue identity; see image review for primary/secondary attribution limits.
 sentinel_iii,Sentinel III,LOCATION,,ESTABLISHED,,Existing image-index planet identity; this register does not establish exact facility geography.
 club_temptation,Club Temptation,LOCATION,,ESTABLISHED,,Episode 1 sign and secondary scene context support the location; no room dimensions or companion identity established.
+starwind_hawking_car,Gene and Jim's red car,EQUIPMENT,,ESTABLISHED,,Descriptive continuity ID for the red open-top classic-style vehicle used by Gene and Jim in Episode 1. No make/model or legal ownership assertion; exact propulsion and support mechanics unverified.
+gene_modular_blaster,Gene's purple modular blaster,WEAPON,,ESTABLISHED,,"Descriptive Episode 1 survey ID for the purple revolver-style gun and fitted component case; English dialogue requests a short-barrel blaster. Not the gold caster. No model, caliber or modification procedure established."
+melfina_transport_case,Melfina's transport case,EQUIPMENT,,ESTABLISHED,,Descriptive continuity ID for the reinforced metal trunk revealing Melfina in Episode 1. Keep distinct from the XGP pod/apparatus and Hilda's laptop; no complete life-support mechanism established.
