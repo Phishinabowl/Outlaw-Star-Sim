@@ -257,3 +257,92 @@ CTXLINK-000255,CTX-000048,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context prepa
 CTXLINK-000256,CTX-000018,APPLIES_TO_EPISODE,EPISODE,EP-02,The two-jump claim is explicitly about Horus on the Blue Heaven route.
 CTXLINK-000257,CTX-000018,MENTIONS,SUBJECT,blue_heaven,Destination in the checked translated dialogue.
 CTXLINK-000258,CTX-000018,CHECKED_AGAINST,EVIDENCE,reference/indexes/episode-02-context-preparation.md#horus-two-jump-dialogue-check,Scoped translated-subtitle assessment only; no original audio or gallery-time match.
+CTXLINK-000259,CTX-000049,ABOUT,SUBJECT,harry_macdougall,Selected secondary appearance aid.
+CTXLINK-000260,CTX-000049,APPLIES_TO_EPISODE,EPISODE,EP-02,Opening montage only; no story encounter asserted.
+CTXLINK-000261,CTX-000050,ABOUT,SUBJECT,hilda_prosthetic_arm,Selected repair passage only.
+CTXLINK-000262,CTX-000050,MENTIONS,SUBJECT,hilda,Participants in the secondary repair/resuscitation account.
+CTXLINK-000263,CTX-000050,MENTIONS,SUBJECT,jim_hawking,Participants in the secondary repair/resuscitation account.
+CTXLINK-000264,CTX-000050,MENTIONS,SUBJECT,melfina,Participants in the secondary repair/resuscitation account.
+CTXLINK-000265,CTX-000050,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode 2 portion of the biography paragraph.
+CTXLINK-000266,CTX-000049,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847132,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000267,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847140,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000268,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847141,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000269,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847142,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000270,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847143,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000271,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847144,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000272,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847145,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000273,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847146,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000274,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847147,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000275,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847131,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000276,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847160,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000277,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847175,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000278,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847176,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000279,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847191,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000280,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847192,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000281,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847195,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000282,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847196,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000283,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847197,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000284,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847151,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000285,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847154,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000286,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847155,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000287,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847156,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000288,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847157,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000289,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847160,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000290,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847175,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000291,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847176,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000292,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847186,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000293,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847187,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000294,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847191,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000295,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847192,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000296,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847195,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000297,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847196,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000298,CTX-000050,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847197,Secondary context only; visible details and timing limits are recorded in episode-02-review-batch-01.md.
+CTXLINK-000299,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847202,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000300,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847203,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000301,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847225,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000302,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847227,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000303,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847233,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000304,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847234,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000305,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847235,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000306,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847237,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000307,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847243,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000308,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847246,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000309,CTX-000025,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847270,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000310,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847202,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000311,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847225,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000312,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847234,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000313,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847235,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000314,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847237,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000315,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847243,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000316,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847246,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000317,CTX-000027,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847270,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000318,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847208,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000319,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847209,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000320,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847210,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000321,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847211,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000322,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847212,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000323,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847238,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000324,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847239,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000325,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847240,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000326,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847241,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000327,CTX-000047,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847242,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000328,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847228,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000329,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847229,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000330,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847230,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000331,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847231,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000332,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847232,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000333,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847245,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000334,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847248,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000335,CTX-000048,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847269,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000336,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847253,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000337,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847254,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000338,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847255,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000339,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847256,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000340,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847257,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000341,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847258,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000342,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847259,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000343,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847260,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000344,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847261,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000345,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847262,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000346,CTX-000038,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847263,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.
+CTXLINK-000347,CTX-000046,CONTEXT_FOR_IMAGE,IMAGE,EP-02:847268,Selected secondary context only; scope and independent visual/subtitle findings in episode-02-review-batch-02.md.

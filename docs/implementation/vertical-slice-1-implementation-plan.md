@@ -730,6 +730,20 @@ review workflow, not a full-show alignment prerequisite.
   attempts remain recorded; 349–354 remains unmapped. Current-input checks, bounded reproduction,
   early/late subtitle-context checks and provenance-gated temporary cleanup passed. The workbook
   is refreshed; image annotations remain unchanged and Phase 3.2A remains unstarted.
+  The subsequent [Episode 2 first survey batch](../../reference/indexes/episode-02-review-batch-01.md)
+  covers gallery 001–072 using the accepted alignment and translated subtitle context:
+  71 SCREENED, one NEEDS_RECHECK (003), all 72 INITIAL_REVIEW_COMPLETE. Maintainer clarification
+  resolves 012 as an opening XGP/El Dorado fight vignette with El Dorado's foreground grappler arm.
+  Ten scene groups preserve individual equipment states and opening/story distinctions.
+  The batch 01 checkpoint left 282 rows untouched. The maintainer accepted the batch and its
+  clarification follow-ups on 2026-10-28; Phase 3.2A remains unstarted.
+  The subsequent [Episode 2 second batch](../../reference/indexes/episode-02-review-batch-02.md)
+  covers 073–144 with aligned subtitle context and bounded local samples. Combined coverage:
+  144 INITIAL_REVIEW_COMPLETE, 143 SCREENED and one NEEDS_RECHECK (003), with 210 untouched.
+  Maintainer clarification resolves 097–098 as the prepared rocket attack blocked by pirate magic
+  and 107–110 as the dragon attack canceled by Gene's caster shot.
+  The maintainer accepted the batch and its clarification follow-ups on 2026-10-28;
+  no later batch or Phase 3.2A work is included.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

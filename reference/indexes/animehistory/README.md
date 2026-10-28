@@ -418,6 +418,7 @@ The `subjects` register starts with:
 | `sentinel_iii` | Planet named by the Episode 1 establishing narration, corroborated against local globe/city views; does not identify the separate pre-title launch facility. |
 | `gene_modular_blaster` | Descriptive Episode 1 ID for the purple revolver-style blaster and fitted component kit, supported by short-barrel-blaster dialogue. Distinct from the gold caster; no model/caliber or full modification mechanism established. |
 | `melfina_transport_case` | Reinforced transport trunk revealing Melfina in Episode 1; distinct from the XGP pod/apparatus and Hilda's laptop. No complete life-support specification implied. |
+| `hilda_prosthetic_arm` | Descriptive continuity ID for Hilda's artificial arm, exposed mechanisms and repair/hand-test views in Episode 2. Distinct from her wrist controller; no complete engineering design or manufacturer identification implied. |
 | `blue_heaven` | Asteroid free town identified in secondary Episode 2 preparation and local dialogue; distinct from the XGP storage asteroid. No image match or measured layout established by preparation. |
 | `swanzo` | Corbonite mechanic associated with Blue Heaven in selected secondary context; image identification and containment-suit details require scoped review. |
 | `mccoy` | Named Episode 2 bar antagonist in the captured synopsis; standalone wiki lookup returned NOT_FOUND. No appearance or individual attacker identification assigned during preparation. |
@@ -446,6 +447,7 @@ Initial `subject_details` tokens are:
 | Graphic framing | `circular_view` for circular-masked images without asserting a camera technology; `registration_overlay` for portrait/status graphics associated with the established registration sequence, without inferring a biometric algorithm. |
 | Systems and action retrieval | `wraparound_display` for enclosing cockpit screen surfaces; `instruction_graphic` for onboard instructional imagery; `schematic` for line/diagram depictions rather than physical geometry; `wrist_device` for worn electronic hardware without assumed function; `maintenance_robot` and `guide_rail` for the observed maintenance-unit assembly; `projectile` for visible ammunition/rocket-like objects without identifying an ether weapon. |
 | Appearance/content | `face_expression`, `body_pose`, `clothing`, `accessory`, `handheld_object`, `weapon_detail`, `signage_text`, `material_surface`, `lighting`, `energy_effect`. |
+| Repair references | `prosthetic_arm` for an identified artificial limb or its exposed mechanisms; `repair_tool` for visible repair implements, without assigning brand, exact process or specifications from dialogue alone. |
 | Reported magic imagery | `magic_effect` for imagery associated with an identified magic action in supplied or verified context; describe the visible light/field separately, without assuming a full magic system or treating every transparent helmet as magic. |
 | Visible configuration | `deployed`, `stowed`, `open`, `closed`; identify the affected object in the summary. Static images establish visible endpoints only, not motion, direction or a complete operating sequence. |
 
@@ -991,3 +993,31 @@ context checks passed. The ImportExcel view is refreshed. Provenance-gated clean
 five search runs (1,396 files / 1,008,059,897 bytes). Image annotations and Episode 1 records
 remain unchanged. The maintainer accepted this checkpoint on 2026-10-28; the first Episode 2 survey
 batch and Phase 3.2A have not advanced.
+
+## Episode 2 annotated survey — batch 01, 2026-10-28
+
+The [first batch](../episode-02-review-batch-01.md) covers gallery 001–072 with accepted
+alignment, translated subtitle context and selected full-size checks. All 72 rows are
+INITIAL_REVIEW_COMPLETE: 71 SCREENED and one NEEDS_RECHECK (003 launch-site/craft identity).
+Maintainer clarification identifies 012 as an opening fight vignette between XGP and El Dorado,
+including El Dorado's foreground grappler arm; its identification recheck is resolved.
+The remaining 282 rows are untouched.
+Ten scene groups preserve opening/story separation, case state changes and prosthetic repair
+references. Selected secondary Harry appearance and repair context is registered separately
+from primary observations. Generated ImportExcel views are refreshed and validated.
+The maintainer accepted batch 01 and its clarification follow-ups on 2026-10-28;
+Phase 3.2A remains unstarted.
+
+## Episode 2 annotated survey — batch 02, 2026-10-28
+
+The [second batch](../episode-02-review-batch-02.md) covers gallery 073–144 with aligned
+English subtitle context, eleven full-size original checks and eighteen explicit local frame
+samples. Fourteen scene groups preserve the farm siege, ammunition/pond retrieval, Tao/caster
+exchange, dropship intervention and Melfina's awakening. Maintainer clarification resolves 097–098
+as Gene/Jim's prepared two-rocket attack blocked by pirate magic, and identifies 107–110 as the
+elderly pirate's dragon attack canceled by Gene's caster shot. Combined Episode 2 coverage is
+144 INITIAL_REVIEW_COMPLETE: 143 SCREENED and one NEEDS_RECHECK (003); 210 gallery rows remain
+untouched. Existing secondary assertions
+supply 49 new image links without merging pirate role IDs into candidate proper names.
+The maintainer accepted batch 02 and its clarification follow-ups on 2026-10-28;
+no later batch or Phase 3.2A work is included.
