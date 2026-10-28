@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "episode_id": "EP-02",
+  "selections": [
+    {"image_id":"847136","role":"FIT","search_start_seconds":"130","search_end_seconds":"142"},
+    {"image_id":"847144","role":"HOLDOUT","search_start_seconds":"159","search_end_seconds":"171"},
+    {"image_id":"847160","role":"FIT","search_start_seconds":"217","search_end_seconds":"229"},
+    {"image_id":"847198","role":"FIT","search_start_seconds":"354","search_end_seconds":"366"},
+    {"image_id":"847234","role":"HOLDOUT","search_start_seconds":"484","search_end_seconds":"496"},
+    {"image_id":"847270","role":"FIT","search_start_seconds":"615","search_end_seconds":"627"},
+    {"image_id":"847306","role":"HOLDOUT","search_start_seconds":"745","search_end_seconds":"757"},
+    {"image_id":"847342","role":"FIT","search_start_seconds":"875","search_end_seconds":"887"},
+    {"image_id":"847378","role":"HOLDOUT","search_start_seconds":"1006","search_end_seconds":"1018"},
+    {"image_id":"847414","role":"FIT","search_start_seconds":"1136","search_end_seconds":"1148"},
+    {"image_id":"847456","role":"HOLDOUT","search_start_seconds":"1288","search_end_seconds":"1300"},
+    {"image_id":"847474","role":"FIT","search_start_seconds":"1353","search_end_seconds":"1365"}
+  ]
+}

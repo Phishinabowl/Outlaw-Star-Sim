@@ -87,7 +87,10 @@ These additions do not authorize later episodes or Phase 3.2A.
    for plan fields and episode-scoped assessment/current-verification commands. Tool support
    does not imply that an episode already has validated timing coverage.
    The pinned Episode 1 release has a validated navigation offset of -1.388 s only for whole-second
-   web labels 06:40–20:40; other regions/episodes remain unmapped. The tool doc owns the
+   web labels 06:40–20:40. The pinned Episode 2 release has independently validated navigation
+   coverage of web labels 01:43–22:39 with offset -1.286 s; its
+   [alignment review](../episode-02-alignment-review.md) records the limits. Other unsupported
+   regions remain unmapped. The tool doc owns the
    [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).
    A two-second navigation search window is not a verified subtitle-to-frame association.
    Generated locator fields and existing review states remain unchanged.
@@ -973,3 +976,18 @@ were added. Episode 2 remains unmapped, and Episode 1's offset must not be reuse
 are refreshed and validated; further timing/image review and Phase 3.2A remain separate scope.
 
 The maintainer accepted this Episode 2 download/subtitle/context preparation on 2026-10-28.
+
+## Episode 2 bounded alignment — 2026-10-28
+
+The [alignment review](../episode-02-alignment-review.md) records 18 attempts: eight precise
+matches and ten retained ambiguities. Four FIT coefficients were frozen before HOLDOUT searches;
+four independent matches, including both sides of the break, validated local = web - 1.286 s
+for whole-second web labels [103,1360). Gallery 001–348 receives navigation coverage;
+349–354 remains unmapped. Maximum HOLDOUT interval error is 0.400 s. Actual scene/cue inspection
+is still required; sparse sampling is not full-runtime verification.
+
+Current Episode 2 input verification, two bounded hash reproductions and early/late subtitle
+context checks passed. The ImportExcel view is refreshed. Provenance-gated cleanup removed
+five search runs (1,396 files / 1,008,059,897 bytes). Image annotations and Episode 1 records
+remain unchanged. The maintainer accepted this checkpoint on 2026-10-28; the first Episode 2 survey
+batch and Phase 3.2A have not advanced.

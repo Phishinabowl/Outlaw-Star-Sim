@@ -982,6 +982,7 @@ was changed. The 900-frame, 600 MiB, 15-minute and 70-second total window caps r
   hashes were checked afterward. This deliberately preserves no accepted timing from the run.
 
 The extension supports per-episode execution; actual matching quality and timing relationships
-must still be established for each episode/release. Episode 2 remains unmapped, its image
-annotations remain UNREVIEWED, and Phase 3.2A remains unstarted. The next research step is a
-declared Episode 2 alignment partition, not automatic continuation of the image survey.
+must still be established for each episode/release. At this extension checkpoint, Episode 2
+was unmapped and its annotations were UNREVIEWED. Subsequent episode-specific execution and
+coverage belong to the [Episode 2 alignment review](../../reference/indexes/episode-02-alignment-review.md),
+not this tool-validation record. Phase 3.2A remains unstarted.

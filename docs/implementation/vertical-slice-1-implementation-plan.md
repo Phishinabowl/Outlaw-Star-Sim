@@ -724,6 +724,12 @@ review workflow, not a full-show alignment prerequisite.
   All 69 tests passed, including synthetic Episode 2/26 workflows and a bounded live Episode 2
   candidate-search/cleanup check. No Episode 2 timing mapping or image annotation was accepted;
   episode alignment precedes resumption of the first survey batch. Phase 3.2A remains unstarted.
+  The subsequent [Episode 2 alignment](../../reference/indexes/episode-02-alignment-review.md)
+  is verified and accepted by the maintainer on 2026-10-28: four frozen FIT and four independent HOLDOUT matches support
+  local = web - 1.286 s for web labels [103,1360), covering gallery 001–348. Ten ambiguous
+  attempts remain recorded; 349–354 remains unmapped. Current-input checks, bounded reproduction,
+  early/late subtitle-context checks and provenance-gated temporary cleanup passed. The workbook
+  is refreshed; image annotations remain unchanged and Phase 3.2A remains unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
