@@ -691,7 +691,11 @@ review workflow, not a full-show alignment prerequisite.
   totals are 137 SCREENED and seven NEEDS_RECHECK; 86 INITIAL_REVIEW_COMPLETE and 58 PARTIAL.
   Maintainer clarifications resolve 084 as boot detailing and 140–144 as the earlier pirate ship;
   seven earlier tentative launch-site rechecks remain.
-  No timing mapping was extended. The remaining 210 rows are unreviewed.
+  [Sheets 7–9 (145–216)](../../reference/indexes/episode-01-review-batch-03.md) add pirate deployment,
+  Club Temptation, early Sentinel HQ, Rachel's call and mid-episode graphics references. Episode 1
+  now has 209 SCREENED and seven NEEDS_RECHECK; 158 INITIAL_REVIEW_COMPLETE and 58 PARTIAL.
+  Cover-profile fields and unnamed companion identity retain explicit limits.
+  No timing mapping was extended. The remaining 138 rows are unreviewed.
   Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,

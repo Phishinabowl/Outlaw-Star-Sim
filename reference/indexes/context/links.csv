@@ -145,3 +145,19 @@ CTXLINK-000143,CTX-000033,ABOUT,SUBJECT,iris,Secondary biography context; no pri
 CTXLINK-000144,CTX-000033,MENTIONS,SUBJECT,gene_starwind,Secondary biography context; no primary evidence promotion.
 CTXLINK-000145,CTX-000033,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary biography context; no primary evidence promotion.
 CTXLINK-000146,CTX-000033,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846884,Secondary biography context; no primary evidence promotion.
+CTXLINK-000147,CTX-000034,ABOUT,SUBJECT,club_temptation,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000148,CTX-000034,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000149,CTX-000034,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846923,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000150,CTX-000034,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846926,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000151,CTX-000034,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846940,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000152,CTX-000034,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846941,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000153,CTX-000035,ABOUT,SUBJECT,starwind_hawking_hq,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000154,CTX-000035,APPLIES_TO_EPISODE,EPISODE,EP-01,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000155,CTX-000035,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846947,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000156,CTX-000035,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846948,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000157,CTX-000035,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846967,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000158,CTX-000035,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846969,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000159,CTX-000035,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846987,Secondary episode context association; visible image evidence is documented separately.
+CTXLINK-000160,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846973,Rachel/Hilda secondary identity association; no cover-profile field is adopted as a true biographical specification.
+CTXLINK-000161,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846975,Rachel/Hilda secondary identity association; no cover-profile field is adopted as a true biographical specification.
+CTXLINK-000162,CTX-000020,CONTEXT_FOR_IMAGE,IMAGE,EP-01:846980,Rachel/Hilda secondary identity association; no cover-profile field is adopted as a true biographical specification.

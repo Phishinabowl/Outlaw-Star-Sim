@@ -408,6 +408,7 @@ The `subjects` register starts with:
 | `guugaku` | Bald Kei pirate with large neck bolts; Episode 1 identification uses the cached secondary appearance description and visible features. |
 | `pirate_fighter`, `pirate_fighter_pilot` | Episode 1 pursuing fighter craft and goggled pilot, identified through the bounded subtitle/scene check. The pilot's personal name and exact readiness-call attribution remain unassigned; do not equate the craft with Episode 4's landing units automatically. |
 | `sentinel_iii` | Planet named by the Episode 1 establishing narration, corroborated against local globe/city views; does not identify the separate pre-title launch facility. |
+| `club_temptation` | Club identified by the visible Episode 1 sign and secondary scene context CTX-000034; its private-room companion remains unnamed. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
 | `rob_cain`, `clyde` | Rob Cain / Death Rob and Clyde, identified through the Episode 1 confrontation and aftermath subtitles. Secondary Rob Kane spelling is an alias, not a separate person. |
 | `iris` | Green-haired woman at Clyde's Bar, identified by the maintainer; cached summary caption CTX-000029 and Iris biography CTX-000032–033 provide separately attributed secondary context. |
@@ -864,3 +865,22 @@ CTX-000032–033. PDA attribution and Hilda's crowd appearance retain their seco
 The owned 132-frame temporary decode set and two previews are removed after recording hashes,
 timestamps and inspection selections. Gallery originals, contact sheets and EP-01-MAN-001 remain
 under the existing episode retention policy; no episode-completion archive or cleanup is implied.
+
+### Episode 1 annotated survey — sheets 7–9 (2026-10-27)
+
+Locators 145–216 have individual initial-review annotations: pirate deployment, Club Temptation,
+an alley cutaway, daytime city views, the early Starwind & Hawking premises, Rachel's call,
+mid-episode break graphics and an identity-search screen. The [batch record](../episode-01-review-batch-03.md)
+owns selected full-size checks, subtitle scope, secondary associations and temporary-decode evidence.
+
+All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 1 totals are 216 reviewed:
+209 SCREENED and seven earlier launch-site NEEDS_RECHECK; 158 INITIAL_REVIEW_COMPLETE and
+58 PARTIAL. The remaining 138 rows are UNREVIEWED/NOT_REVIEWED. No previous rows or other
+episodes changed. The private-room woman remains unidentified; Hilda's Rachel cover-profile
+fields are not treated as true biography. HQ views concern Sentinel, not the later Heifong branch.
+The four break-graphic rows are EYECATCH, not ship references or the episode-ending card.
+
+Eight bounded local windows produced 100 temporary frames over 25 requested seconds; the selected
+preview was inspected. Hash/PTS provenance is retained and the owned decode set is pruned after
+verification. Original gallery images, contact sheets and the manual supplement remain under the
+existing episode-completion RAR policy. No alignment mapping or 3.2A status changes.
