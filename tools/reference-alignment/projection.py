@@ -29,7 +29,7 @@ def empty_timing():
 
 
 def inspect_availability(root,anchors,verify=False,ffprobe=None):
-    """Routine builds do not hash videos. Explicit verification is bounded to the Ep1 pilot."""
+    """Routine builds do not hash videos. Explicit verification checks recorded episodes."""
     grouped=defaultdict(list)
     for row in anchors:grouped[row['input_id']].append(row)
     result={}

@@ -1,0 +1,1344 @@
+{
+  "identity": {
+    "episode_id": "EP-02",
+    "video_source": "_source_episodes/[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+    "video_sha256": "df89f10afd35450152692a093df92fb91bed62ed044480af321a936dea5e5acb",
+    "video_stream_index": 0,
+    "video_time_base": "1/1000",
+    "media_origin_seconds": "0/1",
+    "subtitle_stream_index": 4,
+    "subtitle_sha256": "681eb5c7927e7c90c0fef83c699872f3a66db8afae55eef735a697909404f8bd",
+    "subtitle_time_basis": "MEDIA_RELATIVE",
+    "subtitle_shift_seconds": "0/1",
+    "locator_sha256": "4ed16b437fcd21af2626a5aa52bc7a24a4f91b202acd59f7be5cd1b6c4c1e66e"
+  },
+  "subtitle_check": {
+    "compared_cues": 3,
+    "packet_seconds": [
+      "149/100",
+      "241/50",
+      "853/100"
+    ],
+    "ass_seconds": [
+      "149/100",
+      "241/50",
+      "853/100"
+    ],
+    "scope": "first three cues in bounded probe; not whole-track dialogue verification"
+  },
+  "scope": "EP-02 001-072 initial visual/context survey. Narrative/subtitle-led local windows only; no validated web/local mapping or exact gallery-frame association.",
+  "windows": [
+    {
+      "name": "montage",
+      "start": 120,
+      "end": 123,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "120.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,120.000000000)*lt(t,123.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\montage\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        120037,
+        121038,
+        121788,
+        122789
+      ],
+      "frames": [
+        {
+          "pts": 120037,
+          "local_seconds": "120037/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00000.png",
+          "sha256": "0d589f80891736797e3722d0ce9106682026749cd16468d0d7b461346ab2ccc4"
+        },
+        {
+          "pts": 120287,
+          "local_seconds": "120287/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00001.png",
+          "sha256": "62696f91700b3c2740db6cad8b2c13bdab0991e16f546b562676a2a3cbe516f7"
+        },
+        {
+          "pts": 120537,
+          "local_seconds": "120537/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00002.png",
+          "sha256": "eadea41934459ae1da8925d789f4774a620fd173b354bfadb06d2928f48b4b5d"
+        },
+        {
+          "pts": 120787,
+          "local_seconds": "120787/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00003.png",
+          "sha256": "25b85608214569a04ba726ff5de1040645ba92a0f5392fef29d317af7f9249e6"
+        },
+        {
+          "pts": 121038,
+          "local_seconds": "60519/500",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00004.png",
+          "sha256": "614772f1569c52a3977af3fe636214b16ec669cf12329aa48fcfdc048de6d784"
+        },
+        {
+          "pts": 121288,
+          "local_seconds": "15161/125",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00005.png",
+          "sha256": "a7c8ef8d1c1c19d255171781ca84a08e7368eeb0a6d1a24e59da8a2206ba0edd"
+        },
+        {
+          "pts": 121538,
+          "local_seconds": "60769/500",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00006.png",
+          "sha256": "3caa1307c45ded084b5550421636c1f81a764ffcbbd6e87903238d555e91d97a"
+        },
+        {
+          "pts": 121788,
+          "local_seconds": "30447/250",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00007.png",
+          "sha256": "635fa48de378cc709e1d320b50f819385240b03b9baa42bfc5f06aba78bf335e"
+        },
+        {
+          "pts": 122039,
+          "local_seconds": "122039/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00008.png",
+          "sha256": "40d9d33e74861f5674e7fc41fc7e4be0b887231d89e7284b275c43a0e4640dce"
+        },
+        {
+          "pts": 122289,
+          "local_seconds": "122289/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00009.png",
+          "sha256": "e2309c8298c9afc362f12fc684210fb3d1f86144c7227dd12c1b75471d25ed0a"
+        },
+        {
+          "pts": 122539,
+          "local_seconds": "122539/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00010.png",
+          "sha256": "4bec8cd1d6e6faff97ec15b1fa57ecdaf9eb07d82997a357a91445b074018733"
+        },
+        {
+          "pts": 122789,
+          "local_seconds": "122789/1000",
+          "path": ".tmp/ep02-batch01/decoded/montage/frame-00011.png",
+          "sha256": "313c6032d81afe1265d118e7e7d605c02e5b4727d68303c795fdd63eccce4752"
+        }
+      ]
+    },
+    {
+      "name": "pirate_search",
+      "start": 162,
+      "end": 166,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "162.000000000",
+        "-t",
+        "4.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,162.000000000)*lt(t,166.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\pirate_search\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        162037,
+        163288,
+        164539,
+        165791
+      ],
+      "frames": [
+        {
+          "pts": 162037,
+          "local_seconds": "162037/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00000.png",
+          "sha256": "1828d34627e52b4fb11b83ba30ba7e87c75fbc0e40a6d2cc3ad5fe76517c8074"
+        },
+        {
+          "pts": 162287,
+          "local_seconds": "162287/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00001.png",
+          "sha256": "55f3e92771519034a72cda28110121571b3fd06889f05bf52051693499238e56"
+        },
+        {
+          "pts": 162537,
+          "local_seconds": "162537/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00002.png",
+          "sha256": "e0af6aaf6c9a3ab62da97965a28faea8e828299150f48f9a5a4d3738e0c7b4c3"
+        },
+        {
+          "pts": 162788,
+          "local_seconds": "40697/250",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00003.png",
+          "sha256": "1f95569f1525a23a47561e90119876e7a69345acec80bf601871fe1252683e57"
+        },
+        {
+          "pts": 163038,
+          "local_seconds": "81519/500",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00004.png",
+          "sha256": "99955661d4ee8ea366c0fa629a98a0298214432e18d05224f0f0f7ef6ed53c52"
+        },
+        {
+          "pts": 163288,
+          "local_seconds": "20411/125",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00005.png",
+          "sha256": "9e04346e15f8f4f3141eb23fe800076058ceadd2460d7bebdaa8a8314d3862e7"
+        },
+        {
+          "pts": 163538,
+          "local_seconds": "81769/500",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00006.png",
+          "sha256": "9f2ff49d511cee8b69091a65e62d74e8330524e47454cd2a600c365fcc115460"
+        },
+        {
+          "pts": 163789,
+          "local_seconds": "163789/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00007.png",
+          "sha256": "86b154d394123ac236a83dcf126d7f9d4493a116f3a0ba3d1b77d545eb5eff0e"
+        },
+        {
+          "pts": 164039,
+          "local_seconds": "164039/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00008.png",
+          "sha256": "238889ad3f795e38ff51ec0053c11c1d89e0872118942b89bc61c905c5313285"
+        },
+        {
+          "pts": 164289,
+          "local_seconds": "164289/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00009.png",
+          "sha256": "84690ff068de4d0e1a8ec111d6abca46c62c9f745596a9e3e371eeb495359683"
+        },
+        {
+          "pts": 164539,
+          "local_seconds": "164539/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00010.png",
+          "sha256": "3f19fdfc34531f09ee7653efa3b6c9246f25d90406ece17e44ac4e2c6fe2d6e9"
+        },
+        {
+          "pts": 164790,
+          "local_seconds": "16479/100",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00011.png",
+          "sha256": "6a2588603c9cc67d7de5c66b56b0d43aae7ef3a419728f2e86d42011de99b0c9"
+        },
+        {
+          "pts": 165040,
+          "local_seconds": "4126/25",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00012.png",
+          "sha256": "3079a207d57c62e71e9b52997b4bcbffb3bb6798a7233b7e33a2ceba855c5eef"
+        },
+        {
+          "pts": 165290,
+          "local_seconds": "16529/100",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00013.png",
+          "sha256": "e16727cd949deed9a3bea517451a0d98308794ca1ef93c23a75af3cc87a99436"
+        },
+        {
+          "pts": 165540,
+          "local_seconds": "8277/50",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00014.png",
+          "sha256": "f2066ef504f1f753c162074cc43283aefcdc9b5bccebb325c3ce8ba82ca14b4f"
+        },
+        {
+          "pts": 165791,
+          "local_seconds": "165791/1000",
+          "path": ".tmp/ep02-batch01/decoded/pirate_search/frame-00015.png",
+          "sha256": "a94bb120f5a509300b994151dc8d37e98f675af487b87abe27701e754c6122e7"
+        }
+      ]
+    },
+    {
+      "name": "case_check",
+      "start": 191,
+      "end": 195,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "191.000000000",
+        "-t",
+        "4.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,191.000000000)*lt(t,195.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\case_check\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        191024,
+        192275,
+        193527,
+        194778
+      ],
+      "frames": [
+        {
+          "pts": 191024,
+          "local_seconds": "23878/125",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00000.png",
+          "sha256": "35e05ccfac7b71ee8a9daf0e17419256a704c65d0fa6df3d893f769acdb813fd"
+        },
+        {
+          "pts": 191274,
+          "local_seconds": "95637/500",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00001.png",
+          "sha256": "7ac0c09abf13e6b64ab9bcabc311f8d7f7fb409ecb55997cfd95ea17ec68dbe5"
+        },
+        {
+          "pts": 191525,
+          "local_seconds": "7661/40",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00002.png",
+          "sha256": "1dacfa091ff96074bd864a2cfe15e06c548a7ad9ece854327cc10b58e710eb7d"
+        },
+        {
+          "pts": 191775,
+          "local_seconds": "7671/40",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00003.png",
+          "sha256": "d78917cea1e625158658a405bf063180cffc39f820a1b3c38ed19e08d9394f15"
+        },
+        {
+          "pts": 192025,
+          "local_seconds": "7681/40",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00004.png",
+          "sha256": "70603a1f802117e67f8ea06030d4876b6c5391c1837b0ace26c1bc98c3e8b171"
+        },
+        {
+          "pts": 192275,
+          "local_seconds": "7691/40",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00005.png",
+          "sha256": "df9a3ca6138163d8295aae8a512e45cb42407f3390eddf8a74a165499a779689"
+        },
+        {
+          "pts": 192526,
+          "local_seconds": "96263/500",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00006.png",
+          "sha256": "d9855cd48ea8ff5972b31129c1e8f377a615516bf316f585702f451d26e2d064"
+        },
+        {
+          "pts": 192776,
+          "local_seconds": "24097/125",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00007.png",
+          "sha256": "b897ad796e3350ae49f2a822f8bbb8f7dee18cbf6ed967f2e8377740733b9678"
+        },
+        {
+          "pts": 193026,
+          "local_seconds": "96513/500",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00008.png",
+          "sha256": "57ae43be023a980887b0e59f56c2f7adb5eb60b02e9988f87724eaee4fa70855"
+        },
+        {
+          "pts": 193276,
+          "local_seconds": "48319/250",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00009.png",
+          "sha256": "47b4dc88d6b9ff7aaf9811a0c90b2d8c94273f4f1cc82c25da81c955f7e7ce0f"
+        },
+        {
+          "pts": 193527,
+          "local_seconds": "193527/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00010.png",
+          "sha256": "4782bf0aaa095bc2be2b1db926305842ce2b2c5481058541d2da3a93f8721022"
+        },
+        {
+          "pts": 193777,
+          "local_seconds": "193777/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00011.png",
+          "sha256": "73c05e12dcd59fdafd9991ea14649e883d8ed36c0a43e765c67cdd94e28784c1"
+        },
+        {
+          "pts": 194027,
+          "local_seconds": "194027/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00012.png",
+          "sha256": "780522ef081677ca212c9233db9fd7be5c1cb17843beb9472a9616e0870ae0a7"
+        },
+        {
+          "pts": 194277,
+          "local_seconds": "194277/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00013.png",
+          "sha256": "4dd1abec76cbbbeb47691607070e1dd23821569910e4d3c67eb82f3007ccbc27"
+        },
+        {
+          "pts": 194528,
+          "local_seconds": "24316/125",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00014.png",
+          "sha256": "57c5d44f57e63def0175322d96389995d46aedb9b26f00fcdc28f106398a28da"
+        },
+        {
+          "pts": 194778,
+          "local_seconds": "97389/500",
+          "path": ".tmp/ep02-batch01/decoded/case_check/frame-00015.png",
+          "sha256": "19cd36a833554d6a59bdfa263f138c788aa3dc2b6c451afafe285dbba6fa0e94"
+        }
+      ]
+    },
+    {
+      "name": "case_deploy",
+      "start": 201,
+      "end": 210,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "201.000000000",
+        "-t",
+        "9.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,201.000000000)*lt(t,210.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\case_deploy\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        201034,
+        204037,
+        206790,
+        209793
+      ],
+      "frames": [
+        {
+          "pts": 201034,
+          "local_seconds": "100517/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00000.png",
+          "sha256": "fc23d551cd144588e208e0ab3b15695404f545f5811970b97b8e65517bde9e35"
+        },
+        {
+          "pts": 201284,
+          "local_seconds": "50321/250",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00001.png",
+          "sha256": "71c3b6165765e224fc938124901337622259270b74ccfdd5f57b4b9b0b38d821"
+        },
+        {
+          "pts": 201535,
+          "local_seconds": "40307/200",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00002.png",
+          "sha256": "f4541bba96ba72523f9b7d50ee0f08b97d8fa806d4fb92df32649fa5a7cf8a86"
+        },
+        {
+          "pts": 201785,
+          "local_seconds": "40357/200",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00003.png",
+          "sha256": "be822dfa89e66eb7a60e9250dcbd7bcb74df8203d479c4281484023b4a83bbd4"
+        },
+        {
+          "pts": 202035,
+          "local_seconds": "40407/200",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00004.png",
+          "sha256": "2f9e2c109af542a2deb77081924ec76b2bb646115c658e7bb72092a88e4f71fa"
+        },
+        {
+          "pts": 202285,
+          "local_seconds": "40457/200",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00005.png",
+          "sha256": "b130f3d81c5ff530ef60657435ae111e3a758f478efbcd19e0820b43d47b6364"
+        },
+        {
+          "pts": 202536,
+          "local_seconds": "25317/125",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00006.png",
+          "sha256": "e34a3b02dbbed027ad3f7fcc501b0dce41814a2577f003d865cca2c999d7fd1c"
+        },
+        {
+          "pts": 202786,
+          "local_seconds": "101393/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00007.png",
+          "sha256": "38b205b261cdbbdcd8d2e195b94324003d737422b889ee8915c4ceff7be59808"
+        },
+        {
+          "pts": 203036,
+          "local_seconds": "50759/250",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00008.png",
+          "sha256": "34580c9a5ba7a4b9a1d862cd274bf5811eaf8116afd29530f11a9c7317837b7a"
+        },
+        {
+          "pts": 203286,
+          "local_seconds": "101643/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00009.png",
+          "sha256": "cb0741c9462ead40cfabe5abdf592f0dc198e514cc1c57efa25a1d21e905ed83"
+        },
+        {
+          "pts": 203537,
+          "local_seconds": "203537/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00010.png",
+          "sha256": "d72023c16c391c7223548cb2aa9c32e50c26a66bbdaeca826dad602ed7f6a22c"
+        },
+        {
+          "pts": 203787,
+          "local_seconds": "203787/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00011.png",
+          "sha256": "6fc675ce71b2b5b22316c6af199f37574323094368cb5b326aba4878f44d11c0"
+        },
+        {
+          "pts": 204037,
+          "local_seconds": "204037/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00012.png",
+          "sha256": "3a0d7d531ba7076d00a4bdc989b36f7f6750e66d4463be927db11ce2951de814"
+        },
+        {
+          "pts": 204287,
+          "local_seconds": "204287/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00013.png",
+          "sha256": "772ccb9126f0ae7317fd1ed2e9d0af10ae6a71fd0e191dbdbdea45ef7e55c826"
+        },
+        {
+          "pts": 204538,
+          "local_seconds": "102269/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00014.png",
+          "sha256": "eb611899bd56383559aa22aa7cd27d104b010c538c599ce9ec76c5c4c1e50a9e"
+        },
+        {
+          "pts": 204788,
+          "local_seconds": "51197/250",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00015.png",
+          "sha256": "a49036f54c08f5d54530b27eabb4a14dab8606e1bfb7d27d8c5a1b238f5a4d40"
+        },
+        {
+          "pts": 205038,
+          "local_seconds": "102519/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00016.png",
+          "sha256": "3b307bd6e2502893fee6325d5d386bf9dfd2d5a32efb0dcd92817361ae6278c0"
+        },
+        {
+          "pts": 205288,
+          "local_seconds": "25661/125",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00017.png",
+          "sha256": "6a4480dff02b068897b19c39eccb40acf189dee454cb247a378d92b4ac058f3c"
+        },
+        {
+          "pts": 205539,
+          "local_seconds": "205539/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00018.png",
+          "sha256": "a99dcdf7e796be221e2c05256d2c55ea82c71e4172f5840c1256d6f0e1b07d45"
+        },
+        {
+          "pts": 205789,
+          "local_seconds": "205789/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00019.png",
+          "sha256": "7d66717cfc5f0c295c6cb097216138e2e870a66f1ac52eaca737287014ff327f"
+        },
+        {
+          "pts": 206039,
+          "local_seconds": "206039/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00020.png",
+          "sha256": "d24f661e5d05528fbc9e2da3d69d4c40f7dce259d3c33be1107a65fd12984903"
+        },
+        {
+          "pts": 206289,
+          "local_seconds": "206289/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00021.png",
+          "sha256": "35f451cd284e75022feb804d36b776c731f4ba2f99357bc08d653cbaa84e15a8"
+        },
+        {
+          "pts": 206540,
+          "local_seconds": "10327/50",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00022.png",
+          "sha256": "d9903ad3c0fc4fcdad2aa518f43a142e3295e6b5ebd563f0ccc4e247f0479b1b"
+        },
+        {
+          "pts": 206790,
+          "local_seconds": "20679/100",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00023.png",
+          "sha256": "8bbf15a74043c2ece9c6deb873d046bea6cd5d31e02d8b448b3ffce25b3c1170"
+        },
+        {
+          "pts": 207040,
+          "local_seconds": "5176/25",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00024.png",
+          "sha256": "801c0faa9f9290f9e0836dcbf91e0c6d4b98ef61b0dbe69d10a02617cb8d5f0b"
+        },
+        {
+          "pts": 207290,
+          "local_seconds": "20729/100",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00025.png",
+          "sha256": "3ae8c2a3bf6530ee6a58564a3cb623ed4abcab3fa41e8b646df01d26ff3be864"
+        },
+        {
+          "pts": 207541,
+          "local_seconds": "207541/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00026.png",
+          "sha256": "8fcd9758b8d0545999fb90620a4927a78cfe2d88b0a30dc1d4dac7601ceb70f0"
+        },
+        {
+          "pts": 207791,
+          "local_seconds": "207791/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00027.png",
+          "sha256": "a659f28a80bf80e9152a7b4c54e58a27cf9c3e6031caee6d25945b7a7159394b"
+        },
+        {
+          "pts": 208041,
+          "local_seconds": "208041/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00028.png",
+          "sha256": "704c0c93f2498ea3da634aa3cddb6cdc1030b13214a7c02f1577c09c7eb50479"
+        },
+        {
+          "pts": 208291,
+          "local_seconds": "208291/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00029.png",
+          "sha256": "7847db9b648edd747047a6dac871563f73d3e4205c6e946db049a75d979127df"
+        },
+        {
+          "pts": 208542,
+          "local_seconds": "104271/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00030.png",
+          "sha256": "0d1b312b3d898bd444e9128181f039a7266709c34b2dbf6906cf66f687305ea4"
+        },
+        {
+          "pts": 208792,
+          "local_seconds": "26099/125",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00031.png",
+          "sha256": "24942f22384ae2f47efd3f97cbe98646491badd66f0b5f825d23049408e5d27c"
+        },
+        {
+          "pts": 209042,
+          "local_seconds": "104521/500",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00032.png",
+          "sha256": "8aaba76be6f5c4346e21f9ab5f6036218c173379f4a611a8984254a5efd0946e"
+        },
+        {
+          "pts": 209292,
+          "local_seconds": "52323/250",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00033.png",
+          "sha256": "51b5791a5a147920b33feb07a67af7f37183168853a5bec4e1f420a1df12d490"
+        },
+        {
+          "pts": 209543,
+          "local_seconds": "209543/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00034.png",
+          "sha256": "4a5d0994422d43647bfc71b1d0ecd278fd1ecaf6662c5044629531573a17bbb4"
+        },
+        {
+          "pts": 209793,
+          "local_seconds": "209793/1000",
+          "path": ".tmp/ep02-batch01/decoded/case_deploy/frame-00035.png",
+          "sha256": "fe19066437069405e1863f769045014d8c836a722ae859c9589bde0905ec4284"
+        }
+      ]
+    },
+    {
+      "name": "arm_reveal",
+      "start": 224,
+      "end": 227,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "224.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,224.000000000)*lt(t,227.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\arm_reveal\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        224015,
+        225016,
+        225767,
+        226768
+      ],
+      "frames": [
+        {
+          "pts": 224015,
+          "local_seconds": "44803/200",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00000.png",
+          "sha256": "d0fc2f02ec9f75a55b902af70349d932f3124f9b1f0139c2ec0a82266f6fd80f"
+        },
+        {
+          "pts": 224266,
+          "local_seconds": "112133/500",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00001.png",
+          "sha256": "df2d73b012df50c6b441e207de19ff5e2056c7fac04da3cbae6cbd8211fd1ef2"
+        },
+        {
+          "pts": 224516,
+          "local_seconds": "56129/250",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00002.png",
+          "sha256": "0f5fc1bff229517140e71bfc0c92a7624498c9658967bcbc39ebe087a73c595a"
+        },
+        {
+          "pts": 224766,
+          "local_seconds": "112383/500",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00003.png",
+          "sha256": "c77225882fec9eaf0797f3173839caf2356284fa4d9fac33c0c187e6aa7e6310"
+        },
+        {
+          "pts": 225016,
+          "local_seconds": "28127/125",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00004.png",
+          "sha256": "628a7b17e467fca72a9c3ecedbdc69445cf01e4a28d3e40f6dd124f4d5c4f498"
+        },
+        {
+          "pts": 225267,
+          "local_seconds": "225267/1000",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00005.png",
+          "sha256": "c78d5367ee232821b1918674716b6113db5dc43d42897680561e2a2d3cf68d88"
+        },
+        {
+          "pts": 225517,
+          "local_seconds": "225517/1000",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00006.png",
+          "sha256": "20405110b6257a6669ae56f874efaadf64155ce586e2b78886e79d7ae038f8d8"
+        },
+        {
+          "pts": 225767,
+          "local_seconds": "225767/1000",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00007.png",
+          "sha256": "907e99886c639c05cbf4a719fdcfc0297c36deb19a2e170401557ae2b19721a9"
+        },
+        {
+          "pts": 226017,
+          "local_seconds": "226017/1000",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00008.png",
+          "sha256": "4cb77b1626e54e9ac84e7079f52f1fb012a27fa31da6de2fbd1f116da15ed91c"
+        },
+        {
+          "pts": 226268,
+          "local_seconds": "56567/250",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00009.png",
+          "sha256": "97ec8a4a52aeecdb48186e4da4b276c66d8d06143b50d435e3060c9253a961e2"
+        },
+        {
+          "pts": 226518,
+          "local_seconds": "113259/500",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00010.png",
+          "sha256": "9b11c266240266bc7d435526edd06710e808b33c9875312f39feeb3909131d02"
+        },
+        {
+          "pts": 226768,
+          "local_seconds": "28346/125",
+          "path": ".tmp/ep02-batch01/decoded/arm_reveal/frame-00011.png",
+          "sha256": "f1b0e232c03bebed39315911e9e6077c02aacee60959963124d6b367c30bf550"
+        }
+      ]
+    },
+    {
+      "name": "repair",
+      "start": 276,
+      "end": 280,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "276.000000000",
+        "-t",
+        "4.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,276.000000000)*lt(t,280.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\repair\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        276026,
+        277277,
+        278528,
+        279779
+      ],
+      "frames": [
+        {
+          "pts": 276026,
+          "local_seconds": "138013/500",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00000.png",
+          "sha256": "aece7d87873810689a91f34150b92f34ee13f956bc01816b692fbfd2ae3c077d"
+        },
+        {
+          "pts": 276276,
+          "local_seconds": "69069/250",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00001.png",
+          "sha256": "933d1221531a7948883a2b8e2b47cb0afdfb479452e05997e38597b692902c2b"
+        },
+        {
+          "pts": 276526,
+          "local_seconds": "138263/500",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00002.png",
+          "sha256": "946239fb8409bc0b96a238bc23360602be2f9432297e754eccfc4d6d89200588"
+        },
+        {
+          "pts": 276776,
+          "local_seconds": "34597/125",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00003.png",
+          "sha256": "eb40d9f82b08753c705fe270ba5172c4621cce9b87984b82f00075a0b95c3c2d"
+        },
+        {
+          "pts": 277027,
+          "local_seconds": "277027/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00004.png",
+          "sha256": "9c3785b27fa5e640178a849bba13790f11e1fd296f3f02dc98ebd4083dbdeb31"
+        },
+        {
+          "pts": 277277,
+          "local_seconds": "277277/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00005.png",
+          "sha256": "d41ddcf9db79026686694acb54b4148d271a5191bf52caf042ec6f7d64554395"
+        },
+        {
+          "pts": 277527,
+          "local_seconds": "277527/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00006.png",
+          "sha256": "32773715083150f36959298e057f2e31b25f6447f99aa9c7f987d89071fcecaf"
+        },
+        {
+          "pts": 277777,
+          "local_seconds": "277777/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00007.png",
+          "sha256": "ddeafae38618ad8e6bbe87aa3d934a41a15824c54e09f51c142b3b636593bb83"
+        },
+        {
+          "pts": 278028,
+          "local_seconds": "69507/250",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00008.png",
+          "sha256": "b8fecbe551f97c0229ee2ec4d3b64699726f02bbffacea077c8642373f6832b2"
+        },
+        {
+          "pts": 278278,
+          "local_seconds": "139139/500",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00009.png",
+          "sha256": "14880a9d64bb93d6e60f961a66daeb0f81968a7f3681e2a3007f61df3c8f61e9"
+        },
+        {
+          "pts": 278528,
+          "local_seconds": "34816/125",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00010.png",
+          "sha256": "5c0853ba104945e21673c5dcc2db68ade1786f94e91de1e678081323d6edf05d"
+        },
+        {
+          "pts": 278778,
+          "local_seconds": "139389/500",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00011.png",
+          "sha256": "9d7a953d593ca45d5fb1e6d15444e23d7abfe0738d971c079a1edabcc089f73a"
+        },
+        {
+          "pts": 279029,
+          "local_seconds": "279029/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00012.png",
+          "sha256": "483115770df2f19ab3ff3dd6f3f8e47da74e027c4382fd14f3bdb2cefd03de66"
+        },
+        {
+          "pts": 279279,
+          "local_seconds": "279279/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00013.png",
+          "sha256": "5d3c9d0ba9df49590bff6c5c6cd7574f1a14effecad4c2a8b5202012a8be0590"
+        },
+        {
+          "pts": 279529,
+          "local_seconds": "279529/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00014.png",
+          "sha256": "a9cc578227bde2cf81d53b71ef02fe7045261395af3d877275b35bc0e7bdbb0e"
+        },
+        {
+          "pts": 279779,
+          "local_seconds": "279779/1000",
+          "path": ".tmp/ep02-batch01/decoded/repair/frame-00015.png",
+          "sha256": "5b6bc1cbcab9e9b64799683712810ab68dd41300131144ae3a8091adcbaf334a"
+        }
+      ]
+    },
+    {
+      "name": "gun_handover",
+      "start": 255,
+      "end": 258,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "255.000000000",
+        "-t",
+        "3.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,255.000000000)*lt(t,258.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\gun_handover\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        255005,
+        256006,
+        256756,
+        257757
+      ],
+      "frames": [
+        {
+          "pts": 255005,
+          "local_seconds": "51001/200",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00000.png",
+          "sha256": "831d7137b9163a072b4cd289266d31b850fba413d8e5caf8736d05cadce24c4c"
+        },
+        {
+          "pts": 255255,
+          "local_seconds": "51051/200",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00001.png",
+          "sha256": "8512d93da4cc05cf4b62d1e0bb24c0aea8c7608fa959521353e111adee9c136f"
+        },
+        {
+          "pts": 255505,
+          "local_seconds": "51101/200",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00002.png",
+          "sha256": "b6dfb3ad1589a4309790ea423841ebfc8c4f8d1c121e3e0b27460d1a51eaf8f3"
+        },
+        {
+          "pts": 255755,
+          "local_seconds": "51151/200",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00003.png",
+          "sha256": "0c4d8a88a06f98a14c753d0412bfb8d834282ca3ffb24d215bf702d803f5c32c"
+        },
+        {
+          "pts": 256006,
+          "local_seconds": "128003/500",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00004.png",
+          "sha256": "9e7fec86a8700c8bfb50a0dc5283af3fab1c75910bbd9ed0d36820936ee31a43"
+        },
+        {
+          "pts": 256256,
+          "local_seconds": "32032/125",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00005.png",
+          "sha256": "17386235062bffd2e99ec2caf8fbf7bf88f6335e3efb218fb1ff9fd9a6a9a1b9"
+        },
+        {
+          "pts": 256506,
+          "local_seconds": "128253/500",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00006.png",
+          "sha256": "eadd2866fe4984db8cbea92803ecff4a64e07eb8777fc61111ca81bfdec14f8c"
+        },
+        {
+          "pts": 256756,
+          "local_seconds": "64189/250",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00007.png",
+          "sha256": "4623df743dc8b9d243f2cc8d7f1c507c47247518202c7759d4d1334354c438c5"
+        },
+        {
+          "pts": 257007,
+          "local_seconds": "257007/1000",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00008.png",
+          "sha256": "064f13a35996309344c2d5994dbddb5b642ecfed06c0f5f27e96e3bcf53c8eef"
+        },
+        {
+          "pts": 257257,
+          "local_seconds": "257257/1000",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00009.png",
+          "sha256": "0f1755d90dccf7f696c0e332c7e6027009480952f2a638bafa3ff6b70ab114c3"
+        },
+        {
+          "pts": 257507,
+          "local_seconds": "257507/1000",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00010.png",
+          "sha256": "b58544e265637243828805d4dc6e0c63c5946a0054e723d99779372cd260838b"
+        },
+        {
+          "pts": 257757,
+          "local_seconds": "257757/1000",
+          "path": ".tmp/ep02-batch01/decoded/gun_handover/frame-00011.png",
+          "sha256": "4410e7068c9ae61bc9b149966ae8c45629de94493c82e97d8d22b93ed2eb4178"
+        }
+      ]
+    },
+    {
+      "name": "hand_test",
+      "start": 347,
+      "end": 357,
+      "command": [
+        "ffmpeg.exe",
+        "-hide_banner",
+        "-nostdin",
+        "-n",
+        "-loglevel",
+        "info",
+        "-copyts",
+        "-ss",
+        "347.000000000",
+        "-t",
+        "10.000000000",
+        "-i",
+        "D:\\Repos\\Outlaw-Star-Game\\_source_episodes\\[CBM]_Outlaw_Star_-_02_-_World_of_Desires_[720p]_[9A1B74C3].mkv",
+        "-map",
+        "0:0",
+        "-an",
+        "-sn",
+        "-dn",
+        "-vf",
+        "select='gte(t,347.000000000)*lt(t,357.000000000)*if(isnan(prev_selected_t),1,gte(t-prev_selected_t,0.25))',showinfo",
+        "-fps_mode",
+        "passthrough",
+        "-frames:v",
+        "52",
+        "-start_number",
+        "0",
+        "D:\\Repos\\Outlaw-Star-Game\\.tmp\\ep02-batch01\\decoded\\hand_test\\frame-%05d.png"
+      ],
+      "inspected_pts": [
+        347013,
+        350267,
+        353520,
+        356773
+      ],
+      "frames": [
+        {
+          "pts": 347013,
+          "local_seconds": "347013/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00000.png",
+          "sha256": "5c639c1e653b1ffdeaa74524902c5ba32b540c15d778129d443c91b702509c12"
+        },
+        {
+          "pts": 347264,
+          "local_seconds": "43408/125",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00001.png",
+          "sha256": "7f74f380a76c88cd69a36e691941df50ccae66b9f401bfab1f8d13f4bb4d30ed"
+        },
+        {
+          "pts": 347514,
+          "local_seconds": "173757/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00002.png",
+          "sha256": "97db624d41db87ac9c5e9159b03763f6f4b6e6f4c806458dacb75847ce2e5235"
+        },
+        {
+          "pts": 347764,
+          "local_seconds": "86941/250",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00003.png",
+          "sha256": "8f92ac66e6e0456656fefa43a509c9cd42a5c7b11dd82e131a6b3fffee74e60e"
+        },
+        {
+          "pts": 348014,
+          "local_seconds": "174007/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00004.png",
+          "sha256": "c0f0a8cd86197b80e4040061eb577fc1d68ca13a943883e7dfba8115266a6a6a"
+        },
+        {
+          "pts": 348265,
+          "local_seconds": "69653/200",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00005.png",
+          "sha256": "c8886f124772cf1f4cd3ac25fbea8ba7d762abc7a0e21955583cbb3d0ad7cea9"
+        },
+        {
+          "pts": 348515,
+          "local_seconds": "69703/200",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00006.png",
+          "sha256": "66a71c4ba5d003c7e31fc716416760945d5fb6ad865f47fe0081732014d5b5b8"
+        },
+        {
+          "pts": 348765,
+          "local_seconds": "69753/200",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00007.png",
+          "sha256": "c5d3755bb46a91bc12beba22d708a7cdb1b42ecdd7d97323195b39c8d8364f92"
+        },
+        {
+          "pts": 349015,
+          "local_seconds": "69803/200",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00008.png",
+          "sha256": "1addcb6a74ce6279e3043a3990a67782161f54d7985344a4a1740202b2da35f2"
+        },
+        {
+          "pts": 349266,
+          "local_seconds": "174633/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00009.png",
+          "sha256": "0004d0597196e62934af6efa8c68a3c818e1e0e90a1a864765474be715ed2f41"
+        },
+        {
+          "pts": 349516,
+          "local_seconds": "87379/250",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00010.png",
+          "sha256": "aab7c6441ac6e8b06e238ee09009b925fd4ac484671da96c9733cef9993fb330"
+        },
+        {
+          "pts": 349766,
+          "local_seconds": "174883/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00011.png",
+          "sha256": "644fbb067027589f741b8d80dee1093a2cad6821bb2ebaeba230db8627093f2c"
+        },
+        {
+          "pts": 350016,
+          "local_seconds": "43752/125",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00012.png",
+          "sha256": "a6110c981bdf4c4b006d9d6a15738d5e0322aa234b5416bc18393482ad9b5acc"
+        },
+        {
+          "pts": 350267,
+          "local_seconds": "350267/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00013.png",
+          "sha256": "a6cab966f2792f2d92fc3d234ab56935e9e682a9d8c1922256e7940bd0584065"
+        },
+        {
+          "pts": 350517,
+          "local_seconds": "350517/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00014.png",
+          "sha256": "ab6e978f4e806bbd1088a71ff22d48fc9afb2d7a0d931d1f624196790be7c2d6"
+        },
+        {
+          "pts": 350767,
+          "local_seconds": "350767/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00015.png",
+          "sha256": "d425d5c4b3c02896a1199b1d27eeb92bc47f3d0697ee0b181ea2e347e81e86a3"
+        },
+        {
+          "pts": 351017,
+          "local_seconds": "351017/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00016.png",
+          "sha256": "4550958459fe210f40cbe8e6f78be902643936ed2c8562c91f2999e5fc4e2a8b"
+        },
+        {
+          "pts": 351268,
+          "local_seconds": "87817/250",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00017.png",
+          "sha256": "c6882f665fc1d68e9af7b9864ad72ba60f9d7b24639adb34c2aec1276256ef1a"
+        },
+        {
+          "pts": 351518,
+          "local_seconds": "175759/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00018.png",
+          "sha256": "7a832cd2e09486b588b0d75bcbe12db8b4c15935df60a2f38bd34389d298b5b3"
+        },
+        {
+          "pts": 351768,
+          "local_seconds": "43971/125",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00019.png",
+          "sha256": "c7ba36d9a009e3213ce3dd320d5be0b081e0b5068694c9a3dfce4bd97d6ecdeb"
+        },
+        {
+          "pts": 352018,
+          "local_seconds": "176009/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00020.png",
+          "sha256": "22a9f8fcb703e9274445f8d91ad9dba16235ed33436260ac57e490e7d11f1ad4"
+        },
+        {
+          "pts": 352269,
+          "local_seconds": "352269/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00021.png",
+          "sha256": "0c24dff42ec49cad96fef516b13cb6787716afcc44eb2ad4ef4c54317c7e0f08"
+        },
+        {
+          "pts": 352519,
+          "local_seconds": "352519/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00022.png",
+          "sha256": "935274bb0c7adffefbb83a1c5543f9208a95dc53d5b06578a41cb1775fd126fe"
+        },
+        {
+          "pts": 352769,
+          "local_seconds": "352769/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00023.png",
+          "sha256": "d7f83dc28558fa0425488a16dbfdeb08f13d7536a73b6e7755ca15d696952168"
+        },
+        {
+          "pts": 353019,
+          "local_seconds": "353019/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00024.png",
+          "sha256": "07698add3d723d1f669bbe6a8da443fd0276edfb6a0a6b56016bec1f1d58f4d4"
+        },
+        {
+          "pts": 353270,
+          "local_seconds": "35327/100",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00025.png",
+          "sha256": "975a59c7bc3fba0deb559643a030982ce60ead550199f611c3045a24d293fb07"
+        },
+        {
+          "pts": 353520,
+          "local_seconds": "8838/25",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00026.png",
+          "sha256": "50b7b6b57d79d7137cf0b72453c2b3843e6640d550a3c7eb0a48c01677e879ab"
+        },
+        {
+          "pts": 353770,
+          "local_seconds": "35377/100",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00027.png",
+          "sha256": "e96ca5fac2401176a992bd1dd962951ca525e9f0a3f34c5a2a564cc690b6c857"
+        },
+        {
+          "pts": 354020,
+          "local_seconds": "17701/50",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00028.png",
+          "sha256": "fe8fd4c2e6df9bed8d9b11b9926f4b4fe27d8097380ae92ad0f16ab6bedb28ee"
+        },
+        {
+          "pts": 354271,
+          "local_seconds": "354271/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00029.png",
+          "sha256": "09b39bc17895775febae09e8defd5a090de4e25f6d58fe3a99aeb47f0fbcad52"
+        },
+        {
+          "pts": 354521,
+          "local_seconds": "354521/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00030.png",
+          "sha256": "1dad84bb393de29f3acca0d4713230fe17c2406dfc707bf6d9a8a98d5a62e7ef"
+        },
+        {
+          "pts": 354771,
+          "local_seconds": "354771/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00031.png",
+          "sha256": "9283bb167f8a175381871b399e1197741b001b90d122553a14754a0367520024"
+        },
+        {
+          "pts": 355021,
+          "local_seconds": "355021/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00032.png",
+          "sha256": "a6206f02750b477761b6f783efaa59ca326f333511c0dac8b7ccf9da357e68d1"
+        },
+        {
+          "pts": 355272,
+          "local_seconds": "44409/125",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00033.png",
+          "sha256": "5da3392de3d01d379596a61a8771a46fe3b14b2b69235a4521740a563c30216e"
+        },
+        {
+          "pts": 355522,
+          "local_seconds": "177761/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00034.png",
+          "sha256": "9a898e8828898e97a44fbac8fbebb1a6009ef44e61c441f51705d02f1082f1bb"
+        },
+        {
+          "pts": 355772,
+          "local_seconds": "88943/250",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00035.png",
+          "sha256": "172a29135ac639fd70ee3392588a92bf6b93f35177a3d535dca006bd10e1a130"
+        },
+        {
+          "pts": 356022,
+          "local_seconds": "178011/500",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00036.png",
+          "sha256": "682c4b7b344682f9b89adb4c95ec5b0301607b62438cd706255d716bf23585fb"
+        },
+        {
+          "pts": 356273,
+          "local_seconds": "356273/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00037.png",
+          "sha256": "5a9aa440fb6848a4896fc9cd05fba2fe0ed3a605a267a8c59125d505486d1c74"
+        },
+        {
+          "pts": 356523,
+          "local_seconds": "356523/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00038.png",
+          "sha256": "da35aa096dafcdfd0c723f756abb90bff31d8bea7ac0e737f5f05ecc5cdb25d6"
+        },
+        {
+          "pts": 356773,
+          "local_seconds": "356773/1000",
+          "path": ".tmp/ep02-batch01/decoded/hand_test/frame-00039.png",
+          "sha256": "8d318c62181141f48a8c7be7ca30b0a96359c2816a19f36853fe06198d03a0c8"
+        }
+      ]
+    }
+  ],
+  "temporary_outputs": "PRUNED_AFTER_HASH_VERIFICATION",
+  "cleanup": {
+    "verified_frame_hashes": 160,
+    "removed_files": 170,
+    "removed_bytes": 134459227,
+    "removed_directory": ".tmp/ep02-batch01",
+    "directory_absence_verified": true
+  },
+  "review_checkpoint": {
+    "status": "PAUSED_BEFORE_ANNOTATION_FOR_EPISODE_ALIGNMENT",
+    "contact_sheet_locators_inspected": ["001-024", "025-048", "049-072"],
+    "full_size_locators_inspected": [6, 7, 12, 15, 18, 25, 29, 30, 34, 49, 50, 65, 69, 71],
+    "local_preview_frames_inspected": 32,
+    "limits": "Narrative/subtitle-led scene checks only. No permanent gallery/local timing association, anchor, mapping, image annotation or secondary-context table change was made. Episode 2 alignment must precede completion of this batch. The sampled gun_handover window did not visibly establish a transfer.",
+    "next_step": "Extend the Episode 1-only matching pilot to explicitly declared bounded episode selections, validate the extension, then establish and independently check Episode 2 alignment before resuming locators 001-072."
+  }
+}

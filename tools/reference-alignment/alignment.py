@@ -325,13 +325,43 @@ def comparison_sheet(gallery, records, groups, destination, label, rectangles):
     canvas.save(destination)
 
 
-def search(root, episode, selected, ffmpeg, ffprobe, rectangles, pilot_stage=2):
+def selection_plan(plan, episode, selected):
+    """Validate a predeclared, episode-local search plan before any decoding or output."""
+    if (not isinstance(plan, dict) or set(plan) != {'schema_version','episode_id','selections'}
+            or type(plan['schema_version']) is not int or plan['schema_version'] != 1
+            or plan['episode_id'] != f'EP-{episode:02d}'
+            or not isinstance(plan['selections'], list) or not 1 <= len(plan['selections']) <= 354):
+        raise ValueError('Invalid episode selection plan')
+    entries = {}
+    for row in plan['selections']:
+        if (not isinstance(row, dict)
+                or set(row) != {'image_id','role','search_start_seconds','search_end_seconds'}
+                or not isinstance(row['image_id'], str) or not re.fullmatch(r'[0-9]+', row['image_id'])
+                or row['image_id'] in entries or row['role'] not in ['LEAD','FIT','HOLDOUT']):
+            raise ValueError('Invalid/duplicate selection or role')
+        try:
+            if not all(isinstance(row[k], str) for k in ['search_start_seconds','search_end_seconds']):
+                raise ValueError('Search bounds must be rational strings')
+            lo, hi = F(row['search_start_seconds']), F(row['search_end_seconds'])
+            if not 0 <= lo < hi or hi-lo > 12:
+                raise ValueError('Each declared search window must be positive and at most 12 s')
+        except (ValueError, ZeroDivisionError) as exc:
+            raise ValueError('Invalid bounded search window') from exc
+        entries[row['image_id']] = dict(row, search_start_seconds=ratio(lo), search_end_seconds=ratio(hi))
+    if not set(selected) <= set(entries):
+        raise ValueError('Selected image not declared in plan')
+    return {image: entries[image] for image in selected}
+
+
+def search(root, episode, selected, ffmpeg, ffprobe, rectangles, pilot_stage=2, plan=None):
     root = Path(root).absolute()
     if not 1 <= episode <= 26 or not 1 <= len(selected) <= 5 or len(set(selected)) != len(selected):
         raise ValueError('Select one episode and 1-5 unique image IDs')
-    allowed = PROTOTYPE if pilot_stage==2 else set(STAGE3_ROLES) if pilot_stage==3 else set()
-    if episode != 1 or not set(selected) <= allowed:
-        raise ValueError('Selection outside the declared Episode 1 pilot stage')
+    declarations = selection_plan(plan, episode, selected) if plan is not None else None
+    if declarations is None:
+        allowed = PROTOTYPE if pilot_stage==2 else set(STAGE3_ROLES) if pilot_stage==3 else set()
+        if episode != 1 or not set(selected) <= allowed:
+            raise ValueError('Non-pilot searches require an explicit episode selection plan')
     mask, retained = masks_checked(rectangles)
     base = safe_path(root, f'reference/working/alignment/EP-{episode:02d}')
     with writer(base):
@@ -340,7 +370,7 @@ def search(root, episode, selected, ffmpeg, ffprobe, rectangles, pilot_stage=2):
         stage.mkdir()
         budget = Budget(stage)
         started = time.monotonic()
-        manifest = {'owner': VERSION, 'run_id': run_id, 'pilot_stage':pilot_stage, 'declared_roles':{i:STAGE3_ROLES[i] if pilot_stage==3 else 'LEAD' for i in selected}, 'created_utc': datetime.now(timezone.utc).isoformat(), 'status': 'RUNNING', 'results': []}
+        manifest = {'owner': VERSION, 'run_id': run_id, 'pilot_stage':None if declarations else pilot_stage, 'declared_roles':{i:declarations[i]['role'] if declarations else STAGE3_ROLES[i] if pilot_stage==3 else 'LEAD' for i in selected}, 'created_utc': datetime.now(timezone.utc).isoformat(), 'status': 'RUNNING', 'results': []}
         tracked = []
         try:
             source, images, identity, probe, subtitle_check, duration = inspect_inputs(root, episode, selected, ffprobe, budget)
@@ -358,13 +388,22 @@ def search(root, episode, selected, ffmpeg, ffprobe, rectangles, pilot_stage=2):
             versions = {name:run_process([exe,'-version'],budget).decode('utf-8',errors='replace').splitlines()[0] for name,exe in [('ffmpeg',ffmpeg),('ffprobe',ffprobe)]}
             manifest.update(identity=identity, input_id=input_id(identity), probe=probe, subtitle_check=subtitle_check,
                             recipe={'version': VERSION, 'implementation_sha256': digest(Path(__file__)), 'python':sys.version.split()[0], 'pillow':PILLOW_VERSION, 'tools': versions, 'size': [320,240], 'masks':rectangles, 'retained_pixels':retained, 'score':'1-MAE/255', 'coarse_interval':'1/4', 'cluster_gap_seconds':'1/2', 'cluster_score_band':'1/100', 'refinement_windows':2, 'refinement_width':'1/1', 'caps':{'frames':MAX_FRAMES,'bytes':MAX_BYTES,'seconds':MAX_SECONDS}, 'commands':[]})
+            if declarations:
+                manifest['recipe']['selection_plan_sha256'] = hashlib.sha256(canonical(plan)).hexdigest()
+                manifest['recipe']['declared_selections'] = declarations
             atomic(stage/'run.json',encode(manifest))
             base_time, origin = F(identity['video_time_base']), F(identity['media_origin_seconds'])
             total_windows = F(0)
             for image in images:
                 target, aspect = normalized(image['path'])
-                center = F(image['web_seconds']-2 if image['image_id'] in {'846774','846776'} else image['web_seconds'])
-                start, end = max(F(0),center-6), min(duration,center+6)
+                if declarations:
+                    declaration = declarations[image['image_id']]
+                    start, end = F(declaration['search_start_seconds']), F(declaration['search_end_seconds'])
+                    if end > duration:
+                        raise ValueError('Declared search window exceeds local media duration')
+                else:
+                    center = F(image['web_seconds']-2 if image['image_id'] in {'846774','846776'} else image['web_seconds'])
+                    start, end = max(F(0),center-6), min(duration,center+6)
                 folder = stage/image['image_id']; folder.mkdir()
                 records, command = decode(ffmpeg,source,identity['video_stream_index'],base_time,origin,start,end,folder/'coarse',budget,True)
                 total_windows += end-start
@@ -439,6 +478,7 @@ def main():
     sub.add_argument('--episode',type=int,required=True)
     sub.add_argument('--image-id',action='append',required=True)
     sub.add_argument('--pilot-stage',type=int,choices=(2,3),default=2)
+    sub.add_argument('--plan',type=Path,help='Predeclared episode/roles and explicit local windows; required outside the historical Episode 1 pilot')
     sub.add_argument('--ffmpeg',default=shutil.which('ffmpeg'))
     sub.add_argument('--ffprobe',default=shutil.which('ffprobe'))
     sub.add_argument('--mask',action='append',default=[],help='Explicit normalized rectangle x0,y0,x1,y1; maximum 30 percent union')
@@ -448,7 +488,7 @@ def main():
     try:
         if args.command=='search':
             if not args.ffmpeg or not args.ffprobe:raise ValueError('Locate installed FFmpeg/FFprobe explicitly; no automatic installation')
-            path=search(ROOT,args.episode,args.image_id,args.ffmpeg,args.ffprobe,[list(map(int,box.split(','))) for box in args.mask],args.pilot_stage)
+            path=search(ROOT,args.episode,args.image_id,args.ffmpeg,args.ffprobe,[list(map(int,box.split(','))) for box in args.mask],args.pilot_stage,read_json(args.plan) if args.plan else None)
             print(json.dumps({'run':str(path),'status':'COMPLETE_CANDIDATES','authored_tables_changed':False}))
         else:
             if not args.discard_unregistered:raise ValueError('Use finish.py for validated cleanup or explicitly --discard-unregistered')

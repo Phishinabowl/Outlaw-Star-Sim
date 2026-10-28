@@ -160,7 +160,7 @@ try {
  $overview.Cells[47,2].Value = $alignment.report.timing_basis.MAPPING_ESTIMATE
  $overview.Cells[48,1].Value = 'Unmapped'
  $overview.Cells[48,2].Value = $alignment.report.timing_basis.UNMAPPED
- $overview.Cells[50,1].Value = 'Episode 1 CBM: local = web - 1.388 s; validated web labels 06:40-20:40 only. Suggested search +/-2 s.'
+ $overview.Cells[50,1].Value = 'Timing is release- and segment-specific. See Alignment mappings for episodes, ranges and coefficients; never reuse another episode offset.'
  $overview.Cells[51,1].Value = 'Direct timestamps describe reviewed intervals; model timestamps are navigation estimates. Blank is not zero.'
  $overview.Cells[52,1].Value = if ($VerifyAlignmentMedia) { 'Explicit current-input verification requested; each row records its result and check time.' } else { 'Routine build: video digests not recomputed. Recorded alignment is labeled RECORDED_UNCHECKED.' }
  $overview.Cells[1,1,52,9].Style.Font.Name = 'Arial'
@@ -225,7 +225,7 @@ try {
  foreach ($spec in @(
   @{Name='Alignment anchors';Rows=@($alignment.anchors);First=@('anchor_id','episode_id','image_id','web_timestamp','role','status','match_kind','matched_local_start','matched_local_end','alignment_availability','notes','reviewer','reviewed_utc','method');Table='AlignmentAnchors'},
   @{Name='Alignment mappings';Rows=@($alignment.mappings);First=@('mapping_id','episode_id','status','segment_label','web_range','model','scale','offset_seconds','fit_count','holdout_count','alignment_availability','limitations');Table='AlignmentMappings'})) {
-  if ($spec.Rows.Count -eq 0) { throw 'Alignment register is empty; no accepted Stage 4 pilot to project' }
+  if ($spec.Rows.Count -eq 0) { throw 'Alignment register is empty; no recorded evidence to project' }
   $fields = @($spec.First) + @($spec.Rows[0].PSObject.Properties.Name | Where-Object { $_ -notin $spec.First })
   $table = @($spec.Rows | ForEach-Object {
    $item = [ordered]@{}

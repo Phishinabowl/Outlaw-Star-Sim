@@ -7,6 +7,12 @@ accepted by the maintainer on 2026-10-27 after workbook, cleanup and reproductio
 The two maintained alignment CSVs are initialized. No all-episode extraction or whole-runtime timing
 claim is implied.
 
+**Extension — 2026-10-28:** explicit episode selection plans now support Episodes 1–26 through
+search, assessment registration, current-input verification, modeling, report projection,
+reproduction and cleanup. The [extension results](#all-episode-extension--2026-10-28) distinguish
+synthetic coverage from the bounded live Episode 2 tool check. This extension is implemented and
+tested, and accepted by the maintainer on 2026-10-28; it does not establish Episode 2 timing alignment.
+
 ## Purpose and ownership
 
 Relate sampled AnimeHistory gallery images to the indexed local episode release so subtitle
@@ -886,6 +892,96 @@ python tools/reference-alignment/finish.py --episode 1 --discard-run <exact-unre
 
 The ordered episode workflow integrates timing preparation and cleanup per episode, rather than
 requiring full-show alignment before reviews resume. No additional batch, episode,
-installation, modeling or phase execution follows automatically. Current search, registration,
-source verification and reproduction commands retain the bounded Episode 1 pilot restriction;
-future episode support needs an explicit scoped increment and its own validation.
+installation, modeling or phase execution follows automatically. At Stage 5 acceptance, search,
+registration, source verification and reproduction retained the bounded Episode 1 pilot restriction.
+The explicit all-episode extension below replaces that execution restriction; historical pilot
+evidence and episode-specific validation limits remain unchanged.
+
+## All-episode extension — 2026-10-28
+
+Status: implemented and tested; accepted by the maintainer on 2026-10-28. The historical Episode 1 pilot
+commands remain available for reproduction. Routine episode work uses an explicit `--plan`.
+Supporting another episode does not authorize extracting it or establish its alignment.
+
+### Declared selection plan
+
+One JSON plan names exactly one `episode_id` from EP-01 through EP-26. It contains 1–354 distinct
+gallery image IDs with predeclared LEAD/FIT/HOLDOUT roles and explicit local search bounds.
+A command selects **1–5 IDs from that plan**. A plan is metadata, not an instruction to decode
+every entry. Unknown fields, duplicate IDs, invalid roles, episode disagreement, undeclared
+selections and invalid bounds are rejected. Gallery membership and source identity are checked
+against the selected episode's existing inputs before decoding. Each window is positive,
+at most 12 seconds and inside the local media duration; windows are never silently widened.
+
+Example from the live Episode 2 tool check, using LEAD roles only:
+
+```json
+{
+  "schema_version": 1,
+  "episode_id": "EP-02",
+  "selections": [
+    {"image_id": "847151", "role": "LEAD", "search_start_seconds": "184", "search_end_seconds": "196"},
+    {"image_id": "847191", "role": "LEAD", "search_start_seconds": "329", "search_end_seconds": "341"}
+  ]
+}
+```
+
+Bounds accept rational strings or decimal strings and are retained as exact rationals.
+The run recipe retains the canonical plan digest and selected declarations, so assessed anchors
+retain their roles, bounds and reproducibility metadata after temporary-output cleanup.
+Declare FIT/HOLDOUT roles before searches and freeze coefficients before independent validation.
+Recorded FIT/HOLDOUT image roles cannot be swapped in later runs. LEAD checks cannot validate
+a model. Failed, repeated or ambiguous images retain their proper status.
+
+```text
+python tools/reference-alignment/alignment.py search --episode 2 --plan <declared-plan.json> --image-id 847151 --image-id 847191 --ffmpeg <ffmpeg.exe> --ffprobe <ffprobe.exe> --mask 0,204,320,240
+python tools/reference-alignment/models.py record --episode 2 --run-id <ALNRUN-id> --assessments <reviewed-assessments.json> --ffprobe <ffprobe.exe>
+python tools/reference-alignment/models.py validate --current --episode 2 --ffprobe <ffprobe.exe>
+```
+
+Pass `--episode` explicitly when registering routine episode assessments; omission preserves the
+old Episode 1 default for historical commands. `propose` derives the episode from its checked
+anchors, rather than from a fixed Episode 1 value. Its existing FIT-only coefficients, frozen
+proposal, independent HOLDOUT gates, bounded segment coverage and source checks remain in force.
+`validate --episode` scopes current-media verification only; table validation still covers the
+whole register. Without that filter, explicit current verification checks every recorded episode
+and fails on unavailable or stale required inputs rather than silently skipping them.
+
+Reproduction derives the episode from its accepted anchor; cleanup already takes `--episode`.
+Both keep their existing hash checks, ownership, resource limits and cleanup gates. The workbook
+builder's overview guidance now points to episode-specific mapping records instead of a fixed
+Episode 1 formula. No maintained CSV schema, original locator field or historical timing value
+was changed. The 900-frame, 600 MiB, 15-minute and 70-second total window caps remain unchanged.
+
+### Validation and retained limits
+
+- All **69 alignment tests passed**, with installed FFmpeg enabled; none were skipped.
+  Plan contract tests cover all 26 episode IDs and invalid declarations. Synthetic end-to-end
+  tests exercise Episode 2 and Episode 26 assessment registration, frozen FIT proposal,
+  independent HOLDOUT validation, current verification and provenance-gated cleanup. Additional
+  tests cover mixed-episode verification, stale gallery digests, Episode 26 projection and
+  bounded hash reproduction without leaking estimates into an unmapped Episode 2.
+- The live Episode 2 search selected gallery 025/847151 and 065/847191 as LEAD only. It checked
+  the pinned source/subtitle inputs and decoded **143 frames over 26 requested window seconds**,
+  including refinement. Both comparison sheets and their displayed neighbors were visually
+  inspected. The expected case and arm-repair scenes were found, but both candidates reported
+  BROAD_SCORE_REGION. No unique timing anchor or model was accepted from this tool check.
+- Run `ALNRUN-11341c78396e4b56abeb43fc82faa69c`, input
+  `f0ba53a3817ca06cc96b8208637c425df8c1ca07e27ead05fc2f763f260785ca`, used the Episode 2
+  CBM source identified in the [preparation record](../../reference/indexes/episode-02-context-preparation.md).
+  Video SHA-256: `df89f10afd35450152692a093df92fb91bed62ed044480af321a936dea5e5acb`;
+  ASS SHA-256: `681eb5c7927e7c90c0fef83c699872f3a66db8afae55eef735a697909404f8bd`;
+  locator SHA-256: `4ed16b437fcd21af2626a5aa52bc7a24a4f91b202acd59f7be5cd1b6c4c1e66e`.
+  Stream 0 uses time base 1/1000 and origin 0; English ASS stream 4 is media-relative.
+  Plan digest: `53fc47845fa3f149164258271f7a98750ba2105c750e8ee904d701864b60a932`.
+  FFmpeg/FFprobe version: 9.0.1 essentials build; Python 3.12.14, Pillow 12.3.0.
+- The reviewed cleanup preview explicitly classified the run as an **unregistered discard**,
+  not validated-result cleanup. Applying preview
+  `a15a9f5f4ae9ca21dd68350bf122454b284bcc284faa20ed78578abe8efc3a9e` removed
+  **150 files / 124,591,657 bytes**. Directory absence and unchanged alignment/annotation table
+  hashes were checked afterward. This deliberately preserves no accepted timing from the run.
+
+The extension supports per-episode execution; actual matching quality and timing relationships
+must still be established for each episode/release. Episode 2 remains unmapped, its image
+annotations remain UNREVIEWED, and Phase 3.2A remains unstarted. The next research step is a
+declared Episode 2 alignment partition, not automatic continuation of the image survey.

@@ -718,6 +718,12 @@ review workflow, not a full-show alignment prerequisite.
   UNREVIEWED / NOT_REVIEWED, with no validated timing mapping. No image review or Phase 3.2A work
   started in preparation. The maintainer accepted the preparation on 2026-10-28.
   Other episode surveys remain unstarted.
+  The [all-episode alignment-tool extension](../../tools/reference-alignment/README.md#all-episode-extension--2026-10-28)
+  is implemented and tested, accepted by the maintainer on 2026-10-28: explicit bounded episode plans replace the
+  Episode 1-only execution restriction across matching, recording, verification and modeling.
+  All 69 tests passed, including synthetic Episode 2/26 workflows and a bounded live Episode 2
+  candidate-search/cleanup check. No Episode 2 timing mapping or image annotation was accepted;
+  episode alignment precedes resumption of the first survey batch. Phase 3.2A remains unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

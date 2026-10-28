@@ -81,6 +81,11 @@ These additions do not authorize later episodes or Phase 3.2A.
    Declare FIT/HOLDOUT roles before searches, visually assess candidates, retain durable
    provenance and independently validate a proposed mapping before using estimates. Refresh the
    category workbook and distinguish direct, estimated, player-lead and unmapped timing.
+   Routine matching now accepts an explicit one-episode selection plan for any of the 26
+   episodes; retain the existing 1–5-image command bound. See the
+   [all-episode extension](../../../tools/reference-alignment/README.md#all-episode-extension--2026-10-28)
+   for plan fields and episode-scoped assessment/current-verification commands. Tool support
+   does not imply that an episode already has validated timing coverage.
    The pinned Episode 1 release has a validated navigation offset of -1.388 s only for whole-second
    web labels 06:40–20:40; other regions/episodes remain unmapped. The tool doc owns the
    [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).

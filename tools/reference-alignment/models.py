@@ -200,30 +200,49 @@ def next_id(rows,field,prefix):
 
 
 def verify_current(root,anchors,ffprobe):
-    """Explicit Episode 1 check, no dependence on disposable decoded frames."""
-    if not anchors or {r['episode_id'] for r in anchors}!={'EP-01'}:raise ValueError('Current-media pilot checks Episode 1 only')
-    _,images,identity,_,_,_=a.inspect_inputs(Path(root),1,sorted({r['image_id'] for r in anchors}),ffprobe,a.Budget(Path(root)/'reference/working/alignment/registry'))
-    current=a.input_id(identity);hashes={r['image_id']:r['image_sha256'] for r in images}
-    if any(r['input_id']!=current or r['image_sha256']!=hashes[r['image_id']] for r in anchors):raise ValueError('Current source/gallery differs from recorded input')
-    return 'VERIFIED_CURRENT_EP01'
+    """Explicit checks grouped by episode, independent of disposable decoded frames."""
+    if not anchors:raise ValueError('No anchors selected for current-media verification')
+    episodes=sorted({r['episode_id'] for r in anchors})
+    for episode_id in episodes:
+        episode=episode_number(episode_id)
+        rows=[r for r in anchors if r['episode_id']==episode_id]
+        _,images,identity,_,_,_=a.inspect_inputs(Path(root),episode,sorted({r['image_id'] for r in rows}),ffprobe,a.Budget(Path(root)/'reference/working/alignment/registry'))
+        current=a.input_id(identity);hashes={r['image_id']:r['image_sha256'] for r in images}
+        if any(r['input_id']!=current or r['image_sha256']!=hashes[r['image_id']] for r in rows):raise ValueError('Current source/gallery differs from recorded input')
+    return 'VERIFIED_CURRENT_'+'_'.join(ep.replace('-','') for ep in episodes)
 
 
-def record_run(root,run_id,assessments,ffprobe):
+def episode_number(episode_id):
+    if not isinstance(episode_id,str) or not re.fullmatch(r'EP-(?:0[1-9]|1[0-9]|2[0-6])',episode_id):
+        raise ValueError('Invalid episode identity')
+    return int(episode_id[3:])
+
+
+def record_run(root,run_id,assessments,ffprobe,episode=1):
     """Explicit human/agent visual assessments, never automatic score promotion."""
     if not re.fullmatch('ALNRUN-[a-f0-9]{32}',run_id):raise ValueError('Invalid explicit run')
-    run=a.safe_path(root,'reference/working/alignment/EP-01/'+run_id);manifest=a.read_json(run/'run.json')
-    if manifest['owner']!=a.VERSION or manifest['status']!='COMPLETE_CANDIDATES':raise ValueError('Incomplete/unowned run')
+    episode_number(f'EP-{episode:02d}')
+    run=a.safe_path(root,f'reference/working/alignment/EP-{episode:02d}/'+run_id);manifest=a.read_json(run/'run.json')
+    if (manifest['owner']!=a.VERSION or manifest['status']!='COMPLETE_CANDIDATES'
+            or manifest['run_id']!=run_id or manifest['identity']['episode_id']!=f'EP-{episode:02d}'):
+        raise ValueError('Incomplete/unowned/wrong-episode run')
     selected=[r['image_id'] for r in assessments]
     if len(set(selected))!=len(selected) or not selected:raise ValueError('Duplicate/empty assessments')
+    results={r['image_id']:r for r in manifest['results']}
+    if not set(selected)<=set(results):raise ValueError('Assessment outside declared run selection')
+    if any(r['role']!=manifest['declared_roles'][i] for i,r in results.items()):
+        raise ValueError('Run role differs from predeclared role')
     with a.writer(Path(root)/'reference/working/alignment/registry'):
         anchors,mappings=load(root); locator=locators(root);validate(anchors,mappings,locator)
         a.Budget(run).check()
-        _,current_images,identity,_,_,_=a.inspect_inputs(Path(root),1,selected,ffprobe,a.Budget(Path(root)/'reference/working/alignment/registry'))
+        _,current_images,identity,_,_,_=a.inspect_inputs(Path(root),episode,selected,ffprobe,a.Budget(Path(root)/'reference/working/alignment/registry'))
         if a.input_id(identity)!=manifest['input_id']:raise ValueError('Run source inputs are stale')
         results={r['image_id']:r for r in manifest['results']}
         if any(image['image_sha256']!=results[image['image_id']]['image_sha256'] for image in current_images):raise ValueError('Run gallery image bytes are stale')
         for assessment in assessments:
             result=results[assessment['image_id']]
+            if result['role'] in ['FIT','HOLDOUT'] and any(r['episode_id']==identity['episode_id'] and r['image_id']==result['image_id'] and r['role'] in ['FIT','HOLDOUT'] and r['role']!=result['role'] for r in anchors):
+                raise ValueError('Cannot swap a previously declared FIT/HOLDOUT image role')
             if any(r['run_id']==run_id and r['image_id']==assessment['image_id'] for r in anchors):raise ValueError('Assessment already recorded; use explicit supersession for revision')
             record=dict.fromkeys(ANCHORS,'');record.update({k:str(v) for k,v in identity.items()})
             recipe=dict(manifest['recipe']);recipe.update(web_seconds=result['web_seconds'],diagnostic=result['diagnostic'],candidate_clusters=result['clusters'],run_manifest_sha256=a.digest(run/'run.json'),reviewed_frame_hashes={})
@@ -255,14 +274,15 @@ def propose(root,fit_ids,holdout_ids,model,label,limitations,ffprobe,assess=Fals
         if len(set(fit_ids+holdout_ids))!=len(fit_ids+holdout_ids):raise ValueError('Duplicate/leaked vote')
         votes=fitting+holdout
         if not fitting or len({r['input_id'] for r in votes})!=1:raise ValueError('Missing/mixed input identities')
-        _,current_images,identity,_,_,_=a.inspect_inputs(Path(root),1,[r['image_id'] for r in votes],ffprobe,a.Budget(Path(root)/'reference/working/alignment/registry'))
+        episode=episode_number(fitting[0]['episode_id'])
+        _,current_images,identity,_,_,_=a.inspect_inputs(Path(root),episode,[r['image_id'] for r in votes],ffprobe,a.Budget(Path(root)/'reference/working/alignment/registry'))
         if a.input_id(identity)!=fitting[0]['input_id']:raise ValueError('Current source differs from reviewed anchors')
         pinned={r['image_id']:r['image_sha256'] for r in votes}
         if any(image['image_sha256']!=pinned[image['image_id']] for image in current_images):raise ValueError('Current gallery bytes differ from reviewed anchors')
         result=evaluate(points(fitting,locator),points(holdout,locator),model)
         row=dict.fromkeys(MAPPINGS,'')
         web=[int(locator[(r['episode_id'],r['image_id'])]['web_seconds']) for r in votes]
-        row.update(mapping_id=next_id(mappings,'mapping_id','ALNMAP-'),episode_id='EP-01',input_id=fitting[0]['input_id'],segment_label=label,web_start_seconds=str(min(web)),web_end_seconds=str(max(web)+1),model=model,scale=a.ratio(result['scale']),offset_seconds=a.ratio(result['offset']),fit_anchor_ids=';'.join(sorted(fit_ids)),holdout_anchor_ids=';'.join(sorted(holdout_ids)),status=('REJECTED' if result['reasons'] else 'VALIDATED') if assess else 'PROPOSED',estimated_half_window_seconds='2/1',method_version='ALIGNMENT_MODEL_V1',reviewer='Codex' if assess else '',reviewed_utc=datetime.now(timezone.utc).isoformat() if assess else '',supersedes_mapping_ids=supersedes,limitations=limitations+(' Gates: '+', '.join(result['reasons']) if result['reasons'] else ''))
+        row.update(mapping_id=next_id(mappings,'mapping_id','ALNMAP-'),episode_id=fitting[0]['episode_id'],input_id=fitting[0]['input_id'],segment_label=label,web_start_seconds=str(min(web)),web_end_seconds=str(max(web)+1),model=model,scale=a.ratio(result['scale']),offset_seconds=a.ratio(result['offset']),fit_anchor_ids=';'.join(sorted(fit_ids)),holdout_anchor_ids=';'.join(sorted(holdout_ids)),status=('REJECTED' if result['reasons'] else 'VALIDATED') if assess else 'PROPOSED',estimated_half_window_seconds='2/1',method_version='ALIGNMENT_MODEL_V1',reviewer='Codex' if assess else '',reviewed_utc=datetime.now(timezone.utc).isoformat() if assess else '',supersedes_mapping_ids=supersedes,limitations=limitations+(' Gates: '+', '.join(result['reasons']) if result['reasons'] else ''))
         row.update({name:a.ratio(value) if value is not None else '' for name,value in zip(METRICS,result['metrics'])})
         if supersedes:
             old=next(r for r in mappings if r['mapping_id']==supersedes)
@@ -276,16 +296,17 @@ def propose(root,fit_ids,holdout_ids,model,label,limitations,ffprobe,assess=Fals
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     subs=parser.add_subparsers(dest='command',required=True)
-    p=subs.add_parser('validate');p.add_argument('--current',action='store_true');p.add_argument('--ffprobe')
-    p=subs.add_parser('record');p.add_argument('--run-id',required=True);p.add_argument('--assessments',type=Path,required=True);p.add_argument('--ffprobe',required=True)
+    p=subs.add_parser('validate');p.add_argument('--current',action='store_true');p.add_argument('--ffprobe');p.add_argument('--episode',type=int,choices=range(1,27),help='Scope current-input checks only; table validation still covers every record')
+    p=subs.add_parser('record');p.add_argument('--run-id',required=True);p.add_argument('--assessments',type=Path,required=True);p.add_argument('--ffprobe',required=True);p.add_argument('--episode',type=int,choices=range(1,27),default=1)
     p=subs.add_parser('propose');p.add_argument('--fit',nargs='+',required=True);p.add_argument('--holdout',nargs='*',default=[]);p.add_argument('--model',choices=['OFFSET','LINEAR'],default='OFFSET');p.add_argument('--label',required=True);p.add_argument('--limitations',required=True);p.add_argument('--ffprobe',required=True);p.add_argument('--assess',action='store_true');p.add_argument('--supersedes',default='')
     args=parser.parse_args()
     if args.command=='validate':
         anchors,mappings=load(a.ROOT);report=validate(anchors,mappings,locators(a.ROOT))
         if args.current and not args.ffprobe:parser.error('--current requires explicit --ffprobe')
-        report['current_media_check']=verify_current(a.ROOT,anchors,args.ffprobe) if args.current else 'NOT_PERFORMED'
+        current_anchors=[r for r in anchors if not args.episode or r['episode_id']==f'EP-{args.episode:02d}']
+        report['current_media_check']=verify_current(a.ROOT,current_anchors,args.ffprobe) if args.current else 'NOT_PERFORMED'
         print(json.dumps(report))
-    elif args.command=='record':print(json.dumps(dict(recorded=record_run(a.ROOT,args.run_id,a.read_json(args.assessments),args.ffprobe))))
+    elif args.command=='record':print(json.dumps(dict(recorded=record_run(a.ROOT,args.run_id,a.read_json(args.assessments),args.ffprobe,args.episode))))
     else:print(json.dumps(propose(a.ROOT,args.fit,args.holdout,args.model,args.label,args.limitations,args.ffprobe,args.assess,args.supersedes)))
 
 
