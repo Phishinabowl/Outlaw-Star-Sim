@@ -209,3 +209,51 @@ CTXLINK-000207,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847124,"Secondary scene 
 CTXLINK-000208,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847125,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
 CTXLINK-000209,CTX-000022,CONTEXT_FOR_IMAGE,IMAGE,EP-01:847126,"Secondary scene context only; visible content, unmapped timing and code variants are qualified in batch 05."
 CTXLINK-000210,CTX-000022,ABOUT,SUBJECT,melfina_transport_case,Descriptive subject corresponding to the trunk in the secondary summary; primary visible details remain in image annotations.
+CTXLINK-000211,CTX-000038,ABOUT,SUBJECT,melfina,
+CTXLINK-000212,CTX-000038,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000213,CTX-000039,ABOUT,SUBJECT,horus_dropship,
+CTXLINK-000214,CTX-000039,ABOUT,SUBJECT,horus,
+CTXLINK-000215,CTX-000039,MENTIONS,SUBJECT,blue_heaven,
+CTXLINK-000216,CTX-000039,MENTIONS,SUBJECT,hilda,
+CTXLINK-000217,CTX-000039,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000218,CTX-000040,ABOUT,SUBJECT,swanzo,
+CTXLINK-000219,CTX-000040,MENTIONS,SUBJECT,horus,
+CTXLINK-000220,CTX-000040,MENTIONS,SUBJECT,blue_heaven,
+CTXLINK-000221,CTX-000040,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000222,CTX-000041,ABOUT,SUBJECT,jim_hawking,
+CTXLINK-000223,CTX-000041,ABOUT,SUBJECT,melfina,
+CTXLINK-000224,CTX-000041,MENTIONS,SUBJECT,gene_starwind,
+CTXLINK-000225,CTX-000041,MENTIONS,SUBJECT,hilda,
+CTXLINK-000226,CTX-000041,MENTIONS,SUBJECT,blue_heaven,
+CTXLINK-000227,CTX-000041,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000228,CTX-000042,ABOUT,SUBJECT,mccoy,
+CTXLINK-000229,CTX-000042,MENTIONS,SUBJECT,gene_starwind,
+CTXLINK-000230,CTX-000042,MENTIONS,SUBJECT,hilda,
+CTXLINK-000231,CTX-000042,MENTIONS,SUBJECT,blue_heaven,
+CTXLINK-000232,CTX-000042,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000233,CTX-000043,ABOUT,SUBJECT,blue_heaven,
+CTXLINK-000234,CTX-000043,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000235,CTX-000044,ABOUT,SUBJECT,swanzo,
+CTXLINK-000236,CTX-000044,MENTIONS,SUBJECT,blue_heaven,
+CTXLINK-000237,CTX-000044,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000238,CTX-000045,ABOUT,SUBJECT,swanzo,
+CTXLINK-000239,CTX-000045,ABOUT,SUBJECT,hilda,
+CTXLINK-000240,CTX-000045,MENTIONS,SUBJECT,ron_macdougall,
+CTXLINK-000241,CTX-000045,MENTIONS,SUBJECT,harry_macdougall,
+CTXLINK-000242,CTX-000045,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000243,CTX-000046,ABOUT,SUBJECT,melfina,
+CTXLINK-000244,CTX-000046,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000245,CTX-000046,MENTIONS,SUBJECT,hilda,
+CTXLINK-000246,CTX-000046,MENTIONS,SUBJECT,horus,
+CTXLINK-000247,CTX-000046,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000248,CTX-000047,ABOUT,SUBJECT,caster,
+CTXLINK-000249,CTX-000047,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000250,CTX-000048,ABOUT,SUBJECT,horus_dropship,
+CTXLINK-000251,CTX-000048,ABOUT,SUBJECT,hilda,
+CTXLINK-000252,CTX-000048,MENTIONS,SUBJECT,gene_starwind,
+CTXLINK-000253,CTX-000048,MENTIONS,SUBJECT,jim_hawking,
+CTXLINK-000254,CTX-000048,MENTIONS,SUBJECT,melfina,
+CTXLINK-000255,CTX-000048,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
+CTXLINK-000256,CTX-000018,APPLIES_TO_EPISODE,EPISODE,EP-02,The two-jump claim is explicitly about Horus on the Blue Heaven route.
+CTXLINK-000257,CTX-000018,MENTIONS,SUBJECT,blue_heaven,Destination in the checked translated dialogue.
+CTXLINK-000258,CTX-000018,CHECKED_AGAINST,EVIDENCE,reference/indexes/episode-02-context-preparation.md#horus-two-jump-dialogue-check,Scoped translated-subtitle assessment only; no original audio or gallery-time match.

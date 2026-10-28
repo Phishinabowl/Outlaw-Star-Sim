@@ -712,6 +712,11 @@ review workflow, not a full-show alignment prerequisite.
   full-video/design verification is not implied. Phase 3.2A remains unstarted.
   The maintainer accepted pending batches 04–05, the tentative case-code follow-up and the
   Episode 1 retention checkpoint on 2026-10-28; unresolved rechecks remain open.
+  [Episode 2 context preparation](../../reference/indexes/episode-02-context-preparation.md)
+  downloaded all 354 gallery images/generated 15 sheets, verified and read the 387-event English
+  ASS track, and registered selected website context. All Episode 2 image annotations remain
+  UNREVIEWED / NOT_REVIEWED, with no validated timing mapping. No image review or Phase 3.2A work
+  started in preparation. The maintainer accepted the preparation on 2026-10-28.
   Other episode surveys remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,

@@ -410,6 +410,9 @@ The `subjects` register starts with:
 | `sentinel_iii` | Planet named by the Episode 1 establishing narration, corroborated against local globe/city views; does not identify the separate pre-title launch facility. |
 | `gene_modular_blaster` | Descriptive Episode 1 ID for the purple revolver-style blaster and fitted component kit, supported by short-barrel-blaster dialogue. Distinct from the gold caster; no model/caliber or full modification mechanism established. |
 | `melfina_transport_case` | Reinforced transport trunk revealing Melfina in Episode 1; distinct from the XGP pod/apparatus and Hilda's laptop. No complete life-support specification implied. |
+| `blue_heaven` | Asteroid free town identified in secondary Episode 2 preparation and local dialogue; distinct from the XGP storage asteroid. No image match or measured layout established by preparation. |
+| `swanzo` | Corbonite mechanic associated with Blue Heaven in selected secondary context; image identification and containment-suit details require scoped review. |
+| `mccoy` | Named Episode 2 bar antagonist in the captured synopsis; standalone wiki lookup returned NOT_FOUND. No appearance or individual attacker identification assigned during preparation. |
 | `starwind_hawking_car` | Descriptive continuity ID for the red open-top classic-style car used by Gene and Jim in Episode 1. No verified model designation, legal ownership or complete propulsion mechanism implied. |
 | `club_temptation` | Club identified by the visible Episode 1 sign and secondary scene context CTX-000034; its private-room companion remains unnamed. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
@@ -944,3 +947,24 @@ the verified RAR for future full-size checks. No next episode or Phase 3.2A work
 
 The maintainer accepted pending batches 04–05, the tentative case-code follow-up and the verified
 Episode 1 retention checkpoint on 2026-10-28. The eight rechecks remain open.
+
+## Episode 2 preparation — 2026-10-28
+
+All 354 gallery images (847127–847480) downloaded and passed decoding/hash validation; the
+existing prepare command also generated 15 contact sheets. JPEG bytes total 61,557,786, with
+61,969,457 bytes in the expanded cache including its manifest. No archive exists yet.
+
+The [context preparation record](../episode-02-context-preparation.md) documents the full read
+of all 387 registered English ASS events, verified source/track/hash and first-three-packet
+timing checks. Five selected Fandom articles and cached AnimeHistory Episode 2/Hilda/Horus
+context supply eleven new concise secondary assertions. Blue Heaven, Swanzo and McCoy receive
+catalogue IDs without assigning them to images. The failed standalone McCoy lookup is explicit.
+The narrow Horus two-jump route claim is now corroborated against the translated local dialogue;
+no XGP performance or completed travel measurement is inferred.
+
+All 354 Episode 2 image records remain UNREVIEWED / NOT_REVIEWED. No sheets or gallery originals
+were visually inspected during context preparation; no context-image links or alignment records
+were added. Episode 2 remains unmapped, and Episode 1's offset must not be reused. Context views
+are refreshed and validated; further timing/image review and Phase 3.2A remain separate scope.
+
+The maintainer accepted this Episode 2 download/subtitle/context preparation on 2026-10-28.
