@@ -790,6 +790,14 @@ review workflow, not a full-show alignment prerequisite.
   two reproductions and two subtitle/scene checks passed. All image annotations remain
   UNREVIEWED / NOT_REVIEWED. The maintainer accepted this alignment checkpoint on 2026-10-28.
   No Phase 3.2A work is included.
+  The subsequent [Episode 3 batch 01](../../reference/indexes/episode-03-review-batch-01.md)
+  initially reviews gallery 001–072 using three sheets, 19 selected originals including the
+  follow-up inspection of 013, translated
+  subtitle cues and accepted alignment: 71 SCREENED, one NEEDS_RECHECK (005), all 72
+  INITIAL_REVIEW_COMPLETE. The other 282 rows remain untouched. McCoy's machine operator
+  reveal and the separate hotel attacker are distinguished; Mikey's appearance remains a
+  lead. The maintainer accepted the batch and follow-up corrections on 2026-10-29;
+  no Phase 3.2A work is included.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

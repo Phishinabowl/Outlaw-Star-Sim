@@ -425,6 +425,9 @@ The `subjects` register starts with:
 | `hilda_prosthetic_arm` | Descriptive continuity ID for Hilda's artificial arm, exposed mechanisms and repair/hand-test views in Episode 2. Distinct from her wrist controller; no complete engineering design or manufacturer identification implied. |
 | `blue_heaven` | Asteroid free town identified in secondary Episode 2 preparation and local dialogue; distinct from the XGP storage asteroid. No image match or measured layout established by preparation. |
 | `swanzo` | Corbonite mechanic associated with Blue Heaven in selected secondary context; image identification and containment-suit details require scoped review. |
+| `mikey` | Partner named in selected Swanzo prose and Episode 3 dialogue. The tall goggled human mechanic is a candidate appearance match only; image rows retain `unknown_character`. |
+| `mccoy_combat_machine` | Descriptive ID for the yellow articulated machine with McCoy visible above/behind its opened shell in Episode 3 gallery 027–030. No canonical model or autonomous capability established; earlier Episode 2 annotations remain unchanged. |
+| `blue_heaven_hotel_attacker` | Descriptive ID for the orange-clad man interrogated by Hilda in Episode 3 gallery 037–047. Proper name unresolved; distinct from McCoy. |
 | `mccoy` | Episode 2 bearded bar antagonist with curly hair, green sleeves, dark vest and wrist wraps, identified in gallery 299–316 through translated dialogue, scene continuity and CTX-000042. Standalone wiki lookup returned NOT_FOUND; no operator identity is assigned to the later yellow mechanical opponent. |
 | `orta_honehone` | Ctarl-Ctarl ship named in secondary Episode 3 context; distinct from Horus and the XGP. No image match or measured dimensions established in preparation. |
 | `ctarl_ctarl` | Humanoid species identity, distinct from the Ctarl-Ctarl Empire as a political faction. Secondary catalogue context does not establish biological capabilities. |
@@ -1140,3 +1143,17 @@ are cleaned after durable-provenance checks. Gallery originals/contact sheets re
 for review. All Episode 3 annotations remain UNREVIEWED / NOT_REVIEWED. The maintainer accepted
 this alignment checkpoint on 2026-10-28.
 The first three-sheet survey and Phase 3.2A have not started.
+
+## Episode 3 annotated survey — batch 01, 2026-10-29
+
+The [batch record](../episode-03-review-batch-01.md) documents the subsequent review of
+gallery 001–072, three contact sheets and 19 selected originals including the follow-up
+inspection of 013, with translated subtitle
+cues 34–91 and the accepted alignment. All 72 rows are INITIAL_REVIEW_COMPLETE:
+71 SCREENED and one NEEDS_RECHECK (005, recurring opening launch-site/vessel identity).
+The remaining 282 Episode 3 rows are untouched. McCoy's machine operator reveal, the
+separate hotel attacker, paint-round pistol and Horus dock/service views are indexed.
+Mikey's name-to-face association remains provisional, with the tentative maintainer identification
+retained. Image 013 is corrected to opening XGP–El Dorado combat. The maintainer accepted
+the batch and follow-up corrections on 2026-10-29. This is not a targeted modeling deep dive.
+Phase 3.2A remains unstarted.
