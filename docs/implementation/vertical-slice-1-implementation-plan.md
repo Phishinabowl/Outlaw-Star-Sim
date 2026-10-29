@@ -798,6 +798,35 @@ review workflow, not a full-show alignment prerequisite.
   reveal and the separate hotel attacker are distinguished; Mikey's appearance remains a
   lead. The maintainer accepted the batch and follow-up corrections on 2026-10-29;
   no Phase 3.2A work is included.
+  The subsequent [Episode 3 batch 02](../../reference/indexes/episode-03-review-batch-02.md)
+  initially reviews gallery 073–144 using three sheets, 25 selected originals, translated
+  subtitle cues and accepted alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE;
+  144 Episode 3 rows are initially reviewed and 210 remain untouched. Horus cockpit/station,
+  dock-release, class-C pursuit and Orta-Honehone references are indexed with mechanism and
+  identity limits. Accepted by the maintainer on 2026-10-29; no Phase 3.2A work is included.
+  The subsequent [Episode 3 batch 03](../../reference/indexes/episode-03-review-batch-03.md)
+  initially reviews gallery 145–216 using three sheets, 22 selected originals, translated
+  subtitle cues and accepted alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE;
+  216 Episode 3 rows are initially reviewed and 138 remain untouched. Orta-Honehone maneuver,
+  command-space, Aisha costume, Horus escape and Blue Heaven references are indexed; three
+  mid-episode graphics are EYECATCH. Maintainer clarification identifies 196–197 as Horus's
+  sub-ether activation/disappearance sequence; exact effect timing/mechanics remain unverified.
+  Accepted by the maintainer on 2026-10-29; no Phase 3.2A work is included.
+  The subsequent [Episode 3 batch 04](../../reference/indexes/episode-03-review-batch-04.md)
+  initially reviews gallery 217–288 using three sheets, 25 selected originals, translated
+  subtitle cues and accepted alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE;
+  288 Episode 3 rows are initially reviewed and 66 remain untouched. Horus cockpit access,
+  gunner handoff and missile bank, rendezvous wreckage, pirate ship/fighters and command-space
+  references are indexed. Joint wreckage attribution, provisional leader names and motion/scale
+  limits remain explicit. Accepted by the maintainer on 2026-10-29; no Phase 3.2A work is included.
+  The subsequent [Episode 3 final batch](../../reference/indexes/episode-03-review-batch-05.md)
+  initially reviews gallery 289–354 using three sheets, 26 selected originals, translated
+  subtitles, cached website context and accepted alignment. All 354 Episode 3 gallery rows
+  are now INITIAL_REVIEW_COMPLETE (353 SCREENED, one NEEDS_RECHECK at 005). Horus marking,
+  pirate/El Dorado details, recorded governor message and stellar/asteroid approach references
+  are indexed with timing, identity and mechanism limits. The maintainer accepted the
+  remaining survey batches and clarifications on 2026-10-29, including image 347's future
+  reference value; episode cleanup has not run and Phase 3.2A remains unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

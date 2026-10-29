@@ -428,9 +428,11 @@ The `subjects` register starts with:
 | `mikey` | Partner named in selected Swanzo prose and Episode 3 dialogue. The tall goggled human mechanic is a candidate appearance match only; image rows retain `unknown_character`. |
 | `mccoy_combat_machine` | Descriptive ID for the yellow articulated machine with McCoy visible above/behind its opened shell in Episode 3 gallery 027–030. No canonical model or autonomous capability established; earlier Episode 2 annotations remain unchanged. |
 | `blue_heaven_hotel_attacker` | Descriptive ID for the orange-clad man interrogated by Hilda in Episode 3 gallery 037–047. Proper name unresolved; distinct from McCoy. |
+| `blue_heaven_grappler_ship` | Descriptive collective ID for the compact class-C craft pursuing Horus from Blue Heaven in Episode 3. The dialogue count is five; exact vessel names and individual pilot assignments are unverified. Distinct from Episode 1 pirate fighters and Episode 4 landing units. |
 | `mccoy` | Episode 2 bearded bar antagonist with curly hair, green sleeves, dark vest and wrist wraps, identified in gallery 299–316 through translated dialogue, scene continuity and CTX-000042. Standalone wiki lookup returned NOT_FOUND; no operator identity is assigned to the later yellow mechanical opponent. |
 | `orta_honehone` | Ctarl-Ctarl ship named in secondary Episode 3 context; distinct from Horus and the XGP. No image match or measured dimensions established in preparation. |
 | `ctarl_ctarl` | Humanoid species identity, distinct from the Ctarl-Ctarl Empire as a political faction. Secondary catalogue context does not establish biological capabilities. |
+| `ctarl_governor` | Descriptive role ID for the elderly pointed-eared official displayed in Episode 3's recorded reprimand. Translated dialogue addresses him as Governor and identifies the Comm Cube message as a recording; personal name and physical recording-device design remain unverified. |
 | `farfallas` | Destination-system identity; Farfallus retained as an AnimeHistory spelling variant. Original-language spelling and image associations remain unverified. |
 | `starwind_hawking_car` | Descriptive continuity ID for the red open-top classic-style car used by Gene and Jim in Episode 1. No verified model designation, legal ownership or complete propulsion mechanism implied. |
 | `club_temptation` | Club identified by the visible Episode 1 sign and secondary scene context CTX-000034; its private-room companion remains unnamed. |
@@ -1157,3 +1159,52 @@ Mikey's name-to-face association remains provisional, with the tentative maintai
 retained. Image 013 is corrected to opening XGP–El Dorado combat. The maintainer accepted
 the batch and follow-up corrections on 2026-10-29. This is not a targeted modeling deep dive.
 Phase 3.2A remains unstarted.
+
+## Episode 3 annotated survey — batch 02, 2026-10-29
+
+The [batch record](../episode-03-review-batch-02.md) documents gallery 073–144 using three
+contact sheets, 25 selected originals, translated subtitle cues 92–161 and the accepted
+alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 3 now has
+144 initially reviewed rows (143 SCREENED, one NEEDS_RECHECK at 005); 210 remain untouched.
+The survey preserves Horus dock-release configurations, passenger and operating stations,
+class-C pursuit, turret and anti-laser imagery, and Orta-Honehone's exterior and command-space
+views. Mechanism specifications, unnamed pilot identity and environmental construction remain
+qualified. The maintainer accepted this batch on 2026-10-29; no Phase 3.2A work is included.
+
+## Episode 3 annotated survey — batch 03, 2026-10-29
+
+The [batch record](../episode-03-review-batch-03.md) documents gallery 145–216 using three
+contact sheets, 22 selected originals, translated subtitle cues 159–225 and accepted alignment.
+All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE, including three EYECATCH graphics.
+Episode 3 now has 216 initially reviewed rows (215 SCREENED, one NEEDS_RECHECK at 005);
+138 remain untouched. Orta-Honehone maneuver context, bridge displays, Aisha costume/poses,
+Horus passage/escape, Blue Heaven exterior and McCoy questioning are indexed. Maintainer
+clarification identifies 196–197 as Horus's continuous sub-ether activation/disappearance
+sequence; exact effect timing and mechanics remain for targeted review.
+The maintainer accepted this batch and clarification on 2026-10-29; no Phase 3.2A work is included.
+
+## Episode 3 annotated survey — batch 04, 2026-10-29
+
+The [batch record](../episode-03-review-batch-04.md) documents gallery 217–288 using three
+contact sheets, 25 selected originals, translated subtitle cues and accepted alignment.
+All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE; 275 is a childhood FLASHBACK.
+Episode 3 now has 288 initially reviewed rows (287 SCREENED, one NEEDS_RECHECK at 005);
+66 remain untouched. Horus cockpit access, gunner handoff, exterior angles and missile
+bank are indexed alongside pirate command-space, launch-tube and fighter references.
+Leprechaun/Purgatory wreckage is jointly identified by dialogue without assigning each
+fragment. Pirate leaders retain descriptive identities with provisional name leads.
+The maintainer accepted this batch on 2026-10-29; no Phase 3.2A work is included.
+
+## Episode 3 annotated survey — batch 05, 2026-10-29
+
+The [final batch record](../episode-03-review-batch-05.md) documents gallery 289–354 using
+three contact sheets, 26 selected originals, translated subtitle cues, cached website
+context and accepted alignment. All 66 new rows are SCREENED / INITIAL_REVIEW_COMPLETE.
+All 354 Episode 3 gallery images now have completed initial reviews: 353 SCREENED and
+one NEEDS_RECHECK at 005. No targeted deep-dive completion is implied.
+Horus's glowing brand, fighter underside, El Dorado/pirate hull details, recorded governor
+message, Aisha's demotion and the hiding-asteroid display are indexed with mechanism,
+identity and timing limits. The two final portraits remain unmapped. Episode cleanup
+has not run; originals and contact sheets remain available. The maintainer accepted the
+remaining Episode 3 survey batches and clarifications on 2026-10-29, including image 347's
+future reference value. No next episode or Phase 3.2A work is included.
