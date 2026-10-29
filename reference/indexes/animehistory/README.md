@@ -89,7 +89,10 @@ These additions do not authorize later episodes or Phase 3.2A.
    The pinned Episode 1 release has a validated navigation offset of -1.388 s only for whole-second
    web labels 06:40–20:40. The pinned Episode 2 release has independently validated navigation
    coverage of web labels 01:43–22:39 with offset -1.286 s; its
-   [alignment review](../episode-02-alignment-review.md) records the limits. Other unsupported
+   [alignment review](../episode-02-alignment-review.md) records the limits. Episode 3 now has
+   separately validated navigation coverage for web labels 01:47–23:00 at offset -1.4845 s;
+   its [alignment review](../episode-03-alignment-review.md) retains the checks and unmapped edges.
+   Other unsupported
    regions remain unmapped. The tool doc owns the
    [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).
    A two-second navigation search window is not a verified subtitle-to-frame association.
@@ -1121,3 +1124,19 @@ All 354 Episode 3 image rows remain UNREVIEWED / NOT_REVIEWED. No gallery annota
 context-to-image links, video-frame extraction or alignment mappings were added. Episode 3
 alignment remains the next separate step before timed batch review. The maintainer accepted
 this preparation checkpoint on 2026-10-28; no Phase 3.2A work is included.
+
+## Episode 3 bounded alignment — 2026-10-28
+
+The [alignment review](../episode-03-alignment-review.md) records 16 assessed attempts, ten
+supported direct intervals and six retained ambiguities. ALNMAP-000006 supersedes the frozen
+FIT proposal with unchanged coefficients after independent validation: local = web -1.4845 s,
+web-label domain [107,1381). Gallery 002–352 has ten direct intervals and 341 estimates;
+001 and 353–354 remain unmapped. The measured maximum HOLDOUT interval error is 0.3755 s,
+not an error guarantee for untested images.
+
+Current Episode 3 input verification, two accepted-frame hash reproductions and two separated
+subtitle/scene checks passed. The category workbook is refreshed and owned alignment outputs
+are cleaned after durable-provenance checks. Gallery originals/contact sheets remain available
+for review. All Episode 3 annotations remain UNREVIEWED / NOT_REVIEWED. The maintainer accepted
+this alignment checkpoint on 2026-10-28.
+The first three-sheet survey and Phase 3.2A have not started.

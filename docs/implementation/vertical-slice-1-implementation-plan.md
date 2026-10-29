@@ -783,6 +783,13 @@ review workflow, not a full-show alignment prerequisite.
   remain explicit. All Episode 3 image rows remain UNREVIEWED / NOT_REVIEWED; episode-specific
   alignment is still the next separate step. The maintainer accepted the gallery and context
   preparation checkpoint on 2026-10-28; Phase 3.2A remains unstarted.
+  The subsequent [Episode 3 alignment](../../reference/indexes/episode-03-alignment-review.md)
+  passes the OFFSET gates with six FIT and four independent HOLDOUT anchors: local = web
+  -1.4845 s for web labels 01:47–23:00. Gallery 002–352 has navigation coverage; 001 and
+  353–354 remain unmapped. Six ambiguous attempts remain explicit. Current-input verification,
+  two reproductions and two subtitle/scene checks passed. All image annotations remain
+  UNREVIEWED / NOT_REVIEWED. The maintainer accepted this alignment checkpoint on 2026-10-28.
+  No Phase 3.2A work is included.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

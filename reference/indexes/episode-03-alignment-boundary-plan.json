@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "episode_id": "EP-03",
+  "selections": [
+    {"image_id":"847820","role":"FIT","search_start_seconds":"1330","search_end_seconds":"1342"},
+    {"image_id":"847832","role":"FIT","search_start_seconds":"1374","search_end_seconds":"1386"}
+  ]
+}
