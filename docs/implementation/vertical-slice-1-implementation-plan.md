@@ -744,6 +744,32 @@ review workflow, not a full-show alignment prerequisite.
   and 107–110 as the dragon attack canceled by Gene's caster shot.
   The maintainer accepted the batch and its clarification follow-ups on 2026-10-28;
   no later batch or Phase 3.2A work is included.
+  The [Episode 2 third batch](../../reference/indexes/episode-02-review-batch-03.md) covers
+  145–216 with aligned subtitles, local samples and scoped website context. Combined coverage:
+  216 INITIAL_REVIEW_COMPLETE, 215 SCREENED and one NEEDS_RECHECK (003), with
+  138 untouched. Dropship/main-Horus, bumper and childhood-memory boundaries remain explicit.
+  Maintainer context identifies the hired attackers and father's control-hand insert, and
+  corrects the rescue view to the closed escape-pod door/window; tentative details remain leads.
+  The maintainer accepted this batch and its follow-ups on 2026-10-28 during Episode 2 closeout.
+  The [Episode 2 fourth batch](../../reference/indexes/episode-02-review-batch-04.md) covers
+  217–288 with aligned subtitle context and 21 full-size checks. Fifteen groups preserve Horus
+  docking/boarding, Swanzo's greeting and station warning, exterior inserts, shopping/fitting and
+  the bar. Combined coverage: 288 INITIAL_REVIEW_COMPLETE, 287 SCREENED, one NEEDS_RECHECK
+  (003), with 66 untouched. Unknown companion identity and mechanical/pressure limits remain
+  qualified. No new decoded samples were generated. The maintainer accepted this batch on
+  2026-10-28 during Episode 2 closeout.
+  The [Episode 2 final batch](../../reference/indexes/episode-02-review-batch-05.md) covers
+  289–354 with translated subtitles, 26 full-size checks and 18 explicit local samples.
+  All 354 rows are INITIAL_REVIEW_COMPLETE: 353 SCREENED and one NEEDS_RECHECK (003).
+  McCoy's image identity is recorded separately from the unidentified yellow machine; gallery
+  349–354 remains outside accepted alignment coverage. The final review was accepted and
+  episode-level cleanup authorized on 2026-10-28. The
+  [retention checkpoint](../../reference/indexes/episode-02-retention-checkpoint.md) owns archive,
+  recovery and pruning evidence. EP-02.rar passed native integrity and two staged recovery checks;
+  expanded originals are removed and all 15 sheets retained. Preservation checks matched all
+  20 CSV/sheet/registry hashes. Both generated views are refreshed. The initial survey is closed
+  with 003 unresolved and 349–354 unmapped. The maintainer confirmed the closeout on 2026-10-28.
+  No next episode or Phase 3.2A work is included.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

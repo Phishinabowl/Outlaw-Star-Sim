@@ -410,6 +410,7 @@ The `subjects` register starts with:
 | `el_dorado` | MacDougall brothers' gold spacecraft, identified by the maintainer in Episode 4 locators 230 and 234–239; compare SET-107/112 for exterior and launcher references. |
 | `halcyon_missile` | Large El Dorado underside missile identified by the maintainer in supplemental references EP-04-MAN-003–007; compare SET-112's ハルシオン・ミサイル. Halcyon is a provisional Latin rendering, distinct from El Dorado's smaller nose-launched missiles. |
 | `gene_escape_pod` | Escape pod associated with Gene's childhood rescue in the Episode 4 flashback, identified from maintainer sequence context; do not transfer its design to Horus's dropship or other escape craft. |
+| `gene_father`, `gene_father_ship` | Descriptive IDs for Gene's father and the yellow family spacecraft in his childhood flashback, supported by Episode 2 father/son dialogue and rescue continuity. No primary proper name, ship model or legal ownership established; keep hostile surrounding craft separate. |
 | `pirate_landing_craft` | Green pirate landing/dropship units identified by the maintainer in Episode 4 locator 167; reported landing-foot action is retained separately from still-image observations. |
 | `xgp_hangar_asteroid` | Asteroid containing the Outlaw Star's storage hangar and awakening setting, identified by the maintainer; door motion and transfer context remain reported until checked in video. |
 | `starwind_hawking_hq` | Starwind & Hawking premises; identification does not establish a planet/location without supporting evidence. |
@@ -421,7 +422,7 @@ The `subjects` register starts with:
 | `hilda_prosthetic_arm` | Descriptive continuity ID for Hilda's artificial arm, exposed mechanisms and repair/hand-test views in Episode 2. Distinct from her wrist controller; no complete engineering design or manufacturer identification implied. |
 | `blue_heaven` | Asteroid free town identified in secondary Episode 2 preparation and local dialogue; distinct from the XGP storage asteroid. No image match or measured layout established by preparation. |
 | `swanzo` | Corbonite mechanic associated with Blue Heaven in selected secondary context; image identification and containment-suit details require scoped review. |
-| `mccoy` | Named Episode 2 bar antagonist in the captured synopsis; standalone wiki lookup returned NOT_FOUND. No appearance or individual attacker identification assigned during preparation. |
+| `mccoy` | Episode 2 bearded bar antagonist with curly hair, green sleeves, dark vest and wrist wraps, identified in gallery 299–316 through translated dialogue, scene continuity and CTX-000042. Standalone wiki lookup returned NOT_FOUND; no operator identity is assigned to the later yellow mechanical opponent. |
 | `starwind_hawking_car` | Descriptive continuity ID for the red open-top classic-style car used by Gene and Jim in Episode 1. No verified model designation, legal ownership or complete propulsion mechanism implied. |
 | `club_temptation` | Club identified by the visible Episode 1 sign and secondary scene context CTX-000034; its private-room companion remains unnamed. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
@@ -1021,3 +1022,63 @@ untouched. Existing secondary assertions
 supply 49 new image links without merging pirate role IDs into candidate proper names.
 The maintainer accepted batch 02 and its clarification follow-ups on 2026-10-28;
 no later batch or Phase 3.2A work is included.
+
+## Episode 2 annotated survey — batch 03, 2026-10-28
+
+The [third batch](../episode-02-review-batch-03.md) covers gallery 145–216 with aligned
+translated subtitle context, eighteen full-size original checks and thirty explicit local samples.
+Seventeen scene groups distinguish dropship boarding/rendezvous, main-Horus sub-ether imagery,
+the bumper, childhood memory/dream and Blue Heaven approach. Descriptive father/family-ship IDs
+retain the unnamed yellow ship separately from purple attackers in 185–186. Maintainer context
+identifies those attackers as hired support brought by the MacDougalls; El Dorado's recalled
+position and later recognition remain follow-up leads. It also identifies the father's hand at
+188 and corrects 189–190 to a view through the closed escape-pod door/window rather than a screen.
+Combined coverage is 216 INITIAL_REVIEW_COMPLETE: 215 SCREENED, one NEEDS_RECHECK
+(003), with 138 gallery rows untouched at that checkpoint. The maintainer accepted this batch
+and its clarification follow-ups on 2026-10-28 during Episode 2 closeout;
+no later batch or Phase 3.2A work is included.
+
+## Episode 2 annotated survey — batch 04, 2026-10-28
+
+The [fourth batch](../episode-02-review-batch-04.md) covers gallery 217–288 with aligned
+English subtitle context and 21 full-size checks. Fifteen scene groups distinguish Horus's
+overhead docking support and boarding stairs, Swanzo's greeting, Gene's gun bluff, Jim's
+reflection, ship-detail inserts, station corridors/market, Melfina's clothing fitting and the
+bar. Static support views and dialogue warnings do not establish full docking or pressure-system
+specifications. The tall human companion remains unnamed in image tags; Mikey is a secondary
+lead without an appearance match. Existing secondary context supplies 89 new image links.
+Combined coverage is 288 INITIAL_REVIEW_COMPLETE: 287 SCREENED and one NEEDS_RECHECK
+(003), with 66 gallery rows untouched. No new decoded frames were created. Gallery originals
+and contact sheets remained until the subsequent episode-level archive cleanup. The maintainer
+accepted this batch on 2026-10-28 during Episode 2 closeout;
+no later batch or Phase 3.2A work is included.
+
+## Episode 2 annotated survey — batch 05, 2026-10-28
+
+The [final batch](../episode-02-review-batch-05.md) covers gallery 289–354 with translated
+subtitle context, 26 full-size checks and 18 explicit local samples. Fifteen scene groups
+preserve the bar confrontation, hotel/reception, clothing change, sleeping, intrusion and yellow
+mechanical opponent. McCoy's image cues are recorded; the machine's operator, model and exact
+blue-tool function remain unassigned. Gallery 349–354 remains unmapped; local scene samples
+do not extend ALNMAP-000004. Existing context supplies 69 new image links.
+
+All 354 Episode 2 rows are INITIAL_REVIEW_COMPLETE: 353 SCREENED and one NEEDS_RECHECK
+(003 opening ship). This is initial-survey completion, not full identity or design verification.
+The maintainer accepted the final review and authorized episode-level RAR cleanup on 2026-10-28.
+The [retention checkpoint](../episode-02-retention-checkpoint.md) owns the resulting archive,
+recovery and pruning evidence. No next episode or Phase 3.2A work is included.
+
+### Episode 2 retention checkpoint — 2026-10-28
+
+The complete format-2 EP-02.rar contains 354 gallery originals and recovery metadata; no manual
+supplements are registered for this episode. Native integrity and staged recovery passed during
+archive creation, and prune independently repeated recovery/inventory/hash checks before removing
+the expanded cache. Final status: cached 0, archived 354, contact sheets 15, unpacked bytes 0,
+archive hash valid. The RAR is 61,505,246 bytes; removing redundant expanded data reclaimed
+61,969,457 bytes. All 20 preserved CSV/sheet/registry hashes matched. No temporary media runs or
+archive staging directories remain. Both generated views are refreshed and validated.
+
+The initial survey is closed with locator 003 unresolved and 349–354 unmapped. Restore originals
+from the verified RAR when a later full-size check is needed. The maintained retention record
+above owns commands, hashes, recovery details and limits. The maintainer confirmed this checkpoint
+on 2026-10-28; no next episode or Phase 3.2A work starts here.
