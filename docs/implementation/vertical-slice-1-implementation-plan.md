@@ -770,6 +770,19 @@ review workflow, not a full-show alignment prerequisite.
   20 CSV/sheet/registry hashes. Both generated views are refreshed. The initial survey is closed
   with 003 unresolved and 349–354 unmapped. The maintainer confirmed the closeout on 2026-10-28.
   No next episode or Phase 3.2A work is included.
+  **Episode 3 gallery preparation — 2026-10-28:** 354 images downloaded and decoded/hash-checked,
+  with zero missing/failed and 15 contact sheets generated. All sheet hashes and ordered locator
+  mappings passed; first/middle/final layouts were checked for presentation only. All Episode 3
+  rows remain UNREVIEWED / NOT_REVIEWED; subtitle/context preparation and episode-specific
+  alignment remain the next separate scope. The [index preparation record](../../reference/indexes/animehistory/README.md#episode-3-gallery-preparation--2026-10-28)
+  owns counts, storage and evidence limits. No Phase 3.2A work is included.
+  The subsequent [Episode 3 subtitle/context preparation](../../reference/indexes/episode-03-context-preparation.md)
+  reads all 372 English ASS events and registers four selected Fandom captures plus nine
+  source-checked secondary assertions using the cached AnimeHistory synopsis as well.
+  Media/subtitle identity and bounded packet checks passed; route and later-episode limits
+  remain explicit. All Episode 3 image rows remain UNREVIEWED / NOT_REVIEWED; episode-specific
+  alignment is still the next separate step. The maintainer accepted the gallery and context
+  preparation checkpoint on 2026-10-28; Phase 3.2A remains unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
