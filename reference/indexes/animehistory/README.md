@@ -1604,3 +1604,220 @@ Context view retains five tabs with 11,355 cells and 2,137 links verified. Rende
 rear-costume, shell appearance, shell qualification and added context-link views passed visual
 inspection. No new native Office Viewer test is claimed. Disposable batch helpers and previews
 are removed; originals and contact sheets remain available for the final Episode 5 batch.
+
+## Episode 5 annotated survey — batch 05, 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Gallery 289–354
+(848477–848542) received individual visible descriptions, overlapping tags, priorities and
+qualified context in 16 contiguous groups, EP-05-S063–S078. All three final sheets were
+visually reviewed. Full-size originals inspected: 289, 290, 292, 293, 295, 301, 302, 307,
+313, 314, 324, 333, 334, 336–339, 342, 348, 352 and 354. No source-video extraction,
+website retrieval, new manual image or targeted deep-review completion is claimed.
+
+ALNMAP-000010 covers all 66 labels. 354 retains its accepted direct interval at
+1376.500–1376.542 local seconds; the other 65 are navigation estimates using
+`local = web - 1.232 s`. Earlier ambiguous attempts at 328, 334 and 353 remain estimates.
+English ASS cues 299–366 were reread: shell number 12, caster confrontation and bill
+(18:55.60–19:35.30), repaint/registration and Gilliam integration discussion
+(19:43.25–20:24.39), pirate territories, Fred Luo and farewell (20:27.73–21:39.19),
+clearance/beacons and launch call (21:46.91–22:26.40), and Aisha's dishwashing aftermath
+(22:34.69–22:58.65). These are translated scene-navigation intervals, not exact matches
+between every sampled image and subtitle line. Ending lyrics and Episode 6 preview remain
+outside this gallery batch's narrative attribution.
+
+289–295 retain the silver-gray shell, caster rear opening/linkage and side fitting, upright
+handling pose, comic eye insert and Aisha's spiral-eyed, ragged, smoke-wreathed aftermath.
+289, 290, 292 and 295 are high-priority caster references. Number 12 comes from cue 301,
+not a readable shell marking. 293 is a stylized reaction insert, not a resolved projectile
+or beam diagram. The sampled images do not cover the complete loading, closure, aiming,
+firing and impact sequence. The planned maintainer-supplied screenshots between 289 and 295
+remain pending and will receive separate manual IDs and observed player-time provenance.
+No caliber, effect measurement, universal shell behavior, lethality or internal mechanism
+is inferred. 296–298 preserve Gene's departure and the unnamed restaurant personnel;
+dialogue assigns Aisha the bill without establishing its amount or payment completion.
+
+299–312 retain the station return, repainted XGP and dock conversation. 301–302 are
+high-priority upper-hull/nose references: red finish, blue perforated trim, gold tip,
+cockpit window, fins, panel seams and external service connections. 307–308 provide
+companion underside views; dark shading does not establish a permanent black belly finish.
+Articulated dock tools are separate from ship grappler arms. Dialogue confirms registration
+and paint, not complete weapons outfitting; no written registration number is read.
+Mikey and suited Swanzo remain distinct from Gilliam. 312 preserves Swanzo's suit/eye
+drawing and side fitting. The translated AI-integration statement does not establish
+permanent inseparability or a complete control architecture. Sentinel III remains the
+intended destination, not a completed arrival.
+
+313–332 preserve the station meeting-room chart, sofa, separate chair, small computer,
+closed door and character performance. 313–315 and 324 are high-priority chart/environment
+and Swanzo-suit references. This is not assigned as an XGP interior. Translated dialogue
+names Tempa Empire, Kei/Ban territory, Heifong and the Fred Luo procurement lead; the
+unlabeled chart does not establish measured borders, coordinates or a plotted route.
+Fred remains an absent dialogue referent. Jim's alarm, coat pulling and Gene's farewell
+gestures are performance references, not measured fabric behavior or completed procurement.
+
+333–345 retain Blue Heaven's exterior and dock platform, then the XGP cockpit. 333–334
+are high-priority station references, including readable BLUEHEAVEN, WELCOME! and Private
+signs. 335–339 and 342 are high-priority cockpit references: the pilot seat and ceiling,
+overhead circular Gilliam unit, curved grips, Melfina's red-framed display/controls, Jim
+leaning behind a seat, and the upright lever in a slotted base beside rings and round
+controls. Screen symbols, control command mappings and exact clearances remain unverified.
+Melfina is clothed in a cockpit seat, not visibly in her apparatus. Surrounding starfield
+presentation alone does not distinguish windows from projected display. Clearance, beacon
+confirmation, following beacons and Gene's later launch call remain separate statements;
+no complete flight checklist, ignition cycle or autonomous-navigation algorithm is established.
+346–347 show an asteroid field with no resolved ship, not a verified sub-ether effect.
+
+348–354 retain Aisha's yellow apron, foamy sink, crockery stacks, cleaning props, tiled
+restaurant kitchen, extractor hood and comic expressions. 348 and 354 are high priority
+for environment/prop and facial-performance work. Restaurant labor follows the bill
+aftermath, but no wage, debt amount or precise employment arrangement is established.
+This is Blue Heaven restaurant space, not an XGP galley.
+
+Cached CTXSRC-000026 SECTION:0002, CTXSRC-000021 SECTION:0004,
+CTXSRC-000016 SECTION:0001/BLOCK:0027 and CTXSRC-000025 SECTION:0001 were reread.
+Thirty-nine links, CTXLINK-000987–001025, reuse CTX-000043, CTX-000060,
+CTX-000065, CTX-000066, CTX-000068 and CTX-000069 for selected station, mechanic,
+AI, repaint, caster/bill and destination-context images. No source/assertion or primary
+promotion is added. Context totals are 44 subjects, 26 sources, 73 assertions and 1,025 links.
+
+All 66 rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 5's complete sampled gallery
+now has 354 initial-review rows: 353 SCREENED and one NEEDS_RECHECK at 002. No gallery
+row remains unreviewed in this episode. Global counts are 1,758 SCREENED, 12 NEEDS_RECHECK
+and 7,434 UNREVIEWED; depth counts are 1,712 INITIAL_REVIEW_COMPLETE, 58 PARTIAL and
+7,434 NOT_REVIEWED. Validation and preservation checks passed for all other 9,138 category
+rows, existing context-link prefixes, reported notes and 406 protected media/input/timing
+hashes. This is initial gallery coverage, not complete episode-footage or mechanism analysis.
+
+Next: add the planned caster supplements, then verify/archive and prune through the accepted
+episode cleanup procedure when authorized. Originals and contact sheets remain available;
+no Episode 5 archive or media cleanup is performed in this increment. No later episode or
+Phase 3.2A work is included.
+
+Both ImportExcel projections refreshed with authored-data equality verified. The category
+view retains 30 tabs, 432,588 gallery cells, 9,204 image links, 510 manual cells and 3,819
+alignment cells. The context view retains five tabs with 11,706 cells and 2,215 links
+verified. Changed shell, hull, cockpit-control, uncertainty and context-link ranges were
+rendered and visually inspected. No fresh native Office Viewer test is claimed. Disposable
+batch authoring helpers, baseline and preview images are removed after verification;
+episode media are retained for the planned supplements.
+
+## Episode 5 caster supplements — 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Sixteen supplied screenshots
+are preserved byte-for-byte as EP-05-MAN-001–016 under
+`reference/working/manual-supplements/EP-05/`. Their total size is 45,577,793 bytes.
+The supplemental CSV retains individual SHA-256s, sizes, original attachment filenames,
+whole-second VLC labels, contextual gallery links and supplied sequence order. No cropping,
+recompression, deduplication, video extraction or source-media modification was performed.
+Near-repeat flare states remain separate records. Player chrome, black bars, pause symbols
+and Next frame overlays are capture artifacts, not anime artwork.
+
+| Manual IDs | Visible player labels | Observed reference content |
+| --- | --- | --- |
+| 001–005 | 19:04, 19:05, 19:06, 19:06, 19:07 | Gene handling the open/displaced caster rear assembly beside Jim, fingers at the opening, changing linkage positions and a later seated/closed appearance. |
+| 006–010 | 19:13 for all five | Caster held upright beside Gene's head; small pink flare, broadened pink shapes, a large jagged lateral flare, a smaller pink state, then yellow-white flare/streaks with pink remaining around the weapon. |
+| 011 | 19:14 | Forward-facing circular muzzle and front fittings surrounded by a broken pink ring. |
+| 012 | 19:15 | Blue-white luminous ball-like form at the forward-facing muzzle with pale ribbon-like tendrils and detached spots. |
+| 013–014 | 19:15 for both | Aisha's raised fists and subsequent exaggerated reaction amid blue-white luminous forms and crossing/curving streaks. |
+| 015–016 | 19:17 for both | Aisha leaning back with arms spread under cyan illumination, then inverted with wrapped lower legs/soles raised, ragged costume and tail visible beside a curved bright streak. |
+
+All sixteen are HIGH priority and SCREENED / INITIAL_REVIEW_COMPLETE. The sequence is useful
+for future caster modeling, handling animation and visual-effect work, with a revisit pointer
+to SET-136. It does not authorize weapon implementation. Visible loading/closure states are
+recorded without claiming a fully established insertion path, latch identity, internal feed
+mechanism, joint axis or dimensions. Colored flare and discharge shapes are observations;
+charge physics, projectile material/speed, continuous-beam behavior, damage, lethality and
+universal number-12 behavior remain unverified. Shell number 12 retains its prior translated
+dialogue basis rather than a newly read marking. Partial finger/weapon occlusion remains explicit.
+
+Manual IDs preserve supplied order where player labels repeat. Every record retains
+PLAYER_UI_WHOLE_SECONDS / UNRECONCILED: no decoded frame PTS, consecutive-frame guarantee,
+exact duration or independent gallery match is claimed. The visible release title identifies
+Episode 5 and the CA71B58C label, but does not supply a binary source identity or subsecond
+alignment proof. Contextual associations bracket gallery 289–290, 292–293 and 292/295;
+they do not rewrite the accepted mapping or its direct-versus-estimated distinctions.
+
+Only gallery 289–295 receive follow-up uncertainty wording and attributed supplied-context
+notes linking the new states. Their original visible summaries, tags, priorities, review
+provenance and detail depth remain unchanged. The other 9,197 gallery rows and all ten earlier
+manual records are unchanged. Sixteen links, CTXLINK-001026–001041, associate the supplements
+with existing CTX-000068's caster/incapacitation/bill narrative. No new source/assertion or
+primary-status promotion is added. Context totals remain 44 subjects, 26 sources and 73 assertions,
+with 1,041 links. Gallery coverage/status counts are unchanged; manual-reference count is 26.
+
+Validation passed, including present-file hashes/sizes for all sixteen new originals,
+exact preservation of existing manual/context prefixes, bounded gallery-field changes and
+405 protected input/media/timing hashes. The supplements will join the Episode 5 RAR through
+the accepted archive-and-prune procedure during authorized episode cleanup. They remain
+expanded with gallery originals for now. No cleanup, next episode, commit or Phase 3.2A work
+is included in this supplement increment.
+
+Both ImportExcel workbooks refreshed with source-data equality verified. The category
+projection retains 30 tabs, 432,588 gallery cells, 9,204 gallery image links and 3,819
+alignment cells; its expanded manual view has 1,326 verified cells for 26 records.
+The context projection retains five tabs with 11,850 verified cells and 2,247 links.
+Changed manual identity/time/availability, loading, flare, discharge/reaction and context-link
+ranges were rendered and visually inspected. No fresh native Office Viewer test is claimed.
+Disposable authoring helpers, baseline and preview images are removed; the sixteen reference
+originals remain available for review and later archive inclusion.
+
+## Episode 5 retention checkpoint — 2026-10-30
+
+Status: cleanup authorized, implemented, verified and accepted by the maintainer on
+2026-10-30. The initial survey covers all 354 sampled gallery images
+(353 SCREENED, one NEEDS_RECHECK at 002), plus sixteen HIGH-priority initial-review caster
+supplements. Initial coverage does not settle the unidentified recurring opening craft at 002,
+internal caster mechanics, exact manual-image timing or other retained detail questions.
+
+Before pruning, `models.py validate --current --episode 5` with the installed FFprobe passed
+VERIFIED_CURRENT_EP05. The alignment finish preview found no runs and zero removable bytes;
+the earlier four-run cleanup remains intact. No new search/reproduction frames were created.
+Durable anchor/mapping records and their timing distinctions remain unchanged.
+
+The first complete format-2 archive was created with `episode_gallery.py archive --episode 5
+--compression 3`, using WinRAR 7.13 x64, non-solid compression. It includes 354 gallery JPGs,
+their manifest, all sixteen EP-05-MAN PNG originals and the supplemental recovery metadata.
+Native RAR integrity, staged restoration, decoding, exact inventory and image/hash comparisons
+passed before promotion. Observed creation/recovery verification time was 90.328 s.
+
+| Retained artifact / size | Result |
+| --- | --- |
+| `reference/cache/animehistory-review/archives/EP-05.rar` | 107,537,634 bytes |
+| Archive SHA-256 | `8373923f7887c3166f9b42b0b5b89060d2b20081b342de10d286e7d15155285f` |
+| Packing inputs including recovery metadata | 108,062,011 bytes |
+| Compression saving against packing inputs | 524,377 bytes, approximately 0.49% |
+| Receipt | `reference/cache/animehistory-review/archives/EP-05.json`; complete, archive format 2, gallery 354, supplements 16 |
+| Contact sheets retained | All 15 PNGs, 52,773,132 bytes, plus unchanged `sheets.json` registry |
+
+`episode_gallery.py prune --episode 5 --progress-saved` independently restored and checked
+the archive again, compared its manifest and current supplemental recovery snapshot, then
+removed the expanded gallery cache and all sixteen registered supplemental PNGs. Both emptied
+episode media directories are absent. Removed expanded data totals 108,047,676 bytes:
+62,469,883 bytes of gallery cache/manifest and 45,577,793 bytes of manual PNGs. This removal
+is measured separately from the newly retained RAR; it is not a claim of that amount of net
+compression saving. Contact sheets, research records, cited context captures and existing
+subtitle copies remain available under their separate retention rules.
+
+Final gallery status: cached 0, archived images 354, archived supplements 16, contact sheets 15,
+unpacked bytes 0 and archive hash valid. All 63 protected CSV, sheet/registry, earlier archive
+and subtitle-provenance hashes match the pre-cleanup baseline. Authored annotations, manual
+player labels/hashes/order and context records are unchanged. No archive packing, verification,
+prune-verification or restore staging directories remain. The empty manual folder was removed
+by the tool; no unrelated working-directory cleanup was performed.
+
+Both generated ImportExcel views are refreshed after pruning. Supplemental availability is
+NOT_LOCAL and paths/IDs remain available for later verified restoration; this does not reduce
+review coverage. Later full-size work uses `episode_gallery.py restore --episode 5`, or
+`restore --episode 5 --supplements-only` for the manual PNGs alone, followed by normal verified
+prune after use. Current-media timing verification requires restoring its gallery inputs.
+
+Episode 6 is the next episode in the adopted sequence, but is not started automatically.
+No source media, archive, screenshot or workbook is published, and no Phase 3.2A work is included.
+
+Post-prune workbook checks passed: 30 category tabs, 432,588 gallery cells, 9,204 gallery
+links, 1,326 manual cells and 3,819 alignment cells; five context tabs, 11,850 cells and
+2,247 links. Authored-source equality passed for both builds. All sixteen Episode 5 manuals
+are NOT_LOCAL; the context overview now counts 21 linked archived manual images globally.
+Changed availability and overview ranges were rendered and visually inspected, without a
+fresh native Office Viewer claim. Disposable cleanup-baseline, check and preview files are
+removed after verification; contact sheets, archive/receipt and durable evidence remain.

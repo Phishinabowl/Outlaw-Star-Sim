@@ -902,8 +902,29 @@ review workflow, not a full-show alignment prerequisite.
   initially reviews 217–288: Jim's equipment-shop surroundings, renewed Aisha confrontation,
   restaurant setting and the offered caster shell. Power and energy claims remain dialogue;
   shell number 12 is a translated identifier, with no mechanism/effect established here.
-  All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE; 66 Episode 5 rows remain unreviewed.
+  All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE; 66 Episode 5 rows remained unreviewed
+  at that checkpoint.
   The maintainer accepted batch 04 on 2026-10-30; no phase advance.
+  [Episode 5 batch 05](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-05-2026-10-30)
+  initially reviews the final 289–354: caster handling/aftermath, red hull and dock views,
+  station chart-room discussion, departure cockpit controls and Aisha's restaurant work.
+  All 354 sampled gallery rows now have INITIAL_REVIEW_COMPLETE status (353 SCREENED,
+  one NEEDS_RECHECK at 002). Caster-action supplements between 289 and 295 were pending
+  at that checkpoint; no full mechanism analysis or phase advance is implied.
+  The maintainer accepted batch 05 on 2026-10-30; no phase advance.
+  The subsequent [caster supplement increment](../../reference/indexes/animehistory/README.md#episode-5-caster-supplements--2026-10-30)
+  preserves all 16 supplied images in order as EP-05-MAN-001–016, with whole-second player
+  labels, hashes and contextual gallery links. Loading/closure, flare, muzzle/discharge and
+  target-reaction states are indexed without exact timing or internal-mechanism claims.
+  Supplement validation passed; maintainer acceptance and Episode 5 archive/cleanup were
+  pending at that checkpoint. No phase advance is implied.
+  The subsequent [Episode 5 retention checkpoint](../../reference/indexes/animehistory/README.md#episode-5-retention-checkpoint--2026-10-30)
+  records authorized cleanup: the complete verified format-2 RAR retains 354 gallery originals
+  and all 16 manual PNGs. Independent recovery checks passed before expanded media were pruned;
+  all 15 contact sheets and authored records remain. Alignment has no remaining temporary runs.
+  Archive hash and preservation checks passed. The maintainer accepted the final batch,
+  caster supplements and retention checkpoint on 2026-10-30.
+  Episode 6 and Phase 3.2A are not started automatically.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
