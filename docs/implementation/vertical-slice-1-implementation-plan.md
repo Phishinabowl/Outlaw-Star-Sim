@@ -877,6 +877,16 @@ review workflow, not a full-show alignment prerequisite.
   direct intervals and 347 estimates. Six ambiguous attempts remain explicit. Current-input,
   reproduction, preservation and workbook checks passed; all four temporary search runs were
   removed. The maintainer accepted alignment on 2026-10-30. Image review and Phase 3.2A remain unstarted.
+  The subsequent [Episode 5 batch 01](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-01-2026-10-30)
+  initially reviews 001–072: 71 SCREENED and one NEEDS_RECHECK at 002, all INITIAL_REVIEW_COMPLETE.
+  Unpainted XGP service views and Swanzo's chamber/suit are retained as useful references;
+  Mikey's appearance association is scoped to call/dock continuity. No targeted deep review or
+  phase advance is implied. Validation and workbook checks are recorded with the batch;
+  the maintainer accepted the batch on 2026-10-30. The remaining 282 Episode 5 images are unreviewed.
+  A subsequent [Mikey identification reconciliation](../../reference/indexes/animehistory/README.md#cross-episode-mikey-identification--2026-10-30)
+  updates 18 Episode 2 and 12 Episode 3 mechanic rows using Episode 5 dialogue/visual continuity.
+  Cropped/distant views remain qualified, and earlier attributed notes are preserved.
+  The maintainer accepted this catalogue correction on 2026-10-30; no phase advance is implied.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

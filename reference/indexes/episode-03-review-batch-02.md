@@ -6,6 +6,11 @@ Scope: gallery 073–144 (847553–847624), contact sheets 0073–0096, 0097–0
 
 ## Evidence and timing
 
+Subsequent identification update, 2026-10-30: mechanic rows 074–075 and 079 now use Mikey;
+079 retains distant-view continuity limits. See the
+[current identification record](animehistory/README.md#cross-episode-mikey-identification--2026-10-30).
+The provisional wording below records the original review state; earlier supplied notes are preserved.
+
 All three sheets were visually reviewed. Selected originals inspected are 080, 081, 083,
 087, 095, 098, 102, 106, 107, 108, 110, 111, 114, 115, 119, 120, 123, 124, 130,
 134, 135, 137, 140, 142 and 144. No new video extraction was performed.

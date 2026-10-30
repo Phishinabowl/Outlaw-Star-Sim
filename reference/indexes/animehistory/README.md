@@ -429,7 +429,7 @@ The `subjects` register starts with:
 | `hilda_prosthetic_arm` | Descriptive continuity ID for Hilda's artificial arm, exposed mechanisms and repair/hand-test views in Episode 2. Distinct from her wrist controller; no complete engineering design or manufacturer identification implied. |
 | `blue_heaven` | Asteroid free town identified in secondary Episode 2 preparation and local dialogue; distinct from the XGP storage asteroid. No image match or measured layout established by preparation. |
 | `swanzo` | Corbonite mechanic associated with Blue Heaven in selected secondary context; image identification and containment-suit details require scoped review. |
-| `mikey` | Partner named in selected Swanzo prose and Episode 3 dialogue. The tall goggled human mechanic is a candidate appearance match only; image rows retain `unknown_character`. |
+| `mikey` | Catalogue identity established through Episode 5's named video call (018/020), translated dialogue and matching dock appearance. Matching Episode 2/3 mechanic rows are reconciled; cropped and distant views retain scene-continuity limits. Independent appearance-article confirmation remains unavailable. See [current identification scope](#cross-episode-mikey-identification--2026-10-30). |
 | `mccoy_combat_machine` | Descriptive ID for the yellow articulated machine with McCoy visible above/behind its opened shell in Episode 3 gallery 027–030. No canonical model or autonomous capability established; earlier Episode 2 annotations remain unchanged. |
 | `blue_heaven_hotel_attacker` | Descriptive ID for the orange-clad man interrogated by Hilda in Episode 3 gallery 037–047. Proper name unresolved; distinct from McCoy. |
 | `blue_heaven_grappler_ship` | Descriptive collective ID for the compact class-C craft pursuing Horus from Blue Heaven in Episode 3. The dialogue count is five; exact vessel names and individual pilot assignments are unverified. Distinct from Episode 1 pirate fighters and Episode 4 landing units. |
@@ -1306,3 +1306,102 @@ through the inspected cleanup preview, releasing 776,723,199 bytes; gallery orig
 sheets remain. Earlier episodes, context data and image annotations are unchanged. The maintainer
 accepted this alignment checkpoint on 2026-10-30; the first three-sheet image review is the next
 separate step. No Phase 3.2A work is included.
+
+## Episode 5 annotated survey — batch 01, 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Gallery 001–072
+(848189–848260) received individual descriptions, overlapping tags, priorities, uncertainty
+notes and 20 contiguous scene groups. All three contact sheets were visually reviewed;
+full-size originals inspected were 002, 006, 007, 014, 015, 018, 025, 026, 033, 035,
+036, 055, 067 and 071. No new video extraction was performed. The accepted alignment's
+temporary frames remain removed and are not claimed as newly inspected survey evidence.
+
+ALNMAP-000010 supplies `local = web - 1.232 s` navigation coverage for all 72 labels,
+with two direct matches at 001/011 and estimates elsewhere. The two-second search half-window
+does not establish an exact subtitle/frame association. Translated English ASS cues 30–105
+were reread: video-call/docking discussion (02:30.02–02:57.14), Hilda's death and Gene's plans
+(03:05.99–03:33.94), registration/paint/supplies negotiation (03:34.02–04:28.13), Swanzo's
+backstory and limited knowledge (04:32.68–05:25.79), Ctarl inquiry/work arrangements
+(05:25.93–05:48.58), and hull-color choice/Gilliam farewell (05:48.65–06:01.49).
+Speaker/subject associations use visual continuity and selected secondary context, not empty
+subtitle Name fields or the numerically closest web label.
+
+Opening 001–013 remains separate from story action: XGP exterior, the unresolved launch-site
+view, Gene's gun framing, caster still life, portraits, Suzuka clothing, the three-woman
+composition, the XGP/El Dorado vignette and crew montage. Japanese title 024 is not independently
+transcribed. Image 002 remains NEEDS_RECHECK for the craft/facility identity; no XGP planetary
+launch or Sentinel III location is inferred. Other cropped montage identities remain qualified
+in row notes without promoting the scene to present-day narrative evidence.
+
+Images 014–021 show green Swanzo outside his suit, reclining in a pink support inside a transparent
+chamber, with tea service, headset and Mikey's video call. Chamber contents, pressure, gravity,
+dimensions and life-support operation remain unverified. The name Mikey in cue 31, call continuity,
+selected Swanzo biography and later matching goggled mechanic support the initial-survey association
+in 018/020 and dock views. Its independent appearance-source confirmation remains limited;
+the batch checkpoint retained PROVISIONAL identity and left earlier Episode 3 rows unchanged.
+The subsequent [cross-episode identification update](#cross-episode-mikey-identification--2026-10-30)
+records the current catalogue identity and retrospective corrections.
+
+The rounded teal figure in 027–028 and later dock conversations is Swanzo in his suit, not Gilliam.
+Plain and patterned yellow visor lights, side headset, red trim, gloves, belt and pale side fittings
+are useful appearance references. Their changes do not establish a display/emotion algorithm.
+Gilliam is addressed in the final dialogue but that does not identify a visible Gilliam body.
+
+Images 025–026 and 033–035 are high-priority unpainted XGP exterior/service references: underside
+motifs, seams, recessed equipment, circular assemblies, forward silhouette, hanging connections
+and articulated dock work arms. Do not relabel surrounding service arms as the ship's grapplers,
+assign exact service-line functions or infer internal rooms from exposed external panels.
+Registration and repaint are promised; the dialogue explicitly excludes obtaining grappler weapons
+locally. The remaining portraits preserve Gene/Jim/Melfina/Mikey/Swanzo expressions and costume
+details through that negotiation, Hilda backstory, Ctarl warning and color discussion.
+
+CTX-000073 adds only Swanzo's readable unsuited appearance description from CTXSRC-000016,
+SECTION:0007, as SOURCE_CHECKED / SECONDARY_ONLY. Existing partner, Blue Heaven, registration
+and backstory assertions are reused. Thirty links are added, including selected image associations;
+these are contextual, not exact timing links or primary-evidence promotions. No new website
+retrieval, manual supplement or targeted deep-review status is introduced.
+
+All 72 rows are INITIAL_REVIEW_COMPLETE: 71 SCREENED and one NEEDS_RECHECK (002).
+The remaining 282 Episode 5 rows and all other episodes are untouched. Maintained records validate;
+9,132 out-of-batch category rows, prior context claims/links/sources and 403 protected input hashes
+are preserved. The only existing context-subject edit updates the scoped Mikey association note.
+The refreshed ImportExcel category view retains 30 tabs, with 432,588 gallery cells, 9,204 image
+links, 510 manual cells and 3,819 alignment cells verified. The five-tab context view verifies
+10,599 cells and 1,969 links; both builders confirm authored-data equality. Rendered recheck,
+chamber, XGP service, dock, overview, new claim and Mikey-note views passed visual inspection.
+No fresh native Office Viewer test is claimed. Disposable helpers/previews are removed. Media and cited
+source caches remain local-only. Next separate batch: 073–144. No Phase 3.2A work is included.
+
+## Cross-episode Mikey identification — 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Thirty previously unnamed mechanic rows
+are identified as Mikey using Episode 5's named video call (018/020, translated English ASS
+cue 31), matching dock appearance and the existing CTX-000060 partner context. The retained
+Episode 2 sheets 0217–0240 and 0241–0264 and Episode 3 sheets 0049–0072 and 0073–0096
+were visually rechecked. No originals were restored and no new media or website retrieval occurred.
+
+- Episode 2: 228, 229, 232, 234–244, 249–251 and 254 (18 rows).
+- Episode 3: 054, 058–059, 066–069, 071–072, 074–075 and 079 (12 rows).
+
+Clear views match brown hair, yellow goggles, blue tank top, pink trousers and white gloves.
+Episode 2's cropped trouser/boot views (232, 234–235, 239, 242–244) retain MEDIUM confidence
+and explicit adjacent-shot continuity limits. Distant overhead views (Episode 2: 228–229,
+240–241, 254; Episode 3: 058–059, 079) also retain MEDIUM confidence. Clearer views use HIGH.
+The subject registry's ESTABLISHED status applies to this scoped catalogue identity; it does not
+establish a complete biography or independently sourced appearance article.
+
+Visible descriptions, attributed earlier tentative notes, scene groups, review statuses/depths
+and priorities are preserved. Earlier review records below and in the linked batch documents
+describe their original evidence state; this section owns the subsequent identification scope.
+CTX-000060 remains SOURCE_CHECKED / SECONDARY_ONLY. Thirty contextual image links
+(CTXLINK-000903–000932) reuse that assertion without primary-evidence or exact-timing promotion.
+The context tables contain 44 subjects, 26 sources, 73 assertions and 932 links.
+
+Category/context validation passes. Preservation checks confirm the other 9,174 category rows,
+prior context assertions/sources/links and 84 protected input, archive and contact-sheet hashes
+are unchanged. Episode 5's pending batch 01 annotations remain intact. No Phase 3.2A work is included.
+Both ImportExcel workbooks refreshed with authored-data equality verified: category view retains
+30 tabs, 432,588 gallery cells, 9,204 image links, 510 manual cells and 3,819 alignment cells;
+context view retains five tabs with 10,869 cells and 2,029 links verified. Rendered Episode 2/3
+tags, cropped-view qualification and the subject registry passed visual inspection. No new
+native Office Viewer test is claimed. Temporary reconciliation helpers and previews are removed.

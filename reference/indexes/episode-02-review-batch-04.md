@@ -7,6 +7,11 @@ Scope: gallery 217–288 (847343–847414), contact sheets 0217–0240, 0241–0
 
 ## Evidence and navigation
 
+Subsequent identification update, 2026-10-30: the matching mechanic rows now use Mikey;
+cropped and distant views retain scene-continuity limits. See the
+[current identification record](animehistory/README.md#cross-episode-mikey-identification--2026-10-30).
+The ambiguity below records the original review state; earlier supplied notes are preserved.
+
 All 72 contact-sheet entries were visually reviewed. Full-size originals inspected:
 218, 219, 220, 222, 223, 224, 232, 245, 258, 260, 262, 264, 271, 274, 278, 281,
 282, 283, 284, 285 and 287. The historical contact-sheet headers still say unaligned;
