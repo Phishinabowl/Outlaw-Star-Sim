@@ -1040,3 +1040,37 @@ CTXLINK-001038,CTX-000068,CONTEXT_FOR_IMAGE,IMAGE,EP-05:EP-05-MAN-013,"Contextua
 CTXLINK-001039,CTX-000068,CONTEXT_FOR_IMAGE,IMAGE,EP-05:EP-05-MAN-014,"Contextual association to the existing Episode 5 caster/incapacitation/bill narrative. Individual visible mechanism/effect states and whole-second timing limits are in supplemental-index.csv. No independent exact match, measured weapon behavior or primary-status promotion."
 CTXLINK-001040,CTX-000068,CONTEXT_FOR_IMAGE,IMAGE,EP-05:EP-05-MAN-015,"Contextual association to the existing Episode 5 caster/incapacitation/bill narrative. Individual visible mechanism/effect states and whole-second timing limits are in supplemental-index.csv. No independent exact match, measured weapon behavior or primary-status promotion."
 CTXLINK-001041,CTX-000068,CONTEXT_FOR_IMAGE,IMAGE,EP-05:EP-05-MAN-016,"Contextual association to the existing Episode 5 caster/incapacitation/bill narrative. Individual visible mechanism/effect states and whole-second timing limits are in supplemental-index.csv. No independent exact match, measured weapon behavior or primary-status promotion."
+CTXLINK-001042,CTX-000074,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001043,CTX-000074,ABOUT,SUBJECT,fred_luo,
+CTXLINK-001044,CTX-000074,ABOUT,SUBJECT,xgp,
+CTXLINK-001045,CTX-000074,MENTIONS,SUBJECT,suzuka,
+CTXLINK-001046,CTX-000074,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001047,CTX-000075,ABOUT,SUBJECT,suzuka,
+CTXLINK-001048,CTX-000075,ABOUT,SUBJECT,fred_luo,
+CTXLINK-001049,CTX-000075,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001050,CTX-000075,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001051,CTX-000076,ABOUT,SUBJECT,fred_luo,
+CTXLINK-001052,CTX-000076,MENTIONS,SUBJECT,gene_starwind,
+CTXLINK-001053,CTX-000076,MENTIONS,SUBJECT,jim_hawking,
+CTXLINK-001054,CTX-000076,MENTIONS,SUBJECT,xgp,
+CTXLINK-001055,CTX-000076,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001056,CTX-000077,ABOUT,SUBJECT,fred_luo,
+CTXLINK-001057,CTX-000077,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001058,CTX-000078,ABOUT,SUBJECT,suzuka,
+CTXLINK-001059,CTX-000078,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001060,CTX-000079,ABOUT,SUBJECT,suzuka,
+CTXLINK-001061,CTX-000079,ABOUT,SUBJECT,suzuka_bokken,
+CTXLINK-001062,CTX-000079,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001063,CTX-000080,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001064,CTX-000080,ABOUT,SUBJECT,suzuka,
+CTXLINK-001065,CTX-000080,ABOUT,SUBJECT,light_shield,
+CTXLINK-001066,CTX-000080,MENTIONS,SUBJECT,suzuka_bokken,
+CTXLINK-001067,CTX-000080,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001068,CTX-000081,ABOUT,SUBJECT,suzuka,
+CTXLINK-001069,CTX-000081,ABOUT,SUBJECT,fred_luo,
+CTXLINK-001070,CTX-000081,APPLIES_TO_EPISODE,EPISODE,EP-06,Episode preparation context only; no image match or exact subtitle-to-gallery association.
+CTXLINK-001071,CTX-000008,APPLIES_TO_EPISODE,EPISODE,EP-06,Reuse of existing scoped background during Episode 6 preparation; no primary-status promotion or image association.
+CTXLINK-001072,CTX-000009,APPLIES_TO_EPISODE,EPISODE,EP-06,Reuse of existing scoped background during Episode 6 preparation; no primary-status promotion or image association.
+CTXLINK-001073,CTX-000010,APPLIES_TO_EPISODE,EPISODE,EP-06,Reuse of existing scoped background during Episode 6 preparation; no primary-status promotion or image association.
+CTXLINK-001074,CTX-000047,APPLIES_TO_EPISODE,EPISODE,EP-06,Reuse of existing scoped background during Episode 6 preparation; no primary-status promotion or image association.
+CTXLINK-001075,CTX-000065,APPLIES_TO_EPISODE,EPISODE,EP-06,Reuse of existing scoped background during Episode 6 preparation; no primary-status promotion or image association.

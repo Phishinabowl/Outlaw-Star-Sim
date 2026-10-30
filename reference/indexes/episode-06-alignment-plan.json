@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "episode_id": "EP-06",
+  "selections": [
+    {
+      "image_id": "848544",
+      "role": "FIT",
+      "search_start_seconds": "101",
+      "search_end_seconds": "113"
+    },
+    {
+      "image_id": "848578",
+      "role": "FIT",
+      "search_start_seconds": "224",
+      "search_end_seconds": "236"
+    },
+    {
+      "image_id": "848707",
+      "role": "FIT",
+      "search_start_seconds": "694",
+      "search_end_seconds": "706"
+    },
+    {
+      "image_id": "848819",
+      "role": "FIT",
+      "search_start_seconds": "1101",
+      "search_end_seconds": "1113"
+    },
+    {
+      "image_id": "848866",
+      "role": "FIT",
+      "search_start_seconds": "1272",
+      "search_end_seconds": "1284"
+    },
+    {
+      "image_id": "848892",
+      "role": "FIT",
+      "search_start_seconds": "1366",
+      "search_end_seconds": "1378"
+    },
+    {
+      "image_id": "848546",
+      "role": "HOLDOUT",
+      "search_start_seconds": "108",
+      "search_end_seconds": "120"
+    },
+    {
+      "image_id": "848572",
+      "role": "HOLDOUT",
+      "search_start_seconds": "203",
+      "search_end_seconds": "215"
+    },
+    {
+      "image_id": "848722",
+      "role": "HOLDOUT",
+      "search_start_seconds": "748",
+      "search_end_seconds": "760"
+    },
+    {
+      "image_id": "848734",
+      "role": "HOLDOUT",
+      "search_start_seconds": "792",
+      "search_end_seconds": "804"
+    },
+    {
+      "image_id": "848822",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1112",
+      "search_end_seconds": "1124"
+    },
+    {
+      "image_id": "848886",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1344",
+      "search_end_seconds": "1356"
+    },
+    {
+      "image_id": "848896",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1381",
+      "search_end_seconds": "1393"
+    },
+    {
+      "image_id": "848890",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1359",
+      "search_end_seconds": "1371"
+    }
+  ]
+}

@@ -1821,3 +1821,62 @@ are NOT_LOCAL; the context overview now counts 21 linked archived manual images 
 Changed availability and overview ranges were rendered and visually inspected, without a
 fresh native Office Viewer claim. Disposable cleanup-baseline, check and preview files are
 removed after verification; contact sheets, archive/receipt and durable evidence remain.
+
+## Episode 6 gallery preparation — 2026-10-30
+
+Download and contact-sheet preparation are complete for **The Beautiful Assassin**;
+the maintainer accepted this checkpoint on 2026-10-30. The existing gallery tool prepared all 354 indexed
+images, IDs 848543–848896, with web labels 00:01:43–00:23:07. All originals decoded and
+passed manifest hash/inventory verification: 354 cached, zero failed or missing. JPEG
+payload totals 62,202,827 bytes; the expanded cache including its manifest is 62,623,017 bytes.
+
+All 15 chronological contact sheets remain under
+`reference/contact-sheets/animehistory-review/EP-06/`. Their registry hashes, 1600 × 2056
+dimensions and complete ordered image-ID/web-time/source-hash mapping passed verification.
+The final sheet contains 18 images. The first, middle (169–192) and final sheets were
+visually inspected for layout, readable labels and image presentation. Sheet PNGs total
+52,085,220 bytes, excluding the registry.
+
+Command: `python tools/reference-extraction/episode_gallery.py prepare --episode 6`.
+Status and independent registry checks passed afterward. Originals and recovery manifest
+remain under `reference/cache/animehistory-review/EP-06/`; no Episode 6 RAR exists yet.
+All 354 annotation rows remain UNREVIEWED / NOT_REVIEWED. Website/subtitle preparation,
+alignment and annotated review remain subsequent steps; web labels are not local-video
+times. No source media was modified, no media is published and no Phase 3.2A work is included.
+
+## Episode 6 subtitle and website context — 2026-10-30
+
+The [preparation record](../episode-06-context-preparation.md) pins the local media/subtitle
+identity and records a full read of all 365 ordered English ASS events. Landing roles and strut
+warnings, Fred's equipment bargain, Suzuka's wooden sword, shields and conditional challenge
+are indexed by local subtitle intervals. West Virginia and Locus spaceport labels remain
+unreconciled; subtitle times are not assigned to the unaligned gallery labels.
+
+Three selected Fandom captures and cached AnimeHistory episode/character prose supply eight
+new secondary assertions, four catalogue subjects and 34 typed links, including background reuse.
+The standalone Light shield lookup was NOT_FOUND. Novel/manga backstory, later episodes,
+infobox statistics and universal mechanism claims are excluded. No image association or
+primary-status promotion is added.
+
+Context/cache validation and preservation checks passed. The five-tab ImportExcel context view
+refreshed and passed saved-data/link and affected visual checks. All 354 Episode 6 image rows
+remain UNREVIEWED / NOT_REVIEWED at this preparation checkpoint. The maintainer accepted
+the preparation on 2026-10-30; subsequent alignment is recorded below. No Phase 3.2A work is included.
+
+## Episode 6 bounded alignment — 2026-10-30
+
+The [alignment record](../episode-06-alignment-review.md) documents 14 declared attempts:
+seven reviewed matches and seven ambiguous holds/repeated or unclear drawings. Four FIT
+matches froze ALNMAP-000011 before independent HOLDOUT searches; three HOLDOUT matches
+validated identical coefficients in ALNMAP-000012. Navigation is `local = web - 1.5185 s`
+for web labels 01:47–21:18 inclusive: ordinals 002–324, seven direct intervals and 316
+estimates. Ordinal 001 and final 325–354 remain unmapped; late ambiguous checks do not
+extend coverage. No entire-runtime or exact subtitle association is implied.
+
+Current-input and early/late hash reproduction checks passed. The category workbook refreshed
+with direct intervals, estimates and unmapped boundaries kept separate; saved-data/link and
+visual checks passed. All five temporary search runs were removed through the inspected
+cleanup preview, releasing 769,808,022 bytes. Gallery originals, all 15 contact sheets,
+context records/workbook and earlier alignment rows remain unchanged. All 354 Episode 6
+annotation rows remain UNREVIEWED / NOT_REVIEWED at acceptance on 2026-10-30;
+the first three-sheet review is the next separate step. No Phase 3.2A work is included.

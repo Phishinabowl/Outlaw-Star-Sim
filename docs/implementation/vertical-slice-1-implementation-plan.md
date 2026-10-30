@@ -925,6 +925,23 @@ review workflow, not a full-show alignment prerequisite.
   Archive hash and preservation checks passed. The maintainer accepted the final batch,
   caster supplements and retention checkpoint on 2026-10-30.
   Episode 6 and Phase 3.2A are not started automatically.
+  The subsequent authorized [Episode 6 gallery preparation](../../reference/indexes/animehistory/README.md#episode-6-gallery-preparation--2026-10-30)
+  downloaded and verified all 354 originals and generated 15 chronological contact sheets.
+  Hash/inventory, ordered locator mapping and representative visual layout checks passed;
+  the maintainer accepted this checkpoint on 2026-10-30. All Episode 6 rows remained unreviewed,
+  with context/alignment pending at that checkpoint. No Phase 3.2A work is included.
+  The subsequent [Episode 6 subtitle/website preparation](../../reference/indexes/episode-06-context-preparation.md)
+  verifies the existing subtitle/source provenance, reads all 365 ordered ASS events and adds
+  selected secondary context for Fred, Suzuka and the equipment bargain. Context validation,
+  preservation checks and the refreshed workbook passed; the maintainer accepted preparation
+  on 2026-10-30. Gallery annotations remained unreviewed and alignment was the next step.
+  Spaceport/referral spelling differences and equipment-mechanism limits remain explicit.
+  The subsequent [Episode 6 alignment](../../reference/indexes/episode-06-alignment-review.md)
+  validates ALNMAP-000012 for web labels 01:47–21:18 at offset -1.5185 s, with seven
+  direct intervals and 316 estimates. First/final unsupported edges total 31 unmapped images;
+  seven ambiguous attempts remain recorded. Current-input checks, frame reproduction,
+  workbook refresh and five-run temporary cleanup passed. The maintainer accepted alignment
+  on 2026-10-30; image annotation and Phase 3.2A remain unstarted at acceptance.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
