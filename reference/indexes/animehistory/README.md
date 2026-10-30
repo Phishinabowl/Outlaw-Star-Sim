@@ -1204,7 +1204,22 @@ All 354 Episode 3 gallery images now have completed initial reviews: 353 SCREENE
 one NEEDS_RECHECK at 005. No targeted deep-dive completion is implied.
 Horus's glowing brand, fighter underside, El Dorado/pirate hull details, recorded governor
 message, Aisha's demotion and the hiding-asteroid display are indexed with mechanism,
-identity and timing limits. The two final portraits remain unmapped. Episode cleanup
-has not run; originals and contact sheets remain available. The maintainer accepted the
+identity and timing limits. The two final portraits remain unmapped. At survey acceptance,
+episode cleanup had not run. The maintainer accepted the
 remaining Episode 3 survey batches and clarifications on 2026-10-29, including image 347's
 future reference value. No next episode or Phase 3.2A work is included.
+
+### Episode 3 retention checkpoint — 2026-10-29
+
+The [retention record](../episode-03-retention-checkpoint.md) documents the subsequently
+authorized archive and cleanup. The complete format-2 EP-03.rar contains 354 gallery
+originals and recovery metadata; no manual supplements are registered for this episode.
+Native integrity and staged recovery passed during creation; prune independently repeated
+recovery/inventory/hash checks before removing the expanded cache. Final status: cached 0,
+archived 354, contact sheets 15, unpacked bytes 0, archive hash valid. The archive is
+63,800,869 bytes; removing duplicate expanded data reclaimed 64,204,169 bytes. All 53
+protected CSV/sheet/registry hashes and sizes matched. No temporary media or archive staging
+directories remain. Both generated workbooks are refreshed and verified. Restore originals
+from the RAR for later full-size checks; retained contact sheets remain available for browsing.
+The maintainer confirmed this retention checkpoint for publication on 2026-10-29.
+No next episode or Phase 3.2A work starts here.

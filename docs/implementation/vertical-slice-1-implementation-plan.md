@@ -826,7 +826,11 @@ review workflow, not a full-show alignment prerequisite.
   pirate/El Dorado details, recorded governor message and stellar/asteroid approach references
   are indexed with timing, identity and mechanism limits. The maintainer accepted the
   remaining survey batches and clarifications on 2026-10-29, including image 347's future
-  reference value; episode cleanup has not run and Phase 3.2A remains unstarted.
+  reference value. Subsequent authorized [Episode 3 retention cleanup](../../reference/indexes/episode-03-retention-checkpoint.md)
+  created and recovery-verified the complete 354-image RAR, then independently verified it
+  before pruning expanded copies. All 15 contact sheets and maintained CSVs are preserved;
+  64,204,169 duplicate expanded bytes were reclaimed. The maintainer confirmed the retention
+  checkpoint for publication on 2026-10-29; Phase 3.2A remains unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

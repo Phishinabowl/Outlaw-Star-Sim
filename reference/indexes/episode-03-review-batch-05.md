@@ -121,7 +121,8 @@ validation passed. These are generated-file checks, not a fresh native Office Vi
 The maintainer accepted the remaining Episode 3 survey batches and clarifications on
 2026-10-29, including image 347's future reference value. Acceptance covers the initial
 survey and retained evidence limits; it does not claim completed targeted deep dives.
-Episode cleanup remains separate. Gallery
-originals and contact sheets remain available for corrections. Episode RAR verification,
-supplement bundling and expanded-image pruning remain a separate cleanup step. Owned
+At survey acceptance, gallery originals and contact sheets remained available for corrections.
+Subsequent authorized archive verification and pruning are recorded in the
+[retention checkpoint](episode-03-retention-checkpoint.md); contact sheets remain local and
+gallery originals are recoverable from the verified RAR. Owned
 temporary authoring and workbook QA files are removed after validation.
