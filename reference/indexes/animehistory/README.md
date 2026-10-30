@@ -92,6 +92,10 @@ These additions do not authorize later episodes or Phase 3.2A.
    [alignment review](../episode-02-alignment-review.md) records the limits. Episode 3 now has
    separately validated navigation coverage for web labels 01:47–23:00 at offset -1.4845 s;
    its [alignment review](../episode-03-alignment-review.md) retains the checks and unmapped edges.
+   Episode 4 has independently validated navigation coverage for web labels 01:54–22:30 at
+   offset -1.2415 s; its [alignment review](../episode-04-alignment-review.md) retains nine direct
+   intervals, 330 estimates and 15 unmapped edge images. The maintainer accepted this checkpoint
+   on 2026-10-29.
    Other unsupported
    regions remain unmapped. The tool doc owns the
    [measured limits](../../../tools/reference-alignment/README.md#stage-3-validation-results--2026-10-27).
@@ -1223,3 +1227,25 @@ directories remain. Both generated workbooks are refreshed and verified. Restore
 from the RAR for later full-size checks; retained contact sheets remain available for browsing.
 The maintainer confirmed this retention checkpoint for publication on 2026-10-29.
 No next episode or Phase 3.2A work starts here.
+
+## Episode 4 retrospective subtitle/context preparation — 2026-10-29
+
+The [preparation record](../episode-04-context-preparation.md) adds a full read of the 355
+ordered English ASS events and pinned local-media/subtitle provenance to the accepted earlier
+Episode 4 survey. It reuses the existing Episode 4 context pilot, adds selected Fandom episode
+summary/Gilliam captures and five secondary assertions, and records startup, navigation-role,
+vehicle/weapon and naming leads. Subtitle halcyon versus wiki Helicon wording remains a
+documented discrepancy; earlier annotations and attributed notes are preserved.
+
+Implemented, verified and accepted by the maintainer on 2026-10-29. During this preparation,
+no gallery/supplement annotation, image link, historical timing
+or alignment table was revised, and the verified Episode 4 archive remains pruned. Episode 4
+alignment is the next separate step before the existing annotation/documentation sweep.
+No next episode or Phase 3.2A work is included.
+
+The subsequent [Episode 4 alignment](../episode-04-alignment-review.md), implemented and verified
+2026-10-29 and accepted by the maintainer on the same date, adds bounded navigation timing without changing earlier annotations
+or historical time leads. Reproduction and current-media checks passed; 1,111,216,828 bytes of
+temporary alignment output were removed. The verified gallery and nine supplements were restored
+for this work and remain available for the next annotation/documentation reconciliation sweep.
+The unchanged RAR remains the archive; repeat its established prune procedure after that sweep.

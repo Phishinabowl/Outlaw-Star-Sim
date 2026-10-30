@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "episode_id": "EP-04",
+  "selections": [
+    {
+      "image_id": "847835",
+      "role": "FIT",
+      "search_start_seconds": "97",
+      "search_end_seconds": "109"
+    },
+    {
+      "image_id": "847838",
+      "role": "FIT",
+      "search_start_seconds": "108",
+      "search_end_seconds": "120"
+    },
+    {
+      "image_id": "847899",
+      "role": "FIT",
+      "search_start_seconds": "331",
+      "search_end_seconds": "343"
+    },
+    {
+      "image_id": "847982",
+      "role": "FIT",
+      "search_start_seconds": "635",
+      "search_end_seconds": "647"
+    },
+    {
+      "image_id": "848008",
+      "role": "FIT",
+      "search_start_seconds": "730",
+      "search_end_seconds": "742"
+    },
+    {
+      "image_id": "848024",
+      "role": "FIT",
+      "search_start_seconds": "788",
+      "search_end_seconds": "800"
+    },
+    {
+      "image_id": "848090",
+      "role": "FIT",
+      "search_start_seconds": "1030",
+      "search_end_seconds": "1042"
+    },
+    {
+      "image_id": "848152",
+      "role": "FIT",
+      "search_start_seconds": "1256",
+      "search_end_seconds": "1268"
+    },
+    {
+      "image_id": "848188",
+      "role": "FIT",
+      "search_start_seconds": "1388",
+      "search_end_seconds": "1400"
+    },
+    {
+      "image_id": "847845",
+      "role": "HOLDOUT",
+      "search_start_seconds": "134",
+      "search_end_seconds": "146"
+    },
+    {
+      "image_id": "847929",
+      "role": "HOLDOUT",
+      "search_start_seconds": "441",
+      "search_end_seconds": "453"
+    },
+    {
+      "image_id": "848003",
+      "role": "HOLDOUT",
+      "search_start_seconds": "711",
+      "search_end_seconds": "723"
+    },
+    {
+      "image_id": "848014",
+      "role": "HOLDOUT",
+      "search_start_seconds": "752",
+      "search_end_seconds": "764"
+    },
+    {
+      "image_id": "848121",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1143",
+      "search_end_seconds": "1155"
+    },
+    {
+      "image_id": "848187",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1384",
+      "search_end_seconds": "1396"
+    }
+  ]
+}

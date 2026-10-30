@@ -831,6 +831,22 @@ review workflow, not a full-show alignment prerequisite.
   before pruning expanded copies. All 15 contact sheets and maintained CSVs are preserved;
   64,204,169 duplicate expanded bytes were reclaimed. The maintainer confirmed the retention
   checkpoint for publication on 2026-10-29; Phase 3.2A remains unstarted.
+  The subsequent [Episode 4 context retrofit preparation](../../reference/indexes/episode-04-context-preparation.md)
+  reads all 355 English ASS events, pins source/subtitle provenance, reuses the original context
+  pilot and adds bounded episode-summary/Gilliam context. Earlier survey observations, reported
+  corrections, supplements and timing values are preserved. Missile naming, systems-role and
+  startup distinctions remain explicit leads. Implemented, verified and accepted by the maintainer
+  on 2026-10-29; the subsequent alignment checkpoint is recorded below and the
+  annotation/documentation sweep remains separate.
+  No Phase 3.2A work is included.
+  The subsequent [Episode 4 alignment](../../reference/indexes/episode-04-alignment-review.md)
+  is implemented, verified and accepted by the maintainer on 2026-10-29: five FIT and four independent
+  HOLDOUT matches validate offset -1.2415 s over gallery 004–342 (nine direct intervals,
+  330 estimates). Fifteen edge images remain unmapped and ten ambiguous attempts remain explicit.
+  Reproduction/current-media checks passed and 1,111,216,828 temporary alignment bytes were removed.
+  Prior annotations, context preparation and the RAR are preserved; restored gallery/supplements
+  remain for the separately scoped reconciliation sweep, followed by the established prune step.
+  Neither that sweep nor Phase 3.2A has started.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "episode_id": "EP-04",
+  "selections": [
+    {"image_id":"847836","role":"HOLDOUT","search_start_seconds":"101","search_end_seconds":"113"},
+    {"image_id":"848186","role":"HOLDOUT","search_start_seconds":"1381","search_end_seconds":"1393"}
+  ]
+}
