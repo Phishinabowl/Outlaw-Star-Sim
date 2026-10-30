@@ -887,6 +887,23 @@ review workflow, not a full-show alignment prerequisite.
   updates 18 Episode 2 and 12 Episode 3 mechanic rows using Episode 5 dialogue/visual continuity.
   Cropped/distant views remain qualified, and earlier attributed notes are preserved.
   The maintainer accepted this catalogue correction on 2026-10-30; no phase advance is implied.
+  [Episode 5 batch 02](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-02-2026-10-30)
+  initially reviews 073–144 with aligned subtitle and cached website context. Unpainted hull,
+  Blue Heaven environments and Aisha appearance/action references remain separated from
+  technical interpretations. All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE; 210 Episode 5
+  rows remained unreviewed at that checkpoint. The maintainer accepted batch 02 on 2026-10-30; no phase advance.
+  [Episode 5 batch 03](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-03-2026-10-30)
+  initially reviews 145–216: Aisha appearance/action, the mid-episode graphics and the Blue Heaven
+  garden conversation. Artificial-flower dialogue, Melfina's origin questions and Gene's promise
+  remain scoped to observed images and translated statements. All 72 rows are SCREENED /
+  INITIAL_REVIEW_COMPLETE; 138 Episode 5 rows remained unreviewed at that checkpoint.
+  The maintainer accepted batch 03 on 2026-10-30; no phase advance.
+  [Episode 5 batch 04](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-04-2026-10-30)
+  initially reviews 217–288: Jim's equipment-shop surroundings, renewed Aisha confrontation,
+  restaurant setting and the offered caster shell. Power and energy claims remain dialogue;
+  shell number 12 is a translated identifier, with no mechanism/effect established here.
+  All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE; 66 Episode 5 rows remain unreviewed.
+  The maintainer accepted batch 04 on 2026-10-30; no phase advance.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

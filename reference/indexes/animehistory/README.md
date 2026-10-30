@@ -1405,3 +1405,202 @@ Both ImportExcel workbooks refreshed with authored-data equality verified: categ
 context view retains five tabs with 10,869 cells and 2,029 links verified. Rendered Episode 2/3
 tags, cropped-view qualification and the subject registry passed visual inspection. No new
 native Office Viewer test is claimed. Temporary reconciliation helpers and previews are removed.
+
+## Episode 5 annotated survey — batch 02, 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Gallery 073–144
+(848261–848332) received individual visible descriptions, overlapping tags, priorities,
+qualified context and 14 contiguous groups, EP-05-S021–S034. All three sheets were visually
+reviewed. Full-size originals inspected: 073, 074, 075, 078, 085, 086, 088, 094, 095,
+101, 103, 106, 111, 117, 119, 126, 132, 134, 139, 140, 141 and 143. No new media
+extraction, source retrieval, manual supplement or targeted deep review was performed.
+
+ALNMAP-000010 supplies navigation estimates (`local = web - 1.232 s`) for all 72 labels;
+none has an accepted direct matched interval. Ambiguous anchor attempts at 078 and 094
+remain ambiguous. Translated English ASS cues 106–183 were reread: grief/memory disagreement
+(06:12.21–06:42.90), memory and spaceflight discussion (06:58.36–07:41.93), food/interruption
+(07:45.04–07:56.31), Aisha introduction/Hilda inquiry (07:58.55–08:51.83), Leyline demands
+(08:53.70–09:18.46), threats and flight (09:18.53–09:41.35), and pursuit/fight context
+(09:49.06–10:21.16). These local intervals bracket narrative action; they do not identify
+every speaker or assign a subtitle to its numerically nearest web label. Silent alley action
+remains distinct from spoken context. The pinned preparation record owns track/hash provenance.
+
+073 is a high-priority unpainted XGP underside/service reference, continuing the earlier hull
+views. Surrounding articulated service arms are not relabeled as XGP grapplers. 074 shows
+colored spherical lights/fixtures, not identified planets. The two-bed room, mirror-shaving
+view and green hinged door in 075–085 are retained as Blue Heaven scene references without
+assigning the room to the ship, a named hotel or a measured floor plan. 086 is a brief Hilda
+final-confrontation recollection, not a new present-day event; small figures retain MEDIUM
+identity confidence and no new explosive-mechanism claim. 087 records Gene's visible reaction.
+
+088, 101, 113 and 143 are high-priority station environment references: multiple levels,
+shopfronts, illuminated signs, railings, drains, rough alley walls and service pipes. Sign text
+is not independently transcribed. The crew's discussion in 089–100 names the Physical Navigation
+System and contrasts Gene's subjective ship-piloting experience with his space anxiety; it does
+not establish technical architecture, sensor placement or numerical performance. The blue-gloved
+hand at Gene's shoulder in 094 is his own, not Melfina's.
+
+Aisha's hooded and cropped views use her named introduction, subsequent face reveal, existing
+CTX-000057 appearance context and local continuity. The hand/cloak-only views remain MEDIUM.
+117 and 132 are high-value face/headband/cheek-mark references. Collar-grip, angry/comic reactions,
+clenched fists, evasive crew poses and the broken-pavement view in 134 preserve useful action
+endpoints without inventing a complete animation or power scale. 139 is a raised boot/defensive
+pose, not a newly identified weapon. 140 is a dark motion/impact insert with no resolved object
+or contact point. No actual Galactic Leyline coordinates are supplied.
+
+Cached CTXSRC-000026 SECTION:0002 and CTXSRC-000021 SECTION:0004 were reread for encounter
+context. Nineteen links, CTXLINK-000933–000951, reuse CTX-000043, CTX-000057 and CTX-000067
+for selected station, appearance and Leyline-demand views. All assertions retain their prior
+status; no duplicate assertion, source refresh or primary-evidence promotion is added.
+
+All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 5 now has 144 initial-review
+rows (143 SCREENED, one NEEDS_RECHECK at 002) and 210 unreviewed rows. Validation and preservation
+checks confirm the other 9,132 category rows, all previous context links, subject/source/assertion
+tables and 406 protected input/media/timing hashes are unchanged. Next separate batch: 145–216.
+Phase 3.2A remains unstarted.
+
+Both ImportExcel projections refreshed with authored-data equality verified. Category view retains
+30 tabs, 432,588 gallery cells, 9,204 image links, 510 manual cells and 3,819 alignment cells.
+Context view retains five tabs with 11,040 cells and 2,067 links verified. Rendered hull tags,
+room qualification, Aisha portrait, pavement action and added context-link views passed visual
+inspection. No new native Office Viewer test is claimed. Disposable batch helpers and previews
+are removed; gallery originals and contact sheets remain available for the continuing survey.
+
+## Episode 5 annotated survey — batch 03, 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Gallery 145–216
+(848333–848404) received individual descriptions, overlapping tags, priorities and qualified
+context in 15 contiguous groups, EP-05-S035–S049. All three sheets were visually reviewed.
+Full-size originals inspected: 145, 149, 150, 151, 157, 161, 165, 171, 173, 175, 177,
+181, 182, 183, 187, 195, 201, 202, 212 and 216. No new extraction, source retrieval,
+manual supplement or targeted deep review was performed.
+
+ALNMAP-000010 covers all 72 labels. 163 and 181 have accepted direct intervals at
+686.811–686.853 s and 751.459–751.793 s; the other 70 receive navigation estimates using
+`local = web - 1.232 s`. The ambiguous 154 attempt remains estimate-only. English ASS cues
+181–244 were reread, spanning 10:11.35–14:59.37 local: attempted beast-power/moon-phase
+discussion (184–196), pursuit/caster-shell errand (197–207), garden arrival and Gene's strain
+(208–211), artificial flowers and Melfina's origin questions (212–218), android discussion
+and cheek touch/pinch (219–225), and Gene's promise/invitation (226–243). Cue 244 brackets
+the subsequent Jim contact. These are scene-navigation ranges, not automatic nearest-label
+speaker assignments or universal exact subtitle/frame matches. Prepared track/hash provenance
+and earlier alignment evidence remain unchanged.
+
+145–164 retain Aisha's cloak changes, braid, pointed nails, gold bangles, face, outfit, tail,
+stance and running pose. 149, 157–158 and 163 are high-priority future character/action references.
+Tight hand/shoulder crops retain MEDIUM identity confidence from continuity. The pink blush
+patches in 161 are a comic drawing state. The dialogue's inherited-power and moon-phase claims
+remain translated character statements; no complete beast transformation, claw-extension
+mechanism, universal moon rule or numerical power specification is verified. This attempted
+transformation is distinct from the later exhaustion scene described in secondary context.
+
+165–170 preserve Blue Heaven shop-walkway staging, doors, shutters, signs, drain and Jim's
+satchel/clothing. The instruction to buy caster shells is an errand, not a visible purchase
+or a newly identified ammunition prop. 168 provides a high-priority unobstructed environment
+view. 171–173 are EYECATCH graphics, separate from story action and the proposed end-sequence
+To Be Continued motif. 173 is a useful outlined emblem/yin-yang/star reference; no animation
+timing, audio synchronization or interface implementation is established.
+
+174–184 show Gene and Melfina reaching the green-lit station garden, Gene's visible strain,
+Melfina assisting him and the bench. 182's framed star-speckled panels are seen through his
+fingers, supported by the adjacent 183 eye/glove shot. No display technology, optical design,
+clinical diagnosis or gravity measurement is inferred. 175, 181, 186, 201, 212 and 216 are
+high-priority environment/staging views, not XGP interiors or a measured station floor plan.
+
+187–188 retain blossom shapes and colors. The English dialogue explicitly identifies the
+flowers as artificial; their appearance alone does not establish material, manufacturing
+process, botanical species or that every surrounding shrub is artificial. Melfina's tears,
+cheek touch/pinch reactions and later smiles remain useful performance references, especially
+195. Gene calls her an android and promises to find her past; those translated statements
+do not identify her creator, specify her physiology or record a completed search. 205–216
+retain that promise and the lighter bench conversation without changing its future-intent status.
+
+Cached CTXSRC-000021 SECTION:0004 and CTXSRC-000003 SECTION:0004/BLOCK:0009 were reread.
+Seventeen links, CTXLINK-000952–000968, reuse CTX-000057, CTX-000043 and CTX-000072 for
+selected appearance, station and promise-context images. No new source/assertion or primary
+promotion is added. Existing context counts remain 44 subjects, 26 sources and 73 assertions,
+with 968 links after this increment.
+
+All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 5 now has 216 initial-review
+rows (215 SCREENED, one NEEDS_RECHECK at 002) and 138 unreviewed rows. Validation and
+preservation checks confirm the other 9,132 category rows, earlier pending batch, prior
+context links/tables and 406 protected input/media/timing hashes are unchanged.
+Next separate batch: 217–288. Phase 3.2A remains unstarted.
+
+Both ImportExcel projections refreshed with authored-data equality verified. Category view retains
+30 tabs, 432,588 gallery cells, 9,204 image links, 510 manual cells and 3,819 alignment cells.
+Context view retains five tabs with 11,193 cells and 2,101 links verified. Rendered Aisha outfit,
+eyecatch classification, overhead garden, artificial-flower qualification and added context-link
+views passed visual inspection. No new native Office Viewer test is claimed. Disposable batch
+helpers and previews are removed; originals and contact sheets remain for the continuing survey.
+
+## Episode 5 annotated survey — batch 04, 2026-10-30
+
+Status: implemented, verified and accepted by the maintainer on 2026-10-30. Gallery 217–288
+(848405–848476) received individual visible descriptions, overlapping tags, priorities and
+qualified context in 13 contiguous groups, EP-05-S050–S062. All three sheets were visually
+reviewed. Full-size originals inspected: 222, 223, 224, 228, 229, 230, 232, 233, 240,
+241, 243, 244, 248, 250, 259, 262, 266, 270, 272, 287 and 288. No new video extraction,
+website retrieval, manual supplement or targeted deep review was performed.
+
+ALNMAP-000010 covers all 72 labels. 228 and 235 have accepted direct intervals at
+921.546–921.587 s and 946.737–946.821 s; the other 70 receive navigation estimates using
+`local = web - 1.232 s`. English ASS cues 238–310 were reread: invitation/radio rendezvous
+(238–249, 14:37.85–15:12.68 local), renewed confrontation and power claims (250–257,
+15:12.88–16:12.10), officer/pay and meal discussion (258–280, 16:26.39–17:46.86), renewed
+arrest and beast-power threats (281–298, 17:55.51–18:55.40), and the shell offer (299–303,
+18:55.60–19:04.98). The remaining cues through 310 provide bounded lookahead for the later
+caster/restaurant aftermath and transition; they do not extend this batch's image review
+or establish a firing action in 288. Subtitle proximity alone does not assign speakers or
+exact image/dialogue synchronization. The pinned track/hash and earlier alignment remain unchanged.
+
+217–221 continue the garden invitation and contact with Jim. 222 is a high-priority street-art
+reference. 223 shows Jim's small blue ear fitting and communication pose without establishing
+its internal design or radio range. 224–225 are high-priority weapons/equipment-shop interiors:
+long guns, dense shelves, floor bins, overhead claw-ended hardware and an upright armored
+figure/display. Equipment models and the shop's proper name remain unassigned; the upright
+form is not labeled Gilliam or Swanzo. The dialogue initially reports poor shell prospects;
+these images do not show the eventual purchase. Signs are not independently translated.
+
+226–242 retain Aisha's return, Gene's crossed-arm blocking pose, uncoated harness/holster views,
+Aisha's braid, tail, rear pouch, power-claim poses and collapse. 232–234 are high-priority
+costume references. The red/pink 230 insert remains qualified by adjacent Gene costume/action
+continuity; it does not establish a resolved face, exact strike contact or equipment damage.
+Aisha's half-power/full-beast statements are boasts, not measured force or skin durability.
+240–242 visibly show the kneeling/floor endpoints; cue 257 supplies the calorie-exhaustion
+explanation without establishing an energy budget or completed beast transformation.
+
+243 is a high-priority crowded restaurant-facade reference, with unnamed pedestrians and no
+verified business-name translation. 244–268 retain red chairs, lattice walls, tableware, food,
+eating poses, the white-jacketed unnamed server and growing used-bowl stacks. 244, 248, 250
+and 266 are high-priority food/prop references. 250 pours red liquid from a brown bottle;
+neither an alcoholic drink nor a sauce type is independently identified. Appetite, Resident
+Officer claims and lack of imperial money remain scene dialogue, not general biological or
+payroll rules. Comic bowl/crew movements do not establish a measured impact sequence.
+
+269–286 preserve Aisha's gestures, expressions, renewed arrest demand and transformation
+threats, plus Gene/Jim's responses. 270 and 272 are useful future character-performance views.
+287–288 introduce Jim's offered caster shell. 288 is high priority for the future caster work:
+rounded end, cylindrical casing, ring seams, collar and surface wear. Cue 301 identifies the
+offered shell as number 12 and reports an excessive price; no printed number is read on the
+image. No caliber, internal mechanism, measured price, effect, loading or firing sequence is
+established in this batch. The cropped gloved hand is linked to Jim through scene continuity.
+
+Cached CTXSRC-000021 SECTION:0004 and CTXSRC-000026 SECTION:0002 were reread. Eighteen links,
+CTXLINK-000969–000986, reuse CTX-000043, CTX-000057, CTX-000071 and CTX-000072 for selected
+station, appearance, exhaustion and invitation views. No new source/assertion or primary
+promotion is added. Context counts remain 44 subjects, 26 sources and 73 assertions, with
+986 links after this increment.
+
+All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE. Episode 5 now has 288 initial-review
+rows (287 SCREENED, one NEEDS_RECHECK at 002) and 66 unreviewed rows. Validation and preservation
+checks confirm the other 9,132 category rows, earlier pending batches, previous context links
+and 406 protected input/media/timing hashes are unchanged. Next separate batch: 289–354.
+Phase 3.2A remains unstarted.
+
+Both ImportExcel projections refreshed with authored-data equality verified. Category view retains
+30 tabs, 432,588 gallery cells, 9,204 image links, 510 manual cells and 3,819 alignment cells.
+Context view retains five tabs with 11,355 cells and 2,137 links verified. Rendered shop,
+rear-costume, shell appearance, shell qualification and added context-link views passed visual
+inspection. No new native Office Viewer test is claimed. Disposable batch helpers and previews
+are removed; originals and contact sheets remain available for the final Episode 5 batch.
