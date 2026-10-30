@@ -76,3 +76,18 @@ Classification: final-looking relevant sheets are PRODUCTION_CANON candidates pe
 Subsequent [variant comparison](../../reference/indexes/settei-variant-review.md) covers SET-082,085,086,087,091,097,195,196 against their representatives, without finding a substantive design revision. [Episode 4 local startup observations](../../reference/indexes/episode-04-startup-review.md) corroborate selected apparatus, engineering and key details. Current focused-pass counts are also recorded in the progress report.
 
 [Six-item follow-up](../../reference/indexes/startup-open-items-followup.md) adds active-bridge, passage, landing and exterior-airlock comparisons (SET-092,093,095,096,098,197), plus selected propulsion labels on SET-023,025,108. Remaining geometry-critical families are listed there for episode-guided review.
+
+## Episode 4 survey and timing reconciliation — 2026-10-29
+
+The [retrospective reconciliation](../../reference/indexes/episode-04-reconciliation-review.md)
+connects the existing 354-image initial survey and nine manual references to scoped English
+subtitle/context findings. The [accepted alignment](../../reference/indexes/episode-04-alignment-review.md)
+provides nine direct intervals and 330 navigation estimates; 15 edge images remain unmapped.
+Historical local PTS and supplied player timestamps are preserved, not silently retimed.
+
+Relevant constraints remain unchanged: early bootstrap differs from later key ignition; engine
+testing history, main-Horus intercuts, Gilliam/Melfina roles and four sub-light engines retain their
+supported scope. No new dimensions, hatch mergers, control-cylinder/exterior-drive assignments or
+complete machinery motion are established. Initial screening depth does not become a full mechanical
+review. Use the room/component matrices for the current summary and the reconciliation record for
+maintainer acceptance on 2026-10-29, workbook validation and pruned-image retention evidence.

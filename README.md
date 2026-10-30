@@ -42,7 +42,7 @@ Baseline v1 preserves evidence and assumptions separately:
 ## What the repository contains
 
 - All **221 settei scans screened**, with **66 XGP/support records** identified. The original focused-pass coverage checkpoint records 44 reviewed and 22 without those structured passes; later targeted spatial/machinery checks are linked in the reference index. Full transcription and production provenance remain open.
-- Timestamp metadata cached for **all 26 episodes**, with **9,204 gallery locators**. Web-to-local alignment is still unverified.
+- Timestamp metadata cached for **all 26 episodes**, with **9,204 gallery locators**. Bounded web-to-local navigation mappings are validated for selected regions of Episodes 1–4; direct matches, estimates and unmapped regions remain distinct in the [timing workflow](reference/indexes/animehistory/README.md).
 - Focused local evidence for Episodes **1, 2, 4, 7, 8, 11 and 26**, covering case revival, commissioning, standby launch, reactor terminology, sub-ether disruption/recovery and Melfina's descent. User-supplied laptop/power-state images and verified English-dub lines retain their separate provenance.
 - An [all-episode subtitle audit](reference/indexes/performance-subtitle-audit.md) and [47-record performance register](reference/indexes/performance-metrics.csv), with source/track/hash provenance. English translations, inferred calculations, other ships and special operating conditions are distinguished.
 - Future architecture requirements for physical interaction, one physical player with separate camera/control modes, authoritative ship state and reusable commands for consoles, Gilliam and later external clients.

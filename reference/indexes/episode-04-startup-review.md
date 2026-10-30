@@ -8,6 +8,11 @@ Subtitle provenance: FFmpeg 9.0.1 Essentials; arguments `-v error -n -i <local e
 
 ## Timing and reproducibility
 
+Current status — 2026-10-29: subsequent [accepted alignment](episode-04-alignment-review.md) and
+[survey reconciliation](episode-04-reconciliation-review.md) add bounded navigation/subtitle context.
+Historical no-match statements retain their original scope; independently decoded local PTS,
+visual findings, audio attribution and mechanism limits remain unchanged.
+
 [Frame manifests](episode-04-startup-review-frames.json), [detail manifest](episode-04-startup-detail-frames.json), [mechanisms manifest](episode-04-startup-mechanisms-frames.json) and [clearance manifest](episode-04-startup-clearance-frames.json) record each request, actual decoded presentation timestamp (PTS), video stream 0, image/log path, PNG hash, FFmpeg version and reproducible argument array. All stills are 960×720, without resizing or subtitle burn-in. PNG conversion preserves the decoded image at native dimensions; it does not restore source compression losses or establish an authoritative color reference.
 
 `extract_reference_frames.py` uses accurate input seeking with `-copyts` and records the first `showinfo` frame's original PTS/time base. It refuses an existing batch, accepts at most 32 distinct explicit requests per invocation, and fixes outputs under reference/. An additional buffered frame can appear in the log; `n=0` is the exported PNG. Manifest `UNREVIEWED` values are extraction-time defaults; this authored review supplies the observations.

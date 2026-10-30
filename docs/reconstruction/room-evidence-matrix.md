@@ -15,9 +15,15 @@ Scan references are collection IDs, not canonical room numbers. B candidate = PR
 | Crew cabins | BRIEF | Claimed midship spaces; no definitive XGP cabin sheet identified in screening | Unverified brief claim | Room count, arrangement and dimensions |
 | Cargo/utility spaces | BRIEF | Claimed midship functions; specific geometry unresolved | Unverified brief claim | Cargo access, storage and machinery volumes |
 | Forward grappler mechanism volume | SET-024,025,037,083,100,104; BRIEF | Exterior mechanisms shown; accessible interior compartment not established | B candidate for mechanisms; compartment unverified | Sweep, stowage, service access |
-| Asteroid discovery hangar/dock | BRIEF EP-04 | Dormant-start location supplied by brief; no matching scan conclusively identified | Unverified brief claim | Episode review; don't substitute generic dock SET-208 |
+| Asteroid discovery hangar/dock | Local EP-04 review; gallery 023,039–040,174,197–198 | XGP inside a trussed asteroid hangar and large exterior gate are visible; no matching production scan conclusively identified | A for selected visible anime views; exact facility plan unresolved | Full dimensions, support arrangement and entry/gate connections remain unmeasured; don't substitute generic dock SET-208 |
 
 No independent washroom/toilet, dedicated reactor room, or complete deck count has been established. Do not borrow Eldorado cabin/cargo sheets (e.g. SET-132/133/209) for XGP canon.
+
+The [Episode 4 reconciliation](../../reference/indexes/episode-04-reconciliation-review.md) records
+the current survey/evidence scope. Gallery ordinals above identify inspected images, not exact local
+PTS; use the [accepted timing mapping](../../reference/indexes/episode-04-alignment-review.md) within
+its bounded domain. The small transfer-craft entrance, main hangar gate and XGP boarding hatch remain
+distinct. No new hatch correspondence, room dimension or accepted route change follows from this update.
 
 ## Detailed interior batch constraints
 

@@ -2,6 +2,12 @@
 
 Reviewed 2026-10-06 against the user's [original image map](../image-map.md), the screening index, and individual scans. Original notes are preserved unchanged. This record resolves selected identities and records episode-review leads; it is not a complete translation or an anime verification pass.
 
+Subsequent Episode 4 status — 2026-10-29: the [accepted alignment](episode-04-alignment-review.md)
+and [retrospective reconciliation](episode-04-reconciliation-review.md) provide bounded gallery
+navigation and scoped scene context. The extraction/alignment queue below describes this original
+image-map pass; it is not an assertion that no later Episode 4 matches exist. Scan identity,
+production-provenance and fine-transcription limits remain unchanged.
+
 ## Reading the map
 
 `imng040` is interpreted as SET-040 only in this reconciliation. Range entries expand to individual collection IDs. The two SET-027 entries refer to one scan: the numbered navigation-apparatus sequence; the rear closed-state bridge view is SET-028. Possible duplicates remain separate scans until drawing revisions and annotations are compared. No byte-identical scan duplicates exist in the manifest.

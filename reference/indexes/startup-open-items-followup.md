@@ -56,3 +56,9 @@ Japanese spoken terminology remains open. No suitable audio transcription/listen
 Use remembered episode/scene descriptions to select a narrow search, then cached gallery records as locators and matching local media as evidence. Gallery alignment remains UNVERIFIED. This follow-up adds six variant comparisons and three selected propulsion-label checks; overall scope remains 66. Current disjoint focused-pass counts are 16 detailed, 11 identity, 14 variant and 3 propulsion-label records, leaving 22 without those passes. It does not resolve every question in the six-item list or authorize modeling.
 
 The user subsequently supplied [episode-time notes](../episode-times.md). The [Episodes 4/7/8 comparison](startup-sequence-comparison.md) supersedes the unresolved status for crossed-band removal, the all-four initial/final states, the front-shield reveal, and the absence of primary Newton labeling in the previously selected material. It retains the remaining limits and adds the corrected Episode 7 practice/debrief context.
+
+Current Episode 4 timing update — 2026-10-29: [accepted bounded alignment](episode-04-alignment-review.md)
+supersedes this follow-up's historical UNVERIFIED gallery status only within its checked domain.
+The [survey/documentation reconciliation](episode-04-reconciliation-review.md) retains the
+original local PTS, all-four/motion questions and Japanese-audio limits. Its translated testing
+history and main-Horus/XGP distinctions do not resolve the hardware or reactor assignments above.

@@ -3,7 +3,8 @@
 Status: implemented, verified and accepted by the maintainer on 2026-10-29.
 ALNMAP-000008 provides bounded navigation coverage for the pinned Episode 4 release.
 The accepted earlier survey and context-preparation changes are preserved.
-The annotation/documentation reconciliation sweep and Phase 3.2A remain unstarted.
+The subsequent [reconciliation sweep](episode-04-reconciliation-review.md) records annotation/context
+updates and final retention; those were outside this alignment checkpoint. Phase 3.2A remains unstarted.
 
 ## Selection and method
 

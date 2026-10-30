@@ -11,12 +11,17 @@ Completed and previously confirmed:
 - Repository/bootstrap documentation, source inventories and full 221-scan settei screening.
 - User-installed Python/Pillow, FFmpeg/FFprobe and optional ImageMagick verification. Additional installation remains a user discussion.
 - Selected interior, identity, variant and propulsion-label reviews; 66 XGP/support records in scope, 22 still lacking a focused individual pass. Full annotation/transcription is unfinished.
-- All-26-episode gallery timestamp cache, with web-to-local alignment unresolved.
+- All-26-episode gallery timestamp cache; accepted bounded navigation mappings for selected regions of Episodes 1–4. Direct matches, estimates and unmapped regions remain distinct in the [timing workflow](../reference/indexes/animehistory/README.md).
 - User-authorized targeted Episode 4/7/8/11/26 frame reviews and metadata; derivatives remain local-only.
 - All-26-episode English full-dialogue subtitle performance screening, 47 curated records and separately classified numerical inferences; Japanese audio and priority visual checks remain open.
 - Shared command/state and future external-control compatibility requirements, without adapters, transport or AI implementation.
 
 Evidence/history remain in [reference progress](reconstruction/reference-phase-progress.md), [reference index](reconstruction/xgp-reference-index.md) and [performance audit](../reference/indexes/performance-subtitle-audit.md).
+
+The retrospective [Episode 4 reconciliation](../reference/indexes/episode-04-reconciliation-review.md)
+updates the initial survey and its documentation, accepted by the maintainer on 2026-10-29. It adds translated scene
+context and bounded timing references, without changing accepted spatial/behavior contracts or
+authorizing Phase 3.2A. Its workbook and archive-retention checks are recorded with the findings.
 
 ## Reconstruction / Implementation Baseline v1 — documentation approved
 

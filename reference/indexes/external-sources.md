@@ -13,7 +13,14 @@ The hub lists galleries for all 26 episodes, advertised as 354 images each (9,20
 
 Use the Episode 4 gallery to narrow discovery/startup scenes, then establish actual local-file timestamps before extraction. Do not inherit the website's canon/filler labels as our evidence classifications.
 
-Local HTML caching subsequently succeeded through direct HTTP retrieval: all 104 gallery pages across 26 episodes are saved under ignored reference/cache/animehistory/. [Local timestamp index](animehistory/README.md) contains 9,204 validated caption/time/image-link records, with per-page provenance and hashes. No images downloaded; web-to-local alignment is still UNVERIFIED. The earlier web-tool retrieval failures did not prevent direct access.
+Local HTML caching subsequently succeeded through direct HTTP retrieval: all 104 gallery pages across 26 episodes are saved under ignored reference/cache/animehistory/. [Local timestamp index](animehistory/README.md) contains 9,204 validated caption/time/image-link records, with per-page provenance and hashes. At that metadata-cache checkpoint no images had been downloaded or web/local matches established. The earlier web-tool retrieval failures did not prevent direct access.
+
+Current update — 2026-10-29: subsequent episode surveys downloaded selected gallery sets and
+validated bounded navigation mappings for Episodes 1–4. The [workflow/index](animehistory/README.md)
+owns current coverage and retention; the [Episode 4 alignment](episode-04-alignment-review.md) and
+[reconciliation](episode-04-reconciliation-review.md) distinguish direct, estimated, unmapped and
+manual-player timing. This does not verify every episode, every frame or source-site commentary.
+The original discovery-pass observations above remain historical.
 
 ## EXT-002 — Candidate episode-analysis thread
 

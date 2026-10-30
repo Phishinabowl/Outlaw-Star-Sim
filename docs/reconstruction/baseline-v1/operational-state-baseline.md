@@ -29,7 +29,7 @@ flowchart TD
 
 | ID | Evidence / support | What the arrow does not establish |
 |---|---|---|
-| C01 | Canon-supported A dim/bright bridge EP-04 05:15/05:42; early activation subtitle lead 05:19–05:25, original speech unverified | No identified battery/auxiliary source or exact early switch interaction. |
+| C01 | Canon-supported A dim/bright bridge EP-04 05:15/05:42; translated activation/countdown caption overlays 05:19–05:25 | Captions are not verified spoken lines or English device lettering. No identified battery/auxiliary source or exact early switch interaction. |
 | C02 | Canon-supported A hatch/rise/shield stages EP-04, occupant descent EP-26, B-candidate five-stage SET-027/086 | Complete continuous animated choreography/closure not verified; combining scenes is not one measured cycle. |
 | C03 | Canon-supported translated EP-04 10:52–11:02 obstacle/engineering direction | Exact internal seal mechanism and universal long-term storage procedure unknown. |
 | C04 | Canon-supported A band removal → handle/front-plate manipulation → cylinder extension on one unit; all four initially banded and later extended | Individual manual operation of all four inferred; no exact latch tolerances. |
@@ -38,6 +38,13 @@ flowchart TD
 | C07 | Canon-supported translated EP-04 14:06–14:10 systems-ready/ether-standby report | Does not certify all future flight/combat/sub-ether features or authorize departure in Slice 1. |
 
 Evidence: [EP-04 startup review](../../../reference/indexes/episode-04-startup-review.md), [follow-up comparison](../../../reference/indexes/startup-sequence-comparison.md), [EP-26 entry](../../../reference/indexes/episode-26-platform-review.md). The dormant-hangar player experience is a project premise; a fully powerless/storage → battery → auxiliary → main progression is E/F until further evidence. Do not place STANDBY as a universally necessary stage after initial ignition and before every operating mode solely because another scene starts there.
+
+The [Episode 4 survey reconciliation](../../../reference/indexes/episode-04-reconciliation-review.md)
+adds translated context, not new arrows or interlocks: cues 101–112 distinguish Gilliam's other-system
+support from piloting and Melfina's assistance; cues 179–181 distinguish individual engine testing
+from no recorded post-installation test. Main-Horus dialogue at 09:58 is not an early XGP drive state.
+Existing local PTS above remain independent evidence, not web labels corrected by an offset.
+No storage, shutdown, readiness or accepted Phase 1.3 behavior changes follow from these clarifications.
 
 ## B — standby departure, Episode 8
 

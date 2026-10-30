@@ -847,6 +847,24 @@ review workflow, not a full-show alignment prerequisite.
   Prior annotations, context preparation and the RAR are preserved; restored gallery/supplements
   remain for the separately scoped reconciliation sweep, followed by the established prune step.
   Neither that sweep nor Phase 3.2A has started.
+  The subsequent [Episode 4 reconciliation sweep](../../reference/indexes/episode-04-reconciliation-review.md)
+  audits all 354 gallery records and nine supplements against sheets, selected originals, accepted
+  timing and translated/source context. Implemented, verified and accepted on 2026-10-29: two eye-state summaries
+  corrected, present-day 254 marked STORY, scoped limits added and 48 secondary image links added.
+  Original supplied notes, identities, scene groups and review depths remain unchanged; 007 and
+  official missile naming remain open. Manual player times are not promoted to exact matches.
+  Earlier local-frame documents retain historical timing/evidence while linking current coverage.
+  No first-slice contract change, next episode or Phase 3.2A work is included.
+  Category/context/cache validation, preservation checks and refreshed ImportExcel projections
+  passed. Fresh RAR recovery verification permitted pruning all 354 restored gallery images and
+  nine supplements; 15 contact sheets and the unchanged verified archive remain. Exact evidence
+  and limits are in the reconciliation record; the maintainer accepted this checkpoint on 2026-10-29.
+  The subsequent broader documentation audit, recorded in the same reconciliation record,
+  updates the roadmap, room/component evidence, operational terminology, open questions and
+  historical source pointers. Accepted spatial/behavior choices, phase gates, maintained CSVs
+  and both refreshed workbooks remain unchanged. No redundant workbook rebuild or media restore
+  is required. The maintainer accepted the combined retrospective increment on 2026-10-29;
+  no next episode or 3.2A work starts automatically.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

@@ -23,6 +23,11 @@ Video timestamps use a 1/1000-second time base despite the fractional frame rate
 
 ## External timestamp index
 
+Current status — 2026-10-29: the subsequent [accepted alignment](episode-04-alignment-review.md)
+provides bounded navigation coverage; the [reconciliation sweep](episode-04-reconciliation-review.md)
+records its use and limits. Access/no-match statements below describe the original inspection.
+Generated locators and historical local PTS remain unchanged.
+
 [AnimeHistory Episode 4 gallery](https://www.animehistory.org/gallery/screencaps/outlaw-star/episode-4/) is the EXT-001 locator source. Prior research confirmed timestamp captions, but direct gallery retrieval returned cache-miss errors during this pass. No web frame was visually compared with the local episode, and no offset has been established. The earlier 14:37 example was illustrative, not a validated engineering timestamp.
 
 Use gallery captions as candidate times only. Before a targeted extraction batch, match at least two recognizable shots against local playback/frame data (preferably before and after the relevant sequence). Record external time, local decoded PTS, source, and match status; allow changing offsets if the edits differ. No broad sampling is needed to inspect metadata.

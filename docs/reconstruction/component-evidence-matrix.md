@@ -16,7 +16,7 @@ The [all-episode subtitle performance audit](../../reference/indexes/performance
 | Cooling | BRIEF design requirement | Interconnected simulation requirement | No hardware layout or numerical model established |
 | Melfina navigation cylinder/apparatus | SET-022,027,028,085,086,095; local EP-04/26 | State variants, bridge placement, animated occupant descent and other motion stages across scenes | A corroboration and B candidates; closure, continuous full motion and interface details pending |
 | Seats and physical consoles | SET-026,040,080,087,128 | Seat/control arrangements | B candidate; station roles and input behavior unresolved |
-| Gilliam display/interface | SET-039,090 | Face animation guidance; display in bridge/rooms | B candidate; shared simulation API is project requirement |
+| Gilliam display/interface | SET-039,090; EP-04 local visuals and English ASS | Face animation guidance and visible housing; translated maintenance, systems-support and registration exchange | A selected visuals/translated scene context plus B candidates; piloting is described as outside Gilliam's control, with Melfina assisting. No complete AI capability contract; shared simulation API remains a project requirement |
 | Maintenance robots | SET-033,113,114; rail SET-044 | Cylindrical units and manipulator states | B candidate; variants and servicing capability pending |
 | Grappler arms | SET-024,083,100,104 | Manipulator joints, mounts, deployment | B candidate; operational modes from anime pending |
 | Grappler tactical camera/control | SET-099; BRIEF | Grappler-combat command device with eye-view arm | B candidate for device; lighting and exact operating sequence remain unverified anime claims |
@@ -53,6 +53,22 @@ Reactor terminology is still unresolved. These selected sheets do not settle the
 [Local startup evidence](../../reference/indexes/episode-04-startup-review.md) adds A observations for navigation-cylinder rise (09:37–09:42 local), manual engineering front-cylinder extension (12:04–12:07), key engagement (13:53–13:54), and generator/main-sub power graphics (13:58–14:02). These ranges group discrete reviewed frames; exact shot boundaries and full trajectories remain open. Jim is the character associated with the engineering work; Gene engages the cockpit key. The visible engineering extension does not establish exterior-engine movement.
 
 Early bridge activation precedes the later main-engine ignition. The English subtitle track describes preparations, an engine seal/lockout and transfer to mains; those wording-dependent claims await audio verification. The startup display's MAIN/SUB branches do not establish battery count, capacity, physical circuit topology or a complete power state machine. Reactor names remain unresolved.
+
+The [retrospective Episode 4 reconciliation](../../reference/indexes/episode-04-reconciliation-review.md)
+adds these scoped distinctions from the pinned English ASS, without changing component assignments:
+
+- Cues 179–181 (11:15.96–11:23.12 local) distinguish an individually tested engine from no recorded
+  post-installation test. This is not evidence that no engine testing occurred.
+- Cues 153–159 (09:52.37–10:11.72) concern main Horus: the active ether-drive and 34% ammunition
+  report are not XGP startup state or inventory.
+- Cues 226–229 (14:51.65–14:59.89) describe operational XGP grappler arms without weapons fitted
+  at that moment and a wall-clearance warning, not a permanent armament limit or measured clearance.
+- Cues 291–292 (19:16.29–19:20.89) describe four sub-light engines. They do not identify four
+  sub-ether drives, reactor locations or a one-to-one mapping to internal control cylinders.
+
+Other-vessel missile names/equipment remain outside the XGP component assignment: El Dorado's
+initial smaller projectiles and later underside missile are separate references. The halcyon/Helicon
+naming discrepancy remains open in CTX-000014, not a correction to XGP's propulsion terminology.
 
 ## Commissioning, training and routine departure
 

@@ -8,7 +8,9 @@ annotation/documentation reconciliation remain separate steps. Phase 3.2A remain
 
 The subsequent [alignment checkpoint](episode-04-alignment-review.md) is also accepted. The
 preparation-time scope and retention observations below remain historical; the alignment record
-owns the subsequent timing coverage and restored-gallery state. The reconciliation sweep remains next.
+owns the subsequent timing coverage and restored-gallery state. The later
+[reconciliation sweep](episode-04-reconciliation-review.md) records the annotation/context updates
+and final retention state; its acceptance is separate from this preparation checkpoint.
 
 ## Pinned inputs and read scope
 

@@ -79,9 +79,17 @@ Detailed interior review adds these concrete checks:
 - SET-027 needs a below-floor navigation-platform cavity: how deep is it and where does it fit in the forward hull?
 - Are the July rest-room/lounge configurations SET-088/089 the same space as the dining room? Keep the April preliminary SET-043 geometry separate.
 - Do the bridge emergency hatch, passage exterior-access floor hatch, and airlock connect or represent separate openings?
-- What web-to-local timestamp offset applies to the Episode 4 gallery? Metadata has no chapters; defaults select English audio and signs/songs subtitles, so full-dialogue review must choose tracks explicitly.
+- Episode 4 has an [accepted bounded navigation offset](../../reference/indexes/episode-04-alignment-review.md): local = web −1.2415 s for gallery 004–342. Direct matches and estimates remain distinct; 001–003 and 343–354 stay unmapped. Exact manual-screenshot matches, unsupported edges and other releases remain open. Full-dialogue review must still select tracks explicitly; English audio/signs defaults do not establish Japanese wording.
 
 The [focused Episode 4 startup review](../../reference/indexes/episode-04-startup-review.md) now establishes local PTS for cylinder rise, manual engineering extension, key engagement and generator/main-sub power graphics. Complete trajectories, precise cut boundaries and original-language wording remain open. Determine the exact engine seal-release procedure and whether all four units receive the same treatment. Keep Jim's visibly shown engineering work distinct from Gene's cockpit-key operation, and distinguish other-ship dialogue in intercut scenes.
+
+The [2026-10-29 retrospective reconciliation](../../reference/indexes/episode-04-reconciliation-review.md)
+adds scoped subtitle/source distinctions while preserving the remaining mechanism questions. Engine
+testing is not wholly absent: the translation distinguishes individual testing from no recorded
+post-installation test. Gilliam's systems support and Melfina's navigation role do not settle the
+entire AI/interface contract. Dock intrusion does not prove pirates boarded the XGP interior.
+Official halcyon/Helicon equivalence, manual-frame PTS and the proposed dental explosive/trigger
+remain unresolved. These are targeted research questions, not automatic new phase gates.
 
 The [six-item follow-up](../../reference/indexes/startup-open-items-followup.md) refines the visible handle/front-plate rotation before extension, and confirms selected plasma-drive/hyperspace-screw production labels. It leaves the exact internal lock mechanism, all-four procedure, complete navigation-platform/shield animation and Newton/Münchhausen assignments open. Recollections are requested as episode-search leads, not direct evidence.
 

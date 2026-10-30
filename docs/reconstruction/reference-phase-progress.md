@@ -4,12 +4,22 @@ Historical publication checkpoint, 2026-10-08: Phases 1.1–1.3 planning were ac
 published in `209b87d` on 2026-10-08. The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md)
 owns current phase status and the [behavior closeout](../implementation/phase-1-3-closeout-audit.md)
 owns selected E/F contracts. Phase 1.4 and implementation were unstarted at that checkpoint.
-Current status: Phase 1.4 planning/discussion is in progress; Phase 1.5 and implementation remain
-unstarted. The linked implementation plan owns subsequent approvals and remaining gates.
+The linked implementation plan owns current phase status, subsequent approvals and remaining gates;
+the phase states in this historical checkpoint do not describe current execution progress.
 
 Entries below preserve dated reference increments. Their “uncommitted”, extraction/tool absence
 and open-behavior language describes that checkpoint, not current repository state. Later targeted
 EP-01/02/04/11 and machinery/headroom reviews do not retroactively authenticate the scan collection.
+
+## Episode 4 retrospective update — 2026-10-29
+
+The [accepted context preparation](../../reference/indexes/episode-04-context-preparation.md) and
+[accepted bounded alignment](../../reference/indexes/episode-04-alignment-review.md) supersede the
+earlier no-gallery-alignment status for the supported Episode 4 region only. The subsequent
+[reconciliation record](../../reference/indexes/episode-04-reconciliation-review.md) owns the
+initial-survey corrections, documentation audit, unresolved questions and retention/workbook checks;
+the maintainer accepted that combined increment on 2026-10-29. Existing dated extraction/verification observations below
+remain historical. No new geometry, gameplay, canonical mechanism or Phase 3.2A approval is implied.
 
 ## Editor automation planning addition — 2026-10-07, uncommitted
 

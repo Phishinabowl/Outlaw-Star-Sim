@@ -1,5 +1,10 @@
 # Episode 4 — Hangar Reveal, Boarding And Computer Bootstrap
 
+Current status — 2026-10-29: subsequent [accepted alignment](episode-04-alignment-review.md) and
+[survey reconciliation](episode-04-reconciliation-review.md) add bounded timing/context coverage.
+This earlier review retains its local PTS and user-verified dub addenda; subtitle translations
+do not replace those attributed observations or expand implementation scope.
+
 Focused review, 2026-10-07. The user requested treating the sequence from approximately 03:40
 through the earlier startup references as one connected opening reference. This extends the early
 part of the [existing startup review](episode-04-startup-review.md); it does not repeat every later
