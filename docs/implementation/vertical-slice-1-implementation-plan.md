@@ -865,6 +865,18 @@ review workflow, not a full-show alignment prerequisite.
   and both refreshed workbooks remain unchanged. No redundant workbook rebuild or media restore
   is required. The maintainer accepted the combined retrospective increment on 2026-10-29;
   no next episode or 3.2A work starts automatically.
+  The subsequent [Episode 5 preparation](../../reference/indexes/episode-05-context-preparation.md)
+  records all 354 gallery images and 15 verified sheets, the full 379-event subtitle read and
+  selected website context. Seven secondary assertions and 32 links are added; earlier records,
+  image annotations and timing registers are preserved. Validation and the refreshed context
+  workbook passed on 2026-10-30; the maintainer accepted preparation on the same date. Alignment
+  results follow; image review remains a separate next step. No Phase 3.2A work is included.
+  The subsequent [Episode 5 alignment](../../reference/indexes/episode-05-alignment-review.md)
+  passed bounded validation on 2026-10-30: three FIT and four independent HOLDOUT matches support
+  offset -1.232 s across web labels 01:43–22:58, covering all 354 sampled images with seven
+  direct intervals and 347 estimates. Six ambiguous attempts remain explicit. Current-input,
+  reproduction, preservation and workbook checks passed; all four temporary search runs were
+  removed. The maintainer accepted alignment on 2026-10-30. Image review and Phase 3.2A remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

@@ -839,3 +839,35 @@ CTXLINK-000837,CTX-000009,CONTEXT_FOR_IMAGE,IMAGE,EP-04:847986,Selected secondar
 CTXLINK-000838,CTX-000009,CONTEXT_FOR_IMAGE,IMAGE,EP-04:847995,Selected secondary scene context; subtitle/navigation and ownership limits in episode-04-reconciliation-review.md. No exact subtitle-frame match or primary promotion implied.
 CTXLINK-000839,CTX-000009,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848039,Selected secondary scene context; subtitle/navigation and ownership limits in episode-04-reconciliation-review.md. No exact subtitle-frame match or primary promotion implied.
 CTXLINK-000840,CTX-000009,CONTEXT_FOR_IMAGE,IMAGE,EP-04:848142,Selected secondary scene context; subtitle/navigation and ownership limits in episode-04-reconciliation-review.md. No exact subtitle-frame match or primary promotion implied.
+CTXLINK-000841,CTX-000066,ABOUT,SUBJECT,swanzo,
+CTXLINK-000842,CTX-000066,ABOUT,SUBJECT,xgp,
+CTXLINK-000843,CTX-000066,ABOUT,SUBJECT,hilda,
+CTXLINK-000844,CTX-000066,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000845,CTX-000067,ABOUT,SUBJECT,aisha_clanclan,
+CTXLINK-000846,CTX-000067,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000847,CTX-000067,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000848,CTX-000068,ABOUT,SUBJECT,aisha_clanclan,
+CTXLINK-000849,CTX-000068,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000850,CTX-000068,ABOUT,SUBJECT,caster,
+CTXLINK-000851,CTX-000068,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000852,CTX-000069,ABOUT,SUBJECT,xgp,
+CTXLINK-000853,CTX-000069,ABOUT,SUBJECT,swanzo,
+CTXLINK-000854,CTX-000069,ABOUT,SUBJECT,sentinel_iii,
+CTXLINK-000855,CTX-000069,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000856,CTX-000070,ABOUT,SUBJECT,swanzo,
+CTXLINK-000857,CTX-000070,ABOUT,SUBJECT,hilda,
+CTXLINK-000858,CTX-000070,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000859,CTX-000071,ABOUT,SUBJECT,aisha_clanclan,
+CTXLINK-000860,CTX-000071,ABOUT,SUBJECT,ctarl_ctarl,
+CTXLINK-000861,CTX-000071,ABOUT,SUBJECT,blue_heaven,
+CTXLINK-000862,CTX-000071,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000863,CTX-000072,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-000864,CTX-000072,ABOUT,SUBJECT,melfina,
+CTXLINK-000865,CTX-000072,ABOUT,SUBJECT,xgp,
+CTXLINK-000866,CTX-000072,APPLIES_TO_EPISODE,EPISODE,EP-05,Selected Episode 5 preparation context; no image or timing match implied.
+CTXLINK-000867,CTX-000009,APPLIES_TO_EPISODE,EPISODE,EP-05,Existing scoped context reused in Episode 5 preparation; original assertion and evidence status unchanged.
+CTXLINK-000868,CTX-000043,APPLIES_TO_EPISODE,EPISODE,EP-05,Existing scoped context reused in Episode 5 preparation; original assertion and evidence status unchanged.
+CTXLINK-000869,CTX-000044,APPLIES_TO_EPISODE,EPISODE,EP-05,Existing scoped context reused in Episode 5 preparation; original assertion and evidence status unchanged.
+CTXLINK-000870,CTX-000053,APPLIES_TO_EPISODE,EPISODE,EP-05,Existing scoped context reused in Episode 5 preparation; original assertion and evidence status unchanged.
+CTXLINK-000871,CTX-000057,APPLIES_TO_EPISODE,EPISODE,EP-05,Existing scoped context reused in Episode 5 preparation; original assertion and evidence status unchanged.
+CTXLINK-000872,CTX-000060,APPLIES_TO_EPISODE,EPISODE,EP-05,Existing scoped context reused in Episode 5 preparation; original assertion and evidence status unchanged.

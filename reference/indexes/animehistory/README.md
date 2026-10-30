@@ -1276,3 +1276,33 @@ updates related room/component evidence, operational vocabulary, open questions,
 historical reference pointers without changing accepted design decisions. CSVs and both generated
 workbooks remain byte-identical to the post-sweep versions, so another refresh is unnecessary.
 The maintainer accepted the documentation and cleanup checkpoint on 2026-10-29; Phase 3.2A remains unstarted.
+
+## Episode 5 gallery and subtitle/context preparation — 2026-10-30
+
+The [preparation record](../episode-05-context-preparation.md) records the preceding verified
+354-image download and 15 chronological sheets, followed by a full read of all 379 English ASS
+events and selected website context. Local subtitle intervals remain separate from web labels.
+One selected Fandom episode-summary capture and existing AnimeHistory/Aisha/Swanzo/Melfina/ship
+sources supply seven new secondary assertions and reuse of earlier scoped records. The unavailable
+standalone Mikey lookup remains explicit. No image associations or primary promotions are added.
+
+Context/cache/category validation, preservation checks and the refreshed five-tab ImportExcel
+context view passed. All 354 Episode 5 image records remain UNREVIEWED / NOT_REVIEWED; gallery
+originals and contact sheets remain local for the upcoming survey. No Episode 5 RAR or timing
+mapping was created during preparation. The maintainer accepted this preparation on 2026-10-30;
+the subsequent alignment results follow. No Phase 3.2A work is included.
+
+## Episode 5 bounded alignment — 2026-10-30
+
+The [alignment record](../episode-05-alignment-review.md) documents 13 predeclared attempts:
+seven matched intervals and six ambiguous held/repeated drawings. Three FIT anchors froze the
+offset before four independent HOLDOUT matches validated ALNMAP-000010. Navigation coverage is
+web labels 01:43–22:58 inclusive, with `local = web - 1.232 s`: all 354 gallery rows, seven direct
+intervals and 347 estimates. No entire-runtime alignment or exact subtitle association is implied.
+
+Current-input validation and early/late frame-hash reproduction passed. The category workbook
+refreshed and passed saved-data/link and visual checks. All four owned search runs were removed
+through the inspected cleanup preview, releasing 776,723,199 bytes; gallery originals and 15
+sheets remain. Earlier episodes, context data and image annotations are unchanged. The maintainer
+accepted this alignment checkpoint on 2026-10-30; the first three-sheet image review is the next
+separate step. No Phase 3.2A work is included.

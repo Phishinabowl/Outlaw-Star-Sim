@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "episode_id": "EP-05",
+  "selections": [
+    {
+      "image_id": "848189",
+      "role": "FIT",
+      "search_start_seconds": "97",
+      "search_end_seconds": "109"
+    },
+    {
+      "image_id": "848282",
+      "role": "FIT",
+      "search_start_seconds": "433",
+      "search_end_seconds": "445"
+    },
+    {
+      "image_id": "848351",
+      "role": "FIT",
+      "search_start_seconds": "682",
+      "search_end_seconds": "694"
+    },
+    {
+      "image_id": "848416",
+      "role": "FIT",
+      "search_start_seconds": "917",
+      "search_end_seconds": "929"
+    },
+    {
+      "image_id": "848516",
+      "role": "FIT",
+      "search_start_seconds": "1278",
+      "search_end_seconds": "1290"
+    },
+    {
+      "image_id": "848541",
+      "role": "FIT",
+      "search_start_seconds": "1368",
+      "search_end_seconds": "1380"
+    },
+    {
+      "image_id": "848199",
+      "role": "HOLDOUT",
+      "search_start_seconds": "133",
+      "search_end_seconds": "145"
+    },
+    {
+      "image_id": "848266",
+      "role": "HOLDOUT",
+      "search_start_seconds": "375",
+      "search_end_seconds": "387"
+    },
+    {
+      "image_id": "848342",
+      "role": "HOLDOUT",
+      "search_start_seconds": "650",
+      "search_end_seconds": "662"
+    },
+    {
+      "image_id": "848369",
+      "role": "HOLDOUT",
+      "search_start_seconds": "747",
+      "search_end_seconds": "759"
+    },
+    {
+      "image_id": "848423",
+      "role": "HOLDOUT",
+      "search_start_seconds": "942",
+      "search_end_seconds": "954"
+    },
+    {
+      "image_id": "848522",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1300",
+      "search_end_seconds": "1312"
+    },
+    {
+      "image_id": "848542",
+      "role": "HOLDOUT",
+      "search_start_seconds": "1372",
+      "search_end_seconds": "1384"
+    }
+  ]
+}
