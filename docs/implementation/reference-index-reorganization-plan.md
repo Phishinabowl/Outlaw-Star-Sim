@@ -5,7 +5,7 @@
 | Created / last edited | 2026-10-30 / 2026-10-30 |
 | Status | Plan accepted by the maintainer on 2026-10-30; migration and tool changes unimplemented |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 1: complete file/section ledger and dependency baseline; not started |
+| Current checkpoint | Phase 1.1 inventory accepted 2026-10-30; Phase 1.2 dependency audit unstarted |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -213,9 +213,18 @@ active tools and records use incompatible paths. Do not begin dependent work wit
 
 **Prerequisite:** authorized inventory scope. **Deliverable:** exhaustive migration ledger beside this plan.
 
-- [ ] Assign every root file one destination and disposition using the move rules above.
-- [ ] Enumerate embedded episode sections and their destination records, including cross-episode exceptions.
-- [ ] Capture Git status, file hashes, register counts and workbook data baselines.
+- [x] Assign every root file one destination and disposition using the move rules above.
+- [x] Enumerate embedded episode sections and their destination records, including cross-episode exceptions.
+- [x] Capture Git status, file hashes, register counts and workbook data baselines.
+
+**Completion record — accepted by the maintainer 2026-10-30:** the
+[migration ledger](reference-index-reorganization-ledger.md) maps all 152 root files and all 60
+AnimeHistory README heading sections, including retained sections and two mixed-content splits.
+The [baseline snapshot](reference-index-reorganization-baseline.json) records 193 index-file hashes,
+37 CSV tables and three existing workbook projections. Read-only ZIP/XML inspection records saved
+cell/formula and link digests without recalculation or a new CSV-to-workbook equality claim.
+All 193 protected files remained byte-identical, destinations were absent and no records moved.
+The producer roles are preliminary; exact consumers and path classifications remain Phase 1.2.
 
 ### Phase 1.2: Tool And Consumer Dependency Audit
 

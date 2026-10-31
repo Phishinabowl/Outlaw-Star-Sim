@@ -559,6 +559,10 @@ The [reference index reorganization plan](reference-index-reorganization-plan.md
 proposed evidence-folder structure, producer/consumer updates, tool/helper inventory and staged
 migration checks. Planning documentation is authorized; file moves and tool changes remain
 unimplemented pending authorization. This housekeeping work does not start Episode 7 or 3.2A.
+The subsequently authorized Phase 1.1 inventory was accepted by the maintainer on 2026-10-30: its
+[ledger](reference-index-reorganization-ledger.md) and
+[baseline](reference-index-reorganization-baseline.json) map the existing files/sections and
+preserve register/workbook baselines. No records have moved; Phase 1.2 remains unstarted.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
 **Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete
