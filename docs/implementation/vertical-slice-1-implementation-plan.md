@@ -555,6 +555,11 @@ and [closeout review](phase-3-1-closeout.md). No 3.2A execution is authorized.
 
 ### Pre-3.2A Checkpoint: All-Episode Visual-Reference Research
 
+The [reference index reorganization plan](reference-index-reorganization-plan.md) records the
+proposed evidence-folder structure, producer/consumer updates, tool/helper inventory and staged
+migration checks. Planning documentation is authorized; file moves and tool changes remain
+unimplemented pending authorization. This housekeeping work does not start Episode 7 or 3.2A.
+
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
 **Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete
 an episode-by-episode annotated survey as the main initial review, followed by cross-episode XGP
