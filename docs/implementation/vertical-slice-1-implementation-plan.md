@@ -942,6 +942,12 @@ review workflow, not a full-show alignment prerequisite.
   seven ambiguous attempts remain recorded. Current-input checks, frame reproduction,
   workbook refresh and five-run temporary cleanup passed. The maintainer accepted alignment
   on 2026-10-30; image annotation and Phase 3.2A remain unstarted at acceptance.
+  [Episode 6 batch 01](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-01-2026-10-30)
+  initially reviews 001–072: opening imagery, Sentinel landing/struts, cockpit relationships,
+  rental-car travel and Fred's showroom greeting. All 72 have INITIAL_REVIEW_COMPLETE depth,
+  with 71 SCREENED and the recurring opening launch craft/facility at 005 NEEDS_RECHECK.
+  Records, context links and refreshed workbooks passed validation; the maintainer accepted
+  batch 01 on 2026-10-30. The remaining 282 Episode 6 rows and Phase 3.2A remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

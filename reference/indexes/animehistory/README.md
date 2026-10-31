@@ -439,6 +439,8 @@ The `subjects` register starts with:
 | `ctarl_governor` | Descriptive role ID for the elderly pointed-eared official displayed in Episode 3's recorded reprimand. Translated dialogue addresses him as Governor and identifies the Comm Cube message as a recording; personal name and physical recording-device design remain unverified. |
 | `farfallas` | Destination-system identity; Farfallus retained as an AnimeHistory spelling variant. Original-language spelling and image associations remain unverified. |
 | `starwind_hawking_car` | Descriptive continuity ID for the red open-top classic-style car used by Gene and Jim in Episode 1. No verified model designation, legal ownership or complete propulsion mechanism implied. |
+| `sentinel_rental_car` | Pale-green enclosed rental car used by Gene, Jim and Melfina during Episode 6's trip to Hugo. Descriptive continuity ID, distinct from the earlier red car; make/model and propulsion remain unverified. |
+| `fred_luo`, `fred_luo_premises` | Fred Luo and his Episode 6 weapons showroom/office, identified through the named greeting, visit continuity and selected secondary context. Premises identity does not establish a complete building layout or equate it with Luo-family headquarters on Heifong. |
 | `club_temptation` | Club identified by the visible Episode 1 sign and secondary scene context CTX-000034; its private-room companion remains unnamed. |
 | `clydes_bar` | Clyde's Bar exterior/interior in Episode 1; visible entrance sign and secondary episode context support identification. |
 | `rob_cain`, `clyde` | Rob Cain / Death Rob and Clyde, identified through the Episode 1 confrontation and aftermath subtitles. Secondary Rob Kane spelling is an alias, not a separate person. |
@@ -1880,3 +1882,89 @@ cleanup preview, releasing 769,808,022 bytes. Gallery originals, all 15 contact 
 context records/workbook and earlier alignment rows remain unchanged. All 354 Episode 6
 annotation rows remain UNREVIEWED / NOT_REVIEWED at acceptance on 2026-10-30;
 the first three-sheet review is the next separate step. No Phase 3.2A work is included.
+
+## Episode 6 annotated survey — batch 01, 2026-10-30
+
+Status: initial survey implemented, verified and accepted by the maintainer on 2026-10-30. Images
+001–072 (IDs 848543–848614), sheets 0001–0024, 0025–0048 and 0049–0072, are annotated.
+Thirty originals were additionally inspected full-size: 001, 008–010, 012, 019, 026, 029,
+032–035, 037, 041–044, 046, 048–049, 053, 055, 061, 063, 065, 067–068 and 070–072.
+The three sheets were inspected in full; sampled imagery is not continuous-video coverage.
+
+The accepted [context preparation](../episode-06-context-preparation.md) and
+[alignment review](../episode-06-alignment-review.md) supply navigation and source limits.
+Local English ASS cues 34–105 were reread, including the surrounding named Fred greeting.
+Within this batch, 002, 030 and 036 have direct intervals; 68 rows have mapping estimates
+and 001 is unmapped. Estimates remain navigation aids. No new alignment run or website
+retrieval was needed. The cached Fred/Suzuka context remains secondary, with no primary promotion.
+
+Images 001–015 are opening material. Suzuka's cup/veranda illustration, Gene's jump, XGP
+exterior, caster still life, MacDougall portraits, seated trio, mechanical pirate foot soldier,
+El Dorado/XGP vignette and cast lineup retain that presentation. Image 005 is the recurring
+unidentified launch craft/facility and remains NEEDS_RECHECK. Cropped montage figures in 009
+and the tentative Aisha eye in 010 retain their identity limits. No cast-lineup membership,
+literal montage spatial arrangement or present-day combat is inferred.
+
+Images 016–051 establish the Sentinel approach and landing. High-priority references include:
+
+- 019, 029–030, 032 and 035–036: underside silhouette, gold stepped nozzle, dark rear
+  structure, side housings, exhaust and pad approach. Red atmospheric/cockpit illumination
+  is a visible state, without a thermal, alarm or damage algorithm.
+- 020, 026–028, 033–034 and 037–040: paired controls, Gilliam's segmented circular interface,
+  Jim forward/lower than Gene, Melfina's occupied slatted apparatus behind them and a hand
+  lifted near the pilot's circular side control. Dialogue assigns Melfina beacon alignment
+  and calls for strut deployment; still endpoints do not establish complete control/motion logic.
+- 041–043: pale cup-shaped landing foot, central gold tapered component, rods/split supports,
+  nose band/oval apertures and the nearly vertical ship over a circular yellow-marked pad.
+  The sampled apparatus state does not prove the full deployment path, a broken strut,
+  exact load paths or correspondence to the reported strut three.
+- 044–051: brighter post-landing cockpit, two forward/pilot seat levels, flared side stations,
+  looping cables, floor fittings, Gilliam overhead and cyan-lit Melfina apparatus. Empty side
+  seating/display structures remain distinct from the occupied forward and pilot stations.
+  These views do not measure room dimensions or prove shutdown/retraction behavior.
+
+ASS cues 34–61 (156.87–245.88 s) cover approach, fuel/speed concerns, beacon help, engine
+cut request and strut-three yellow warning. Cues 62–69 (257.47–285.96 s) welcome the ship
+to West Virginia Spaceport on Sentinel III and discuss cheap docking/Blue Heaven registration.
+This port identification is dialogue/scene continuity; it does not resolve the later Locus
+spaceport wording or identify the unnamed binocular-using port observer in 021–022.
+
+Image 052 is the episode title card, with Japanese wording left untranscribed. Images 053–060
+show the port frontage, E-7 arrow sign, canopy/tube lights, steps, traffic signals, sculpture
+and crew's travel discussion. The sculpture is not tagged as a ship. Melfina's outfit and the
+three standing figures provide useful costume/pose references without calibrated height claims.
+
+Images 061–065 introduce a pale-green enclosed rental car, distinct from the earlier red
+Starwind/Hawking car. Visible features include round lamps, fan-like grille, curved glazing,
+roof loop/fin, steering wheel, front seats, Melfina's diagonal belt and Jim in the rear.
+The visible underside gap/shadow and grille do not establish its lift/propulsion mechanism.
+Gene drives; Jim's hand near Gene's head is associated through rear-seat continuity. Images
+066–067 retain road/gantry/rocky-outskirts references without a measured route to Hugo.
+Translated cues 70–81 (299.25–336.08 s) provide the rental plan, Hugo destination, original
+car in the silo and roughly three-hour estimate; no vehicle make/model or speed is derived.
+
+Images 068–072 move into Fred's weapons showroom/office. The gold-trimmed display case contains
+an unidentified large cylindrical weapon with a pink pointed end, not an established caster,
+engine or verified XGP purchase. Blade racks, hanging weapon panels, cabinets, doors and
+articulated desk lamps are retained for later environment work. Fred's red headband/dark bangs,
+named greeting in cues 82–88 (344.86–366.07 s) and CTX-000077 support the preliminary survey
+identity in 070–072. This premises is not a ship interior or the stated Heifong headquarters.
+
+The vocabulary adds fred_luo from the existing context catalogue, sentinel_rental_car and
+fred_luo_premises as scoped descriptive survey identities. Thirty contextual image links
+(CTXLINK-001076–001105) reuse CTX-000008, 000009, 000065, 000076–000078. These do not establish
+exact subtitle timing or change evidence status. No new source, assertion or manual supplement
+is added. All 72 rows have INITIAL_REVIEW_COMPLETE depth: 71 SCREENED, one NEEDS_RECHECK;
+32 chronological scene groups and 35 high-priority rows. The remaining 282 Episode 6 rows
+are untouched and unreviewed.
+
+Category/context validation passed. All 9,132 out-of-batch annotation rows, prior context
+links and 381 protected input hashes are unchanged, including gallery originals/sheets,
+alignment registers, subtitle provenance/copy and existing context subjects/sources/claims.
+The refreshed ImportExcel category view retains 30 tabs, 432,588 verified gallery cells,
+9,204 image links, 1,326 manual cells and 4,419 alignment cells. The context view retains
+five tabs with 12,695 verified cells and 2,390 links; 666 distinct images have context links.
+Both builders confirm authored-data equality. Changed recheck, landing-gear, cockpit,
+showroom, new-link and overview ranges were rendered and visually inspected. No fresh
+native Office Viewer check is claimed. Disposable batch/preview helpers are removed after
+verification. Next separate batch: 073–144. No Phase 3.2A work is included.
