@@ -963,7 +963,24 @@ review workflow, not a full-show alignment prerequisite.
   retains its direct frame separately from 71 estimates. Matching guards are standing again;
   weapon, handheld-device and sensor-mechanism limits remain explicit. Records, context links
   and refreshed workbooks passed validation. The maintainer accepted batch 03 on 2026-10-30;
-  138 later rows and Phase 3.2A remain unstarted.
+  138 later rows and Phase 3.2A remained unstarted at that checkpoint.
+  [Episode 6 batch 04](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-04-2026-10-30)
+  initially reviews 217–288: departure from Fred, street/alley pursuit, truck encounter,
+  rental-car pickup and mirror, rocky outskirts, concentrated light shield and captured
+  sword/sash. All 72 are SCREENED / INITIAL_REVIEW_COMPLETE; combined coverage is 288
+  with one prior NEEDS_RECHECK. Two direct timings remain separate from 70 estimates.
+  Sampled action, shield mechanism and vehicle/astronomical scale limits remain explicit.
+  Record preservation, cached-source verification and both refreshed workbook checks passed.
+  The maintainer accepted batch 04 on 2026-10-30; 66 later rows remained unstarted at that checkpoint.
+  [Episode 6 batch 05](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-05-2026-10-30)
+  initially reviews 289–354: draw/pride negotiation, symbolic death and target-priority
+  agreement, returned items, coat recovery, showroom transaction and crew departure.
+  All 354 Episode 6 rows are INITIAL_REVIEW_COMPLETE: 353 SCREENED and one prior
+  NEEDS_RECHECK (005). This batch retains one direct frame, 35 estimates and 30 unmapped
+  images without extending the timing range. Billing, delivery, weapon/device identities
+  and the ending's continuing-challenge limits remain explicit. Record preservation, context
+  validation, cached-source verification and both refreshed workbook checks passed. The maintainer
+  accepted batch 05 on 2026-10-30; archive/prune closeout is separate. Phase 3.2A remains unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

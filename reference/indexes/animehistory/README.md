@@ -2145,3 +2145,201 @@ Authored-data equality and affected shield, security, direct-timing, new-link an
 visual checks passed. No fresh native Office Viewer check is claimed. Disposable batch
 helpers/previews are removed after verification. Next separate batch: 217–288. No Phase 3.2A
 work is included.
+
+## Episode 6 annotated survey — batch 04, 2026-10-30
+
+Status: initial survey implemented, verified and accepted by the maintainer on 2026-10-30. Images
+217–288 (IDs 848759–848830), sheets 0217–0240, 0241–0264 and 0265–0288, are annotated.
+All three sheets were inspected, with 34 full-size original checks: 227, 234, 237,
+241–248, 254, 256, 260–263, 267, 272–275 and 277–288. The accepted
+[context preparation](../episode-06-context-preparation.md) and
+[alignment review](../episode-06-alignment-review.md) retain source and timing authority.
+Local English ASS cues 213–300 were reread, including neighboring dialogue outside the batch.
+Image 277 retains direct frame ALNANC-000095 at 1105.521 s; 280 retains direct interval
+ALNANC-000102 at 1116.324–1116.407 s. The other 70 rows use ALNMAP-000012 navigation
+estimates, not exact subtitle associations. No new search, media extraction or website
+retrieval was needed. Cached Suzuka SECTION:0005 was reread; later events remain separate.
+
+Images 217–226 continue the shop conversation. Fred proposes finding Suzuka's employer;
+Gene wants a hotel, declines Fred's offer to stay together and leaves with a promise to
+call. Cues 214–227 (885.43–919.83 s) provide that translated context. Portraits, gestures,
+the facing group and display-room doorway retain individual descriptions. The suggested
+employer search does not establish an employer identity or an action completed offscreen.
+
+Images 227–240 establish Fred's arched storefront, the parked rounded pale-green rental
+car, neighboring lit entrances and the renewed street challenge. The full-length Suzuka
+view at 234 records her white robe, red sash, orange-purple wrap and dark wooden sword
+among signs, overhead cables and street covers. The lettering is not comprehensively
+transcribed or used to invent a district map. Cues 228–243 (923.44–969.64 s) explain the
+ship-supplies motivation, mutual introductions, renewed duel, Gene directing Melfina back
+to Fred and asking Jim for backup. Gene's defensive crouch beside the car at 237 is a
+pose reference without a reconstructed incoming attack path.
+
+Images 241–248 follow the alley chase and traffic encounter. Gene carries the slim dark
+pistol, distinct from the gold caster; cue 244 (978.36–980.62 s) calls it useless without
+identifying its precise failure. Boots/puddle splashes, wall vents, pipes, refuse and
+the narrow alley's opening onto the lit main road are useful environment references.
+The passing pale-blue car at 244 is distinct from the rental car. Images 245–248 show
+a tilting/scraping truck, Suzuka facing its front with her wooden sword, an overhead
+sword pose and exposed box cargo/underbody with sparks beside another car. The sampled
+stills do not show every strike or establish exact vehicle division geometry, mass,
+speed, stopping force or cutting physics. Suzuka calls the feat strength in cue 247
+(1008.49–1010.29 s); this is attributed dialogue, not a measured capability or separate
+spell specification. Drivers and bystanders remain unnamed.
+
+Images 249–258 retain the post-encounter exchange, Jim arriving at the rental car's
+controls, Suzuka's pursuit in its rectangular mirror and Gene speaking inside the car.
+Cues 245–256 (1005.05–1038.48 s) supply the taunt, pickup, pursuit and Gene asking Jim to
+do something while traveling. The requested preparation is not visually established
+by these stills. Mirror perspective and vehicle fittings do not identify propulsion,
+pursuit speed or distance. The car seating is recorded for this scene without assuming
+a universal arrangement.
+
+Images 259–271 move to the outskirts: stars, two small crescents, a distant illuminated
+city strip, a field of eroded-looking rock spires, Jim watching behind a rock, Suzuka
+balanced on a spire and Gene challenging her below. Image 263 provides an especially
+useful costume silhouette against the huge cratered celestial disc. No geological
+composition, astronomical identities, calibrated scale, travel distance, jump capability
+or levitation is derived. Cues 257–265 (1052.33–1080.89 s) provide their motivation and
+challenge. Gene's raised gloves at 267 are a preparatory pose, without a verified
+electronic activation gesture. Image 271 records Suzuka raising her wooden sword.
+
+Images 272–279 show Gene, now without his yellow coat, meeting Suzuka's sword with a
+small bright blue-white field near his gloves. Cues 266–269 (1092.57–1103.58 s) name the
+shield and explain focusing shields at a single point. This supports the concentrated
+shield interpretation rather than a shield belonging to Suzuka. Close views preserve
+two braced gloves, sword contact, thin arcs and irregular dark glove patches; the direct
+wide frame at 277 preserves their stance and radiating streaks. These are valuable
+effect references without emitter count, energy units, electrical/magic physics or
+precise capacity. Dark patches and secondary power-exhaustion prose do not independently
+verify burning, destroyed hardware, a battery model or the exact failure instant.
+
+Images 280–282 show the disarming exchange, an upright dark sword shape in the foreground
+and an overhead chase. The direct interval at 280 fixes a pose, not the complete grip,
+kick or sword-transfer path. Images 283–286 preserve Suzuka's red bow, the sash extending
+sideways and her gathering the loosened robe closed. Image 284 crops out the pulling
+hand, so continuity supplies the removal interpretation without reproducing every motion.
+Images 287–288 clearly show Gene holding the wooden sword and long red sash as separate
+objects. Cues 272–275 (1141.45–1146.26 s) identify the demand for both. Later bargaining,
+symbolic death and target-priority agreement belong to the next batch; no fatal outcome
+or crew membership is inferred here.
+
+Forty-three contextual image links (CTXLINK-001183–001225) reuse CTX-000077–000080.
+No source, assertion, subject vocabulary or manual supplement is added, and no assertion
+is promoted to primary status. All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE, with
+15 chronological groups (EP-06-S062–S076) and 35 high-priority references. No new
+NEEDS_RECHECK row is introduced. Combined Episode 6 coverage is 288 initial reviews:
+287 SCREENED and the prior opening craft at 005 NEEDS_RECHECK. The final 66 rows remain
+untouched. No Phase 3.2A work is included.
+
+Validation preserves all 9,132 out-of-batch annotation rows, all prior 1,182 context
+links and 379 protected input hashes, including every Episode 6 gallery original,
+contact sheet, subtitle copy and protected timing/context record. The refreshed category
+view retains 30 tabs, 432,588 gallery cells, 9,204 image links, 1,326 manual cells and
+4,419 alignment cells. The context view retains five tabs with 13,775 verified cells
+and 2,630 links, covering 768 distinct linked images. Authored-data equality and affected
+shield, direct-timing and overview visual checks passed. Cached-source verification passed
+for all 30 snapshots. Disposable batch helpers/previews were removed after verification.
+No fresh native Office Viewer check is claimed. Next separate batch: 289–354.
+
+## Episode 6 annotated survey — batch 05, 2026-10-30
+
+Status: initial survey implemented, verified and accepted by the maintainer on 2026-10-30. Images
+289–354 (IDs 848831–848896), sheets 0289–0312, 0313–0336 and 0337–0354, are annotated.
+All three sheets were inspected, including the final sheet's 18 images. Thirty-two originals
+were inspected full-size: 289, 291, 295, 297, 302, 304, 306, 310–314, 316, 320, 322, 324,
+327–328, 330–332, 335–336, 340–341, 343, 346–348, 351–352 and 354. Existing batch 04
+annotations and links are preserved. No new extraction, alignment search or website fetch
+was required. The accepted [context preparation](../episode-06-context-preparation.md) and
+[alignment review](../episode-06-alignment-review.md) remain authoritative.
+
+Local English ASS cues 272–365 were reread to distinguish the duel, negotiation and closing
+story from ending lyrics and the Episode 7 preview. Image 324 retains direct correspondence
+ALNANC-000096 at local 1276.442 s. Images 289–323 have 35 ALNMAP-000012 navigation estimates;
+325–354 remain UNMAPPED. Those final 30 annotations use visible content and scene order for
+dialogue context without extrapolating the offset or claiming exact subtitle matches.
+Earlier ambiguous attempts at held-car image 350 and closing-tableau image 354 remain
+ambiguous; completing their visual review does not upgrade timing evidence.
+
+Images 289–296 continue the captured-sash exchange. Gene holds the red cloth near his nose,
+then bargains with seated Suzuka over the sash and wooden sword. The scent remark is
+translated dialogue rather than a property established visually. Low views between Gene's
+legs and reverse views record their positions and Suzuka gathering her loosened robe.
+Image 295 separately shows the slim pistol, wooden sword and red sash. No sword breaking,
+completed firing cycle or measured separation is established.
+
+Images 297–305 retain Gene's slim dark pistol, long side ridge, top sights, small red
+circular detail and broad muzzle rim, plus individual portraits. The weapon is distinct
+from the gold caster; the red detail's function, model, ammunition and caliber remain
+unassigned. Suzuka's chest wrap, loosened robe and low shoulder cloth are costume references
+without a complete dressing/construction sequence. Cues 287–299 (1178.02–1215.39 s) propose
+a draw and distinguish Gene's personal duel from protecting Fred indefinitely. They do not
+prove superior lethal ability or a permanent bodyguard commitment.
+
+Images 306–313 retain Gene extending the pistol, Suzuka remaining seated and a wider view
+of their separation. Cues 300–305 (1217.26–1235.90 s) discuss contract, pride and Gene's
+symbolic declaration that Twilight Suzuka has died. No muzzle flash or bullet path is
+visible in the selected pistol still at 310. The cached Suzuka SECTION:0005 describes shots
+at the ground, but sampled images do not independently reconstruct every shot. Suzuka is
+visibly alive afterward; the language is not an actual death, resurrection or fatal injury.
+Image 310 is useful for Gene's white back straps, wrist guard, belt and thigh holster.
+
+Images 314–321 show the sword/sash on the ground, Gene turning away, Suzuka objecting and
+Gene giving a thumbs-up. Cues 306–318 (1236.22–1270.18 s) offer the items as payment for
+Fred's life, then resolve the pride objection by making Gene the target before Fred.
+This is the particular negotiated agreement, not a universal assassination-contract rule,
+an unconditional abandonment of the contract or formal crew membership. Images 322–324
+retain Gene's coat spread on the ground, a cropped pickup transition and his departure with
+the coat over his shoulder beside Jim. Jim's green satchel, cargo trousers and outfit are
+useful references. Images 325–329 continue their departure and Suzuka's response, with
+rock spires and celestial-disc compositions retained without scale or astronomical claims.
+
+Images 330–336 return to Fred's showroom. Image 330 preserves the large segmented weapon
+with pink pointed tip on a three-legged stand inside a lit gold-framed cabinet. It resembles
+the earlier display in 068; model, ammunition, installation and purchase of this particular
+item remain unverified. Image 331 locates the green counter frame, cabinets, damaged office
+doorway and two guards. Image 332 shows the blue handheld item's rear label and fittings,
+without readable account details, verified device class or printing mechanism. The handshake
+in 335–336 concludes the exchange visually without an itemized contract or shipment receipt.
+
+Cues 325–343 (1297.41–1355.33 s) arrange delivery to dock 26 at Locus' spaceport, discuss
+the remaining employer problem, refer to a 750,000-wong difference and a 30% discount, and
+comment on maintaining a grappler ship. Preserve the dialogue's subtraction wording rather
+than inventing an itemized ledger, debt direction, standard hiring fee or general maintenance
+tariff. Earlier West Virginia Spaceport wording remains unreconciled with Locus. Arranged
+delivery is distinct from equipment visibly delivered or installed.
+
+Images 337–345 retain Fred's embraces, Gene's frustration, two matching unnamed guards and
+the discount explanation. Image 340 frames Gene and Fred through the guards' silhouettes
+below the green crossbar and pink dome light. The light does not establish alarm activation
+or a new security state. Image 341 is a useful paired outfit/eyewear reference, without
+names, injury diagnoses or inferred visor functions. The recurring embrace compositions
+remain distinct individual locators rather than being discarded as duplicates.
+
+Images 346–351 return to the rental car outside Fred's storefront. The frontal views show
+the initially empty driver seat, Gene entering and then holding the steering wheel on the
+viewer's left, Jim front-right and Melfina behind. Mirror, seats, dashboard fitting, roof
+and glazing are useful interior references, without measured dimensions, propulsion or a
+general seating rule. Melfina's rear-seat portrait preserves her white collar, purple tie
+and dark vest. Images 352–354 are the closing story tableau: Suzuka has restored her robe
+and carries the wooden sword over her shoulder against the large pale disc. Scene continuity
+and cue 349 (1380.79–1386.03 s) preserve the continuing challenge; these are not ending-credit
+images, an exact subtitle match or an Episode 6 crew-joining event.
+
+Fifty-three image links (CTXLINK-001226–001278) reuse CTX-000075–000078. No source, assertion,
+subject vocabulary or manual supplement is added; no primary-status promotion is made.
+All 66 new rows are SCREENED / INITIAL_REVIEW_COMPLETE, in 13 groups (EP-06-S077–S089),
+with 27 high-priority references and no new NEEDS_RECHECK rows. Episode 6 now has initial
+survey coverage for all 354 images: 353 SCREENED and 005 NEEDS_RECHECK for the recurring
+unknown opening craft. All 354 are INITIAL_REVIEW_COMPLETE; targeted mechanism review is
+not implied. Archive verification and pruning are a separate pending closeout step.
+
+Validation passed with all 9,138 out-of-batch annotation rows, all prior 1,225 context links
+and 379 protected input hashes unchanged, preserving batch 04's uncommitted work. All 30
+cached snapshots verified. The category workbook retains 30 tabs, 432,588 verified gallery
+cells, 9,204 image links, 1,326 manual cells and 4,419 alignment cells. The context workbook
+retains five tabs, 14,252 verified cells and 2,736 links, covering 809 distinct linked images.
+Authored-data equality and affected display-weapon, car-interior, mapping-boundary and
+overview visual checks passed. No fresh native Office Viewer check is claimed. Disposable
+batch helpers/previews were removed after verification; gallery originals and contact sheets
+remain available for the separate episode closeout. No Phase 3.2A work is included.
