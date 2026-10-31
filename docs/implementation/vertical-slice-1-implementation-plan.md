@@ -981,6 +981,13 @@ review workflow, not a full-show alignment prerequisite.
   and the ending's continuing-challenge limits remain explicit. Record preservation, context
   validation, cached-source verification and both refreshed workbook checks passed. The maintainer
   accepted batch 05 on 2026-10-30; archive/prune closeout is separate. Phase 3.2A remains unstarted.
+  The subsequent [Episode 6 retention checkpoint](../../reference/indexes/animehistory/README.md#episode-6-retention-checkpoint--2026-10-30)
+  records authorized cleanup: a complete format-2 RAR retains all 354 gallery originals,
+  with no registered Episode 6 supplements. Archive integrity and independent recovery
+  verification passed before the expanded cache was pruned. All 15 contact sheets and
+  authored records remain; no temporary alignment runs remain. Preservation and refreshed
+  workbook data checks passed. The maintainer accepted closeout on 2026-10-30. Episode 7 and Phase 3.2A
+  are not started automatically.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
