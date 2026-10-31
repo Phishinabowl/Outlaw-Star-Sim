@@ -948,6 +948,22 @@ review workflow, not a full-show alignment prerequisite.
   with 71 SCREENED and the recurring opening launch craft/facility at 005 NEEDS_RECHECK.
   Records, context links and refreshed workbooks passed validation; the maintainer accepted
   batch 01 on 2026-10-30. The remaining 282 Episode 6 rows and Phase 3.2A remain unstarted.
+  [Episode 6 batch 02](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-02-2026-10-30)
+  initially reviews 073–144: Fred's equipment/payment negotiation, connected office/display
+  rooms, Suzuka's hooded entry, guard attack, costume and threat. All 72 are SCREENED /
+  INITIAL_REVIEW_COMPLETE; combined coverage is 144 with one prior NEEDS_RECHECK. Timings
+  remain navigation estimates; weapon identity, guard outcomes, timepiece and referral
+  spelling limits are retained. Records, contextual links and both refreshed workbooks
+  passed validation. The maintainer accepted batch 02 on 2026-10-30; 210 later rows and Phase
+  3.2A remained unstarted at that checkpoint.
+  [Episode 6 batch 03](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-03-2026-10-30)
+  initially reviews 145–216: Gene's intervention, light shield, weapon handling, office damage,
+  equipment bargain, eyecatch and the wooden-sword/sensor explanation. All 72 are SCREENED /
+  INITIAL_REVIEW_COMPLETE; combined coverage is 216 with one prior NEEDS_RECHECK. Image 180
+  retains its direct frame separately from 71 estimates. Matching guards are standing again;
+  weapon, handheld-device and sensor-mechanism limits remain explicit. Records, context links
+  and refreshed workbooks passed validation. The maintainer accepted batch 03 on 2026-10-30;
+  138 later rows and Phase 3.2A remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.

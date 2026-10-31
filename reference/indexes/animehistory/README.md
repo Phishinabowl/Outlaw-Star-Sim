@@ -399,6 +399,8 @@ The `subjects` register starts with:
 | `xgp` | XGP-15AII / Outlaw Star; operating states remain details/notes, not different ship identities. |
 | `gene_starwind`, `jim_hawking`, `melfina`, `hilda`, `aisha_clanclan`, `suzuka`, `gilliam` | Named character/system identities. Gilliam's displayed body/interface can also receive graphics or machinery tags. |
 | `caster` | Gene's caster weapon; do not use for an unidentified gun. |
+| `suzuka_bokken` | Suzuka's wooden sword, identified through selected secondary context and Episode 6 dialogue. A dark surface in a still does not establish material, cutting physics or universal immunity to weapon sensors. |
+| `light_shield` | Portable light-shield equipment/effect identified in Episode 6 dialogue. Record the depicted holder and visible field separately; no common power rating, full activation mechanism or identical hardware across users is established. |
 | `ron_macdougall`, `harry_macdougall` | MacDougall brothers; first-batch identifications supplied by the maintainer, with cropped visibility recorded per image. |
 | `space_pirate_foot_soldier` | Recurring mechanical space-pirate foot soldiers, identified by the maintainer; no specific unit/faction identity implied. |
 | `horus` | Hilda's spacecraft, identified by the maintainer in Episode 4 exterior/cockpit views. |
@@ -1968,3 +1970,178 @@ Both builders confirm authored-data equality. Changed recheck, landing-gear, coc
 showroom, new-link and overview ranges were rendered and visually inspected. No fresh
 native Office Viewer check is claimed. Disposable batch/preview helpers are removed after
 verification. Next separate batch: 073–144. No Phase 3.2A work is included.
+
+## Episode 6 annotated survey — batch 02, 2026-10-30
+
+Status: initial survey implemented, verified and accepted by the maintainer on 2026-10-30. Images
+073–144 (IDs 848615–848686), sheets 0073–0096, 0097–0120 and 0121–0144, are annotated.
+All three sheets were inspected. Thirty-two originals were additionally inspected full-size:
+074–075, 078, 084, 086, 089–091, 093, 098, 100, 114, 116, 119, 123–126, 129–140 and
+143–144. These sampled views are not continuous-video coverage.
+
+The accepted [context preparation](../episode-06-context-preparation.md) and
+[alignment review](../episode-06-alignment-review.md) remain the timing/source basis.
+All 72 rows use ALNMAP-000012 navigation estimates (`local = web - 1.5185 s`), without a
+direct matched frame in this batch. Local English ASS cues 88–169 were reread for the
+greeting, business negotiation, false referral and threat; cues 195–211 were reread only
+to check the later wooden-sword explanation. Cached Suzuka SECTION:0005/0014 and Fred Luo
+SECTION:0001/0007 were reused offline. No website retrieval or new alignment run was needed.
+
+Images 073–088 continue Fred's greeting and establish the seated office conversation.
+Jim's uneasy reactions, Melfina's cape/tie, Fred's pale coat and gray shoulder panels,
+Gene's yellow cape, facing seating, low table, ceiling lights and guards beside the paneled
+door provide character, costume and environment references. Translated cues 99–105
+(396.21–418.92 s) distinguish the present Sentinel visit from the company's Heifong
+headquarters and mention frontier expansion. They do not locate this room on Heifong.
+
+Images 089–097 show Fred leaning close, Gene pointing a twin-muzzle gray-purple pistol,
+and their return to the equipment discussion. The gun in 090–091 is visibly unlike the
+gold caster; its exact model and correspondence to the earlier modular blaster are not
+established. No firing occurs in these sampled stills. Cues 107–123 (421.90–470.21 s)
+identify Gene's request for ship equipment and the grappler-ship complication. They are
+not a verified loadout inventory, installation record or generic price specification.
+
+Images 098–118 retain unusually useful office references: mounted swords, knives and
+axes, gold-bordered hanging panels, gray columns, suspended and track lights, dark seating,
+curved desk and lamp. Repeated conversational portraits retain their individual locators.
+The negotiation in cues 123–141 (467.81–528.83 s) concerns costly grappler equipment,
+non-legitimate supply routes, payment assurance and preparing an estimate. Fred's low bend
+in 116 is a cropped pose; it does not identify hidden storage or a floor hatch.
+
+Images 119–128 move Gene, Jim and Melfina into the adjacent blue-floored gun-display area.
+The open doorway in 119 and reverse view in 123 establish a local connection to Fred's
+office; 124 records the closed-door endpoint. Glazed handgun cabinets, the framed dragon
+picture, an angular counter/workstation and its green overhead frame are useful later
+environment references, without a complete building plan. The suited guard remains unnamed.
+The red-hooded visitor in 126 is associated with Suzuka through the subsequent reveal.
+The placard visibly reads `New Tipe`; this lettering is preserved rather than corrected
+or used to assign a firearm model. The cloak's paired gold diamonds are visible motifs,
+without a verified faction meaning.
+
+Images 129–136 show the office's blade displays, hooded arrival, Fred's decorated envelope,
+guards drawing guns, cloak movement and Suzuka standing with a long dark sword as the guards
+fall/slump around her. Their death or exact injuries are not established. The sampled endpoints
+do not reproduce the full attack trajectory. The sword's wooden-bokken identification uses
+CTX-000079 and the later translated explanation, not a material inference from dark shading.
+The subjects vocabulary adds the existing context-catalogue identity `suzuka_bokken`; no new
+context subject or assertion is created. The costume/grip view in 136 is a high-priority reference.
+
+Images 137–144 retain Suzuka's ponytail, headband, layered collars, red sash/wrist guards,
+orange-purple shoulder wrap, tassels and profile, plus Fred's worried response. A small hinged
+gold watch-like item in 139–140 accompanies the time-limit exchange; its type, dial reading and
+mechanism remain unverified. The overlapping profiles in 144 are a transition composition,
+not a literal spatial measurement or magic effect. Cues 152–169 (566.15–647.82 s) provide
+the false referral, five-minute threat, market-rival explanation and later Twilight Suzuka name.
+The ASS spelling `Mr. Oh` and secondary `Mr. O` remain unreconciled. Fred's suggested rivals
+do not establish the employer's identity. No later crew membership is inferred.
+
+Thirty-nine image associations (CTXLINK-001106–001144) reuse CTX-000076–000079 and 000081.
+They remain contextual links, without exact subtitle matches or primary-status promotion.
+All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE, with 12 new chronological groups
+(EP-06-S033–S044) and 29 high-priority references. There are no new NEEDS_RECHECK rows;
+weapon models, guard outcomes, timepiece details and referral spelling remain explicit limits.
+Combined Episode 6 coverage is 144 initial reviews: 143 SCREENED and the prior opening craft
+at 005 NEEDS_RECHECK. The remaining 210 Episode 6 rows are untouched.
+
+Category/context validation and preservation checks passed: 9,132 out-of-batch annotation
+rows, all prior 1,105 context links and 383 protected input hashes remain unchanged.
+The refreshed ImportExcel category view retains 30 tabs, 432,588 verified gallery cells,
+9,204 image links, 1,326 manual cells and 4,419 alignment cells. The context view retains
+five tabs, 13,046 verified cells and 2,468 links, covering 697 distinct linked images.
+Authored-data equality and changed showroom, entrance, new-link and overview visual checks
+passed. No fresh native Office Viewer check is claimed. Disposable batch helpers/previews
+are removed after verification. Next separate batch: 145–216. No Phase 3.2A work is included.
+
+## Episode 6 annotated survey — batch 03, 2026-10-30
+
+Status: initial survey implemented, verified and accepted by the maintainer on 2026-10-30. Images
+145–216 (IDs 848687–848758), sheets 0145–0168, 0169–0192 and 0193–0216, are annotated.
+All three sheets were inspected. Forty originals were additionally inspected full-size:
+153, 155–156, 158, 160–161, 163, 165–170, 172–173, 175–183, 186, 188, 190, 192–194,
+197, 199–201, 203, 205–208 and 210. Sampled stills do not establish continuous attack trajectories.
+
+The accepted [context preparation](../episode-06-context-preparation.md) and
+[alignment review](../episode-06-alignment-review.md) remain authoritative for source identity
+and timing limits. Local English ASS cues 164–238 were reread, including surrounding dialogue
+beyond the batch boundary. Image 180 has direct correspondence ALNANC-000100 at local
+752.752 s; the other 71 rows use ALNMAP-000012 estimates. Image 165's shield pose and 192's
+held city panorama remain ambiguous anchor attempts, without losing their bounded estimates.
+No new alignment run, media extraction or website retrieval was needed. Existing selected
+Suzuka context and CTX-000074/000076–000080 were reused without primary-status promotion.
+
+Images 145–159 continue Suzuka's time limit and Gene's intervention. The overhead office
+view in 153 records the facing sofas, low table, circular carpet border, separate rounded
+desk, columns, wall displays, discarded cloak and prone guards. Gene's crouch behind the
+sofa in 155–156 is useful cover/pose evidence, without a ballistic-material specification.
+Fred ducks behind the desk. Close views retain individual expressions, hair and clothing.
+The small gold object later seen in 177 has a crown/loop consistent with a timepiece,
+but no readable dial establishes its displayed time or exact type.
+
+Images 160–169 provide Gene's twin-muzzle pistol, trigger/finger close-up and the bright
+white-blue oval field meeting Suzuka's wooden sword. Cues 171 and 175 (662.78–664.00 s
+and 698.58–700.98 s) explicitly name light shields. The wider view at 165 associates the
+field with Gene; the close field overlapping Suzuka in 166–167 is not reassigned to her.
+The subjects vocabulary adds the existing context identity `light_shield`. Visible arcs,
+transparency, hair highlights and recoil are effects/poses, without verified field capacity,
+electrical/magic physics, activation mechanism, impulse or shield-failure specification.
+The pistol's exact model remains unassigned, distinct from the gold caster.
+
+Images 170–179 show Gene without his coat, a displayed broad silver sword, fighting poses,
+a different slim dark pistol and pale falling fragments. Image 170 retains white back straps
+and the red upper-arm star; 172 is a useful full-body outfit, belts, holster and boot reference
+with the yellow coat on the floor. No complete blade-breaking sequence, firearm model,
+caliber or ammunition type is established. The trigger view at 163 and aiming pose at 178
+do not themselves show a muzzle flash or completed shot trajectory.
+
+Images 180–191 show debris and the protection/equipment bargain. The direct frame at 180
+captures tumbling fragments/chair before the dragon artwork; 182 retains Fred behind the
+rubble-covered desk and bent lamps. Cues 181–194 (754.70–792.90 s) supply Suzuka's next-sunset
+reprieve, Fred's request for continued protection, Gene's equipment condition and added
+missiles. The blue handheld item's rear housing is visible in 186, and Gene manipulates it
+in 190. Dialogue/continuity associates it with the list, without a readable screen, itemized
+bill, exact device class, printing mechanism or missile count. No installation is verified.
+Fred's assassin-ranking/survival statement remains attributed dialogue, not a verified
+exhaustive kill record or numeric capability specification.
+
+Images 192–195 show Suzuka above the city and her bodyguard remark in cue 195
+(805.49–807.75 s). Rooflines, towers, lights, two celestial discs and distant beams are
+useful environment references without exact district, astronomical identities, calibrated
+scale or a continuous roof-to-office route. Images 196–198 are EYECATCH graphics, including
+the partial lettering transition and completed yin-yang/logo composition; they are not
+in-world displays or story locations.
+
+Images 199–206 return to the premises' weapon-sensor check and visible office damage.
+The screen in 199 visibly reads MODE THERMOGRAPHY and contains a colored armed silhouette,
+color bar, seven-bar chart and trace graph. Association with Gene is tentative from pose,
+coat outline and scene continuity. No temperatures, thresholds, sensor algorithm or live-feed
+specification are derived. Image 200 records a red translucent cylindrical housing on a
+ringed column; 201 places the fixture/frame, counter, cabinets, doorway and standing figures.
+The still does not prove alarm activation, rotation or the fixture's exact sensing function.
+Cues 196–202 (827.81–852.53 s) explain the failure to detect Suzuka's wooden sword at this
+premises. This is not universal immunity to weapon sensors. The matching green- and
+purple-glasses guards are standing again in 202, 204 and 206, clarifying the earlier down
+poses without assigning names or injuries. Image 205 preserves the damaged ceiling,
+doorway edges, furniture and rubble, without calculating damage energy or cutting physics.
+
+Images 203 and 207–216 retain Gene handling unidentified shop guns, the back of his restored
+yellow coat, display supports/labels and the group discussing the next deadline. The
+caster-shell request and no-demand/antique response in cues 203–205 (857.04–864.57 s)
+are dialogue context; the displayed gun in Gene's hand is not identified as a caster and
+no caster shell is visible. Later conversation does not establish a new purchase or loadout.
+
+Thirty-eight image associations (CTXLINK-001145–001182) reuse CTX-000074 and 000076–000080.
+No source, assertion, context-catalogue subject or manual supplement is added. All 72 rows
+are SCREENED / INITIAL_REVIEW_COMPLETE, with 17 new groups (EP-06-S045–S061) and 37
+high-priority references. No new NEEDS_RECHECK row is introduced. Combined Episode 6 coverage
+is 216 initial reviews: 215 SCREENED and the earlier opening craft at 005 NEEDS_RECHECK.
+The remaining 138 Episode 6 rows are untouched.
+
+Category/context validation and preservation checks passed: all 9,132 out-of-batch rows,
+prior 1,144 context links and 383 protected hashes are unchanged, preserving batch 02's
+uncommitted work. Refreshed ImportExcel views retain 30 category tabs with 432,588 verified
+gallery cells, 9,204 image links, 1,326 manual cells and 4,419 alignment cells; the five-tab
+context view has 13,388 verified cells and 2,544 links, covering 732 distinct linked images.
+Authored-data equality and affected shield, security, direct-timing, new-link and overview
+visual checks passed. No fresh native Office Viewer check is claimed. Disposable batch
+helpers/previews are removed after verification. Next separate batch: 217–288. No Phase 3.2A
+work is included.
