@@ -1,0 +1,3364 @@
+{
+  "schema_version": 1,
+  "date_local": "2026-11-01",
+  "timezone": "America/New_York",
+  "scope": "Phase 6.1 pre-edit documentation inventory only; no migration, dependency audit, source decoding or runtime change",
+  "git_head": "e0ebf1c0311f64b47bcc792517dbb18722d57c5d",
+  "git_initial_status": "## main...origin/main; clean worktree",
+  "component_state": "Reference-index Phases 1-4 accepted; Phase 5 preparation published in e0ebf1c, component acceptance pending; documentation Phases 6-9 not accepted",
+  "source_counts": {
+    "root": 29,
+    "validation": 15,
+    "total": 44
+  },
+  "files": [
+    {
+      "id": "DOC-001",
+      "path": "docs/implementation/blender-sandbox-pilot-design.md",
+      "destination": "docs/implementation/investigations/blender-sandbox/blender-sandbox-pilot-design.md",
+      "bytes": 17740,
+      "sha256": "5be64072364812d5b0eb437653dfa47ff64f6b7b28c353d38184b984d8af593d",
+      "kind": "DEFERRED_INVESTIGATION",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Blender Sandbox Pilot — Design And Read-Only Findings",
+          "fragment": "blender-sandbox-pilot--design-and-read-only-findings"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "Verified Host Findings",
+          "fragment": "verified-host-findings"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "title": "Pinned Official Connector Findings",
+          "fragment": "pinned-official-connector-findings"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "title": "Proposed Execution Boundary",
+          "fragment": "proposed-execution-boundary"
+        },
+        {
+          "line": 92,
+          "level": 2,
+          "title": "Proposed Folder And Sandbox Policy",
+          "fragment": "proposed-folder-and-sandbox-policy"
+        },
+        {
+          "line": 124,
+          "level": 2,
+          "title": "Network Design — Connected Stage Has A Hard Prerequisite",
+          "fragment": "network-design--connected-stage-has-a-hard-prerequisite"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "title": "Independently Reviewable Pilot Steps",
+          "fragment": "independently-reviewable-pilot-steps"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "title": "Evidence, Import And Recovery",
+          "fragment": "evidence-import-and-recovery"
+        },
+        {
+          "line": 191,
+          "level": 2,
+          "title": "Remaining Decisions Before Any Setup",
+          "fragment": "remaining-decisions-before-any-setup"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-002",
+      "path": "docs/implementation/phase-1-1-host-tooling-readiness.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.1-tooling/phase-1-1-host-tooling-readiness.md",
+      "bytes": 8824,
+      "sha256": "7507d20a1ca5e935d782c632579289ece1c52a67a0310554c8c56184f9e94b6d",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.1 — Host And Tooling Readiness",
+          "fragment": "phase-11--host-and-tooling-readiness"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "title": "Agreed Proof Scope",
+          "fragment": "agreed-proof-scope"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "title": "Observed Host",
+          "fragment": "observed-host"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "title": "Observed Tools And Components",
+          "fragment": "observed-tools-and-components"
+        },
+        {
+          "line": 71,
+          "level": 2,
+          "title": "Compiler Reconciliation",
+          "fragment": "compiler-reconciliation"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "title": "Setup Gaps And Deferred Actions",
+          "fragment": "setup-gaps-and-deferred-actions"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "title": "Primary References",
+          "fragment": "primary-references"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-003",
+      "path": "docs/implementation/phase-1-2-closeout-proposal.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-closeout-proposal.md",
+      "bytes": 16603,
+      "sha256": "608cfb3ab879b529d98e21ed64c4da047f4673fc59f0a24efbdf2376968c839c",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.2 — Closeout Proposal",
+          "fragment": "phase-12--closeout-proposal"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "title": "Remaining Local Spatial Proposals",
+          "fragment": "remaining-local-spatial-proposals"
+        },
+        {
+          "line": 23,
+          "level": 3,
+          "title": "Cockpit Canopy And Walking Clearance",
+          "fragment": "cockpit-canopy-and-walking-clearance"
+        },
+        {
+          "line": 49,
+          "level": 3,
+          "title": "Engineering Platform And Upper Controls",
+          "fragment": "engineering-platform-and-upper-controls"
+        },
+        {
+          "line": 67,
+          "level": 3,
+          "title": "Portable Computer Storage",
+          "fragment": "portable-computer-storage"
+        },
+        {
+          "line": 86,
+          "level": 2,
+          "title": "Concrete Route Proposal And Remaining Correspondence",
+          "fragment": "concrete-route-proposal-and-remaining-correspondence"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "title": "MC Demonstration Plan",
+          "fragment": "mc-demonstration-plan"
+        },
+        {
+          "line": 127,
+          "level": 2,
+          "title": "Bounded Opening Scope Amendment — Proposed Contract Supplement",
+          "fragment": "bounded-opening-scope-amendment--proposed-contract-supplement"
+        },
+        {
+          "line": 156,
+          "level": 2,
+          "title": "Review And Deferral Boundary",
+          "fragment": "review-and-deferral-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-004",
+      "path": "docs/implementation/phase-1-2-cockpit-motion-proposal.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-cockpit-motion-proposal.md",
+      "bytes": 9343,
+      "sha256": "6e19df0f63f571ca2e40228d1504917f79958c6154617d8e5abe0518189cc596",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.2 — Cockpit Motion And Clearance Proposal",
+          "fragment": "phase-12--cockpit-motion-and-clearance-proposal"
+        },
+        {
+          "line": 8,
+          "level": 2,
+          "title": "Evidence Rechecked",
+          "fragment": "evidence-rechecked"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "title": "First Trial Reservations",
+          "fragment": "first-trial-reservations"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "Staging And Route Constraints",
+          "fragment": "staging-and-route-constraints"
+        },
+        {
+          "line": 87,
+          "level": 2,
+          "title": "Proposed Demonstration States And Open Decisions",
+          "fragment": "proposed-demonstration-states-and-open-decisions"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-005",
+      "path": "docs/implementation/phase-1-2-corridor-route-amendment.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md",
+      "bytes": 4010,
+      "sha256": "343c87e170309bafae84170c7d9a196dc8f1459db3756292c6e472af2ad81a68",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Initial Corridor Route Amendment",
+          "fragment": "initial-corridor-route-amendment"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "title": "Initial Route",
+          "fragment": "initial-route"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "title": "Deferred Placement And Fit",
+          "fragment": "deferred-placement-and-fit"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "title": "Evidence And Decision Boundary",
+          "fragment": "evidence-and-decision-boundary"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "title": "Execution And Acceptance",
+          "fragment": "execution-and-acceptance"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-006",
+      "path": "docs/implementation/phase-1-2-engineering-clearance-proposal.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-engineering-clearance-proposal.md",
+      "bytes": 7621,
+      "sha256": "7db4e9200ae71a533ae3e17b46caa0bc9f799d3ede0b3f06ab1ce7452b5de149",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.2 — Engineering Clearance Proposal",
+          "fragment": "phase-12--engineering-clearance-proposal"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "title": "Source Recheck And Limits",
+          "fragment": "source-recheck-and-limits"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "title": "Recommended Spatial Strategy",
+          "fragment": "recommended-spatial-strategy"
+        },
+        {
+          "line": 45,
+          "level": 2,
+          "title": "First Metric Trials",
+          "fragment": "first-metric-trials"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "title": "Control Access And Moving-Body Separation",
+          "fragment": "control-access-and-moving-body-separation"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "title": "Later Validation And Recovery",
+          "fragment": "later-validation-and-recovery"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-007",
+      "path": "docs/implementation/phase-1-2-layout-proposal-a.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-layout-proposal-a.md",
+      "bytes": 7049,
+      "sha256": "ff7e6d2eae12226e390210a838bce71b7480745d5de27f29ba7e6264adcff601",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.2 — Layout Proposal A",
+          "fragment": "phase-12--layout-proposal-a"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "title": "Coordinate Convention And Evidence",
+          "fragment": "coordinate-convention-and-evidence"
+        },
+        {
+          "line": 29,
+          "level": 2,
+          "title": "First Trial Allocation",
+          "fragment": "first-trial-allocation"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "title": "Lower Entry And Apparatus Separation",
+          "fragment": "lower-entry-and-apparatus-separation"
+        },
+        {
+          "line": 67,
+          "level": 2,
+          "title": "Fit And Iteration Priorities",
+          "fragment": "fit-and-iteration-priorities"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-008",
+      "path": "docs/implementation/phase-1-2-reservation-audit.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-reservation-audit.md",
+      "bytes": 11389,
+      "sha256": "d202a03dd663efd3db25be9b3d11a0b034ad3a79b20722fdf72b0ae507744ed1",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.2 — Machinery And Access Reservation Audit",
+          "fragment": "phase-12--machinery-and-access-reservation-audit"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "title": "Targeted Source Inspection",
+          "fragment": "targeted-source-inspection"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "title": "Reservation Ledger",
+          "fragment": "reservation-ledger"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "Slice Work Versus Future Protection",
+          "fragment": "slice-work-versus-future-protection"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "title": "Validation And Iteration Ownership",
+          "fragment": "validation-and-iteration-ownership"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-009",
+      "path": "docs/implementation/phase-1-2-spatial-motion-decision-packet.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-spatial-motion-decision-packet.md",
+      "bytes": 49545,
+      "sha256": "0dd0078f96e77705e4eb57879da45a6d2e8904fb8925d98a928466fbca93d5c3",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.2 — Spatial And Motion Decision Packet",
+          "fragment": "phase-12--spatial-and-motion-decision-packet"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "title": "First Discussion — Arrival And Melfina's Case",
+          "fragment": "first-discussion--arrival-and-melfinas-case"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "title": "Discussion Direction And Current Status",
+          "fragment": "discussion-direction-and-current-status"
+        },
+        {
+          "line": 68,
+          "level": 2,
+          "title": "Consolidated Opening Flow — Working Experience Direction",
+          "fragment": "consolidated-opening-flow--working-experience-direction"
+        },
+        {
+          "line": 101,
+          "level": 2,
+          "title": "Agreed Minimal Interior Topology",
+          "fragment": "agreed-minimal-interior-topology"
+        },
+        {
+          "line": 150,
+          "level": 3,
+          "title": "Hatch Location And Possible Level Transition — Pending Evidence Reconciliation",
+          "fragment": "hatch-location-and-possible-level-transition--pending-evidence-reconciliation"
+        },
+        {
+          "line": 169,
+          "level": 3,
+          "title": "Dining/Common-Area Connector — User-Approved Inclusion, Fit Pending",
+          "fragment": "diningcommon-area-connector--user-approved-inclusion-fit-pending"
+        },
+        {
+          "line": 198,
+          "level": 3,
+          "title": "Working Level Hypothesis — Central Route And Lower Entry",
+          "fragment": "working-level-hypothesis--central-route-and-lower-entry"
+        },
+        {
+          "line": 228,
+          "level": 3,
+          "title": "First Underfloor Separation Proposal — E, Fit Pending",
+          "fragment": "first-underfloor-separation-proposal--e-fit-pending"
+        },
+        {
+          "line": 245,
+          "level": 3,
+          "title": "Loaded Boarding And H03 Ascent — Proposal For Discussion",
+          "fragment": "loaded-boarding-and-h03-ascent--proposal-for-discussion"
+        },
+        {
+          "line": 275,
+          "level": 4,
+          "title": "Gravity Presentation — New Lead, Unresolved",
+          "fragment": "gravity-presentation--new-lead-unresolved"
+        },
+        {
+          "line": 328,
+          "level": 4,
+          "title": "Reusable Equipment And Character Status HUD — Agreed Direction",
+          "fragment": "reusable-equipment-and-character-status-hud--agreed-direction"
+        },
+        {
+          "line": 359,
+          "level": 4,
+          "title": "Trial Dimensions — E Inputs Only",
+          "fragment": "trial-dimensions--e-inputs-only"
+        },
+        {
+          "line": 380,
+          "level": 4,
+          "title": "Validation And Iteration Before Selection",
+          "fragment": "validation-and-iteration-before-selection"
+        },
+        {
+          "line": 399,
+          "level": 2,
+          "title": "Agreed Hangar Composition And Reveal Direction",
+          "fragment": "agreed-hangar-composition-and-reveal-direction"
+        },
+        {
+          "line": 419,
+          "level": 2,
+          "title": "Visibility And Power Boundaries To Preserve",
+          "fragment": "visibility-and-power-boundaries-to-preserve"
+        },
+        {
+          "line": 434,
+          "level": 2,
+          "title": "Cockpit Staging — Demo Case Exception Proposed",
+          "fragment": "cockpit-staging--demo-case-exception-proposed"
+        },
+        {
+          "line": 486,
+          "level": 2,
+          "title": "Portable Computer Workspace And Stowage — Agreed Direction",
+          "fragment": "portable-computer-workspace-and-stowage--agreed-direction"
+        },
+        {
+          "line": 517,
+          "level": 2,
+          "title": "Resuscitation And Demo Shortcut — Agreed Direction",
+          "fragment": "resuscitation-and-demo-shortcut--agreed-direction"
+        },
+        {
+          "line": 533,
+          "level": 2,
+          "title": "Bounded Scope Changes And Later Contract Work",
+          "fragment": "bounded-scope-changes-and-later-contract-work"
+        },
+        {
+          "line": 564,
+          "level": 2,
+          "title": "First Dimensional Proposal — General Arrangement Accepted, Fit Pending",
+          "fragment": "first-dimensional-proposal--general-arrangement-accepted-fit-pending"
+        },
+        {
+          "line": 574,
+          "level": 2,
+          "title": "Remaining Packet Work — Fit And Decisions Pending",
+          "fragment": "remaining-packet-work--fit-and-decisions-pending"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-010",
+      "path": "docs/implementation/phase-1-3-action-readiness-draft.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-action-readiness-draft.md",
+      "bytes": 75628,
+      "sha256": "fbafc0dfe079e6d1fdfb6131e3879f3aaee502fca4155d290205d72caef58802",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.3 — Player Actions And Readiness Discussion Draft",
+          "fragment": "phase-13--player-actions-and-readiness-discussion-draft"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "title": "Established Constraints",
+          "fragment": "established-constraints"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "title": "Minimal State And Ownership Proposal",
+          "fragment": "minimal-state-and-ownership-proposal"
+        },
+        {
+          "line": 53,
+          "level": 3,
+          "title": "Laptop Notes, Focused Screen And Local Connection — User-Selected Direction",
+          "fragment": "laptop-notes-focused-screen-and-local-connection--user-selected-direction"
+        },
+        {
+          "line": 101,
+          "level": 3,
+          "title": "Exterior Hatch — User-Selected Independent Actions",
+          "fragment": "exterior-hatch--user-selected-independent-actions"
+        },
+        {
+          "line": 147,
+          "level": 3,
+          "title": "Startup Milestone And Continued Exploration — User-Selected Direction",
+          "fragment": "startup-milestone-and-continued-exploration--user-selected-direction"
+        },
+        {
+          "line": 167,
+          "level": 3,
+          "title": "Device Screens And Text Focus — Discussion Update, 2026-10-08",
+          "fragment": "device-screens-and-text-focus--discussion-update-2026-10-08"
+        },
+        {
+          "line": 221,
+          "level": 3,
+          "title": "Gilliam Registration And Cockpit Pod — User-Selected Direction, 2026-10-08",
+          "fragment": "gilliam-registration-and-cockpit-pod--user-selected-direction-2026-10-08"
+        },
+        {
+          "line": 321,
+          "level": 3,
+          "title": "Melfina Awakening And Local Transfer — User-Selected Direction",
+          "fragment": "melfina-awakening-and-local-transfer--user-selected-direction"
+        },
+        {
+          "line": 344,
+          "level": 3,
+          "title": "Engineering Input Style — User-Selected Direction",
+          "fragment": "engineering-input-style--user-selected-direction"
+        },
+        {
+          "line": 400,
+          "level": 3,
+          "title": "Ignition-Triggered Seat Lift — User Correction",
+          "fragment": "ignition-triggered-seat-lift--user-correction"
+        },
+        {
+          "line": 415,
+          "level": 3,
+          "title": "Guided Engine Discovery And Early-Preparation Branch — User-Selected Revision",
+          "fragment": "guided-engine-discovery-and-early-preparation-branch--user-selected-revision"
+        },
+        {
+          "line": 453,
+          "level": 3,
+          "title": "Occupied Seat Lock And Apparatus Obstruction — User-Selected Direction",
+          "fragment": "occupied-seat-lock-and-apparatus-obstruction--user-selected-direction"
+        },
+        {
+          "line": 473,
+          "level": 3,
+          "title": "Reversible Ignition Key And Retained Completion — User-Selected Direction",
+          "fragment": "reversible-ignition-key-and-retained-completion--user-selected-direction"
+        },
+        {
+          "line": 541,
+          "level": 3,
+          "title": "Internal Ladder — User-Selected Controls",
+          "fragment": "internal-ladder--user-selected-controls"
+        },
+        {
+          "line": 552,
+          "level": 3,
+          "title": "Optional Empty-Trunk Cleanup — User-Selected Direction",
+          "fragment": "optional-empty-trunk-cleanup--user-selected-direction"
+        },
+        {
+          "line": 570,
+          "level": 3,
+          "title": "Hand Slot And Draw/Stow — User-Selected Direction",
+          "fragment": "hand-slot-and-drawstow--user-selected-direction"
+        },
+        {
+          "line": 613,
+          "level": 2,
+          "title": "Initial Services And Gravity — Recommendation For Discussion",
+          "fragment": "initial-services-and-gravity--recommendation-for-discussion"
+        },
+        {
+          "line": 639,
+          "level": 2,
+          "title": "Draft Normal-Path Action Table",
+          "fragment": "draft-normal-path-action-table"
+        },
+        {
+          "line": 699,
+          "level": 2,
+          "title": "Request, Progress And Recovery Rules — Draft Defaults",
+          "fragment": "request-progress-and-recovery-rules--draft-defaults"
+        },
+        {
+          "line": 747,
+          "level": 2,
+          "title": "Eight Readiness Conditions — Observable Draft Mapping",
+          "fragment": "eight-readiness-conditions--observable-draft-mapping"
+        },
+        {
+          "line": 766,
+          "level": 2,
+          "title": "Discussion Queue For The User's Return",
+          "fragment": "discussion-queue-for-the-users-return"
+        },
+        {
+          "line": 787,
+          "level": 2,
+          "title": "Validation To Specify After Discussion",
+          "fragment": "validation-to-specify-after-discussion"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-011",
+      "path": "docs/implementation/phase-1-3-closeout-audit.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md",
+      "bytes": 12693,
+      "sha256": "1797e3ed2ba249e6f2bba38aa8fb0178f8581d76e7e0d516f4dbad2ef447e964",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.3 — Closeout Audit And Review Packet",
+          "fragment": "phase-13--closeout-audit-and-review-packet"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "Five Requirement Coverage Checks",
+          "fragment": "five-requirement-coverage-checks"
+        },
+        {
+          "line": 35,
+          "level": 2,
+          "title": "Reconciled Normal Route And Alternatives",
+          "fragment": "reconciled-normal-route-and-alternatives"
+        },
+        {
+          "line": 65,
+          "level": 2,
+          "title": "Five Accepted Behavior Choices",
+          "fragment": "five-accepted-behavior-choices"
+        },
+        {
+          "line": 78,
+          "level": 2,
+          "title": "Seven Accepted Supporting Defaults",
+          "fragment": "seven-accepted-supporting-defaults"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "title": "Three Distinct Results",
+          "fragment": "three-distinct-results"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "title": "Deferrals And Validation Ownership",
+          "fragment": "deferrals-and-validation-ownership"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-012",
+      "path": "docs/implementation/phase-1-4-architecture-asset-validation-draft.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md",
+      "bytes": 64789,
+      "sha256": "5f497b3069ca252060980b70e902d86bfa3442ac558c3492a9280a8df0a6d506",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.4 — Architecture, Assets And Validation Discussion Draft",
+          "fragment": "phase-14--architecture-assets-and-validation-discussion-draft"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "Scope And Discussion Order",
+          "fragment": "scope-and-discussion-order"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "title": "Initial Project Identity And Folder Layout — Accepted",
+          "fragment": "initial-project-identity-and-folder-layout--accepted"
+        },
+        {
+          "line": 64,
+          "level": 3,
+          "title": "Starting Template — Blank C++ Accepted 2026-10-11",
+          "fragment": "starting-template--blank-c-accepted-2026-10-11"
+        },
+        {
+          "line": 83,
+          "level": 3,
+          "title": "Folder Subdivisions And Initial Naming — Accepted 2026-10-11",
+          "fragment": "folder-subdivisions-and-initial-naming--accepted-2026-10-11"
+        },
+        {
+          "line": 117,
+          "level": 2,
+          "title": "Accepted Map And Input Organization — Detailed Bindings Pending",
+          "fragment": "accepted-map-and-input-organization--detailed-bindings-pending"
+        },
+        {
+          "line": 151,
+          "level": 3,
+          "title": "Optional Controller Learning Trial — Accepted Direction",
+          "fragment": "optional-controller-learning-trial--accepted-direction"
+        },
+        {
+          "line": 196,
+          "level": 2,
+          "title": "Accepted Ownership Boundaries — Same Behavior, Clear Responsibilities",
+          "fragment": "accepted-ownership-boundaries--same-behavior-clear-responsibilities"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "title": "Accepted Communication And Lifecycle Rules",
+          "fragment": "accepted-communication-and-lifecycle-rules"
+        },
+        {
+          "line": 259,
+          "level": 3,
+          "title": "Session And Operation Identity — Accepted 2026-10-11",
+          "fragment": "session-and-operation-identity--accepted-2026-10-11"
+        },
+        {
+          "line": 286,
+          "level": 2,
+          "title": "Accepted Asset Versioning Policy",
+          "fragment": "accepted-asset-versioning-policy"
+        },
+        {
+          "line": 311,
+          "level": 3,
+          "title": "Asset Storage And Recovery Contract — Accepted 2026-10-23",
+          "fragment": "asset-storage-and-recovery-contract--accepted-2026-10-23"
+        },
+        {
+          "line": 351,
+          "level": 2,
+          "title": "Accepted Blender To Unreal Handoff Conventions — Fixture Proof Pending",
+          "fragment": "accepted-blender-to-unreal-handoff-conventions--fixture-proof-pending"
+        },
+        {
+          "line": 401,
+          "level": 2,
+          "title": "Accepted Graybox And Proxy Approach",
+          "fragment": "accepted-graybox-and-proxy-approach"
+        },
+        {
+          "line": 418,
+          "level": 2,
+          "title": "Accepted Performance Measurement Contract — Execution Pending",
+          "fragment": "accepted-performance-measurement-contract--execution-pending"
+        },
+        {
+          "line": 472,
+          "level": 3,
+          "title": "First-Use, Shader/PSO Preparation And Cache Evidence — Accepted 2026-10-11",
+          "fragment": "first-use-shaderpso-preparation-and-cache-evidence--accepted-2026-10-11"
+        },
+        {
+          "line": 506,
+          "level": 2,
+          "title": "Accepted Rendering Learning Track — Bounded Experiments Pending",
+          "fragment": "accepted-rendering-learning-track--bounded-experiments-pending"
+        },
+        {
+          "line": 563,
+          "level": 2,
+          "title": "Accepted Graphics Quality Invariant And Viewing Preference",
+          "fragment": "accepted-graphics-quality-invariant-and-viewing-preference"
+        },
+        {
+          "line": 585,
+          "level": 2,
+          "title": "Initial Rendering And Anti-Aliasing Direction — Accepted 2026-10-11",
+          "fragment": "initial-rendering-and-anti-aliasing-direction--accepted-2026-10-11"
+        },
+        {
+          "line": 615,
+          "level": 2,
+          "title": "Remaining Asset And Validation Boundaries",
+          "fragment": "remaining-asset-and-validation-boundaries"
+        },
+        {
+          "line": 631,
+          "level": 2,
+          "title": "MCP Evaluation Order And Local Pilots — Accepted 2026-10-11",
+          "fragment": "mcp-evaluation-order-and-local-pilots--accepted-2026-10-11"
+        },
+        {
+          "line": 651,
+          "level": 3,
+          "title": "Earlier Blender Isolation Investigation — Deferred Reference",
+          "fragment": "earlier-blender-isolation-investigation--deferred-reference"
+        },
+        {
+          "line": 718,
+          "level": 2,
+          "title": "Accepted Validation Split And Evidence Ownership — 2026-10-11",
+          "fragment": "accepted-validation-split-and-evidence-ownership--2026-10-11"
+        },
+        {
+          "line": 762,
+          "level": 2,
+          "title": "Closeout And Deferred Execution Details",
+          "fragment": "closeout-and-deferred-execution-details"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-013",
+      "path": "docs/implementation/phase-1-4-closeout-review.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-closeout-review.md",
+      "bytes": 9429,
+      "sha256": "7e2889e55f896e193bda2d7d7532b2e3faa17495fdd48d8caf0c664f28e0416c",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.4 — Closeout Review",
+          "fragment": "phase-14--closeout-review"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "Assessment",
+          "fragment": "assessment"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "Seven-Contract Coverage",
+          "fragment": "seven-contract-coverage"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "title": "Accepted Decisions And Closeout",
+          "fragment": "accepted-decisions-and-closeout"
+        },
+        {
+          "line": 56,
+          "level": 2,
+          "title": "Details That Remain Later Work",
+          "fragment": "details-that-remain-later-work"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "title": "Accepted Documentation Reconciliation",
+          "fragment": "accepted-documentation-reconciliation"
+        },
+        {
+          "line": 82,
+          "level": 2,
+          "title": "Next Review",
+          "fragment": "next-review"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-014",
+      "path": "docs/implementation/phase-1-5-gate-review.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.5-gate-review/phase-1-5-gate-review.md",
+      "bytes": 10299,
+      "sha256": "480a791a13e57c6da91a6ea48904c0d3cab9741afd05e35ad9ab3297d5ab196e",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 1.5 — Formal Gate Review And First Execution Proposal",
+          "fragment": "phase-15--formal-gate-review-and-first-execution-proposal"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "title": "Decision Reconciliation",
+          "fragment": "decision-reconciliation"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "title": "Validation And Visual-Development Coverage",
+          "fragment": "validation-and-visual-development-coverage"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "title": "Proposed Phase 2 Operations — Separately Bounded",
+          "fragment": "proposed-phase-2-operations--separately-bounded"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "title": "Accepted First Execution Scope — Read-Only Preflight",
+          "fragment": "accepted-first-execution-scope--read-only-preflight"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "title": "Remaining Gate Items And Permitted Deferrals",
+          "fragment": "remaining-gate-items-and-permitted-deferrals"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-015",
+      "path": "docs/implementation/phase-2-1-closeout.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.1-tooling/phase-2-1-closeout.md",
+      "bytes": 7829,
+      "sha256": "6c4738c32cd10c6d9cbec8986eafb7694c2ee148c84f24095f5810211411fe61",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.1 — Post-Installation Results And Closeout Proposal",
+          "fragment": "phase-21--post-installation-results-and-closeout-proposal"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "Verified Post-Installation Results",
+          "fragment": "verified-post-installation-results"
+        },
+        {
+          "line": 36,
+          "level": 2,
+          "title": "Reproduction And Evidence Boundary",
+          "fragment": "reproduction-and-evidence-boundary"
+        },
+        {
+          "line": 50,
+          "level": 2,
+          "title": "Proposed Closeout Disposition",
+          "fragment": "proposed-closeout-disposition"
+        },
+        {
+          "line": 61,
+          "level": 2,
+          "title": "Next Scope — Phase 2.2, Not Yet Authorized",
+          "fragment": "next-scope--phase-22-not-yet-authorized"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "title": "MCP Timing — Existing Sequence",
+          "fragment": "mcp-timing--existing-sequence"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-016",
+      "path": "docs/implementation/phase-2-2-closeout.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.2-project-setup/phase-2-2-closeout.md",
+      "bytes": 8289,
+      "sha256": "6339c0afcb853af46c940e15c7c95a84bd606b48c2c9273a70a76e7aa2fcc146",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.2 — Repository Review And Closeout Proposal",
+          "fragment": "phase-22--repository-review-and-closeout-proposal"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "Delivery And Review",
+          "fragment": "delivery-and-review"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "title": "Intended Publication Set",
+          "fragment": "intended-publication-set"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "title": "Findings And Disposition",
+          "fragment": "findings-and-disposition"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "title": "Validation And Recovery",
+          "fragment": "validation-and-recovery"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "title": "Fresh-Clone Recovery Result — 2026-10-23",
+          "fragment": "fresh-clone-recovery-result--2026-10-23"
+        },
+        {
+          "line": 109,
+          "level": 2,
+          "title": "Accepted Gate",
+          "fragment": "accepted-gate"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-017",
+      "path": "docs/implementation/phase-2-3-closeout.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-closeout.md",
+      "bytes": 4667,
+      "sha256": "7491c31525674e8155749c99c01b2d62c6c803d22d747f9b83d6c84d3a5dbee8",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.3 — Build, Editor And Unreal MCP Closeout",
+          "fragment": "phase-23--build-editor-and-unreal-mcp-closeout"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "Results",
+          "fragment": "results"
+        },
+        {
+          "line": 29,
+          "level": 2,
+          "title": "MCP Disposition",
+          "fragment": "mcp-disposition"
+        },
+        {
+          "line": 48,
+          "level": 2,
+          "title": "Validation And Remaining Boundaries",
+          "fragment": "validation-and-remaining-boundaries"
+        },
+        {
+          "line": 61,
+          "level": 2,
+          "title": "Accepted Gate",
+          "fragment": "accepted-gate"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-018",
+      "path": "docs/implementation/phase-2-4-closeout.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.4-packaging/phase-2-4-closeout.md",
+      "bytes": 3806,
+      "sha256": "d5600a6e3abf31dba292040d557545cff93cd7e2b413c80b943cc6194226fa2d",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.4 — Standalone Package Closeout",
+          "fragment": "phase-24--standalone-package-closeout"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "Results",
+          "fragment": "results"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "title": "Dispositions And Limits",
+          "fragment": "dispositions-and-limits"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "title": "Repository And Artifact Boundary",
+          "fragment": "repository-and-artifact-boundary"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "title": "Accepted Gate",
+          "fragment": "accepted-gate"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-019",
+      "path": "docs/implementation/phase-2-exit-review.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/phase-2-exit-review.md",
+      "bytes": 5467,
+      "sha256": "45f785d7307cb37d7e4154ebb69ced35ad6640637e2e130516f190471359063d",
+      "kind": "SLICE_PHASE_EXIT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2 — Foundation Exit Review",
+          "fragment": "phase-2--foundation-exit-review"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "Scenario Assessment",
+          "fragment": "scenario-assessment"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "title": "Exit Criteria",
+          "fragment": "exit-criteria"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "title": "Review Corroboration",
+          "fragment": "review-corroboration"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "title": "Nonblocking Limits And Deferred Work",
+          "fragment": "nonblocking-limits-and-deferred-work"
+        },
+        {
+          "line": 64,
+          "level": 2,
+          "title": "Accepted Disposition",
+          "fragment": "accepted-disposition"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-020",
+      "path": "docs/implementation/phase-3-1-closeout.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-closeout.md",
+      "bytes": 3647,
+      "sha256": "854ffb6227ead8c66cf361bbcf6d9923bef3cf18853f6cf1f2b25442863dca04",
+      "kind": "SLICE_PHASE_RECORD",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 3.1 — Player, Scale And Handoff Closeout Review",
+          "fragment": "phase-31--player-scale-and-handoff-closeout-review"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "title": "Completed Evidence",
+          "fragment": "completed-evidence"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "title": "Repository Review And Recovery",
+          "fragment": "repository-review-and-recovery"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "title": "Retained Limits",
+          "fragment": "retained-limits"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-021",
+      "path": "docs/implementation/reference-index-reorganization-baseline.json",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-baseline.json",
+      "bytes": 224292,
+      "sha256": "12dabc27c9d68d0aa2cfbf88f97c25b3c73c6ded88fc2d98544e81b2d7b7a7e9",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "BYTE_PRESERVE_FROZEN_BASELINE",
+      "headings": [],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-022",
+      "path": "docs/implementation/reference-index-reorganization-closeout.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-closeout.md",
+      "bytes": 8362,
+      "sha256": "f69575ba1b3d4dc1af8272efd09162ea1db93bc240a4432385e9493a66bfc657",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Reference index reorganization closeout",
+          "fragment": "reference-index-reorganization-closeout"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Delivered Scope And Evidence",
+          "fragment": "delivered-scope-and-evidence"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "title": "Operating Handoff",
+          "fragment": "operating-handoff"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "title": "Remaining Limits And Recovery",
+          "fragment": "remaining-limits-and-recovery"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "title": "Phase 5 Verification And Acceptance",
+          "fragment": "phase-5-verification-and-acceptance"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-023",
+      "path": "docs/implementation/reference-index-reorganization-ledger.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-ledger.md",
+      "bytes": 43849,
+      "sha256": "7790389e044006d26345d93b50306750a4cf21c96ae90334991bb1a682ff7b4b",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Reference index migration ledger — Phase 1.1",
+          "fragment": "reference-index-migration-ledger--phase-11"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "File dispositions",
+          "fragment": "file-dispositions"
+        },
+        {
+          "line": 183,
+          "level": 2,
+          "title": "Embedded README section dispositions",
+          "fragment": "embedded-readme-section-dispositions"
+        },
+        {
+          "line": 259,
+          "level": 2,
+          "title": "Register baseline",
+          "fragment": "register-baseline"
+        },
+        {
+          "line": 301,
+          "level": 2,
+          "title": "Workbook baseline",
+          "fragment": "workbook-baseline"
+        },
+        {
+          "line": 314,
+          "level": 2,
+          "title": "Phase 1.1 validation and limits",
+          "fragment": "phase-11-validation-and-limits"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-024",
+      "path": "docs/implementation/reference-index-reorganization-phase-2.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-phase-2.md",
+      "bytes": 7512,
+      "sha256": "5ee48e6b92948fa3740c859992726fc3088dc79b425943d5f3bfa63658d985a8",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Reference reorganization — Phase 2 preparation",
+          "fragment": "reference-reorganization--phase-2-preparation"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "title": "Activation boundary",
+          "fragment": "activation-boundary"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "title": "Navigation and preservation",
+          "fragment": "navigation-and-preservation"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "title": "Prepared Routing Patch",
+          "fragment": "prepared-routing-patch"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "title": "Validation Results",
+          "fragment": "validation-results"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "title": "Phase 3 Handoff",
+          "fragment": "phase-3-handoff"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-025",
+      "path": "docs/implementation/reference-index-reorganization-phase-3.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-phase-3.md",
+      "bytes": 5612,
+      "sha256": "0a9f181dca0c83c9e4c680d489995a57aaa210d4378e6dec16d1395b3e41aaae",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Reference reorganization — Phase 3 migration",
+          "fragment": "reference-reorganization--phase-3-migration"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "Completed Changes",
+          "fragment": "completed-changes"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "title": "CSV Reference Changes",
+          "fragment": "csv-reference-changes"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "title": "Verification Results",
+          "fragment": "verification-results"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "title": "Phase 4 Handoff",
+          "fragment": "phase-4-handoff"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-026",
+      "path": "docs/implementation/reference-index-reorganization-phase-4.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-phase-4.md",
+      "bytes": 8136,
+      "sha256": "5dc4d2ee5ce0a387486beb4eef5e488aa5b4e80b4fb8958a35205f34e0829b44",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Reference reorganization — Phase 4 integration validation",
+          "fragment": "reference-reorganization--phase-4-integration-validation"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "title": "File And Reference Accounting",
+          "fragment": "file-and-reference-accounting"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "title": "Tool Integration Checks",
+          "fragment": "tool-integration-checks"
+        },
+        {
+          "line": 65,
+          "level": 2,
+          "title": "Workbook Refresh And Equivalence",
+          "fragment": "workbook-refresh-and-equivalence"
+        },
+        {
+          "line": 100,
+          "level": 2,
+          "title": "Exit Evidence And Limits",
+          "fragment": "exit-evidence-and-limits"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-027",
+      "path": "docs/implementation/reference-index-reorganization-plan.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-plan.md",
+      "bytes": 38439,
+      "sha256": "6d4aa419cd4f338aac148a930141b9a213f89f8fb82bb8fef8285b43548c1911",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Reference And Implementation Documentation Reorganization Plan",
+          "fragment": "reference-and-implementation-documentation-reorganization-plan"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "title": "Objective and observed baseline",
+          "fragment": "objective-and-observed-baseline"
+        },
+        {
+          "line": 47,
+          "level": 2,
+          "title": "Target structure",
+          "fragment": "target-structure"
+        },
+        {
+          "line": 88,
+          "level": 2,
+          "title": "Implementation Documentation Target Structure — Phases 6–9",
+          "fragment": "implementation-documentation-target-structure--phases-69"
+        },
+        {
+          "line": 130,
+          "level": 3,
+          "title": "Documentation Placement And Authority Rules",
+          "fragment": "documentation-placement-and-authority-rules"
+        },
+        {
+          "line": 160,
+          "level": 2,
+          "title": "Planned move rules and migration ledger",
+          "fragment": "planned-move-rules-and-migration-ledger"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "title": "Audit And Record Ownership",
+          "fragment": "audit-and-record-ownership"
+        },
+        {
+          "line": 196,
+          "level": 2,
+          "title": "Tool Consolidation And Output Ownership",
+          "fragment": "tool-consolidation-and-output-ownership"
+        },
+        {
+          "line": 236,
+          "level": 2,
+          "title": "Required process coverage",
+          "fragment": "required-process-coverage"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "title": "Dependencies And Delivery Sequence",
+          "fragment": "dependencies-and-delivery-sequence"
+        },
+        {
+          "line": 276,
+          "level": 2,
+          "title": "Phase 1: Inventory And Dependency Baseline",
+          "fragment": "phase-1-inventory-and-dependency-baseline"
+        },
+        {
+          "line": 278,
+          "level": 3,
+          "title": "Phase 1.1: Complete File And Section Ledger",
+          "fragment": "phase-11-complete-file-and-section-ledger"
+        },
+        {
+          "line": 295,
+          "level": 3,
+          "title": "Phase 1.2: Tool And Consumer Dependency Audit",
+          "fragment": "phase-12-tool-and-consumer-dependency-audit"
+        },
+        {
+          "line": 313,
+          "level": 3,
+          "title": "Phase 1 Exit Gate",
+          "fragment": "phase-1-exit-gate"
+        },
+        {
+          "line": 323,
+          "level": 2,
+          "title": "Phase 2: Navigation And Tool Destinations",
+          "fragment": "phase-2-navigation-and-tool-destinations"
+        },
+        {
+          "line": 345,
+          "level": 3,
+          "title": "Phase 2 Exit Gate",
+          "fragment": "phase-2-exit-gate"
+        },
+        {
+          "line": 353,
+          "level": 2,
+          "title": "Phase 3: Record Migration And Reference Repair",
+          "fragment": "phase-3-record-migration-and-reference-repair"
+        },
+        {
+          "line": 372,
+          "level": 3,
+          "title": "Phase 3 Exit Gate",
+          "fragment": "phase-3-exit-gate"
+        },
+        {
+          "line": 379,
+          "level": 2,
+          "title": "Phase 4: Integration Validation",
+          "fragment": "phase-4-integration-validation"
+        },
+        {
+          "line": 381,
+          "level": 3,
+          "title": "Phase 4.1: Files, References And Tools",
+          "fragment": "phase-41-files-references-and-tools"
+        },
+        {
+          "line": 391,
+          "level": 3,
+          "title": "Phase 4.2: Workbook And Evidence Equivalence",
+          "fragment": "phase-42-workbook-and-evidence-equivalence"
+        },
+        {
+          "line": 409,
+          "level": 3,
+          "title": "Phase 4 Exit Gate",
+          "fragment": "phase-4-exit-gate"
+        },
+        {
+          "line": 417,
+          "level": 2,
+          "title": "Phase 5: Closeout And Publication",
+          "fragment": "phase-5-closeout-and-publication"
+        },
+        {
+          "line": 441,
+          "level": 3,
+          "title": "Phase 5 Exit Gate",
+          "fragment": "phase-5-exit-gate"
+        },
+        {
+          "line": 449,
+          "level": 2,
+          "title": "Phase 6: Implementation Documentation Inventory And Dependency Baseline",
+          "fragment": "phase-6-implementation-documentation-inventory-and-dependency-baseline"
+        },
+        {
+          "line": 451,
+          "level": 3,
+          "title": "Phase 6.1: File Ownership And Move Ledger",
+          "fragment": "phase-61-file-ownership-and-move-ledger"
+        },
+        {
+          "line": 462,
+          "level": 3,
+          "title": "Phase 6.2: Consumer And Output Audit",
+          "fragment": "phase-62-consumer-and-output-audit"
+        },
+        {
+          "line": 476,
+          "level": 3,
+          "title": "Phase 6 Exit Gate",
+          "fragment": "phase-6-exit-gate"
+        },
+        {
+          "line": 481,
+          "level": 2,
+          "title": "Phase 7: Implementation Documentation Migration And Navigation",
+          "fragment": "phase-7-implementation-documentation-migration-and-navigation"
+        },
+        {
+          "line": 498,
+          "level": 3,
+          "title": "Phase 7 Exit Gate",
+          "fragment": "phase-7-exit-gate"
+        },
+        {
+          "line": 503,
+          "level": 2,
+          "title": "Phase 8: Documentation Integration And Preservation Validation",
+          "fragment": "phase-8-documentation-integration-and-preservation-validation"
+        },
+        {
+          "line": 505,
+          "level": 3,
+          "title": "Phase 8.1: File, Content And Reference Checks",
+          "fragment": "phase-81-file-content-and-reference-checks"
+        },
+        {
+          "line": 516,
+          "level": 3,
+          "title": "Phase 8.2: Affected Tools And Future Effort Checks",
+          "fragment": "phase-82-affected-tools-and-future-effort-checks"
+        },
+        {
+          "line": 530,
+          "level": 3,
+          "title": "Phase 8 Exit Gate",
+          "fragment": "phase-8-exit-gate"
+        },
+        {
+          "line": 535,
+          "level": 2,
+          "title": "Phase 9: Combined Reorganization Closeout And Publication",
+          "fragment": "phase-9-combined-reorganization-closeout-and-publication"
+        },
+        {
+          "line": 551,
+          "level": 3,
+          "title": "Phase 9 Exit Gate",
+          "fragment": "phase-9-exit-gate"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-028",
+      "path": "docs/implementation/reference-index-reorganization-tool-audit.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-tool-audit.md",
+      "bytes": 48283,
+      "sha256": "3bd2e5781b002fd12302f3d5fe55c2467925d873ae3baf9d846424830c351fd2",
+      "kind": "REORGANIZATION_PROJECT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Tool and dependency audit ledger — Phase 1.2",
+          "fragment": "tool-and-dependency-audit-ledger--phase-12"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "title": "Tool and helper inventory",
+          "fragment": "tool-and-helper-inventory"
+        },
+        {
+          "line": 28,
+          "level": 3,
+          "title": "Maintained reference tools",
+          "fragment": "maintained-reference-tools"
+        },
+        {
+          "line": 57,
+          "level": 3,
+          "title": "Other maintained project scripts",
+          "fragment": "other-maintained-project-scripts"
+        },
+        {
+          "line": 74,
+          "level": 3,
+          "title": "Local and temporary helpers outside `tools`",
+          "fragment": "local-and-temporary-helpers-outside-tools"
+        },
+        {
+          "line": 96,
+          "level": 3,
+          "title": "Supporting Runtimes And External Utilities",
+          "fragment": "supporting-runtimes-and-external-utilities"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "title": "Audited Reference Dependencies",
+          "fragment": "audited-reference-dependencies"
+        },
+        {
+          "line": 121,
+          "level": 3,
+          "title": "Classification And Migration Actions",
+          "fragment": "classification-and-migration-actions"
+        },
+        {
+          "line": 133,
+          "level": 3,
+          "title": "Active Code Changes Required",
+          "fragment": "active-code-changes-required"
+        },
+        {
+          "line": 154,
+          "level": 3,
+          "title": "Shared Readers And Invariants To Preserve",
+          "fragment": "shared-readers-and-invariants-to-preserve"
+        },
+        {
+          "line": 169,
+          "level": 3,
+          "title": "Authored CSV Reference Fields",
+          "fragment": "authored-csv-reference-fields"
+        },
+        {
+          "line": 260,
+          "level": 3,
+          "title": "Markdown Consumer Change List",
+          "fragment": "markdown-consumer-change-list"
+        },
+        {
+          "line": 379,
+          "level": 3,
+          "title": "Non-Link Text And Stored Provenance",
+          "fragment": "non-link-text-and-stored-provenance"
+        },
+        {
+          "line": 392,
+          "level": 3,
+          "title": "Local Helper Inspection Record",
+          "fragment": "local-helper-inspection-record"
+        },
+        {
+          "line": 452,
+          "level": 3,
+          "title": "Validation And Next Scope",
+          "fragment": "validation-and-next-scope"
+        },
+        {
+          "line": 462,
+          "level": 3,
+          "title": "Phase 2 Preparation Pointer",
+          "fragment": "phase-2-preparation-pointer"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-029",
+      "path": "docs/implementation/validation/acceptance-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/acceptance-validation-procedures.md",
+      "bytes": 17090,
+      "sha256": "0ef4f6f481cc96102ecaaf0a810730236b4b9b49385ca9474ad12233de8c954b",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Final Acceptance, Performance And Package Procedures — VS1-A01–A04",
+          "fragment": "final-acceptance-performance-and-package-procedures--vs1-a01a04"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Shared Setup And Evidence",
+          "fragment": "shared-setup-and-evidence"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "title": "VS1-A01",
+          "fragment": "vs1-a01"
+        },
+        {
+          "line": 40,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 78,
+          "level": 2,
+          "title": "VS1-A02",
+          "fragment": "vs1-a02"
+        },
+        {
+          "line": 89,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 135,
+          "level": 2,
+          "title": "VS1-A03",
+          "fragment": "vs1-a03"
+        },
+        {
+          "line": 144,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 180,
+          "level": 2,
+          "title": "VS1-A04",
+          "fragment": "vs1-a04"
+        },
+        {
+          "line": 189,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-3"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "title": "Completion Boundary",
+          "fragment": "completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-030",
+      "path": "docs/implementation/validation/foundation-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/foundation-validation-procedures.md",
+      "bytes": 15723,
+      "sha256": "7cd7ffdefdc98c6fe01a9f8a39e10b91ce0f9a8e58d18b771e3773e4e5a6af01",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Foundation Validation Procedures — VS1-T01–T04",
+          "fragment": "foundation-validation-procedures--vs1-t01t04"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "title": "Shared Execution And Evidence Rules",
+          "fragment": "shared-execution-and-evidence-rules"
+        },
+        {
+          "line": 42,
+          "level": 2,
+          "title": "VS1-T01",
+          "fragment": "vs1-t01"
+        },
+        {
+          "line": 52,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 72,
+          "level": 3,
+          "title": "Expected Outcomes And Evidence",
+          "fragment": "expected-outcomes-and-evidence"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "title": "VS1-T02",
+          "fragment": "vs1-t02"
+        },
+        {
+          "line": 98,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 118,
+          "level": 3,
+          "title": "Expected Outcomes And Evidence",
+          "fragment": "expected-outcomes-and-evidence-1"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "title": "VS1-T03",
+          "fragment": "vs1-t03"
+        },
+        {
+          "line": 145,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 164,
+          "level": 3,
+          "title": "Expected Outcomes And Evidence",
+          "fragment": "expected-outcomes-and-evidence-2"
+        },
+        {
+          "line": 176,
+          "level": 2,
+          "title": "VS1-T04",
+          "fragment": "vs1-t04"
+        },
+        {
+          "line": 187,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-3"
+        },
+        {
+          "line": 204,
+          "level": 3,
+          "title": "Expected Outcomes And Evidence",
+          "fragment": "expected-outcomes-and-evidence-3"
+        },
+        {
+          "line": 220,
+          "level": 2,
+          "title": "Review And Completion Boundary",
+          "fragment": "review-and-completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-031",
+      "path": "docs/implementation/validation/interaction-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/interaction-validation-procedures.md",
+      "bytes": 13219,
+      "sha256": "e8c4bbae9c309587f506ace2c0a1896610e5671cf9c3006a47e95b0c3154079d",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Interaction Validation Procedures — VS1-I01–I03",
+          "fragment": "interaction-validation-procedures--vs1-i01i03"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Shared Setup And Evidence",
+          "fragment": "shared-setup-and-evidence"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "title": "VS1-I01",
+          "fragment": "vs1-i01"
+        },
+        {
+          "line": 42,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "title": "VS1-I02",
+          "fragment": "vs1-i02"
+        },
+        {
+          "line": 89,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 123,
+          "level": 2,
+          "title": "VS1-I03",
+          "fragment": "vs1-i03"
+        },
+        {
+          "line": 133,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 172,
+          "level": 2,
+          "title": "Completion Boundary",
+          "fragment": "completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-032",
+      "path": "docs/implementation/validation/machinery-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/machinery-validation-procedures.md",
+      "bytes": 14765,
+      "sha256": "60c226b58f54029192ab0778fb41f420d3bc7ddb74c2806f30fb0fe3669ac808",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Machinery Validation Procedures — VS1-M01–M03",
+          "fragment": "machinery-validation-procedures--vs1-m01m03"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Shared Setup And Evidence",
+          "fragment": "shared-setup-and-evidence"
+        },
+        {
+          "line": 35,
+          "level": 2,
+          "title": "VS1-M01",
+          "fragment": "vs1-m01"
+        },
+        {
+          "line": 45,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "title": "VS1-M02",
+          "fragment": "vs1-m02"
+        },
+        {
+          "line": 94,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 125,
+          "level": 2,
+          "title": "VS1-M03",
+          "fragment": "vs1-m03"
+        },
+        {
+          "line": 136,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 187,
+          "level": 2,
+          "title": "Completion Boundary",
+          "fragment": "completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-033",
+      "path": "docs/implementation/validation/phase-2-1-tooling-preflight-2026-10-23.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.1-tooling/phase-2-1-tooling-preflight-2026-10-23.md",
+      "bytes": 11515,
+      "sha256": "e13eb307a26c3a5c007bbd305bf3d7784b93d6f924a03869faad119dba2ddcb7",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.1 — Read-Only Tooling Preflight",
+          "fragment": "phase-21--read-only-tooling-preflight"
+        },
+        {
+          "line": 18,
+          "level": 2,
+          "title": "Current Tools And Version Changes",
+          "fragment": "current-tools-and-version-changes"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "title": "Component Queries",
+          "fragment": "component-queries"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "title": "Installed Engine Policy And Selection Limits",
+          "fragment": "installed-engine-policy-and-selection-limits"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "title": "Findings And Recommended Next Scope",
+          "fragment": "findings-and-recommended-next-scope"
+        },
+        {
+          "line": 104,
+          "level": 2,
+          "title": "Reproduction Pointers And Evidence Limits",
+          "fragment": "reproduction-pointers-and-evidence-limits"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-034",
+      "path": "docs/implementation/validation/phase-2-3-build-editor-results.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-build-editor-results.md",
+      "bytes": 7044,
+      "sha256": "1b6202c9ff6fb2407a5087cb2436885ec8df1df2bba8494c1ca3bc78f62f67bb",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.3 — Build And Editor Results",
+          "fragment": "phase-23--build-and-editor-results"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "First Build",
+          "fragment": "first-build"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "title": "Ordinary Proof Summary",
+          "fragment": "ordinary-proof-summary"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "title": "Primary Editor Startup",
+          "fragment": "primary-editor-startup"
+        },
+        {
+          "line": 60,
+          "level": 2,
+          "title": "Repeat Build And Recovery Preparation",
+          "fragment": "repeat-build-and-recovery-preparation"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "title": "Recovered Editor Observation And Cleanup",
+          "fragment": "recovered-editor-observation-and-cleanup"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-035",
+      "path": "docs/implementation/validation/phase-2-3-unreal-mcp-pilot.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-unreal-mcp-pilot.md",
+      "bytes": 10972,
+      "sha256": "6b02d5da4053cb1e3682b6a4bcce580e3ff47125c9887983e07e8162871c7736",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.3 — Local Unreal MCP Pilot",
+          "fragment": "phase-23--local-unreal-mcp-pilot"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "Verified Setup",
+          "fragment": "verified-setup"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "title": "Connection Checks",
+          "fragment": "connection-checks"
+        },
+        {
+          "line": 64,
+          "level": 2,
+          "title": "Mutation And Recovery",
+          "fragment": "mutation-and-recovery"
+        },
+        {
+          "line": 79,
+          "level": 2,
+          "title": "Saved Pilot Mutation",
+          "fragment": "saved-pilot-mutation"
+        },
+        {
+          "line": 93,
+          "level": 2,
+          "title": "Stop, Reconnect And Cleanup",
+          "fragment": "stop-reconnect-and-cleanup"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "title": "Final Shutdown And Auto-Start Review",
+          "fragment": "final-shutdown-and-auto-start-review"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "title": "Automatic Startup Verification",
+          "fragment": "automatic-startup-verification"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-036",
+      "path": "docs/implementation/validation/phase-2-4-package-results.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-2/2.4-packaging/phase-2-4-package-results.md",
+      "bytes": 8006,
+      "sha256": "662367dbf6cbba8d12d9ccf5747d44cab140262ce2b1728fa7a746eb8eb37504",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 2.4 — Neutral Standalone Package Results",
+          "fragment": "phase-24--neutral-standalone-package-results"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "Configuration And Recipe",
+          "fragment": "configuration-and-recipe"
+        },
+        {
+          "line": 35,
+          "level": 2,
+          "title": "Attempt 01 Progress",
+          "fragment": "attempt-01-progress"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "title": "Artifact And Dependency Audit",
+          "fragment": "artifact-and-dependency-audit"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "title": "First Runtime Check",
+          "fragment": "first-runtime-check"
+        },
+        {
+          "line": 95,
+          "level": 2,
+          "title": "Repeat Runtime Check",
+          "fragment": "repeat-runtime-check"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-037",
+      "path": "docs/implementation/validation/phase-3-1-blender-handoff-results.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-blender-handoff-results.md",
+      "bytes": 9583,
+      "sha256": "163f8335ae07df62864dd6a66c9a24eb13ebc5ebb8934790d4242894f392257a",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 3.1 — Blender To Unreal Handoff",
+          "fragment": "phase-31--blender-to-unreal-handoff"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "title": "Source, Export And Import Ownership",
+          "fragment": "source-export-and-import-ownership"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "title": "Export Settings And Initial Measurements",
+          "fragment": "export-settings-and-initial-measurements"
+        },
+        {
+          "line": 55,
+          "level": 2,
+          "title": "Level Placement And Pivot Checks",
+          "fragment": "level-placement-and-pivot-checks"
+        },
+        {
+          "line": 75,
+          "level": 2,
+          "title": "Deliberate Source Revision",
+          "fragment": "deliberate-source-revision"
+        },
+        {
+          "line": 89,
+          "level": 2,
+          "title": "Owner Reimport And Saved-Package Verification — 2026-10-24",
+          "fragment": "owner-reimport-and-saved-package-verification--2026-10-24"
+        },
+        {
+          "line": 114,
+          "level": 2,
+          "title": "Owner Visual And Traversal Results — 2026-10-24",
+          "fragment": "owner-visual-and-traversal-results--2026-10-24"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-038",
+      "path": "docs/implementation/validation/phase-3-1-blender-mcp-pilot.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-blender-mcp-pilot.md",
+      "bytes": 8630,
+      "sha256": "2d2a6e973702fa327656a5ea3d42a9a6946b406df59db9fb783343e040f8b9e8",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 3.1 — Local Blender MCP Pilot",
+          "fragment": "phase-31--local-blender-mcp-pilot"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "title": "Preparation Evidence",
+          "fragment": "preparation-evidence"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "title": "Initial Connection Results",
+          "fragment": "initial-connection-results"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "title": "Native Connection And Disposable File",
+          "fragment": "native-connection-and-disposable-file"
+        },
+        {
+          "line": 73,
+          "level": 2,
+          "title": "Stop Test",
+          "fragment": "stop-test"
+        },
+        {
+          "line": 80,
+          "level": 2,
+          "title": "Restart And Reversal Results",
+          "fragment": "restart-and-reversal-results"
+        },
+        {
+          "line": 96,
+          "level": 2,
+          "title": "Approved Interactive Auto-Start — 2026-10-23",
+          "fragment": "approved-interactive-auto-start--2026-10-23"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "title": "Handoff And Storage Proof",
+          "fragment": "handoff-and-storage-proof"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-039",
+      "path": "docs/implementation/validation/phase-3-1-player-scale-results.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-player-scale-results.md",
+      "bytes": 6639,
+      "sha256": "12109c18670abc89ee4c47b03372d5cb4229714ed9d90d6cec00a1a62fe51841",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 3.1 — Player And Scale Results",
+          "fragment": "phase-31--player-and-scale-results"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "Initial Build Attempt",
+          "fragment": "initial-build-attempt"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "title": "Build Retry And Map Preparation — 2026-10-24",
+          "fragment": "build-retry-and-map-preparation--2026-10-24"
+        },
+        {
+          "line": 51,
+          "level": 2,
+          "title": "First Owner Play Pass — 2026-10-24",
+          "fragment": "first-owner-play-pass--2026-10-24"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "title": "Owner Clearance Pass — 2026-10-24",
+          "fragment": "owner-clearance-pass--2026-10-24"
+        },
+        {
+          "line": 86,
+          "level": 2,
+          "title": "Remaining Integration Evidence",
+          "fragment": "remaining-integration-evidence"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-040",
+      "path": "docs/implementation/validation/phase-3-1-recovery-results.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-recovery-results.md",
+      "bytes": 4410,
+      "sha256": "2a9be2277ae1b0b3d97af6d38f041913c715b84218a103505662d9b3fc7bf0d8",
+      "kind": "SLICE_VALIDATION_RESULT",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Phase 3.1 — Published Asset Recovery Results",
+          "fragment": "phase-31--published-asset-recovery-results"
+        },
+        {
+          "line": 10,
+          "level": 2,
+          "title": "Retrieval And Identity",
+          "fragment": "retrieval-and-identity"
+        },
+        {
+          "line": 19,
+          "level": 2,
+          "title": "Recovered Blender Source And Recipe",
+          "fragment": "recovered-blender-source-and-recipe"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "title": "Recovered Unreal Fixture And FBX Import",
+          "fragment": "recovered-unreal-fixture-and-fbx-import"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "title": "Cleanup And Evidence Limits",
+          "fragment": "cleanup-and-evidence-limits"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-041",
+      "path": "docs/implementation/validation/readiness-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/readiness-validation-procedures.md",
+      "bytes": 13189,
+      "sha256": "31dbdf1fe24624ff073d957f3644714e8f27b1049fca9bbd5718117522ef22fe",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Ignition, Readiness And Repeatability Procedures — VS1-R01–R03",
+          "fragment": "ignition-readiness-and-repeatability-procedures--vs1-r01r03"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Shared Setup And Evidence",
+          "fragment": "shared-setup-and-evidence"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "title": "VS1-R01",
+          "fragment": "vs1-r01"
+        },
+        {
+          "line": 45,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 82,
+          "level": 2,
+          "title": "VS1-R02",
+          "fragment": "vs1-r02"
+        },
+        {
+          "line": 104,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 134,
+          "level": 2,
+          "title": "VS1-R03",
+          "fragment": "vs1-r03"
+        },
+        {
+          "line": 143,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 173,
+          "level": 2,
+          "title": "Completion Boundary",
+          "fragment": "completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-042",
+      "path": "docs/implementation/validation/spatial-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/spatial-validation-procedures.md",
+      "bytes": 10992,
+      "sha256": "f25d1adc7e4b900f7c0a25281e6cc83c309ccd70e56a7b1b28d9437e34cc7a53",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Spatial Validation Procedures — VS1-G01–G03",
+          "fragment": "spatial-validation-procedures--vs1-g01g03"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Shared Setup And Evidence",
+          "fragment": "shared-setup-and-evidence"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "title": "VS1-G01",
+          "fragment": "vs1-g01"
+        },
+        {
+          "line": 42,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 67,
+          "level": 2,
+          "title": "VS1-G02",
+          "fragment": "vs1-g02"
+        },
+        {
+          "line": 77,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 107,
+          "level": 2,
+          "title": "VS1-G03",
+          "fragment": "vs1-g03"
+        },
+        {
+          "line": 118,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 148,
+          "level": 2,
+          "title": "Completion Boundary",
+          "fragment": "completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-043",
+      "path": "docs/implementation/validation/state-lifecycle-validation-procedures.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/validation/procedures/state-lifecycle-validation-procedures.md",
+      "bytes": 11726,
+      "sha256": "3fa5167216b637efb6a46df19d6a1cc5d59edbde5b0ca6eb8258b546547939e0",
+      "kind": "SLICE_SPECIFIC_PROCEDURE",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "State And Lifecycle Validation Procedures — VS1-S01–S03",
+          "fragment": "state-and-lifecycle-validation-procedures--vs1-s01s03"
+        },
+        {
+          "line": 15,
+          "level": 2,
+          "title": "Shared Fixture And Evidence Rules",
+          "fragment": "shared-fixture-and-evidence-rules"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "title": "VS1-S01",
+          "fragment": "vs1-s01"
+        },
+        {
+          "line": 43,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "title": "VS1-S02",
+          "fragment": "vs1-s02"
+        },
+        {
+          "line": 82,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-1"
+        },
+        {
+          "line": 114,
+          "level": 2,
+          "title": "VS1-S03",
+          "fragment": "vs1-s03"
+        },
+        {
+          "line": 124,
+          "level": 3,
+          "title": "Planned Steps",
+          "fragment": "planned-steps-2"
+        },
+        {
+          "line": 157,
+          "level": 2,
+          "title": "Completion Boundary",
+          "fragment": "completion-boundary"
+        }
+      ],
+      "explicit_anchors": []
+    },
+    {
+      "id": "DOC-044",
+      "path": "docs/implementation/vertical-slice-1-implementation-plan.md",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md",
+      "bytes": 137269,
+      "sha256": "e4299dd8f53c83867fafbe71d9d4c0fd057117c99883d5c3372f0c013994f017",
+      "kind": "SLICE_PLAN",
+      "status": "PLANNED_NOT_MOVED",
+      "destination_exists": false,
+      "source_and_existing_destination_ancestors_reparse_free": true,
+      "content_policy": "PRESERVE_FINDINGS_AND_HEADINGS_REPAIR_ACTIVE_LINKS_ONLY",
+      "headings": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "Awakening The Outlaw Star — Vertical Slice 1 Implementation Plan",
+          "fragment": "awakening-the-outlaw-star--vertical-slice-1-implementation-plan"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "Purpose And Placement",
+          "fragment": "purpose-and-placement"
+        },
+        {
+          "line": 27,
+          "level": 2,
+          "title": "Current State And Next Action",
+          "fragment": "current-state-and-next-action"
+        },
+        {
+          "line": 89,
+          "level": 2,
+          "title": "Authoritative Inputs",
+          "fragment": "authoritative-inputs"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "title": "Scope And Operating Rules",
+          "fragment": "scope-and-operating-rules"
+        },
+        {
+          "line": 135,
+          "level": 2,
+          "title": "Accepted Decisions And Open Contracts",
+          "fragment": "accepted-decisions-and-open-contracts"
+        },
+        {
+          "line": 147,
+          "level": 2,
+          "title": "Completion Definitions",
+          "fragment": "completion-definitions"
+        },
+        {
+          "line": 171,
+          "level": 2,
+          "title": "Dependencies And Delivery Sequence",
+          "fragment": "dependencies-and-delivery-sequence"
+        },
+        {
+          "line": 203,
+          "level": 2,
+          "title": "Decision Timing And Deferred Work",
+          "fragment": "decision-timing-and-deferred-work"
+        },
+        {
+          "line": 222,
+          "level": 2,
+          "title": "Checkpoint, Evidence And Recovery Discipline",
+          "fragment": "checkpoint-evidence-and-recovery-discipline"
+        },
+        {
+          "line": 243,
+          "level": 2,
+          "title": "Phase 0: Accepted Reconstruction And Research Foundation",
+          "fragment": "phase-0-accepted-reconstruction-and-research-foundation"
+        },
+        {
+          "line": 251,
+          "level": 3,
+          "title": "Phase 0 Exit Record",
+          "fragment": "phase-0-exit-record"
+        },
+        {
+          "line": 256,
+          "level": 2,
+          "title": "Phase 1: Formal Planning Gate And Concrete Slice Contracts",
+          "fragment": "phase-1-formal-planning-gate-and-concrete-slice-contracts"
+        },
+        {
+          "line": 258,
+          "level": 3,
+          "title": "Phase 1.1: Scope, Host And Tooling Readiness Inventory",
+          "fragment": "phase-11-scope-host-and-tooling-readiness-inventory"
+        },
+        {
+          "line": 276,
+          "level": 3,
+          "title": "Phase 1.2: Spatial And Motion Decision Packet",
+          "fragment": "phase-12-spatial-and-motion-decision-packet"
+        },
+        {
+          "line": 307,
+          "level": 3,
+          "title": "Phase 1.3: Player Actions, Mechanism Stages And Readiness Contract",
+          "fragment": "phase-13-player-actions-mechanism-stages-and-readiness-contract"
+        },
+        {
+          "line": 344,
+          "level": 3,
+          "title": "Phase 1.4: Minimal Architecture, Asset And Validation Contracts",
+          "fragment": "phase-14-minimal-architecture-asset-and-validation-contracts"
+        },
+        {
+          "line": 395,
+          "level": 3,
+          "title": "Phase 1.5: Formal Gate Review And First Execution Scope",
+          "fragment": "phase-15-formal-gate-review-and-first-execution-scope"
+        },
+        {
+          "line": 411,
+          "level": 3,
+          "title": "Phase 1 Exit Gate",
+          "fragment": "phase-1-exit-gate"
+        },
+        {
+          "line": 418,
+          "level": 2,
+          "title": "Phase 2: Toolchain And Minimal C++ Project Foundation",
+          "fragment": "phase-2-toolchain-and-minimal-c-project-foundation"
+        },
+        {
+          "line": 420,
+          "level": 3,
+          "title": "Phase 2.1: Approved Toolchain Preparation",
+          "fragment": "phase-21-approved-toolchain-preparation"
+        },
+        {
+          "line": 437,
+          "level": 3,
+          "title": "Phase 2.2: Project Skeleton And Repository Boundary",
+          "fragment": "phase-22-project-skeleton-and-repository-boundary"
+        },
+        {
+          "line": 465,
+          "level": 3,
+          "title": "Phase 2.3: Reproducible Build And Editor Proof",
+          "fragment": "phase-23-reproducible-build-and-editor-proof"
+        },
+        {
+          "line": 493,
+          "level": 3,
+          "title": "Phase 2.4: Early Standalone Package Smoke",
+          "fragment": "phase-24-early-standalone-package-smoke"
+        },
+        {
+          "line": 510,
+          "level": 3,
+          "title": "Phase 2 Exit Gate",
+          "fragment": "phase-2-exit-gate"
+        },
+        {
+          "line": 520,
+          "level": 2,
+          "title": "Phase 3: Spatial Graybox And One-Player Traversal",
+          "fragment": "phase-3-spatial-graybox-and-one-player-traversal"
+        },
+        {
+          "line": 522,
+          "level": 3,
+          "title": "Phase 3.1: Player And Scale Fixture",
+          "fragment": "phase-31-player-and-scale-fixture"
+        },
+        {
+          "line": 556,
+          "level": 3,
+          "title": "Pre-3.2A Checkpoint: All-Episode Visual-Reference Research",
+          "fragment": "pre-32a-checkpoint-all-episode-visual-reference-research"
+        },
+        {
+          "line": 1071,
+          "level": 3,
+          "title": "Phase 3.2A: Reconstruction Sheets And Visual Direction",
+          "fragment": "phase-32a-reconstruction-sheets-and-visual-direction"
+        },
+        {
+          "line": 1102,
+          "level": 3,
+          "title": "Phase 3.2: Hangar, Hull And Required Route",
+          "fragment": "phase-32-hangar-hull-and-required-route"
+        },
+        {
+          "line": 1113,
+          "level": 3,
+          "title": "Phase 3.3: Mechanism Endpoints And Reservation Proxies",
+          "fragment": "phase-33-mechanism-endpoints-and-reservation-proxies"
+        },
+        {
+          "line": 1124,
+          "level": 3,
+          "title": "Phase 3.4: Occupied Clearance And Layout Acceptance",
+          "fragment": "phase-34-occupied-clearance-and-layout-acceptance"
+        },
+        {
+          "line": 1136,
+          "level": 3,
+          "title": "Phase 3 Exit Gate",
+          "fragment": "phase-3-exit-gate"
+        },
+        {
+          "line": 1142,
+          "level": 2,
+          "title": "Phase 4: Authoritative State, Commands And Lifecycle",
+          "fragment": "phase-4-authoritative-state-commands-and-lifecycle"
+        },
+        {
+          "line": 1144,
+          "level": 3,
+          "title": "Phase 4.1: Minimal Slice State And Ownership",
+          "fragment": "phase-41-minimal-slice-state-and-ownership"
+        },
+        {
+          "line": 1155,
+          "level": 3,
+          "title": "Phase 4.2: Request Validation And Result Lifecycle",
+          "fragment": "phase-42-request-validation-and-result-lifecycle"
+        },
+        {
+          "line": 1166,
+          "level": 3,
+          "title": "Phase 4.3: Mechanism Completion And Reset Boundary",
+          "fragment": "phase-43-mechanism-completion-and-reset-boundary"
+        },
+        {
+          "line": 1177,
+          "level": 3,
+          "title": "Phase 4.4: Foundation Contract Review",
+          "fragment": "phase-44-foundation-contract-review"
+        },
+        {
+          "line": 1188,
+          "level": 3,
+          "title": "Phase 4 Exit Gate",
+          "fragment": "phase-4-exit-gate"
+        },
+        {
+          "line": 1194,
+          "level": 2,
+          "title": "Phase 5: Physical Interaction, Entry And Initial Services",
+          "fragment": "phase-5-physical-interaction-entry-and-initial-services"
+        },
+        {
+          "line": 1196,
+          "level": 3,
+          "title": "Phase 5.1: Local Control Targeting And Presentation Adapter",
+          "fragment": "phase-51-local-control-targeting-and-presentation-adapter"
+        },
+        {
+          "line": 1207,
+          "level": 3,
+          "title": "Phase 5.2: Exterior Hatch And Boarding",
+          "fragment": "phase-52-exterior-hatch-and-boarding"
+        },
+        {
+          "line": 1218,
+          "level": 3,
+          "title": "Phase 5.3: Limited-Service Initialization And Bridge Access",
+          "fragment": "phase-53-limited-service-initialization-and-bridge-access"
+        },
+        {
+          "line": 1229,
+          "level": 3,
+          "title": "Phase 5.4: Boarding-To-Engineering Interaction Review",
+          "fragment": "phase-54-boarding-to-engineering-interaction-review"
+        },
+        {
+          "line": 1240,
+          "level": 3,
+          "title": "Phase 5 Exit Gate",
+          "fragment": "phase-5-exit-gate"
+        },
+        {
+          "line": 1246,
+          "level": 2,
+          "title": "Phase 6: Navigation Apparatus, Seating And Engineering Preparation",
+          "fragment": "phase-6-navigation-apparatus-seating-and-engineering-preparation"
+        },
+        {
+          "line": 1269,
+          "level": 3,
+          "title": "Phase 6.1: Placeholder-Occupied Navigation Apparatus",
+          "fragment": "phase-61-placeholder-occupied-navigation-apparatus"
+        },
+        {
+          "line": 1284,
+          "level": 3,
+          "title": "Phase 6.2: Bridge Seat And Control-Cluster Lift",
+          "fragment": "phase-62-bridge-seat-and-control-cluster-lift"
+        },
+        {
+          "line": 1296,
+          "level": 3,
+          "title": "Phase 6.3: Four Engineering Control Cylinders",
+          "fragment": "phase-63-four-engineering-control-cylinders"
+        },
+        {
+          "line": 1310,
+          "level": 3,
+          "title": "Phase 6.4: Machinery Coexistence And Prepared-State Review",
+          "fragment": "phase-64-machinery-coexistence-and-prepared-state-review"
+        },
+        {
+          "line": 1321,
+          "level": 3,
+          "title": "Phase 6 Exit Gate",
+          "fragment": "phase-6-exit-gate"
+        },
+        {
+          "line": 1327,
+          "level": 2,
+          "title": "Phase 7: Cockpit Ignition And SHIP READY Integration",
+          "fragment": "phase-7-cockpit-ignition-and-ship-ready-integration"
+        },
+        {
+          "line": 1329,
+          "level": 3,
+          "title": "Phase 7.1: Ignition Key And Main-Service Transition",
+          "fragment": "phase-71-ignition-key-and-main-service-transition"
+        },
+        {
+          "line": 1343,
+          "level": 3,
+          "title": "Phase 7.2: Readiness, Deterministic Guidance And Endpoint",
+          "fragment": "phase-72-readiness-deterministic-guidance-and-endpoint"
+        },
+        {
+          "line": 1356,
+          "level": 3,
+          "title": "Phase 7.3: Fresh-Run And Integrated Lifecycle",
+          "fragment": "phase-73-fresh-run-and-integrated-lifecycle"
+        },
+        {
+          "line": 1367,
+          "level": 3,
+          "title": "Phase 7 Exit Gate",
+          "fragment": "phase-7-exit-gate"
+        },
+        {
+          "line": 1373,
+          "level": 2,
+          "title": "Phase 8: Playable Slice Validation, Package And Handoff",
+          "fragment": "phase-8-playable-slice-validation-package-and-handoff"
+        },
+        {
+          "line": 1375,
+          "level": 3,
+          "title": "Phase 8.1: Complete Acceptance And Focused Regression",
+          "fragment": "phase-81-complete-acceptance-and-focused-regression"
+        },
+        {
+          "line": 1387,
+          "level": 3,
+          "title": "Phase 8.2: Readability, Responsiveness And Agreed Host Budget",
+          "fragment": "phase-82-readability-responsiveness-and-agreed-host-budget"
+        },
+        {
+          "line": 1398,
+          "level": 3,
+          "title": "Phase 8.3: Full Standalone Slice Reproduction",
+          "fragment": "phase-83-full-standalone-slice-reproduction"
+        },
+        {
+          "line": 1410,
+          "level": 3,
+          "title": "Phase 8.4: Documentation, Publication And Maintainer Closure",
+          "fragment": "phase-84-documentation-publication-and-maintainer-closure"
+        },
+        {
+          "line": 1422,
+          "level": 3,
+          "title": "Phase 8 Exit Gate",
+          "fragment": "phase-8-exit-gate"
+        },
+        {
+          "line": 1429,
+          "level": 2,
+          "title": "Validation Register And Requirement Traceability",
+          "fragment": "validation-register-and-requirement-traceability"
+        },
+        {
+          "line": 1492,
+          "level": 2,
+          "title": "Deferred Presentation Direction — To Be Continued",
+          "fragment": "deferred-presentation-direction--to-be-continued"
+        },
+        {
+          "line": 1517,
+          "level": 2,
+          "title": "Risks And Iteration Points",
+          "fragment": "risks-and-iteration-points"
+        },
+        {
+          "line": 1531,
+          "level": 2,
+          "title": "Final Completion Gate",
+          "fragment": "final-completion-gate"
+        },
+        {
+          "line": 1539,
+          "level": 2,
+          "title": "Official Technical References",
+          "fragment": "official-technical-references"
+        }
+      ],
+      "explicit_anchors": []
+    }
+  ],
+  "new_records": [
+    {
+      "id": "NEW-001",
+      "path": "docs/implementation/implementation-documentation-migration-ledger.md",
+      "destination": "docs/implementation/projects/reference-index-reorganization/implementation-documentation-migration-ledger.md",
+      "status": "CREATE_IN_PHASE_6_1_THEN_MOVE_IN_PHASE_7"
+    },
+    {
+      "id": "NEW-002",
+      "path": "docs/implementation/implementation-documentation-migration-baseline.json",
+      "destination": "docs/implementation/projects/reference-index-reorganization/implementation-documentation-migration-baseline.json",
+      "status": "GENERATE_IN_PHASE_6_1_THEN_BYTE_PRESERVE_IN_PHASE_7"
+    }
+  ],
+  "planned_navigation": [
+    {
+      "id": "NAV-001",
+      "destination": "docs/implementation/README.md",
+      "role": "Effort directory; links existing roadmap and authoritative plans"
+    },
+    {
+      "id": "NAV-002",
+      "destination": "docs/implementation/vertical-slices/slice-01-awakening/README.md",
+      "role": "Slice record directory; links slice plan and phase records"
+    },
+    {
+      "id": "NAV-003",
+      "destination": "docs/implementation/validation/README.md",
+      "role": "Validation ownership directory; links slice procedures; no shared procedure is currently established"
+    },
+    {
+      "id": "NAV-004",
+      "destination": "docs/implementation/projects/reference-index-reorganization/README.md",
+      "role": "Reorganization project directory; links plan, ledgers, immutable baselines and results"
+    }
+  ],
+  "self_reference_policy": "NEW records are declared but not recursively hashed in this snapshot. NEW-001 evolves as the ledger; capture its then-current bytes at migration preflight. NEW-002 is immutable after generation. The owning plan is captured here before the Phase 6.1 completion edit; later approved status/acceptance edits require explicit preflight accounting."
+}

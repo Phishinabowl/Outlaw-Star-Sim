@@ -3,9 +3,9 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-30 / 2026-11-01 |
-| Status | Phases 1–4 accepted; Phase 5 reference closeout prepared; implementation-documentation Phases 6–9 planned and unstarted |
+| Status | Phases 1–4 and 6 accepted; Phase 5 reference closeout prepared; Phases 7–9 unstarted |
 | Maintainer | Repository owner |
-| Current checkpoint | Implementation-documentation plan extension confirmed for publication 2026-11-01; Phases 6–9 unstarted; no documentation moves authorized or performed |
+| Current checkpoint | Phase 6 inventory/dependency baseline accepted 2026-11-01; no documentation moves or runtime changes performed |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -111,8 +111,10 @@ docs/implementation/
 │       │   ├── 2.3-build-editor/
 │       │   ├── 2.4-packaging/
 │       │   └── phase-2-exit-review.md
-│       └── phase-3/
-│           └── 3.1-player-scale/
+│       ├── phase-3/
+│       │   └── 3.1-player-scale/
+│       └── validation/
+│           └── procedures/           Seven existing VS1-specific procedure documents
 ├── projects/
 │   └── reference-index-reorganization/   This plan, baselines, ledgers and closeout records
 ├── validation/
@@ -143,6 +145,13 @@ The implementation root is a directory, not a competing project roadmap or slice
 The existing roadmap retains overall project ownership. Individual effort plans retain their gates;
 the root README links those owners rather than duplicating their checklists. Phase 6 resolves exact
 placements and exceptions before any move, including procedures whose shared scope is uncertain.
+
+**Phase 6.1 placement finding — 2026-11-01:** all seven existing validation procedure documents
+are explicitly scoped to VS1 scenario IDs, authorities and execution gates. They are mapped together
+under the slice's `validation/procedures/`, using the slice-only exception above. No whole procedure
+document currently qualifies as shared across efforts; do not create an empty global procedures
+folder. The global validation README will link ownership. The separate documentation ledger owns
+the file-by-file rationale and routes.
 
 Preserve document bodies, decisions, dates, phase identifiers, acceptance provenance and substantive
 heading anchors. Repair active relative links against the new owning document location. Original
@@ -453,21 +462,39 @@ temporary directory is moved or deleted by this plan. Historical consolidation c
 **Prerequisite:** explicit authorization for Phase 6; accepted Phase 4 and preserved Phase 5 worktree.
 **Deliverable:** separate documentation migration ledger and baseline beside this plan.
 
-- [ ] Inventory every current file under `docs/implementation`, including uncommitted files and any newly authorized records.
-- [ ] Assign each file one exact destination using the agreed slice/project/shared/investigation structure; resolve shared-procedure exceptions.
-- [ ] Include moves of this plan, the prior reference-index ledgers/baseline and the prepared Phase 5 closeout.
-- [ ] Capture source hashes, document headings/anchors, Git/worktree status and destination preconditions without modifying the frozen reference-index baseline.
-- [ ] Record navigation files to create; preserve existing filenames and avoid duplicate authority or empty future-effort scaffolding.
+- [x] Inventory every current file under `docs/implementation`, including uncommitted files and any newly authorized records.
+- [x] Assign each file one exact destination using the agreed slice/project/shared/investigation structure; resolve shared-procedure exceptions.
+- [x] Include moves of this plan, the prior reference-index ledgers/baseline and the prepared Phase 5 closeout.
+- [x] Capture source hashes, document headings/anchors, Git/worktree status and destination preconditions without modifying the frozen reference-index baseline.
+- [x] Record navigation files to create; preserve existing filenames and avoid duplicate authority or empty future-effort scaffolding.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the
+[documentation migration ledger](implementation-documentation-migration-ledger.md) maps all 44
+existing files, the two new inventory records and four planned navigation files. The separate
+[documentation baseline](implementation-documentation-migration-baseline.json) captures file
+hashes, 442 ATX headings, source/destination preconditions and the clean starting checkpoint at
+`e0ebf1c`. The prior Phase 5 preparation is already published, with component acceptance still
+pending; no uncommitted Phase 5 edits existed at capture. All original files matched after snapshot
+generation; only this plan receives the subsequent completion/status edit. No files or folders moved.
+Phase 6.2 was unstarted at that checkpoint; its subsequent findings are recorded below.
 
 ### Phase 6.2: Consumer And Output Audit
 
 **Prerequisite:** 6.1 inventory. **Deliverable:** dependency findings in the separate documentation ledger.
 
-- [ ] Trace incoming/outgoing Markdown links and fragments across root documentation, reference records, tools, recipes and scoped local helpers.
-- [ ] Inspect CSV/JSON reference fields and maintained scripts/configuration for active documentation-path lookups or outputs.
-- [ ] Distinguish active references from historical commands, frozen snapshots, recipe values and provenance paths; record preservation exceptions.
-- [ ] Identify any affected generated projections or tool tests; require rebuilds/tests only where the documentation move affects their inputs or behavior.
-- [ ] Specify future documentation ownership/output conventions so later work does not recreate a flat implementation directory.
+- [x] Trace incoming/outgoing Markdown links and fragments across root documentation, reference records, tools, recipes and scoped local helpers.
+- [x] Inspect CSV/JSON reference fields and maintained scripts/configuration for active documentation-path lookups or outputs.
+- [x] Distinguish active references from historical commands, frozen snapshots, recipe values and provenance paths; record preservation exceptions.
+- [x] Identify any affected generated projections or tool tests; require rebuilds/tests only where the documentation move affects their inputs or behavior.
+- [x] Specify future documentation ownership/output conventions so later work does not recreate a flat implementation directory.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the existing
+[documentation ledger](implementation-documentation-migration-ledger.md#phase-62-audit-scope-and-checkpoint)
+records the 406-file audit, 468 relative-link repairs across 91 consumers, active prose/output
+conventions and historical-path exceptions. All current relevant links/fragments resolve. No
+maintained runtime or structured-register input requires rerouting, so no workbook refresh or new
+runtime tests are required for the planned documentation-only move. No files or live links moved;
+both frozen baselines remain unchanged. Phase 7 remains unstarted.
 
 **Validation:** every file has one disposition; every active consumer has a repair or a reviewed
 exception; pending worktree edits are accounted for. No moves or runtime changes occur here.
@@ -475,8 +502,13 @@ exception; pending worktree edits are accounted for. No moves or runtime changes
 
 ### Phase 6 Exit Gate
 
-- [ ] Documentation ledger, baseline, placement exceptions and repair scope are reviewed and accepted.
-- [ ] Record acceptance separately from authorization for Phase 7.
+- [x] Documentation ledger, baseline, placement exceptions and repair scope are reviewed and accepted.
+- [x] Record acceptance separately from authorization for Phase 7.
+
+**Exit record — accepted by the maintainer 2026-11-01:** Phase 6.1 inventory and Phase 6.2 audit,
+including the slice-specific procedure placement, are accepted for publication. Confirmation does
+not authorize Phase 7 moves; Phase 7 requires subsequent authorization. The frozen baseline retains
+its pre-acceptance checkpoint values and hashes.
 
 ## Phase 7: Implementation Documentation Migration And Navigation
 
@@ -552,5 +584,6 @@ changes without staging or discarding them. Publication does not authorize Episo
 
 - [ ] Combined closeout accepted; publication status, final ownership pointers and remaining limitations recorded.
 
-Phases 6–9 are planned and unstarted. This scope amendment makes no file moves and does not grant
-execution authorization for those phases or change previously accepted project/slice boundaries.
+Phase 6.1 inventory and 6.2 dependency audit were accepted by the maintainer on 2026-11-01.
+Phases 7–9 remain unstarted. No documentation moves have been performed; this audit does not grant migration authorization
+or change previously accepted project/slice boundaries.
