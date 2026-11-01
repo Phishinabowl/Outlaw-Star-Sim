@@ -28,7 +28,7 @@ def main():
     record = dict(episode_id=f'EP-{args.episode:02}', source=relative,
                   source_bytes=source.stat().st_size, tool_version=version,
                   probe_arguments=flags, metadata=metadata)
-    output = ROOT / 'reference' / 'indexes' / f'episode-{args.episode:02}-metadata.json'
+    output = ROOT / 'reference' / 'indexes' / 'episodes' / f'EP-{args.episode:02}' / 'preparation' / f'episode-{args.episode:02}-metadata.json'
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(record, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     print(f'Wrote {output.relative_to(ROOT).as_posix()}')

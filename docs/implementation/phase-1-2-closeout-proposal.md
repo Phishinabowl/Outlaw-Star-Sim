@@ -29,7 +29,7 @@ about 2.10 m over the two outer 1 m bands. These are clear-space targets before 
 a specified hull skin, measured anime profile or final mesh. Front/rear transitions remain shaped
 around the actual source landmarks and doorway; do not create abrupt overhead ledges in walking paths.
 
-The [EP-04 headroom review](../../reference/indexes/episode-04-cockpit-headroom-review.md)
+The [EP-04 headroom review](../../reference/indexes/episodes/EP-04/evidence/episode-04-cockpit-headroom-review.md)
 supports higher central canopy and lower perimeter framing qualitatively. The proposed band widths
 and heights are unmeasured. The 4 m band covers the 3.6 m trial seat width with only 0.2 m per side;
 it does not automatically contain projecting controls or all cover travel. MC-01/04 must include them.

@@ -6,23 +6,23 @@ actual model/fit/runtime validation remains pending. This index owns source cove
 
 [Baseline v1](baseline-v1/spatial-constraint-map.md) consolidates spatial relationships, motion reservations, operational vocabulary and the first slice contract for later implementation planning. Provisional geometry/state choices remain separate from source evidence; it is not implementation authorization.
 
-[Performance subtitle audit](../../reference/indexes/performance-subtitle-audit.md) covers all 26 numbered episodes, with a [curated metric CSV](../../reference/indexes/performance-metrics.csv) and per-episode source/stream/hash provenance. Use it for later propulsion, sensor and grappler model discussion; translated statements, derived calculations and unresolved attribution remain separate.
+[Performance subtitle audit](../../reference/indexes/performance/performance-subtitle-audit.md) covers all 26 numbered episodes, with a [curated metric CSV](../../reference/indexes/performance/performance-metrics.csv) and per-episode source/stream/hash provenance. Use it for later propulsion, sensor and grappler model discussion; translated statements, derived calculations and unresolved attribution remain separate.
 
-All 221 scans were screened using eight labeled contact sheets. The initial 57 XGP candidates have expanded to 66 XGP/support records after [image map reconciliation](../../reference/indexes/image-map-reconciliation.md), including preliminary and contextual equipment. [The complete screening CSV](../../reference/indexes/settei-screening.csv) records the distinctions. Screening is not exhaustive annotation or proof that every small detail was identified.
+All 221 scans were screened using eight labeled contact sheets. The initial 57 XGP candidates have expanded to 66 XGP/support records after [image map reconciliation](../../reference/indexes/comparisons/image-map-reconciliation.md), including preliminary and contextual equipment. [The complete screening CSV](../../reference/indexes/settei/settei-screening.csv) records the distinctions. Screening is not exhaustive annotation or proof that every small detail was identified.
 
-The [source manifest](../../reference/indexes/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.
+The [source manifest](../../reference/indexes/sources/source-manifest.json) records scan hashes, dimensions, byte sizes, and episode filenames. Repeated subjects are visual duplicate/variant candidates; do not deduplicate unless hashes and version details agree.
 
 The original structured-pass checkpoint comprises 16 interior/startup, 11 identity, 14 variant and
 three propulsion-label records, leaving 22 without those pass types. Later targeted
 [reservation checks](../implementation/phase-1-2-reservation-audit.md) and
-[headroom comparison](../../reference/indexes/episode-04-cockpit-headroom-review.md) are supplemental
+[headroom comparison](../../reference/indexes/episodes/EP-04/evidence/episode-04-cockpit-headroom-review.md) are supplemental
 inspections, not a new complete annotation tally. Full comparison/transcription remains incomplete.
 None of all 221 scans has a byte-identical SHA-256 match in the manifest.
 
-Additional focused episode sources: [case revival](../../reference/indexes/episode-01-02-melfina-case-review.md),
-[boarding/laptop/registration](../../reference/indexes/episode-04-opening-bootstrap-review.md),
-[laptop screen sequence](../../reference/indexes/episode-04-hilda-laptop-screen-review.md) and
-[Melfina power-state comparison](../../reference/indexes/episode-11-subether-review.md).
+Additional focused episode sources: [case revival](../../reference/indexes/comparisons/episode-01-02-melfina-case-review.md),
+[boarding/laptop/registration](../../reference/indexes/episodes/EP-04/evidence/episode-04-opening-bootstrap-review.md),
+[laptop screen sequence](../../reference/indexes/episodes/EP-04/evidence/episode-04-hilda-laptop-screen-review.md) and
+[Melfina power-state comparison](../../reference/indexes/episodes/EP-11/evidence/episode-11-subether-review.md).
 User-verified English dub observations remain track-qualified; fan images stay non-canonical/local-only.
 
 ## Subject groups
@@ -73,15 +73,15 @@ img129 is an Eldorado/Shangri-La interior concept; img130–133 are explicitly E
 
 Classification: final-looking relevant sheets are PRODUCTION_CANON candidates pending collection provenance/version review. Selected anime corroboration is now documented below; collection-wide authentication remains open. Fine Japanese translation, measurements, and room placements remain ongoing work. No metric dimensions were derived from perspective drawings.
 
-Subsequent [variant comparison](../../reference/indexes/settei-variant-review.md) covers SET-082,085,086,087,091,097,195,196 against their representatives, without finding a substantive design revision. [Episode 4 local startup observations](../../reference/indexes/episode-04-startup-review.md) corroborate selected apparatus, engineering and key details. Current focused-pass counts are also recorded in the progress report.
+Subsequent [variant comparison](../../reference/indexes/settei/reviews/settei-variant-review.md) covers SET-082,085,086,087,091,097,195,196 against their representatives, without finding a substantive design revision. [Episode 4 local startup observations](../../reference/indexes/episodes/EP-04/evidence/episode-04-startup-review.md) corroborate selected apparatus, engineering and key details. Current focused-pass counts are also recorded in the progress report.
 
-[Six-item follow-up](../../reference/indexes/startup-open-items-followup.md) adds active-bridge, passage, landing and exterior-airlock comparisons (SET-092,093,095,096,098,197), plus selected propulsion labels on SET-023,025,108. Remaining geometry-critical families are listed there for episode-guided review.
+[Six-item follow-up](../../reference/indexes/comparisons/startup-open-items-followup.md) adds active-bridge, passage, landing and exterior-airlock comparisons (SET-092,093,095,096,098,197), plus selected propulsion labels on SET-023,025,108. Remaining geometry-critical families are listed there for episode-guided review.
 
 ## Episode 4 survey and timing reconciliation — 2026-10-29
 
-The [retrospective reconciliation](../../reference/indexes/episode-04-reconciliation-review.md)
+The [retrospective reconciliation](../../reference/indexes/episodes/EP-04/evidence/episode-04-reconciliation-review.md)
 connects the existing 354-image initial survey and nine manual references to scoped English
-subtitle/context findings. The [accepted alignment](../../reference/indexes/episode-04-alignment-review.md)
+subtitle/context findings. The [accepted alignment](../../reference/indexes/episodes/EP-04/alignment/episode-04-alignment-review.md)
 provides nine direct intervals and 330 navigation estimates; 15 edge images remain unmapped.
 Historical local PTS and supplied player timestamps are preserved, not silently retimed.
 

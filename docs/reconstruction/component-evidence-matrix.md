@@ -2,7 +2,7 @@
 
 B candidate means presumed production evidence pending provenance/version review. BRIEF claims remain unverified; proposed simulation requirements have no canon status until separately evidenced.
 
-The [all-episode subtitle performance audit](../../reference/indexes/performance-subtitle-audit.md) and [curated metric register](../../reference/indexes/performance-metrics.csv) supply 47 timestamped translated records, separating XGP operating points, environments, race routes, training and other ships. They add 108% short-event output, adverse-condition sensor figures and a 150% arm-response/one-minute mode limit without selecting a simulation model. Original-language/visual verification and percentage baselines remain open.
+The [all-episode subtitle performance audit](../../reference/indexes/performance/performance-subtitle-audit.md) and [curated metric register](../../reference/indexes/performance/performance-metrics.csv) supply 47 timestamped translated records, separating XGP operating points, environments, race routes, training and other ships. They add 108% short-event output, adverse-condition sensor figures and a 150% arm-response/one-minute mode limit without selecting a simulation model. Original-language/visual verification and percentage baselines remain open.
 
 | System/assembly | Sources | Initial evidence or requirement | Status/questions |
 |---|---|---|---|
@@ -10,7 +10,7 @@ The [all-episode subtitle performance audit](../../reference/indexes/performance
 | Four main engine/service assemblies | SET-030,046,091,097,195,196; EP-04/08 local review | 2×2 layout; all four banded/closed initially and later extended; visible local controls | A corroboration plus B candidates; individual manual operation of all four and exterior mapping remain open |
 | Landing/rear mechanical assembly | SET-032,098 | SET-032 identifies landing mechanism; rear tip/support motion drawings | B candidate; compare SET-098 and remaining callouts; propulsion relationship unresolved |
 | Sub-ether drive | SET-048,094,102,103; local EP-11 | Aft screw/rings/field during transition; disrupted entry after impact; translated activation/abort | A visuals and translated evidence; undamaged complete jump, fin mechanism and numerical model unresolved |
-| Ether-drive travel performance | EP-11 English ASS; [numerical follow-up](../../reference/indexes/episode-11-subether-review.md#numerical-travel-performance-follow-up--2026-10-07) | 600 million km, about 96 h at stated 50% propulsion; separate 12 km/s local-navigation report | Translated figures checked; derived ~1,736 km/s trip average is D, not a speed cap; watts, acceleration and power curve unknown |
+| Ether-drive travel performance | EP-11 English ASS; [numerical follow-up](../../reference/indexes/episodes/EP-11/evidence/episode-11-subether-review.md#numerical-travel-performance-follow-up--2026-10-07) | 600 million km, about 96 h at stated 50% propulsion; separate 12 km/s local-navigation report | Translated figures checked; derived ~1,736 km/s trip average is D, not a speed cap; watts, acceleration and power curve unknown |
 | Reactor/main power source | EP-07 primary display; English ASS EP-07/08/11; EXT-007/008 | Newton display; four indexed Newton units in translated damage report; Münchhausen output rise/runaway during sub-ether | Naming/function distinction strengthened; original speech, count/location and complete topology unresolved |
 | Emergency/battery/auxiliary power | Local EP-11; BRIEF storage concept | Translated auxiliary state after engine cutoff; responsive apparatus, key restart and lighting/view recovery | Visual recovery and translated auxiliary state supported; battery hardware/capacity and storage progression unresolved |
 | Cooling | BRIEF design requirement | Interconnected simulation requirement | No hardware layout or numerical model established |
@@ -36,12 +36,12 @@ No source-backed engineering numbers have been invented. Every later D/E/F recor
 
 ## Detailed batch refinements
 
-[Selected Japanese callouts and translations](../../reference/indexes/settei-interior-review.md) refine the initial observations:
+[Selected Japanese callouts and translations](../../reference/indexes/settei/reviews/settei-interior-review.md) refine the initial observations:
 
 - SET-030 names the protruding assembly an **engine control cylinder**; whole-engine extension is not established by that sheet. Compare to the actual Episode 4 moving parts.
 - SET-027 supplies navigation-apparatus stages: boarding platform descends, hatch closes, cylinder rises, shields slide apart. Geometry must allow the below-floor stroke and side clearance; fluid/interlocks remain unverified.
 - SET-040 explicitly identifies Gene's console and system activation key, with an approximately 8.5 cm comparison cigarette. Control functions and key prerequisites require anime evidence.
-- SET-128 explicitly identifies Jim's console, distinguishing it from Gene's station. See [image map reconciliation](../../reference/indexes/image-map-reconciliation.md) for selected additional identities and the episode-verification queue.
+- SET-128 explicitly identifies Jim's console, distinguishing it from Gene's station. See [image map reconciliation](../../reference/indexes/comparisons/image-map-reconciliation.md) for selected additional identities and the episode-verification queue.
 - SET-026 illustrates moving grappler-control grips and an eight-slot detail; its bus-door-linkage analogy does not provide a complete engineering specification.
 - SET-047 annotates a downward-sliding control cover and an inward-then-slide hatch motion (provisional handwriting reading). SET-126 supplies pressure-indicator stages and a grappler-relative hatch note.
 - SET-125 labels a three-layer crash blade with a central camera and illustrates capsule/seat/hatch operation; no deployed length or simulation behavior is chosen.
@@ -50,11 +50,11 @@ Reactor terminology is still unresolved. These selected sheets do not settle the
 
 ## Episode 4 corroboration
 
-[Local startup evidence](../../reference/indexes/episode-04-startup-review.md) adds A observations for navigation-cylinder rise (09:37–09:42 local), manual engineering front-cylinder extension (12:04–12:07), key engagement (13:53–13:54), and generator/main-sub power graphics (13:58–14:02). These ranges group discrete reviewed frames; exact shot boundaries and full trajectories remain open. Jim is the character associated with the engineering work; Gene engages the cockpit key. The visible engineering extension does not establish exterior-engine movement.
+[Local startup evidence](../../reference/indexes/episodes/EP-04/evidence/episode-04-startup-review.md) adds A observations for navigation-cylinder rise (09:37–09:42 local), manual engineering front-cylinder extension (12:04–12:07), key engagement (13:53–13:54), and generator/main-sub power graphics (13:58–14:02). These ranges group discrete reviewed frames; exact shot boundaries and full trajectories remain open. Jim is the character associated with the engineering work; Gene engages the cockpit key. The visible engineering extension does not establish exterior-engine movement.
 
 Early bridge activation precedes the later main-engine ignition. The English subtitle track describes preparations, an engine seal/lockout and transfer to mains; those wording-dependent claims await audio verification. The startup display's MAIN/SUB branches do not establish battery count, capacity, physical circuit topology or a complete power state machine. Reactor names remain unresolved.
 
-The [retrospective Episode 4 reconciliation](../../reference/indexes/episode-04-reconciliation-review.md)
+The [retrospective Episode 4 reconciliation](../../reference/indexes/episodes/EP-04/evidence/episode-04-reconciliation-review.md)
 adds these scoped distinctions from the pinned English ASS, without changing component assignments:
 
 - Cues 179–181 (11:15.96–11:23.12 local) distinguish an individually tested engine from no recorded
@@ -72,4 +72,4 @@ naming discrepancy remains open in CTX-000014, not a correction to XGP's propuls
 
 ## Commissioning, training and routine departure
 
-[Episodes 4/7/8 comparison](../../reference/indexes/startup-sequence-comparison.md) separates first-use band removal from later standby/navigation startup. Episode 7 displays a Newton heading and four indexed engines; its failure/overload occurs in a simulation. English subtitles identify a Newton-before-gravity-cycle correction and manual power balancing. These are evidence for training and prerequisite/fault discussion, not numerical fault thresholds or an implemented state machine. Episode 8 separately shows four extended engineering cylinders, seat-cluster lift, running engines while still docked, readiness checks, output stabilization and countdown before actual launch. The full cold-storage progression and shutdown procedure remain unevidenced.
+[Episodes 4/7/8 comparison](../../reference/indexes/comparisons/startup-sequence-comparison.md) separates first-use band removal from later standby/navigation startup. Episode 7 displays a Newton heading and four indexed engines; its failure/overload occurs in a simulation. English subtitles identify a Newton-before-gravity-cycle correction and manual power balancing. These are evidence for training and prerequisite/fault discussion, not numerical fault thresholds or an implemented state machine. Episode 8 separately shows four extended engineering cylinders, seat-cluster lift, running engines while still docked, readiness checks, output stabilization and countdown before actual launch. The full cold-storage progression and shutdown procedure remain unevidenced.

@@ -19,15 +19,15 @@ Scan references are collection IDs, not canonical room numbers. B candidate = PR
 
 No independent washroom/toilet, dedicated reactor room, or complete deck count has been established. Do not borrow Eldorado cabin/cargo sheets (e.g. SET-132/133/209) for XGP canon.
 
-The [Episode 4 reconciliation](../../reference/indexes/episode-04-reconciliation-review.md) records
+The [Episode 4 reconciliation](../../reference/indexes/episodes/EP-04/evidence/episode-04-reconciliation-review.md) records
 the current survey/evidence scope. Gallery ordinals above identify inspected images, not exact local
-PTS; use the [accepted timing mapping](../../reference/indexes/episode-04-alignment-review.md) within
+PTS; use the [accepted timing mapping](../../reference/indexes/episodes/EP-04/alignment/episode-04-alignment-review.md) within
 its bounded domain. The small transfer-craft entrance, main hangar gate and XGP boarding hatch remain
 distinct. No new hatch correspondence, room dimension or accepted route change follows from this update.
 
 ## Detailed interior batch constraints
 
-See [the 16-sheet transcription/review](../../reference/indexes/settei-interior-review.md) for exact labels and uncertainty. These are B candidates with visible final-design markings, except the explicitly preliminary SET-043.
+See [the 16-sheet transcription/review](../../reference/indexes/settei/reviews/settei-interior-review.md) for exact labels and uncertainty. These are B candidates with visible final-design markings, except the explicitly preliminary SET-043.
 
 | Relationship/constraint | Source | What is supported | What remains unresolved |
 |---|---|---|---|
@@ -41,4 +41,4 @@ See [the 16-sheet transcription/review](../../reference/indexes/settei-interior-
 
 Do not turn these directional labels into a measured full-ship layout. Keep the round passage exterior-access hatch, bridge emergency hatch, and airlock as distinct evidence records until correspondence is established.
 
-The [Episodes 4/7/8 startup comparison](../../reference/indexes/startup-sequence-comparison.md) adds moving seating/control-cluster evidence in the bridge and an all-four-extended engineering view. Model planning must reserve motion/service space, but travel distances, hull fit, full apparatus cavity and unseen connections remain unmeasured. Episode 4 rectangular access-hatch views are recorded separately from the round passage/bridge openings.
+The [Episodes 4/7/8 startup comparison](../../reference/indexes/comparisons/startup-sequence-comparison.md) adds moving seating/control-cluster evidence in the bridge and an all-four-extended engineering view. Model planning must reserve motion/service space, but travel distances, hull fit, full apparatus cavity and unseen connections remain unmeasured. Episode 4 rectangular access-hatch views are recorded separately from the round passage/bridge openings.

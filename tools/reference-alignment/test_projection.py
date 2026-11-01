@@ -98,7 +98,7 @@ class ProjectionTests(unittest.TestCase):
         sub=root/'fixture.ass';sub.write_bytes(b'subtitle')
         locator=root/'reference/indexes/animehistory/CSVs/episode-01.csv';locator.parent.mkdir(parents=True);locator.write_bytes(b'fixture')
         entry=dict(episode_id='EP-01',source='_source_episodes/fixture.mkv',source_bytes=7,local_subtitle='fixture.ass',subtitle_stream=1,subtitle_sha256=a.digest(sub))
-        coverage=root/'reference/indexes/performance-subtitle-coverage.json';coverage.write_text(json.dumps(dict(episodes=[entry])))
+        coverage=root/'reference/indexes/performance/performance-subtitle-coverage.json';coverage.parent.mkdir(parents=True);coverage.write_text(json.dumps(dict(episodes=[entry])))
         row=self.anchors[0];row.update(subtitle_sha256=a.digest(sub),locator_sha256=a.digest(locator))
         return source,sub
 

@@ -3,9 +3,9 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-30 / 2026-11-01 |
-| Status | Phases 1 and 2 preparation accepted; migration and live routing changes unimplemented |
+| Status | Phases 1–3 accepted; Phase 4 integration/workbook validation unstarted |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 2 preparation accepted 2026-11-01; Phase 3 and migration unstarted |
+| Current checkpoint | Phase 3 migration accepted 2026-11-01; Phase 4 integration/workbook validation unstarted |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -263,20 +263,27 @@ authorization. This confirmation publishes preparation only; the routing patch r
 
 **Prerequisite:** Phase 2 preparation complete. **Deliverable:** organized records and repaired active references.
 
-- [ ] Execute the ledgered moves, preserving filenames and bytes wherever practical.
-- [ ] Relocate the 33 ledgered local scripts into their historical destinations after ignore protection is verified; preserve hashes and remove only verified source copies.
-- [ ] Relocate episode README sections with dates, scope limits and acceptance provenance intact.
-- [ ] Repair maintained Markdown links/anchors and authored CSV references.
-- [ ] Preserve historical commands, recorded recipes, stable IDs and hashes; record path correspondence in the ledger.
-- [ ] Confirm archive payloads and local media locations remain unchanged.
+- [x] Execute the ledgered moves, preserving filenames and bytes wherever practical.
+- [x] Relocate the 33 ledgered local scripts into their historical destinations after ignore protection is verified; preserve hashes and remove only verified source copies.
+- [x] Relocate episode README sections with dates, scope limits and acceptance provenance intact.
+- [x] Repair maintained Markdown links/anchors and authored CSV references.
+- [x] Preserve historical commands, recorded recipes, stable IDs and hashes; record path correspondence in the ledger.
+- [x] Confirm archive payloads and local media locations remain unchanged.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the
+[Phase 3 migration record](reference-index-reorganization-phase-3.md) records all moves, README
+relocation, routing activation and path-only repairs. Checks pass within the recorded scope;
+workbooks remain unchanged for Phase 4.
 
 **Validation:** compare actual moves/edits with the ledger; account for old and new paths without duplicate authority.
 **Recovery / deferral:** correct or restore only affected paths from the baseline; preserve unrelated edits.
 
 ### Phase 3 Exit Gate
 
-- [ ] Every planned move is completed or has an explicit reviewed exception.
-- [ ] Coordinated producer/reader changes are ready for integration checks; migration remains unverified until Phase 4.
+- [x] Every planned move is completed or has an explicit reviewed exception.
+- [x] Coordinated producer/reader changes are ready for integration checks; migration remains unverified until Phase 4.
+
+Phase 3 was accepted by the maintainer on 2026-11-01 for publication. Phase 4 requires subsequent authorization.
 
 ## Phase 4: Integration Validation
 

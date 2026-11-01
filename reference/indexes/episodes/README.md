@@ -1,7 +1,7 @@
 # Episode records
 
-Navigation prepared 2026-11-01. Existing records are linked at their current locations;
-the reorganization has not moved them yet. This page does not change evidence or review status.
+Navigation migrated 2026-11-01. Records are linked at their organized locations.
+Migration does not change evidence or review status; Phase 4 integration/workbook validation remains pending.
 
 ## Episodes
 
@@ -18,6 +18,6 @@ the reorganization has not moved them yet. This page does not change evidence or
 
 ## Records
 
-- [episode-index.md](../episode-index.md)
+- [episode-index.md](episode-index.md)
 
-[Migration ledger](../../../docs/implementation/reference-index-reorganization-ledger.md) owns planned destinations; repair these navigation links with the Phase 3 moves.
+[Migration ledger](../../../docs/implementation/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.

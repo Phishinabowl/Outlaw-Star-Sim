@@ -74,7 +74,7 @@ CTXLINK-000072,CTX-000017,APPLIES_TO_EPISODE,EPISODE,EP-04,Episode 4 research re
 CTXLINK-000073,CTX-000018,ABOUT,SUBJECT,horus,
 CTXLINK-000074,CTX-000004,SAME_ASSERTION_AS,CONTEXT,CTX-000005,Same reported escape-cover assertion on two pages of the same site; not independent corroboration.
 CTXLINK-000075,CTX-000012,SAME_ASSERTION_AS,CONTEXT,CTX-000013,Same secondary interpretation across sites; independence and primary evidence are not established.
-CTXLINK-000076,CTX-000015,CHECKED_AGAINST,EVIDENCE,reference/indexes/episode-04-startup-review.md,Existing Visually reviewed observations at 10:42.016 and 14:05.011 corroborate only the apparatus-behind-seats relationship; no new primary media inspection.
+CTXLINK-000076,CTX-000015,CHECKED_AGAINST,EVIDENCE,reference/indexes/episodes/EP-04/evidence/episode-04-startup-review.md,Existing Visually reviewed observations at 10:42.016 and 14:05.011 corroborate only the apparatus-behind-seats relationship; no new primary media inspection.
 CTXLINK-000077,CTX-000019,ABOUT,SUBJECT,gene_starwind,
 CTXLINK-000078,CTX-000019,ABOUT,SUBJECT,jim_hawking,
 CTXLINK-000079,CTX-000019,ABOUT,SUBJECT,hilda,
@@ -256,7 +256,7 @@ CTXLINK-000254,CTX-000048,MENTIONS,SUBJECT,melfina,
 CTXLINK-000255,CTX-000048,APPLIES_TO_EPISODE,EPISODE,EP-02,Episode-context preparation only; no image association or review state assigned.
 CTXLINK-000256,CTX-000018,APPLIES_TO_EPISODE,EPISODE,EP-02,The two-jump claim is explicitly about Horus on the Blue Heaven route.
 CTXLINK-000257,CTX-000018,MENTIONS,SUBJECT,blue_heaven,Destination in the checked translated dialogue.
-CTXLINK-000258,CTX-000018,CHECKED_AGAINST,EVIDENCE,reference/indexes/episode-02-context-preparation.md#horus-two-jump-dialogue-check,Scoped translated-subtitle assessment only; no original audio or gallery-time match.
+CTXLINK-000258,CTX-000018,CHECKED_AGAINST,EVIDENCE,reference/indexes/episodes/EP-02/preparation/episode-02-context-preparation.md#horus-two-jump-dialogue-check,Scoped translated-subtitle assessment only; no original audio or gallery-time match.
 CTXLINK-000259,CTX-000049,ABOUT,SUBJECT,harry_macdougall,Selected secondary appearance aid.
 CTXLINK-000260,CTX-000049,APPLIES_TO_EPISODE,EPISODE,EP-02,Opening montage only; no story encounter asserted.
 CTXLINK-000261,CTX-000050,ABOUT,SUBJECT,hilda_prosthetic_arm,Selected repair passage only.

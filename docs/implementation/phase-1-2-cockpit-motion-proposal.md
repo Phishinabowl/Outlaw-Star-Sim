@@ -8,7 +8,7 @@ agreements in the [decision packet](phase-1-2-spatial-motion-decision-packet.md)
 ## Evidence Rechecked
 
 Re-inspected immutable SET-027/086 stage diagrams and SET-022 operating cockpit; prior authored
-[interior review](../../reference/indexes/settei-interior-review.md) owns the selected transcriptions
+[interior review](../../reference/indexes/settei/reviews/settei-interior-review.md) owns the selected transcriptions
 and production provenance remains B candidate. Re-inspected existing EP-26 platform-locator 07
 (21:25.784), EP-04 motion-transitions 05/09 (10:33.508/10:35.009) and EP-08 departure-a 20/23
 (13:24.012/13:27.015). Those Episode 8 shots show the seating/occupant context, not a measured
@@ -17,8 +17,8 @@ Source images remain unchanged and local-only.
 
 Supported stages are cap opening, occupant descent, cylinder rise, lateral front-cover withdrawal
 and seat/control-cluster upward movement, documented across scenes in the
-[startup comparison](../../reference/indexes/startup-sequence-comparison.md) and
-[Episode 26 review](../../reference/indexes/episode-26-platform-review.md). Original cap closure
+[startup comparison](../../reference/indexes/comparisons/startup-sequence-comparison.md) and
+[Episode 26 review](../../reference/indexes/episodes/EP-26/evidence/episode-26-platform-review.md). Original cap closure
 and complete choreography across cuts remain unresolved. A diagram joining these stages must not
 be called an uninterrupted canonical startup sequence. Segment travel/pockets and the exact seat
 linkage are also unknown; rectangular proxies do not prescribe the final mechanism.
@@ -87,7 +87,7 @@ the occupant or shrink machinery to conceal a conflict.
 ## Proposed Demonstration States And Open Decisions
 
 The user's EP-04 07:15 headroom lead is now reviewed in the
-[headroom/character-scale record](../../reference/indexes/episode-04-cockpit-headroom-review.md).
+[headroom/character-scale record](../../reference/indexes/episodes/EP-04/evidence/episode-04-cockpit-headroom-review.md).
 It supports a recessed/shaped canopy with lower perimeter framing, not a measured uniform height.
 SET-011 supplies a relative character chart; EP-20 English narration supplies Jim's 140 cm height,
 while Gene's 182 cm remains a secondary-source hypothesis. Keep 2.30 m as a trial overhead limit

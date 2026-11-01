@@ -1,23 +1,23 @@
 # Reference index migration ledger — Phase 1.1
 
-Status: Phase 1.1 inventory accepted by the maintainer on 2026-10-30; moves planned and unimplemented.
+Status: Phase 1.1 inventory accepted 2026-10-30; all 152 record moves implemented and Phase 3 accepted 2026-11-01.
 Baseline date: 2026-10-30 (America/New_York). This record implements Phase 1.1 of the [plan](reference-index-reorganization-plan.md).
 
 The [baseline JSON](reference-index-reorganization-baseline.json) records exact paths, byte counts, SHA-256 values,
 section boundaries/hashes, ordered CSV data digests and per-sheet workbook data/link digests.
 Initial Git HEAD: `e7d62d52cd3c74e25e83e8bf6b6bb2f9fe8b7c4e`; worktree clean and upstream aligned.
-No migration directories were created. The subsequently completed Phase 1.2 static findings are owned
+At the Phase 1.1 checkpoint no migration directories had been created. The subsequently completed Phase 1.2 static findings are owned
 by the separate [tool and dependency audit ledger](reference-index-reorganization-tool-audit.md),
 accepted by the maintainer on 2026-10-31. Pending-audit fields in the frozen Phase 1.1 JSON remain historical baseline values.
-The subsequent [Phase 2 preparation](reference-index-reorganization-phase-2.md) adds navigation
-pages without moving these records. New navigation files are additions outside the 193-file
-baseline, not missing or duplicated migration entries. Phase 3 will rebase their current-location links.
+The subsequent [Phase 2 preparation](reference-index-reorganization-phase-2.md) added navigation
+outside the 193-file baseline. The [Phase 3 migration](reference-index-reorganization-phase-3.md)
+records completed moves and reference repairs without rewriting that frozen snapshot.
 
 ## File dispositions
 
-Paths below are relative to `reference/indexes`. Every row is PLANNED_NOT_MOVED; all destinations were absent.
-JSON provenance bytes are to be preserved. For Markdown/CSV, only coordinated active-reference edits are planned;
-findings, evidence IDs, historical commands and recorded recipes remain unchanged. Full hashes are in the baseline.
+Paths below are relative to `reference/indexes`. Every FILE row is now MOVED_AND_CHECKED; original
+paths are absent. JSON bytes are preserved. Markdown/CSV changes repair active references only;
+findings, IDs, historical commands and recipes remain unchanged. Original hashes are in the baseline.
 
 | ID | Existing path | Destination | Producer / record type |
 | --- | --- | --- | --- |
@@ -175,6 +175,10 @@ findings, evidence IDs, historical commands and recorded recipes remain unchange
 | FILE-152 | `to-be-continued-supplied-reference.md` | `supplied-references/to-be-continued-supplied-reference.md` | Authored research / review record |
 
 ## Embedded README section dispositions
+
+Executed in Phase 3: 47 complete sections relocated, two mixed-content ranges split and shared
+contract sections retained. Line ranges remain baseline locators; current navigation and compatibility
+anchors resolve the destinations below.
 
 Ranges are inclusive baseline line numbers, ending before the next heading regardless of heading level.
 Thus parent sections do not accidentally include or duplicate child-section text. Keep dates and attribution.

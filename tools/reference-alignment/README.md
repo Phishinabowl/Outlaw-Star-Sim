@@ -968,7 +968,7 @@ was changed. The 900-frame, 600 MiB, 15-minute and 70-second total window caps r
   BROAD_SCORE_REGION. No unique timing anchor or model was accepted from this tool check.
 - Run `ALNRUN-11341c78396e4b56abeb43fc82faa69c`, input
   `f0ba53a3817ca06cc96b8208637c425df8c1ca07e27ead05fc2f763f260785ca`, used the Episode 2
-  CBM source identified in the [preparation record](../../reference/indexes/episode-02-context-preparation.md).
+  CBM source identified in the [preparation record](../../reference/indexes/episodes/EP-02/preparation/episode-02-context-preparation.md).
   Video SHA-256: `df89f10afd35450152692a093df92fb91bed62ed044480af321a936dea5e5acb`;
   ASS SHA-256: `681eb5c7927e7c90c0fef83c699872f3a66db8afae55eef735a697909404f8bd`;
   locator SHA-256: `4ed16b437fcd21af2626a5aa52bc7a24a4f91b202acd59f7be5cd1b6c4c1e66e`.
@@ -984,5 +984,5 @@ was changed. The 900-frame, 600 MiB, 15-minute and 70-second total window caps r
 The extension supports per-episode execution; actual matching quality and timing relationships
 must still be established for each episode/release. At this extension checkpoint, Episode 2
 was unmapped and its annotations were UNREVIEWED. Subsequent episode-specific execution and
-coverage belong to the [Episode 2 alignment review](../../reference/indexes/episode-02-alignment-review.md),
+coverage belong to the [Episode 2 alignment review](../../reference/indexes/episodes/EP-02/alignment/episode-02-alignment-review.md),
 not this tool-validation record. Phase 3.2A remains unstarted.

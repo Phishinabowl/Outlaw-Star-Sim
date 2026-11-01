@@ -72,7 +72,7 @@ On 2026-10-08 the user selected the larger focused screen view and the following
   to supply the case's revival power or to remain necessary throughout the timer.
 
 Laptop-to-case authentication is an explicit adaptation: the
-[EP-01/02 review](../../reference/indexes/episode-01-02-melfina-case-review.md) and re-inspected
+[EP-01/02 review](../../reference/indexes/comparisons/episode-01-02-melfina-case-review.md) and re-inspected
 EP-01 case frame 04 (21:48.015) show three unlabelled controls and a cabled connector, but do not
 establish an external controller's identity or input method. Reusing Hilda's laptop is E/F, not A.
 No full desktop, filesystem, browser, hacking minigame or general application framework is selected.
@@ -173,7 +173,7 @@ edits and Escape first exits typing focus without closing/disconnecting. Show a 
 keep code characters visible rather than password dots. The exact visual arrangement remains to design.
 
 The user rejected using a similarly generic ship bootstrap screen and supplied the anime's ordered
-laptop screenshots. The [focused screen review](../../reference/indexes/episode-04-hilda-laptop-screen-review.md)
+laptop screenshots. The [focused screen review](../../reference/indexes/episodes/EP-04/evidence/episode-04-hilda-laptop-screen-review.md)
 records seven images: blue grid/status layout → activation graphic → three/two/one/zero presentation,
 with a distinct zero-stage palette. img002/img003 are wider/closer activation views, not automatically
 two separate machine states. Use this source-backed visual direction for ship bootstrap; the case
@@ -189,7 +189,7 @@ Connection alone does not start the override, and clicking the override does not
 
 This supplies the activity implied by Hilda's typing without a typing challenge, simulated shell,
 real malware, exploit or full permission/filesystem model. The
-[opening/bootstrap review](../../reference/indexes/episode-04-opening-bootstrap-review.md)
+[opening/bootstrap review](../../reference/indexes/episodes/EP-04/evidence/episode-04-opening-bootstrap-review.md)
 records English-track dialogue at 06:18.29–07:15.58: missing crew records, partially deleted personnel
 regulations, recovery offered/declined and crew registration. The exact files deleted by the laptop,
 protocol, ownership rights and root/admin privilege model remain unverified. Crew-manifest/security
@@ -234,7 +234,7 @@ his dialogue and later relevant guidance/status. The user selected a recognizabl
 presentation without requiring exact source-matched animation yet. This is a bounded addition to
 the previous minimal deterministic guidance scope, not full robot/crew simulation.
 
-The [opening review](../../reference/indexes/episode-04-opening-bootstrap-review.md), OPEN-05/10,
+The [opening review](../../reference/indexes/episodes/EP-04/evidence/episode-04-opening-bootstrap-review.md), OPEN-05/10,
 already records the dim overhead housing and illuminated red regions during introduction; its
 06:18.29–07:15.58 English-track review owns registration evidence. Detailed expression shapes and
 motion/timing still need targeted visual comparison. Keep this overhead cockpit unit distinct from
@@ -528,7 +528,7 @@ truthfully rather than a disconnected occupant or full-ready navigation while ma
 
 Reference: the user cites EP-11's gravity-missile disruption, key cutoff and restart as showing pod
 light loss and Melfina becoming droopy then perking up. The
-[EP-11 review](../../reference/indexes/episode-11-subether-review.md) establishes cutoff/auxiliary/
+[EP-11 review](../../reference/indexes/episodes/EP-11/evidence/episode-11-subether-review.md) establishes cutoff/auxiliary/
 restart context. The user then supplied exact comparison screenshots, inspected directly and
 recorded in that review: OFF is dimmer but still blue/green-lit, eyes closed and hands relaxed/lowered;
 ON is brighter with open eyes and more lifted/spread fingers. Use that subdued contrast rather

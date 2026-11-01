@@ -11,7 +11,7 @@ $supplementHash = if (Test-Path -LiteralPath $supplementPath) { (Get-FileHash -L
 $inputHashes = @{}
 $inputPaths = @((Get-ChildItem -LiteralPath $index -Filter '*.csv').FullName)
 $inputPaths += @((Get-ChildItem -LiteralPath (Join-Path $index 'CSVs') -Filter 'episode-*.csv').FullName)
-$inputPaths += (Join-Path $repo 'reference/indexes/performance-subtitle-coverage.json')
+$inputPaths += (Join-Path $repo 'reference/indexes/performance/performance-subtitle-coverage.json')
 foreach ($path in $inputPaths) { $inputHashes[$path] = (Get-FileHash -LiteralPath $path).Hash }
 $stage = Join-Path $repo ('.tmp/category-workbook/' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $stage -Force | Out-Null

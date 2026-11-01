@@ -1,8 +1,8 @@
 # Project tools
 
 Use this directory to find maintained entry points and their owning documentation. Tests and
-support modules are not separate tools. The reference reorganization is being prepared; existing
-records remain at their original paths until the coordinated migration.
+support modules are not separate tools. Reference records now use the organized index layout;
+the coordinated Phase 3 migration is accepted. Full integration/workbook validation remains Phase 4.
 
 ## Reference review
 
@@ -69,4 +69,5 @@ new scripts into disposable evidence/output directories.
 
 [Phase 2 preparation](../docs/implementation/reference-index-reorganization-phase-2.md) owns the
 pending routing patch and isolated checks. That patch is a migration artifact, not another CLI.
-It must be activated with Phase 3 record moves; current live tools still use the existing paths.
+It was activated with the Phase 3 record moves and is retained as an implementation artifact;
+do not reapply it to the migrated checkout. Full integration validation remains Phase 4.

@@ -9,7 +9,7 @@ occupied lift is key-triggered, OFF lowers it, and engineering units can push-in
 completed OFF. Later MC checks must include reverse operator paths, laptop/case handling and
 Gilliam's cockpit housing. These additions do not change source observations or prove clearance.
 
-Sources resolve through the [interior review](../../../reference/indexes/settei-interior-review.md), [follow-up](../../../reference/indexes/startup-open-items-followup.md), [startup comparison](../../../reference/indexes/startup-sequence-comparison.md), [EP-26 review](../../../reference/indexes/episode-26-platform-review.md) and [component matrix](../component-evidence-matrix.md). B remains a production candidate. Unless stated, no metric travel, timing or collision margin is measured.
+Sources resolve through the [interior review](../../../reference/indexes/settei/reviews/settei-interior-review.md), [follow-up](../../../reference/indexes/comparisons/startup-open-items-followup.md), [startup comparison](../../../reference/indexes/comparisons/startup-sequence-comparison.md), [EP-26 review](../../../reference/indexes/episodes/EP-26/evidence/episode-26-platform-review.md) and [component matrix](../component-evidence-matrix.md). B remains a production candidate. Unless stated, no metric travel, timing or collision margin is measured.
 
 | ID / assembly | Supported motion / states | Space that must stay available | Unknowns / implementation boundary |
 |---|---|---|---|

@@ -234,7 +234,7 @@ def packet_text(value):
 
 
 def inspect_inputs(root, episode, selected, ffprobe, budget):
-    coverage = read_json(root/'reference/indexes/performance-subtitle-coverage.json')
+    coverage = read_json(root/'reference/indexes/performance/performance-subtitle-coverage.json')
     episode_id = f'EP-{episode:02d}'
     entry = next(r for r in coverage['episodes'] if r['episode_id'] == episode_id)
     source = safe_path(root, entry['source'])
@@ -378,7 +378,7 @@ def search(root, episode, selected, ffmpeg, ffprobe, rectangles, pilot_stage=2, 
             # Pin smaller inputs again after inspection to detect changes during decoding too.
             small_inputs = [root/f'reference/indexes/animehistory/CSVs/episode-{episode:02d}.csv',
                             root/f'reference/cache/animehistory-review/EP-{episode:02d}/manifest.json',
-                            root/'reference/indexes/performance-subtitle-coverage.json']
+                            root/'reference/indexes/performance/performance-subtitle-coverage.json']
             coverage = read_json(small_inputs[-1])
             entry = next(r for r in coverage['episodes'] if r['episode_id']==f'EP-{episode:02d}')
             small_inputs.append(safe_path(root,entry['local_subtitle']))

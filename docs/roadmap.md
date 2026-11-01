@@ -16,9 +16,9 @@ Completed and previously confirmed:
 - All-26-episode English full-dialogue subtitle performance screening, 47 curated records and separately classified numerical inferences; Japanese audio and priority visual checks remain open.
 - Shared command/state and future external-control compatibility requirements, without adapters, transport or AI implementation.
 
-Evidence/history remain in [reference progress](reconstruction/reference-phase-progress.md), [reference index](reconstruction/xgp-reference-index.md) and [performance audit](../reference/indexes/performance-subtitle-audit.md).
+Evidence/history remain in [reference progress](reconstruction/reference-phase-progress.md), [reference index](reconstruction/xgp-reference-index.md) and [performance audit](../reference/indexes/performance/performance-subtitle-audit.md).
 
-The retrospective [Episode 4 reconciliation](../reference/indexes/episode-04-reconciliation-review.md)
+The retrospective [Episode 4 reconciliation](../reference/indexes/episodes/EP-04/evidence/episode-04-reconciliation-review.md)
 updates the initial survey and its documentation, accepted by the maintainer on 2026-10-29. It adds translated scene
 context and bounded timing references, without changing accepted spatial/behavior contracts or
 authorizing Phase 3.2A. Its workbook and archive-retention checks are recorded with the findings.

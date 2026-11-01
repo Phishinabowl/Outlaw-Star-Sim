@@ -46,7 +46,7 @@ cached all 354 images and verified 15 sheets, including the final 18-image sheet
 recovery tests and a full live RAR round trip passed. The authored category index and generated
 browsing view are initialized. All 354 Episode 4 gallery images and nine manual supplements have
 completed the annotated initial review; gallery locator 007 retains an identity recheck. The
-[authored index and survey record](../../reference/indexes/animehistory/README.md#episode-4-category-survey-progress)
+[authored index and survey record](../../reference/indexes/episodes/EP-04/survey/episode-04-survey-history.md#episode-4-category-survey-progress)
 own current coverage and recheck items. Episode 4's verified RAR now contains gallery originals
 and all nine manual PNGs; expanded originals are pruned and all 15 contact sheets retained.
 Live restore and unchanged sheet regeneration passed. The completed pilot and operating procedure
@@ -572,6 +572,9 @@ The subsequently authorized [reorganization Phase 2 preparation](reference-index
 was implemented, tested and accepted on 2026-11-01: navigation and ignore protection
 are in place and the routing patch is isolated-tested. Live routing, record moves and historical
 helper moves remain deferred to Phase 3; no episode review or 3.2A work starts automatically.
+The subsequently authorized [reorganization Phase 3 migration](reference-index-reorganization-phase-3.md)
+was implemented, checked and accepted on 2026-11-01. Record/helper moves and
+routing activation are complete; Phase 4 integration/workbook validation remains unstarted.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
 **Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete
@@ -698,39 +701,39 @@ review workflow, not a full-show alignment prerequisite.
   locator 007 still NEEDS_RECHECK. Episode 1 preparation is authorized and complete: 354 images,
   15 verified contact sheets and a bounded six-record secondary context brief. Its annotated survey
   is underway: the first three sheets (001–072) received individual initial-review annotations.
-  The [2026-10-27 subtitle-context follow-up](../../reference/indexes/episode-01-subtitle-context-review.md)
+  The [2026-10-27 subtitle-context follow-up](../../reference/indexes/episodes/EP-01/evidence/episode-01-subtitle-context-review.md)
   read all 293 English ASS events and checked bounded local scenes. Subsequent maintainer
   clarifications leave 65 first-batch rows SCREENED and seven tentative launch-site rechecks;
   58 have PARTIAL depth for the targeted context check. EP-01-MAN-001 retains the supplied Horus
   missile-salvo screenshot for episode-end RAR retention. Launch
   presentation, fighter roles, Horus drive context and Sentinel III identification are clarified.
-  [Sheets 4–6 (073–144)](../../reference/indexes/episode-01-review-batch-02.md) now have initial
+  [Sheets 4–6 (073–144)](../../reference/indexes/episodes/EP-01/survey/episode-01-review-batch-02.md) now have initial
   annotations with bounded subtitle/scene checks and attributed secondary context. Episode 1
   totals are 137 SCREENED and seven NEEDS_RECHECK; 86 INITIAL_REVIEW_COMPLETE and 58 PARTIAL.
   Maintainer clarifications resolve 084 as boot detailing and 140–144 as the earlier pirate ship;
   seven earlier tentative launch-site rechecks remain.
-  [Sheets 7–9 (145–216)](../../reference/indexes/episode-01-review-batch-03.md) add pirate deployment,
+  [Sheets 7–9 (145–216)](../../reference/indexes/episodes/EP-01/survey/episode-01-review-batch-03.md) add pirate deployment,
   Club Temptation, early Sentinel HQ, Rachel's call and mid-episode graphics references. Episode 1
   now has 209 SCREENED and seven NEEDS_RECHECK; 158 INITIAL_REVIEW_COMPLETE and 58 PARTIAL.
   Cover-profile fields and unnamed companion identity retain explicit limits.
-  [Sheets 10–12 (217–288)](../../reference/indexes/episode-01-review-batch-04.md) add the bodyguard
+  [Sheets 10–12 (217–288)](../../reference/indexes/episodes/EP-01/survey/episode-01-review-batch-04.md) add the bodyguard
   agreement, foot-soldier ambush, red car/control details, repair and roadblock references.
   Episode 1 totals are 281 SCREENED and seven NEEDS_RECHECK; 230 INITIAL_REVIEW_COMPLETE and
   58 PARTIAL. Ordinary-pistol/caster and unknown car mechanism distinctions remain explicit.
   No timing mapping was extended.
-  [Sheets 13–15 (289–354)](../../reference/indexes/episode-01-review-batch-05.md) complete the
+  [Sheets 13–15 (289–354)](../../reference/indexes/episodes/EP-01/survey/episode-01-review-batch-05.md) complete the
   sampled Episode 1 initial survey, adding disguise removal, Tao-magic pursuit, separate blaster
   and caster references, farm/barn staging and Melfina's transport-case reveal. Current totals:
   346 SCREENED / eight NEEDS_RECHECK; 296 INITIAL_REVIEW_COMPLETE and 58 prior PARTIAL records.
   Seven launch-site flags remain, plus locator 350's code O/0 transcription question. Locators
   331–354 remain outside mapping coverage. The
-  [Episode 1 retention checkpoint](../../reference/indexes/episode-01-retention-checkpoint.md)
+  [Episode 1 retention checkpoint](../../reference/indexes/episodes/EP-01/survey/episode-01-retention-checkpoint.md)
   records verified RAR recovery and completed pruning of all 354 expanded gallery originals and
   the manual supplement, retaining all 15 sheets and unchanged annotations. Eight rechecks remain;
   full-video/design verification is not implied. Phase 3.2A remains unstarted.
   The maintainer accepted pending batches 04–05, the tentative case-code follow-up and the
   Episode 1 retention checkpoint on 2026-10-28; unresolved rechecks remain open.
-  [Episode 2 context preparation](../../reference/indexes/episode-02-context-preparation.md)
+  [Episode 2 context preparation](../../reference/indexes/episodes/EP-02/preparation/episode-02-context-preparation.md)
   downloaded all 354 gallery images/generated 15 sheets, verified and read the 387-event English
   ASS track, and registered selected website context. All Episode 2 image annotations remain
   UNREVIEWED / NOT_REVIEWED, with no validated timing mapping. No image review or Phase 3.2A work
@@ -742,47 +745,47 @@ review workflow, not a full-show alignment prerequisite.
   All 69 tests passed, including synthetic Episode 2/26 workflows and a bounded live Episode 2
   candidate-search/cleanup check. No Episode 2 timing mapping or image annotation was accepted;
   episode alignment precedes resumption of the first survey batch. Phase 3.2A remains unstarted.
-  The subsequent [Episode 2 alignment](../../reference/indexes/episode-02-alignment-review.md)
+  The subsequent [Episode 2 alignment](../../reference/indexes/episodes/EP-02/alignment/episode-02-alignment-review.md)
   is verified and accepted by the maintainer on 2026-10-28: four frozen FIT and four independent HOLDOUT matches support
   local = web - 1.286 s for web labels [103,1360), covering gallery 001–348. Ten ambiguous
   attempts remain recorded; 349–354 remains unmapped. Current-input checks, bounded reproduction,
   early/late subtitle-context checks and provenance-gated temporary cleanup passed. The workbook
   is refreshed; image annotations remain unchanged and Phase 3.2A remains unstarted.
-  The subsequent [Episode 2 first survey batch](../../reference/indexes/episode-02-review-batch-01.md)
+  The subsequent [Episode 2 first survey batch](../../reference/indexes/episodes/EP-02/survey/episode-02-review-batch-01.md)
   covers gallery 001–072 using the accepted alignment and translated subtitle context:
   71 SCREENED, one NEEDS_RECHECK (003), all 72 INITIAL_REVIEW_COMPLETE. Maintainer clarification
   resolves 012 as an opening XGP/El Dorado fight vignette with El Dorado's foreground grappler arm.
   Ten scene groups preserve individual equipment states and opening/story distinctions.
   The batch 01 checkpoint left 282 rows untouched. The maintainer accepted the batch and its
   clarification follow-ups on 2026-10-28; Phase 3.2A remains unstarted.
-  The subsequent [Episode 2 second batch](../../reference/indexes/episode-02-review-batch-02.md)
+  The subsequent [Episode 2 second batch](../../reference/indexes/episodes/EP-02/survey/episode-02-review-batch-02.md)
   covers 073–144 with aligned subtitle context and bounded local samples. Combined coverage:
   144 INITIAL_REVIEW_COMPLETE, 143 SCREENED and one NEEDS_RECHECK (003), with 210 untouched.
   Maintainer clarification resolves 097–098 as the prepared rocket attack blocked by pirate magic
   and 107–110 as the dragon attack canceled by Gene's caster shot.
   The maintainer accepted the batch and its clarification follow-ups on 2026-10-28;
   no later batch or Phase 3.2A work is included.
-  The [Episode 2 third batch](../../reference/indexes/episode-02-review-batch-03.md) covers
+  The [Episode 2 third batch](../../reference/indexes/episodes/EP-02/survey/episode-02-review-batch-03.md) covers
   145–216 with aligned subtitles, local samples and scoped website context. Combined coverage:
   216 INITIAL_REVIEW_COMPLETE, 215 SCREENED and one NEEDS_RECHECK (003), with
   138 untouched. Dropship/main-Horus, bumper and childhood-memory boundaries remain explicit.
   Maintainer context identifies the hired attackers and father's control-hand insert, and
   corrects the rescue view to the closed escape-pod door/window; tentative details remain leads.
   The maintainer accepted this batch and its follow-ups on 2026-10-28 during Episode 2 closeout.
-  The [Episode 2 fourth batch](../../reference/indexes/episode-02-review-batch-04.md) covers
+  The [Episode 2 fourth batch](../../reference/indexes/episodes/EP-02/survey/episode-02-review-batch-04.md) covers
   217–288 with aligned subtitle context and 21 full-size checks. Fifteen groups preserve Horus
   docking/boarding, Swanzo's greeting and station warning, exterior inserts, shopping/fitting and
   the bar. Combined coverage: 288 INITIAL_REVIEW_COMPLETE, 287 SCREENED, one NEEDS_RECHECK
   (003), with 66 untouched. Unknown companion identity and mechanical/pressure limits remain
   qualified. No new decoded samples were generated. The maintainer accepted this batch on
   2026-10-28 during Episode 2 closeout.
-  The [Episode 2 final batch](../../reference/indexes/episode-02-review-batch-05.md) covers
+  The [Episode 2 final batch](../../reference/indexes/episodes/EP-02/survey/episode-02-review-batch-05.md) covers
   289–354 with translated subtitles, 26 full-size checks and 18 explicit local samples.
   All 354 rows are INITIAL_REVIEW_COMPLETE: 353 SCREENED and one NEEDS_RECHECK (003).
   McCoy's image identity is recorded separately from the unidentified yellow machine; gallery
   349–354 remains outside accepted alignment coverage. The final review was accepted and
   episode-level cleanup authorized on 2026-10-28. The
-  [retention checkpoint](../../reference/indexes/episode-02-retention-checkpoint.md) owns archive,
+  [retention checkpoint](../../reference/indexes/episodes/EP-02/survey/episode-02-retention-checkpoint.md) owns archive,
   recovery and pruning evidence. EP-02.rar passed native integrity and two staged recovery checks;
   expanded originals are removed and all 15 sheets retained. Preservation checks matched all
   20 CSV/sheet/registry hashes. Both generated views are refreshed. The initial survey is closed
@@ -792,23 +795,23 @@ review workflow, not a full-show alignment prerequisite.
   with zero missing/failed and 15 contact sheets generated. All sheet hashes and ordered locator
   mappings passed; first/middle/final layouts were checked for presentation only. All Episode 3
   rows remain UNREVIEWED / NOT_REVIEWED; subtitle/context preparation and episode-specific
-  alignment remain the next separate scope. The [index preparation record](../../reference/indexes/animehistory/README.md#episode-3-gallery-preparation--2026-10-28)
+  alignment remain the next separate scope. The [index preparation record](../../reference/indexes/episodes/EP-03/preparation/episode-03-preparation-history.md#episode-3-gallery-preparation--2026-10-28)
   owns counts, storage and evidence limits. No Phase 3.2A work is included.
-  The subsequent [Episode 3 subtitle/context preparation](../../reference/indexes/episode-03-context-preparation.md)
+  The subsequent [Episode 3 subtitle/context preparation](../../reference/indexes/episodes/EP-03/preparation/episode-03-context-preparation.md)
   reads all 372 English ASS events and registers four selected Fandom captures plus nine
   source-checked secondary assertions using the cached AnimeHistory synopsis as well.
   Media/subtitle identity and bounded packet checks passed; route and later-episode limits
   remain explicit. All Episode 3 image rows remain UNREVIEWED / NOT_REVIEWED; episode-specific
   alignment is still the next separate step. The maintainer accepted the gallery and context
   preparation checkpoint on 2026-10-28; Phase 3.2A remains unstarted.
-  The subsequent [Episode 3 alignment](../../reference/indexes/episode-03-alignment-review.md)
+  The subsequent [Episode 3 alignment](../../reference/indexes/episodes/EP-03/alignment/episode-03-alignment-review.md)
   passes the OFFSET gates with six FIT and four independent HOLDOUT anchors: local = web
   -1.4845 s for web labels 01:47–23:00. Gallery 002–352 has navigation coverage; 001 and
   353–354 remain unmapped. Six ambiguous attempts remain explicit. Current-input verification,
   two reproductions and two subtitle/scene checks passed. All image annotations remain
   UNREVIEWED / NOT_REVIEWED. The maintainer accepted this alignment checkpoint on 2026-10-28.
   No Phase 3.2A work is included.
-  The subsequent [Episode 3 batch 01](../../reference/indexes/episode-03-review-batch-01.md)
+  The subsequent [Episode 3 batch 01](../../reference/indexes/episodes/EP-03/survey/episode-03-review-batch-01.md)
   initially reviews gallery 001–072 using three sheets, 19 selected originals including the
   follow-up inspection of 013, translated
   subtitle cues and accepted alignment: 71 SCREENED, one NEEDS_RECHECK (005), all 72
@@ -816,13 +819,13 @@ review workflow, not a full-show alignment prerequisite.
   reveal and the separate hotel attacker are distinguished; Mikey's appearance remains a
   lead. The maintainer accepted the batch and follow-up corrections on 2026-10-29;
   no Phase 3.2A work is included.
-  The subsequent [Episode 3 batch 02](../../reference/indexes/episode-03-review-batch-02.md)
+  The subsequent [Episode 3 batch 02](../../reference/indexes/episodes/EP-03/survey/episode-03-review-batch-02.md)
   initially reviews gallery 073–144 using three sheets, 25 selected originals, translated
   subtitle cues and accepted alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE;
   144 Episode 3 rows are initially reviewed and 210 remain untouched. Horus cockpit/station,
   dock-release, class-C pursuit and Orta-Honehone references are indexed with mechanism and
   identity limits. Accepted by the maintainer on 2026-10-29; no Phase 3.2A work is included.
-  The subsequent [Episode 3 batch 03](../../reference/indexes/episode-03-review-batch-03.md)
+  The subsequent [Episode 3 batch 03](../../reference/indexes/episodes/EP-03/survey/episode-03-review-batch-03.md)
   initially reviews gallery 145–216 using three sheets, 22 selected originals, translated
   subtitle cues and accepted alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE;
   216 Episode 3 rows are initially reviewed and 138 remain untouched. Orta-Honehone maneuver,
@@ -830,26 +833,26 @@ review workflow, not a full-show alignment prerequisite.
   mid-episode graphics are EYECATCH. Maintainer clarification identifies 196–197 as Horus's
   sub-ether activation/disappearance sequence; exact effect timing/mechanics remain unverified.
   Accepted by the maintainer on 2026-10-29; no Phase 3.2A work is included.
-  The subsequent [Episode 3 batch 04](../../reference/indexes/episode-03-review-batch-04.md)
+  The subsequent [Episode 3 batch 04](../../reference/indexes/episodes/EP-03/survey/episode-03-review-batch-04.md)
   initially reviews gallery 217–288 using three sheets, 25 selected originals, translated
   subtitle cues and accepted alignment. All 72 new rows are SCREENED / INITIAL_REVIEW_COMPLETE;
   288 Episode 3 rows are initially reviewed and 66 remain untouched. Horus cockpit access,
   gunner handoff and missile bank, rendezvous wreckage, pirate ship/fighters and command-space
   references are indexed. Joint wreckage attribution, provisional leader names and motion/scale
   limits remain explicit. Accepted by the maintainer on 2026-10-29; no Phase 3.2A work is included.
-  The subsequent [Episode 3 final batch](../../reference/indexes/episode-03-review-batch-05.md)
+  The subsequent [Episode 3 final batch](../../reference/indexes/episodes/EP-03/survey/episode-03-review-batch-05.md)
   initially reviews gallery 289–354 using three sheets, 26 selected originals, translated
   subtitles, cached website context and accepted alignment. All 354 Episode 3 gallery rows
   are now INITIAL_REVIEW_COMPLETE (353 SCREENED, one NEEDS_RECHECK at 005). Horus marking,
   pirate/El Dorado details, recorded governor message and stellar/asteroid approach references
   are indexed with timing, identity and mechanism limits. The maintainer accepted the
   remaining survey batches and clarifications on 2026-10-29, including image 347's future
-  reference value. Subsequent authorized [Episode 3 retention cleanup](../../reference/indexes/episode-03-retention-checkpoint.md)
+  reference value. Subsequent authorized [Episode 3 retention cleanup](../../reference/indexes/episodes/EP-03/survey/episode-03-retention-checkpoint.md)
   created and recovery-verified the complete 354-image RAR, then independently verified it
   before pruning expanded copies. All 15 contact sheets and maintained CSVs are preserved;
   64,204,169 duplicate expanded bytes were reclaimed. The maintainer confirmed the retention
   checkpoint for publication on 2026-10-29; Phase 3.2A remains unstarted.
-  The subsequent [Episode 4 context retrofit preparation](../../reference/indexes/episode-04-context-preparation.md)
+  The subsequent [Episode 4 context retrofit preparation](../../reference/indexes/episodes/EP-04/preparation/episode-04-context-preparation.md)
   reads all 355 English ASS events, pins source/subtitle provenance, reuses the original context
   pilot and adds bounded episode-summary/Gilliam context. Earlier survey observations, reported
   corrections, supplements and timing values are preserved. Missile naming, systems-role and
@@ -857,7 +860,7 @@ review workflow, not a full-show alignment prerequisite.
   on 2026-10-29; the subsequent alignment checkpoint is recorded below and the
   annotation/documentation sweep remains separate.
   No Phase 3.2A work is included.
-  The subsequent [Episode 4 alignment](../../reference/indexes/episode-04-alignment-review.md)
+  The subsequent [Episode 4 alignment](../../reference/indexes/episodes/EP-04/alignment/episode-04-alignment-review.md)
   is implemented, verified and accepted by the maintainer on 2026-10-29: five FIT and four independent
   HOLDOUT matches validate offset -1.2415 s over gallery 004–342 (nine direct intervals,
   330 estimates). Fifteen edge images remain unmapped and ten ambiguous attempts remain explicit.
@@ -865,7 +868,7 @@ review workflow, not a full-show alignment prerequisite.
   Prior annotations, context preparation and the RAR are preserved; restored gallery/supplements
   remain for the separately scoped reconciliation sweep, followed by the established prune step.
   Neither that sweep nor Phase 3.2A has started.
-  The subsequent [Episode 4 reconciliation sweep](../../reference/indexes/episode-04-reconciliation-review.md)
+  The subsequent [Episode 4 reconciliation sweep](../../reference/indexes/episodes/EP-04/evidence/episode-04-reconciliation-review.md)
   audits all 354 gallery records and nine supplements against sheets, selected originals, accepted
   timing and translated/source context. Implemented, verified and accepted on 2026-10-29: two eye-state summaries
   corrected, present-day 254 marked STORY, scoped limits added and 48 secondary image links added.
@@ -883,90 +886,90 @@ review workflow, not a full-show alignment prerequisite.
   and both refreshed workbooks remain unchanged. No redundant workbook rebuild or media restore
   is required. The maintainer accepted the combined retrospective increment on 2026-10-29;
   no next episode or 3.2A work starts automatically.
-  The subsequent [Episode 5 preparation](../../reference/indexes/episode-05-context-preparation.md)
+  The subsequent [Episode 5 preparation](../../reference/indexes/episodes/EP-05/preparation/episode-05-context-preparation.md)
   records all 354 gallery images and 15 verified sheets, the full 379-event subtitle read and
   selected website context. Seven secondary assertions and 32 links are added; earlier records,
   image annotations and timing registers are preserved. Validation and the refreshed context
   workbook passed on 2026-10-30; the maintainer accepted preparation on the same date. Alignment
   results follow; image review remains a separate next step. No Phase 3.2A work is included.
-  The subsequent [Episode 5 alignment](../../reference/indexes/episode-05-alignment-review.md)
+  The subsequent [Episode 5 alignment](../../reference/indexes/episodes/EP-05/alignment/episode-05-alignment-review.md)
   passed bounded validation on 2026-10-30: three FIT and four independent HOLDOUT matches support
   offset -1.232 s across web labels 01:43–22:58, covering all 354 sampled images with seven
   direct intervals and 347 estimates. Six ambiguous attempts remain explicit. Current-input,
   reproduction, preservation and workbook checks passed; all four temporary search runs were
   removed. The maintainer accepted alignment on 2026-10-30. Image review and Phase 3.2A remain unstarted.
-  The subsequent [Episode 5 batch 01](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-01-2026-10-30)
+  The subsequent [Episode 5 batch 01](../../reference/indexes/episodes/EP-05/survey/episode-05-survey-history.md#episode-5-annotated-survey--batch-01-2026-10-30)
   initially reviews 001–072: 71 SCREENED and one NEEDS_RECHECK at 002, all INITIAL_REVIEW_COMPLETE.
   Unpainted XGP service views and Swanzo's chamber/suit are retained as useful references;
   Mikey's appearance association is scoped to call/dock continuity. No targeted deep review or
   phase advance is implied. Validation and workbook checks are recorded with the batch;
   the maintainer accepted the batch on 2026-10-30. The remaining 282 Episode 5 images are unreviewed.
-  A subsequent [Mikey identification reconciliation](../../reference/indexes/animehistory/README.md#cross-episode-mikey-identification--2026-10-30)
+  A subsequent [Mikey identification reconciliation](../../reference/indexes/comparisons/mikey-identification.md#cross-episode-mikey-identification--2026-10-30)
   updates 18 Episode 2 and 12 Episode 3 mechanic rows using Episode 5 dialogue/visual continuity.
   Cropped/distant views remain qualified, and earlier attributed notes are preserved.
   The maintainer accepted this catalogue correction on 2026-10-30; no phase advance is implied.
-  [Episode 5 batch 02](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-02-2026-10-30)
+  [Episode 5 batch 02](../../reference/indexes/episodes/EP-05/survey/episode-05-survey-history.md#episode-5-annotated-survey--batch-02-2026-10-30)
   initially reviews 073–144 with aligned subtitle and cached website context. Unpainted hull,
   Blue Heaven environments and Aisha appearance/action references remain separated from
   technical interpretations. All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE; 210 Episode 5
   rows remained unreviewed at that checkpoint. The maintainer accepted batch 02 on 2026-10-30; no phase advance.
-  [Episode 5 batch 03](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-03-2026-10-30)
+  [Episode 5 batch 03](../../reference/indexes/episodes/EP-05/survey/episode-05-survey-history.md#episode-5-annotated-survey--batch-03-2026-10-30)
   initially reviews 145–216: Aisha appearance/action, the mid-episode graphics and the Blue Heaven
   garden conversation. Artificial-flower dialogue, Melfina's origin questions and Gene's promise
   remain scoped to observed images and translated statements. All 72 rows are SCREENED /
   INITIAL_REVIEW_COMPLETE; 138 Episode 5 rows remained unreviewed at that checkpoint.
   The maintainer accepted batch 03 on 2026-10-30; no phase advance.
-  [Episode 5 batch 04](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-04-2026-10-30)
+  [Episode 5 batch 04](../../reference/indexes/episodes/EP-05/survey/episode-05-survey-history.md#episode-5-annotated-survey--batch-04-2026-10-30)
   initially reviews 217–288: Jim's equipment-shop surroundings, renewed Aisha confrontation,
   restaurant setting and the offered caster shell. Power and energy claims remain dialogue;
   shell number 12 is a translated identifier, with no mechanism/effect established here.
   All 72 rows are SCREENED / INITIAL_REVIEW_COMPLETE; 66 Episode 5 rows remained unreviewed
   at that checkpoint.
   The maintainer accepted batch 04 on 2026-10-30; no phase advance.
-  [Episode 5 batch 05](../../reference/indexes/animehistory/README.md#episode-5-annotated-survey--batch-05-2026-10-30)
+  [Episode 5 batch 05](../../reference/indexes/episodes/EP-05/survey/episode-05-survey-history.md#episode-5-annotated-survey--batch-05-2026-10-30)
   initially reviews the final 289–354: caster handling/aftermath, red hull and dock views,
   station chart-room discussion, departure cockpit controls and Aisha's restaurant work.
   All 354 sampled gallery rows now have INITIAL_REVIEW_COMPLETE status (353 SCREENED,
   one NEEDS_RECHECK at 002). Caster-action supplements between 289 and 295 were pending
   at that checkpoint; no full mechanism analysis or phase advance is implied.
   The maintainer accepted batch 05 on 2026-10-30; no phase advance.
-  The subsequent [caster supplement increment](../../reference/indexes/animehistory/README.md#episode-5-caster-supplements--2026-10-30)
+  The subsequent [caster supplement increment](../../reference/indexes/episodes/EP-05/evidence/episode-05-supplement-history.md#episode-5-caster-supplements--2026-10-30)
   preserves all 16 supplied images in order as EP-05-MAN-001–016, with whole-second player
   labels, hashes and contextual gallery links. Loading/closure, flare, muzzle/discharge and
   target-reaction states are indexed without exact timing or internal-mechanism claims.
   Supplement validation passed; maintainer acceptance and Episode 5 archive/cleanup were
   pending at that checkpoint. No phase advance is implied.
-  The subsequent [Episode 5 retention checkpoint](../../reference/indexes/animehistory/README.md#episode-5-retention-checkpoint--2026-10-30)
+  The subsequent [Episode 5 retention checkpoint](../../reference/indexes/episodes/EP-05/survey/episode-05-retention-checkpoint.md#episode-5-retention-checkpoint--2026-10-30)
   records authorized cleanup: the complete verified format-2 RAR retains 354 gallery originals
   and all 16 manual PNGs. Independent recovery checks passed before expanded media were pruned;
   all 15 contact sheets and authored records remain. Alignment has no remaining temporary runs.
   Archive hash and preservation checks passed. The maintainer accepted the final batch,
   caster supplements and retention checkpoint on 2026-10-30.
   Episode 6 and Phase 3.2A are not started automatically.
-  The subsequent authorized [Episode 6 gallery preparation](../../reference/indexes/animehistory/README.md#episode-6-gallery-preparation--2026-10-30)
+  The subsequent authorized [Episode 6 gallery preparation](../../reference/indexes/episodes/EP-06/preparation/episode-06-preparation-history.md#episode-6-gallery-preparation--2026-10-30)
   downloaded and verified all 354 originals and generated 15 chronological contact sheets.
   Hash/inventory, ordered locator mapping and representative visual layout checks passed;
   the maintainer accepted this checkpoint on 2026-10-30. All Episode 6 rows remained unreviewed,
   with context/alignment pending at that checkpoint. No Phase 3.2A work is included.
-  The subsequent [Episode 6 subtitle/website preparation](../../reference/indexes/episode-06-context-preparation.md)
+  The subsequent [Episode 6 subtitle/website preparation](../../reference/indexes/episodes/EP-06/preparation/episode-06-context-preparation.md)
   verifies the existing subtitle/source provenance, reads all 365 ordered ASS events and adds
   selected secondary context for Fred, Suzuka and the equipment bargain. Context validation,
   preservation checks and the refreshed workbook passed; the maintainer accepted preparation
   on 2026-10-30. Gallery annotations remained unreviewed and alignment was the next step.
   Spaceport/referral spelling differences and equipment-mechanism limits remain explicit.
-  The subsequent [Episode 6 alignment](../../reference/indexes/episode-06-alignment-review.md)
+  The subsequent [Episode 6 alignment](../../reference/indexes/episodes/EP-06/alignment/episode-06-alignment-review.md)
   validates ALNMAP-000012 for web labels 01:47–21:18 at offset -1.5185 s, with seven
   direct intervals and 316 estimates. First/final unsupported edges total 31 unmapped images;
   seven ambiguous attempts remain recorded. Current-input checks, frame reproduction,
   workbook refresh and five-run temporary cleanup passed. The maintainer accepted alignment
   on 2026-10-30; image annotation and Phase 3.2A remain unstarted at acceptance.
-  [Episode 6 batch 01](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-01-2026-10-30)
+  [Episode 6 batch 01](../../reference/indexes/episodes/EP-06/survey/episode-06-survey-history.md#episode-6-annotated-survey--batch-01-2026-10-30)
   initially reviews 001–072: opening imagery, Sentinel landing/struts, cockpit relationships,
   rental-car travel and Fred's showroom greeting. All 72 have INITIAL_REVIEW_COMPLETE depth,
   with 71 SCREENED and the recurring opening launch craft/facility at 005 NEEDS_RECHECK.
   Records, context links and refreshed workbooks passed validation; the maintainer accepted
   batch 01 on 2026-10-30. The remaining 282 Episode 6 rows and Phase 3.2A remain unstarted.
-  [Episode 6 batch 02](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-02-2026-10-30)
+  [Episode 6 batch 02](../../reference/indexes/episodes/EP-06/survey/episode-06-survey-history.md#episode-6-annotated-survey--batch-02-2026-10-30)
   initially reviews 073–144: Fred's equipment/payment negotiation, connected office/display
   rooms, Suzuka's hooded entry, guard attack, costume and threat. All 72 are SCREENED /
   INITIAL_REVIEW_COMPLETE; combined coverage is 144 with one prior NEEDS_RECHECK. Timings
@@ -974,7 +977,7 @@ review workflow, not a full-show alignment prerequisite.
   spelling limits are retained. Records, contextual links and both refreshed workbooks
   passed validation. The maintainer accepted batch 02 on 2026-10-30; 210 later rows and Phase
   3.2A remained unstarted at that checkpoint.
-  [Episode 6 batch 03](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-03-2026-10-30)
+  [Episode 6 batch 03](../../reference/indexes/episodes/EP-06/survey/episode-06-survey-history.md#episode-6-annotated-survey--batch-03-2026-10-30)
   initially reviews 145–216: Gene's intervention, light shield, weapon handling, office damage,
   equipment bargain, eyecatch and the wooden-sword/sensor explanation. All 72 are SCREENED /
   INITIAL_REVIEW_COMPLETE; combined coverage is 216 with one prior NEEDS_RECHECK. Image 180
@@ -982,7 +985,7 @@ review workflow, not a full-show alignment prerequisite.
   weapon, handheld-device and sensor-mechanism limits remain explicit. Records, context links
   and refreshed workbooks passed validation. The maintainer accepted batch 03 on 2026-10-30;
   138 later rows and Phase 3.2A remained unstarted at that checkpoint.
-  [Episode 6 batch 04](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-04-2026-10-30)
+  [Episode 6 batch 04](../../reference/indexes/episodes/EP-06/survey/episode-06-survey-history.md#episode-6-annotated-survey--batch-04-2026-10-30)
   initially reviews 217–288: departure from Fred, street/alley pursuit, truck encounter,
   rental-car pickup and mirror, rocky outskirts, concentrated light shield and captured
   sword/sash. All 72 are SCREENED / INITIAL_REVIEW_COMPLETE; combined coverage is 288
@@ -990,7 +993,7 @@ review workflow, not a full-show alignment prerequisite.
   Sampled action, shield mechanism and vehicle/astronomical scale limits remain explicit.
   Record preservation, cached-source verification and both refreshed workbook checks passed.
   The maintainer accepted batch 04 on 2026-10-30; 66 later rows remained unstarted at that checkpoint.
-  [Episode 6 batch 05](../../reference/indexes/animehistory/README.md#episode-6-annotated-survey--batch-05-2026-10-30)
+  [Episode 6 batch 05](../../reference/indexes/episodes/EP-06/survey/episode-06-survey-history.md#episode-6-annotated-survey--batch-05-2026-10-30)
   initially reviews 289–354: draw/pride negotiation, symbolic death and target-priority
   agreement, returned items, coat recovery, showroom transaction and crew departure.
   All 354 Episode 6 rows are INITIAL_REVIEW_COMPLETE: 353 SCREENED and one prior
@@ -999,7 +1002,7 @@ review workflow, not a full-show alignment prerequisite.
   and the ending's continuing-challenge limits remain explicit. Record preservation, context
   validation, cached-source verification and both refreshed workbook checks passed. The maintainer
   accepted batch 05 on 2026-10-30; archive/prune closeout is separate. Phase 3.2A remains unstarted.
-  The subsequent [Episode 6 retention checkpoint](../../reference/indexes/animehistory/README.md#episode-6-retention-checkpoint--2026-10-30)
+  The subsequent [Episode 6 retention checkpoint](../../reference/indexes/episodes/EP-06/survey/episode-06-retention-checkpoint.md#episode-6-retention-checkpoint--2026-10-30)
   records authorized cleanup: a complete format-2 RAR retains all 354 gallery originals,
   with no registered Episode 6 supplements. Archive integrity and independent recovery
   verification passed before the expanded cache was pruned. All 15 contact sheets and
@@ -1262,7 +1265,7 @@ No detailed art, new mechanics or full production rigs are added by this checkpo
 
 **Prerequisite:** Phase 5 exit; VS-D03/05 decisions. **Deliverable:** functional apparatus sequence with occupant proxy.
 
-Optional later visual comparison: [fan pod render note](../../reference/indexes/fan-melfina-pod-reference.md).
+Optional later visual comparison: [fan pod render note](../../reference/indexes/supplied-references/fan-melfina-pod-reference.md).
 Third-party reference only; use our own assets and primary source constraints. It establishes no
 dimensions, animation/rig behavior or asset reuse/publication permission.
 
@@ -1489,8 +1492,8 @@ is the initial candidate: after an explicitly chosen sequence endpoint, present 
 before a possible fade to black or return to the menu. Checkpoints and location changes are
 other possible uses; exact triggers, timing, visual treatment and destination remain undecided.
 
-[SET-051](../../reference/indexes/settei-collection-review-batch-13.md#SET-051) provides title artwork
-and production-notation reference. Three [supplied screenshots](../../reference/indexes/to-be-continued-supplied-reference.md)
+[SET-051](../../reference/indexes/settei/batches/settei-collection-review-batch-13.md#SET-051) provides title artwork
+and production-notation reference. Three [supplied screenshots](../../reference/indexes/supplied-references/to-be-continued-supplied-reference.md)
 show the oversized “To”, oversized “be” and complete end-title compositions in the reported order.
 The intended future treatment follows the reported pattern: overlay “To” and then “be” on the
 ending scene, then cut to the complete title on black, with one gunshot synchronized to each of

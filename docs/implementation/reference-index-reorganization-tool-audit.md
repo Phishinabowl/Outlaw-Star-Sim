@@ -1,6 +1,6 @@
 # Tool and dependency audit ledger — Phase 1.2
 
-Status: Phase 1.2 static audit and consolidation scope accepted by the maintainer 2026-10-31; migration and runtime changes unimplemented.
+Status: Phase 1.2 audit accepted 2026-10-31; Phase 3 migration/routing implemented and accepted 2026-11-01.
 Audit date: 2026-10-30 (America/New_York); consolidation scope amended and accepted 2026-10-31.
 
 This ledger owns the tool inventory and producer/consumer findings for the
@@ -8,6 +8,10 @@ This ledger owns the tool inventory and producer/consumer findings for the
 [file/section migration ledger](reference-index-reorganization-ledger.md) owns destinations;
 the accepted [Phase 1.1 baseline](reference-index-reorganization-baseline.json) remains frozen.
 Inventory material formerly in the plan is relocated here; the plan owns execution checklists.
+
+The tables and source line numbers below describe the static pre-migration audit. The
+[Phase 3 migration record](reference-index-reorganization-phase-3.md) now owns activation and
+preservation results; active references have been repaired and historical helpers have moved.
 
 ## Tool and helper inventory
 
@@ -386,8 +390,8 @@ The 33 scripts below were read as text and hashed, not executed. The existing in
 their purpose. Only seven contain direct index/README reference lines; many other temporary scripts
 import the maintained category module and write shared annotation tables. No direct moved-root
 dependency does not make those scripts safe to replay. All remain ignored and unchanged at their
-original locations. The table now also owns their planned historical destinations. Every row is
-PLANNED_NOT_MOVED; the original SHA-256 must match before and after relocation.
+original locations at the audit checkpoint. Phase 3 moved them to the table's historical destinations:
+every row is now MOVED_HASH_VERIFIED, with original paths absent and ignored targets.
 Preserve historical script bytes; any later reuse requires a current-data check and explicit scope.
 
 | Original helper | Historical destination | SHA-256 | Direct index/README reference lines |

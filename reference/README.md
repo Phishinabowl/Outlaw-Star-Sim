@@ -2,7 +2,8 @@
 
 Use the [index navigation](indexes/README.md) to find evidence collections and the
 [project tool directory](../tools/README.md) to find maintained entry points. The reference
-reorganization is being prepared; current record locations remain linked until migration.
+reorganization has moved the records and activated the corresponding routing changes; Phase 4
+integration validation and acceptance remain pending.
 
 The [cross-site context tool](../tools/reference-context/README.md) adds a shared
 `reference/indexes/context/` collection for condensed AnimeHistory/Fandom research, with separate
@@ -14,32 +15,32 @@ maintainer-reported native filtering and link checks; further episode surveys re
 [pre-3.2A checkpoint](../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns execution order. Existing image indexes, media archives and observations retain their ownership.
 
-[All-episode subtitle performance audit](indexes/performance-subtitle-audit.md) searches the full English dialogue tracks of all 26 numbered episodes. The [metric CSV](indexes/performance-metrics.csv) contains curated context-reviewed leads, and [coverage JSON](indexes/performance-subtitle-coverage.json) records sources/stream selection/hashes. Full subtitle/candidate text remains local-only under ignored working storage.
+[All-episode subtitle performance audit](indexes/performance/performance-subtitle-audit.md) searches the full English dialogue tracks of all 26 numbered episodes. The [metric CSV](indexes/performance/performance-metrics.csv) contains curated context-reviewed leads, and [coverage JSON](indexes/performance/performance-subtitle-coverage.json) records sources/stream selection/hashes. Full subtitle/candidate text remains local-only under ignored working storage.
 
 Original source folders are read-only and ignored. Generated frames, contact sheets, caches, and working images are ignored. Authored indexes and textual evidence are trackable.
 
-Run tools/reference-extraction/inventory.py using Python with Pillow. It inventories both source folders, hashes scans, records image dimensions, writes reference/indexes/source-manifest.json, and generates labeled settei contact sheets under reference/contact-sheets/. Episode videos are listed but not decoded or hashed by default.
+Run tools/reference-extraction/inventory.py using Python with Pillow. It inventories both source folders, hashes scans, records image dimensions, writes reference/indexes/sources/source-manifest.json, and generates labeled settei contact sheets under reference/contact-sheets/. Episode videos are listed but not decoded or hashed by default.
 
 Index fields: source ID, filename, visible sheet number, Japanese title, English translation, subject, category, verification status, reconstruction relevance, region/system, measurements/callouts, questions. Unknown fields remain blank; unreviewed is explicit.
 
 Targeted episode extraction has been performed for approved intervals; broad extraction remains unapproved. Frame records identify exact source filename, requested time, decoded PTS, stream, command/version and observations. User-supplied screenshots carry separate capture-provenance limits; do not assign them inferred exact timestamps from another release.
 
-The user's [image map](image-map.md) is preserved as original review notes. [Image map reconciliation](indexes/image-map-reconciliation.md) records resolved sheet identities, corrections, and episode-verification leads; use the screening CSV for collection-wide status.
+The user's [image map](image-map.md) is preserved as original review notes. [Image map reconciliation](indexes/comparisons/image-map-reconciliation.md) records resolved sheet identities, corrections, and episode-verification leads; use the screening CSV for collection-wide status.
 
 [Local AnimeHistory timestamp indexes](indexes/animehistory/README.md) cover all 26 episodes. HTML and timestamp metadata are cached; screencap images remain online, and gallery times still need alignment to local media.
 
-[Repeated-sheet comparison](indexes/settei-variant-review.md) covers the first eight bridge/engineering variants. [Episode 4 startup evidence](indexes/episode-04-startup-review.md) records focused local frame PTS and observations separately from English-subtitle leads. Frame PNGs/logs and the working subtitle copy remain ignored; textual manifests are trackable.
+[Repeated-sheet comparison](indexes/settei/reviews/settei-variant-review.md) covers the first eight bridge/engineering variants. [Episode 4 startup evidence](indexes/episodes/EP-04/evidence/episode-04-startup-review.md) records focused local frame PTS and observations separately from English-subtitle leads. Frame PNGs/logs and the working subtitle copy remain ignored; textual manifests are trackable.
 
-[Startup open-item follow-up](indexes/startup-open-items-followup.md) tracks the six priority questions, closer handle/hatch evidence, six further geometry-critical variants and selected Japanese propulsion labels. It also records which questions still need remembered episode leads or original-language audio review.
+[Startup open-item follow-up](indexes/comparisons/startup-open-items-followup.md) tracks the six priority questions, closer handle/hatch evidence, six further geometry-critical variants and selected Japanese propulsion labels. It also records which questions still need remembered episode leads or original-language audio review.
 
-The user's [episode-time notes](episode-times.md) are retained unchanged; the corrected Episode 7 endpoint and verified scene findings are in [the Episodes 4/7/8 startup comparison](indexes/startup-sequence-comparison.md). This separates commissioning, simulated fault practice and actual standby-to-launch operation.
+The user's [episode-time notes](episode-times.md) are retained unchanged; the corrected Episode 7 endpoint and verified scene findings are in [the Episodes 4/7/8 startup comparison](indexes/comparisons/startup-sequence-comparison.md). This separates commissioning, simulated fault practice and actual standby-to-launch operation.
 
-[Episode 26 entry evidence](indexes/episode-26-platform-review.md) verifies occupant descent. [Episode 11 sub-ether/recovery evidence](indexes/episode-11-subether-review.md) records transition effects, disrupted entry, auxiliary operation and physical key shutdown/restart, with English subtitle findings separated from visuals.
+[Episode 26 entry evidence](indexes/episodes/EP-26/evidence/episode-26-platform-review.md) verifies occupant descent. [Episode 11 sub-ether/recovery evidence](indexes/episodes/EP-11/evidence/episode-11-subether-review.md) records transition effects, disrupted entry, auxiliary operation and physical key shutdown/restart, with English subtitle findings separated from visuals.
 
-[Episodes 1/2 case review](indexes/episode-01-02-melfina-case-review.md),
-[Episode 4 opening/registration review](indexes/episode-04-opening-bootstrap-review.md) and
-[laptop screen review](indexes/episode-04-hilda-laptop-screen-review.md) support the accepted opening.
+[Episodes 1/2 case review](indexes/comparisons/episode-01-02-melfina-case-review.md),
+[Episode 4 opening/registration review](indexes/episodes/EP-04/evidence/episode-04-opening-bootstrap-review.md) and
+[laptop screen review](indexes/episodes/EP-04/evidence/episode-04-hilda-laptop-screen-review.md) support the accepted opening.
 User-verified English audio additions are distinct from cached subtitles/Japanese verification.
-[Fan pod reference](indexes/fan-melfina-pod-reference.md) is third-party inspiration, not canon or
+[Fan pod reference](indexes/supplied-references/fan-melfina-pod-reference.md) is third-party inspiration, not canon or
 permission to reuse/publish assets. Current E/F behavior is owned by the
 [Phase 1.3 closeout](../docs/implementation/phase-1-3-closeout-audit.md), not these source reviews.

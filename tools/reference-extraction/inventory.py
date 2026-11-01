@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def main():
-    index = ROOT / 'reference' / 'indexes'
+    index = ROOT / 'reference' / 'indexes' / 'sources'
     sheets = ROOT / 'reference' / 'contact-sheets' / 'settei'
     index.mkdir(parents=True, exist_ok=True)
     sheets.mkdir(parents=True, exist_ok=True)

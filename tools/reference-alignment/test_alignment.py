@@ -131,7 +131,7 @@ class MatcherTests(unittest.TestCase):
     def fixture_inputs(self):
         source=self.root/'_source_episodes/fixture.mkv';source.parent.mkdir();source.write_bytes(b'video fixture')
         subtitle=self.root/'fixture.ass';subtitle.write_text('Dialogue: 0,0:00:01.00,x\nDialogue: 0,0:00:02.00,x\nDialogue: 0,0:00:03.00,x\n')
-        ep=self.root/'reference/indexes/performance-subtitle-coverage.json';ep.parent.mkdir(parents=True)
+        ep=self.root/'reference/indexes/performance/performance-subtitle-coverage.json';ep.parent.mkdir(parents=True)
         entry=dict(episode_id='EP-01',source='_source_episodes/fixture.mkv',source_bytes=source.stat().st_size,subtitle_stream=1,subtitle_codec='ass',local_subtitle='fixture.ass',subtitle_sha256=a.digest(subtitle))
         ep.write_text(json.dumps(dict(episodes=[entry])))
         locator=self.root/'reference/indexes/animehistory/CSVs/episode-01.csv';locator.parent.mkdir(parents=True)

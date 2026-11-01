@@ -37,9 +37,9 @@ flowchart TD
 | C06 | Canon-supported A key engagement/startup/power presentation EP-04 13:53–14:03; translated generator/main transfer report | Complete reactor topology, battery count and physical switching order unknown. |
 | C07 | Canon-supported translated EP-04 14:06–14:10 systems-ready/ether-standby report | Does not certify all future flight/combat/sub-ether features or authorize departure in Slice 1. |
 
-Evidence: [EP-04 startup review](../../../reference/indexes/episode-04-startup-review.md), [follow-up comparison](../../../reference/indexes/startup-sequence-comparison.md), [EP-26 entry](../../../reference/indexes/episode-26-platform-review.md). The dormant-hangar player experience is a project premise; a fully powerless/storage → battery → auxiliary → main progression is E/F until further evidence. Do not place STANDBY as a universally necessary stage after initial ignition and before every operating mode solely because another scene starts there.
+Evidence: [EP-04 startup review](../../../reference/indexes/episodes/EP-04/evidence/episode-04-startup-review.md), [follow-up comparison](../../../reference/indexes/comparisons/startup-sequence-comparison.md), [EP-26 entry](../../../reference/indexes/episodes/EP-26/evidence/episode-26-platform-review.md). The dormant-hangar player experience is a project premise; a fully powerless/storage → battery → auxiliary → main progression is E/F until further evidence. Do not place STANDBY as a universally necessary stage after initial ignition and before every operating mode solely because another scene starts there.
 
-The [Episode 4 survey reconciliation](../../../reference/indexes/episode-04-reconciliation-review.md)
+The [Episode 4 survey reconciliation](../../../reference/indexes/episodes/EP-04/evidence/episode-04-reconciliation-review.md)
 adds translated context, not new arrows or interlocks: cues 101–112 distinguish Gilliam's other-system
 support from piloting and Melfina's assistance; cues 179–181 distinguish individual engine testing
 from no recorded post-installation test. Main-Horus dialogue at 09:58 is not an early XGP drive state.
@@ -56,7 +56,7 @@ flowchart LR
   D -->|D04: observed liftoff| E[Flight / planetary ascent]
 ```
 
-All four arrows are canon-supported as scene order, A visuals + original-unverified English subtitle callouts: EP-08 12:42–12:46 release/navigation; 13:18–15:00 system checks; 15:00–15:05 stable output/countdown; 15:41 onward launch. [Comparison](../../../reference/indexes/startup-sequence-comparison.md) records exact frames/intervals. Engines running while still supported/docked are distinct from flight. Exact checks enforced as interlocks, tower clearance rules and countdown duration are gameplay architecture TBD. No repeated first-use ribbon procedure is established in this departure.
+All four arrows are canon-supported as scene order, A visuals + original-unverified English subtitle callouts: EP-08 12:42–12:46 release/navigation; 13:18–15:00 system checks; 15:00–15:05 stable output/countdown; 15:41 onward launch. [Comparison](../../../reference/indexes/comparisons/startup-sequence-comparison.md) records exact frames/intervals. Engines running while still supported/docked are distinct from flight. Exact checks enforced as interlocks, tower clearance rules and countdown duration are gameplay architecture TBD. No repeated first-use ribbon procedure is established in this departure.
 
 ## C — sub-ether preparation and disrupted transition, Episode 11
 
@@ -69,9 +69,9 @@ flowchart LR
   C -->|T05: observed missile-hit disruption| F[Disrupted entry / loss of control]
 ```
 
-T01/T02 are canon-supported A effects + translated sequence; T05 is canon-supported A impact/distortion plus translated runaway reports. T03 is D inference for an undamaged completion; T04 remains gameplay architecture TBD rather than a verified normal-exit animation. [EP-11 review](../../../reference/indexes/episode-11-subether-review.md) separates pre-hit rings/broad aft field from disrupted entry effects. The reviewed successful return follows the emergency sequence below, not proof of a routine exit procedure.
+T01/T02 are canon-supported A effects + translated sequence; T05 is canon-supported A impact/distortion plus translated runaway reports. T03 is D inference for an undamaged completion; T04 remains gameplay architecture TBD rather than a verified normal-exit animation. [EP-11 review](../../../reference/indexes/episodes/EP-11/evidence/episode-11-subether-review.md) separates pre-hit rings/broad aft field from disrupted entry effects. The reviewed successful return follows the emergency sequence below, not proof of a routine exit procedure.
 
-Translated interception unavailability during transfer is a state-specific constraint, not a complete weapons lockout. Münchhausen output rise/runaway and four indexed Newton units remain distinct findings; no finalized power-routing diagram. The [performance audit](../../../reference/indexes/performance-subtitle-audit.md) supplies operating points and holds, not fixed charge times, watts, thrust or universal percentage thresholds. Sub-ether implementation is outside Slice 1.
+Translated interception unavailability during transfer is a state-specific constraint, not a complete weapons lockout. Münchhausen output rise/runaway and four indexed Newton units remain distinct findings; no finalized power-routing diagram. The [performance audit](../../../reference/indexes/performance/performance-subtitle-audit.md) supplies operating points and holds, not fixed charge times, watts, thrust or universal percentage thresholds. Sub-ether implementation is outside Slice 1.
 
 ## D — emergency cutoff, auxiliary operation and restart
 

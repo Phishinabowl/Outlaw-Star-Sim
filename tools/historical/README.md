@@ -1,7 +1,8 @@
 # Historical project helpers
 
 This directory owns historical navigation. The `local/` subtree is Git-ignored so relocating the
-33 previously local-only scripts does not publish them. The scripts have not moved yet.
+33 previously local-only scripts does not publish them. All 33 scripts now occupy their ledgered
+historical destinations; original source files are absent and byte hashes are preserved.
 
 The [tool audit ledger](../../docs/implementation/reference-index-reorganization-tool-audit.md#local-helper-inspection-record)
 owns the exact original paths, planned destinations and hashes. Groups under `local/` cover
@@ -13,7 +14,7 @@ host-specific paths, infer the repository from their original location or perfor
 against an earlier data state. Relocation preserves bytes; it does not make them safe to rerun.
 Use the [maintained tool directory](../README.md) for current work.
 
-Phase 3 moves only the 33 named script files after source/destination/hash and ignore checks.
+Phase 3 moved only the 33 named script files after source/destination/hash and ignore checks.
 Generated media, logs, virtual environments, third-party source and surrounding `.tmp`/`.local`
 directories remain with their existing owners. No cleanup of those directories is implied.
 

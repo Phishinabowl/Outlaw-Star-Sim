@@ -32,7 +32,7 @@ sizing and interior are deferred. Earlier discussion, diagrams and dimensions re
 
 The user wants to discuss opening feel and additional episode references before choosing geometry.
 They proposed using Melfina's locked transport case and resuscitation sequence from Episodes 1/2,
-with changed location/preceding events. [Focused source review](../../reference/indexes/episode-01-02-melfina-case-review.md)
+with changed location/preceding events. [Focused source review](../../reference/indexes/comparisons/episode-01-02-melfina-case-review.md)
 records supported visuals, track-qualified English statements and limits.
 
 The opening direction below extends the accepted slice, whose current occupant is a placeholder/script.
@@ -56,7 +56,7 @@ Full character art, crew AI, general inventory and dialogue production do not fo
 | Computer connection region | Under the seated pilot's right-hand captain-chair/control panel, near the ignition-key region | EP-04 04:59–05:00 directly confirms reaching below/beside the panel; precise right-side/key-area placement remains the user's lead/provisional E choice, with connector and electrical relationship unverified |
 | Interior route | Rectangular ship entry leads into hallway space; central passage connects forward cockpit through a minimal dining/common-area shell toward aft engineering, with closed future branches | User selected demo topology and minimal dining-shell inclusion; entry corridor context A, local settei directions B candidate; exact hull coordinates/connections E and unresolved |
 
-[Episode 4 opening/bootstrap review](../../reference/indexes/episode-04-opening-bootstrap-review.md)
+[Episode 4 opening/bootstrap review](../../reference/indexes/episodes/EP-04/evidence/episode-04-opening-bootstrap-review.md)
 connects reveal/boarding/computer operation to Gilliam's introduction and registration, then links the
 existing apparatus/engineering/key-start evidence. The computer proposal supersedes the generic
 switches-to-wake-Gilliam suggestion in this discussion; precise action prerequisites remain unselected.
@@ -127,7 +127,7 @@ flowchart LR
 Arrows represent the user-selected E working route, not confirmed source adjacencies. Source-supported
 constraints remain authoritative: S01 bridge/passage, S02/S03 dining directions, S04 ladder access,
 S10 rail relationship, S12 necessary traversal and S13 incomplete boarding correspondence.
-[Entry/corridor reconciliation](../../reference/indexes/episode-04-entry-hall-review.md) records
+[Entry/corridor reconciliation](../../reference/indexes/episodes/EP-04/evidence/episode-04-entry-hall-review.md) records
 the Gene/Gilliam corridor scene and the relevant settei comparison.
 
 Preserve recognizable passage features and the round floor access hatch H03 separately from the
@@ -152,7 +152,7 @@ stay deferred. The exact hatch position/inside junction is the next reconstructi
 The user asked to locate the hatch before choosing the trip length, recalling an aft/lower-hull
 position and identifying the rectangular outline in EP-04's underside shot. They proposed that the
 entry may lie below the central passage because the cockpit is on the dorsal nose.
-[Exterior comparison](../../reference/indexes/episode-04-hatch-location-review.md) supports lower-hull
+[Exterior comparison](../../reference/indexes/episodes/EP-04/evidence/episode-04-hatch-location-review.md) supports lower-hull
 placement and the settei's hatch-between-grapplers constraint, but does not confirm an aft/near-engineering
 location, exact coordinates or central-passage floor elevation.
 
@@ -201,7 +201,7 @@ The user proposes a continuous cockpit-to-engineering main route, with bulkheads
 a lower boarding area reached from the main passage's round exterior-access hatch H03; and a
 potential separate lower cargo space accessed through another hatch. This is a coherent candidate
 to reconcile, not three newly verified source connections.
-[Passage/entry-level review](../../reference/indexes/passage-entry-level-reconciliation.md) distinguishes:
+[Passage/entry-level review](../../reference/indexes/comparisons/passage-entry-level-reconciliation.md) distinguishes:
 
 - Supported local passage-to-cockpit connection and rail-bearing route context toward engineering.
 - The user's continuous main-route direction; exact length, bends, floor transitions and engineering
@@ -235,7 +235,7 @@ be reconciled at its forward end, even if the exterior hatch is farther aft.
 
 Propose keeping the apparatus cavity beneath the cockpit, the H03 ascent on the passage side of
 the cockpit boundary, and the lower access route beneath the passage rather than passing beneath
-the apparatus. [Evidence and first fit concept](../../reference/indexes/passage-entry-level-reconciliation.md#apparatus-versus-lower-access--first-fit-concept)
+the apparatus. [Evidence and first fit concept](../../reference/indexes/comparisons/passage-entry-level-reconciliation.md#apparatus-versus-lower-access--first-fit-concept)
 record this distinction. No measured dimensions, connector choice or clearance pass is claimed.
 
 This gives the next dimensional proposal three separate volumes to test: apparatus storage/descent,
@@ -448,7 +448,7 @@ footprint or exact left/right staging position is established by these perspecti
 near the rear side-wall/doorway region behind the seats, as the case placement anchor. Open the lid
 toward that side wall, presenting Melfina toward the ship center and player. Keep the case controls
 accessible from the player's approach and her scripted transfer short.
-[Focused shot review](../../reference/indexes/episode-04-cockpit-case-staging-review.md) records
+[Focused shot review](../../reference/indexes/episodes/EP-04/evidence/episode-04-cockpit-case-staging-review.md) records
 05:49.015/05:50.016 and the source limits. Define the side through the shot landmark rather than
 camera-right as a permanent ship-side designation. Exact case footprint, hinge geometry and offset
 from the apparatus cap still need comparison against cap/shield/seat sweeps and doorway visibility;
@@ -493,7 +493,7 @@ Re-inspected existing EP-04 detail 04/05 (05:03.011/05:16.024) and port-458 fram
 (04:59.007). The side view shows the open computer resting atop the instrument/gauge housing,
 with Hilda reaching its keyboard from beside the station. The overhead view locates it on that
 raised console surface within the seat/control assembly, rather than demonstrating placement on
-the seat cushion. This refines OPEN-07 in the [opening review](../../reference/indexes/episode-04-opening-bootstrap-review.md).
+the seat cushion. This refines OPEN-07 in the [opening review](../../reference/indexes/episodes/EP-04/evidence/episode-04-opening-bootstrap-review.md).
 No new frames/audio were extracted and no exact support-surface measurements are established.
 
 Use that upper instrument-console surface as the temporary placement anchor, with readable screen
@@ -589,7 +589,7 @@ User review corrected the cap to open toward the rear of the seat assembly, the 
 entering-right corner and the diagram to show rear approach plus circulation around both sides.
 The user also flagged EP-26's near-doorway tube framing; that shot supplies descent evidence rather
 than the placement anchor. Exact angles, offsets, margins and scene correspondence remain open.
-The [EP-04 headroom review](../../reference/indexes/episode-04-cockpit-headroom-review.md) adds
+The [EP-04 headroom review](../../reference/indexes/episodes/EP-04/evidence/episode-04-cockpit-headroom-review.md) adds
 the user's 07:15 canopy/crew shot, relative character sheets and separately qualified height leads.
 The local canopy/perimeter profile remains to be proposed; no numeric ceiling estimate was verified.
 

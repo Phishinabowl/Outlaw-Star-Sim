@@ -13,13 +13,13 @@ Re-inspected local source scans SET-030/046: 2×2 bank, fixed surrounding bodywo
 central equipment, service-platform/floor structure, Gilliam and maintenance-robot rail. SET-030's
 reviewed 機関コントロール・シリンダー label identifies an engine control cylinder, not a whole
 exterior propulsion unit. Production provenance remains B candidate; existing selected Japanese
-readings remain owned by the [interior review](../../reference/indexes/settei-interior-review.md).
+readings remain owned by the [interior review](../../reference/indexes/settei/reviews/settei-interior-review.md).
 
 Re-inspected EP-04 user-leads-b 01 (13:57.003), startup-detail 14/15 (11:58.009/12:04.015) and
 EP-08 departure-b 05 (13:40.028). The wider states show all four cylinders extended; the detail
 shows Jim's local handle operation. This does not measure stroke or prove separate procedures or
 reachable controls on every upper unit. Existing manifests and
-[startup comparison](../../reference/indexes/startup-sequence-comparison.md) own provenance.
+[startup comparison](../../reference/indexes/comparisons/startup-sequence-comparison.md) own provenance.
 No new extraction/audio review; original sources and ignored frame files are unchanged.
 
 Subsequent exterior comparison: re-inspected SET-025/108 after the user suggested that the aft

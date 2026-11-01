@@ -31,7 +31,7 @@ def main():
     if not ffmpeg or not ffprobe:
         raise RuntimeError('FFmpeg and FFprobe must be on PATH')
     destination = ROOT / 'reference/working/performance-subtitles'
-    coverage_path = ROOT / 'reference/indexes/performance-subtitle-coverage.json'
+    coverage_path = ROOT / 'reference/indexes/performance/performance-subtitle-coverage.json'
     if destination.exists() or coverage_path.exists():
         raise FileExistsError('Audit outputs already exist; no overwrites')
     destination.mkdir(parents=True)
@@ -84,6 +84,7 @@ def main():
                             command=relative_command, dialogue_records=len(dialogue),
                             keyword_candidates=len(hits), review_status='SEARCH_LEADS_ONLY'))
         print(f'EP-{episode:02}: stream {stream["index"]}; {len(dialogue)} dialogue records; {len(hits)} leads', flush=True)
+    coverage_path.parent.mkdir(parents=True, exist_ok=True)
     coverage_path.write_text(json.dumps(dict(tool_version=version,
                               search_pattern=PATTERN.pattern, episodes=records),
                               ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

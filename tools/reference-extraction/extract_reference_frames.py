@@ -49,7 +49,7 @@ def main():
         parser.error('Requested time exceeds source duration')
     video = next(s for s in probe['streams'] if s['codec_type'] == 'video')
     destination = ROOT / 'reference' / 'extracted-frames' / f'episode{args.episode:02}' / args.batch
-    index = ROOT / 'reference' / 'indexes' / f'episode-{args.episode:02}-{args.batch}-frames.json'
+    index = ROOT / 'reference' / 'indexes' / 'episodes' / f'EP-{args.episode:02}' / 'evidence' / f'episode-{args.episode:02}-{args.batch}-frames.json'
     for path in (destination, index):
         resolved = path.resolve()
         if not resolved.is_relative_to((ROOT / 'reference').resolve()):

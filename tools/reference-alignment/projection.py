@@ -33,7 +33,7 @@ def inspect_availability(root,anchors,verify=False,ffprobe=None):
     grouped=defaultdict(list)
     for row in anchors:grouped[row['input_id']].append(row)
     result={}
-    coverage_path=Path(root)/'reference/indexes/performance-subtitle-coverage.json'
+    coverage_path=Path(root)/'reference/indexes/performance/performance-subtitle-coverage.json'
     coverage={r['episode_id']:r for r in a.read_json(coverage_path)['episodes']} if coverage_path.exists() else {}
     for identity,rows in grouped.items():
         record=rows[0];entry=coverage.get(record['episode_id'])

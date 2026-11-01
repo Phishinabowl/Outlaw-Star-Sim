@@ -1,7 +1,7 @@
 # Reference indexes
 
-Start here for maintained evidence records and browsing views. Navigation was prepared on
-2026-11-01; original records remain at their current paths until the coordinated migration.
+Start here for maintained evidence records and browsing views. Records migrated on 2026-11-01
+now use the organized locations below; Phase 4 integration validation and acceptance remain pending.
 
 | Collection | Contents |
 | --- | --- |

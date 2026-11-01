@@ -2,6 +2,9 @@
 
 Status: Phase 2 preparation implemented, tested and accepted by the maintainer on 2026-11-01 (America/New_York).
 
+Subsequent state: the [Phase 3 migration](reference-index-reorganization-phase-3.md) activated the
+patch and moved the records. The preparation and hash tables below describe the pre-activation checkpoint.
+
 The [plan](reference-index-reorganization-plan.md) owns scope and phase gates. The
 [file ledger](reference-index-reorganization-ledger.md) owns record destinations; the
 [tool audit](reference-index-reorganization-tool-audit.md) owns tool dependencies and historical

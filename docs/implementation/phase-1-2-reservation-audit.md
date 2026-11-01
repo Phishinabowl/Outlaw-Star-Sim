@@ -19,9 +19,9 @@ remain in force, and a placeholder does not demonstrate fit for a room behind it
 ## Targeted Source Inspection
 
 Re-inspected local scans SET-006, 024, 026, 032, 033, 045, 088, 104, 114, 125, 126 and 192.
-Identifiers resolve through the [screening index](../../reference/indexes/settei-screening.csv),
-[interior review](../../reference/indexes/settei-interior-review.md) and
-[variant review](../../reference/indexes/settei-variant-review.md).
+Identifiers resolve through the [screening index](../../reference/indexes/settei/settei-screening.csv),
+[interior review](../../reference/indexes/settei/reviews/settei-interior-review.md) and
+[variant review](../../reference/indexes/settei/reviews/settei-variant-review.md).
 This was visual inspection of selected sheets, not a complete dimensional reconstruction or
 new Japanese transcription pass. No episode extraction, audio review or source-media changes.
 
