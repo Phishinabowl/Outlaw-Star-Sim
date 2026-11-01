@@ -13,6 +13,12 @@ The subsequent [Phase 2 preparation](reference-index-reorganization-phase-2.md) 
 outside the 193-file baseline. The [Phase 3 migration](reference-index-reorganization-phase-3.md)
 records completed moves and reference repairs without rewriting that frozen snapshot.
 
+The [accepted Phase 4 validation](reference-index-reorganization-phase-4.md) verifies the completed
+file/section dispositions, preserved data and workbook projections. The
+[closeout record](reference-index-reorganization-closeout.md) owns final acceptance/publication
+status and the operating handoff. The original baseline paths, line ranges and hashes below remain
+historical locators, not current runtime destinations.
+
 ## File dispositions
 
 Paths below are relative to `reference/indexes`. Every FILE row is now MOVED_AND_CHECKED; original

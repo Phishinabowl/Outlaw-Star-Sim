@@ -28,6 +28,27 @@ Timing preparation and alignment-output cleanup were accepted with alignment-too
 on 2026-10-27. Alignment occurs within each episode review, rather than as a full-show prerequisite.
 These additions do not authorize later episodes or Phase 3.2A.
 
+**Record ownership — organized layout, 2026-11-01:** shared CSVs remain in this folder and
+`reference/indexes/context/`; generated XLSX files remain browsing projections. Create permanent
+episode records only under `reference/indexes/episodes/EP-NN/`, using the destinations below.
+Create episode navigation and subfolders as needed; a folder or metadata record does not imply
+that the episode survey has started. The [index navigation](../README.md) owns collection routing;
+the [tool directory](../../../tools/README.md) distinguishes maintained commands from historical helpers.
+
+| Episode record | Destination within `EP-NN/` | Producer / owner |
+| --- | --- | --- |
+| Website/subtitle preparation and metadata | `preparation/` | Authored preparation record; `inspect_episode.py` writes episode metadata here |
+| Selection/boundary plans, alignment review and summaries | `alignment/` | Authored plans/reviews; shared anchor/mapping CSVs retain their existing ownership |
+| Batch surveys, progress and retention checkpoint | `survey/` | Authored review/checkpoint records; shared annotations remain authoritative |
+| Targeted reviews, extracted-frame manifests and supplement narrative | `evidence/` | Authored evidence; `extract_reference_frames.py` writes provenance manifests here |
+
+Keep episode findings out of this shared schema/workflow README. Link cross-episode findings to
+their single owner under `reference/indexes/comparisons/`. Source inventory and performance
+coverage belong to `reference/indexes/sources/` and `reference/indexes/performance/` respectively.
+Manual supplements remain registered in the shared supplemental index and follow step 11's RAR
+lifecycle; their images do not belong in the textual episode folders. Existing media, contact-sheet,
+subtitle, cache and temporary alignment locations and cleanup procedures are unchanged.
+
 1. **Select the episode and resume point.** Follow the planned episode order: Episode 4 first,
    then 1–3 and 5–26. Read existing annotation/context records, unresolved questions and the last
    reviewed image key. Preserve completed work and stable IDs. Confirm available gallery locators,

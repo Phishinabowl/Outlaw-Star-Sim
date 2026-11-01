@@ -2,7 +2,9 @@
 
 Use this directory to find maintained entry points and their owning documentation. Tests and
 support modules are not separate tools. Reference records now use the organized index layout;
-the coordinated Phase 3 migration is accepted. Full integration/workbook validation remains Phase 4.
+the coordinated migration and Phase 4 integration/workbook validation are accepted. The
+[closeout record](../docs/implementation/reference-index-reorganization-closeout.md) owns final
+acceptance/publication status and remaining limitations.
 
 ## Reference review
 
@@ -65,9 +67,11 @@ Keep runtime outputs out of `tools`. Reusable scripts belong with their maintain
 historical scripts belong in the [historical collection](historical/README.md). Do not introduce
 new scripts into disposable evidence/output directories.
 
-## Reorganization preparation
+## Reorganization records
 
 [Phase 2 preparation](../docs/implementation/reference-index-reorganization-phase-2.md) owns the
-pending routing patch and isolated checks. That patch is a migration artifact, not another CLI.
+originally prepared routing patch and isolated checks. That patch is a migration artifact, not another CLI.
 It was activated with the Phase 3 record moves and is retained as an implementation artifact;
-do not reapply it to the migrated checkout. Full integration validation remains Phase 4.
+do not reapply it to the migrated checkout. The
+[accepted Phase 4 validation](../docs/implementation/reference-index-reorganization-phase-4.md)
+records integration tests, workbook refresh/equivalence and the Windows fixture-environment limits.

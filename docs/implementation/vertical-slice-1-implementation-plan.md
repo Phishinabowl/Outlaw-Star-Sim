@@ -577,7 +577,9 @@ was implemented, checked and accepted on 2026-11-01. Record/helper moves and
 routing activation are complete. The subsequently authorized
 [reorganization Phase 4 validation](reference-index-reorganization-phase-4.md) passed on
 2026-11-01, including file/reference/tool checks and refreshed workbook equivalence. Phase 4
-was accepted by the maintainer the same day; reorganization Phase 5 closeout remains unstarted.
+was accepted by the maintainer the same day. The subsequently authorized
+[reorganization Phase 5 closeout](reference-index-reorganization-closeout.md) is prepared with
+final acceptance/publication pending. Episode 7 review and Phase 3.2A remain unstarted.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
 **Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete

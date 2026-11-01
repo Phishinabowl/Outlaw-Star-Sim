@@ -1,7 +1,9 @@
 # Reference indexes
 
 Start here for maintained evidence records and browsing views. Records migrated on 2026-11-01
-now use the organized locations below; Phase 4 integration validation and acceptance remain pending.
+now use the organized locations below. Phase 4 integration validation was accepted on 2026-11-01;
+the [closeout record](../../docs/implementation/reference-index-reorganization-closeout.md) distinguishes
+completed work from pending final acceptance/publication.
 
 | Collection | Contents |
 | --- | --- |

@@ -12,6 +12,11 @@ Inventory material formerly in the plan is relocated here; the plan owns executi
 The tables and source line numbers below describe the static pre-migration audit. The
 [Phase 3 migration record](reference-index-reorganization-phase-3.md) now owns activation and
 preservation results; active references have been repaired and historical helpers have moved.
+The [accepted Phase 4 validation](reference-index-reorganization-phase-4.md) records passing
+runtime/routing tests and workbook equivalence. The [closeout record](reference-index-reorganization-closeout.md)
+owns final acceptance/publication status and remaining helper limitations. Pre-migration dependency
+tables and source line numbers below remain historical; the [tool directory](../../tools/README.md)
+owns current supported entry points and output locations.
 
 ## Tool and helper inventory
 

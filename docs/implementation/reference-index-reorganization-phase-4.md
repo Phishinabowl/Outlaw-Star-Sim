@@ -1,7 +1,8 @@
 # Reference reorganization — Phase 4 integration validation
 
 Status: completed, checked and accepted by the maintainer on 2026-11-01 (America/New_York).
-Confirmation authorizes Phase 4 documentation publication. Phase 5 closeout remains unstarted.
+Confirmation authorized Phase 4 documentation publication as `68dd4e3`. The subsequent
+[Phase 5 closeout](reference-index-reorganization-closeout.md) is prepared with acceptance pending.
 
 The [plan](reference-index-reorganization-plan.md) owns scope and gates. The
 [migration ledger](reference-index-reorganization-ledger.md),

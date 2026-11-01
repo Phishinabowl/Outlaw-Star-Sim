@@ -2,8 +2,10 @@
 
 Use the [index navigation](indexes/README.md) to find evidence collections and the
 [project tool directory](../tools/README.md) to find maintained entry points. The reference
-reorganization has moved the records and activated the corresponding routing changes; Phase 4
-integration validation and acceptance remain pending.
+reorganization has moved the records and activated the corresponding routing changes. Phase 4
+integration validation was accepted on 2026-11-01; the
+[closeout record](../docs/implementation/reference-index-reorganization-closeout.md) owns final
+acceptance/publication status and remaining limitations.
 
 The [cross-site context tool](../tools/reference-context/README.md) adds a shared
 `reference/indexes/context/` collection for condensed AnimeHistory/Fandom research, with separate

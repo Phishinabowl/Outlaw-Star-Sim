@@ -1,11 +1,11 @@
-# Reference index reorganization plan
+# Reference And Implementation Documentation Reorganization Plan
 
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-30 / 2026-11-01 |
-| Status | Phases 1–4 accepted; Phase 5 closeout unstarted |
+| Status | Phases 1–4 accepted; Phase 5 reference closeout prepared; implementation-documentation Phases 6–9 planned and unstarted |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 4 integration/workbook validation accepted 2026-11-01; Phase 5 unstarted |
+| Current checkpoint | Implementation-documentation plan extension confirmed for publication 2026-11-01; Phases 6–9 unstarted; no documentation moves authorized or performed |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -13,10 +13,25 @@ This work supports the [pre-3.2A research checkpoint](vertical-slice-1-implement
 it does not start Episode 7 or Phase 3.2A.
 Phase numbers below belong to this reorganization plan, not the vertical-slice implementation phases.
 
+**Scope extension — 2026-11-01:** add organization of `docs/implementation` by vertical slice,
+supporting project, shared validation procedure and investigation. The folder direction was agreed
+in discussion; the amended plan was confirmed for documentation publication on 2026-11-01.
+This confirms the planning record, not execution of the new phases or any documentation moves.
+Phases 1–5 retain their reference-index scope and recorded acceptance state. Phase 5's prepared
+closeout remains unaccepted; publication of that prepared record is not component acceptance or acceptance of
+the expanded effort. Phases 6–9 cover the additional documentation work and combined final closeout.
+Do not move this plan or its supporting records until the new ledger and migration phase authorize it.
+
 ## Objective and observed baseline
 
 Organize maintained evidence by source, episode and research purpose; document tool ownership
 and output destinations so future reviews do not recreate the flat directory.
+
+The additional objective is to make implementation documentation scale beyond the first playable
+slice. Vertical Slice 1 is one effort within the game, not the parent of every future slice or
+feature project. Keep each document with the effort it serves; shared placement requires an actual
+cross-effort purpose. Existing architecture, development, reconstruction, policy and roadmap
+ownership outside `docs/implementation` remains unchanged, apart from necessary link repairs.
 
 Read-only inspection found 152 files directly under `reference/indexes`: 84 Markdown, 66 JSON
 and two CSV files. These include 48 extracted-frame manifests and 33 settei collection batches.
@@ -69,6 +84,78 @@ and retention records move to episode records with links from the shared README.
 acceptance and historical scope; an earlier preparation checkpoint must not be silently rewritten
 to claim knowledge of later completion. Cross-episode records have one owner under `comparisons`,
 with episode pointers rather than duplicate copies.
+
+## Implementation Documentation Target Structure — Phases 6–9
+
+Read-only inspection on 2026-11-01 found 29 files directly under `docs/implementation` and
+15 under its existing `validation` directory, including the uncommitted Phase 5 closeout.
+These 44 files are a preliminary count, not the Phase 6 frozen inventory. Phase 6 must also account
+for any newly authorized planning records and existing worktree changes before migration.
+
+```text
+docs/implementation/
+├── README.md                         Directory of efforts; link the existing overall roadmap
+├── vertical-slices/
+│   └── slice-01-awakening/
+│       ├── README.md                 Slice scope/status and record navigation
+│       ├── vertical-slice-1-implementation-plan.md
+│       ├── phase-1/
+│       │   ├── 1.1-tooling/
+│       │   ├── 1.2-spatial-motion/
+│       │   ├── 1.3-actions-readiness/
+│       │   ├── 1.4-architecture-assets/
+│       │   └── 1.5-gate-review/
+│       ├── phase-2/
+│       │   ├── 2.1-tooling/
+│       │   ├── 2.2-project-setup/
+│       │   ├── 2.3-build-editor/
+│       │   ├── 2.4-packaging/
+│       │   └── phase-2-exit-review.md
+│       └── phase-3/
+│           └── 3.1-player-scale/
+├── projects/
+│   └── reference-index-reorganization/   This plan, baselines, ledgers and closeout records
+├── validation/
+│   ├── README.md
+│   └── procedures/                   Procedures with a supported shared purpose
+└── investigations/
+    └── blender-sandbox/              Retained deferred investigation and its status
+```
+
+Create future slice/project and phase folders only when records need them. Do not create empty
+future slices or infer implementation authorization from directory names. Keep existing filenames
+where practical; folder ownership supplies the organization. Do not split documents into status
+folders such as `draft`, `approved` or `archive`: preserve status and approval evidence in the records.
+
+### Documentation Placement And Authority Rules
+
+| Current record family | Proposed destination / rule |
+| --- | --- |
+| Overall Vertical Slice 1 implementation plan | `vertical-slices/slice-01-awakening/`, beside its README; retains slice execution/status authority |
+| `phase-1-*`, `phase-2-*`, `phase-3-*` proposals, decisions, amendments and closeouts | Corresponding slice phase/subphase folder; keep each subphase's related records together |
+| Existing `validation/phase-*` result and pilot records | Corresponding slice phase/subphase folder, beside the closeout they support |
+| Existing reusable `*-validation-procedures.md` | `validation/procedures/` only when the content has a supported shared purpose; slice-only procedures stay within that slice and are explicitly mapped in Phase 6 |
+| `blender-sandbox-pilot-design.md` | `investigations/blender-sandbox/`; preserve deferred status, dated findings and authority links |
+| All `reference-index-reorganization-*` records, including this plan, frozen JSON baseline and pending closeout | `projects/reference-index-reorganization/`; one maintained owner for the expanded reorganization |
+| New navigation | Root README indexes efforts/status and links the existing roadmap; slice README indexes slice records; validation README distinguishes shared procedures from phase-specific results |
+
+The implementation root is a directory, not a competing project roadmap or slice status register.
+The existing roadmap retains overall project ownership. Individual effort plans retain their gates;
+the root README links those owners rather than duplicating their checklists. Phase 6 resolves exact
+placements and exceptions before any move, including procedures whose shared scope is uncertain.
+
+Preserve document bodies, decisions, dates, phase identifiers, acceptance provenance and substantive
+heading anchors. Repair active relative links against the new owning document location. Original
+paths recorded in historical commands, extraction recipes, frozen baselines or audit evidence remain
+historical and resolve through the new documentation migration ledger. Do not rewrite frozen JSON
+to make historical paths appear current. The new inventory/baseline must be separate from the
+accepted reference-index baseline.
+
+Keep the detailed documentation file/dependency ledger and baseline beside this plan, initially
+at its current location and later in its ledgered project destination. They own exact file routes,
+hashes, consumers and exceptions; this plan owns sequence and gates. Preserve the pending Phase 5
+worktree explicitly so migration cannot overwrite or silently accept those changes. No renewed
+reference-media cleanup, research rewrite, tool consolidation or application setup is included.
 
 ## Planned move rules and migration ledger
 
@@ -176,6 +263,10 @@ rewrite findings, merge differing evidence claims or remove older research as al
 | 3 — record migration | Phase 2 preparation complete | Ledgered moves and repaired references; coordinated with Phase 2 |
 | 4 — integration validation | Phase 3 moves complete | File accounting, links, schemas, tool checks and workbook equivalence |
 | 5 — closeout | Phase 4 passes | Actual change/validation record and explicit confirmation for publication |
+| 6 — implementation-documentation inventory and dependencies | Phase 4 accepted; Phase 5 prepared state preserved; explicit authorization for Phase 6 | Exact documentation ownership/move ledger, separate baseline and consumer audit |
+| 7 — implementation-documentation migration | Phase 6 exit accepted; Phase 7 authorized | Slice/project/shared structure, navigation and coordinated reference repairs |
+| 8 — documentation integration validation | Phase 7 migration complete; Phase 8 authorized | File/content accounting, links/anchors and affected reader/writer checks |
+| 9 — combined closeout and publication | Phase 8 passes; Phase 9 authorized | Both reorganization components recorded, final acceptance and verified publication |
 
 Unchecked tasks are planned work, not completed evidence. Check an item only after its deliverable
 and relevant validation exist. Record phase acceptance separately from task completion/publication.
@@ -327,13 +418,25 @@ requires subsequent authorization.
 
 **Prerequisite:** Phase 4 exit. **Deliverable:** completed migration ledger and accepted closeout record.
 
-- [ ] Record actual moves, intentional edits, validation results and unresolved local-helper limitations.
-- [ ] Update workflow pointers and verify future episode records use the new destinations.
+This phase closes the reference-index component only. Its prepared closeout remains pending while
+the documentation extension is planned. Phase 6 may begin after explicit authorization without
+misrepresenting Phase 5 as accepted. Phase 9 owns the expanded effort's final closeout; preserve
+and resolve the pending component acceptance/publication explicitly there.
+
+- [x] Record actual moves, intentional edits, validation results and unresolved local-helper limitations.
+- [x] Update workflow pointers and verify future episode records use the new destinations.
 - [ ] Record maintainer acceptance separately from implementation/test completion.
 - [ ] On explicit confirmation, review the scoped diff, run diff checks and follow established commit/push verification.
 
 **Validation:** completed ledger matches the final worktree; publication includes only authorized in-scope changes.
 **Recovery / deferral:** keep changes uncommitted until confirmation; publication problems do not justify destructive resets.
+
+**Prepared closeout — 2026-11-01; acceptance pending:** the
+[closeout record](reference-index-reorganization-closeout.md) links actual migration and validation
+evidence, records historical-helper limitations and defines the operating handoff. Current navigation
+and the numbered episode workflow use the organized destinations. The frozen baseline and dated
+audit tables retain historical paths. No source extraction, media move or workbook regeneration
+was performed in Phase 5. Final acceptance/publication remain separate pending steps below.
 
 ### Phase 5 Exit Gate
 
@@ -342,3 +445,112 @@ requires subsequent authorization.
 No source media, RAR payload, contact-sheet collection, application configuration or unrelated
 temporary directory is moved or deleted by this plan. Historical consolidation covers only the
 33 named script files; their surrounding local output directories are not cleanup targets.
+
+## Phase 6: Implementation Documentation Inventory And Dependency Baseline
+
+### Phase 6.1: File Ownership And Move Ledger
+
+**Prerequisite:** explicit authorization for Phase 6; accepted Phase 4 and preserved Phase 5 worktree.
+**Deliverable:** separate documentation migration ledger and baseline beside this plan.
+
+- [ ] Inventory every current file under `docs/implementation`, including uncommitted files and any newly authorized records.
+- [ ] Assign each file one exact destination using the agreed slice/project/shared/investigation structure; resolve shared-procedure exceptions.
+- [ ] Include moves of this plan, the prior reference-index ledgers/baseline and the prepared Phase 5 closeout.
+- [ ] Capture source hashes, document headings/anchors, Git/worktree status and destination preconditions without modifying the frozen reference-index baseline.
+- [ ] Record navigation files to create; preserve existing filenames and avoid duplicate authority or empty future-effort scaffolding.
+
+### Phase 6.2: Consumer And Output Audit
+
+**Prerequisite:** 6.1 inventory. **Deliverable:** dependency findings in the separate documentation ledger.
+
+- [ ] Trace incoming/outgoing Markdown links and fragments across root documentation, reference records, tools, recipes and scoped local helpers.
+- [ ] Inspect CSV/JSON reference fields and maintained scripts/configuration for active documentation-path lookups or outputs.
+- [ ] Distinguish active references from historical commands, frozen snapshots, recipe values and provenance paths; record preservation exceptions.
+- [ ] Identify any affected generated projections or tool tests; require rebuilds/tests only where the documentation move affects their inputs or behavior.
+- [ ] Specify future documentation ownership/output conventions so later work does not recreate a flat implementation directory.
+
+**Validation:** every file has one disposition; every active consumer has a repair or a reviewed
+exception; pending worktree edits are accounted for. No moves or runtime changes occur here.
+**Recovery / deferral:** resolve ambiguous ownership before migration; retain existing records intact.
+
+### Phase 6 Exit Gate
+
+- [ ] Documentation ledger, baseline, placement exceptions and repair scope are reviewed and accepted.
+- [ ] Record acceptance separately from authorization for Phase 7.
+
+## Phase 7: Implementation Documentation Migration And Navigation
+
+**Prerequisite:** accepted Phase 6 exit and explicit authorization for Phase 7.
+**Deliverable:** ledgered documentation layout with repaired active references and navigation.
+
+- [ ] Preflight workspace-bounded source/destination paths and hashes, preserving all inventoried uncommitted edits.
+- [ ] Move files to their exact ledgered destinations, including the reorganization project's own records; preserve baseline JSON bytes and substantive document content.
+- [ ] Create root/slice/validation navigation with links to authoritative plans, status and the existing roadmap; keep phase results with their owning effort.
+- [ ] Repair active relative links, fragments and ledgered structured references across consumers in the same coordinated increment.
+- [ ] Apply only audited producer/reader/example changes needed for current and future documentation paths; preserve historical recipes and commands.
+- [ ] Record actual dispositions, intentional reference edits and exceptions in the documentation ledger without duplicating research or approval records.
+
+**Validation:** actual moves match the ledger and new navigation resolves; historical evidence and
+pending acceptance remain distinct. Do not accept a half-migrated active workflow.
+**Recovery / deferral:** restore or repair only affected files from the captured baseline/worktree
+snapshot; preserve unrelated changes and do not run historical helpers.
+
+### Phase 7 Exit Gate
+
+- [ ] Every documentation move is complete or has an explicit reviewed exception.
+- [ ] Active consumers agree on the new layout; full integration acceptance remains Phase 8.
+
+## Phase 8: Documentation Integration And Preservation Validation
+
+### Phase 8.1: File, Content And Reference Checks
+
+**Prerequisite:** Phase 7 migration complete and explicit authorization for Phase 8.
+**Deliverable:** recorded documentation-preservation and link results.
+
+- [ ] Account for every original/new file, unique destination and original-path disposition; reject accidental duplicate authorities or unlisted deletion.
+- [ ] Verify byte-preserved baselines/records and compare edited documents allowing only ledgered navigation/path/status changes.
+- [ ] Verify preserved decisions, dates, approval history, phase numbering and substantive headings/anchors.
+- [ ] Validate maintained local links and fragments across all affected consumers; keep historical-path and third-party exclusions explicit.
+- [ ] Verify source media, reference data, local-only helpers and unrelated application/assets remain outside the migration's changes.
+
+### Phase 8.2: Affected Tools And Future Effort Checks
+
+**Prerequisite:** 8.1 passes. **Deliverable:** bounded consumer/output checks and current navigation review.
+
+- [ ] Test affected maintained readers/writers with temporary fixtures where needed; do not execute historical helpers or source extraction merely to validate documentation paths.
+- [ ] If structured reference fields changed, validate their schemas/data preservation and refresh only affected projections using their established authoring/verification workflow.
+- [ ] Check that future slice/project records have documented owners and destinations, with reusable procedures separated from phase-specific results.
+- [ ] Confirm navigation distinguishes implemented/tested/accepted/deferred work and links the existing roadmap without creating competing status authority.
+- [ ] Remove only task-owned migration/validation scratch files after evidence is recorded.
+
+**Validation:** no unexplained content/data change, broken active reference or affected runtime/output
+regression remains. Reuse earlier evidence where dependencies are unchanged; state material limits.
+**Recovery / deferral:** a failed check blocks closeout; correct and repeat affected checks only.
+
+### Phase 8 Exit Gate
+
+- [ ] File/content, link, consumer and future-ownership checks pass with evidence and limits recorded.
+- [ ] Record validation acceptance separately from final Phase 9 closeout/publication.
+
+## Phase 9: Combined Reorganization Closeout And Publication
+
+**Prerequisite:** Phase 8 passes and explicit authorization for Phase 9.
+**Deliverable:** final closeout covering both reference indexes and implementation documentation.
+
+- [ ] Reconcile the prepared Phase 5 component closeout with the documentation migration; preserve its completed evidence and resolve its pending acceptance explicitly.
+- [ ] Record actual documentation moves, intentional edits, tests, preserved baselines, exceptions and remaining historical-helper limitations using the owning ledgers/results.
+- [ ] Update current workflow/navigation pointers and the implementation-effort directory; verify the final documented destinations match the worktree.
+- [ ] Record maintainer acceptance separately from implementation/test completion and identify the exact scope authorized for publication.
+- [ ] On explicit confirmation, review the scoped diff, run diff checks, stage only in-scope changes, commit/push and verify worktree status plus HEAD/upstream parity.
+
+**Validation:** both components' final records match their ledgers and accepted evidence; publication
+contains no source media, derivative frames, ignored helpers or unrelated changes.
+**Recovery / deferral:** keep changes uncommitted until confirmation; report unrelated worktree
+changes without staging or discarding them. Publication does not authorize Episode 7 or Phase 3.2A.
+
+### Phase 9 Exit Gate
+
+- [ ] Combined closeout accepted; publication status, final ownership pointers and remaining limitations recorded.
+
+Phases 6–9 are planned and unstarted. This scope amendment makes no file moves and does not grant
+execution authorization for those phases or change previously accepted project/slice boundaries.

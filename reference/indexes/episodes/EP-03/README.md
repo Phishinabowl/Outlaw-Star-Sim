@@ -1,7 +1,7 @@
 # EP-03 reference records
 
 Navigation migrated 2026-11-01. Records are linked at their organized locations.
-Migration does not change evidence or review status; Phase 4 integration/workbook validation remains pending.
+Migration does not change evidence or review status. Phase 4 integration/workbook validation was accepted on 2026-11-01.
 
 ## Alignment
 
