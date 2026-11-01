@@ -4,7 +4,7 @@ Plain-language reference for terms introduced during this project. Started 2026-
 new concepts come up. You do not need to memorize this before continuing.
 
 Definitions explain concepts; they do not select settings or authorize implementation. The
-[Phase 1.4 plan](../implementation/phase-1-4-architecture-asset-validation-draft.md) owns our choices
+[Phase 1.4 plan](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md) owns our choices
 and learning experiments. Version-specific support must be checked before use.
 
 ## Find A Topic
@@ -46,7 +46,7 @@ Think about a ceiling light shining onto an engineering cylinder:
 This is a conceptual map, not an exact rendering-pass order. Several techniques cooperate or overlap.
 
 Our starting candidate is **DX12 + deferred + Lumen + Virtual Shadow Maps + native-resolution TSR**.
-See the [accepted rendering direction](../implementation/phase-1-4-architecture-asset-validation-draft.md#initial-rendering-and-anti-aliasing-direction--accepted-2026-10-11)
+See the [accepted rendering direction](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md#initial-rendering-and-anti-aliasing-direction--accepted-2026-10-11)
 for the current contract rather than treating this glossary as another settings registry.
 
 ## Rendering, APIs And Tracing
@@ -276,7 +276,7 @@ while the next ignition appears smooth. That is why we capture first-use and war
 Caches save repeated work but do not all serve the same purpose. We will use project-scoped test
 recipes, not delete broad system or unrelated game caches. No cache has been changed by this glossary.
 [Epic DDC documentation](https://dev.epicgames.com/documentation/unreal-engine/using-derived-data-cache-in-unreal-engine),
-[project performance contract](../implementation/phase-1-4-architecture-asset-validation-draft.md#accepted-performance-measurement-contract--execution-pending).
+[project performance contract](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md#accepted-performance-measurement-contract--execution-pending).
 
 ## Blender, Geometry And Asset Handoff
 
@@ -296,7 +296,7 @@ recipes, not delete broad system or unrelated game caches. No cache has been cha
 
 Our 1 m cube should arrive as 100 Unreal centimeters. That test proves the recipe, not that every ship
 room fits. [Blender glossary](https://docs.blender.org/manual/en/latest/glossary/index.html),
-[project handoff plan](../implementation/phase-1-4-architecture-asset-validation-draft.md).
+[project handoff plan](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md).
 
 ## Unreal, Gameplay And Input
 
@@ -327,7 +327,7 @@ room fits. [Blender glossary](https://docs.blender.org/manual/en/latest/glossary
 For our sim, a keyboard click or future controller button requests the same engineering action;
 neither gets its own readiness rules. Actual device/backend combinations require testing.
 [Epic Enhanced Input](https://dev.epicgames.com/documentation/unreal-engine/enhanced-input-in-unreal-engine),
-[project input/ownership plan](../implementation/phase-1-4-architecture-asset-validation-draft.md).
+[project input/ownership plan](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md).
 
 **Template choice and starting-code choice are separate:** Blank/First Person/Third Person describes
 the starting experience; C++/Blueprint describes how starting code is supplied. We chose Blank C++
@@ -337,7 +337,7 @@ templates without importing all their content or inventing our own engine.
 
 For example, a seat-lift completion from session A must be ignored after resetting to session B.
 Even within session B, a cancelled operation's late result must not complete its replacement.
-The [session/operation contract](../implementation/phase-1-4-architecture-asset-validation-draft.md#session-and-operation-identity--accepted-2026-10-11)
+The [session/operation contract](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md#session-and-operation-identity--accepted-2026-10-11)
 owns our rules; tracking IDs do not require networking or change each action's interruption behavior.
 
 ### Asset Name Prefixes
@@ -355,7 +355,7 @@ inspection. They are naming conventions, not what determines the underlying file
 
 These can describe different pieces of the same object, rather than duplicate models. The accepted
 initial naming convention and folder layout live in the
-[Phase 1.4 plan](../implementation/phase-1-4-architecture-asset-validation-draft.md#folder-subdivisions-and-initial-naming--accepted-2026-10-11).
+[Phase 1.4 plan](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md#folder-subdivisions-and-initial-naming--accepted-2026-10-11).
 [Epic's naming reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/recommended-asset-naming-conventions-in-unreal-engine-projects).
 
 ## Files, Builds And Version Control
@@ -379,14 +379,14 @@ initial naming convention and folder layout live in the
 
 Our source episodes/settei are research inputs, not game assets. Git LFS does not authorize their
 publication. [Epic packaging overview](https://dev.epicgames.com/documentation/unreal-engine/packaging-your-project),
-[project asset policy](../implementation/phase-1-4-architecture-asset-validation-draft.md).
+[project asset policy](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md).
 
 For example, keep a cylinder's editable `.blend`, designated `.fbx`, Unreal mesh and import recipe
 linked. If a reimport moves its pivot or closes its collision opening, restore the affected known-good
 set and fix the recipe on the small fixture before applying it across the ship. Keeping only the
 export would lose part of the editable authoring workflow.
 
-The [accepted storage/recovery contract](../implementation/phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23)
+The [accepted storage/recovery contract](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md#asset-storage-and-recovery-contract--accepted-2026-10-23)
 assigns Blender originals, designated FBX exports and owned Unreal assets/maps to planned LFS storage;
 text remains in ordinary Git, generated outputs are ignored, and reference media stays local-only.
 This is a planning decision, not evidence that LFS is configured or asset recovery has been tested.

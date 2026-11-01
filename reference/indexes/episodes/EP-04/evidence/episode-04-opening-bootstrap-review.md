@@ -66,7 +66,7 @@ the opened computer supported on top of the instrument/gauge housing in the side
 overhead shot placing that raised console surface relative to the seats. This is a temporary support
 location observation, not a seat-cushion placement, measured footprint or cable-path verification.
 The user agreed to use that workspace, then disconnect/stow after bootstrap and registration;
-that demo lifecycle is recorded in the [Phase 1.2 packet](../../../../../docs/implementation/phase-1-2-spatial-motion-decision-packet.md#portable-computer-workspace-and-stowage--agreed-direction).
+that demo lifecycle is recorded in the [Phase 1.2 packet](../../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-spatial-motion-decision-packet.md#portable-computer-workspace-and-stowage--agreed-direction).
 
 | Interval | Paraphrased content | Interpretation limit |
 | --- | --- | --- |

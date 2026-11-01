@@ -26,7 +26,7 @@ PNGs/logs remain ignored/local-only. This is sparse still review, with no new su
   occupant emergence fit. Compare the proposed footprint to M01–M05 and the rear doorway before
   setting an exact offset. Preserve the agreed player-blocking exception separately from visible fit.
 
-The [Phase 1.2 packet](../../../../../docs/implementation/phase-1-2-spatial-motion-decision-packet.md#cockpit-staging--demo-case-exception-proposed)
+The [Phase 1.2 packet](../../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-spatial-motion-decision-packet.md#cockpit-staging--demo-case-exception-proposed)
 owns the agreed demo adaptation and pending clearance proposal. No modeled fit is claimed.
 
 Subsequent user clarification: select the rear corner on the player's right when entering from the

@@ -12,7 +12,7 @@ Use [Baseline v1 operational vocabulary](../reconstruction/baseline-v1/operation
 
 Failure escalation requirements:
 
-For the current slice, the [accepted Phase 1.3 closeout](../implementation/phase-1-3-closeout-audit.md)
+For the current slice, the [accepted Phase 1.3 closeout](../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md)
 owns limited-service bootstrap, registered local preparation, actual key ignition, graceful OFF and
 restart validation. Separate live service/unit state, retained per-run startup milestone and departure
 warnings. No menu/animation/Gilliam line owns another completion flag. Engineering may stow/relock

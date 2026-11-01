@@ -22,7 +22,7 @@ Earlier evidence: [interior review](../reviews/settei-interior-review.md).
   not proof of opposite corridor ends. Earlier shorthand calling the views complementary is too
   strong as a geometric interpretation; CSV uncertainty/disposition fields on both rows now say so.
 - The middle wall hatch's possible connection to preliminary SET-043 remains an unverified
-  interpretation. The [corridor amendment](../../../../docs/implementation/phase-1-2-corridor-route-amendment.md)
+  interpretation. The [corridor amendment](../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md)
   records the chosen initial layout separately; it does not resolve these source questions.
 
 <a id="SET-046"></a>

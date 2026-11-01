@@ -38,6 +38,6 @@ Related production reference: [SET-051](../settei/batches/settei-collection-revi
 The supplied images and reported scene overlays provide useful context alongside that sheet's
 solid-black annotation; the annotation's exact scope still needs review.
 
-Future game direction belongs to the [implementation plan](../../../docs/implementation/vertical-slice-1-implementation-plan.md#deferred-presentation-direction--to-be-continued).
+Future game direction belongs to the [implementation plan](../../../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#deferred-presentation-direction--to-be-continued).
 The screenshots are reference only, remain local-only and are not authorized for publication or
 direct inclusion as shipped game assets. Copy hashes were checked against the supplied files.

@@ -4,7 +4,7 @@ Use the [index navigation](indexes/README.md) to find evidence collections and t
 [project tool directory](../tools/README.md) to find maintained entry points. The reference
 reorganization has moved the records and activated the corresponding routing changes. Phase 4
 integration validation was accepted on 2026-11-01; the
-[closeout record](../docs/implementation/reference-index-reorganization-closeout.md) owns final
+[closeout record](../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-closeout.md) owns final
 acceptance/publication status and remaining limitations.
 
 The [cross-site context tool](../tools/reference-context/README.md) adds a shared
@@ -14,7 +14,7 @@ local source caches under `reference/cache/context/` and disposable work under
 The [data contract](indexes/context/README.md), both adapters, maintained Episode 4 pilot and
 ImportExcel workbook passed their staged checks. Stage 5's bounded procedure is accepted after
 maintainer-reported native filtering and link checks; further episode surveys remain unstarted. The
-[pre-3.2A checkpoint](../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+[pre-3.2A checkpoint](../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns execution order. Existing image indexes, media archives and observations retain their ownership.
 
 [All-episode subtitle performance audit](indexes/performance/performance-subtitle-audit.md) searches the full English dialogue tracks of all 26 numbered episodes. The [metric CSV](indexes/performance/performance-metrics.csv) contains curated context-reviewed leads, and [coverage JSON](indexes/performance/performance-subtitle-coverage.json) records sources/stream selection/hashes. Full subtitle/candidate text remains local-only under ignored working storage.
@@ -45,4 +45,4 @@ The user's [episode-time notes](episode-times.md) are retained unchanged; the co
 User-verified English audio additions are distinct from cached subtitles/Japanese verification.
 [Fan pod reference](indexes/supplied-references/fan-melfina-pod-reference.md) is third-party inspiration, not canon or
 permission to reuse/publish assets. Current E/F behavior is owned by the
-[Phase 1.3 closeout](../docs/implementation/phase-1-3-closeout-audit.md), not these source reviews.
+[Phase 1.3 closeout](../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md), not these source reviews.

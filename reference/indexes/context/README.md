@@ -10,7 +10,7 @@ Stage 5's [closeout and cleanup](../../../tools/reference-context/README.md#stag
 are accepted within the bounded workflow after successful maintainer-reported native filter/link checks.
 This document owns the data contract; the [tool proposal](../../../tools/reference-context/README.md)
 owns implementation stages and validation. The
-[implementation plan](../../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+[implementation plan](../../../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns research order and acceptance. The data contract does not imply full workflow acceptance.
 
 ## Collection boundaries and file ownership

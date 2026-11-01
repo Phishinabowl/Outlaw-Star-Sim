@@ -23,7 +23,7 @@ and source identity. Avoid repeated manual VLC seeking and full-episode frame du
 This document owns the proposed tool, storage, stages and technical validation. The
 [image-index README](../../reference/indexes/animehistory/README.md#ordered-episode-review-workflow)
 owns the end-to-end episode-review sequence and existing annotation contracts. The
-[implementation plan](../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+[implementation plan](../../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns execution scope and acceptance. The [canon policy](../../docs/canon-policy.md) remains in force:
 timing alignment does not establish character identity, mechanism behavior or canonical terminology.
 

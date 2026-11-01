@@ -14,11 +14,11 @@ The reference foundation is substantially complete for initial-slice implementat
 
 UE/toolchain direction is recorded in [Unreal strategy](../architecture/unreal-strategy.md). Phase 1.1
 verified target MSVC 14.50 installed; build validation and remaining setup gaps are later work.
-The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md) records completed
+The [implementation plan](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md) records completed
 1.1–1.3 planning and unstarted 1.4 onward. This research track does not authorize those later phases.
 
 Planning-resolved is distinct from source-resolved: provisional entry/room choices and initial-service,
-occupant/all-four, readiness/interruption behavior are accepted in the [1.3 closeout](../implementation/phase-1-3-closeout-audit.md).
+occupant/all-four, readiness/interruption behavior are accepted in the [1.3 closeout](../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md).
 Original topology, unshown all-four manual procedures and dimensions remain research/fit questions.
 The 22-record figure is the original structured-pass checkpoint; later targeted reservations/headroom
 reviews do not silently authenticate sheets or constitute full fine-callout passes.

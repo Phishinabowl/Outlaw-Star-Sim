@@ -1,7 +1,7 @@
 # Phase 0 report
 
 Historical bootstrap snapshot. Tool/media/Git absence and counts below describe Phase 0, not the
-current checkout. See the [roadmap](roadmap.md) and [implementation plan](implementation/vertical-slice-1-implementation-plan.md)
+current checkout. See the [roadmap](roadmap.md) and [implementation plan](implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md)
 for completed Phase 1.1–1.3 planning, later source reviews and the unstarted implementation boundary.
 
 ## Completed

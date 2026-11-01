@@ -4,11 +4,11 @@ The user approved defining this slice within Baseline v1 on 2026-10-07. This is 
 
 ## Experience and endpoint
 
-The [Phase 1.2 closeout proposal](../../implementation/phase-1-2-closeout-proposal.md#bounded-opening-scope-amendment--proposed-contract-supplement)
+The [Phase 1.2 closeout proposal](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-closeout-proposal.md#bounded-opening-scope-amendment--proposed-contract-supplement)
 records the bounded opening supplement accepted by the user on 2026-10-07, consolidating the
 case/computer, reveal, boots, HUD and dining-shell directions. Read it alongside the historical
 contract below; its eight readiness conditions remain intact. Source observations are unchanged.
-The accepted [2026-10-25 route amendment](../../implementation/phase-1-2-corridor-route-amendment.md)
+The accepted [2026-10-25 route amendment](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md)
 supersedes the walk-through dining-shell portion: use a continuous central corridor and a closed
 side-hatch placeholder, deferring the kitchen/dining room's placement, size and interior.
 
@@ -71,8 +71,8 @@ Under the accepted Phase 1.3 contract, hatch closure/seal/pressure readiness aff
 departure status, not ignition or startup completion. Engines and ship gravity can run with the
 hatch open in the breathable hangar. Reopening updates the departure warning without switching
 off those services. Leaving the captain's seat after success does not revoke the completed seat
-transition. The [Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md)
-owns the current E/F behavior contract; the [detailed record](../../implementation/phase-1-3-action-readiness-draft.md)
+transition. The [Phase 1.3 closeout](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md)
+owns the current E/F behavior contract; the [detailed record](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-action-readiness-draft.md)
 retains selected interactions and remaining check/gravity-boundary details. No full flight or pressure model is added.
 
 Reversible key operation and occupied seat lowering on OFF are accepted behavior. Retain a
@@ -83,7 +83,7 @@ timings/visual tuning remain later work under the accepted closeout; this does n
 
 ## Acceptance review for the later implementation
 
-The [accepted Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md) owns the current
+The [accepted Phase 1.3 closeout](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md) owns the current
 bounded action/service/readiness contract, including pause/reset, optional cleanup and reversible
 engineering/ignition. The discussion record retains source-qualified details and history. Metric/art
 choices and actual implementation/fit proof remain deferred; planning completion is not gameplay acceptance.
@@ -112,8 +112,8 @@ Preserve one authoritative state and a reusable command/query boundary per [exte
 Current status: VS-D01–03 have accepted provisional spatial choices (actual fit pending), and
 VS-D04–06 have accepted E/F behavior contracts in the Phase 1.3 closeout. Their source uncertainties
 remain explicit. Concrete Phase 1.4 tool/asset/architecture/validation contracts are accepted in the
-[planning closeout](../../implementation/phase-1-4-closeout-review.md). The
-[Phase 1.5 gate review](../../implementation/phase-1-5-gate-review.md) is accepted with explicit
+[planning closeout](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-closeout-review.md). The
+[Phase 1.5 gate review](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.5-gate-review/phase-1-5-gate-review.md) is accepted with explicit
 authorization for read-only 2.1 preflight only. VS-D07 installation, configuration and project/asset
 creation authorization remain pending. The register below retains its original decision IDs; it is not a list of six
 behavior choices still awaiting initial agreement.

@@ -4,7 +4,7 @@ Companion to the [spatial map](spatial-constraint-map.md), [operational vocabula
 
 ## Reservation register
 
-Current E/F action rules are in the [Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md):
+Current E/F action rules are in the [Phase 1.3 closeout](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md):
 occupied lift is key-triggered, OFF lowers it, and engineering units can push-in/relock only after
 completed OFF. Later MC checks must include reverse operator paths, laptop/case handling and
 Gilliam's cockpit housing. These additions do not change source observations or prove clearance.

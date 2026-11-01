@@ -2,9 +2,9 @@
 
 Planning baseline prepared 2026-10-07 after the user approved this documentation increment, and confirmed for publication with the README/roadmap/tooling updates on the same date. This document is the entry point for four linked deliverables: this map, [motion/clearance envelopes](motion-clearance-envelopes.md), [operational states](operational-state-baseline.md) and [Vertical Slice 1](vertical-slice-1.md). It authorizes no grayboxing, Unreal initialization, modeling or gameplay implementation. The formal implementation-planning gate remains deferred.
 
-Planning continuation: the user subsequently requested the [expanded implementation-plan draft](../../implementation/vertical-slice-1-implementation-plan.md). That supersedes the publication-time planning-gate deferral above; these four baseline documents remain the authoritative constraints/scope, unchanged by the draft's execution scheduling. No implementation approval follows.
+Planning continuation: the user subsequently requested the [expanded implementation-plan draft](../../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md). That supersedes the publication-time planning-gate deferral above; these four baseline documents remain the authoritative constraints/scope, unchanged by the draft's execution scheduling. No implementation approval follows.
 
-Current initial route: the accepted [2026-10-25 corridor amendment](../../implementation/phase-1-2-corridor-route-amendment.md)
+Current initial route: the accepted [2026-10-25 corridor amendment](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md)
 replaces the later Phase 1.2 walk-through dining requirement with a central cockpit-to-engineering
 corridor and a closed kitchen/dining side-hatch placeholder. Room placement and sizing remain
 deferred. Named source directions below do not prove the room's geometry or the side hatch's identity.

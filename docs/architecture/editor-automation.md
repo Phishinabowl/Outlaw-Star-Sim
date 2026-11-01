@@ -1,23 +1,23 @@
 # Blender And Unreal Editor Automation
 
-Status: the authorized Unreal pilot completed on 2026-10-23; [2.3 closeout](../implementation/phase-2-3-closeout.md)
+Status: the authorized Unreal pilot completed on 2026-10-23; [2.3 closeout](../implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-closeout.md)
 was accepted. ModelContextProtocol/EditorToolset and the project-local Codex connection are retained;
-owner-approved interactive auto-start is verified on loopback. The [3.1 Blender pilot](../implementation/validation/phase-3-1-blender-mcp-pilot.md)
+owner-approved interactive auto-start is verified on loopback. The [3.1 Blender pilot](../implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-blender-mcp-pilot.md)
 has passed native connectivity, reversible edits, save/reopen and stop/reconnect checks. Blender
 interactive auto-start was approved and verified on loopback on 2026-10-23; local
-[handoff/reimport and player-fit checks](../implementation/validation/phase-3-1-blender-handoff-results.md)
-passed on 2026-10-24. [Published asset recovery](../implementation/validation/phase-3-1-recovery-results.md)
+[handoff/reimport and player-fit checks](../implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-blender-handoff-results.md)
+passed on 2026-10-24. [Published asset recovery](../implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-recovery-results.md)
 also passed. This document owns editor-automation requirements; the
-[slice implementation plan](../implementation/vertical-slice-1-implementation-plan.md) owns
+[slice implementation plan](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md) owns
 execution checklists and gates. Baseline v1 remains authoritative for reconstruction.
 
-Subsequent authorized [2.4 package proof](../implementation/phase-2-4-closeout.md) verified standalone
+Subsequent authorized [2.4 package proof](../implementation/vertical-slices/slice-01-awakening/phase-2/2.4-packaging/phase-2-4-closeout.md) verified standalone
 operation without editor/MCP. Project references for MCP, EditorToolset and other editor tooling
 are restricted to Editor targets; receipt/staging/runtime evidence corroborates Game-target exclusion.
 This does not disable the accepted editor auto-start workflow. Phase 2.4 closeout is accepted.
 
 Historical 2026-10-10 investigation: the user accepted official Unreal-first/Blender-later evaluation
-and requested a [Blender Sandbox pilot design](../implementation/blender-sandbox-pilot-design.md).
+and requested a [Blender Sandbox pilot design](../implementation/investigations/blender-sandbox/blender-sandbox-pilot-design.md).
 That record owns pinned official source/transport/license findings and host Sandbox state, superseding
 the earlier unavailable-source/host checks below. Official candidates are preferred for evaluation;
 those initial adoption/setup decisions were pending at that checkpoint. Later Unreal authorization

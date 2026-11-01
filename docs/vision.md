@@ -11,7 +11,7 @@ Initial experience: dark asteroid storage hangar; sealed, mostly powered-down sh
 Current first-slice planning stops short of departure: Gene boards from a breathable low-gravity
 hangar, revives Melfina, bootstraps/registers through Gilliam, prepares the ship and reaches a startup
 milestone while remaining supported. Continued exploration and bounded OFF/ON/stow/redeploy are
-part of the accepted [Phase 1.3 contract](implementation/phase-1-3-closeout-audit.md). No playable
+part of the accepted [Phase 1.3 contract](implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md). No playable
 build exists; eventual departure/sub-ether and the broader systems above remain later scope.
 
 Accepted exterior envelope: 72 m long × 21 m wide × 16 m high, verified against [Sunrise World's official ship profile](https://www.sunrise-world.net/titles/pickup_094.php) (OFFICIAL_SUPPLEMENTAL, EXT-004). This constrains later reconstruction; it does not establish usable interior volume or a deck plan.

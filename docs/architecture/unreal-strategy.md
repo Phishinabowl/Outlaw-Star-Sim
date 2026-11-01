@@ -8,22 +8,22 @@ The chosen Windows toolchain is **Visual Studio Community 2026, MSVC 14.50, Wind
 
 ## Current Post-Installation Check — 2026-10-23
 
-The [post-installation results and Phase 2.1 closeout proposal](../implementation/phase-2-1-closeout.md)
+The [post-installation results and Phase 2.1 closeout proposal](../implementation/vertical-slices/slice-01-awakening/phase-2/2.1-tooling/phase-2-1-closeout.md)
 record VS **18.11.1 / 18.11.12315.225**, installed .NET Desktop/MAUI workloads and matching **14.50 ATL**
 component plus representative headers/libraries. MSVC **14.50.35739**, SDK **10.0.26100.0** and engine
 **5.8.4** remain available; system .NET SDK **10.0.402** is now present alongside **10.0.204**.
 The earlier three setup gaps are resolved at the availability level. Phase 2.1 closeout was accepted
 on 2026-10-23, with no new installation recommendation. UBT's effective selection, compile/link,
 editor integration and package proof were unexecuted at that inventory checkpoint. Subsequent
-[2.3 results](../implementation/phase-2-3-closeout.md) verify compile/link, intended effective
+[2.3 results](../implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-closeout.md) verify compile/link, intended effective
 compiler/SDK selection and repeated editor/input/recovery proof. Subsequent
-[2.4 results](../implementation/phase-2-4-closeout.md) corroborate Game-target selection and standalone
+[2.4 results](../implementation/vertical-slices/slice-01-awakening/phase-2/2.4-packaging/phase-2-4-closeout.md) corroborate Game-target selection and standalone
 package/input/repeat operation on the primary host; closeout is accepted.
 No global compiler default was changed.
 
 ## Earlier Read-Only Preflight — 2026-10-23
 
-The [Phase 2.1 preflight](../implementation/validation/phase-2-1-tooling-preflight-2026-10-23.md)
+The [Phase 2.1 preflight](../implementation/vertical-slices/slice-01-awakening/phase-2/2.1-tooling/phase-2-1-tooling-preflight-2026-10-23.md)
 records installed UE **5.8.4 / CL 58902052**, corroborated by Build.version and editor executable
 metadata, while the launcher record still named 5.8.3. Visual Studio was **18.11.0**. The preferred
 MSVC **14.50.35739** and SDK **10.0.26100.0** remain available. Blender **5.2.3** is reported installed;
@@ -37,7 +37,7 @@ was performed by the preflight; actual selection remains later build evidence.
 
 ## Earlier Phase 1.1 inventory
 
-The [dated readiness record](../implementation/phase-1-1-host-tooling-readiness.md) owns the October 7
+The [dated readiness record](../implementation/vertical-slices/slice-01-awakening/phase-1/1.1-tooling/phase-1-1-host-tooling-readiness.md) owns the October 7
 observed host/tool inventory and limitations. MSVC 14.50 was installed alongside 14.51; actual
 compiler product version 14.50.35739 clears the engine's banned range. The corrected Unreal Test Adapter
 query confirms it is installed. Remaining .NET workloads/matching ATL are proposed setup additions;
@@ -80,10 +80,10 @@ accepted local pilot contract; client/server compatibility and operational adopt
 
 C++ foundations own inspectable, testable, diffable simulation/gameplay state. Blueprints handle editor-facing configuration, content hookup, animation/VFX/audio events and light composition. Avoid monolithic Blueprint state ownership. Blender remains the reconstruction direction; Git and scoped LFS tracking are configured, with neutral-map recovery verified. Later authoring/handoff assets retain their separate validation checkpoints.
 
-[Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. The [Phase 1.4 draft](../implementation/phase-1-4-architecture-asset-validation-draft.md) records accepted project/module layout and initial rendering candidates. Detailed implementation types, serialization, networking, renderer quality settings and integration compatibility remain unresolved. Reference-derived percentages do not select physics constants.
+[Shared external-control compatibility](external-control-automation.md) remains authoritative for future commands/results and locality. The [Phase 1.4 draft](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md) records accepted project/module layout and initial rendering candidates. Detailed implementation types, serialization, networking, renderer quality settings and integration compatibility remain unresolved. Reference-derived percentages do not select physics constants.
 
 The Blank C++ project skeleton is generated; [setup observations](../development/unreal-project-setup.md)
-record its current limits. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slice-1-implementation-plan.md)
+record its current limits. [Phase 1 planning and Phase 2.1 preparation](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md)
 and Phase 2.2 skeleton/repository setup are complete; 2.2 closeout is accepted. Reproducible build/editor
 and selected local Unreal MCP proof passed in 2.3; its closeout is accepted. Authorized 2.4 package
 and repeated standalone runtime proof passed; closeout is accepted. This supersedes the earlier

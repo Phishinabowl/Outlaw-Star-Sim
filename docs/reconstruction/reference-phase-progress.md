@@ -1,8 +1,8 @@
 # Reference phase — first review increment
 
 Historical publication checkpoint, 2026-10-08: Phases 1.1–1.3 planning were accepted, with final Phase 1.3 closeout
-published in `209b87d` on 2026-10-08. The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md)
-owns current phase status and the [behavior closeout](../implementation/phase-1-3-closeout-audit.md)
+published in `209b87d` on 2026-10-08. The [implementation plan](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md)
+owns current phase status and the [behavior closeout](../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md)
 owns selected E/F contracts. Phase 1.4 and implementation were unstarted at that checkpoint.
 The linked implementation plan owns current phase status, subsequent approvals and remaining gates;
 the phase states in this historical checkpoint do not describe current execution progress.
@@ -33,7 +33,7 @@ gameplay implementation or source extraction occurred. Existing baseline constra
 
 ## Expanded slice implementation plan — 2026-10-07, uncommitted
 
-The user requested a documentation-only phased plan using approved Baseline v1 and supplied project-plan format references. [Draft](../implementation/vertical-slice-1-implementation-plan.md) defines eight delivery phases, decimal review units, dependencies, decision timing, validation traceability, recovery and deferred work. README/roadmap/tooling navigation now reflect the new request, superseding the prior formal-gate deferral without granting execution approval. No installation, project initialization, model, code, runtime test or source extraction occurred. Only existing accepted foundations are checked; future execution/gates remain open.
+The user requested a documentation-only phased plan using approved Baseline v1 and supplied project-plan format references. [Draft](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md) defines eight delivery phases, decimal review units, dependencies, decision timing, validation traceability, recovery and deferred work. README/roadmap/tooling navigation now reflect the new request, superseding the prior formal-gate deferral without granting execution approval. No installation, project initialization, model, code, runtime test or source extraction occurred. Only existing accepted foundations are checked; future execution/gates remain open.
 
 Latest publication approval: the user confirmed Baseline v1 and the research-closeout, README, roadmap and tooling updates on 2026-10-07. The following uncommitted-status notes describe their review-time state. The formal planning gate remains deferred; publication does not authorize installations, project creation or implementation.
 

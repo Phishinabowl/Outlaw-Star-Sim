@@ -4,7 +4,7 @@ This directory owns historical navigation. The `local/` subtree is Git-ignored s
 33 previously local-only scripts does not publish them. All 33 scripts now occupy their ledgered
 historical destinations; original source files are absent and byte hashes are preserved.
 
-The [tool audit ledger](../../docs/implementation/reference-index-reorganization-tool-audit.md#local-helper-inspection-record)
+The [tool audit ledger](../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-tool-audit.md#local-helper-inspection-record)
 owns the exact original paths, planned destinations and hashes. Groups under `local/` cover
 reference review/corrections/previews, alignment pilots, workbook pilots, Blender connectivity
 and development/recovery validation.

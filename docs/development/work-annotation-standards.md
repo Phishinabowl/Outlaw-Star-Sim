@@ -8,7 +8,7 @@ backlog, evidence register or phase checklist. This convention applies to mainta
 
 Adapted from the user-supplied LoTM working convention for this repository. The
 [canon policy](../canon-policy.md), approved Reconstruction / Implementation Baseline v1 and
-[implementation plan](../implementation/vertical-slice-1-implementation-plan.md) retain authority.
+[implementation plan](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md) retain authority.
 An annotation does not approve a phase, resolve research or authorize installation/publication.
 
 ## Eligible Locations And Editor Behavior
@@ -98,7 +98,7 @@ validation limits. A source-local assumption comment is not a substitute for tha
 
 | Information | Authoritative home |
 | --- | --- |
-| Slice phases, dependencies, validation and acceptance status | `docs/implementation/vertical-slice-1-implementation-plan.md` |
+| Slice phases, dependencies, validation and acceptance status | `docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md` |
 | Project stage and later directions | `docs/roadmap.md`, pointing to the detailed plan |
 | Unresolved research or source-verification needs | `docs/reconstruction/open-questions.md`, linking evidence records |
 | Source observations, provenance and classification | Existing authored reference/evidence records; no annotation backlog inside them |

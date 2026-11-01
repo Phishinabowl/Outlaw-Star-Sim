@@ -21,7 +21,7 @@ Migration does not change evidence or review status. Phase 4 integration/workboo
 - [episode-01-review-batch-04.md](survey/episode-01-review-batch-04.md)
 - [episode-01-review-batch-05.md](survey/episode-01-review-batch-05.md)
 
-[Migration ledger](../../../../docs/implementation/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
+[Migration ledger](../../../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
 
 ## Relocated Review History
 

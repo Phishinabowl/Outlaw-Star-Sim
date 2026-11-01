@@ -57,7 +57,7 @@ remain to verify. Re-inspected existing recovery-a 28 (black frame), recovery-b 
 and recovery-b 27 (bright wide bridge with deployed apparatus); these context stills do not alone
 verify the full droop/recovery motion. No new extraction/audio review. The demo's graceful OFF
 degraded presentation is recorded as an E/F adaptation in the
-[Phase 1.3 draft](../../../../../docs/implementation/phase-1-3-action-readiness-draft.md), separate from
+[Phase 1.3 draft](../../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-action-readiness-draft.md), separate from
 this emergency incident and its auxiliary-service evidence.
 
 The user subsequently supplied the exact OFF/ON comparison as two attached 2560 × 1440 images

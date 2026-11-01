@@ -11,7 +11,7 @@ Migration does not change evidence or review status. Phase 4 integration/workboo
 - [startup-open-items-followup.md](startup-open-items-followup.md)
 - [startup-sequence-comparison.md](startup-sequence-comparison.md)
 
-[Migration ledger](../../../docs/implementation/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
+[Migration ledger](../../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
 
 ## Relocated Review History
 

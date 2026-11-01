@@ -20,7 +20,7 @@ Initial cache completed October 6, 2026 (America/New_York): **26 episodes, 104 g
 ## Ordered episode-review workflow
 
 **Adopted — 2026-10-27:** this section owns the end-to-end sequence. The
-[implementation plan](../../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+[implementation plan](../../../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns episode order and phase authorization; tool documents own commands and their validation.
 The subtitle-context step is newly integrated here. Earlier batches are not retrospectively
 described as subtitle-assisted; revisit their specific open questions when this step is applied.

@@ -3,7 +3,7 @@
 Use this directory to find maintained entry points and their owning documentation. Tests and
 support modules are not separate tools. Reference records now use the organized index layout;
 the coordinated migration and Phase 4 integration/workbook validation are accepted. The
-[closeout record](../docs/implementation/reference-index-reorganization-closeout.md) owns final
+[closeout record](../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-closeout.md) owns final
 acceptance/publication status and remaining limitations.
 
 ## Reference review
@@ -47,7 +47,7 @@ coverage and source records should be reused; reorganization does not require fr
 | [Asset recipes](../assets/recipes/create_scale_handoff.py) | Blender fixture creation, UVs, export and deliberate flap revision; recipes retain asset ownership |
 | [Marker-material recipe](../assets/recipes/create_handoff_marker_materials.py) | Unreal material creation through the pilot execution interface |
 
-The [handoff record](../docs/implementation/validation/phase-3-1-blender-handoff-results.md) and
+The [handoff record](../docs/implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-blender-handoff-results.md) and
 [editor automation contract](../docs/architecture/editor-automation.md) own runtime boundaries.
 These scripts are not ordinary shell tools and may create or alter owned development assets.
 
@@ -69,9 +69,9 @@ new scripts into disposable evidence/output directories.
 
 ## Reorganization records
 
-[Phase 2 preparation](../docs/implementation/reference-index-reorganization-phase-2.md) owns the
+[Phase 2 preparation](../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-phase-2.md) owns the
 originally prepared routing patch and isolated checks. That patch is a migration artifact, not another CLI.
 It was activated with the Phase 3 record moves and is retained as an implementation artifact;
 do not reapply it to the migrated checkout. The
-[accepted Phase 4 validation](../docs/implementation/reference-index-reorganization-phase-4.md)
+[accepted Phase 4 validation](../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-phase-4.md)
 records integration tests, workbook refresh/equivalence and the Windows fixture-environment limits.

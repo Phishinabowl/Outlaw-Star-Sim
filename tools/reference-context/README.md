@@ -16,7 +16,7 @@ and manual exports without downloading either entire site. Coverage includes cha
 equipment/weapons, machinery, locations, factions and events useful to the long-term game.
 
 This document owns the proposed tool, storage and validation design. The
-[implementation plan](../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+[implementation plan](../../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns execution order and acceptance. The existing
 [AnimeHistory index contract](../../reference/indexes/animehistory/README.md) continues to own
 image annotations and survey progress. Context records supplement those observations; they do

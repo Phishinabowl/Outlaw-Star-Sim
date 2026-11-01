@@ -1,7 +1,7 @@
 # Initial XGP reference index
 
-Current planning: [Phase 1.2 spatial choices](../implementation/phase-1-2-closeout-proposal.md)
-and [Phase 1.3 behavior contract](../implementation/phase-1-3-closeout-audit.md) are accepted;
+Current planning: [Phase 1.2 spatial choices](../implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-closeout-proposal.md)
+and [Phase 1.3 behavior contract](../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md) are accepted;
 actual model/fit/runtime validation remains pending. This index owns source coverage, not game rules.
 
 [Baseline v1](baseline-v1/spatial-constraint-map.md) consolidates spatial relationships, motion reservations, operational vocabulary and the first slice contract for later implementation planning. Provisional geometry/state choices remain separate from source evidence; it is not implementation authorization.
@@ -14,7 +14,7 @@ The [source manifest](../../reference/indexes/sources/source-manifest.json) reco
 
 The original structured-pass checkpoint comprises 16 interior/startup, 11 identity, 14 variant and
 three propulsion-label records, leaving 22 without those pass types. Later targeted
-[reservation checks](../implementation/phase-1-2-reservation-audit.md) and
+[reservation checks](../implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-reservation-audit.md) and
 [headroom comparison](../../reference/indexes/episodes/EP-04/evidence/episode-04-cockpit-headroom-review.md) are supplemental
 inspections, not a new complete annotation tally. Full comparison/transcription remains incomplete.
 None of all 221 scans has a byte-identical SHA-256 match in the manifest.

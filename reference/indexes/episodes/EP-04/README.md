@@ -47,7 +47,7 @@ Migration does not change evidence or review status. Phase 4 integration/workboo
 - [episode-04-inspection.md](preparation/episode-04-inspection.md)
 - [episode-04-metadata.json](preparation/episode-04-metadata.json)
 
-[Migration ledger](../../../../docs/implementation/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
+[Migration ledger](../../../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
 
 ## Relocated Review History
 

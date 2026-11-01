@@ -38,7 +38,7 @@ Source: [_source_settei/img092.jpg](../../../../_source_settei/img092.jpg).
 - Opening labeled cockpit; foreground arrow points toward dining. Drawing includes a separate middle wall hatch, round floor access, pipes/cables, robot rail and air conditioner. Floor-access and passage-centerline callouts remain distinct.
 - Inset **97.5.15**, **決定稿**, SUNRISE and **1997.5.19** are visible. Related SET-044 and earlier [startup follow-up](../../comparisons/startup-open-items-followup.md) retain their evidence scope.
 - SET-093 reverses named viewpoint/destinations while closely repeating the composition. As with SET-044/045, this is unresolved text/geometry correspondence, not demonstrated opposite ends of a fully reconstructed corridor.
-- The wall hatch is not confirmed as the kitchen door; floor access is not automatically the separately drawn rectangular airlock. The [corridor amendment](../../../../docs/implementation/phase-1-2-corridor-route-amendment.md) remains a separate E layout choice.
+- The wall hatch is not confirmed as the kitchen door; floor access is not automatically the separately drawn rectangular airlock. The [corridor amendment](../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md) remains a separate E layout choice.
 
 <a id="SET-093"></a>
 ## SET-093 — Passage — Cockpit-Side Label

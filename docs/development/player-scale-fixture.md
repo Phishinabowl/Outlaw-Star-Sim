@@ -2,11 +2,11 @@
 
 Status: editor build, saved-map measurements and scoped owner-run input, traversal, camera and
 neutral clearance checks passed 2026-10-24. Blender handoff and
-[published asset recovery](../implementation/validation/phase-3-1-recovery-results.md) also passed;
+[published asset recovery](../implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-recovery-results.md) also passed;
 later equipment/context repeats remain separate. See the
-[results record](../implementation/validation/phase-3-1-player-scale-results.md).
-The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md#phase-31-player-and-scale-fixture)
-owns scope. [VS1-G01](../implementation/validation/spatial-validation-procedures.md#vs1-g01)
+[results record](../implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-player-scale-results.md).
+The [implementation plan](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#phase-31-player-and-scale-fixture)
+owns scope. [VS1-G01](../implementation/vertical-slices/slice-01-awakening/validation/procedures/spatial-validation-procedures.md#vs1-g01)
 owns validation. This fixture is a development aid, not ship geometry or finished Gene artwork.
 
 ## What The Components Do

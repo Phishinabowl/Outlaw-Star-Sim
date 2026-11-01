@@ -43,7 +43,7 @@ graphic must not mark unfinished bootstrap successful. Existing connected-operat
 and shared completion/result rules still apply.
 
 Subsequent user-selected gameplay direction is recorded in the
-[Phase 1.3 draft](../../../../../docs/implementation/phase-1-3-action-readiness-draft.md): click activation,
+[Phase 1.3 draft](../../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-action-readiness-draft.md): click activation,
 automatic progression, clickable HOLD to pause and inactive KEY. These are F controls inspired by
 the graphic, not a revision of the observed evidence. The user subsequently selected a HOLD
 pause/resume toggle with changed button color and readable paused feedback, returning to its normal

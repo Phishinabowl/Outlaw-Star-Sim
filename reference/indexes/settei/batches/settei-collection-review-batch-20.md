@@ -104,7 +104,7 @@ Source: [_source_settei/img088.jpg](../../../../_source_settei/img088.jpg).
 - Perspective shows four rectangular panels flush with the floor, wall storage/counter units, monitor, circular wall feature, large rectangular panel, ceiling lights, rail and Gilliam-like display. No sink or cooking function is assigned from this sheet alone.
 - **床面の４枚のパネルを上下させて、机やベッドにします。** — **Raise/lower the four floor panels to make a desk/table or bed**, high confidence. **コックピットへ** — **To cockpit**, gives a direction, not measured adjacency.
 - **決定稿**, SUNRISE, inset **97.7.30** and final stamp **1997.7.30** are visible.
-- Dining/galley identity remains unresolved; preliminary SET-043 cannot silently supply this room's final fixtures. The accepted [corridor amendment](../../../../docs/implementation/phase-1-2-corridor-route-amendment.md) still defers room placement, sizing and furniture implementation.
+- Dining/galley identity remains unresolved; preliminary SET-043 cannot silently supply this room's final fixtures. The accepted [corridor amendment](../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md) still defers room placement, sizing and furniture implementation.
 
 <a id="SET-089"></a>
 ## SET-089 — Rest Room — Raised Furniture Configuration
@@ -115,7 +115,7 @@ Source: [_source_settei/img089.jpg](../../../../_source_settei/img089.jpg).
 - Same recognizable room composition as SET-088, now with a long raised segmented furniture surface in the foreground. Storage, monitor, large wall panel, rail/display and lights remain visible.
 - **この面は実際には見えません。** — **This face is not actually visible**, high confidence, points to the large foreground explanatory face. It must not be modeled as a normally exposed cabinet/wall simply because it appears in the drawing.
 - **決定稿**, SUNRISE, inset **97.7.30** and final stamp **1997.7.30** are visible.
-- Together SET-088/089 support convertible furniture, not its measured height, complete support mechanics or confirmed dining/galley identity. Room placement and furniture operation remain deferred under the [corridor amendment](../../../../docs/implementation/phase-1-2-corridor-route-amendment.md).
+- Together SET-088/089 support convertible furniture, not its measured height, complete support mechanics or confirmed dining/galley identity. Room placement and furniture operation remain deferred under the [corridor amendment](../../../../docs/implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-corridor-route-amendment.md).
 
 ## Coverage And Next Batch
 

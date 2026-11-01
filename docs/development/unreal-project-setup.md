@@ -1,10 +1,10 @@
 # Guided Unreal Project Setup — Phase 2.2
 
 Status: Phase 2.2 fully closed; closeout accepted 2026-10-23 and file recovery verified.
-The [closeout proposal](../implementation/phase-2-2-closeout.md) records disabled Android file-server
+The [closeout proposal](../implementation/vertical-slices/slice-01-awakening/phase-2/2.2-project-setup/phase-2-2-closeout.md) records disabled Android file-server
 settings and the cleared token. Publication and fresh-clone file recovery are verified for `49511af`;
 retrieved-map editor opening subsequently passed in Phase 2.3. The handoff fixture remains Phase 3.1 work.
-The [implementation plan](../implementation/vertical-slice-1-implementation-plan.md#phase-22-project-skeleton-and-repository-boundary)
+The [implementation plan](../implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#phase-22-project-skeleton-and-repository-boundary)
 owns scope and completion. These instructions are a guide, not evidence that steps have been performed.
 
 ## First Stop: The Project Browser
@@ -119,7 +119,7 @@ root, the proposed command is:
 & 'D:\Epic Games\UE_5.8\Engine\Build\BatchFiles\Build.bat' OutlawStarSimEditor Win64 Development '-Project=D:\Repos\Outlaw-Star-Game\Unreal\OutlawStarSim\OutlawStarSim.uproject' -WaitMutex
 ```
 
-This recipe subsequently passed independent [2.3 validation](../implementation/validation/phase-2-3-build-editor-results.md),
+This recipe subsequently passed independent [2.3 validation](../implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-build-editor-results.md),
 with actual compiler/SDK evidence, logs and repeated editor/input observations. Do not use Build Solution
 on the generated engine/tool projects as a substitute.
 

@@ -36,11 +36,11 @@ Baseline v1 consolidates the accepted direction into a reviewable planning contr
 
 ## Engine/toolchain direction — recorded, not build-validated
 
-UE **5.8** is intended unless later testing supplies a reason to revisit it; the preflight identified installed **5.8.4** despite stale launcher metadata. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. The [2026-10-23 post-installation check](implementation/phase-2-1-closeout.md) identifies VS **18.11.1** and resolves the three selected .NET Desktop/MAUI/14.50 ATL setup gaps. Patched MSVC 14.50 remains alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) distinguishes current findings from the [earlier readiness record](implementation/phase-1-1-host-tooling-readiness.md). Phase 2.1 closeout is accepted; effective build selection is not yet proven.
+UE **5.8** is intended unless later testing supplies a reason to revisit it; the preflight identified installed **5.8.4** despite stale launcher metadata. The selected toolchain is **Visual Studio Community 2026 + MSVC 14.50**, with installed **Windows SDK 10.0.26100.0** as the SDK candidate. The [2026-10-23 post-installation check](implementation/vertical-slices/slice-01-awakening/phase-2/2.1-tooling/phase-2-1-closeout.md) identifies VS **18.11.1** and resolves the three selected .NET Desktop/MAUI/14.50 ATL setup gaps. Patched MSVC 14.50 remains alongside 14.51. [Unreal strategy](architecture/unreal-strategy.md) distinguishes current findings from the [earlier readiness record](implementation/vertical-slices/slice-01-awakening/phase-1/1.1-tooling/phase-1-1-host-tooling-readiness.md). Phase 2.1 closeout is accepted; effective build selection is not yet proven.
 
 ## Phased implementation plan — accepted planning baseline
 
-The user subsequently requested the [expanded Vertical Slice 1 implementation plan](implementation/vertical-slice-1-implementation-plan.md), superseding the prior hold on introducing the planning gate. Baseline v1 remains authoritative. The plan owns decimal subphases, dependencies, validation/evidence, recovery and acceptance checkpoints:
+The user subsequently requested the [expanded Vertical Slice 1 implementation plan](implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md), superseding the prior hold on introducing the planning gate. Baseline v1 remains authoritative. The plan owns decimal subphases, dependencies, validation/evidence, recovery and acceptance checkpoints:
 
 1. Formal planning gate and concrete VS-D01–07 decisions.
 2. Approved toolchain preparation and minimal C++ project/build/package proof.
@@ -71,40 +71,40 @@ planning path, not installation/enablement authorization or the pilots' later ex
 ## Current Planning And Later Execution Boundaries
 
 On 2026-10-10 the user authorized Phase 1.4 planning/discussion. Its
-[architecture/asset/validation draft](implementation/phase-1-4-architecture-asset-validation-draft.md)
+[architecture/asset/validation draft](implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md)
 records accepted architecture, asset/recovery, handoff, proxy, performance, rendering-learning and
-validation contracts. Map identifiers and the [deferral schedule](implementation/phase-1-4-closeout-review.md#details-that-remain-later-work)
+validation contracts. Map identifiers and the [deferral schedule](implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-closeout-review.md#details-that-remain-later-work)
 were accepted on 2026-10-23. All seven planning items have accepted coverage; Phase 1.4 planning
 closeout was accepted on 2026-10-23. Slice runtime acceptance remains unexecuted; neutral foundation
 build/editor/input and recovery proof have since passed in 2.3. Phase 1.5
-[gate review](implementation/phase-1-5-gate-review.md) is accepted, with explicit authorization on
+[gate review](implementation/vertical-slices/slice-01-awakening/phase-1/1.5-gate-review/phase-1-5-gate-review.md) is accepted, with explicit authorization on
 2026-10-23 for the read-only 2.1 tooling preflight. Subsequent scoped owner-run VS installations were
-verified read-only; [Phase 2.1 closeout](implementation/phase-2-1-closeout.md) was accepted on 2026-10-23.
-Phase 2.2 skeleton/repository setup and its [closeout](implementation/phase-2-2-closeout.md) were accepted
+verified read-only; [Phase 2.1 closeout](implementation/vertical-slices/slice-01-awakening/phase-2/2.1-tooling/phase-2-1-closeout.md) was accepted on 2026-10-23.
+Phase 2.2 skeleton/repository setup and its [closeout](implementation/vertical-slices/slice-01-awakening/phase-2/2.2-project-setup/phase-2-2-closeout.md) were accepted
 on 2026-10-23. Subsequently authorized 2.3 build/editor and Unreal MCP work is complete, with
-[closeout accepted](implementation/phase-2-3-closeout.md). Subsequently authorized 2.4 package and
-first/repeat standalone checks passed, with [closeout accepted](implementation/phase-2-4-closeout.md). Later
+[closeout accepted](implementation/vertical-slices/slice-01-awakening/phase-2/2.3-build-editor/phase-2-3-closeout.md). Subsequently authorized 2.4 package and
+first/repeat standalone checks passed, with [closeout accepted](implementation/vertical-slices/slice-01-awakening/phase-2/2.4-packaging/phase-2-4-closeout.md). Later
 subphases and modeling/gameplay remain outside that scope. Unreal MCP follows ordinary 2.3 build/editor proof; Blender
 MCP follows the 3.1 player/scale fixture, each as a separately scoped optional local pilot.
 
-The [Phase 2 foundation exit](implementation/phase-2-exit-review.md) was accepted on 2026-10-23.
+The [Phase 2 foundation exit](implementation/vertical-slices/slice-01-awakening/phase-2/phase-2-exit-review.md) was accepted on 2026-10-23.
 Authorized Phase 3.1 player/scale and local Blender MCP/handoff checks passed on 2026-10-24.
-The [3.1 closeout review](implementation/phase-3-1-closeout.md) records acceptance and publication;
-[published asset recovery](implementation/validation/phase-3-1-recovery-results.md) passed and its
+The [3.1 closeout review](implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-closeout.md) records acceptance and publication;
+[published asset recovery](implementation/vertical-slices/slice-01-awakening/phase-3/3.1-player-scale/phase-3-1-recovery-results.md) passed and its
 temporary checkout was deleted. Phase 3.1 is closed. No 3.2A execution is authorized.
 
 The user authorized Phase 1.3 preparation/discussion on 2026-10-07. Its
-[action/readiness draft](implementation/phase-1-3-action-readiness-draft.md) prepares service,
+[action/readiness draft](implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-action-readiness-draft.md) prepares service,
 player, mechanism and readiness recommendations plus a discussion queue. User-selected directions
 now include manual hand-item draw/stow and restoration, independent hatch operation, breathable
 hangar, gravity after ignition and continued exploration after startup success. Seal/pressure status
 affects represented departure readiness rather than ignition. Remaining art/metric details are deferred.
-The user accepted the [Phase 1.3 closeout](implementation/phase-1-3-closeout-audit.md), its five
+The user accepted the [Phase 1.3 closeout](implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md), its five
 behavior choices and seven supporting defaults on 2026-10-08. Phase 1.3 planning is complete;
 fit/runtime validation remains later work. Phase 1.4 was unstarted at that checkpoint; its planning
 has since been authorized as recorded above. Implementation remains unstarted.
 
-The [Phase 1.2 closeout package](implementation/phase-1-2-closeout-proposal.md) was accepted by
+The [Phase 1.2 closeout package](implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-closeout-proposal.md) was accepted by
 the user on 2026-10-07, including local canopy/platform/computer storage, planned MC demonstrations
 and the bounded opening contract supplement. Phase 1.2 planning is complete; its actual geometry
 tests remain unexecuted. Phase 1.3 has since completed its planning closeout; no implementation followed.

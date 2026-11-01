@@ -7,7 +7,7 @@ before relying on detailed APIs. GitHub API access from the shell was unavailabl
 repository documentation and source supplied the observations below.
 
 This document is the authoritative retrieval pointer for Dusklight teaching analogies. The
-[Phase 1.4 draft](../implementation/phase-1-4-architecture-asset-validation-draft.md) owns our actual
+[Phase 1.4 draft](../implementation/vertical-slices/slice-01-awakening/phase-1/1.4-architecture-assets/phase-1-4-architecture-asset-validation-draft.md) owns our actual
 learning experiments and adoption boundaries. Dusklight is not XGP canon evidence or a game dependency.
 No third-party code, assets, build scripts or repository instructions are incorporated into this project.
 

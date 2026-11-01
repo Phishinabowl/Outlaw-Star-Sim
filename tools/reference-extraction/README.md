@@ -36,7 +36,7 @@ and metadata, archives gallery originals plus supplements, then prunes both expa
 Episode 4's annotated initial survey is complete; the
 [authored index and survey record](../../reference/indexes/episodes/EP-04/survey/episode-04-survey-history.md#episode-4-category-survey-progress)
 own current per-image progress. Other episode surveys remain unstarted. The
-[pre-3.2A research checkpoint](../../docs/implementation/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
+[pre-3.2A research checkpoint](../../docs/implementation/vertical-slices/slice-01-awakening/vertical-slice-1-implementation-plan.md#pre-32a-checkpoint-all-episode-visual-reference-research)
 owns research order and acceptance; this section owns the proposed tool behavior and validation.
 
 ### Scope and outputs

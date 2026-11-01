@@ -13,4 +13,4 @@ Migration does not change evidence or review status. Phase 4 integration/workboo
 - [episode-26-platform-review.md](evidence/episode-26-platform-review.md)
 - [episode-26-platform-transitions-frames.json](evidence/episode-26-platform-transitions-frames.json)
 
-[Migration ledger](../../../../docs/implementation/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
+[Migration ledger](../../../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.

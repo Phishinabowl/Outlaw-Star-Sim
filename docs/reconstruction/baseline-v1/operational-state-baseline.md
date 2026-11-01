@@ -2,7 +2,7 @@
 
 Companion to the [spatial map](spatial-constraint-map.md), [motion envelopes](motion-clearance-envelopes.md) and [Vertical Slice 1](vertical-slice-1.md). These are provisional state labels for future code discussion, not an implemented state machine, a verified Japanese control lexicon or an approved command registry.
 
-Current gameplay decisions are in the [accepted Phase 1.3 closeout](../../implementation/phase-1-3-closeout-audit.md).
+Current gameplay decisions are in the [accepted Phase 1.3 closeout](../../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md).
 The scene sequences below retain source/inference boundaries; they do not override chosen E/F
 registration, preparation, reversible key/engineering, pause or milestone/departure behavior.
 

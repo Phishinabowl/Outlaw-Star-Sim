@@ -4,13 +4,13 @@ One physical character owns movement, interaction, animation, and future equipme
 
 Control modes: exploration, console interaction, seated/passenger, piloting, grappler control, and possible future EVA. Camera modes are independent: first person, third person, cockpit, chase, orbit, cinematic, and grappler tactical.
 
-The accepted [Phase 1.3 contract](../implementation/phase-1-3-closeout-audit.md) now selects Gene
+The accepted [Phase 1.3 contract](../implementation/vertical-slices/slice-01-awakening/phase-1/1.3-actions-readiness/phase-1-3-closeout-audit.md) now selects Gene
 for the demo, ladder controls, equipment draw/stow, key-triggered seat raising/lowering, temporary
 seat locks and pause/focus behavior. Exact bindings, animation technology, camera offsets and
 physical collision/clipping proof remain later work. No implementation is authorized here.
 
 Reusable switchable magnetic boots and an in-game character/equipment status HUD are accepted design requirements from
-[Phase 1.2 discussion](../implementation/phase-1-2-spatial-motion-decision-packet.md#reusable-equipment-and-character-status-hud--agreed-direction).
+[Phase 1.2 discussion](../implementation/vertical-slices/slice-01-awakening/phase-1/1.2-spatial-motion/phase-1-2-spatial-motion-decision-packet.md#reusable-equipment-and-character-status-hud--agreed-direction).
 Equipment belongs to the same physical player across camera modes and future environments.
 Status presentation reads player condition and equipment/environment state; it does not own a
 second simulation or imply that an enabled boot is attached to a surface. Detailed slice behavior,

@@ -2,7 +2,7 @@
 
 Start here for maintained evidence records and browsing views. Records migrated on 2026-11-01
 now use the organized locations below. Phase 4 integration validation was accepted on 2026-11-01;
-the [closeout record](../../docs/implementation/reference-index-reorganization-closeout.md) distinguishes
+the [closeout record](../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-closeout.md) distinguishes
 completed work from pending final acceptance/publication.
 
 | Collection | Contents |
@@ -21,4 +21,4 @@ media, full subtitles, frames, contact sheets, caches and RARs retain their exis
 storage. A navigation page does not promote an observation or mark an episode reviewed.
 
 See the [project tool directory](../../tools/README.md) for supported entry points and the
-[reorganization plan](../../docs/implementation/reference-index-reorganization-plan.md) for migration status.
+[reorganization plan](../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-plan.md) for migration status.
