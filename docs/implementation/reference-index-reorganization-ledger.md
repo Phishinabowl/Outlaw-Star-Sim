@@ -9,6 +9,9 @@ Initial Git HEAD: `e7d62d52cd3c74e25e83e8bf6b6bb2f9fe8b7c4e`; worktree clean and
 No migration directories were created. The subsequently completed Phase 1.2 static findings are owned
 by the separate [tool and dependency audit ledger](reference-index-reorganization-tool-audit.md),
 accepted by the maintainer on 2026-10-31. Pending-audit fields in the frozen Phase 1.1 JSON remain historical baseline values.
+The subsequent [Phase 2 preparation](reference-index-reorganization-phase-2.md) adds navigation
+pages without moving these records. New navigation files are additions outside the 193-file
+baseline, not missing or duplicated migration entries. Phase 3 will rebase their current-location links.
 
 ## File dispositions
 

@@ -1,5 +1,9 @@
 # Local reference workflow
 
+Use the [index navigation](indexes/README.md) to find evidence collections and the
+[project tool directory](../tools/README.md) to find maintained entry points. The reference
+reorganization is being prepared; current record locations remain linked until migration.
+
 The [cross-site context tool](../tools/reference-context/README.md) adds a shared
 `reference/indexes/context/` collection for condensed AnimeHistory/Fandom research, with separate
 local source caches under `reference/cache/context/` and disposable work under

@@ -568,6 +568,10 @@ The reorganization plan retains the execution checklist; no records have moved a
 The 2026-10-31 scope amendment adds consolidation of the 33 local helper scripts into an ignored
 historical subtree under `tools`, with individual routes/hashes owned by the tool audit ledger.
 Maintained output routing and historical-script moves remain part of the coordinated reorganization.
+The subsequently authorized [reorganization Phase 2 preparation](reference-index-reorganization-phase-2.md)
+was implemented, tested and accepted on 2026-11-01: navigation and ignore protection
+are in place and the routing patch is isolated-tested. Live routing, record moves and historical
+helper moves remain deferred to Phase 3; no episode review or 3.2A work starts automatically.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
 **Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete

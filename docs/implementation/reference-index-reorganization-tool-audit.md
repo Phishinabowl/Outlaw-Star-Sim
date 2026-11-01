@@ -449,3 +449,10 @@ references in the other three index-bearing helpers remain valid; their historic
 - No site adapters, Unreal/Blender behavior, source media, archives, contact sheets, registers or workbooks changed.
 - Refresh baseline line numbers after intervening edits; compare content/IDs rather than applying blind line-number replacements.
 - Phase 1 was accepted by the maintainer on 2026-10-31; later implementation remains separately authorized.
+
+### Phase 2 Preparation Pointer
+
+The authorized [Phase 2 preparation](reference-index-reorganization-phase-2.md) was implemented
+and tested on 2026-11-01, and accepted by the maintainer the same day. It adds index/tool navigation and historical
+ignore protection and prepares the active routing changes in an isolated-tested patch. Original
+record/script paths in this audit remain the pre-migration baseline; no records or helpers moved.

@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-30 / 2026-10-31 |
-| Status | Plan accepted by the maintainer on 2026-10-30; migration and tool changes unimplemented |
+| Created / last edited | 2026-10-30 / 2026-11-01 |
+| Status | Phases 1 and 2 preparation accepted; migration and live routing changes unimplemented |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 1 complete and accepted 2026-10-31; Phase 2 and migration unstarted |
+| Current checkpoint | Phase 2 preparation accepted 2026-11-01; Phase 3 and migration unstarted |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -233,22 +233,31 @@ next increment; it has not started and is not authorized by this confirmation.
 
 **Prerequisite:** Phase 1 exit. **Deliverable:** navigation and coordinated path updates prepared for Phase 3.
 
-- [ ] Add index navigation and episode ownership documents.
-- [ ] Add `tools/README.md` as the maintained directory linking existing tool/recipe owners.
-- [ ] Decide the working sheet builder's supported or legacy status explicitly.
-- [ ] Add historical-tool navigation and ignore protection before moving any local helper.
-- [ ] Verify the 33 historical-script routes and hashes; keep supported entry points separate from archived originals.
-- [ ] Update affected producers, readers, tests and command examples to the target destinations.
-- [ ] Document permanent, generated and temporary output ownership for each maintained tool family.
-- [ ] Coordinate activation of path changes with Phase 3 moves; preserve source and no-overwrite protections.
+- [x] Add index navigation and episode ownership documents.
+- [x] Add `tools/README.md` as the maintained directory linking existing tool/recipe owners.
+- [x] Decide the working sheet builder's supported or legacy status explicitly.
+- [x] Add historical-tool navigation and ignore protection before moving any local helper.
+- [x] Verify the 33 historical-script routes and hashes; keep supported entry points separate from archived originals.
+- [x] Prepare affected producer, reader, test and command-example updates as a coordinated patch for activation with Phase 3.
+- [x] Document permanent, generated and temporary output ownership for each maintained tool family.
+- [x] Coordinate activation of path changes with Phase 3 moves; preserve source and no-overwrite protections.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the
+[Phase 2 preparation record](reference-index-reorganization-phase-2.md) owns the navigation,
+ignore checks, pending routing patch and isolated test results. Live maintained executables retain
+the existing layout. New navigation links current records; 193 pre-existing index files and all
+33 helper sources remain unchanged. The legacy named-section sheet builder is assigned to history.
 
 **Validation:** every affected producer/consumer is covered by a corresponding ledgered move or explicit exception.
 **Recovery / deferral:** keep the last usable layout recoverable; do not accept a half-migrated workflow.
 
 ### Phase 2 Exit Gate
 
-- [ ] Navigation and tool changes are ready for coordinated migration; remaining dependencies recorded.
-- [ ] Operational acceptance deferred until Phase 3 records and Phase 4 validation are complete.
+- [x] Navigation and tool changes are ready for coordinated migration; remaining dependencies recorded.
+- [x] Operational acceptance deferred until Phase 3 records and Phase 4 validation are complete.
+
+Preparation was accepted by the maintainer on 2026-11-01. Phase 3 requires subsequent
+authorization. This confirmation publishes preparation only; the routing patch remains unapplied.
 
 ## Phase 3: Record Migration And Reference Repair
 

@@ -57,5 +57,8 @@ Thumbs.db
 # .local folder
 .local/
 
+# Historical host-local helpers; navigation remains trackable
+/tools/historical/local/
+
 # Host-local Codex MCP connection; setup recipe is documented separately
 /.codex/config.toml
