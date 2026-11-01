@@ -1,10 +1,10 @@
 # Reference And Implementation Documentation Reorganization
 
 The [plan](reference-index-reorganization-plan.md) owns scope, sequence and approval gates.
-Phases 1–4 and 6–7 are accepted. Phase 7 documentation migration was accepted on 2026-11-01;
-Phase 8.1–8.2 integration/preservation validation was accepted on 2026-11-01; Phase 9 remains
-unstarted. The
-prepared Phase 5 reference-component closeout remains distinct from combined final acceptance.
+All nine reorganization phases are accepted. The maintainer explicitly accepted the Phase 5
+component and Phase 9 combined closeout on 2026-11-01, following the accepted migration and
+validation evidence. Final Git publication verification remains pending; earlier validation
+acceptance alone did not close the component.
 
 | Record | Purpose |
 | --- | --- |
@@ -14,7 +14,7 @@ prepared Phase 5 reference-component closeout remains distinct from combined fin
 | [Phase 2 preparation](reference-index-reorganization-phase-2.md) | Navigation/routing preparation and isolated checks |
 | [Phase 3 migration](reference-index-reorganization-phase-3.md) | Reference-record/helper moves and routing activation |
 | [Phase 4 validation](reference-index-reorganization-phase-4.md) | Accepted reference integration/workbook evidence |
-| [Prepared component closeout](reference-index-reorganization-closeout.md) | Reference-component handoff and limitations; final acceptance remains pending |
+| [Combined closeout](reference-index-reorganization-closeout.md) | Accepted Phase 5 component handoff and Phase 9 reconciliation; publication verification pending |
 | [Documentation migration ledger](implementation-documentation-migration-ledger.md) | Exact documentation routes, dependency audit and actual migration dispositions |
 | [Documentation baseline](implementation-documentation-migration-baseline.json) | Separate frozen Phase 6.1 snapshot; historical paths/status remain unchanged |
 | [Phase 7 migration](implementation-documentation-migration-phase-7.md) | Actual documentation moves, reference repairs and bounded checks |

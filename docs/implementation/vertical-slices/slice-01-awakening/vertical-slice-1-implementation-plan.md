@@ -583,7 +583,9 @@ final acceptance/publication pending. The documentation inventory/audit was subs
 the authorized [Phase 7 migration](../../projects/reference-index-reorganization/implementation-documentation-migration-phase-7.md)
 organized these slice/project records and was accepted on 2026-11-01. Subsequent
 [Phase 8 validation](../../projects/reference-index-reorganization/implementation-documentation-validation-phase-8.md)
-was accepted on 2026-11-01; the reorganization's Phase 9 closeout is unstarted.
+was accepted on 2026-11-01. The reorganization's
+[combined Phase 9 closeout](../../projects/reference-index-reorganization/reference-index-reorganization-closeout.md#phase-9-combined-reconciliation-and-acceptance)
+was accepted with the Phase 5 component on 2026-11-01; final Git publication verification is pending.
 Episode 7 review and Phase 3.2A remain unstarted.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.

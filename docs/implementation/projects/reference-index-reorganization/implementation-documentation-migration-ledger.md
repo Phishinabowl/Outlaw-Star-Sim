@@ -396,3 +396,13 @@ future-ownership checks pass within the same result record; no further file or d
 Phase 8.1–8.2 and the Phase 8 exit gate were accepted by the maintainer on 2026-11-01 for
 documentation publication. Phase 9 remains unstarted and requires separate authorization; the prepared
 Phase 5 component closeout remains pending combined final reconciliation.
+
+## Phase 9 Closeout Reconciliation — 2026-11-01
+
+The existing [combined closeout](reference-index-reorganization-closeout.md#phase-9-combined-reconciliation-and-acceptance)
+now preserves the Phase 5 component evidence and records accepted documentation migration and
+validation, the operating handoff, remaining limits and final publication scope. No new file or
+destination is introduced; all 52 implementation files still match this ledger. Baselines, historical
+audit paths and helper bytes remain unchanged. Final checks account for both components' routes
+and active links. The maintainer accepted the Phase 5 component and Phase 9 combined closeout on
+2026-11-01 and authorized documentation publication; Git publication verification remains pending.
