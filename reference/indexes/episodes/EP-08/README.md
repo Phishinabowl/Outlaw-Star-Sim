@@ -3,6 +3,11 @@
 Navigation migrated 2026-11-01. Records are linked at their organized locations.
 Migration does not change evidence or review status. Phase 4 integration/workbook validation was accepted on 2026-11-01.
 
+Gallery download and contact-sheet verification completed and were accepted by the maintainer
+on 2026-11-01. All 354 images are cached and all 15 sheets are available. Gallery annotations
+remain UNREVIEWED / NOT_REVIEWED; existing targeted evidence is separate. Subtitle/website
+context and independent Episode 8 alignment precede the first review batch.
+
 ## Evidence
 
 - [episode-08-departure-a-frames.json](evidence/episode-08-departure-a-frames.json)
@@ -12,6 +17,7 @@ Migration does not change evidence or review status. Phase 4 integration/workboo
 
 ## Preparation
 
+- [episode-08-gallery-preparation.md](preparation/episode-08-gallery-preparation.md)
 - [episode-08-metadata.json](preparation/episode-08-metadata.json)
 
 [Migration ledger](../../../../docs/implementation/projects/reference-index-reorganization/reference-index-reorganization-ledger.md) records the original and current locations; keep these navigation links current.
