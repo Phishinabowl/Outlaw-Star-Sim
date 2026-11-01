@@ -562,7 +562,12 @@ unimplemented pending authorization. This housekeeping work does not start Episo
 The subsequently authorized Phase 1.1 inventory was accepted by the maintainer on 2026-10-30: its
 [ledger](reference-index-reorganization-ledger.md) and
 [baseline](reference-index-reorganization-baseline.json) map the existing files/sections and
-preserve register/workbook baselines. No records have moved; Phase 1.2 remains unstarted.
+preserve register/workbook baselines. The subsequent Phase 1.2 static audit and reorganization
+Phase 1 closeout were accepted on 2026-10-31 in the separate [tool/dependency ledger](reference-index-reorganization-tool-audit.md).
+The reorganization plan retains the execution checklist; no records have moved and Phase 2 remains unstarted.
+The 2026-10-31 scope amendment adds consolidation of the 33 local helper scripts into an ignored
+historical subtree under `tools`, with individual routes/hashes owned by the tool audit ledger.
+Maintained output routing and historical-script moves remain part of the coordinated reorganization.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.
 **Planning scope accepted — 2026-10-26; annotated-review refinement accepted the same day:** complete

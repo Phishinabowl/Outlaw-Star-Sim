@@ -2,10 +2,10 @@
 
 | Field | Value |
 | --- | --- |
-| Created / last edited | 2026-10-30 / 2026-10-30 |
+| Created / last edited | 2026-10-30 / 2026-10-31 |
 | Status | Plan accepted by the maintainer on 2026-10-30; migration and tool changes unimplemented |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 1.1 inventory accepted 2026-10-30; Phase 1.2 dependency audit unstarted |
+| Current checkpoint | Phase 1 complete and accepted 2026-10-31; Phase 2 and migration unstarted |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -97,79 +97,54 @@ active consumers, byte-preserved or edited, baseline SHA-256, migration status, 
 and exception rationale. Store the completed textual ledger beside this plan. Every one of the
 152 root files must have exactly one disposition; no unlisted deletion or implicit consolidation.
 
-## Tool and helper inventory
+## Audit And Record Ownership
 
-This inventory records discovered locations and roles, not a new execution or runtime certification.
-Maintained scripts were enumerated from Git; local helpers were found by filesystem inspection.
-Repository-external installations and previously deleted helpers are not exhaustively inventoried.
-Executable content is not invoked during planning.
+The [file/section migration ledger](reference-index-reorganization-ledger.md) owns the exact
+record destinations. The [tool and dependency audit ledger](reference-index-reorganization-tool-audit.md)
+owns the tool inventory, active consumers, path classifications and required migration actions.
+The [Phase 1.1 baseline](reference-index-reorganization-baseline.json) preserves the pre-migration
+hashes and data counts. Keep detailed inventory/findings in those ledgers; this plan owns scope,
+sequence, checklists and gates. Phase 2's concise tool directory will link existing usage manuals.
 
-### Maintained reference tools
+## Tool Consolidation And Output Ownership
 
-| Location / files | Role and output ownership | Migration impact |
-| --- | --- | --- |
-| `tools/reference-extraction/inventory.py` | Source inventory and settei contact sheets; writes root `source-manifest.json` | Change manifest destination; retain media destination |
-| `tools/reference-extraction/inspect_episode.py` | FFprobe inspection; writes root episode metadata JSON | Route metadata to episode preparation |
-| `tools/reference-extraction/extract_reference_frames.py` | Bounded explicit frame extraction; root provenance JSON plus ignored frames/logs | Route manifest to episode evidence; preserve no-overwrite and source protections |
-| `tools/reference-extraction/scan_performance_subtitles.py` | All-episode subtitle extraction/search; root coverage JSON and ignored ASS/candidate text | Change coverage destination and all consumers; do not rerun whole audit just to migrate |
-| `tools/reference-extraction/cache_timestamp_index.py` | Cache gallery HTML and build locator CSVs/manifest | Existing `animehistory` ownership retained |
-| `tools/reference-extraction/episode_gallery.py` | Gallery preparation, sheets, archive, verified restore/prune and supplements | Existing cache/archive ownership retained; audit embedded references |
-| `tools/reference-extraction/category_index.py` | Annotation schema, validation and workbook projection input | Audit authored reference fields and links |
-| `tools/reference-extraction/build_animehistory_workbook.ps1` | Locator-only ImportExcel view | Audit links; existing workbook destination retained |
-| `tools/reference-extraction/build_category_workbook.ps1` | Annotation/alignment ImportExcel view | Update subtitle coverage input and any moved record links |
-| `tools/reference-alignment/alignment.py` | Bounded frame search from selected plans | Update documented plan locations and coverage lookup; working outputs stay local |
-| `tools/reference-alignment/models.py` | Reviewed anchors and fitted mapping registers | Shared registers retained; audit reference handling |
-| `tools/reference-alignment/projection.py` | Joined timing/availability projection | Update coverage lookup |
-| `tools/reference-alignment/reproduce.py` | Reproduce selected reviewed frame evidence | Preserve recorded recipes and hashes |
-| `tools/reference-alignment/finish.py` | Preview and apply owned alignment-run cleanup | Preserve cleanup boundaries; audit references |
-| `tools/reference-context/context_tool.py` | Context CLI: retrieve, inspect, verify and validate selected content | Shared context ownership retained; audit links |
-| `tools/reference-context/animehistory.py`, `fandom.py` | Site adapters | No site behavior changes planned |
-| `tools/reference-context/core.py` | Shared storage, safety and transaction support | No unrelated refactor |
-| `tools/reference-context/views.py`, `build_context_workbook.ps1` | Context projection and ImportExcel view | Repair moved evidence links; retain workbook destination |
+**Scope amendment — 2026-10-31:** consolidate the 33 inventoried local helpers under
+`tools/historical/local/`, grouped by purpose. The tool audit ledger owns their individual
+old/new paths and pre-move hashes. These are additional script moves, separate from the 152
+reference-record moves; the accepted Phase 1.1 snapshot remains unchanged.
 
-Existing usage/contracts live in each reference tool directory's README. Tests are supporting code,
-not additional operational commands: extraction has `test_category_index.py`, `test_episode_gallery.py`;
-context has `test_animehistory.py`, `test_context.py`, `test_views.py`; alignment has
-`test_alignment.py`, `test_episodes.py`, `test_finish.py`, `test_models.py`, `test_projection.py`,
-`test_reproduce.py`. Update fixtures and expectations where migrated paths require it.
+```text
+tools/
+├── README.md                         Supported tool/recipe directory
+├── reference-extraction/             Maintained extraction/gallery/review tools
+├── reference-context/                Maintained cross-site context tools
+├── reference-alignment/              Maintained alignment tools
+├── unreal/                           Maintained Unreal development helpers
+└── historical/
+    ├── README.md                     Historical status and navigation
+    └── local/                        Ignored; preserve former local-only status
+        ├── reference-review/         Episode corrections, previews and old sheet helper
+        ├── reference-alignment/      Earlier alignment pilot checks
+        ├── reference-workbooks/      Earlier workbook pilot checks
+        ├── blender/                  Connectivity pilot scripts
+        └── validation/               Historical recovery/fixture checks
+```
 
-### Other maintained project scripts
+Install the ignore rule before moving local helper files. Preserve their bytes, timestamps where
+practical, hashes and original-location records; do not treat relocation as runtime support or
+rewrite old scripts to appear current. Some depend on their former location or host-specific paths.
+The historical directory is for inspection, not a supported execution workflow. A reusable helper
+can later be promoted into a maintained tool family with explicit routing, documentation and checks;
+its archived original remains distinct. Asset recipes retain their asset ownership and are linked
+from the central directory. Third-party source, virtual environments and packaged utilities stay
+with their dependencies rather than being copied into historical project tools.
 
-| Location / files | Purpose and runtime | Disposition |
-| --- | --- | --- |
-| `tools/unreal/create_scale_test_lab.py` | Create owned Phase 3.1 test map through Unreal editor Python | Inventory only; no map execution/change |
-| `tools/unreal/verify_scale_handoff.py` | Inspect saved handoff packages through Unreal Python | Inventory only |
-| `assets/recipes/create_scale_handoff.py` | Create owned rigid-mesh handoff fixture inside Blender | Retain with asset recipes |
-| `assets/recipes/add_scale_handoff_uvs.py` | Add fixture UV coordinates inside Blender | Retain with asset recipes |
-| `assets/recipes/export_scale_handoff.py` | Export selected owned Blender handoff meshes | Retain with asset recipes |
-| `assets/recipes/revise_scale_handoff_flap.py` | Deliberate fixture revision for reimport proof | Retain historical/pilot role |
-| `assets/recipes/create_handoff_marker_materials.py` | Create Unreal marker materials through the pilot tool execution interface | Retain with asset recipes |
-| `Unreal/OutlawStarSim/Plugins/VisualStudioTools/Scripts/Package-Plugin.ps1` | Third-party Visual Studio integration packaging script | Identify as vendor code; no reorganization |
-
-No `tools/unreal/README.md` or central `tools/README.md` currently provides a complete tool directory.
-Phase 2 should add a concise maintained tool directory linking existing owners rather than copying
-their command manuals. Asset recipes remain discoverable there without moving them into `tools`.
-
-### Local and temporary helpers outside `tools`
-
-| Location / files | Observed role | Proposed treatment |
-| --- | --- | --- |
-| `reference/working/build_review_sheets.py` | Builds 12-image named-section sheets from extracted-frame manifests; assumes the current index root | Review for promotion to a documented maintained helper, or label legacy; update before reuse. Not covered by gallery-sheet tooling automatically |
-| `.local/blender-pilot/probe_bridge.py` | Read-only MCP handshake/inventory | Host-local pilot helper; retain ignored |
-| `.local/blender-pilot/create_connectivity_fixture.py`, `remove_connectivity_cube.py` | Create/remove owned Blender connectivity fixture | Host-local, asset-mutating pilot helpers; not ordinary review commands |
-| `.local/validation/phase-3-1/inspect_test_lab.py`, `verify_finished_test_lab.py` | Unreal test-lab inspection/verification | Local historical validation helpers |
-| `.local/validation/phase-3-1/verify_blender_recovery.py`, `verify_unreal_recovery.py` | Recovery verification in application runtimes | Local historical recovery helpers; inspect host paths before reuse |
-| `.tmp/screen_ep04_first.py`, `screen_ep04_025_096.py`, `screen_ep04_097_168.py`, `screen_ep04_169_240.py`, `screen_ep04_241_312.py`, `screen_ep04_313_354.py`, `refine_ep04_025_096.py` | One-off Episode 4 annotation scripts | Inventory as temporary; no replay against current indexes |
-| `.tmp/correct_ep04_first.py`, `correct_ep04_111_167.py`, `correct_ep04_239.py`, `correct_ep04_anchor_dropship.py`, `correct_ep04_el_dorado.py`, `correct_horus_add_grapple.py`, `fix_ep04_344.py`, `confirm_ep04_022.py` | One-off correction/checkpoint scripts | Inspect before any future use; filenames do not establish safety or idempotence |
-| `.tmp/add_ep04_manual_references.py`, `add_halcyon_flight.py`, `add_halcyon_supplements.py`, `adopt_initial_review_status.py` | Historical supplement/status changes | Temporary migration history, not supported entry points |
-| `.tmp/ep04_cleanup_baseline.py`, `verify_ep04_cleanup.py` | Episode 4 cleanup checks | Temporary historical validation |
-| `.tmp/category_preview_montage.py`, `category-preview.mjs` | Local visual previews | Temporary visualization helpers |
-| `.tmp/alignment-stage5/validate_pilot.py`, `.tmp/animehistory-workbook/build-importexcel-test.ps1` | Historical tool/workbook pilot checks | Temporary validation helpers |
-| `.local/blender-pilot/source/blender_mcp/`, its virtual environment, `.local/packages/` | Third-party source, runtime activation scripts, bundled application utilities | Record by package/family; exclude vendor internals from maintained project-tool count |
-
-These local files remain ignored. This plan does not authorize deleting, publishing or promoting
-them wholesale. Most have not had a fresh behavior audit. The working sheet builder is a concrete
-dependency missed by a search limited to tracked `tools` files.
+Maintained tools write permanent textual evidence to the target index structure and generated
+media/workbooks to their established ignored locations. Temporary outputs use task-owned working
+directories with bounded cleanup. Do not place new reusable scripts in disposable output folders,
+or runtime outputs in `tools`. The audit ledger owns the exact producer/consumer routing changes.
+Existing media/archive paths are unchanged; historical scripts are archived rather than rerun to
+regenerate their outputs.
 
 ## Required process coverage
 
@@ -180,7 +155,7 @@ The implementation covers all four parts of the reorganization proposal:
    patterns, controls the moves (Phase 1, executed in Phase 3).
 2. **Trace every affected producer and reader.** Include tool output paths, subtitle coverage
    consumers, tests, workbook builders, authored reference fields, documentation links and relevant
-   helpers outside `tools`. The inventory above is the starting point; Phase 1 resolves exact
+   helpers outside `tools`. The separate tool audit ledger owns the inventory; Phase 1 resolves exact
    dependencies and Phase 2 updates their contracts and destinations.
 3. **Protect historical provenance.** Distinguish active paths from recorded extraction commands,
    recipes and hashes. Preserve original evidence meaning and approval history; use the migration
@@ -228,20 +203,31 @@ The producer roles are preliminary; exact consumers and path classifications rem
 
 ### Phase 1.2: Tool And Consumer Dependency Audit
 
-**Prerequisite:** 1.1 inventory. **Deliverable:** producer/consumer dependencies in the ledger.
+**Prerequisite:** 1.1 inventory. **Deliverable:** separate tool and dependency audit ledger.
 
-- [ ] Trace tracked tools, tests, documentation links and authored CSV reference fields.
-- [ ] Inspect relevant helpers outside `tools`; distinguish maintained, local, temporary and vendor code.
-- [ ] Classify old-path occurrences as active lookups/links, historical commands, stored recipes or prose.
-- [ ] Resolve destinations and document input/output ownership without changing runtime behavior.
+- [x] Trace tracked tools, tests, documentation links and authored CSV reference fields.
+- [x] Inspect relevant helpers outside `tools`; distinguish maintained, local, temporary and vendor code.
+- [x] Classify old-path occurrences as active lookups/links, historical commands, stored recipes or prose.
+- [x] Resolve destinations and document input/output ownership without changing runtime behavior.
+
+**Completion record — audited 2026-10-30; accepted by the maintainer 2026-10-31:** the
+[tool and dependency audit ledger](reference-index-reorganization-tool-audit.md) owns the relocated
+tool inventory, static findings and exact consumer change lists. No runtime changes or record moves
+were performed. Acceptance includes the 2026-10-31 historical-helper consolidation amendment.
+Phase 1 is accepted; Phase 2 remains unstarted and requires subsequent authorization.
 
 **Validation:** every inventoried file/section is accounted for; active dependencies have owners.
 **Recovery / deferral:** leave ambiguous records in place and resolve their ownership before migration.
 
 ### Phase 1 Exit Gate
 
-- [ ] Complete ledger and dependency baseline reviewed; no unassigned file or unresolved destination.
-- [ ] Record Phase 1 acceptance and the authorized next increment.
+- [x] Complete ledger and dependency baseline reviewed; no unassigned file or unresolved destination.
+- [x] Record Phase 1 acceptance and the authorized next increment.
+
+**Exit record — accepted by the maintainer 2026-10-31:** Phase 1.1's file/section ledger and
+baseline and Phase 1.2's separate tool/dependency audit are accepted, including the 33 planned
+historical-helper routes. Confirmation authorizes documentation publication only. Phase 2 is the
+next increment; it has not started and is not authorized by this confirmation.
 
 ## Phase 2: Navigation And Tool Destinations
 
@@ -250,7 +236,10 @@ The producer roles are preliminary; exact consumers and path classifications rem
 - [ ] Add index navigation and episode ownership documents.
 - [ ] Add `tools/README.md` as the maintained directory linking existing tool/recipe owners.
 - [ ] Decide the working sheet builder's supported or legacy status explicitly.
+- [ ] Add historical-tool navigation and ignore protection before moving any local helper.
+- [ ] Verify the 33 historical-script routes and hashes; keep supported entry points separate from archived originals.
 - [ ] Update affected producers, readers, tests and command examples to the target destinations.
+- [ ] Document permanent, generated and temporary output ownership for each maintained tool family.
 - [ ] Coordinate activation of path changes with Phase 3 moves; preserve source and no-overwrite protections.
 
 **Validation:** every affected producer/consumer is covered by a corresponding ledgered move or explicit exception.
@@ -266,6 +255,7 @@ The producer roles are preliminary; exact consumers and path classifications rem
 **Prerequisite:** Phase 2 preparation complete. **Deliverable:** organized records and repaired active references.
 
 - [ ] Execute the ledgered moves, preserving filenames and bytes wherever practical.
+- [ ] Relocate the 33 ledgered local scripts into their historical destinations after ignore protection is verified; preserve hashes and remove only verified source copies.
 - [ ] Relocate episode README sections with dates, scope limits and acceptance provenance intact.
 - [ ] Repair maintained Markdown links/anchors and authored CSV references.
 - [ ] Preserve historical commands, recorded recipes, stable IDs and hashes; record path correspondence in the ledger.
@@ -286,6 +276,7 @@ The producer roles are preliminary; exact consumers and path classifications rem
 **Prerequisite:** Phase 3 exit. **Deliverable:** recorded file, reference and tool check results.
 
 - [ ] Verify file accounting and byte-preserved hashes against the baseline.
+- [ ] Verify all 33 archived helper hashes, unique destinations, source absence and ignored status; confirm no local helper is staged for publication.
 - [ ] Validate links/anchors, schemas, register counts and affected tool tests.
 - [ ] Check output routing using temporary fixtures or bounded tests; do not re-extract episodes or replay destructive helpers.
 - [ ] Verify producers cannot silently recreate the former flat index layout.
@@ -323,4 +314,5 @@ The producer roles are preliminary; exact consumers and path classifications rem
 - [ ] Reorganization closeout accepted; publication status and any remaining limitations recorded.
 
 No source media, RAR payload, contact-sheet collection, application configuration or unrelated
-temporary directory is moved or deleted by this plan.
+temporary directory is moved or deleted by this plan. Historical consolidation covers only the
+33 named script files; their surrounding local output directories are not cleanup targets.

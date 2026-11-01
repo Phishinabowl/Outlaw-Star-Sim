@@ -6,7 +6,9 @@ Baseline date: 2026-10-30 (America/New_York). This record implements Phase 1.1 o
 The [baseline JSON](reference-index-reorganization-baseline.json) records exact paths, byte counts, SHA-256 values,
 section boundaries/hashes, ordered CSV data digests and per-sheet workbook data/link digests.
 Initial Git HEAD: `e7d62d52cd3c74e25e83e8bf6b6bb2f9fe8b7c4e`; worktree clean and upstream aligned.
-No migration directories were created. Consumer auditing remains Phase 1.2; entries below do not claim it is complete.
+No migration directories were created. The subsequently completed Phase 1.2 static findings are owned
+by the separate [tool and dependency audit ledger](reference-index-reorganization-tool-audit.md),
+accepted by the maintainer on 2026-10-31. Pending-audit fields in the frozen Phase 1.1 JSON remain historical baseline values.
 
 ## File dispositions
 
@@ -302,6 +304,7 @@ After migration, expected link changes must be compared explicitly; binary XLSX 
 - All 60 Markdown heading sections are mapped, including retained shared sections and two explicit mixed-content splits.
 - Baseline covers 193 files under indexes, 37 CSV tables and 3 existing workbooks.
 - Read-only hashing and parsing do not validate research claims, source media or current media availability.
-- Active consumer inventory, historical-path classification and exact link repair actions remain Phase 1.2.
+- At the Phase 1.1 checkpoint, active consumers and path classifications remained Phase 1.2 work;
+  the separate tool audit ledger now records those findings without rewriting the baseline snapshot.
 - No records moved; tools, CSVs, workbooks, archives, contact sheets and source media unchanged.
 - Recheck hashes and inventory before Phase 2/3; classify any intervening edits instead of overwriting them.
