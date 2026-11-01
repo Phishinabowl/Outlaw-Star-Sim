@@ -3,9 +3,9 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-30 / 2026-11-01 |
-| Status | Phases 1–9 accepted; final closeout Git publication verification pending |
+| Status | Phases 1–9 accepted and closed; closeout publication verified |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 5 component and Phase 9 combined closeout accepted 2026-11-01; publication verification pending |
+| Current checkpoint | Phase 5 component and Phase 9 combined closeout accepted and published 2026-11-01; verification recorded in the combined closeout |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -435,7 +435,7 @@ and resolve the pending component acceptance/publication explicitly there.
 - [x] Record actual moves, intentional edits, validation results and unresolved local-helper limitations.
 - [x] Update workflow pointers and verify future episode records use the new destinations.
 - [x] Record maintainer acceptance separately from implementation/test completion.
-- [ ] On explicit confirmation, review the scoped diff, run diff checks and follow established commit/push verification.
+- [x] On explicit confirmation, review the scoped diff, run diff checks and follow established commit/push verification.
 
 **Validation:** completed ledger matches the final worktree; publication includes only authorized in-scope changes.
 **Recovery / deferral:** keep changes uncommitted until confirmation; publication problems do not justify destructive resets.
@@ -446,7 +446,7 @@ evidence, records historical-helper limitations and defines the operating handof
 and the numbered episode workflow use the organized destinations. The frozen baseline and dated
 audit tables retain historical paths. No source extraction, media move or workbook regeneration
 was performed in Phase 5. The component was subsequently reconciled into Phase 9 and explicitly
-accepted with the combined closeout on 2026-11-01; final publication verification remains pending.
+accepted with the combined closeout on 2026-11-01; publication of `53deb17` was subsequently verified.
 
 ### Phase 5 Exit Gate
 
@@ -600,7 +600,7 @@ requires subsequent authorization; this confirmation does not accept the prepare
 - [x] Record actual documentation moves, intentional edits, tests, preserved baselines, exceptions and remaining historical-helper limitations using the owning ledgers/results.
 - [x] Update current workflow/navigation pointers and the implementation-effort directory; verify the final documented destinations match the worktree.
 - [x] Record maintainer acceptance separately from implementation/test completion and identify the exact scope authorized for publication.
-- [ ] On explicit confirmation, review the scoped diff, run diff checks, stage only in-scope changes, commit/push and verify worktree status plus HEAD/upstream parity.
+- [x] On explicit confirmation, review the scoped diff, run diff checks, stage only in-scope changes, commit/push and verify worktree status plus HEAD/upstream parity.
 
 **Validation:** both components' final records match their ledgers and accepted evidence; publication
 contains no source media, derivative frames, ignored helpers or unrelated changes.
@@ -613,14 +613,15 @@ now reconciles the prepared Phase 5 handoff with accepted Phases 6–8. Both com
 intentional edits, preservation evidence, validation scopes and helper limitations retain their
 owning records. No new file or data move is required. Final confirmation explicitly accepted
 both the Phase 5 component and Phase 9 combined closeout and authorized documentation publication.
-Publication tasks remain unchecked until Git publication and parity verification complete.
+Publication of `53deb17` was verified on 2026-11-01 with a clean worktree and zero HEAD/upstream
+divergence; the combined closeout owns the publication receipt.
 
 ### Phase 9 Exit Gate
 
-- [ ] Combined closeout accepted; publication status, final ownership pointers and remaining limitations recorded.
+- [x] Combined closeout accepted; publication status, final ownership pointers and remaining limitations recorded.
 
 Phase 6.1 inventory and 6.2 dependency audit were accepted by the maintainer on 2026-11-01.
 Phase 7 migration was subsequently authorized, implemented and accepted on 2026-11-01.
 Phase 8.1–8.2 were subsequently accepted by the maintainer on 2026-11-01. Phase 9 combined closeout
-was accepted with the Phase 5 component on 2026-11-01; final publication verification is pending.
+was accepted with the Phase 5 component on 2026-11-01; closeout publication is verified.
 No later execution or project/slice boundary changes are implied.

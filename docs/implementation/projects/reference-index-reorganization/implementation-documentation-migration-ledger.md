@@ -405,4 +405,5 @@ validation, the operating handoff, remaining limits and final publication scope.
 destination is introduced; all 52 implementation files still match this ledger. Baselines, historical
 audit paths and helper bytes remain unchanged. Final checks account for both components' routes
 and active links. The maintainer accepted the Phase 5 component and Phase 9 combined closeout on
-2026-11-01 and authorized documentation publication; Git publication verification remains pending.
+2026-11-01 and authorized documentation publication. The combined closeout records verified
+publication of `53deb17`, a clean worktree and zero HEAD/upstream divergence on the same date.

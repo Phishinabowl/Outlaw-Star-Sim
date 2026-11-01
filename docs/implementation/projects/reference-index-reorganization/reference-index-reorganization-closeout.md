@@ -6,7 +6,7 @@
 | Implementation and integration | Reference Phases 1–4 and documentation Phases 6–8 complete and accepted |
 | Phase 5 component closeout | Accepted by the maintainer with Phase 9 on 2026-11-01 |
 | Phase 9 combined closeout | Checked and accepted by the maintainer on 2026-11-01 |
-| Publication | Combined closeout publication authorized; final Git publication verification pending |
+| Publication | Accepted closeout published as `53deb17` on `main` on 2026-11-01; clean worktree and HEAD/upstream parity verified |
 | Subsequent work | Episode 7 review and vertical-slice Phase 3.2A remain unstarted |
 
 The [reorganization plan](reference-index-reorganization-plan.md) owns execution and approval gates.
@@ -165,7 +165,13 @@ runtime file was changed; no additional output or authoring tool is introduced.
 This final edit extends the existing closeout's title/scope and adds documentation-migration and
 combined-acceptance sections; the Phase 5 evidence and original section headings remain available.
 Earlier validation counts retain their dated scope rather than being rewritten as current counts.
-Temporary final-check scratch is removed. Final diff checks pass; Git publication verification remains pending.
+Temporary final-check scratch is removed. Final diff checks pass.
 
-Final acceptance is complete; publication verification remains pending. No later episode review or gameplay phase starts
+Publication receipt — 2026-11-01: the scoped five-file closeout was committed as `53deb17` and
+pushed to `origin/main`. Both working and staged diff checks passed. After the push, worktree
+status was clean and `git rev-list --left-right --count 'HEAD...@{upstream}'` returned `0 0`.
+This receipt records verification of that published closeout; its status updates are a subsequent
+documentation-only increment under the same confirmation.
+
+Final acceptance and closeout publication verification are complete. No later episode review or gameplay phase starts
 automatically; Episode 7 review and vertical-slice Phase 3.2A remain unstarted.
