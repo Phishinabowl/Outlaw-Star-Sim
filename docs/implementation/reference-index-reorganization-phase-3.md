@@ -1,7 +1,8 @@
 # Reference reorganization — Phase 3 migration
 
 Status: implemented, checked and accepted by the maintainer on 2026-11-01 (America/New_York).
-Phase 4 integration/workbook validation is unstarted.
+The subsequent [Phase 4 integration/workbook validation](reference-index-reorganization-phase-4.md)
+was accepted on 2026-11-01; the results below retain the Phase 3 checkpoint scope.
 
 The [plan](reference-index-reorganization-plan.md) owns scope. The
 [file/section ledger](reference-index-reorganization-ledger.md) owns original/current record paths;

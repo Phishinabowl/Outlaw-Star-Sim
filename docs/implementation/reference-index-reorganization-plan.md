@@ -3,9 +3,9 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-30 / 2026-11-01 |
-| Status | Phases 1–3 accepted; Phase 4 integration/workbook validation unstarted |
+| Status | Phases 1–4 accepted; Phase 5 closeout unstarted |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 3 migration accepted 2026-11-01; Phase 4 integration/workbook validation unstarted |
+| Current checkpoint | Phase 4 integration/workbook validation accepted 2026-11-01; Phase 5 unstarted |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -291,27 +291,37 @@ Phase 3 was accepted by the maintainer on 2026-11-01 for publication. Phase 4 re
 
 **Prerequisite:** Phase 3 exit. **Deliverable:** recorded file, reference and tool check results.
 
-- [ ] Verify file accounting and byte-preserved hashes against the baseline.
-- [ ] Verify all 33 archived helper hashes, unique destinations, source absence and ignored status; confirm no local helper is staged for publication.
-- [ ] Validate links/anchors, schemas, register counts and affected tool tests.
-- [ ] Check output routing using temporary fixtures or bounded tests; do not re-extract episodes or replay destructive helpers.
-- [ ] Verify producers cannot silently recreate the former flat index layout.
+- [x] Verify file accounting and byte-preserved hashes against the baseline.
+- [x] Verify all 33 archived helper hashes, unique destinations, source absence and ignored status; confirm no local helper is staged for publication.
+- [x] Validate links/anchors, schemas, register counts and affected tool tests.
+- [x] Check output routing using temporary fixtures or bounded tests; do not re-extract episodes or replay destructive helpers.
+- [x] Verify producers cannot silently recreate the former flat index layout.
 
 ### Phase 4.2: Workbook And Evidence Equivalence
 
 **Prerequisite:** 4.1 passes. **Deliverable:** saved-data comparison and affected-link inspection.
 
-- [ ] Regenerate annotation and context workbook views using ImportExcel.
-- [ ] Compare saved authored data and inspect affected workbook links; check locator-only workbook links if affected.
-- [ ] Allow only documented reference-path changes; preserve observations, timing values, review states and evidence IDs.
+- [x] Regenerate annotation and context workbook views using ImportExcel.
+- [x] Compare saved authored data and inspect affected workbook links; check locator-only workbook links if affected.
+- [x] Allow only documented reference-path changes; preserve observations, timing values, review states and evidence IDs.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the
+[Phase 4 validation record](reference-index-reorganization-phase-4.md) records file/hash and
+37-register equivalence, maintained-link checks, passing tool suites and two refreshed ImportExcel
+views. All 62 workbook tabs retain their data apart from 1,104 reference-path cells and two
+hyperlinks; 298 row heights expand for longer paths. The locator workbook remains byte-identical.
+Windows temporary-file access failures and the unchanged-suite rerun environment are documented.
 
 **Validation:** maintained consumers resolve the target layout and evidence remains traceable.
 **Recovery / deferral:** a failed check blocks closeout; correct the coordinated change and repeat affected checks.
 
 ### Phase 4 Exit Gate
 
-- [ ] File, reference, tool and workbook checks pass with results and material limits recorded.
-- [ ] No unexplained evidence/data changes remain.
+- [x] File, reference, tool and workbook checks pass with results and material limits recorded.
+- [x] No unexplained evidence/data changes remain.
+
+Phase 4 was accepted by the maintainer on 2026-11-01 for documentation publication. Phase 5
+requires subsequent authorization.
 
 ## Phase 5: Closeout And Publication
 
