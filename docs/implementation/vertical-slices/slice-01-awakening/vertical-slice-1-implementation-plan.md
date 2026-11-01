@@ -581,7 +581,9 @@ was accepted by the maintainer the same day. The subsequently authorized
 [reorganization Phase 5 closeout](../../projects/reference-index-reorganization/reference-index-reorganization-closeout.md) is prepared with
 final acceptance/publication pending. The documentation inventory/audit was subsequently accepted;
 the authorized [Phase 7 migration](../../projects/reference-index-reorganization/implementation-documentation-migration-phase-7.md)
-organized these slice/project records and was accepted on 2026-11-01; Phase 8 validation is unstarted.
+organized these slice/project records and was accepted on 2026-11-01. Subsequent
+[Phase 8 validation](../../projects/reference-index-reorganization/implementation-documentation-validation-phase-8.md)
+was accepted on 2026-11-01; the reorganization's Phase 9 closeout is unstarted.
 Episode 7 review and Phase 3.2A remain unstarted.
 
 **Prerequisite:** accepted 3.1 closeout and completed individual settei collection review.

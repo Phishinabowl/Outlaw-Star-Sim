@@ -379,3 +379,20 @@ remain intact; runtime code, CSV fields, workbook bytes and local media/output p
 Initial migration checks pass; full Phase 8 integration remains unstarted. Phase 7 was accepted
 by the maintainer on 2026-11-01 for publication. No later episode review or gameplay implementation
 is authorized here.
+
+## Phase 8.1 Validation Record — 2026-11-01
+
+| ID | Current / final destination relative to `docs/implementation` | Disposition |
+| --- | --- | --- |
+| NEW-004 | `projects/reference-index-reorganization/implementation-documentation-validation-phase-8.md` | Created for Phase 8 validation; 8.1–8.2 accepted 2026-11-01 |
+
+The [8.1 result](implementation-documentation-validation-phase-8.md) independently verifies the
+published migration and preserved content against `f000f4c`. All 51 prior implementation files are
+accounted for; NEW-004 brings the collection to 52. Both frozen baselines remain unchanged. This
+result extends the live ledger rather than altering a frozen inventory. Phase 8.1 acceptance and
+the Phase 8 exit gate remain separate from check completion. Subsequent Phase 8.2 reader/cache and
+future-ownership checks pass within the same result record; no further file or data move is required.
+
+Phase 8.1–8.2 and the Phase 8 exit gate were accepted by the maintainer on 2026-11-01 for
+documentation publication. Phase 9 remains unstarted and requires separate authorization; the prepared
+Phase 5 component closeout remains pending combined final reconciliation.

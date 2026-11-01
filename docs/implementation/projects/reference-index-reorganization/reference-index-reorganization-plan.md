@@ -3,9 +3,9 @@
 | Field | Value |
 | --- | --- |
 | Created / last edited | 2026-10-30 / 2026-11-01 |
-| Status | Phases 1–4 and 6–7 accepted; Phase 5 reference closeout prepared; Phases 8–9 unstarted |
+| Status | Phases 1–4 and 6–8 accepted; Phase 5 reference closeout prepared; Phase 9 unstarted |
 | Maintainer | Repository owner |
-| Current checkpoint | Phase 7 documentation migration accepted 2026-11-01; no runtime changes; Phase 8 unstarted |
+| Current checkpoint | Phase 8 integration/preservation validation accepted 2026-11-01; Phase 9 unstarted |
 
 The plan and documentation publication were confirmed by the maintainer on 2026-10-30.
 Implementation phases require subsequent authorization.
@@ -548,21 +548,35 @@ authorization.
 **Prerequisite:** Phase 7 migration complete and explicit authorization for Phase 8.
 **Deliverable:** recorded documentation-preservation and link results.
 
-- [ ] Account for every original/new file, unique destination and original-path disposition; reject accidental duplicate authorities or unlisted deletion.
-- [ ] Verify byte-preserved baselines/records and compare edited documents allowing only ledgered navigation/path/status changes.
-- [ ] Verify preserved decisions, dates, approval history, phase numbering and substantive headings/anchors.
-- [ ] Validate maintained local links and fragments across all affected consumers; keep historical-path and third-party exclusions explicit.
-- [ ] Verify source media, reference data, local-only helpers and unrelated application/assets remain outside the migration's changes.
+- [x] Account for every original/new file, unique destination and original-path disposition; reject accidental duplicate authorities or unlisted deletion.
+- [x] Verify byte-preserved baselines/records and compare edited documents allowing only ledgered navigation/path/status changes.
+- [x] Verify preserved decisions, dates, approval history, phase numbering and substantive headings/anchors.
+- [x] Validate maintained local links and fragments across all affected consumers; keep historical-path and third-party exclusions explicit.
+- [x] Verify source media, reference data, local-only helpers and unrelated application/assets remain outside the migration's changes.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the
+[Phase 8.1 validation record](implementation-documentation-validation-phase-8.md) records independent
+comparison with pre-migration commit `f000f4c`: all 46 moves are accounted for, 468 href repairs
+are reproduced and only five documented navigation/status exceptions remain. Both frozen baseline
+hashes, all 37 CSV tables and 33 historical helper hashes are preserved. Current local file/fragment
+checks pass. Phase 8.2 was unstarted at that checkpoint; its subsequent results follow.
 
 ### Phase 8.2: Affected Tools And Future Effort Checks
 
 **Prerequisite:** 8.1 passes. **Deliverable:** bounded consumer/output checks and current navigation review.
 
-- [ ] Test affected maintained readers/writers with temporary fixtures where needed; do not execute historical helpers or source extraction merely to validate documentation paths.
-- [ ] If structured reference fields changed, validate their schemas/data preservation and refresh only affected projections using their established authoring/verification workflow.
-- [ ] Check that future slice/project records have documented owners and destinations, with reusable procedures separated from phase-specific results.
-- [ ] Confirm navigation distinguishes implemented/tested/accepted/deferred work and links the existing roadmap without creating competing status authority.
-- [ ] Remove only task-owned migration/validation scratch files after evidence is recorded.
+- [x] Test affected maintained readers/writers with temporary fixtures where needed; do not execute historical helpers or source extraction merely to validate documentation paths.
+- [x] If structured reference fields changed, validate their schemas/data preservation and refresh only affected projections using their established authoring/verification workflow.
+- [x] Check that future slice/project records have documented owners and destinations, with reusable procedures separated from phase-specific results.
+- [x] Confirm navigation distinguishes implemented/tested/accepted/deferred work and links the existing roadmap without creating competing status authority.
+- [x] Remove only task-owned migration/validation scratch files after evidence is recorded.
+
+**Completion record — accepted by the maintainer 2026-11-01:** the existing
+[validation record](implementation-documentation-validation-phase-8.md#phase-82-affected-readers-writers-and-projections)
+records passing category/context/alignment readers and offline source-cache verification. No affected
+writer, changed structured input or required workbook refresh was identified. Future effort/result
+ownership and current status navigation are checked; the existing roadmap and effort plans retain
+their authority. Earlier task-owned comparison scratch is removed; no new retained output is needed.
 
 **Validation:** no unexplained content/data change, broken active reference or affected runtime/output
 regression remains. Reuse earlier evidence where dependencies are unchanged; state material limits.
@@ -570,8 +584,11 @@ regression remains. Reuse earlier evidence where dependencies are unchanged; sta
 
 ### Phase 8 Exit Gate
 
-- [ ] File/content, link, consumer and future-ownership checks pass with evidence and limits recorded.
-- [ ] Record validation acceptance separately from final Phase 9 closeout/publication.
+- [x] File/content, link, consumer and future-ownership checks pass with evidence and limits recorded.
+- [x] Record validation acceptance separately from final Phase 9 closeout/publication.
+
+Phase 8 was accepted by the maintainer on 2026-11-01 for documentation publication. Phase 9
+requires subsequent authorization; this confirmation does not accept the prepared Phase 5 closeout.
 
 ## Phase 9: Combined Reorganization Closeout And Publication
 
@@ -595,4 +612,5 @@ changes without staging or discarding them. Publication does not authorize Episo
 
 Phase 6.1 inventory and 6.2 dependency audit were accepted by the maintainer on 2026-11-01.
 Phase 7 migration was subsequently authorized, implemented and accepted on 2026-11-01.
-Phases 8–9 remain unstarted; no later execution or project/slice boundary changes are implied.
+Phase 8.1–8.2 were subsequently accepted by the maintainer on 2026-11-01. Phase 9 remains
+unstarted; no later execution or project/slice boundary changes are implied.

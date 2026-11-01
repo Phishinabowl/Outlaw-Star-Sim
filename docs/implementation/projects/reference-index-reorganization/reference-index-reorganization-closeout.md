@@ -101,5 +101,5 @@ The implementation-documentation plan extension was confirmed for documentation 
 2026-11-01, including this prepared component record and its workflow pointers. Phase 5 component
 acceptance remains pending; publication of preparation does not close the expanded effort. The
 plan's Phase 6 was subsequently accepted and its authorized Phase 7 migration was accepted
-on 2026-11-01. Phase 8 remains unstarted; Phase 9 owns combined final closeout and
+on 2026-11-01. Phase 8.1–8.2 validation was subsequently accepted on the same date; Phase 9 owns combined final closeout and
 acceptance. No later episode review or gameplay phase starts automatically.

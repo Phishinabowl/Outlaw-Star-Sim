@@ -2,7 +2,8 @@
 
 The [plan](reference-index-reorganization-plan.md) owns scope, sequence and approval gates.
 Phases 1–4 and 6–7 are accepted. Phase 7 documentation migration was accepted on 2026-11-01;
-Phase 8 integration validation and Phase 9 combined closeout remain unstarted. The
+Phase 8.1–8.2 integration/preservation validation was accepted on 2026-11-01; Phase 9 remains
+unstarted. The
 prepared Phase 5 reference-component closeout remains distinct from combined final acceptance.
 
 | Record | Purpose |
@@ -17,6 +18,7 @@ prepared Phase 5 reference-component closeout remains distinct from combined fin
 | [Documentation migration ledger](implementation-documentation-migration-ledger.md) | Exact documentation routes, dependency audit and actual migration dispositions |
 | [Documentation baseline](implementation-documentation-migration-baseline.json) | Separate frozen Phase 6.1 snapshot; historical paths/status remain unchanged |
 | [Phase 7 migration](implementation-documentation-migration-phase-7.md) | Actual documentation moves, reference repairs and bounded checks |
+| [Phase 8 validation](implementation-documentation-validation-phase-8.md) | Accepted file/content/reference, live-reader and future-ownership validation |
 
 Baseline snapshots and dated audit tables retain original paths as historical evidence. Use the
 ledgers to resolve those locations. Their presence is not a fallback configuration or instruction
