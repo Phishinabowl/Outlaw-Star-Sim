@@ -133,8 +133,14 @@ subtitle, cache and temporary alignment locations and cleanup procedures are unc
    remain for a material identity or interpretation question. Do not promote to targeted
    PARTIAL/REVIEWED without the required scoped evidence record.
 
-8. **Report findings and incorporate corrections.** Present a bulleted batch review with image
-   ordinals/ranges, distinctive per-image callouts, valuable references and remaining questions.
+8. **Report findings and incorporate corrections.** Organize the batch report under a separate
+   heading for each contact sheet, including its ordinal range. Use image-specific bullets or
+   tightly related image ranges beneath each heading, rather than collapsing the sheets into
+   one thematic summary. Clearly mark high-value references and explain their concrete research
+   or implementation relevance. Give important machinery and operational sequences sufficient
+   detail to preserve controls, visible states, action order and evidence limits; in Episode 7,
+   emphasize the startup simulation's relevance to Awakening while keeping observed training
+   behavior separate from accepted gameplay design. Include remaining questions and rechecks.
    Incorporate supplied corrections with attribution. Register supplemental manual screenshots
    with stable episode-specific IDs, original hashes, local-player times, provenance and relevant
    gallery associations; do not fabricate archive alignment or drop unsupported uncertainty.
@@ -392,6 +398,7 @@ The `subjects` register starts with:
 | `rob_cain`, `clyde` | Rob Cain / Death Rob and Clyde, identified through the Episode 1 confrontation and aftermath subtitles. Secondary Rob Kane spelling is an alias, not a separate person. |
 | `iris` | Green-haired woman at Clyde's Bar, identified by the maintainer; cached summary caption CTX-000029 and Iris biography CTX-000032–033 provide separately attributed secondary context. |
 | `jim_pda` | Jim's dark blue hinged handheld device; PDA/diagnostic role is secondary context (CTX-000030). Its rear-facing image does not verify a readable interface. |
+| `kyokan`, `yase` | Secondary catalogue names for Episode 7's long-haired attacker at the workshop and marked-faced XGP intruder, respectively (CTX-000084–086). Scene/appearance matches are qualified in annotations; the local dialogue does not supply these proper names. Earlier shadowed surveillance portraits remain unresolved until individually reconciled. |
 | `unknown_character`, `unknown_creature`, `unknown_ship`, `unknown_vehicle`, `unknown_location`, `unknown_equipment` | Visible but unidentified subjects; describe distinguishing appearance in the summary. These are unresolved identity buckets, not assertions that different images depict the same subject. |
 
 Register additional named ships, locations, characters and recurring props as encountered. For

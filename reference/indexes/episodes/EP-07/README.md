@@ -4,9 +4,20 @@ Navigation migrated 2026-11-01. Records are linked at their organized locations.
 Migration does not change evidence or review status. Phase 4 integration/workbook validation was accepted on 2026-11-01.
 
 Gallery preparation, full subtitle/selected website context and bounded alignment were accepted
-by the maintainer on 2026-11-01. The next review batch is contact sheets 1–3 (ordinals 001–072).
-All 354 gallery annotations remain UNREVIEWED / NOT_REVIEWED; existing targeted evidence remains
-separate. Alignment coverage and the opening-image 019 exception are recorded below.
+by the maintainer on 2026-11-01. The initial survey now covers all 354 gallery ordinals;
+the maintainer accepted the survey and cockpit correction on 2026-11-01. There are 346 SCREENED and eight NEEDS_RECHECK, all at
+INITIAL_REVIEW_COMPLETE depth; no gallery row remains UNREVIEWED / NOT_REVIEWED. Existing
+targeted evidence remains separate. Rechecks are 014, 076–080, 183 and 259; exact timing
+ambiguities remain in the alignment records. Images 353–354 remain outside validated mapping
+bounds. Gallery archive/cleanup is pending; expanded images and contact sheets are retained.
+
+The maintainer identified 336–352 as the XGP cockpit seat-assembly maintenance sequence;
+all 17 images are HIGH priority cockpit references. The survey records the correction and
+retains internal-mechanism uncertainties separately.
+
+## Survey
+
+- [episode-07-survey-history.md](survey/episode-07-survey-history.md)
 
 ## Alignment
 
