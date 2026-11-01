@@ -1277,3 +1277,45 @@ CTXLINK-001275,CTX-000078,CONTEXT_FOR_IMAGE,IMAGE,EP-06:848870,"Initial-survey c
 CTXLINK-001276,CTX-000078,CONTEXT_FOR_IMAGE,IMAGE,EP-06:848871,"Initial-survey contextual association only; visible content and subtitle/timing limits are recorded in Episode 6 batch 05. No exact subtitle match, mapping extension or primary-status promotion."
 CTXLINK-001277,CTX-000078,CONTEXT_FOR_IMAGE,IMAGE,EP-06:848894,"Initial-survey contextual association only; visible content and subtitle/timing limits are recorded in Episode 6 batch 05. No exact subtitle match, mapping extension or primary-status promotion."
 CTXLINK-001278,CTX-000078,CONTEXT_FOR_IMAGE,IMAGE,EP-06:848896,"Initial-survey contextual association only; visible content and subtitle/timing limits are recorded in Episode 6 batch 05. No exact subtitle match, mapping extension or primary-status promotion."
+CTXLINK-001279,CTX-000082,ABOUT,SUBJECT,gilliam,
+CTXLINK-001280,CTX-000082,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001281,CTX-000082,ABOUT,SUBJECT,xgp,
+CTXLINK-001282,CTX-000082,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001283,CTX-000083,ABOUT,SUBJECT,jim_hawking,
+CTXLINK-001284,CTX-000083,ABOUT,SUBJECT,melfina,
+CTXLINK-001285,CTX-000083,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001286,CTX-000083,ABOUT,SUBJECT,xgp,
+CTXLINK-001287,CTX-000083,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001288,CTX-000084,ABOUT,SUBJECT,kyokan,
+CTXLINK-001289,CTX-000084,ABOUT,SUBJECT,melfina,
+CTXLINK-001290,CTX-000084,ABOUT,SUBJECT,suzuka,
+CTXLINK-001291,CTX-000084,ABOUT,SUBJECT,starwind_hawking_hq,
+CTXLINK-001292,CTX-000084,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001293,CTX-000085,ABOUT,SUBJECT,kyokan,
+CTXLINK-001294,CTX-000085,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001295,CTX-000086,ABOUT,SUBJECT,yase,
+CTXLINK-001296,CTX-000086,ABOUT,SUBJECT,gilliam,
+CTXLINK-001297,CTX-000086,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001298,CTX-000086,ABOUT,SUBJECT,xgp,
+CTXLINK-001299,CTX-000086,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001300,CTX-000087,ABOUT,SUBJECT,yase,
+CTXLINK-001301,CTX-000087,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001302,CTX-000087,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001303,CTX-000088,ABOUT,SUBJECT,yase,
+CTXLINK-001304,CTX-000088,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001305,CTX-000088,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001306,CTX-000089,ABOUT,SUBJECT,suzuka,
+CTXLINK-001307,CTX-000089,ABOUT,SUBJECT,melfina,
+CTXLINK-001308,CTX-000089,ABOUT,SUBJECT,kyokan,
+CTXLINK-001309,CTX-000089,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001310,CTX-000089,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001311,CTX-000090,ABOUT,SUBJECT,gene_starwind,
+CTXLINK-001312,CTX-000090,ABOUT,SUBJECT,xgp,
+CTXLINK-001313,CTX-000090,APPLIES_TO_EPISODE,EPISODE,EP-07,Episode preparation context only; no gallery timing or primary-status promotion.
+CTXLINK-001314,CTX-000008,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.
+CTXLINK-001315,CTX-000009,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.
+CTXLINK-001316,CTX-000010,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.
+CTXLINK-001317,CTX-000032,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.
+CTXLINK-001318,CTX-000075,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.
+CTXLINK-001319,CTX-000076,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.
+CTXLINK-001320,CTX-000079,APPLIES_TO_EPISODE,EPISODE,EP-07,Reused background for Episode 7; original assertion scope and source status remain unchanged.

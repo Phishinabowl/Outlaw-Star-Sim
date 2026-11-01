@@ -1021,6 +1021,15 @@ review workflow, not a full-show alignment prerequisite.
   authored records remain; no temporary alignment runs remain. Preservation and refreshed
   workbook data checks passed. The maintainer accepted closeout on 2026-10-30. Episode 7 and Phase 3.2A
   are not started automatically.
+  The subsequently authorized [Episode 7 preparation](../../../../reference/indexes/episodes/EP-07/README.md)
+  downloaded and verified all 354 images and 15 contact sheets, read all 330 English subtitle
+  events and added nine selected secondary context assertions. Its
+  [bounded alignment](../../../../reference/indexes/episodes/EP-07/alignment/episode-07-alignment-review.md)
+  validates `local = web - 1.310 s` for web labels 02:09–23:21, with six direct intervals,
+  339 navigation estimates and nine unmapped edge images. Opening image 019 retains NO_MATCH
+  and requires separate shot checking. Workbook, current-input, reproduction and temporary-output
+  cleanup checks passed. The maintainer accepted download/context/alignment on 2026-11-01.
+  Episode 7's first survey batch (001–072), Episode 8 and Phase 3.2A remain unstarted.
 - [ ] Apply overlapping preliminary tags for ships/exteriors, interiors/rooms, machinery/controls,
   characters/outfits, weapons/equipment/props, locations/infrastructure, materials/signage,
   lighting/effects and uncertain identities. Retain non-XGP material for future game research.
