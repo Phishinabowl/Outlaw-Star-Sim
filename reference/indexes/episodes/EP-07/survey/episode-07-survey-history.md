@@ -496,3 +496,35 @@ The maintainer confirmed the completed Episode 7 initial survey and the 336–35
 seat-assembly correction. This accepts all five survey batches, the recorded rechecks and
 the sheet-by-sheet reporting convention. Earlier pending-confirmation statements above
 describe their historical checkpoints. Archive/cleanup remains a separate pending step.
+
+## Archive and cleanup — 2026-11-01
+
+Cleanup was explicitly authorized after survey acceptance. The alignment episode-finish
+preview found no runs and zero removable bytes; durable alignment evidence is retained.
+Preview SHA-256: `1b8cf4468b3e577a60c74d951038c8114da3903ff61694f0f92c75907d2aa064`.
+
+The maintained gallery tool created archive format 2 at
+`reference/cache/animehistory-review/archives/EP-07.rar`, with external receipt `EP-07.json`.
+All 354 originals, manifest and recovery metadata passed native RAR integrity and staged
+inventory/decoding/hash checks. No Episode 7 supplemental images were registered.
+WinRAR 7.13 x64, compression level 3/non-solid: 59,749,301 input bytes became
+59,224,948 archive bytes, saving 524,353 bytes (approximately 0.88%). Archive creation and
+round-trip verification took 99.375 s. Archive SHA-256:
+`d4448fa8a63c148cce8469daa6b5dfd85af4d08cc92ce0d02eafdd4c5549e642`.
+
+`episode_gallery.py prune --episode 7 --progress-saved` independently restored and verified
+the archive against current inventories before removing the expanded gallery. Final status:
+zero cached images, zero unpacked bytes, 354 archived images, zero supplements and 15 retained
+contact sheets; archive hash valid. The 59,749,193-byte expanded cache is removed. All 20
+protected retained files have unchanged hashes: 15 sheet PNGs, sheet registry and four
+annotation/supplement/alignment CSVs. Source episodes, earlier targeted frames, subtitle and
+website caches remain untouched. Review counts remain 346 SCREENED and eight NEEDS_RECHECK,
+all 354 INITIAL_REVIEW_COMPLETE. Cleanup documentation remains pending confirmation.
+
+The category workbook refresh passed all saved-data/link checks (432,588 gallery cells,
+9,204 image links, 1,326 manual cells and 4,902 alignment cells), preserving the authored
+CSV. No workbook layout changes or native Office Viewer check were made. The task-owned
+cleanup hash baseline was removed after successful verification. `git diff --check` passed.
+
+The maintainer confirmed archive verification, pruning and Episode 7 closeout on 2026-11-01.
+This acceptance supersedes the cleanup checkpoint's pending-confirmation status above.

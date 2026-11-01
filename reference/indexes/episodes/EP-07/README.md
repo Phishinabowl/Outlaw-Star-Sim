@@ -9,7 +9,9 @@ the maintainer accepted the survey and cockpit correction on 2026-11-01. There a
 INITIAL_REVIEW_COMPLETE depth; no gallery row remains UNREVIEWED / NOT_REVIEWED. Existing
 targeted evidence remains separate. Rechecks are 014, 076–080, 183 and 259; exact timing
 ambiguities remain in the alignment records. Images 353–354 remain outside validated mapping
-bounds. Gallery archive/cleanup is pending; expanded images and contact sheets are retained.
+bounds. Gallery archive/cleanup completed on 2026-11-01; 354 originals are retained in the
+verified episode RAR, expanded gallery images are removed and all 15 contact sheets remain.
+No Episode 7 supplements were registered. The maintainer accepted cleanup/closeout on 2026-11-01.
 
 The maintainer identified 336–352 as the XGP cockpit seat-assembly maintenance sequence;
 all 17 images are HIGH priority cockpit references. The survey records the correction and
