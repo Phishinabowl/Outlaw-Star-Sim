@@ -6,7 +6,14 @@ Migration does not change evidence or review status. Phase 4 integration/workboo
 Gallery download and contact-sheet verification completed and were accepted by the maintainer
 on 2026-11-01. All 354 images are cached and all 15 sheets are available. Gallery annotations
 remain UNREVIEWED / NOT_REVIEWED; existing targeted evidence is separate. Subtitle/website
-context and independent Episode 8 alignment precede the first review batch.
+context and independent Episode 8 alignment are prepared, verified and accepted by the
+maintainer on 2026-11-01. The first review batch remains unstarted.
+
+## Alignment
+
+- [Timing alignment review](alignment/episode-08-alignment-review.md)
+- [Initial selection plan](alignment/episode-08-alignment-plan.json)
+- [Additional holdout selection](alignment/episode-08-alignment-holdout-extension.json)
 
 ## Evidence
 
@@ -17,6 +24,7 @@ context and independent Episode 8 alignment precede the first review batch.
 
 ## Preparation
 
+- [episode-08-context-preparation.md](preparation/episode-08-context-preparation.md)
 - [episode-08-gallery-preparation.md](preparation/episode-08-gallery-preparation.md)
 - [episode-08-metadata.json](preparation/episode-08-metadata.json)
 
